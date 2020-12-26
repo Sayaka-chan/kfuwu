@@ -55,7 +55,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 	}
 
-focus = {
+	focus = {
 		id = RUS_progress_cult
 		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = RUS_A_New_Russia }
@@ -304,11 +304,12 @@ focus = {
 					type = industrial_complex
 					level = 4
 					instant_build = yes
-			}	
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
 	}
-}
+
 
 	focus = {
 		id = RUS_Ural_Tractor_Plants
@@ -837,17 +838,6 @@ focus = {
 				category = infantry_weapons
 				category = artillery
 			}
-			if = {
-				limit = {
-					has_completed_focus = RUS_Overwhelming_Firepower
-				}
-				add_tech_bonus = {
-					name = RUS_Equipment_Modernisation
-					bonus = 1
-					uses = 2
-					category = support_tech
-				}
-			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -873,17 +863,6 @@ focus = {
 				bonus = 1
 				uses = 2
 				category = artillery
-			}
-			if = {
-				limit = {
-					has_completed_focus = RUS_Overwhelming_Firepower
-				}
-				add_tech_bonus = {
-					name = RUS_Equipment_Modernisation
-					bonus = 1
-					uses = 2
-					category = support_tech
-				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -1231,10 +1210,6 @@ focus = {
 			factor = 5000
 			modifier = {
 				factor = 0
-				has_completed_focus = RUS_Empower_The_Duma
-			}
-			modifier = {
-				factor = 0
 				has_stability < 0.3
 			}
 		}
@@ -1462,134 +1437,10 @@ focus = {
 				unlock_decision_tooltip = RUS_Demand_Karelia
 			}
 			if = {
-				limit = {
-					NOT = {
-						is_in_faction_with = ROM
-						is_in_faction_with = RRM
-					}
-				}
-				unlock_decision_tooltip = RUS_Demand_Bessarabia
-			}
-			if = {
 				limit = { has_completed_focus = RUS_Expansionism }
 				unlock_decision_tooltip = RUS_Demand_Galicia
 			}
 		}
 		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_POLITICAL }
-	}
-
-	focus = {
-		id = RUS_Force_Open_The_Straits
-		icon = GFX_goal_RUS_middle_east
-		x = 1
-		y = 13
-		cost = 5
-		available = {
-			is_subject = no
-			96 = { is_owned_by_ROOT_or_subject = yes } #Vilnius
-			202 = { is_owned_by_ROOT_or_subject = yes } #Kiev
-			206 = { is_owned_by_ROOT_or_subject = yes } #Minsk
-			1091 = { is_owned_by_ROOT_or_subject = yes } #Riga
-		}
-		prerequisite = {
-			focus = RUS_Repudiate_Brest_Litovsk
-		}
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 5
-				has_completed_focus = RUS_Expansionism
-			}
-			modifier = {
-				factor = 0
-				has_war = yes
-			}
-			modifier = {
-				factor = 0
-				has_stability < 0.3
-			}
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus RUS_Force_Open_The_Straits"
-			add_political_power = 25
-			army_experience = 10
-			if = {
-				limit = { has_completed_focus = RUS_Expansionism }
-				custom_effect_tooltip = unlocks_decision
-				custom_effect_tooltip = RUS_Attack_Persia_tooltip
-			}
-			else = {
-				custom_effect_tooltip = unlocks_decision
-				custom_effect_tooltip = RUS_Ultimatum_To_Persia_tooltip
-			}
-			if = {
-				limit = { has_completed_focus = RUS_Expansionism }
-				unlock_decision_tooltip = RUS_Claim_The_Straits
-			}
-			custom_effect_tooltip = unlocks_decision
-			if = {
-				limit = { country_exists = TUR }
-				custom_effect_tooltip = RUS_Attack_Ottomans_TUR_tooltip
-			}
-			else = {
-				custom_effect_tooltip = RUS_Attack_Ottomans_OTT_tooltip
-			}
-		}
-		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_POLITICAL }
-	}
-
-	focus = {
-		id = RUS_Enemy_In_The_East
-		icon = GFX_goal_RUS_japan
-		x = 3
-		y = 13
-		cost = 5
-		available = {
-			is_subject = no
-			96 = { is_owned_by_ROOT_or_subject = yes } #Vilnius
-			202 = { is_owned_by_ROOT_or_subject = yes } #Kiev
-			206 = { is_owned_by_ROOT_or_subject = yes } #Minsk
-			1091 = { is_owned_by_ROOT_or_subject = yes } #Riga
-		}
-		bypass = {
-			hidden_trigger = { has_war_with = JAP }
-		}
-
-		prerequisite = {
-			focus = RUS_Repudiate_Brest_Litovsk
-		}
-
-		ai_will_do = {
-			factor = 15
-			modifier = {
-				factor = 0
-				has_stability < 0.25
-			}
-			modifier = {
-				factor = 10
-				has_completed_focus = RUS_Expansionism
-			}
-			modifier = {
-				factor = 0
-				has_war = yes
-			}
-			modifier = {
-				factor = 0
-				has_stability < 0.3
-			}
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus RUS_Enemy_In_The_East"
-			add_war_support = 0.05
-			add_state_claim = 408 #Vladivostok
-			add_state_claim = 409 #Khabarovsk
-			add_state_claim = 537 #Sakhalin
-			custom_effect_tooltip = unlocks_decision
-			custom_effect_tooltip = RUS_Attack_Transamur_tooltip
-			custom_effect_tooltip = unlocks_decision
-			custom_effect_tooltip = RUS_Attack_Japan_tooltip
-		}
-		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ANNEXATION }
 	}
 }

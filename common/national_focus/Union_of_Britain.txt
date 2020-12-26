@@ -78,7 +78,6 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = ENG_revolution
-			focus = ENG_devolution
 		}
 		x = -2
 		y = 3
@@ -164,7 +163,6 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = ENG_evolution
-			focus = ENG_devolution
 		}
 		x = 2
 		y = 3
@@ -193,7 +191,6 @@ focus_tree = {
 			}
 		}
 		prerequisite = {
-			focus = ENG_devolution
 			focus = ENG_evolution
 			focus = ENG_revolution
 		}
@@ -1936,7 +1933,7 @@ focus_tree = {
 
 	### Foreign Policy ###
 
-focus = {# The International
+	focus = {# The International
 		id = ENG_international
 		icon = GFX_goal_FRA_Internationale_Congress
 		cost = 5
@@ -2356,5 +2353,4 @@ focus = {# The International
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
-
-	
+}
