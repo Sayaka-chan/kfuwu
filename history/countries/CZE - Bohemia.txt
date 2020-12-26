@@ -31,6 +31,7 @@ add_opinion_modifier = { target = ENG modifier = embargo }
 add_ideas = {
 
 	AUS_part_of_the_Empire
+	neutral_idea
 }
 
 set_politics = {

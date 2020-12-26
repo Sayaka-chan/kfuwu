@@ -93,6 +93,7 @@ set_stability = 0.60
 
 add_ideas = {
 	AUS_part_of_the_Empire
+	neutral_idea
 }
 
 create_country_leader = {
