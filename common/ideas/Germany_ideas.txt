@@ -70,6 +70,7 @@ ideas = {
 			picture = GER_flag_idea
 			modifier = {
 				political_power_gain = 0.1
+				consumer_goods_factor = -0.05
 			}
 		}
 
@@ -78,6 +79,7 @@ ideas = {
 			picture = GER_flag_idea
 			modifier = {
 				political_power_gain = 0.2
+				consumer_goods_factor = -0.05
 			}
 		}
 

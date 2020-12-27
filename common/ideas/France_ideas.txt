@@ -37,7 +37,7 @@ ideas = {
 			allowed = { always = no }
 			picture = jap_supremacy_of_will
 			modifier = {
-				research_speed_factor = 0.05
+				research_speed_factor = 0.1
 			}
 		}
 

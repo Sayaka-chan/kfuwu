@@ -4,7 +4,7 @@ oob = "RUS"
 set_naval_oob= "RUS_naval"
 set_cosmetic_tag = RUS_vozhdct
 
-set_research_slots = 3
+set_research_slots = 4
 
 ### Starting Technologies ###
 set_technology = {

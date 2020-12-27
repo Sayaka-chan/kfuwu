@@ -6,7 +6,7 @@ state = {
 
 	resources = {
 		steel = 110
-		aluminium = 38
+		aluminium = 100
 	}
 
 	history = {
@@ -15,7 +15,6 @@ state = {
 		buildings = {
 			infrastructure = 7
 			arms_factory = 3
-			industrial_complex = 6
 			air_base = 6
 			3438 = {
 				bunker = 2

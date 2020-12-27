@@ -47,7 +47,7 @@ focus_tree = {
 		relative_position_id = RUS_Centralised_Apparatus_Of_State
 		x = -2
 		y = 4
-		cost = 10
+		cost = 5
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus RUS_A_New_Russia"
 			add_ideas = RUS_a_new_russia_1
@@ -195,7 +195,7 @@ focus_tree = {
 		relative_position_id = RUS_Centralised_Apparatus_Of_State
 		x = 2
 		y = 5
-		cost = 10
+		cost = 5
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus RUS_Stratocratic_Government"
 			if = { #has mil. spir
@@ -299,10 +299,10 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus RUS_Establish_The_VES"
 			add_stability = 0.1
 			572 = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 10
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 10
 					instant_build = yes
 				}
 			}
@@ -453,7 +453,7 @@ focus_tree = {
 		relative_position_id = RUS_Establish_The_VES
 		x = -2
 		y = 2
-		cost = 15
+		cost = 10
 		prerequisite = {
 			focus = RUS_Ural_Tractor_Plants
 		}
@@ -724,30 +724,6 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = RUS_Research_Investments
-		icon = GFX_focus_research2
-		relative_position_id = RUS_Expand_The_Transsiberian
-		x = 0
-		y = 2
-		cost = 5
-		available = {
-			num_of_factories > 100
-		}
-		prerequisite = {
-			focus = RUS_Siberian_Arms_Industry
-		}
-
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus RUS_Research_Investments"
-			add_research_slot = 1
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
 	#############
 	###### Military #######
 	#############
@@ -879,9 +855,9 @@ focus_tree = {
 		id = RUS_Equipment_Modernisation
 		icon = GFX_focus_chi_army_reform
 		relative_position_id = RUS_Army_Modernisation
-		x = 1
+		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = RUS_Army_Modernisation
 		}
@@ -906,11 +882,11 @@ focus_tree = {
 		id = RUS_Modern_Artillery
 		icon = GFX_goal_RUS_army
 		relative_position_id = RUS_Equipment_Modernisation
-		x = 0
-		y = 1
-		cost = 10
+		x = 2
+		y = 0
+		cost = 5
 		prerequisite = {
-			focus = RUS_Equipment_Modernisation
+			focus = RUS_Army_Modernisation
 		}
 
 		ai_will_do = {
@@ -953,7 +929,7 @@ focus_tree = {
 			else = {
 				add_tech_bonus = {
 					name = RUS_Army_Motorisation
-					bonus = 1
+					bonus = 1.5
 					uses = 1
 					category = cat_mechanized_equipment
 				}
@@ -1065,7 +1041,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus RUS_cas"
 			add_tech_bonus = {
 				name = RUS_cas
-				bonus = 1
+				bonus = 2
 				uses = 1
 				category = cas_bomber
 			}
@@ -1139,7 +1115,7 @@ focus_tree = {
 		relative_position_id = RUS_Army_Modernisation
 		x = 4
 		y = 1
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2000
@@ -1178,7 +1154,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus RUS_Armour_Modernisation"
 			add_tech_bonus = {
 				name = RUS_Armour_Modernisation
-				bonus = 1
+				bonus = 1.5
 				uses = 2
 				category = armor
 			add_tech_bonus = {
