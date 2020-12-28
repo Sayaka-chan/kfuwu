@@ -372,7 +372,7 @@ ideas = {
 			name = RUS_legacy_of_the_whites
 			picture = RUS_yunarmiya
 			modifier = {
-				production_speed_arms_factory_factor = 0.150
+				production_speed_arms_factory_factor = 0.15
 				stability_factor = 0.10
 				experience_gain_army = 0.25
 			}
@@ -606,7 +606,6 @@ ideas = {
 			picture = man_five_year_plan_air
 			modifier = {
 				industrial_capacity_factory = 0.10
-				consumer_goods_factor = -0.05
 			}
 		}
 		RUS_supreme_economic_council_9 = { #draft scheme
