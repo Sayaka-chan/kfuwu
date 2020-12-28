@@ -36,6 +36,23 @@ focus_tree = {
 	}
 
 	focus = {
+		id = RUS_Civilian_Industry
+		icon = GFX_goal_manage_industries
+		prerequisite = {
+			focus = RUS_Centralised_Apparatus_Of_State
+		}
+		relative_position_id = RUS_Centralised_Apparatus_Of_State
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus RUS_A_New_Russia"
+			add_ideas = rus_better_working_conditions
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
 		id = RUS_A_New_Russia
 		icon = GFX_goal_national_populism
 		prerequisite = {
@@ -272,12 +289,43 @@ focus_tree = {
 		relative_position_id = RUS_Centralised_Apparatus_Of_State
 		x = 0
 		y = 7
-		cost = 10
+		cost = 1
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus RUS_State_Revanchism"
 			add_ideas = RUS_state_revanchism
 		}
 		search_filters = { FOCUS_FILTER_ARMY_BONUS }
+	}
+
+	focus = {
+		id = RUS_Rearmament_Programme
+		icon = GFX_focus_generic_license_production
+		relative_position_id = RUS_Centralised_Apparatus_Of_State
+		x = 0
+		y = 5
+		cost = 5
+		available = {
+			is_subject = no
+			date > 1939.6.1
+		}
+		prerequisite = {
+			focus = RUS_Secure_Central_Asia
+		}
+		prerequisite = {
+			focus = RUS_Into_The_Caucasus
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus RUS_Rearmament_Programme"
+			add_timed_idea = {
+				idea = RUS_rearmament_programme_idea
+				days = 365
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 
 	#############
@@ -299,10 +347,10 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus RUS_Establish_The_VES"
 			add_stability = 0.1
 			572 = {
-				add_extra_state_shared_building_slots = 10
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 10
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -568,7 +616,7 @@ focus_tree = {
 					modify_building_resources = {
 				building = synthetic_refinery
 				resource = rubber
-				amount = 1
+				amount = 2
 		
 			}
 		}
@@ -1023,6 +1071,72 @@ focus_tree = {
 	}
 
 	focus = {
+		id = RUS_Katyushas
+		icon = GFX_goal_generic_military_deal
+		prerequisite = {
+			focus = RUS_Equipment_Modernisation
+		}
+		prerequisite = {
+			focus = RUS_Modern_Artillery
+		}
+		x = 1
+		y = 1
+		relative_position_id = RUS_Equipment_Modernisation
+		cost = 5
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 1000
+				any_claim = yes
+				has_war = yes
+			}
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			set_technology{motorized_rocket_unit=1}
+			custom_effect_tooltip = "Two fully equipped Katyusha-Divisions will spawn in Moscow."
+			hidden_effect={
+				division_template = {
+					name = "Katyusha Diviziya"
+					division_names_group = RUS_MEC_01
+					regiments = {
+						motorized = { x = 0 y = 0 }
+						motorized = { x = 0 y = 1 }
+						motorized = { x = 0 y = 2 }
+						motorized = { x = 0 y = 3 }
+						motorized = { x = 1 y = 0 }
+						motorized = { x = 1 y = 1 }
+						motorized = { x = 1 y = 2 }
+						motorized_rocket_brigade= { x = 2 y = 1 }
+						motorized_rocket_brigade= { x = 2 y = 2 }
+						motorized_rocket_brigade= { x = 2 y = 3}
+						motorized_rocket_brigade= { x = 2 y = 4 }
+						motorized_rocket_brigade= { x = 2 y = 0 }
+						motorized_rocket_brigade= { x = 3 y = 1 }
+						motorized_rocket_brigade= { x = 3 y = 2 }
+						motorized_rocket_brigade= { x = 3 y = 3 }
+						mot_anti_air_brigade= { x = 3 y = 4 }
+						mot_anti_air_brigade= { x = 3 y = 0 }
+					}
+					support = {
+						mot_recon = { x = 0 y = 0 }
+						engineer = { x = 0 y = 1 }
+						artillery = { x = 0 y = 2 }
+					}
+				}
+				212 = {
+					for_loop_effect = {
+						end = 2
+						create_unit = {
+							division = "name = \"Katyusha Diviziya\" division_template = \"Katyusha Diviziya\" start_experience_factor = 0.3"
+							owner = RUS
+						}
+						}}
+			}
+		}
+	}
+
+	focus = {
 		id = RUS_cas
 		icon = GFX_goal_generic_CAS
 		prerequisite = {
@@ -1237,10 +1351,10 @@ focus_tree = {
 		icon = GFX_focus_generic_eagle
 		relative_position_id = RUS_Centralised_Apparatus_Of_State
 		x = 0
-		y = 1
+		y = 2
 		cost = 5
 		prerequisite = {
-			focus = RUS_Centralised_Apparatus_Of_State
+			focus = RUS_Civilian_Industry
 		}
 		ai_will_do = {
 			factor = 5000
@@ -1279,9 +1393,9 @@ focus_tree = {
 		icon = GFX_goal_RUS_central_asia
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 		available = {
-			date > 1937.6.1
+			date > 1937.8.1
 		}
 		prerequisite = {
 			focus = RUS_Expansionism
@@ -1332,9 +1446,9 @@ focus_tree = {
 		icon = GFX_goal_RUS_caucasus
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 		available = {
-		date > 1938.1.1
+		date > 1938.2.1
 		}
 		prerequisite = {
 			focus = RUS_Expansionism
@@ -1391,10 +1505,11 @@ focus_tree = {
 		id = RUS_Repudiate_Brest_Litovsk
 		icon = GFX_goal_RUS_eastern_europe
 		x = 0
-		y = 2
-		cost = 5
+		y = 6
+		cost = 1
 		relative_position_id = RUS_Expansionism
 		available = {
+			date > 1940.9.1
 			is_subject = no
 			if = {
 				limit = {
@@ -1424,10 +1539,7 @@ focus_tree = {
 		}
 
 		prerequisite = {
-			focus = RUS_Into_The_Caucasus
-		}
-		prerequisite = {
-			focus = RUS_Secure_Central_Asia
+			focus = RUS_State_Revanchism
 		}
 
 		ai_will_do = {

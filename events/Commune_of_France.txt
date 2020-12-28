@@ -26,40 +26,6 @@ country_event = { #Intro
 #####
 
 country_event = {
-	id = comfrance.5
-	immediate = { log = "[GetDateText]: [Root.GetName]: event comfrance.5" }
-	title = comfrance.5.t
-	desc = comfrance.5.d
-	picture = GFX_report_event_worker_protests
-
-	is_triggered_only = yes
-
-	option = {
-		name = comfrance.5.a
-		add_stability = -0.2
-		remove_ideas_with_trait = head_of_government
-		add_ideas = FRA_Comite_de_Salut_Public_hog_syn
-		# set 1936 election flags
-		set_country_flag = {
-			flag = FRA_ANAR
-			value = 0
-		}
-		set_country_flag = {
-			flag = FRA_JACO
-			value = 0
-		}
-		set_country_flag = {
-			flag = FRA_SORE
-			value = 0
-		}
-		set_country_flag = {
-			flag = FRA_TRAV
-			value = 0
-		}
-	}
-}
-
-country_event = {
 	id = comfrance.7
 	immediate = { log = "[GetDateText]: [Root.GetName]: event comfrance.7" }
 	title = comfrance.7.t

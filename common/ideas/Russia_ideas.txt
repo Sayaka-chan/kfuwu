@@ -85,34 +85,14 @@ ideas = {
 			}
 			picture = FRA_matignon_agreements
 		}
-		rus_austerity_measures = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea rus_austerity_measures"}
-			allowed = { always = no }
-			modifier = {
-				consumer_goods_factor = 0.07
-				production_factory_max_efficiency_factor = -0.05
-				industrial_capacity_factory = -0.1
-				stability_weekly = -0.002
-			}
-			picture = capital_outflow
-		}
-
-		ger_brest_litovsk = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ger_brest_litovsk"}
-			allowed = { always = no }
-			modifier = {
-				consumer_goods_factor = -0.1
-			}
-			picture = SPR_seize_the_gold_reserves
-		}
 
 		rus_better_working_conditions = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea rus_better_working_conditions"}
 			allowed = { always = no }
 			modifier = {
-				production_factory_max_efficiency_factor = -0.10
-				industrial_capacity_factory = -0.15
-				stability_weekly = 0.001
+				stability_factor = 0.05
+				production_speed_industrial_complex_factor = 0.2
+				political_power_gain = 0.05
 			}
 			picture = generic_production_bonus
 		}
@@ -392,7 +372,7 @@ ideas = {
 			name = RUS_legacy_of_the_whites
 			picture = RUS_yunarmiya
 			modifier = {
-				production_speed_arms_factory_factor = 0.15
+				production_speed_arms_factory_factor = 0.150
 				stability_factor = 0.10
 				experience_gain_army = 0.25
 			}
@@ -619,6 +599,14 @@ ideas = {
 					build_cost_ic = -0.05
 					instant = yes
 				}
+			}
+		}
+		RUS_rearmament_programme_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea RUS_rearmament_programme_idea"}
+			picture = man_five_year_plan_air
+			modifier = {
+				industrial_capacity_factory = 0.10
+				consumer_goods_factor = -0.05
 			}
 		}
 		RUS_supreme_economic_council_9 = { #draft scheme

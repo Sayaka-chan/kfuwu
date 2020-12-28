@@ -512,6 +512,10 @@ technologies = {
 		category_support_battalions = {
 			max_organisation = 15
 		}
+		category_line_artillery = {
+			soft_attack = 0.10
+			hard_attack = 0.10
+		}
 		# faster planning
 		planning_speed = 0.2
 
@@ -766,10 +770,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		category_line_artillery = {
-			soft_attack = 0.10
-			hard_attack = 0.10
-		}
 		category_light_infantry = {
 			max_organisation = 5
 			defense = 0.1
