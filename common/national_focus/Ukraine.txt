@@ -597,7 +597,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_small_arms_industry"
-			add_ideas = UKR_small_arms_industry_idea
+			add_ideas = constructing_donetsk_airport
 		}
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 	}
@@ -629,7 +629,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_cannons_idea"
-			add_ideas = UKR_cannons_idea
+			add_ideas = UKR_Cannons_idea
 		}
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 	}
