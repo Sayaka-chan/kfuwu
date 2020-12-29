@@ -172,7 +172,7 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea NFA_degaulle_plan"}
 
 			modifier = {
-				max_planning = 0.25 planning_speed = 0.25
+				max_planning = 0.1 planning_speed = 0.25
 			}
 		}
 
@@ -270,7 +270,7 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea NFA_dakar_algiers_airway_idea"}
 
 			modifier = {
-				industrial_capacity_factory = 0.02
+				industrial_capacity_factory = 0.1
 			}
 
 			picture = generic_air_bonus
@@ -280,7 +280,7 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea NFA_dakar_algiers_airway_idea2"}
 
 			modifier = {
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.15
 			}
 
 			picture = generic_air_bonus

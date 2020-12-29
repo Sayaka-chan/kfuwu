@@ -10,7 +10,7 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GER_imperial_pride"}
 			picture = GER_imperial_pride
 			modifier = {
-				surrender_limit = 0.10
+				production_speed_buildings_factor = 0.1
 			}
 		}
 
@@ -261,9 +261,6 @@ ideas = {
 		ZO_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ZO_idea"}
 			available = { country_exists = GER }
-			modifier = {
-				production_speed_buildings_factor = 0.1
-			}
 			picture = ger_revive_the_kaiserreich
 		}
 

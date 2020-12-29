@@ -28,7 +28,7 @@ focus_tree = {
 		}
 		x = 1
 		y = 0
-		cost = 8
+		cost = 5
 		ai_will_do = {
 			factor = 5500
 			modifier = {
@@ -56,7 +56,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NFA_restore_constitution"
 			custom_effect_tooltip = NFA_restore_constitution_tooltip
-			add_stability = 0.08
+			add_stability = 0.2
 			add_popularity = {
 				ideology = social_conservative
 				popularity = 0.03
@@ -87,7 +87,7 @@ focus_tree = {
 		x = 3
 		y = 0
 		relative_position_id = NFA_restore_constitution
-		cost = 8
+		cost = 5
 		ai_will_do = {
 			factor = 1500
 			modifier = {
@@ -115,7 +115,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NFA_monarchy"
 			custom_effect_tooltip = NFA_monarchy_tooltip
-			add_stability = 0.02
+			add_stability = 0.2
 			set_country_flag = NFA_monarch
 			if = {
 				limit = {
@@ -151,7 +151,7 @@ focus_tree = {
 		x = 5
 		y = 0
 		relative_position_id = NFA_restore_constitution
-		cost = 8
+		cost = 5
 		ai_will_do = {
 			factor = 1500
 			modifier = {
@@ -179,7 +179,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NFA_empire"
 			custom_effect_tooltip = NFA_empire_tooltip
-			add_stability = -0.02
+			add_stability = 0.2
 			set_country_flag = NFA_empire
 			if = {
 				limit = {
@@ -217,7 +217,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = NFA_restore_constitution
-		cost = 8
+		cost = 5
 		ai_will_do = {
 			factor = 6000
 			modifier = {
@@ -239,57 +239,6 @@ focus_tree = {
 			}
 			set_country_flag = NFA_prepet
 			remove_ideas = NFA_political_unrest
-			hidden_effect = {
-				create_country_leader = {
-					name = "Philippe Pétain"
-					desc = "POLITICS_PHILIPPE_PETAIN_DESC"
-					picture = "Portrait_NFA_Philippe_Petain.tga"
-					expire = "1965.1.1"
-					ideology = authoritarian_democrat_subtype
-				}
-				create_country_leader = {
-					name = "Philippe Pétain"
-					desc = "POLITICS_PHILIPPE_PETAIN_DESC"
-					picture = "Portrait_NFA_Philippe_Petain.tga"
-					expire = "1965.1.1"
-					ideology = social_democrat_subtype
-				}
-				create_country_leader = {
-					name = "Philippe Pétain"
-					desc = "POLITICS_PHILIPPE_PETAIN_DESC"
-					picture = "Portrait_NFA_Philippe_Petain.tga"
-					expire = "1965.1.1"
-					ideology = social_liberal_subtype
-				}
-				create_country_leader = {
-					name = "Philippe Pétain"
-					desc = "POLITICS_PHILIPPE_PETAIN_DESC"
-					picture = "Portrait_NFA_Philippe_Petain.tga"
-					expire = "1965.1.1"
-					ideology = market_liberal_subtype
-				}
-				create_country_leader = {
-					name = "Philippe Pétain"
-					desc = "POLITICS_PHILIPPE_PETAIN_DESC"
-					picture = "Portrait_NFA_Philippe_Petain.tga"
-					expire = "1965.1.1"
-					ideology = social_conservative_subtype
-				}
-				create_country_leader = {
-					name = "Philippe Pétain"
-					desc = "POLITICS_PHILIPPE_PETAIN_DESC"
-					picture = "Portrait_NFA_Philippe_Petain.tga"
-					expire = "1965.1.1"
-					ideology = paternal_autocrat_subtype
-				}
-				create_country_leader = {
-					name = "Philippe Pétain"
-					desc = "POLITICS_PHILIPPE_PETAIN_DESC"
-					picture = "Portrait_NFA_Philippe_Petain.tga"
-					expire = "1965.1.1"
-					ideology = national_populist_subtype
-				}
-			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 	}
@@ -306,7 +255,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = NFA_restore_constitution
-		cost = 8
+		cost = 5
 		ai_will_do = {
 			factor = 4000
 			modifier = {
@@ -321,60 +270,9 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus NFA_new_president"
 			set_country_flag = NFA_demo
 			custom_effect_tooltip = NFA_new_president_tooltip
-			add_stability = -0.02
+			add_stability = 0.02
 			set_country_flag = NFA_new_pres
 			remove_ideas = NFA_political_unrest
-			hidden_effect = {
-				create_country_leader = {
-					name = "Philippe Pétain"
-					desc = "POLITICS_PHILIPPE_PETAIN_DESC"
-					picture = "Portrait_NFA_Philippe_Petain.tga"
-					expire = "1965.1.1"
-					ideology = authoritarian_democrat_subtype
-				}
-				create_country_leader = {
-					name = "Philippe Pétain"
-					desc = "POLITICS_PHILIPPE_PETAIN_DESC"
-					picture = "Portrait_NFA_Philippe_Petain.tga"
-					expire = "1965.1.1"
-					ideology = social_democrat_subtype
-				}
-				create_country_leader = {
-					name = "Philippe Pétain"
-					desc = "POLITICS_PHILIPPE_PETAIN_DESC"
-					picture = "Portrait_NFA_Philippe_Petain.tga"
-					expire = "1965.1.1"
-					ideology = social_liberal_subtype
-				}
-				create_country_leader = {
-					name = "Philippe Pétain"
-					desc = "POLITICS_PHILIPPE_PETAIN_DESC"
-					picture = "Portrait_NFA_Philippe_Petain.tga"
-					expire = "1965.1.1"
-					ideology = market_liberal_subtype
-				}
-				create_country_leader = {
-					name = "Philippe Pétain"
-					desc = "POLITICS_PHILIPPE_PETAIN_DESC"
-					picture = "Portrait_NFA_Philippe_Petain.tga"
-					expire = "1965.1.1"
-					ideology = social_conservative_subtype
-				}
-				create_country_leader = {
-					name = "Philippe Pétain"
-					desc = "POLITICS_PHILIPPE_PETAIN_DESC"
-					picture = "Portrait_NFA_Philippe_Petain.tga"
-					expire = "1965.1.1"
-					ideology = paternal_autocrat_subtype
-				}
-				create_country_leader = {
-					name = "Philippe Pétain"
-					desc = "POLITICS_PHILIPPE_PETAIN_DESC"
-					picture = "Portrait_NFA_Philippe_Petain.tga"
-					expire = "1965.1.1"
-					ideology = national_populist_subtype
-				}
-			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 	}
@@ -430,13 +328,12 @@ focus_tree = {
 		x = 2
 		y = 2
 		relative_position_id = NFA_restore_constitution
-		cost = 8
+		cost = 5
 		ai_will_do = {
 			factor = 7
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NFA_judiciary_frenchmen"
-			add_stability = -0.1
 			add_popularity = {
 				ideology = social_conservative
 				popularity = 0.05
@@ -466,13 +363,12 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = NFA_restore_constitution
-		cost = 8
+		cost = 5
 		ai_will_do = {
 			factor = 5
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NFA_extended_suffrage"
-			add_stability = -0.1
 			add_popularity = {
 				ideology = social_democrat
 				popularity = 0.05
@@ -502,13 +398,12 @@ focus_tree = {
 		x = 2
 		y = 3
 		relative_position_id = NFA_restore_constitution
-		cost = 8
+		cost = 5
 		ai_will_do = {
 			factor = 6
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NFA_limited_suffrage"
-			add_stability = -0.06
 			add_popularity = {
 				ideology = social_conservative
 				popularity = 0.05
@@ -538,7 +433,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = NFA_restore_constitution
-		cost = 8
+		cost = 5
 		ai_will_do = {
 			factor = 1000
 			modifier = {
@@ -567,9 +462,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus NFA_Constitutionalism"
 			custom_effect_tooltip = NFA_constit_mon_tooltip
 			set_country_flag = NFA_demo
-			add_stability = -0.04
-			remove_ideas_with_trait = head_of_government
-			add_ideas = NFA_Paul_Reynaud_hog_sco
+			add_stability = 0.04
 			set_politics = {
 				ruling_party = social_conservative
 				elections_allowed = no
@@ -608,7 +501,7 @@ focus_tree = {
 		x = 5
 		y = 1
 		relative_position_id = NFA_restore_constitution
-		cost = 8
+		cost = 5
 		ai_will_do = {
 			factor = 1000
 			modifier = {
@@ -636,9 +529,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NFA_Absolutism"
 			custom_effect_tooltip = NFA_absolutism_tooltip
-			add_stability = -0.04
-			remove_ideas_with_trait = head_of_government
-			add_ideas = NFA_Charles_Maurras_hog_pau
+			add_stability = 0.04
 			add_popularity = {
 				ideology = authoritarian_democrat
 				popularity = 0.15
@@ -680,7 +571,7 @@ focus_tree = {
 		x = 5
 		y = 3
 		relative_position_id = NFA_restore_constitution
-		cost = 8
+		cost = 5
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NFA_monarch_prestige"
 			add_ideas = NFA_idealized_sovereign
@@ -699,10 +590,10 @@ focus_tree = {
 		x = 2
 		y = 4
 		relative_position_id = NFA_restore_constitution
-		cost = 8
+		cost = 10
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NFA_strenghthened_governement"
-			add_stability = 0.15
+			add_stability = 0.3
 			custom_effect_tooltip = NFA_strenghthened_governement_tooltip
 			if = {
 				limit = {
@@ -809,7 +700,7 @@ focus_tree = {
 	focus = {
 		id = NFA_industrial_revival
 		icon = GFX_goal_generic_construct_public_housing
-		x = 13
+		x = 10
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -821,7 +712,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = NFA_industrial_revival
 				bonus = 1
-				uses = 1
+				uses = 2
 				category = industry
 			}
 		}
@@ -847,31 +738,31 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NFA_develop_ALG"
-			458 = {
+			808 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
-			460 = {
+			556 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 4
 					instant_build = yes
 				}
 			}
-			459 = {
+			272 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
-			805 = {
+			806 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -1000,7 +891,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = NFA_more_military_factories_ALG
+		id = NFA_more_military_factories
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = {
 			focus = NFA_military_factories_ALG
@@ -1071,10 +962,10 @@ focus_tree = {
 			controls_state = 272
 		}
 		prerequisite = {
-			focus = NFA_develop_ALG
+			focus = NFA_expand_airway
 		}
 		x = -1
-		y = 3
+		y = 4
 		relative_position_id = NFA_industrial_revival
 		cost = 10
 		ai_will_do = {
@@ -1102,10 +993,10 @@ focus_tree = {
 			controls_state = 459
 		}
 		prerequisite = {
-			focus = NFA_dakar_algiers_airway
+			focus = NFA_develop_ALG
 		}
 		x = -1
-		y = 4
+		y = 3
 		relative_position_id = NFA_industrial_revival
 		cost = 10
 		ai_will_do = {
@@ -1140,7 +1031,7 @@ focus_tree = {
 		id = NFA_improve_maritime_links
 		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = {
-			focus = NFA_develop_mines
+			focus = NFA_cotton_mali
 		}
 		x = 3
 		y = 3
@@ -1236,17 +1127,12 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus NFA_colonial_resources"
 			add_resource = {
 				type = steel
-				amount = 12
+				amount = 60
 				state = 557
 			}
 			add_resource = {
-				type = steel
-				amount = 6
-				state = 806
-			}
-			add_resource = {
-				type = aluminium
-				amount = 4
+				type = tungsten
+				amount = 80
 				state = 806
 			}
 		}
@@ -1262,7 +1148,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NFA_colonial_resources
 		}
-		x = 5
+		x = 3
 		y = 2
 		relative_position_id = NFA_industrial_revival
 		cost = 10
@@ -1275,196 +1161,19 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 3	#could add an event chain in the future
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-	}
-
-	focus = {
-		id = NFA_develop_mines
-		icon = GFX_goal_generic_construction2
-		available = {
-			OR = {
-				controls_state = 557
-				controls_state = 806
-			}
-		}
-		prerequisite = {
-			focus = NFA_colonial_resources
-		}
-		x = 3
-		y = 2
-		relative_position_id = NFA_industrial_revival
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_develop_mines"
-			add_resource = {
-				type = steel
-				amount = 3
-				state = 557
-			}
-			add_resource = {
-				type = steel
-				amount = 2
-				state = 806
-			}
-			add_resource = {
-				type = aluminium
-				amount = 6
-				state = 806
-			}
-			806 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			557 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-	}
-
-	focus = {
-		id = NFA_sahara_census
-		icon = GFX_goal_OTT_Land_Reform
-		available = {
-			controls_state = 513
-			controls_state = 514
-		}
-		x = -2
-		y = 0
-		relative_position_id = NFA_industrial_revival
-		cost = 2
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_sahara_census"
-			custom_effect_tooltip = NFA_sahara_census_tooltip
-		}
-	}
-
-	focus = {
-		id = NFA_transsaharian
-		icon = GFX_goal_NFA_Transsaharian_Railroad
-		available = {
-			has_country_flag = NFA_inventory_finished
-			controls_state = 513
-		}
-		cancel = {
-			NOT = {
-				controls_state = 513
-			}
-		}
-		prerequisite = {
-			focus = NFA_sahara_census
-		}
-		x = -4
-		y = 1
-		relative_position_id = NFA_industrial_revival
-		cost = 10
-		ai_will_do = {
-			factor = 1.5
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_transsaharian"
-			custom_effect_tooltip = building_transaharian_tooltip
-		}
-	}
-
-	focus = {
-		id = NFA_sahara
-		icon = GFX_goal_generic_production
-		available = {
-			has_country_flag = NFA_inventory_finished
-			controls_state = 513
-		}
-		cancel = {
-			NOT = {
-				controls_state = 513
-			}
-		}
-		prerequisite = {
-			focus = NFA_industrial_revival
-		}
-		prerequisite = {
-			focus = NFA_sahara_census
-		}
-		x = -2
-		y = 1
-		relative_position_id = NFA_industrial_revival
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_sahara"
-			add_resource = {
-				type = oil
-				amount = 12
-				state = 513
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-	}
-
-	focus = {
-		id = NFA_algerie_refinery
-		icon = GFX_goal_generic_oil_refinery
-		available = {
-			controls_state = 460
-		}
-		prerequisite = {
-			focus = NFA_sahara
-		}
-		x = -2
-		y = 2
-		relative_position_id = NFA_industrial_revival
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_algerie_refinery"
-			460 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = synthetic_refinery
-					level = 1
-					instant_build = yes
-				}
-			}
-			add_tech_bonus = {
-				name = NFA_algerie_refinery
-				bonus = 1
-				uses = 1
-				category = synth_resources
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 	}
 
 	focus = {
 		id = NFA_extra_research_slot
 		icon = GFX_focus_research
 		prerequisite = {
-			focus = NFA_more_military_factories_ALG
+			focus = NFA_more_military_factories
 		}
 		x = 2
 		y = 5
@@ -1483,64 +1192,14 @@ focus_tree = {
 	#### Military Focuses ####
 
 	focus = {
-		id = NFA_Darlan_Focus
-		icon = GFX_goal_NFA_Darlan_Plan
-		available = {
-			OR = {
-				has_completed_focus = NFA_Constitutionalism
-				has_completed_focus = NFA_Absolutism
-				has_completed_focus = NFA_new_president
-				has_completed_focus = NFA_Petain_president
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		mutually_exclusive = {
-			focus = NFA_DeGaulle_focus
-		}
-		x = 25
-		y = 0
-		cost = 10
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_Darlan_Focus"
-			add_tech_bonus = {
-				name = NFA_Darlan_Focus
-				bonus = 1
-				uses = 1
-				category = land_doctrine
-			}
-			add_ideas = NFA_darlan_plan
-		}
-		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = NFA_fortification_focus
-		icon = GFX_focus_generic_bastion_of_democracy
-		prerequisite = {
-			focus = NFA_Darlan_Focus
-		}
-		x = 0
-		y = 1
-		relative_position_id = NFA_Darlan_Focus
-		cost = 10
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_fortification_focus"
-			add_ideas = NFA_fortification_darlan
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-	}
-
-	focus = {
 		id = NFA_mediteranean_forts
 		icon = GFX_focus_generic_coastal_fort
 		prerequisite = {
-			focus = NFA_fortification_focus
+			focus = NFA_dakar_algiers_airway
 		}
 		x = 0
-		y = 2
-		relative_position_id = NFA_Darlan_Focus
+		y = 1
+		relative_position_id = NFA_dakar_algiers_airway
 		cost = 10
 
 		available = {
@@ -1671,12 +1330,9 @@ focus_tree = {
 		prerequisite = {
 			focus = NFA_mediteranean_forts
 		}
-		prerequisite = {
-			focus = NFA_aviation_home_defense
-		}
 		x = 0
-		y = 3
-		relative_position_id = NFA_Darlan_Focus
+		y = 1
+		relative_position_id = NFA_mediteranean_forts
 		cost = 10
 
 		available = {
@@ -1755,254 +1411,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = NFA_radar_effort
-		icon = GFX_goal_generic_radar
-		prerequisite = {
-			focus = NFA_protect_the_air
-		}
-		x = 0
-		y = 4
-		relative_position_id = NFA_Darlan_Focus
-		cost = 10
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_radar_effort"
-			add_tech_bonus = {
-				name = NFA_radar_effort
-				bonus = 1
-				uses = 1
-				category = radar_tech
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = NFA_aviation_home_defense
-		icon = GFX_goal_generic_air_fighter2
-		prerequisite = {
-			focus = NFA_Darlan_Focus
-		}
-		x = -2
-		y = 2
-		relative_position_id = NFA_Darlan_Focus
-		cost = 10
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_aviation_home_defense"
-			add_tech_bonus = {
-				name = NFA_aviation_home_defense
-				bonus = 1
-				uses = 1
-				category = light_fighter
-				category = cat_heavy_fighter
-			}
-			air_experience = 35
-		}
-		search_filters = { FOCUS_FILTER_AIRFORCE_BONUS FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = NFA_cas_effort
-		icon = GFX_goal_generic_air_bomber
-		prerequisite = {
-			focus = NFA_aviation_home_defense
-		}
-		x = -2
-		y = 3
-		relative_position_id = NFA_Darlan_Focus
-		cost = 10
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_cas_effort"
-			add_tech_bonus = {
-				name = NFA_cas_effort
-				bonus = 1
-				uses = 1
-				category = cas_bomber
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = NFA_navy_expansion
-		icon = GFX_goal_generic_build_navy
-		prerequisite = {
-			focus = NFA_Darlan_Focus
-		}
-		x = -4
-		y = 1
-		relative_position_id = NFA_Darlan_Focus
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_navy_expansion"
-			navy_experience = 35
-			add_ideas = NFA_navy_expansion_idea
-			custom_effect_tooltip = NFA_navy_expansion_tooltip
-		}
-		search_filters = { FOCUS_FILTER_NAVY_BONUS FOCUS_FILTER_INDUSTRY }
-	}
-
-	focus = {
-		id = NFA_dockyard_focus
-		icon = GFX_goal_generic_construct_naval_dockyard
-		prerequisite = {
-			focus = NFA_navy_expansion
-		}
-		x = -4
-		y = 2
-		relative_position_id = NFA_Darlan_Focus
-		cost = 10
-		available = {
-			272 = {
-				is_controlled_by = NFA
-			}
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_dockyard_focus"
-			272 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = dockyard
-					level = 4
-					instant_build = yes
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-	}
-
-	focus = {
-		id = NFA_naval_doctrine
-		icon = GFX_goal_generic_navy_doctrines_tactics
-		prerequisite = {
-			focus = NFA_dockyard_focus
-		}
-		x = -4
-		y = 3
-		relative_position_id = NFA_Darlan_Focus
-		cost = 10
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_naval_doctrine"
-			add_tech_bonus = {
-				name = NFA_naval_doctrine
-				bonus = 1
-				uses = 1
-				category = naval_doctrine
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = NFA_battleship_focus
-		icon = GFX_goal_generic_navy_battleship
-		prerequisite = {
-			focus = NFA_dockyard_focus
-		}
-		mutually_exclusive = {
-			focus = NFA_destroyer_focus
-		}
-		x = -3
-		y = 4
-		relative_position_id = NFA_Darlan_Focus
-		cost = 10
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_battleship_focus"
-			add_tech_bonus = {
-				name = NFA_battleship_focus
-				bonus = 1
-				uses = 1
-				category = cl_tech
-				category = ca_tech
-				category = bb_tech
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = NFA_destroyer_focus
-		icon = GFX_goal_generic_navy_battleship
-		prerequisite = {
-			focus = NFA_dockyard_focus
-		}
-		mutually_exclusive = {
-			focus = NFA_battleship_focus
-		}
-		x = -5
-		y = 4
-		relative_position_id = NFA_Darlan_Focus
-		cost = 10
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_destroyer_focus"
-			add_tech_bonus = {
-				name = NFA_destroyer_focus
-				bonus = 1
-				uses = 1
-				category = dd_tech
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = NFA_light_cruiser_focus
-		icon = GFX_goal_generic_navy_battleship
-		prerequisite = {
-			focus = NFA_destroyer_focus
-			focus = NFA_battleship_focus
-		}
-		mutually_exclusive = {
-			focus = NFA_heavy_cruiser_focus
-		}
-		x = -5
-		y = 5
-		relative_position_id = NFA_Darlan_Focus
-		cost = 10
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_light_cruiser_focus"
-			add_tech_bonus = {
-				name = NFA_light_cruiser_focus
-				bonus = 1
-				uses = 1
-				category = cl_tech
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = NFA_heavy_cruiser_focus
-		icon = GFX_goal_generic_navy_battleship
-		prerequisite = {
-			focus = NFA_destroyer_focus
-			focus = NFA_battleship_focus
-		}
-		mutually_exclusive = {
-			focus = NFA_light_cruiser_focus
-		}
-		x = -3
-		y = 5
-		relative_position_id = NFA_Darlan_Focus
-		cost = 10
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_heavy_cruiser_focus"
-			add_tech_bonus = {
-				name = NFA_heavy_cruiser_focus
-				bonus = 1
-				uses = 1
-				category = cl_tech
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
 		id = NFA_DeGaulle_focus
 		available = {
 			OR = {
@@ -2019,7 +1427,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = NFA_Darlan_Focus
 		}
-		x = 27
+		x = 20
 		y = 0
 		cost = 10
 		completion_reward = {
@@ -2027,7 +1435,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = NFA_DeGaulle_focus
 				bonus = 1
-				uses = 1
+				uses = 2
 				category = land_doctrine
 			}
 			add_ideas = NFA_degaulle_plan
@@ -2036,276 +1444,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = NFA_southern_conscription
-		available = {
-			NOT = {
-				has_completed_focus = NFA_return_to_marseille
-				has_completed_focus = NFA_return_to_paris
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		icon = GFX_goal_generic_military_sphere
-		x = 3
-		y = 0
-		relative_position_id = NFA_DeGaulle_focus
-		cost = 10
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_southern_conscription"
-		}
-	}
-
-	focus = {
-		id = NFA_native_conscription
-		icon = GFX_goal_generic_political_pressure
-		mutually_exclusive = {
-			focus = NFA_legionary_campaign
-		}
-		prerequisite = {
-			focus = NFA_DeGaulle_focus
-		}
-		prerequisite = {
-			focus = NFA_southern_conscription
-		}
-		available = {
-			NOT = {
-				has_completed_focus = NFA_return_to_marseille
-				has_completed_focus = NFA_return_to_paris
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		x = 0
-		y = 1
-		relative_position_id = NFA_DeGaulle_focus
-		cost = 10
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_native_conscription"
-			add_stability = -0.16
-			custom_effect_tooltip = NFA_native_conscription_tooltip
-			hidden_effect = {
-				load_oob = NFA_native_conscription1
-			}
-			add_ideas = NFA_native_conscription1
-		}
-		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY }
-	}
-
-	focus = {
-		id = NFA_continue_native_conscription
-		icon = GFX_goal_Settling_Nomads
-		prerequisite = {
-			focus = NFA_native_conscription
-		}
-		available = {
-			NOT = {
-				has_completed_focus = NFA_return_to_marseille
-				has_completed_focus = NFA_return_to_paris
-			}
-		}
-		x = 0
-		y = 2
-		relative_position_id = NFA_DeGaulle_focus
-		cost = 10
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_continue_native_conscription"
-			add_stability = -0.16
-			custom_effect_tooltip = NFA_native_conscription2_tooltip
-			hidden_effect = {
-				load_oob = NFA_native_conscription2
-			}
-			swap_ideas = {
-				add_idea = NFA_native_conscription2
-				remove_idea = NFA_native_conscription1
-			}
-		}
-		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY }
-	}
-
-	focus = {
-		id = NFA_legionary_campaign
-		icon = GFX_goal_generic_allies_build_infantry
-		prerequisite = {
-			focus = NFA_DeGaulle_focus
-		}
-		prerequisite = {
-			focus = NFA_southern_conscription
-		}
-		mutually_exclusive = {
-			focus = NFA_native_conscription
-		}
-		available = {
-			NOT = {
-				has_completed_focus = NFA_return_to_marseille
-				has_completed_focus = NFA_return_to_paris
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		x = 2
-		y = 1
-		relative_position_id = NFA_DeGaulle_focus
-		cost = 10
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_legionary_campaign"
-			custom_effect_tooltip = NFA_legionary_campaign_tooltip
-			hidden_effect = {
-				load_oob = NFA_legionary_campaign1
-			}
-			add_ideas = NFA_legionary_campaign1
-		}
-		search_filters = { FOCUS_FILTER_MANPOWER }
-	}
-
-	focus = {
-		id = NFA_continue_legionary_campaign
-		icon = GFX_goal_NOR_passport_convention
-		prerequisite = {
-			focus = NFA_legionary_campaign
-		}
-		available = {
-			NOT = {
-				has_completed_focus = NFA_return_to_marseille
-				has_completed_focus = NFA_return_to_paris
-			}
-		}
-		x = 2
-		y = 2
-		relative_position_id = NFA_DeGaulle_focus
-		cost = 10
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_continue_legionary_campaign"
-			custom_effect_tooltip = NFA_legionary_campaign2_tooltip
-			hidden_effect = {
-				load_oob = NFA_legionary_campaign2
-			}
-			swap_ideas = {
-				add_idea = NFA_legionary_campaign2
-				remove_idea = NFA_legionary_campaign1
-			}
-		}
-		search_filters = { FOCUS_FILTER_MANPOWER }
-	}
-
-	focus = {
-		id = NFA_aviation_invasion
-		icon = GFX_goal_generic_air_fighter
-		prerequisite = {
-			focus = NFA_DeGaulle_focus
-		}
-		x = 6
-		y = 1
-		relative_position_id = NFA_DeGaulle_focus
-		cost = 10
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_aviation_invasion"
-			add_tech_bonus = {
-				name = NFA_aviation_invasion
-				bonus = 1
-				uses = 1
-				category = tactical_bomber
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = NFA_aviation_doctrine
-		icon = GFX_goal_generic_air_doctrine
-		prerequisite = {
-			focus = NFA_aviation_invasion
-		}
-		x = 6
-		y = 2
-		relative_position_id = NFA_DeGaulle_focus
-		cost = 10
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_aviation_doctrine"
-			add_tech_bonus = {
-				name = NFA_aviation_doctrine
-				bonus = 1
-				uses = 1
-				category = air_doctrine
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = NFA_naval_bomber_focus
-		icon = GFX_goal_generic_air_naval_bomber
-		prerequisite = {
-			focus = NFA_aviation_doctrine
-		}
-		x = 6
-		y = 3
-		relative_position_id = NFA_DeGaulle_focus
-		cost = 10
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_naval_bomber_focus"
-			add_tech_bonus = {
-				name = NFA_naval_bomber_focus
-				bonus = 1
-				uses = 1
-				category = naval_bomber
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = NFA_paratrooper_focus
-		icon = GFX_focus_generic_paratrooper
-		prerequisite = {
-			focus = NFA_aviation_invasion
-		}
-		prerequisite = {
-			focus = NFA_troupes_de_marine
-		}
-		x = 7
-		y = 4
-		relative_position_id = NFA_DeGaulle_focus
-		cost = 10
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_paratrooper_focus"
-			add_tech_bonus = {
-				name = NFA_paratrooper_focus
-				bonus = 1
-				uses = 1
-				category = para_tech
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = NFA_invasion_navy
-		icon = GFX_goal_generic_build_navy
-		prerequisite = {
-			focus = NFA_DeGaulle_focus
-		}
-		x = 4
-		y = 1
-		relative_position_id = NFA_DeGaulle_focus
-		cost = 10
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_invasion_navy"
-			navy_experience = 35
-		}
-		search_filters = { FOCUS_FILTER_NAVY_BONUS }
-	}
-
-	focus = {
 		id = NFA_naval_invasion_focus
 		icon = GFX_goal_generic_amphibious_assault
 		prerequisite = {
-			focus = NFA_invasion_navy
+			focus = NFA_troupes_de_marine
 		}
-		x = 4
-		y = 2
+		x = -1
+		y = 3
 		relative_position_id = NFA_DeGaulle_focus
 		cost = 10
 		completion_reward = {
@@ -2321,89 +1466,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = NFA_battleship_focus_degaulle
-		icon = GFX_goal_generic_navy_battleship
-		prerequisite = {
-			focus = NFA_naval_invasion_focus
-		}
-		mutually_exclusive = {
-			focus = NFA_submarine_focus
-		}
-		x = 2
-		y = 3
-		relative_position_id = NFA_DeGaulle_focus
-		cost = 10
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_battleship_focus_degaulle"
-			add_tech_bonus = {
-				name = NFA_battleship_focus_degaulle
-				bonus = 1
-				uses = 1
-				category = cl_tech
-				category = ca_tech
-				category = bb_tech
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = NFA_submarine_focus
-		icon = GFX_goal_generic_navy_submarine
-		prerequisite = {
-			focus = NFA_naval_invasion_focus
-		}
-		mutually_exclusive = {
-			focus = NFA_battleship_focus_degaulle
-		}
-		x = 4
-		y = 3
-		relative_position_id = NFA_DeGaulle_focus
-		cost = 10
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_submarine_focus"
-			add_tech_bonus = {
-				name = NFA_submarine_focus
-				bonus = 1
-				uses = 1
-				category = ss_tech
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = NFA_carrier_effort
-		icon = GFX_goal_generic_navy_carrier
-		prerequisite = {
-			focus = NFA_naval_invasion_focus
-		}
-		prerequisite = {
-			focus = NFA_naval_bomber_focus
-		}
-		x = 5
-		y = 4
-		relative_position_id = NFA_DeGaulle_focus
-		cost = 10
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_carrier_effort"
-			add_tech_bonus = {
-				name = NFA_carrier_effort
-				bonus = 1
-				uses = 1
-				category = cv_tech
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
 		id = NFA_military_preparation
 		icon = GFX_goal_generic_join_faction
 		prerequisite = {
-			focus = NFA_homeland_reconquest
+			focus = NFA_DeGaulle_focus
 		}
-		x = 10
+		x = 0
 		y = 1
 		relative_position_id = NFA_DeGaulle_focus
 		cost = 10
@@ -2432,10 +1500,10 @@ focus_tree = {
 	focus = {
 		id = NFA_Infantry_focus
 		icon = GFX_goal_generic_small_arms
-		x = 12
+		x = -2
 		y = 2
 		relative_position_id = NFA_DeGaulle_focus
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = NFA_military_preparation
 		}
@@ -2455,15 +1523,12 @@ focus_tree = {
 	focus = {
 		id = NFA_artillery_focus
 		icon = GFX_goal_generic_army_artillery2
-		x = 12
-		y = 3
+		x = -4
+		y = 2
 		relative_position_id = NFA_DeGaulle_focus
 		cost = 10
-		available = {
-			has_completed_focus = NFA_Darlan_Focus
-		}
 		prerequisite = {
-			focus = NFA_Infantry_focus
+			focus = NFA_military_preparation
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NFA_artillery_focus"
@@ -2471,7 +1536,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = NFA_artillery_focus
 				bonus = 1
-				uses = 1
+				uses = 3
 				category = artillery
 			}
 		}
@@ -2481,22 +1546,19 @@ focus_tree = {
 	focus = {
 		id = NFA_legionary_motorization
 		icon = GFX_goal_generic_army_motorized
-		x = 8
+		x = 2
 		y = 2
 		relative_position_id = NFA_DeGaulle_focus
 		cost = 10
 		prerequisite = {
 			focus = NFA_military_preparation
 		}
-		prerequisite = {
-			focus = NFA_DeGaulle_focus
-		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NFA_legionary_motorization"
 			army_experience = 5
 			add_tech_bonus = {
 				name = NFA_legionary_motorization
-				bonus = 1
+				bonus = 1.5
 				uses = 1
 				category = motorized_equipment
 				category = cat_mechanized_equipment
@@ -2508,19 +1570,19 @@ focus_tree = {
 	focus = {
 		id = NFA_tank_research
 		icon = GFX_goal_generic_army_tanks
-		x = 8
-		y = 3
-		relative_position_id = NFA_DeGaulle_focus
+		x = 4
+		y = 1
+		relative_position_id = NFA_military_preparation
 		cost = 10
 		prerequisite = {
-			focus = NFA_legionary_motorization
+			focus = NFA_military_preparation
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NFA_tank_research"
 			add_tech_bonus = {
 				name = NFA_tank_research
-				bonus = 1
-				uses = 1
+				bonus = 1.5
+				uses = 2
 				category = armor
 			}
 		}
@@ -2530,9 +1592,9 @@ focus_tree = {
 	focus = {
 		id = NFA_troupes_de_marine
 		icon = GFX_goal_NFA_Troupes_de_Marine_Focus
-		x = 10
-		y = 3
-		relative_position_id = NFA_DeGaulle_focus
+		x = 0
+		y = 1
+		relative_position_id = NFA_military_preparation
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -2546,7 +1608,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = NFA_troupes_de_marine
 				bonus = 1
-				uses = 1
+				uses = 3
 				category = marine_tech
 			}
 			add_ideas = NFA_troupes_de_marine_idea
@@ -2557,8 +1619,8 @@ focus_tree = {
 	focus = {
 		id = NFA_mountain_elites
 		icon = GFX_goal_generic_special_forces
-		x = 10
-		y = 4
+		x = 1
+		y = 3
 		relative_position_id = NFA_DeGaulle_focus
 		cost = 10
 		prerequisite = {
@@ -2584,163 +1646,38 @@ focus_tree = {
 	focus = {
 		id = NFA_homeland_reconquest
 		icon = GFX_goal_Liberty
+		prerequisite = {
+			focus = NFA_strenghthened_governement
+		}
 		available = {
 			is_subject = no
 		}
-		x = 44
-		y = 0
+		x = 3
+		y = 5
 		cost = 10
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NFA_homeland_reconquest"
-			custom_effect_tooltip = NFA_homeland_reconquest_morocco
-			add_war_support = 0.05
+			add_war_support = 0.3
 		}
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
-	}
-
-	focus = {
-		id = NFA_reenforce_the_Entente
-		icon = GFX_goal_champagne_diplomacy
-		prerequisite = {
-			focus = NFA_homeland_reconquest
-		}
-		available = {
-			OR = {
-				AND = {
-					is_in_faction_with = CAN
-					CAN = {
-						is_faction_leader = yes
-					}
-				}
-				AND = {
-					is_in_faction_with = GBR
-					GBR = {
-						is_faction_leader = yes
-					}
-				}
-			}
-			is_subject = no
-		}
-		x = -1
-		y = 1
-		relative_position_id = NFA_homeland_reconquest
-		cost = 10
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_reenforce_the_Entente"
-			add_war_support = 0.04
-			every_country = {
-				limit = {
-					is_in_faction_with = ROOT
-				}
-				NFA = {
-					add_opinion_modifier = {
-						target = PREV
-						modifier = NFA_reinforce_entente
-					}
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
-	}
-
-	focus = {
-		id = NFA_entente_fighters
-		icon = GFX_goal_generic_build_airforce
-		prerequisite = {
-			focus = NFA_entente_research
-		}
-		available = {
-			OR = {
-				AND = {
-					is_in_faction_with = CAN
-					CAN = {
-						is_faction_leader = yes
-					}
-				}
-				AND = {
-					is_in_faction_with = GBR
-					GBR = {
-						is_faction_leader = yes
-					}
-				}
-			}
-		}
-		x = -3
-		y = 3
-		relative_position_id = NFA_homeland_reconquest
-		cost = 10
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_entente_fighters"
-			air_experience = 40
-			add_tech_bonus = {
-				name = NFA_entente_fighters
-				bonus = 1
-				uses = 1
-				category = air_doctrine
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_AIRFORCE_BONUS }
-	}
-
-	focus = {
-		id = NFA_entente_navy
-		icon = GFX_goal_AST_upgrade_reserves
-		prerequisite = {
-			focus = NFA_entente_research
-		}
-		available = {
-			OR = {
-				AND = {
-					is_in_faction_with = CAN
-					CAN = {
-						is_faction_leader = yes
-					}
-				}
-				AND = {
-					is_in_faction_with = GBR
-					GBR = {
-						is_faction_leader = yes
-					}
-				}
-			}
-		}
-		x = -1
-		y = 3
-		relative_position_id = NFA_homeland_reconquest
-		cost = 10
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_entente_navy"
-			navy_experience = 40
-			add_tech_bonus = {
-				name = NFA_entente_navy
-				bonus = 1
-				uses = 1
-				category = naval_doctrine
-			}
-			#maybe a cof reaction event in the future ? something like "they are provoking us in the med blah blah" -do nothing: -pp - build forts - ?
-		}
-		search_filters = { FOCUS_FILTER_NAVY_BONUS FOCUS_FILTER_RESEARCH }
 	}
 
 	focus = {
 		id = NFA_entente_research
 		icon = GFX_goal_CAN_isac
 		prerequisite = {
-			focus = NFA_reenforce_the_Entente
-		}
-		prerequisite = {
-			focus = NFA_military_preparation
+			focus = NFA_homeland_reconquest
 		}
 		available = {
 			is_in_faction_with = ENT
 			ENT = { is_faction_leader = yes }
 			has_global_flag = CAN_isac_created
 		}
-		x = -2
-		y = 2
+		x = 0
+		y = 1
 		relative_position_id = NFA_homeland_reconquest
 		cost = 10
 		completion_reward = {
@@ -2754,304 +1691,18 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
-
-
-	focus = {
-		id = NFA_strike_france
-		icon = GFX_goal_kill_syndies
-		prerequisite = {
-			focus = NFA_homeland_reconquest
-		}
-		available = {
-			is_subject = no
-			NOT = {
-				is_in_faction_with = FRA
-			}
-			NOT = {
-				has_idea = NFA_political_unrest
-			}
-			OR = {
-				FRA = {
-					has_war_with = GER
-				}
-				date > 1939.6.1
-			}
-		}
-		bypass = {
-			OR = {
-				has_war_with = FRA
-				NOT = {
-					country_exists = FRA
-				}
-				FRA = {
-					is_subject_of = GER
-				}
-			}
-		}
-
-		will_lead_to_war_with = FRA
-
-		x = 2
-		y = 1
-		relative_position_id = NFA_homeland_reconquest
-		cost = 1
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				surrender_progress > 0.01
-			}
-			modifier = {
-				factor = 0
-				has_war_with = GER
-			}
-			modifier = {
-				factor = 0
-				date < 1941.1.1
-				any_enemy_country = { is_actual_major = yes }
-			}
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_strike_france"
-			if = {
-				limit = {
-					is_ai = no
-				}
-				create_wargoal = {
-					type = annex_everything
-					target = FRA
-				}
-			}
-			if = {
-				limit = {
-					is_ai = yes
-				}
-				declare_war_on = {
-					target = FRA
-					type = annex_everything
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-	}
-
-	focus = {
-		id = NFA_return_to_paris
-		icon = GFX_goal_Paris
-		prerequisite = {
-			focus = NFA_strike_france
-		}
-		available = {
-			FRA = {
-				exists = no
-			}
-			owns_state = 16
-			owns_state = 21
-			controls_state = 16
-		}
-		x = 3
-		y = 3
-		relative_position_id = NFA_homeland_reconquest
-		cost = 1
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_return_to_paris"
-			add_stability = 0.2
-			set_country_flag = NFA_returned_mainland
-			remove_ideas = NFA_french_in_exile
-			remove_ideas = NFA_legionary_campaign1
-			remove_ideas = NFA_legionary_campaign2
-			remove_ideas = NFA_native_conscription1
-			remove_ideas = NFA_native_conscription2
-			remove_ideas = NFA_southern_conscript_regular
-			remove_ideas = NFA_southern_conscript_colonial
-			remove_ideas = NFA_underground_railroad_idea
-		}
-		search_filters = { FOCUS_FILTER_STABILITY }
-	}
-
-	focus = {
-		id = NFA_return_to_marseille
-		icon = GFX_goal_NFA_Return_to_Marseille
-		prerequisite = {
-			focus = NFA_strike_france
-		}
-		available = {
-			owns_state = 21
-			controls_state = 21
-			NOT = {
-				has_completed_focus = NFA_return_to_paris
-				has_war_with = GER
-				has_war_with = FRP
-				country_exists = FRA
-				controls_state = 16
-				16 = {
-					is_core_of = NFA
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		x = 1
-		y = 2
-		relative_position_id = NFA_homeland_reconquest
-		cost = 1
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_return_to_marseille"
-			set_country_flag = NFA_returned_mainland
-			add_stability = 0.2
-			remove_ideas = NFA_french_in_exile
-			remove_ideas = NFA_legionary_campaign1
-			remove_ideas = NFA_legionary_campaign2
-			remove_ideas = NFA_native_conscription1
-			remove_ideas = NFA_native_conscription2
-			remove_ideas = NFA_southern_conscript_regular
-			remove_ideas = NFA_southern_conscript_colonial
-		}
-		search_filters = { FOCUS_FILTER_STABILITY }
-	}
-
-	focus = {
-		id = NFA_underground_railroad
-		icon = GFX_goal_generic_railway_construction
-		prerequisite = {
-			focus = NFA_return_to_marseille
-		}
-		available = {
-			NOT = {
-				has_completed_focus = NFA_return_to_paris
-			}
-			country_exists = FRP FRP = {
-				is_subject = yes
-			}
-			OR = {
-				has_government = social_democrat
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = social_conservative
-			}
-			owns_state = 21
-			controls_state = 21
-			is_subject = no
-			NOT = {
-				country_exists = FRA
-				has_war_with = FRP
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		x = 1
-		y = 3
-		relative_position_id = NFA_homeland_reconquest
-		cost = 10
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_underground_railroad"
-			add_stability = 0.02
-			add_opinion_modifier = {
-				target = GER
-				modifier = NFA_established_under_railroad
-			}
-			add_opinion_modifier = {
-				target = FRP
-				modifier = NFA_established_under_railroad
-			}
-		}
-		search_filters = { FOCUS_FILTER_STABILITY }
-	}
-
-	focus = {
-		id = NFA_restore_consitution_mainland
-		icon = GFX_goal_focusrepublicanfrance
-		prerequisite = {
-			focus = NFA_underground_railroad
-			focus = NFA_return_to_paris
-		}
-		mutually_exclusive = {
-			focus = NFA_absolutism_mainland
-		}
-		bypass = {
-			has_country_flag = NFA_demo
-		}
-		x = 1
-		y = 4
-		relative_position_id = NFA_homeland_reconquest
-		cost = 10
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_restore_consitution_mainland"
-			add_stability = 0.12
-			set_country_flag = NFA_demo
-			add_popularity = {
-				ideology = social_conservative
-				popularity = 0.05
-			}
-			add_popularity = {
-				ideology = market_liberal
-				popularity = 0.05
-			}
-			add_popularity = {
-				ideology = social_democrat
-				popularity = 0.05
-			}
-			add_popularity = {
-				ideology = social_liberal
-				popularity = 0.05
-			}
-			remove_ideas = NFA_anti_parlementarisme
-			remove_ideas = NFA_idealized_sovereign
-			add_ideas = NFA_conservative_monarchy
-			custom_effect_tooltip = NFA_restore_consitution_mainland_tooltip
-		}
-		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY }
-	}
-
-	focus = {
-		id = NFA_absolutism_mainland
-		icon = GFX_goal_POR_royal_edicts
-		prerequisite = {
-			focus = NFA_underground_railroad
-			focus = NFA_return_to_paris
-		}
-		mutually_exclusive = {
-			focus = NFA_restore_consitution_mainland
-		}
-		available = {
-			NOT = {
-				has_country_flag = NFA_demo
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		x = 3
-		y = 4
-		relative_position_id = NFA_homeland_reconquest
-		cost = 10
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_absolutism_mainland"
-			add_stability = -0.28
-		}
-		search_filters = { FOCUS_FILTER_STABILITY }
-	}
-
 	focus = {
 		id = NFA_amnistia
 		icon = GFX_focus_research
 		prerequisite = {
-			focus = NFA_restore_consitution_mainland
-			focus = NFA_absolutism_mainland
+			focus = NFA_entente_research
 		}
 		ai_will_do = {
 			factor = 10
 		}
-		x = 4
-		y = 5
-		relative_position_id = NFA_homeland_reconquest
+		x = 0
+		y = 1
+		relative_position_id = NFA_entente_research
 		cost = 10
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NFA_amnistia"
@@ -3061,187 +1712,26 @@ focus_tree = {
 	}
 
 	focus = {
-		id = NFA_nuclear_effort
-		icon = GFX_focus_wonderweapons
-		prerequisite = {
-			focus = NFA_amnistia
-		}
-		x = 3
-		y = 6
-		relative_position_id = NFA_homeland_reconquest
-		cost = 10
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_nuclear_effort"
-			add_tech_bonus = {
-				name = NFA_nuclear_effort
-				bonus = 1
-				uses = 1
-				category = nuclear
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
 		id = NFA_rocket_effort
 		icon = GFX_focus_rocketry
 		prerequisite = {
-			focus = NFA_amnistia
+			focus = NFA_artillery_focus
 		}
-		x = 5
-		y = 6
-		relative_position_id = NFA_homeland_reconquest
+		x = -4
+		y = 2
+		relative_position_id = NFA_military_preparation
 		cost = 10
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NFA_rocket_effort"
 			add_tech_bonus = {
 				name = NFA_rocket_effort
 				bonus = 1
-				uses = 1
+				uses = 2
 				category = rocketry
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
-
-	focus = {
-		id = NFA_effort_national
-		icon = GFX_goal_keepingfrancetogetherbis
-		prerequisite = {
-			focus = NFA_absolutism_mainland
-			focus = NFA_restore_consitution_mainland
-		}
-		x = 2
-		y = 5
-		relative_position_id = NFA_homeland_reconquest
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_effort_national"
-			add_equipment_to_stockpile = {
-				type = infantry_equipment_1
-				amount = 12000
-				producer = NFA
-			}
-			add_timed_idea = {
-				idea = NFA_effort_national_idea
-				days = 150
-			}
-		}
-	}
-
-	focus = {
-		id = NFA_demand_caribbean
-		icon = GFX_goal_generic_occupy_states_coastal
-		prerequisite = {
-			focus = NFA_absolutism_mainland
-			focus = NFA_restore_consitution_mainland
-		}
-		available = {
-			has_completed_focus = NFA_return_to_paris
-			controls_state = 16
-			has_war = no
-			CAF = {
-				has_war = no
-				OR = {
-					is_subject = no
-					is_subject_of = CAN
-					is_subject_of = GBR
-				}
-			}
-			NOT = {
-				country_exists = FRA
-			}
-			is_in_faction_with = CAF
-			CAF = {
-				OR = {
-					controls_state = 694	# Caraïbes Françaises
-					controls_state = 310	# Guyane Orientale
-					controls_state = 1037	# Jungle du Guyane Oriental
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		x = 0
-		y = 5
-		relative_position_id = NFA_homeland_reconquest
-		cost = 10
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_demand_caribbean"
-			add_state_claim = 694
-			add_state_claim = 310
-			add_state_claim = 1037
-			CAF = {
-			}
-		}
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-	}
-
-	focus = {
-		id = NFA_establish_maquisards
-		icon = GFX_NATFRA_francefirst
-		prerequisite = {
-			focus = NFA_homeland_reconquest
-		}
-		available = {
-			OR = {
-				AND = {
-					FRP = {
-						OR = {
-							is_subject_of = RUS
-							is_subject_of = GER
-							is_subject_of = CAR
-						}
-						OR = {
-							AND = {
-								owns_state = 21
-								controls_state = 21
-							}
-							AND = {
-								owns_state = 31
-								controls_state = 31
-							}
-						}
-					}
-					is_subject = no
-					has_war = no
-					NOT = {
-						is_in_faction_with = FRP
-					}
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		x = 5
-		y = 1
-		relative_position_id = NFA_homeland_reconquest
-		cost = 10
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NFA_establish_maquisards"
-			reverse_add_opinion_modifier = {
-				target = GER
-				modifier = NFA_established_maquis
-			}
-			if = {
-				limit = {
-					country_exists = FRP
-					FRP = { owns_state = 21 }
-				}
-				add_opinion_modifier = {
-					target = FRP
-					modifier = NFA_established_maquis
-				}
-			}
-			custom_effect_tooltip = NFA_establish_maquisards_tooltip
-		}
-	}
-
 
 #	focus = {
 #		id = NFA_seize_portuguese_guinea

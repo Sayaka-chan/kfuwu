@@ -303,11 +303,7 @@ focus_tree = {
 		relative_position_id = RUS_Centralised_Apparatus_Of_State
 		x = 0
 		y = 5
-		cost = 5
-		available = {
-			is_subject = no
-			date > 1939.6.1
-		}
+		cost = 10
 		prerequisite = {
 			focus = RUS_Secure_Central_Asia
 		}
@@ -322,7 +318,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus RUS_Rearmament_Programme"
 			add_timed_idea = {
 				idea = RUS_rearmament_programme_idea
-				days = 365
+				days = 1085
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }

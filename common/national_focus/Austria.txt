@@ -708,7 +708,7 @@ focus_tree = {
 		icon = GFX_goal_AUS_SDAP
 		x = -2
 		y = 1
-		cost = 10
+		cost = 1
 
 		relative_position_id = AUS_elections
 
@@ -954,7 +954,7 @@ focus_tree = {
 		icon = GFX_goal_AUS_CS
 		x = 2
 		y = 1
-		cost = 10
+		cost = 1
 
 		relative_position_id = AUS_elections
 
