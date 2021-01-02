@@ -51,7 +51,7 @@ GER_col_desc:0 "Once our colonies were profitable, but this is no longer the cas
 GER_mil_mis:0 "German Military Mission"
 
 GER_Fleet_In_Chaos:0 "Fleet in Chaos"
-GER_Fleet_In_Chaos_desc:0 "Since 1929, The german navy was ignored by the Kaiser who thinks the Kriegsmarine can face any threat. After the modernisation of the Canadian, British and Japanese fleets, the admirality is in a state of chaos seeing the Kriegsmarine falling behind."
+GER_Fleet_In_Chaos_desc:0 "Since the end of the Weltkrieg, The Kriegsmarine stopped receving funds because the Kaiser thinks it can face any threat. After the modernisation of the Canadian, British and Japanese fleets, it looks like the Fatherland may no longer enjoy its naval hegemony unless some major changes are made."
 
 GER_quenched_militarism:0 "Quenched Militarism"
 GER_quenched_militarism_desc:0 "Victory always comes at a cost, and the Weltkrieg was unlike any war the world had ever seen. While we may have been victorious, that didn't bring our boys home. Our families still remember that pain clearly and are not eager to experience it again."
@@ -2485,3 +2485,8 @@ ostraum.2001.a:0 "Towards a better White Ruthenia."
 ostraum.2002.t:0 "Germany has denied our Request."
 ostraum.2002.d:0 "The German Government has declined to easen the grip on our economy. In countrary, they seem to be planning to strengthen it."
 ostraum.2002.a:0 "We will have our independence in time."
+
+Ger_development_in_Austria:0 "Development in Austria"
+Ger_development_in_Turkey:0 "Development in Anatolia"
+Ger_development_in_Ukraine:0 "Development in Ruthenia"
+GER_synthetic_rubber:0 "German refineries"

@@ -3080,18 +3080,6 @@ defined_text = {
 		localization_key = MEX_Jesus_Agustin_Castro_cnav
 	}
 
-	### MLY
-
-	### MON
-
-	### MOR
-	text = {
-		trigger = {
-			has_idea = MOR_Mohammed_Ben_Aarafa_cnav
-		}
-		localization_key = MOR_Mohammed_Ben_Aarafa_cnav
-	}
-
 	### MOZ
 	text = {
 		trigger = {

@@ -9878,50 +9878,6 @@ defined_text = {
 		localization_key = MON_Sambadondogiin_Tserendorj_sec_npo
 	}
 
-	### MOR
-	text = {
-		trigger = {
-			has_idea = MOR_Abdelmalek_Belghiti_sec_mli
-		}
-		localization_key = MOR_Abdelmalek_Belghiti_sec_mli
-	}
-	text = {
-		trigger = {
-			has_idea = MOR_Messaoud_Chiguer_sec_mli
-		}
-		localization_key = MOR_Messaoud_Chiguer_sec_mli
-	}
-	text = {
-		trigger = {
-			has_idea = MOR_Ahmed_Skirej_sec_sco
-		}
-		localization_key = MOR_Ahmed_Skirej_sec_sco
-	}
-	text = {
-		trigger = {
-			has_idea = MOR_Abdelwahab_Benmansour_sec_ade
-		}
-		localization_key = MOR_Abdelwahab_Benmansour_sec_ade
-	}
-	text = {
-		trigger = {
-			has_idea = MOR_Mahjoubi_Aherdane_sec_ade
-		}
-		localization_key = MOR_Mahjoubi_Aherdane_sec_ade
-	}
-	text = {
-		trigger = {
-			has_idea = MOR_Abdullah_Kannoun_sec_pau
-		}
-		localization_key = MOR_Abdullah_Kannoun_sec_pau
-	}
-	text = {
-		trigger = {
-			has_idea = MOR_Abdelkader_Hassan_El_Assimi_sec_npo
-		}
-		localization_key = MOR_Abdelkader_Hassan_El_Assimi_sec_npo
-	}
-
 	### MOZ
 	text = {
 		trigger = {

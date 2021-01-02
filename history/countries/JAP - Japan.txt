@@ -3,19 +3,22 @@ OOB = "JAP"
 
 set_naval_oob = "JAP_naval"
 set_stability = 0.75
-set_war_support = 0.65
+set_war_support = 0.70
 set_fuel_ratio = 0.75
-set_research_slots = 4
+set_research_slots = 5
 
 set_technology = {
 	### General ###
 	electronic_mechanical_engineering = 1
 	radio = 1
 	fuel_silos = 1
+	advanced_fire_control_system = 1
+	improved_airplane_launcher = 1
 
 	### Tank ###
 	gwtank = 1
 	basic_light_tank = 1
+	improved_light_tank = 1
 
 	### Infantry ###
 	infantry_weapons = 1
@@ -28,6 +31,7 @@ set_technology = {
 	tech_military_police = 1
 	marines = 1
 	gw_artillery = 1
+	interwar_antitank = 1
 
 	### Air ###
 	early_fighter = 1
@@ -118,22 +122,22 @@ if = {
 set_convoys = 1000
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
-	amount = 800
+	amount = 2000
 	producer = JAP
 }
 add_equipment_to_stockpile = {
 	type = anti_air_equipment_1
-	amount = 200
+	amount = 1000
 	producer = JAP
 }
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 20000
+	amount = 60000
 	producer = JAP
 }
 add_equipment_to_stockpile = {
 	type = support_equipment_1
-	amount = 300
+	amount = 1000
 	producer = JAP
 }
 add_equipment_to_stockpile = {

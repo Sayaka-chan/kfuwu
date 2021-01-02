@@ -175,8 +175,8 @@ CAN_political_decisions = {
 			conscription_factor = -0.10
 		}
 
-		days_remove = 30
-		cost = 25
+		days_remove = 5
+		cost = 5
 		priority = 10
 
 		complete_effect = {
@@ -250,8 +250,8 @@ CAN_political_decisions = {
 			conscription_factor = -0.10
 		}
 
-		days_remove = 30
-		cost = 25
+		days_remove = 5
+		cost = 5
 		priority = 10
 
 		complete_effect = {
@@ -325,8 +325,8 @@ CAN_political_decisions = {
 			conscription_factor = -0.10
 		}
 
-		days_remove = 30
-		cost = 25
+		days_remove = 5
+		cost = 5
 		priority = 10
 
 		complete_effect = {
@@ -817,320 +817,6 @@ CAN_political_decisions = {
 			factor = 100
 		}
 	}
-
-	CAN_withdraw_from_entente = {
-		icon = generic_civil_support
-		allowed = { tag = CAN }
-
-		available = {
-			controls_all_owned_states = yes
-		}
-
-		visible = {
-			is_ai = no
-			has_completed_focus = CAN_new_path
-			is_in_faction_with = ENT
-			is_subject = no
-		}
-
-		priority = 10
-		cost = freedec?0
-		fire_only_once = yes
-
-		ai_will_do = {
-			factor = 0
-		}
-
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision CAN_withdraw_from_entente"
-			hidden_effect = {
-				every_other_country = {
-					limit = { is_in_faction_with = ROOT }
-					add_opinion_modifier = { target = ROOT modifier = faction_traitor }
-					add_opinion_modifier = { target = ROOT modifier = faction_traitor_trade }
-				}
-			}
-			if = {
-				limit = { tag = ENT }
-				CAN_find_entente_leader = yes
-				CAN_transfer_entente_leader = yes
-			}
-			if = {
-				limit = { is_in_array = { global.iedc_members = ROOT } }
-				remove_from_array = { array = global.iedc_members value = ROOT }
-				clr_country_flag = CAN_refused_iedc
-				CAN_remove_from_iedc = yes
-			}
-			leave_faction = yes
-			if = {
-				limit = { has_war = yes }
-				separate_peace_all_wars = yes
-			}
-			news_event = canada.323
-		}
-	}
-
-	CAN_claim_alaska = {
-		icon = generic_nationalism
-
-		allowed = { tag = CAN }
-
-		highlight_states = {
-			state = 463
-		}
-
-		available = {
-			owns_state = 471 #Yukon
-			controls_all_owned_states = yes
-			is_in_faction = no
-		}
-
-		visible = {
-			463 = {
-				is_not_claim_or_core_of_ROOT = yes
-			}
-			has_completed_focus = CAN_new_path
-			is_subject = no
-		}
-
-		fire_only_once = yes
-		cost = 50
-
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				add = 10
-				OR = {
-					owns_state = 463
-					463 = { owner = { is_subject_of = CAN } }
-				}
-			}
-		}
-
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision CAN_claim_alaska"
-			463 = {
-				save_event_target_as = claimed_state
-				add_claim_by = ROOT
-			}
-			if = {
-				limit = { NOT = { owns_state = 463 } }
-				random_country = {
-					limit = {
-						owns_state = 463
-						NOT = { is_subject_of = CAN }
-					}
-					country_event = canada.324
-				}
-			}
-			if = {
-				limit = {
-					463 = {
-						owner = { is_subject_of = CAN }
-					}
-				}
-				463 = {
-					owner = {
-						add_opinion_modifier = { target = CAN modifier = KR_outraged }
-					}
-				}
-				transfer_state = 463
-			}
-		}
-	}
-
-	CAN_core_alaska = {
-		icon = generic_form_nation
-
-		allowed = { tag = CAN }
-
-		highlight_states = {
-			state = 463
-		}
-
-		available = {
-			463 = {
-				is_owned_and_controlled_by = ROOT
-			}
-			471 = {
-				is_owned_and_controlled_by = ROOT
-			}
-		}
-
-		visible = {
-			has_completed_focus = CAN_new_path
-			is_subject = no
-			463 = {
-				is_owned_by = ROOT
-				is_claimed_by = ROOT
-				NOT = { is_core_of = ROOT }
-			}
-		}
-
-		modifier = {
-			political_power_cost = 0.50
-		}
-
-		fire_only_once = no
-		cost = 50
-		days_remove = 120
-		ai_will_do = {
-			factor = 10
-		}
-
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision CAN_core_alaska"
-		}
-		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove CAN_core_alaska"
-			hidden_effect = { remove_state_claim = 463 }
-			add_state_core = 463
-		}
-	}
-
-	CAN_claim_washington = {
-		icon = generic_nationalism
-
-		allowed = { tag = CAN }
-
-		highlight_states = {
-			state = 386
-		}
-
-		available = {
-			owns_state = 473 #British Columbia
-			controls_all_owned_states = yes
-			is_in_faction = no
-		}
-
-		visible = {
-			is_ai = no
-			386 = {
-				is_not_claim_or_core_of_ROOT = yes
-			}
-			has_completed_focus = CAN_new_path
-			is_subject = no
-		}
-
-		fire_only_once = yes
-		cost = 100
-
-		ai_will_do = {
-			factor = 0
-		}
-
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision CAN_claim_washington"
-			386 = {
-				save_event_target_as = claimed_state
-				add_claim_by = ROOT
-			}
-			if = {
-				limit = {
-					386 = {
-						owner = { is_american_tag = yes }
-					}
-				}
-				386 = {
-					owner = {
-						add_state_claim = 473
-					}
-				}
-			}
-			if = {
-				limit = { NOT = { owns_state = 386 } }
-				random_country = {
-					limit = {
-						owns_state = 386
-						NOT = { is_subject_of = CAN }
-					}
-					country_event = canada.324
-				}
-			}
-			if = {
-				limit = {
-					386 = {
-						owner = { is_subject_of = CAN }
-					}
-				}
-				386 = {
-					owner = {
-						add_opinion_modifier = { target = CAN modifier = KR_outraged }
-					}
-				}
-				transfer_state = 386
-			}
-		}
-	}
-
-	CAN_claim_maine = {
-		icon = generic_nationalism
-
-		allowed = { tag = CAN }
-
-		highlight_states = {
-			state = 357
-		}
-
-		available = {
-			owns_state = 465 #New Brunswick
-			controls_all_owned_states = yes
-			is_in_faction = no
-		}
-
-		visible = {
-			357 = {
-				is_not_claim_or_core_of_ROOT = yes
-			}
-			has_completed_focus = CAN_new_path
-			is_subject = no
-		}
-
-		fire_only_once = yes
-		cost = 100
-
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				add = 10
-				OR = {
-					owns_state = 463
-					463 = { owner = { is_subject_of = CAN } }
-				}
-			}
-		}
-
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision CAN_claim_maine"
-			357 = {
-				save_event_target_as = claimed_state
-				add_claim_by = ROOT
-			}
-			if = {
-				limit = { NOT = { owns_state = 357 } }
-				random_country = {
-					limit = {
-						owns_state = 357
-						NOT = { is_subject_of = CAN }
-					}
-					country_event = canada.324
-				}
-			}
-			if = {
-				limit = {
-					357 = {
-						owner = { is_subject_of = CAN }
-					}
-				}
-				357 = {
-					owner = {
-						add_opinion_modifier = { target = CAN modifier = KR_outraged }
-					}
-				}
-				transfer_state = 357
-			}
-		}
-	}
 }
 
 economy_decisions = {
@@ -1147,11 +833,11 @@ economy_decisions = {
 			owns_state = 276
 		}
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 2
 		}
 		fire_only_once = yes
 		cost = 25
-		days_remove = 90
+		days_remove = 60
 		ai_will_do = { factor = 50 }
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision CAN_civ_in_toronto"
@@ -1183,11 +869,11 @@ economy_decisions = {
 			owns_state = 832
 		}
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 2
 		}
 		fire_only_once = yes
 		cost = 25
-		days_remove = 90
+		days_remove = 60
 		ai_will_do = { factor = 50 }
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision CAN_civ_in_montreal"
@@ -1218,11 +904,11 @@ economy_decisions = {
 			owns_state = 468
 		}
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 2
 		}
 		fire_only_once = yes
 		cost = 25
-		days_remove = 90
+		days_remove = 60
 		ai_will_do = { factor = 50 }
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision CAN_civ_in_stlawrence"
@@ -1253,11 +939,11 @@ economy_decisions = {
 			owns_state = 464
 		}
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 2
 		}
 		fire_only_once = yes
 		cost = 25
-		days_remove = 90
+		days_remove = 60
 		ai_will_do = { factor = 50 }
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision CAN_civ_in_halifax"
@@ -1288,11 +974,11 @@ economy_decisions = {
 			owns_state = 470
 		}
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 2
 		}
 		fire_only_once = yes
 		cost = 25
-		days_remove = 90
+		days_remove = 60
 		ai_will_do = { factor = 50 }
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision CAN_civ_in_alberta"
@@ -1323,11 +1009,11 @@ economy_decisions = {
 			owns_state = 473
 		}
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 2
 		}
 		fire_only_once = yes
 		cost = 25
-		days_remove = 90
+		days_remove = 60
 		ai_will_do = { factor = 50 }
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision CAN_civ_in_vancouver"
@@ -1358,11 +1044,11 @@ economy_decisions = {
 			owns_state = 739
 		}
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 2
 		}
 		fire_only_once = yes
 		cost = 25
-		days_remove = 90
+		days_remove = 60
 		ai_will_do = { factor = 50 }
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision CAN_mil_in_ottawa"
@@ -1398,11 +1084,11 @@ economy_decisions = {
 			owns_state = 466
 		}
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 2
 		}
 		fire_only_once = yes
 		cost = 25
-		days_remove = 90
+		days_remove = 60
 		ai_will_do = { factor = 50 }
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision CAN_mil_in_quebec"
@@ -1438,11 +1124,11 @@ economy_decisions = {
 			owns_state = 467
 		}
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 2
 		}
 		fire_only_once = yes
 		cost = 25
-		days_remove = 90
+		days_remove = 60
 		ai_will_do = { factor = 50 }
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision CAN_mil_in_winnipeg"
@@ -1478,11 +1164,11 @@ economy_decisions = {
 			owns_state = 465
 		}
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 2
 		}
 		fire_only_once = yes
 		cost = 25
-		days_remove = 90
+		days_remove = 60
 		ai_will_do = { factor = 50 }
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision CAN_mil_in_newbrunswick"
@@ -1515,11 +1201,11 @@ economy_decisions = {
 			owns_state = 331
 		}
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 2
 		}
 		fire_only_once = yes
 		cost = 25
-		days_remove = 90
+		days_remove = 60
 		ai_will_do = { factor = 50 }
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision CAN_mil_in_newfoundland"
@@ -1552,11 +1238,11 @@ economy_decisions = {
 			owns_state = 682
 		}
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 2
 		}
 		fire_only_once = yes
 		cost = 25
-		days_remove = 90
+		days_remove = 60
 		ai_will_do = { factor = 50 }
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision CAN_mil_in_thunderbay"
@@ -1587,11 +1273,11 @@ economy_decisions = {
 			owns_state = 466
 		}
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 2
 		}
 		fire_only_once = yes
 		cost = 25
-		days_remove = 90
+		days_remove = 45
 		ai_will_do = { factor = 50 }
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision CAN_nav_in_quebec"
@@ -1622,11 +1308,11 @@ economy_decisions = {
 			owns_state = 331
 		}
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 2
 		}
 		fire_only_once = yes
 		cost = 25
-		days_remove = 90
+		days_remove = 45
 		ai_will_do = { factor = 50 }
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision CAN_nav_in_newfoundland"
@@ -1657,11 +1343,11 @@ economy_decisions = {
 			owns_state = 740
 		}
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 2
 		}
 		fire_only_once = yes
 		cost = 25
-		days_remove = 90
+		days_remove = 45
 		ai_will_do = { factor = 50 }
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision CAN_nav_in_victoria"
@@ -1692,11 +1378,11 @@ economy_decisions = {
 			owns_state = 473
 		}
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 2
 		}
 		fire_only_once = yes
 		cost = 25
-		days_remove = 90
+		days_remove = 45
 		ai_will_do = { factor = 50 }
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision CAN_nav_in_vancouver"
@@ -1727,11 +1413,11 @@ economy_decisions = {
 			owns_state = 464
 		}
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 2
 		}
 		fire_only_once = yes
 		cost = 25
-		days_remove = 90
+		days_remove = 45
 		ai_will_do = { factor = 50 }
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision CAN_nav_in_halifax"

@@ -10516,68 +10516,6 @@ defined_text = {
 		localization_key = MON_Yu_Pinqing_eco_pau
 	}
 
-	### MOR
-	text = {
-		trigger = {
-			has_idea = MOR_Malika_al_Fassi_eco_tot
-		}
-		localization_key = MOR_Malika_al_Fassi_eco_tot
-	}
-	text = {
-		trigger = {
-			has_idea = MOR_Said_Hajji_eco_tot
-		}
-		localization_key = MOR_Said_Hajji_eco_tot
-	}
-	text = {
-		trigger = {
-			has_idea = MOR_Abdelmajid_Benjelloun_eco_sli
-		}
-		localization_key = MOR_Abdelmajid_Benjelloun_eco_sli
-	}
-	text = {
-		trigger = {
-			has_idea = MOR_Abdelhadi_Tazi_eco_mli
-		}
-		localization_key = MOR_Abdelhadi_Tazi_eco_mli
-	}
-	text = {
-		trigger = {
-			has_idea = MOR_Driss_Ben_Omar_El_Alami_eco_ade
-		}
-		localization_key = MOR_Driss_Ben_Omar_El_Alami_eco_ade
-	}
-	text = {
-		trigger = {
-			has_idea = MOR_Mulai_Ahmed_er_Raisuni_eco_ade
-		}
-		localization_key = MOR_Mulai_Ahmed_er_Raisuni_eco_ade
-	}
-	text = {
-		trigger = {
-			has_idea = MOR_Sayyidi_Muhammad_ibn_al_Habib_ibn_as_Siddiq_al_Amghari_al_Idrisi_al_Husayni_eco_ade
-		}
-		localization_key = MOR_Sayyidi_Muhammad_ibn_al_Habib_ibn_as_Siddiq_al_Amghari_al_Idrisi_al_Husayni_eco_ade
-	}
-	text = {
-		trigger = {
-			has_idea = MOR_Muhammad_Taqi_ud_Din_bin_Abdil_Qadir_Al_Hilali_eco_pau
-		}
-		localization_key = MOR_Muhammad_Taqi_ud_Din_bin_Abdil_Qadir_Al_Hilali_eco_pau
-	}
-	text = {
-		trigger = {
-			has_idea = MOR_Abdelkrim_Ghallab_eco_npo
-		}
-		localization_key = MOR_Abdelkrim_Ghallab_eco_npo
-	}
-	text = {
-		trigger = {
-			has_idea = MOR_Caid_Medbough_eco_npo
-		}
-		localization_key = MOR_Caid_Medbough_eco_npo
-	}
-
 	### MOZ
 	text = {
 		trigger = {

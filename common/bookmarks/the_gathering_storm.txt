@@ -61,7 +61,6 @@ bookmarks = {
 			focuses = {
 				CAN_draft_bill_c7
 				CAN_preparations_for_war
-				CAN_canadian_referendum
 			}
 		}
 
@@ -81,7 +80,6 @@ bookmarks = {
 			}
 
 			focuses = {
-				RUS_A_New_Russia
 			}
 		}
 

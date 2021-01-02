@@ -4768,32 +4768,6 @@ defined_text = {
 		localization_key = MON_Pavel_P_Pappengut_cos_sco
 	}
 
-	### MOR
-	text = {
-		trigger = {
-			has_idea = MOR_Caid_Medbough_cos
-		}
-		localization_key = MOR_Caid_Medbough_cos
-	}
-	text = {
-		trigger = {
-			has_idea = MOR_Driss_Ben_Omar_El_Alami_cos
-		}
-		localization_key = MOR_Driss_Ben_Omar_El_Alami_cos
-	}
-	text = {
-		trigger = {
-			has_idea = MOR_Khalili_Ben_Mohamed_Al_Bachir_Rguibi_cos
-		}
-		localization_key = MOR_Khalili_Ben_Mohamed_Al_Bachir_Rguibi_cos
-	}
-	text = {
-		trigger = {
-			has_idea = MOR_Mahjoubi_Aherdane_cos
-		}
-		localization_key = MOR_Mahjoubi_Aherdane_cos
-	}
-
 	### MOZ
 	text = {
 		trigger = {

@@ -954,10 +954,6 @@ focus_tree = {
 		id = NFA_dakar_algiers_airway
 		icon = GFX_goal_generic_air_fighter2
 		available = {
-			NOT = {
-				has_completed_focus = NFA_return_to_marseille
-				has_completed_focus = NFA_return_to_paris
-			}
 			controls_state = 459
 			controls_state = 272
 		}
@@ -1424,9 +1420,6 @@ focus_tree = {
 			factor = 10
 		}
 		icon = GFX_goal_NFA_De_Gaulle_Plan
-		mutually_exclusive = {
-			focus = NFA_Darlan_Focus
-		}
 		x = 20
 		y = 0
 		cost = 10

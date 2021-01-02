@@ -178,17 +178,16 @@ ideas = {
 			allowed = { always = no }
 			picture = HUN_secreat_rearmnament
 			removal_cost = -1
-			modifier = {
             equipment_bonus = {
-                artillery = {
-                    build_cost_ic = -0.1 instant = yes
-                }
-                anti_air = {
-                    build_cost_ic = -0.1 instant = yes
-                }
-                anti_tank = {
-                    build_cost_ic = -0.1 instant = yes
-                }
+                	artillery = {
+                    	build_cost_ic = -0.1 instant = yes
+                	}
+                	anti_air = {
+                    	build_cost_ic = -0.1 instant = yes
+                	}
+                	anti_tank = {
+                   		build_cost_ic = -0.1 instant = yes
+            		}
 			}
 		}
 
@@ -255,9 +254,10 @@ ideas = {
 			allowed = { always = no }
 			picture = generic_goods_red_bonus
 			removal_cost = -1
-			modifier = {
-				 infantry_equipment = {
-                    build_cost_ic = -0.2 instant = yes
+			equipment_bonus = {
+				infantry_equipment = {
+				build_cost_ic = -0.1 instant = yes
+				}
 			}
 		}
 
@@ -320,12 +320,22 @@ ideas = {
 				stability_factor = 0.02
 			}
 		}
-	}
-##############
-# Companies
-##############
 
-#### General ####
+		UKR_state_revanchism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea UKR_state_revanchism"}
+			picture = generic_morale_bonus
+			targeted_modifier = {
+				tag = RUS
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+		}
+	}
+	##############
+	# Companies
+	##############
+
+	#### General ####
 	industrial_concern = {
 
 		metallurgical_combine_azovstal = {
@@ -365,7 +375,7 @@ ideas = {
 		}
 	}
 
-#### Weapons Manufacturer ####
+	#### Weapons Manufacturer ####
 	weapons_manufacturer = {
 		designer = yes
 
@@ -387,15 +397,6 @@ ideas = {
 			}
 		}
 
-		industrie_belliche_liguri = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea industrie_belliche_liguri"}
-			allowed = { original_tag = SRI }
-			traits = { artillery_producer_offense_1 }
-			research_bonus = {
-				artillery = 0.1
-			}
-		}
-
 		zaporizhia_automobile_plant = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea zaporizhia_automobile_plant"}
 			allowed = { original_tag = UKR }
@@ -407,7 +408,7 @@ ideas = {
 
 	}
 
-#### Heavy Equipment Manufacturer ####
+	#### Heavy Equipment Manufacturer ####
 	tank_manufacturer = {
 		designer = yes
 
@@ -432,7 +433,7 @@ ideas = {
 		}
 	}
 
-#### Air and Naval Manufacturer ####
+	#### Air and Naval Manufacturer ####
 	naval_manufacturer = {
 		designer = yes
 
@@ -487,5 +488,5 @@ ideas = {
 		}
 
 	}
-
 }
+

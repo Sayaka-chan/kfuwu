@@ -44,13 +44,6 @@ dont_research_mobile_warfare_if_choice_made = {
 			tag = HOL
 			NOT = { has_country_flag = HOL_army_mobile }
 		}
-		AND = {
-			tag = ITA
-		}
-		AND = {
-			tag = RUS
-			NOT = { has_completed_focus = RUS_Spearhead_Doctrine }
-		}
 	}
 }
 

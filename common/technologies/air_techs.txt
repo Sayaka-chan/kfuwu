@@ -48,6 +48,11 @@ technologies = {
 	
 	cv_early_fighter = {
 
+		allow_branch = {
+
+			always=no
+		}
+
 		enable_equipments = {
 			cv_fighter_equipment_0
 		}
@@ -141,12 +146,17 @@ technologies = {
 	
 	cv_fighter1 = {
 
+		allow_branch = {
+
+			always=no
+		}
+
 		enable_equipments = {
 			cv_fighter_equipment_1
 		}
 	
 		research_cost = 1 #Carrier Variant
-		start_year = 1936
+		start_year = 1960
 		
 		categories = {
 			naval_air
@@ -256,12 +266,17 @@ technologies = {
 	
 	cv_fighter2 = {
 
+		allow_branch = {
+
+			always=no
+		}
+
 		enable_equipments = {
 			cv_fighter_equipment_2
 		}
 	
 		research_cost = 1.0 #Carrier Variant
-		start_year = 1940
+		start_year = 1960
 		
 		categories = {
 			naval_air
@@ -544,12 +559,17 @@ technologies = {
 	
 	cv_CAS1 = {
 
+		allow_branch = {
+
+			always=no
+		}
+
 		enable_equipments = {
 			cv_CAS_equipment_1
 		}
 	
 		research_cost = 1.0 #Carrier Variant
-		start_year = 1936
+		start_year = 1960
 		
 		categories = {
 			naval_air
@@ -651,12 +671,17 @@ technologies = {
 	
 	cv_CAS2 = {
 
+		allow_branch = {
+
+			always=no
+		}
+
 		enable_equipments = {
 			cv_CAS_equipment_2
 		}
 	
 		research_cost = 1.0 #Carrier Variant
-		start_year = 1940
+		start_year = 1960
 		
 		categories = {
 			naval_air
@@ -851,12 +876,17 @@ technologies = {
 	
 	cv_naval_bomber1 = {
 
+		allow_branch = {
+
+			always=no
+		}
+
 		enable_equipments = {
 			cv_nav_bomber_equipment_1
 		}
 	
 		research_cost = 1.0 #Carrier Variant
-		start_year = 1936
+		start_year = 1960
 		
 		categories = {
 			naval_air
@@ -957,12 +987,17 @@ technologies = {
 	
 	cv_naval_bomber2 = {
 
+		allow_branch = {
+
+			always=no
+		}
+
 		enable_equipments = {
 			cv_nav_bomber_equipment_2
 		}
 	
 		research_cost = 1.0 #Carrier Variant
-		start_year = 1940
+		start_year = 1960
 		
 		categories = {
 			naval_air

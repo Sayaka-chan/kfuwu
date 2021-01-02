@@ -4,7 +4,6 @@ AUS = "countries/WestEur.txt"
 BAV = "countries/WestEur.txt"
 BEL = "countries/WestEur.txt"
 BOS = "countries/WestEur.txt"
-BRI = "countries/WestEur.txt"
 CAF = "countries/WestEur.txt"
 CAN = "countries/WestEur.txt"
 CAR = "countries/WestEur.txt"
@@ -79,7 +78,6 @@ UKR = "countries/EastEur.txt"
 
 ### Asian ###
 ALO = "countries/Asian.txt"
-BHU = "countries/Asian.txt"
 BOR = "countries/Asian.txt"
 BUR = "countries/Asian.txt"
 CAM = "countries/Asian.txt"
@@ -98,7 +96,6 @@ QIE = "countries/Asian.txt" #Qing Empire
 PHI = "countries/Asian.txt"
 SAR = "countries/Asian.txt"
 SIA = "countries/Asian.txt"
-SIK = "countries/Asian.txt"
 TAJ = "countries/Asian.txt" #Tajikistan
 VIE = "countries/Asian.txt"
 
@@ -125,7 +122,6 @@ JOR = "countries/MidEast.txt"
 KUR = "countries/MidEast.txt" #Kurdreich
 LBA = "countries/MidEast.txt"
 LEB = "countries/MidEast.txt" #Lebanon
-MOR = "countries/MidEast.txt"
 OMA = "countries/MidEast.txt"
 PAL = "countries/MidEast.txt"
 PER = "countries/MidEast.txt"

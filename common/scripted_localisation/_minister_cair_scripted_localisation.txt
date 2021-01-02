@@ -3376,8 +3376,6 @@ defined_text = {
 		localization_key = MON_Demberel_Jambaa_cair_sco
 	}
 
-	### MOR
-
 	### MOZ
 	text = {
 		trigger = {

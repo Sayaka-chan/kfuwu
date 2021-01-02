@@ -6,7 +6,7 @@ state = {
 	state_category = two
 
 	history = {
-		owner = SPR
+		owner = FRA
 		buildings = {
 			infrastructure = 6
 			air_base = 1
@@ -17,8 +17,7 @@ state = {
 				naval_base = 1
 			}
 		}
-		add_core_of = SPR
-		add_core_of = CAT
+		add_core_of = VEN
 	}
 	provinces = {
 		7114 9793 9845

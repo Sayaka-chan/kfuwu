@@ -4816,32 +4816,6 @@ defined_text = {
 		localization_key = MON_Manlaibaatar_Damdinsueren_carm_sco
 	}
 
-	### MOR
-	text = {
-		trigger = {
-			has_idea = MOR_Assou_Oubasslam_carm
-		}
-		localization_key = MOR_Assou_Oubasslam_carm
-	}
-	text = {
-		trigger = {
-			has_idea = MOR_Moha_ou_Said_l'Irraoui_carm
-		}
-		localization_key = MOR_Moha_ou_Said_l'Irraoui_carm
-	}
-	text = {
-		trigger = {
-			has_idea = MOR_Mohamed_Meziane_carm
-		}
-		localization_key = MOR_Mohamed_Meziane_carm
-	}
-	text = {
-		trigger = {
-			has_idea = MOR_Mouha_ou_Hammou_Zayani_carm
-		}
-		localization_key = MOR_Mouha_ou_Hammou_Zayani_carm
-	}
-
 	### MOZ
 	text = {
 		trigger = {

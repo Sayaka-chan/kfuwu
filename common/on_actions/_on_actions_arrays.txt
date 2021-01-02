@@ -17,7 +17,6 @@ on_actions = {
 			add_to_array = { global.european_tags_array = BAV }
 			add_to_array = { global.european_tags_array = BEL }
 			add_to_array = { global.european_tags_array = BOS }
-			add_to_array = { global.european_tags_array = BRI }
 			add_to_array = { global.european_tags_array = BUL }
 			add_to_array = { global.european_tags_array = CAR }
 			add_to_array = { global.european_tags_array = CAT }
@@ -117,7 +116,6 @@ on_actions = {
 
 			#Set up Indian tags array
 			add_to_array = { global.indian_tags_array = BHC }
-			add_to_array = { global.indian_tags_array = BHU }
 			add_to_array = { global.indian_tags_array = BUR }
 			add_to_array = { global.indian_tags_array = CEY }
 			add_to_array = { global.indian_tags_array = DEH }
@@ -152,7 +150,6 @@ on_actions = {
 			#Set up North African tags array
 			add_to_array = { global.north_african_tags_array = EGY }
 			add_to_array = { global.north_african_tags_array = LBA }
-			add_to_array = { global.north_african_tags_array = MOR }
 			add_to_array = { global.north_african_tags_array = NFA }
 			add_to_array = { global.north_african_tags_array = SUD }
 

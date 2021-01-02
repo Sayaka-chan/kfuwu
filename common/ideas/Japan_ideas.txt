@@ -24,8 +24,11 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea JAP_narrow_rail"}
 			picture = JAP_Shitty_Tracks
 			modifier = {
-				local_resources_factor = -0.10
-				production_speed_infrastructure_factor = 0.10
+				production_speed_infrastructure_factor = 0.15
+				research_speed_factor = 0.10
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
 			}
 		}
 
@@ -34,7 +37,7 @@ ideas = {
 			picture = generic_local_self_management
 			modifier = {
 				stability_factor = -0.30
-				war_support_factor = -0.30
+				war_support_factor = -0.10
 			}
 		}
 
@@ -283,7 +286,7 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ZAI_research"}
 			picture = generic_research_bonus
 			modifier = {
-				research_speed_factor = 0.05
+				research_speed_factor = -0.05
 			}
 		}
 
@@ -474,7 +477,8 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea JAP_MIL_DOC_MOB_idea_1"}
 			picture = FRA_factory_strikes
 			modifier = {
-				army_attack_factor = 0.05
+				army_attack_factor = 0.10
+				army_defence_factor = 0.10
 			}
 		}
 
@@ -596,11 +600,6 @@ ideas = {
 
 			targeted_modifier = {
 				tag = QIE
-				attack_bonus_against = 0.2
-				defense_bonus_against = 0.05
-			}
-			targeted_modifier = {
-				tag = SIK
 				attack_bonus_against = 0.2
 				defense_bonus_against = 0.05
 			}

@@ -44,7 +44,7 @@ focus_tree = {
 	focus = {
 		id = CAN_privy_council
 		icon = GFX_goal_generic_civilian_oversight
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = CAN_kings_speech
 		}
@@ -81,7 +81,7 @@ focus_tree = {
 	focus = {
 		id = CAN_imperial_conference
 		icon = GFX_focus_chi_british_cooperation
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = CAN_kings_speech
 		}
@@ -129,7 +129,7 @@ focus_tree = {
 	focus = {
 		id = CAN_fate_of_the_senate
 		icon = GFX_GRE_empower_monarchy
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = CAN_kings_speech
 		}
@@ -166,7 +166,7 @@ focus_tree = {
 	focus = {
 		id = CAN_draft_bill_c7
 		icon = GFX_goal_CAN_parliament
-		cost = 8
+		cost = 5
 		prerequisite = {
 			focus = CAN_privy_council
 		}
@@ -997,7 +997,7 @@ focus_tree = {
 	focus = {
 		id = CAN_prairie_oil
 		icon = GFX_goal_further_oil
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = CAN_invest_resources
 		}
@@ -1037,7 +1037,7 @@ focus_tree = {
 	focus = {
 		id = CAN_explore_the_north
 		icon = GFX_goal_CAN_explore_north
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = CAN_prairie_oil
 		}
@@ -1448,7 +1448,7 @@ focus_tree = {
 	focus = {
 		id = CAN_we_need_industry
 		icon = GFX_goal_factory_complex
-		cost = 6
+		cost = 5
 		prerequisite = {
 			focus = CAN_explore_the_north
 		}
@@ -1457,12 +1457,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = CAN_university_of_ottawa
-		}
-		mutually_exclusive = {
-			focus = CAN_we_need_munitions
-		}
-		mutually_exclusive = {
-			focus = CAN_we_need_ships
 		}
 		relative_position_id = CAN_crown_corporations
 		x = -2
@@ -1487,6 +1481,14 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_we_need_industry"
+			add_tech_bonus = {
+				name = CAN_we_need_industry
+				bonus = 1
+				uses = 2
+				category = efficiency_tech
+				category = concentrated_industry_tech
+			}
+
 			random_owned_state = {
 				limit = {
 					is_core_of = CAN
@@ -1533,7 +1535,7 @@ focus_tree = {
 	focus = {
 		id = CAN_we_need_munitions
 		icon = GFX_goal_industry_air
-		cost = 6
+		cost = 5
 		prerequisite = {
 			focus = CAN_explore_the_north
 		}
@@ -1542,12 +1544,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = CAN_university_of_ottawa
-		}
-		mutually_exclusive = {
-			focus = CAN_we_need_industry
-		}
-		mutually_exclusive = {
-			focus = CAN_we_need_ships
 		}
 		relative_position_id = CAN_crown_corporations
 		x = 0
@@ -1582,10 +1578,10 @@ focus_tree = {
 					is_controlled_by = CAN
 					arms_factory > 0
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1622,7 +1618,7 @@ focus_tree = {
 	focus = {
 		id = CAN_we_need_ships
 		icon = GFX_goal_generic_navy_battleship
-		cost = 6
+		cost = 5
 		prerequisite = {
 			focus = CAN_explore_the_north
 		}
@@ -1631,12 +1627,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = CAN_university_of_ottawa
-		}
-		mutually_exclusive = {
-			focus = CAN_we_need_industry
-		}
-		mutually_exclusive = {
-			focus = CAN_we_need_munitions
 		}
 		relative_position_id = CAN_crown_corporations
 		x = 2
@@ -1671,10 +1661,10 @@ focus_tree = {
 					is_controlled_by = CAN
 					dockyard > 0
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1684,10 +1674,10 @@ focus_tree = {
 					is_controlled_by = CAN
 					dockyard > 0
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1697,10 +1687,10 @@ focus_tree = {
 					is_controlled_by = CAN
 					dockyard > 0
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1743,7 +1733,8 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_expand_air_force"
-			air_experience = 25
+			air_experience = 475
+			custom_effect_tooltip = unlock_fighter_tt
 			if = {
 				limit = { NOT = { has_idea_with_trait = chief_of_air_force } }
 				add_ideas = CAN_William_Avery_Bishop_cair_ade
@@ -2085,7 +2076,6 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_fighter_programme"
-			custom_effect_tooltip = unlock_fighter_tt
 			set_technology = {
 			    fighter2 = 1
 			}
@@ -2406,7 +2396,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = naval_base
-					level = 2
+					level = 10
 					province = 7361
 					instant_build = yes
 				}
@@ -2457,14 +2447,6 @@ focus_tree = {
 				add_building_construction = {
 					type = dockyard
 					level = 3
-					instant_build = yes
-				}
-			}
-			740 = {
-				add_building_construction = {
-					type = naval_base
-					level = 2
-					province = 7259
 					instant_build = yes
 				}
 			}
@@ -2717,9 +2699,8 @@ focus_tree = {
 			add_tech_bonus = {
 				name = CAN_canadian_destroyers
 				bonus = 1
-				uses = 2
+				uses = 1
 				category = dd_tech
-				category = ss_tech
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -2753,9 +2734,8 @@ focus_tree = {
 			add_tech_bonus = {
 				name = CAN_canadian_cruisers
 				bonus = 1
-				uses = 2
+				uses = 1
 				category = cl_tech
-				category = ca_tech
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -2789,9 +2769,8 @@ focus_tree = {
 			add_tech_bonus = {
 				name = CAN_canadian_carriers
 				bonus = 1
-				uses = 2
+				uses = 1
 				category = cv_tech
-				category = naval_air
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -2825,10 +2804,8 @@ focus_tree = {
 			add_tech_bonus = {
 				name = CAN_canadian_battleships
 				bonus = 1
-				uses = 2
+				uses = 1
 				category = bb_tech
-				category = bc_tech
-				category = shbb_tech
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -3441,7 +3418,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = CAN_infantry_motorization
 				bonus = 1
-				uses = 2
+				uses = 1
 				category = motorized_equipment
 			}
 		}
@@ -3646,8 +3623,9 @@ focus_tree = {
 			add_tech_bonus = {
 				name = CAN_expand_training
 				bonus = 1
-				uses = 1
-				category = mountaineers_tech
+				uses = 2
+				category = shock_tech
+				category = desert_tech
 			}
 		}
 		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_RESEARCH }
@@ -3857,10 +3835,6 @@ focus_tree = {
 			factor = 10
 			modifier = {
 				factor = 2
-				country_exists = CSA
-			}
-			modifier = {
-				factor = 2
 				has_war = yes
 			}
 			modifier = {
@@ -3905,10 +3879,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
-			modifier = {
-				factor = 2
-				country_exists = CSA
-			}
 			modifier = {
 				factor = 2
 				has_war = yes
@@ -3960,10 +3930,6 @@ focus_tree = {
 				has_war = yes
 			}
 			modifier = {
-				factor = 2
-				country_exists = CSA
-			}
-			modifier = {
 				factor = 1.5
 				date > 1938.1.1
 			}
@@ -4005,10 +3971,6 @@ focus_tree = {
 			factor = 10
 			modifier = {
 				factor = 2
-				country_exists = CSA
-			}
-			modifier = {
-				factor = 2
 				has_war = yes
 			}
 			modifier = {
@@ -4029,8 +3991,8 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_foreign_contractors"
 			set_country_flag = CAN_has_foreign_contractors
 			custom_effect_tooltip = unlock_massey_tt
-			add_offsite_building = { type = arms_factory level = 1 }
-			add_offsite_building = { type = dockyard level = 1 }
+			add_offsite_building = { type = arms_factory level = 2 }
+			add_offsite_building = { type = dockyard level = 2 }
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
@@ -4073,14 +4035,14 @@ focus_tree = {
 			add_tech_bonus = {
 				name = CAN_self_propelled_guns
 				bonus = 1
-				uses = 1
-				category = cat_light_spg
+				uses = 2
+				category = cat_anti_tank
 			}
 			add_tech_bonus = {
 				name = CAN_self_propelled_guns
 				bonus = 1
-				uses = 1
-				category = armor
+				uses = 2
+				category = cat_anti_air
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -4131,374 +4093,6 @@ focus_tree = {
 				add_idea = CAN_munitions_idea_2
 			}
 		}
-	}
-
-	### RETURN OF THE KING
-
-	focus = {
-		id = CAN_return_of_the_king
-		icon = GFX_GBR_big_ben
-		cost = 4
-		x = 41
-		y = 1
-
-		available = {
-			is_subject = no
-			NOT = { country_exists = GBR }
-			126 = { is_owned_and_controlled_by_ROOT_or_subject = yes } #Greater London Area
-		}
-
-		ai_will_do = {
-			factor = 100
-		}
-
-		available_if_capitulated = yes
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-
-		bypass = {
-			country_exists = GBR
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus CAN_return_of_the_king"
-			country_event = uk.1
-		}
-	}
-
-	focus = {
-		id = CAN_canadian_referendum
-		icon = GFX_goal_CAN_referendum
-		cost = 5
-		prerequisite = {
-			focus = CAN_return_of_the_king
-		}
-		mutually_exclusive = {
-			focus = CAN_loyalty_to_the_empire
-		}
-		relative_position_id = CAN_return_of_the_king
-		x = -1
-		y = 1
-
-		available = {
-			is_subject = no
-			has_war = no
-			has_elected_government = yes
-			country_exists = GBR
-			OR = {
-				has_country_flag = CAN_warmeasact_invoked
-				custom_trigger_tooltip = {
-					tooltip = CAN_had_low_king_pop
-					check_variable = { CAN_was_king_popularity < 3 }
-				}
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = no
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-
-		select_effect = {
-			country_event = { id = canada.304 days = 1 } #Debate begins
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus CAN_canadian_referendum"
-			country_event = canada.315
-		}
-	}
-
-	focus = {
-		id = CAN_canadian_constitution
-		icon = GFX_goal_constitutional_guarantees
-		cost = 6
-		prerequisite = {
-			focus = CAN_canadian_referendum
-		}
-		relative_position_id = CAN_return_of_the_king
-		x = -2
-		y = 2
-
-		available = {
-			has_country_flag = CAN_is_republic
-			is_subject = no
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus CAN_canadian_constitution"
-			country_event = canada.321
-		}
-	}
-
-	focus = {
-		id = CAN_new_path
-		icon = GFX_focus_generic_eagle
-		cost = 6
-		prerequisite = {
-			focus = CAN_canadian_constitution
-		}
-		relative_position_id = CAN_return_of_the_king
-		x = -2
-		y = 3
-
-		available = {
-			has_country_flag = CAN_is_republic
-			is_subject = no
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = no
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus CAN_new_path"
-			country_event = canada.322
-			add_ideas = CAN_new_nationalism
-		}
-		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_MANPOWER }
-	}
-
-	focus = {
-		id = CAN_loyalty_to_the_empire
-		icon = GFX_goal_british_monarchy
-		cost = 6
-		prerequisite = {
-			focus = CAN_return_of_the_king
-		}
-		mutually_exclusive = {
-			focus = CAN_canadian_referendum
-		}
-		relative_position_id = CAN_return_of_the_king
-		x = 1
-		y = 1
-
-		available = {
-			is_subject = no
-			has_war = no
-			has_elected_government = yes
-			GBR = {
-				exists = yes
-				is_in_faction_with = ROOT
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = no
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-
-		bypass = {
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus CAN_loyalty_to_the_empire"
-			set_country_flag = CAN_loyal_to_britain
-			add_political_power = 100
-			add_stability = 0.05
-			add_opinion_modifier = { target = GBR modifier = KR_close_allies }
-			reverse_add_opinion_modifier = { target = GBR modifier = KR_close_allies }
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
-	}
-
-	focus = {
-		id = CAN_british_investments
-		icon = GFX_goal_bag_of_money
-		cost = 6
-		prerequisite = {
-			focus = CAN_loyalty_to_the_empire
-			focus = CAN_canadian_referendum
-		}
-		relative_position_id = CAN_return_of_the_king
-		x = 2
-		y = 2
-
-		available = {
-			has_country_flag = CAN_loyal_to_britain
-			is_subject = no
-			has_elected_government = yes
-			GBR = {
-				exists = yes
-				is_in_faction_with = ROOT
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = no
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus CAN_british_investments"
-			add_offsite_building = { type = industrial_complex level = 2 }
-			GBR = { country_event = canada.326 }
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-	}
-
-	focus = {
-		id = CAN_god_save_canada
-		icon = GFX_goal_national_mobilization
-		cost = 6
-		prerequisite = {
-			focus = CAN_british_investments
-		}
-		relative_position_id = CAN_return_of_the_king
-		x = 2
-		y = 3
-
-		available = {
-			is_subject = no
-			has_elected_government = yes
-			GBR = {
-				exists = yes
-				is_in_faction_with = ROOT
-				has_idea = CAN_canadian_investments_1
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = no
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus CAN_god_save_canada"
-			add_offsite_building = { type = dockyard level = 2 }
-			GBR = {
-				swap_ideas = {
-					remove_idea = CAN_canadian_investments_1
-					add_idea = CAN_canadian_investments_2
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-	}
-
-	focus = {
-		id = CAN_new_canadian_officers
-		icon = GFX_goal_COS_War
-		cost = 6
-		prerequisite = {
-			focus = CAN_canadian_referendum
-			focus = CAN_loyalty_to_the_empire
-		}
-		relative_position_id = CAN_return_of_the_king
-		x = 0
-		y = 2
-
-		available = {
-			is_subject = no
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = no
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-
-		bypass = {
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus CAN_new_canadian_officers"
-			country_event = canada.327
-		}
-	}
-
-	focus = {
-		id = CAN_filling_the_void
-		icon = GFX_focus_generic_support_the_left_right
-		cost = 6
-		prerequisite = {
-			focus = CAN_new_canadian_officers
-		}
-		relative_position_id = CAN_return_of_the_king
-		x = 0
-		y = 3
-
-		available = {
-			is_subject = no
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = no
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-
-		bypass = {
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus CAN_filling_the_void"
-			add_stability = 0.05
-			add_ideas = CAN_victors_over_syndicalism
-		}
-		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_STABILITY }
-	}
-
-	focus = {
-		id = CAN_true_north
-		icon = GFX_goal_support_democracy
-		cost = 6
-		prerequisite = {
-			focus = CAN_filling_the_void
-		}
-		relative_position_id = CAN_return_of_the_king
-		x = 0
-		y = 4
-
-		available = {
-			is_subject = no
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-
-		bypass = {
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus CAN_true_north"
-			add_political_power = 200
-			add_stability = 0.10
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 	}
 }
 
