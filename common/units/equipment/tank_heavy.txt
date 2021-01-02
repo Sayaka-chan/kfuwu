@@ -42,7 +42,7 @@ equipments = {
 		resources = {
 			#oil = 1
 			steel = 3
-			chromium = 3
+			chromium = 2
 		}
 
 		fuel_consumption = 5.4
@@ -81,11 +81,11 @@ equipments = {
 		hard_attack = 30
 		ap_attack = 111
 
-		build_cost_ic = 27
+		build_cost_ic = 34
 		resources = {
 #			oil = 1
 			steel = 3
-			chromium = 3
+			chromium = 2
 		}
 	}
 

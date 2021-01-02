@@ -118,6 +118,7 @@ if = {
 
 add_ideas = {
 	ENG_militia_idea
+	pp_idea
 	partial_economic_mobilisation
 	# Starting Cabinet
 }

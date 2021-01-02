@@ -22,6 +22,12 @@ focus_tree = {
 	### Kickoff focus at 10% WT
 	focus = {
 		id = AUS_military_expansion
+		available = {
+			OR = {
+				has_completed_focus = AUS_cs_7
+				has_completed_focus = AUS_sdap_7
+			}
+		}
 		icon = GFX_focus_chi_army_reform
 		x = 30
 		y = 0
@@ -41,7 +47,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AUS_military_expansion"
-			add_war_support = 0.05
+			add_war_support = 0.2
 		}
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 	}
@@ -164,7 +170,8 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AUS_reform_AOK"
-			army_experience = 100
+			army_experience = 800
+			air_experience = 600
 		}
 		search_filters = { FOCUS_FILTER_ARMY_BONUS }
 	}
@@ -269,7 +276,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus AUS_kavalleriepanzer"
 			add_tech_bonus = {
 				name = AUS_kavalleriepanzer
-				bonus = 1
+				bonus = 1.2
 				uses = 2
 				category = cat_medium_armor
 			}
@@ -415,7 +422,7 @@ focus_tree = {
 		icon = GFX_goal_tfv_generic_tech_sharing
 		x = -1
 		y = 2
-		cost = 10
+		cost = 5
 
 		available = {
 			custom_trigger_tooltip = {
@@ -520,7 +527,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civ_factory
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 
 		relative_position_id = AUS_suedbahn
 
@@ -587,7 +594,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construction2
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 
 		available = {
 			custom_trigger_tooltip = {
@@ -657,18 +664,18 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AUS_homeland_mil"
 			4 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 4
 					instant_build = yes
 				}
 			}
 			736 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -685,7 +692,7 @@ focus_tree = {
 		icon = GFX_focus_generic_the_giant_wakes
 		x = 15
 		y = 0
-		cost = 5
+		cost = 1
 
 		available = {
 			date > 1936.3.1
@@ -697,7 +704,6 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AUS_elections"
-			custom_effect_tooltip = unlock_focuses
 		}
 	}
 
@@ -824,7 +830,7 @@ focus_tree = {
 		icon = GFX_goal_munitions_factories
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 
 		relative_position_id = AUS_sdap_industrial_workers_council
 
@@ -855,7 +861,7 @@ focus_tree = {
 		icon = GFX_goal_economic_control
 		x = 1
 		y = 2
-		cost = 10
+		cost = 5
 
 		relative_position_id = AUS_sdap_industrial_workers_council
 
@@ -886,7 +892,7 @@ focus_tree = {
 		icon = GFX_goal_gold_up
 		x = 1
 		y = 3
-		cost = 10
+		cost = 5
 
 		relative_position_id = AUS_sdap_industrial_workers_council
 
@@ -986,7 +992,7 @@ focus_tree = {
 		icon = GFX_focus_empty_coffers
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 
 		relative_position_id = AUS_cs_national_austerity_council
 
@@ -1017,7 +1023,7 @@ focus_tree = {
 		icon = GFX_IRE_medium_industry
 		x = -1
 		y = 2
-		cost = 10
+		cost = 5
 
 		relative_position_id = AUS_cs_national_austerity_council
 
@@ -1048,7 +1054,7 @@ focus_tree = {
 		icon = GFX_IRE_heavy_industry
 		x = -1
 		y = 3
-		cost = 10
+		cost = 5
 
 		relative_position_id = AUS_cs_national_austerity_council
 
@@ -1313,7 +1319,7 @@ focus_tree = {
 		icon = GFX_goal_economic_control
 		x = 0
 		y = 6
-		cost = 10
+		cost = 5
 
 		relative_position_id = AUS_elections
 
@@ -1337,7 +1343,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_infrastructure
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 
 		relative_position_id = AUS_decentralised_development_scheme
 

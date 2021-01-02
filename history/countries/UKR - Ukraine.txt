@@ -148,6 +148,7 @@ set_popularities = {
 
 add_ideas = {
 	Hetman_Army
+	pp_idea
 	language_issue
 }
 

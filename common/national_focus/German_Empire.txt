@@ -1453,9 +1453,9 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_mil_expansion"
-			army_experience = 200
+			army_experience = 800
 			navy_experience = 100
-			air_experience = 200
+			air_experience = 1000
 		    add_tech_bonus = {
 				name = GER_doctrine_great_war
 				bonus = 1
@@ -1786,7 +1786,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_cas"
 			add_tech_bonus = {
 				name = GER_cas
-				bonus = 2
+				bonus = 3
 				uses = 1
 				category = cas_bomber
 			}

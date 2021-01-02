@@ -86,6 +86,7 @@ set_research_slots = 3
 
 add_ideas = {
 	limited_conscription
+	pp_idea
 	free_trade
 
 	OTT_Mustafa_Kemal_Pasa_cos_pau

@@ -828,16 +828,6 @@ ideas = {
 			}
 		}
 
-		chelyabinskiy_traktornyy = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea chelyabinskiy_traktornyy"}
-			allowed = { is_russian_tag = yes }
-			available = { owns_state = 572 } #Chelyabinsk
-			traits = { medium_tank_producer_mass_1 }
-			research_bonus = {
-				armor = 0.1
-			}
-		}
-
 		avtomobilnoe_moskovskoe = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea avtomobilnoe_moskovskoe"}
 			allowed = { is_russian_tag = yes }
@@ -887,26 +877,6 @@ ideas = {
 
 	aircraft_manufacturer = {
 		designer = yes
-
-		mikoyan_gurevich = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea mikoyan_gurevich"}
-			allowed = { is_russian_tag = yes }
-			available = { owns_state = 219 } #Moscow
-			traits = { fighter_producer_offense_1 }
-			research_bonus = {
-				air_equipment = 0.1
-			}
-		}
-
-		lavochkin = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea lavochkin"}
-			allowed = { is_russian_tag = yes }
-			available = { owns_state = 219 } #Moscow
-			traits = { fighter_producer_defense_2 }
-			research_bonus = {
-				air_equipment = 0.1
-			}
-		}
 
 		dux = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea dux"}

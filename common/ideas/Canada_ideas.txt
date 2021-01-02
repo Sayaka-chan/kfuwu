@@ -1414,7 +1414,7 @@ ideas = {
 		canadian_vickers = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea canadian_vickers"}
 			allowed = { original_tag = CAN }
-			traits = { vickers_armstrong_industries }
+			traits = { heavy_tank_producer_offense_1 }
 			research_bonus = {
 				armor = 0.1
 			}

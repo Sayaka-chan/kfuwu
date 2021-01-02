@@ -192,6 +192,7 @@ add_ideas = {
 	AUS_vienna_circle
 	low_economic_mobilisation
 	AUS_army_1
+	pp_idea
 	AUS_socialist_promises
 	AUS_divided_society
 	### Minister

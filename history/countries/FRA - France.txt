@@ -213,6 +213,7 @@ add_ideas = {
 	limited_conscription
 	FRA_communard_spirit
 	FRA_bad_intel
+	pp_idea
 	partial_economic_mobilisation
 }
 

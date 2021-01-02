@@ -57,7 +57,7 @@ equipments = {
 
 		defense = 16
 		breakthrough = 6
-		soft_attack = 38
+		soft_attack = 36
 		
 		build_cost_ic = 4
 		resources = {
@@ -76,9 +76,9 @@ equipments = {
 		
 		defense = 20
 		breakthrough = 10
-		soft_attack = 50
+		soft_attack = 40
 		
-		build_cost_ic = 7
+		build_cost_ic = 5
 		resources = {
 			tungsten = 1
 			steel = 3
@@ -104,7 +104,7 @@ equipments = {
 		reliability = 1
 
 		#Defensive Abilities
-		defense = 15
+		defense = 10
 		breakthrough = 10
 		hardness = 0
 		armor_value = 0
@@ -139,8 +139,8 @@ equipments = {
 		visual_level = 1
 		
 		defense = 13
-		breakthrough = 6
-		soft_attack = 44
+		breakthrough = 15
+		soft_attack = 50
 		
 		build_cost_ic = 5
 		resources = {

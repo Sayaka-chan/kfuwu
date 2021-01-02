@@ -5,10 +5,10 @@ state = {
 
 	state_category = seven
 	resources = {
-		aluminium = 16
-		steel = 24
-		chromium = 50
-		tungsten = 40
+		aluminium = 40
+		steel = 100
+		chromium = 100
+		tungsten = 80
 	}
 
 	history = {
@@ -17,8 +17,8 @@ state = {
 		victory_points = { 819 20 } #Naples
 		buildings = {
 			infrastructure = 6
-			arms_factory = 1
-			industrial_complex = 1
+			arms_factory = 5
+			industrial_complex = 5
 			air_base = 3
 			819 = {
 				naval_base = 6

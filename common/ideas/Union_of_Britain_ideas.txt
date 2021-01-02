@@ -89,7 +89,7 @@ ideas = {
 			modifier = {
 				fuel_gain_factor_from_states = 0.75
 				max_fuel_factor = 0.4
-				production_speed_synthetic_refinery_factor = 0.2
+				production_speed_synthetic_refinery_factor = 0.6
 			}
 			research_bonus = {
 				synth_resources = 0.2
@@ -534,7 +534,7 @@ ideas = {
 				original_tag = ENG
 			}
 			traits = {
-				infantry_equipment_producer_defense_1
+				infantry_equipment_producer_allround_1
 			}
 			research_bonus = {
 				infantry_weapons = 0.1
@@ -546,7 +546,7 @@ ideas = {
 				original_tag = ENG
 			}
 			traits = {
-				artillery_producer_defense_1
+				artillery_producer_offense_1
 			}
 			research_bonus = {
 				artillery = 0.1

@@ -239,6 +239,7 @@ add_equipment_to_stockpile = {
 add_ideas = {
 	CAN_anglo_french_tensions_2
 	CAN_great_depression_2
+	pp_idea
 	CAN_slots
 	# Starting Cabinet
 }

@@ -1733,7 +1733,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus SRI_tanks"
 			add_tech_bonus = {
 				name = SRI_tanks
-				bonus = 1
+				bonus = 1.5
 				uses = 2
 				category = armor
 			}

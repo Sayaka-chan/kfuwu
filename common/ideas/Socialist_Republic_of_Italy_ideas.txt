@@ -306,9 +306,9 @@ ideas = {
 				}
 			}
 			modifier = {
-				motorized_attack_factor = 0.10
-				mechanized_attack_factor = 0.10
-				army_armor_attack_factor = 0.10
+				motorized_attack_factor = 0.05
+				mechanized_attack_factor = 0.05
+				army_armor_attack_factor = 0.05
 			}
 		}
 		SRI_central_logistics_idea = {
@@ -405,7 +405,7 @@ ideas = {
 		accademia_militare_modena = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea accademia_militare_modena"}
 			allowed = { original_tag = SRI }
-			traits = { infantry_equipment_producer_offense_2 }
+			traits = { infantry_equipment_producer_offense_1 }
 			research_bonus = {
 				infantry_weapons = 0.1
 			}
@@ -422,14 +422,6 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea armiguerra"}
 			allowed = { original_tag = SRI }
 			traits = { infantry_equipment_producer_defense_1 }
-			research_bonus = {
-				infantry_weapons = 0.1
-			}
-		}
-		arsenale_torino = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea arsenale_torino"}
-			allowed = { original_tag = SRI }
-			traits = { infantry_equipment_producer_assualt_1 }
 			research_bonus = {
 				infantry_weapons = 0.1
 			}
@@ -486,6 +478,26 @@ ideas = {
 			available = { owns_state = 158 }
 			visible = { owns_state = 158 }
 			traits = { small_tank_producer_mass_2 }
+			research_bonus = {
+				armor = 0.1
+			}
+		}
+		Stop_inting = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea Stop_inting"}
+			allowed = { is_italian_tag = yes }
+			available = { owns_state = 158 }
+			visible = { owns_state = 158 }
+			traits = { medium_tank_producer_offense_1 }
+			research_bonus = {
+				armor = 0.1
+			}
+		}
+		Stop_inting2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea Stop_inting2"}
+			allowed = { is_italian_tag = yes }
+			available = { owns_state = 158 }
+			visible = { owns_state = 158 }
+			traits = { heavy_tank_producer_offense_1 }
 			research_bonus = {
 				armor = 0.1
 			}

@@ -785,7 +785,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus RUS_Army_Modernisation"
-			army_experience = 50
+			army_experience = 800
+			air_experience = 1000
 		}
 		search_filters = { FOCUS_FILTER_ARMY_BONUS }
 	}

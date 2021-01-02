@@ -108,6 +108,7 @@ add_ideas = {
 	#starting modifiers
 	AST_oversized_fleet
 	AST_depression_1
+	pp_idea
 	AST_bled_dry
 	AST_anzac_spirit_1
 }

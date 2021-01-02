@@ -164,6 +164,7 @@ add_ideas = {
 
 	NFA_anti_communard
 	limited_conscription
+	pp_idea
 	NFA_french_in_exile
 	NFA_political_unrest
 }

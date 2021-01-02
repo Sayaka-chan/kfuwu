@@ -387,6 +387,15 @@ ideas = {
 			}
 		}
 
+		industrie_belliche_liguri = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea industrie_belliche_liguri"}
+			allowed = { original_tag = SRI }
+			traits = { artillery_producer_offense_1 }
+			research_bonus = {
+				artillery = 0.1
+			}
+		}
+
 		zaporizhia_automobile_plant = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea zaporizhia_automobile_plant"}
 			allowed = { original_tag = UKR }
