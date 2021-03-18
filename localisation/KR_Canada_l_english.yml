@@ -505,10 +505,10 @@ CAN_seize_greenland_desc:0 "With [From.GetNameDef] in the midst of an emergency,
 CAN_build_base_greenland:0 "Expand Godthåb Naval Base"
 CAN_build_base_greenland_desc:0 "Greenland isn't the most ideal place from which to control the Atlantic, but it shall serve."
 
-CAN_kings_influence_decisions:0 "Influence of the Monarchy"
+CAN_kings_influence_decisions:0 "The British Empire"
 CAN_kings_influence_decisions_desc:0 "[CAN_kings_influence]"
 kings_influence_home:0 "The reigning monarch in §Y[Root.GetNameDef]§! is §Y[CAN_king_full_name]§!, a symbol of tradition and Europe 'as it should be'. He remains a potent figure, particularly now that the Home Isles have been retaken.\n\n§CPopularity§! of [CAN_king_full_name]: [CAN_king_popularity]"
-kings_influence_exile:0 "Despite having lost the Home Isles, §Y[CAN_king_full_name]§! remains a potent figure in the Empire and the Entente. He is a symbol of tradition and Europe 'as it should be', and his Exiles represent a great deal of political power within §Y[Root.GetNameDef]§!.\n\n§BInfluence§! of the British Exiles: [CAN_king_influence]\n§CPopularity§! of [CAN_king_full_name]: [CAN_king_popularity]"
+kings_influence_exile:0 "Despite having lost the Home Isles, the British Empire has not collapsed. The new capital of the empire, Ottawa, is where the Imperial Conference is held every year and where the British Exiles and his majesty, §Y[CAN_king_full_name]§! fight for higher influence in §Y[Root.GetNameDef]§!.\n\n§BInfluence§! of the British Exiles: [CAN_king_influence]\n§CPopularity§! of [CAN_king_full_name]: [CAN_king_popularity]"
 CAN_royal_visit:0 "Royal Visit to [From.GetNameDef]"
 CAN_royal_visit_desc:0 "We can send [CAN_king_full_name] on a tour through [From.GetNameDef], ideally propping up their support for the Entente's war efforts and engineering some goodwill from the [From.GetAdjective] government. Considering all the king's other duties, this can only be done once a year."
 CAN_royal_speech:0 "Royal Address to the Entente"
@@ -1928,3 +1928,11 @@ entente.323.b:0 "I don't recall traveling to [CAN.GetConferenceLocation], how od
 entente.324.t:0 "The [From.GetAdjective] Betrayal"
 entente.324.d:0 "The sudden yet inevitable betrayal of [From.GetNameDef] is clear - they have refused to give up their newly-acquired land, despite the promises made at the [CAN.GetConferenceLocation] Conference."
 entente.324.a:0 "How did we not see this coming?"
+
+CAN_empire_ast1:0 "Build factories in Australia"
+CAN_empire_ast2:0 "Send construction engineers to Australia"
+CAN_empire_ast3:0 "Mobilize the Australian economy"
+
+CAN_empire_raj1:0 "Build factories in the Dominion of India"
+CAN_empire_raj2:0 "Send construction engineers to the Dominion of India"
+CAN_empire_raj3:0 "Mobilize the Indian economy"

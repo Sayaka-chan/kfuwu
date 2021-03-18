@@ -1,0 +1,10 @@
+pacific_war = {
+	icon = "GFX_idea_SPR_disbanded_army"
+	industrial_capacity_factory = pacific_status
+
+}
+pacific_war_minor = {
+	icon = "GFX_idea_SPR_disbanded_army"
+	industrial_capacity_factory = ENG.pacific_status
+
+}

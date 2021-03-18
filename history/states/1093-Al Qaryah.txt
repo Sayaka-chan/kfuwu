@@ -1,0 +1,18 @@
+state = {
+	id = 1093
+	name = "STATE_1093" #Desert
+
+	history = {
+		owner = SRI
+		add_core_of = VEN
+		buildings = {
+			infrastructure = 5
+		}
+		victory_points = { 11940 1 }
+	}
+	provinces = {
+		11940 4117 10037 7154 10067 1174 7066 12009 4176 	
+	}
+	manpower = 122354 
+	state_category = three
+}

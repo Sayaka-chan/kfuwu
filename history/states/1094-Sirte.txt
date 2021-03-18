@@ -1,0 +1,21 @@
+state = {
+	id = 1094
+	name = "STATE_1094"
+	manpower = 12060
+	state_category = four
+
+	history = {
+		owner = SRI
+		add_core_of = VEN
+		victory_points = {
+			1118 5
+		}
+		buildings = {
+			infrastructure = 3
+		}
+	}
+
+	provinces = {
+		1118 1041 7194 4047 7136 10046 10117 13073 12088 1057
+	}
+}

@@ -166,7 +166,7 @@ add_ideas = {
 	JAP_narrow_rail
 	JAP_bad_land
 	limited_conscription
-	limited_exports
+	closed_economy
 	low_economic_mobilisation
 }
 

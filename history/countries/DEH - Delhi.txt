@@ -92,15 +92,13 @@ if = {
 set_convoys = 150
 add_political_power = -50
 
-add_opinion_modifier = { target = BHC modifier = embargo }
-add_opinion_modifier = { target = PRF modifier = embargo }
 add_opinion_modifier = { target = GER modifier = embargo }
-add_opinion_modifier = { target = SAF modifier = embargo }
 
 add_ideas = {
 	DEH_princely_power
 	pp_idea
 	DEH_backwards_economy_1
+	DEH_mp
 }
 
 set_research_slots = 3
@@ -125,13 +123,6 @@ set_popularities = {
 	authoritarian_democrat = 1
 	paternal_autocrat = 1
 	national_populist = 1
-}
-
-
-
-set_autonomy = {
-	target = AFG
-	autonomy_state = kr_initial_wif_puppet
 }
 
 create_country_leader = {

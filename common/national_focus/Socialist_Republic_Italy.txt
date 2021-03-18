@@ -1640,7 +1640,7 @@ focus_tree = {
 				name = SRI_arditi_del_popolo
 				bonus = 1
 				uses = 2
-				category = mountaineers_tech
+				category = marine_tech
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }

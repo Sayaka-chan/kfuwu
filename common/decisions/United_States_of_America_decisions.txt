@@ -27,8 +27,6 @@ political_actions = {
 
 		timeout_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision timeout USA_oldorder_act_quickly"
-			add_political_power = -100
-			country_event = ustates.526
 		}
 	}
 
@@ -55,8 +53,6 @@ political_actions = {
 
 		timeout_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision timeout USA_long_act_quickly"
-			add_political_power = -100
-			country_event = ustates.526
 		}
 	}
 
@@ -83,8 +79,6 @@ political_actions = {
 
 		timeout_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision timeout USA_reed_act_quickly"
-			add_political_power = -100
-			country_event = ustates.526
 		}
 	}
 }

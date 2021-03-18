@@ -15,6 +15,15 @@ technologies = {
 	infantry_weapons = {
 		on_research_complete = { log = "[GetDateText]: [Root.GetName]: add tech infantry_weapons"}
 
+		enable_building = {
+			building =air_base
+			level = 10
+		}
+		enable_building = {
+			building = anti_air_building
+			level = 5
+		}
+
 		enable_equipments = {
 			infantry_equipment_0
 		}
@@ -780,6 +789,7 @@ technologies = {
 		category_special_forces = {
 			max_organisation = 5
 			defense = 0.05
+			breakthrough = 0.05
 		}
 
 		special_forces_training_time_factor = 0.1
@@ -790,7 +800,7 @@ technologies = {
 		}
 
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1938
 		folder = {
 			name = infantry_folder
@@ -828,7 +838,7 @@ technologies = {
 		}
 
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1939
 		folder = {
 			name = infantry_folder
@@ -868,7 +878,7 @@ technologies = {
 		}
 
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1940
 		folder = {
 			name = infantry_folder
@@ -907,7 +917,7 @@ technologies = {
 		}
 
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1940
 		folder = {
 			name = infantry_folder
@@ -942,8 +952,8 @@ technologies = {
 
 		special_forces_no_supply_grace = 48
 
-		research_cost = 1.5
-		start_year = 1941
+		research_cost = 1
+		start_year = 1942
 		folder = {
 			name = infantry_folder
 			position = { x = 0 y = @1944 }
@@ -1432,7 +1442,7 @@ technologies = {
 		}
 
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1918
 		folder = {
 			name = infantry_folder
@@ -1499,7 +1509,7 @@ technologies = {
 		}
 
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1938
 		folder = {
 			name = infantry_folder
@@ -1574,7 +1584,7 @@ technologies = {
 		}
 
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1940
 		folder = {
 			name = infantry_folder
@@ -1643,7 +1653,7 @@ technologies = {
 			breakthrough = 0.05
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1942
 		folder = {
 			name = infantry_folder

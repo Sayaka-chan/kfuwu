@@ -27,6 +27,8 @@ set_technology = {
 	radio = 1
 	fuel_silos = 1
 	synth_oil_experiments = 1
+	advanced_fire_control_system = 1
+	improved_ship_torpedo_launcher = 1
 
 	### Tanks ###
 	gwtank = 1
@@ -130,18 +132,6 @@ if = {
 	}
 }
 
-POL = { give_military_access = GER }
-DKB = { give_military_access = GER }
-GEO = { give_military_access = GER }
-AZE = { give_military_access = GER }
-OTT = { give_military_access = GER }
-LEC = { give_military_access = GER }
-
-give_guarantee = DKB
-give_guarantee = GEO
-give_guarantee = AZE
-give_guarantee = LEC
-
 set_research_slots = 5
 set_convoys = 1000
 add_equipment_to_stockpile = {
@@ -206,7 +196,6 @@ add_opinion_modifier = { target = FRA modifier = embargo }
 add_opinion_modifier = { target = DEH modifier = embargo }
 add_opinion_modifier = { target = SRI modifier = embargo }
 add_opinion_modifier = { target = LEC modifier = LEC_member }
-add_opinion_modifier = { target = GEA modifier = colonial_master }
 
 set_politics = {
 	ruling_party = authoritarian_democrat
@@ -254,6 +243,7 @@ add_to_faction = UKR
 add_to_faction = GEA
 add_to_faction = AUS
 add_to_faction = POL
+add_to_faction = OTT
 
 country_event = {
 	id = black.1

@@ -33,7 +33,6 @@ bookmarks = {
 
 			focuses = {
 				FRA_Host_the_Internationale
-				FRA_Demand_Alsace_Lorraine
 			}
 		}
 
@@ -94,8 +93,6 @@ bookmarks = {
 
 			focuses = {
 				JAP_democratic_path
-				JAP_chuou
-				JAP_ishinha
 			}
 		}
 

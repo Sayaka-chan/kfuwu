@@ -18,7 +18,7 @@ set_technology = {
 	gwtank = 1
 	interwar_antiair = 1
 	radio = 1
-	interwar_antitank
+	interwar_antitank = 1
 	### Air ###
 	early_fighter = 1
 	early_bomber = 1

@@ -5,6 +5,10 @@ state = {
 
 	state_category = four
 
+	resources = {
+		oil = 37
+	}
+
 	history = {
 		owner = JAP
 		add_core_of = JAP

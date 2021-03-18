@@ -7,6 +7,9 @@ units = {
 			name = "Flotta Genovese"
 			location = 6788 ###Change to proper province number
 			ship = { name = "NdP Italia" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SRI version_name = "Italia Class" } } }
+			ship = { name = "NdP pog" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SRI version_name = "Italia Class" } } }
+			ship = { name = "NdP poggers" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SRI version_name = "Italia Class" } } }
+			ship = { name = "NdP not poggers" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SRI version_name = "Italia Class" } } }
 			ship = { name = "NdP Risorgimento" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SRI version_name = "Italia Class" } } }
 			ship = { name = "NdP Spartaco" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SRI version_name = "Italia Class" } } }
 			ship = { name = "NdP Confienza" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SRI version_name = "Alessandro Poerio Class" } } }
@@ -72,9 +75,14 @@ units = {
 			ship = { name = "Lazaga" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
 			ship = { name = "Velasco" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
 			ship = { name = "Sánchez Barcáiztegui" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
-			ship = { name = "Príncipe Alfonso" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Almirante Cervera Class" } } }
-			ship = { name = "Blas de Lezo" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Méndez Núñes Class" } } }
-			ship = { name = "Méndez Núñes" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Méndez Núñes Class" } } }
+			ship = { name = "Príncipe Alfonso" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SRI version_name = "Enomao Class" } } }
+			ship = { name = "Blas de Lezo" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SRI version_name = "Enomao Class" } } }
+			ship = { name = "yes." definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SRI version_name = "Enomao Class" } } }
+			ship = { name = "chad yes" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SRI version_name = "Enomao Class" } } }
+			ship = { name = "q" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SRI version_name = "Enomao Class" } } }
+			ship = { name = "u" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SRI version_name = "Enomao Class" } } }
+			ship = { name = "t" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SRI version_name = "Enomao Class" } } }
+			ship = { name = "Méndez Núñes" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SRI version_name = "Enomao Class" } } }
 			ship = { name = "B4" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "B Class" } } }
 			ship = { name = "B5" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "B Class" } } }
 			ship = { name = "B6" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "B Class" } } }
@@ -85,8 +93,8 @@ units = {
 			ship = { name = "D2" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "D Class" } } }
 			ship = { name = "D3" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "D Class" } } }
 			ship = { name = "D4" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "D Class" } } }
-			ship = { name = "España" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SPR version_name = "España Class" } } }
-			ship = { name = "Jaime I" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SPR version_name = "España Class" } } }
+			ship = { name = "España" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SRI version_name = "Italia Class" } } }
+			ship = { name = "Jaime I" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SRI version_name = "Italia Class" } } }
 			ship = { name = "Almirante Miranda" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
 			ship = { name = "Almirante Antequera" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
 			ship = { name = "Alcalá Galiano" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
@@ -95,8 +103,8 @@ units = {
 			ship = { name = "Churucca" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
 			ship = { name = "José Luis Díez" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
 			ship = { name = "Lepanto" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
-			ship = { name = "Almirante Cervera" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Almirante Cervera Class" } } }
-			ship = { name = "Miguel de Cervantes" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Almirante Cervera Class" } } }
+			ship = { name = "Almirante Cervera" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SRI version_name = "Enomao Class" } } }
+			ship = { name = "Miguel de Cervantes" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SRI version_name = "Enomao Class" } } }
 			ship = { name = "Reina Victoria Eugenia" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Reina Victoria Eugenia Class" } } }
 		}
 	}

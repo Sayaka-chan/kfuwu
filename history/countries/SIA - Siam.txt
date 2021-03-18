@@ -1,5 +1,4 @@
 ﻿capital = 289
-OOB = "SIA"
 
 # Kaiserreich Siam
 

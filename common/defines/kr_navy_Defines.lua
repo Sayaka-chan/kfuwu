@@ -30,9 +30,9 @@ NDefines.NNavy.CARRIER_STACK_PENALTY = 5 -- The most efficient is 4 carriers in 
 NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 0.167 -- Each carrier above the optimal amount decreases the amount of airplanes being able to takeoff by such %.
 
 NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profile is lower the gun will have lower accuracy
-		80.0,	-- big guns
+		95.0,	-- big guns
 		140.0,	-- torpedos
-		50.0,	-- small guns
+		55.0,	-- small guns
 	}
 
 
@@ -71,7 +71,7 @@ NDefines.NNavy.BASE_SPOTTING_EFFECT_FOR_INITIAL_NAVAL_INVASION_SPOTTING = 2	-- s
 
 
 NDefines.NNavy.ORG_COST_WHILE_MOVING = { -- org cost while the ships are moving
-		0.4, -- HOLD
+		0.0, -- HOLD
 		0.4, -- PATROL		
 		0.4, -- STRIKE FORCE 
 		0.4, -- CONVOY RAIDING

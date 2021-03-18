@@ -380,23 +380,6 @@ country_event = { # Pro-Russian Leaders Stir Up Trouble
 	}
 }
 
-country_event = { # Profits From Increased Taxation on the Kulaks
-	id = ukraine.14
-	immediate = { log = "[GetDateText]: [Root.GetName]: event ukraine.14" }
-	title = ukraine.14.t
-	desc = ukraine.14.d
-
-	is_triggered_only = yes
-
-	option = {
-		name = ukraine.14.a
-
-		add_stability = 0.05
-
-		add_ideas = profits_from_kulaks
-	}
-}
-
 country_event = { # Another Crisis!
 	id = ukraine.15
 	immediate = { log = "[GetDateText]: [Root.GetName]: event ukraine.15" }

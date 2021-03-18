@@ -4,21 +4,12 @@ state = {
 	provinces = {
 		1648 7658 8360 10509 10522 12126 12488
 	}
-	resources = {
-		rubber = 57
-		oil = 25
-	}
-	manpower = 2392936
+	impassable = yes
+	manpower = 23929
 
 	history = {
 		owner = GER
 		add_core_of = VEN
-		buildings = {
-			infrastructure = 3
-			1648 = {
-				naval_base = 1
-			}
-		}
 	}
 
 	state_category = one

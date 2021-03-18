@@ -6,7 +6,7 @@ state = {
 	state_category = twelve
 
 	resources = {
-		aluminium = 2
+		aluminium = 23
 	}
 
 	history = {

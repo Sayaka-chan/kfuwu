@@ -24,7 +24,6 @@ on_actions = {
 			if = {
 				limit = { tag = USA }
 				country_event = ustates.34
-				country_event = ustates.35
 				country_event = ustates.203
 				country_event = ustates.207
 				country_event = ustates.213

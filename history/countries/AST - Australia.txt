@@ -2,7 +2,7 @@
 
 OOB = "AST"
 set_naval_oob= "AST_naval"
-set_cosmetic_tag = AST_authoritarian_democrat
+set_cosmetic_tag = AST_australia_republic_market_liberal
 
 set_technology = {
 	### Tanks ###

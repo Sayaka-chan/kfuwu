@@ -233,6 +233,7 @@ SRI_cultural_revolution_begins_tooltip:0 "The Cultural Revolution will begin and
 SRI_asymmetrical_warfare_effect:0 "Enables §HGuerrilla Warfare Training§!\n§HAll legged units\n    Urban§!\n      Attack: §G+10%§!\n      Defence: §G+5%§!\n      Movement: §G+5%§!\n\n"
 SRI_currently_building_industry:0 "Not currently focused on building industry elsewhere"
 SRI_bicycle_unit_appears:0 "One bicycle division will appear in Milan\n"
+SRI_mountain_training_tech:0 "Enables §HAfrican Rats Training§!\n§HAll legged units\n    Mountain§!\n      Attack: §G+5%§!\n      Defence: §G+10%§!\n      Movement: §G+10%§!\n\n"
 
 ### Fourth Congress Focuses ###
 SRI_4th_congress:0 "Begin the Fourth Congress"

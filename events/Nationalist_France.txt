@@ -2912,66 +2912,6 @@ country_event = { #Southern Conscription
 	}
 }
 
-country_event = { #De Gaulle Accuses the Government of Cowardice
-	id = nfa.39
-	immediate = { log = "[GetDateText]: [Root.GetName]: event nfa.39" }
-	title = nfa.39.t
-	desc = nfa.39.d
-
-	fire_only_once = yes
-
-	trigger = {
-		tag = NFA
-		has_completed_focus = NFA_Darlan_Focus
-		has_war = no
-		NOT = {
-			controls_state = 16
-			controls_state = 21
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 30
-	}
-
-	option = {
-		name = nfa.39.a #Arrange an early retirement for him
-		add_stability = -0.04
-		set_country_flag = Charles_de_Gaulle_dead
-		if = {
-			limit = {
-				has_unit_leader = 802
-			}
-			remove_unit_leader = 802
-		}
-		if = {
-			limit = {
-				has_idea = NFA_Charles_de_Gaulle_hog_ade
-			}
-			remove_ideas = NFA_Charles_de_Gaulle_hog_ade
-			add_ideas = NFA_Jean_Francois_Darlan_hog_ade
-		}
-		if = {
-			limit = {
-				has_idea = NFA_Charles_de_Gaulle_eco_ade
-			}
-			remove_ideas = NFA_Charles_de_Gaulle_eco_ade
-			add_ideas = NFA_Paul_Baudouin_eco_ade
-		}
-		if = {
-			limit = {
-				has_idea = NFA_Charles_de_Gaulle_cos_ade
-			}
-			remove_ideas = NFA_Charles_de_Gaulle_cos_ade
-		}
-	}
-
-	option = {
-		name = nfa.39.b #An officer should be able to speak his mind
-		add_stability = -0.06
-	}
-}
-
 country_event = { #Darlan accuses government of recklesness
 	id = nfa.40
 	immediate = { log = "[GetDateText]: [Root.GetName]: event nfa.40" }
@@ -3286,54 +3226,6 @@ country_event = { #Alsace-Lorraine is under our control!
 		name = nfa.59.a #Great!
 		add_state_core = 779
 		add_state_core = 28
-	}
-}
-
-country_event = { #Anti-syndicalist volunteers arrive!
-	id = nfa.60
-	immediate = { log = "[GetDateText]: [Root.GetName]: event nfa.60" }
-	title = nfa.60.t
-	desc = nfa.60.d
-
-	fire_only_once = yes
-
-	trigger = {
-		tag = NFA
-		is_subject = no
-		has_war_with = FRA
-		controls_state = 21
-	}
-
-	mean_time_to_happen = {
-		days = 2
-	}
-
-	option = {
-		name = nfa.60.a #Allons, à Paris!
-		add_stability = 0.04
-		if = {
-			limit = {
-				has_completed_focus = NFA_southern_conscription
-			}
-			hidden_effect = {
-				load_oob = NFA_milice_francaise
-			}
-			custom_effect_tooltip = NFA_militiarise_tt
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_completed_focus = NFA_southern_conscription
-				}
-			}
-			hidden_effect = {
-				load_oob = NFA_milice_francaise_w_template
-			}
-			custom_effect_tooltip = NFA_militiarise_tt
-		}
-		FRA = {
-			country_event = nfa.61
-		}
 	}
 }
 
@@ -3985,45 +3877,6 @@ country_event = { #Moncef Bey's accession to power
 	option = {
 		name = nfa.116.a #We should keep an eye on him
 		set_country_flag = moncef_bey
-	}
-}
-
-country_event = { #Moncef Bey refuses to send troops
-	id = nfa.117
-	immediate = { log = "[GetDateText]: [Root.GetName]: event nfa.117" }
-	title = nfa.117.t
-	desc = nfa.117.d
-
-	fire_only_once = yes
-
-	trigger = {
-		tag = NFA
-		has_country_flag = moncef_bey
-		owns_state = 458
-		controls_state = 458
-		OR = {
-			has_war_with = ENG
-			has_war_with = GER
-			has_war_with = FRA
-		}
-		has_completed_focus = NFA_native_conscription
-		NOT = {
-			has_country_flag = NFA_returned_mainland
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 30
-	}
-
-	option = {
-		name = nfa.117.a #Accomodate with him
-		add_ideas = moncef_reduces_conscription_idea
-	}
-
-	option = {
-		name = nfa.117.b #Ignore his complaint
-		add_stability = -0.1
 	}
 }
 

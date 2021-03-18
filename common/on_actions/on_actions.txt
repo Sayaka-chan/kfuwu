@@ -909,50 +909,6 @@ on_actions = {
 					days = 2
 				}
 			}
-
-			# Fengtian
-			if = {
-				limit = { tag = FNG }
-				country_event = {
-					id = fengtian.102
-					hours = 8
-					random = 16
-				}
-				country_event = fngsystem.15
-			}
-
-			# Persian events
-			if = {
-				limit = { tag = PER }
-				country_event = {
-					id = pers.35
-					days = 2
-				}
-			}
-
-			# Polish events
-			if = {
-				limit = { tag = POL }
-				country_event = {
-					id = poland.226
-					days = 2
-					random_days = 2
-				}
-			}
-
-			# Swiss neutrality events
-			if = {
-				limit = {
-					tag = SWI
-					has_idea = SWI_neutrality_idea
-				}
-				country_event = swiss.79
-			}
-
-			# Volunteers
-			every_other_country = {
-				country_event = ai.volunteers.1
-			}
 		}
 	}
 
@@ -971,33 +927,17 @@ on_actions = {
 				clr_country_flag = CAN_has_irish_loyalists
 				delete_unit_template_and_units = { division_template = "Unionist Rebels" }
 			}
-
-			# Disable Chinese National Redoubt
-			if = {
-				limit = {
-					has_country_flag = is_national_redoubt
-					NOT = { has_war_with = JAP }
-				}
-				country_event = {
-					id = china_redoubt.3
-					days = 10
-				}
-			}
-
-			# Persian events
-			if = {
-				limit = { tag = PER }
-				country_event = {
-					id = pers.36
-					days = 2
-				}
-			}
-
-			# Volunteers
-			every_other_country = {
-				country_event = ai.volunteers.2
-			}
 		}
 	}
-
+	on_weekly_VEN={
+		effect={
+			every_country = {
+				limit= {
+					has_war=yes
+					is_playable_country = yes
+				}
+				refresh_click_effect = yes
+			}
+			update_pacific_war=yes
+			}}
 }

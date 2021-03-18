@@ -13,7 +13,7 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CAN_divided_nation"}
 			allowed = {always = no}
 			modifier = {
-				political_power_cost = 0.50
+				political_power_cost = 0.30
 			}
 			picture = generic_disjointed_gov
 			removal_cost = -1
@@ -32,7 +32,7 @@ ideas = {
 			picture = CAN_french_tension
 			modifier = {
 				stability_factor = -0.10
-				political_power_cost = 0.50
+				political_power_cost = 0.40
 			}
 			removal_cost = -1
 		}
@@ -42,7 +42,7 @@ ideas = {
 			picture = CAN_french_tension
 			modifier = {
 				stability_factor = -0.05
-				political_power_cost = 0.30
+				political_power_cost = 0.20
 			}
 			removal_cost = -1
 		}
@@ -51,7 +51,7 @@ ideas = {
 			allowed = { always = no }
 			picture = CAN_french_tension
 			modifier = {
-				political_power_cost = 0.20
+				political_power_cost = 0.10
 			}
 			removal_cost = -1
 		}
@@ -113,8 +113,8 @@ ideas = {
 			}
 			picture = CAN_iedc_econ
 			modifier = {
-				local_resources_factor = 0.05
-				industrial_capacity_factory = 0.05
+				local_resources_factor = 0.02
+				industrial_capacity_factory = 0.02
 				consumer_goods_factor = -0.02
 			}
 		}
@@ -129,8 +129,8 @@ ideas = {
 			}
 			picture = CAN_iedc_econ
 			modifier = {
-				local_resources_factor = 0.10
-				industrial_capacity_factory = 0.10
+				local_resources_factor = 0.05
+				industrial_capacity_factory = 0.05
 				consumer_goods_factor = -0.035
 			}
 		}
@@ -145,8 +145,8 @@ ideas = {
 			}
 			picture = CAN_iedc_econ
 			modifier = {
-				local_resources_factor = 0.15
-				industrial_capacity_factory = 0.15
+				local_resources_factor = 0.10
+				industrial_capacity_factory = 0.10
 				consumer_goods_factor = -0.05
 			}
 		}
@@ -161,9 +161,9 @@ ideas = {
 			}
 			picture = CAN_iedc_naval
 			modifier = {
-				industrial_capacity_dockyard = 0.10
-				repair_speed_factor = 0.10
-				navy_refit_speed = 0.10
+				industrial_capacity_dockyard = 0.05
+				repair_speed_factor = 0.05
+				navy_refit_speed = 0.05
 			}
 		}
 		CAN_iedc_naval2 = {
@@ -177,9 +177,9 @@ ideas = {
 			}
 			picture = CAN_iedc_naval
 			modifier = {
-				industrial_capacity_dockyard = 0.20
-				repair_speed_factor = 0.20
-				navy_refit_speed = 0.20
+				industrial_capacity_dockyard = 0.10
+				repair_speed_factor = 0.10
+				navy_refit_speed = 0.10
 			}
 		}
 		CAN_iedc_naval3 = {
@@ -193,9 +193,9 @@ ideas = {
 			}
 			picture = CAN_iedc_naval
 			modifier = {
-				industrial_capacity_dockyard = 0.30
-				repair_speed_factor = 0.30
-				navy_refit_speed = 0.30
+				industrial_capacity_dockyard = 0.15
+				repair_speed_factor = 0.15
+				navy_refit_speed = 0.15
 			}
 		}
 		CAN_iedc_const1 = {
@@ -209,7 +209,7 @@ ideas = {
 			}
 			picture = CAN_iedc_const
 			modifier = {
-				production_speed_buildings_factor = 0.10
+				production_speed_buildings_factor = 0.05
 			}
 		}
 		CAN_iedc_const2 = {
@@ -223,7 +223,7 @@ ideas = {
 			}
 			picture = CAN_iedc_const
 			modifier = {
-				production_speed_buildings_factor = 0.20
+				production_speed_buildings_factor = 0.10
 			}
 		}
 		CAN_iedc_const3 = {
@@ -237,7 +237,7 @@ ideas = {
 			}
 			picture = CAN_iedc_const
 			modifier = {
-				production_speed_buildings_factor = 0.30
+				production_speed_buildings_factor = 0.15
 			}
 		}
 
@@ -396,7 +396,7 @@ ideas = {
 			available = { is_subject = no }
 			picture = man_five_year_plan_industry
 			modifier = {
-				consumer_goods_factor = -0.10
+				consumer_goods_factor = -0.05
 				global_building_slots_factor = 0.10
 			}
 			removal_cost = -1
@@ -409,8 +409,8 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = -0.05
 				global_building_slots_factor = 0.05
-				industrial_capacity_factory = 0.10
-				industrial_capacity_dockyard = 0.10
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
 			}
 			removal_cost = -1
 		}
@@ -552,31 +552,7 @@ ideas = {
 			}
 			equipment_bonus = {
 				fighter_equipment = {
-					build_cost_ic = -0.10 instant = yes
-				}
-				cv_fighter_equipment = {
-					build_cost_ic = -0.10 instant = yes
-				}
-				CAS_equipment = {
-					build_cost_ic = -0.10 instant = yes
-				}
-				cv_CAS_equipment = {
-					build_cost_ic = -0.10 instant = yes
-				}
-				cv_nav_bomber_equipment = {
-					build_cost_ic = -0.10 instant = yes
-				}
-				nav_bomber_equipment = {
-					build_cost_ic = -0.10 instant = yes
-				}
-				tac_bomber_equipment = {
-					build_cost_ic = -0.10 instant = yes
-				}
-				heavy_fighter_equipment = {
-					build_cost_ic = -0.10 instant = yes
-				}
-				strat_bomber_equipment = {
-					build_cost_ic = -0.10 instant = yes
+					build_cost_ic = -0.05 instant = yes
 				}
 			}
 			removal_cost = -1
@@ -602,39 +578,7 @@ ideas = {
 				air_ace_generation_chance_factor = 0.25
 			}
 			equipment_bonus = {
-				fighter_equipment = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
-				cv_fighter_equipment = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
 				CAS_equipment = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
-				cv_CAS_equipment = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
-				cv_nav_bomber_equipment = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
-				nav_bomber_equipment = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
-				tac_bomber_equipment = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
-				heavy_fighter_equipment = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
-				strat_bomber_equipment = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
@@ -651,9 +595,9 @@ ideas = {
 			allowed = {	always = no	}
 			picture = davie_shipbuilding
 			modifier = {
-				navy_refit_speed = 0.25
-				navy_refit_ic_cost = -0.25
-				repair_speed_factor = 0.25
+				navy_refit_speed = 0.15
+				navy_refit_ic_cost = -0.15
+				repair_speed_factor = 0.15
 			}
 			removal_cost = -1
 		}
@@ -752,9 +696,9 @@ ideas = {
 			}
 			picture = generic_coastal_defense_ships
 			modifier = {
-				experience_gain_navy = 0.10
 				naval_coordination = 0.05
 				spotting_chance = 0.05
+				naval_speed_factor = 0.10
 			}
 			research_bonus = {
 				naval_doctrine = 0.10
@@ -790,35 +734,35 @@ ideas = {
 			}
 			equipment_bonus = {
 				convoy = {
-					build_cost_ic = -0.10
+					build_cost_ic = -0.05
 					instant = yes
 				}
 				submarine = {
-					build_cost_ic = -0.10
+					build_cost_ic = -0.05
 					instant = yes
 				}
 				destroyer = {
-					build_cost_ic = -0.10
+					build_cost_ic = -0.05
 					instant = yes
 				}
 				light_cruiser = {
-					build_cost_ic = -0.10
+					build_cost_ic = -0.05
 					instant = yes
 				}
 				heavy_cruiser = {
-					build_cost_ic = -0.10
+					build_cost_ic = -0.05
 					instant = yes
 				}
 				SH_battleship = {
-					build_cost_ic = -0.10
+					build_cost_ic = -0.05
 					instant = yes
 				}
 				battleship = {
-					build_cost_ic = -0.10
+					build_cost_ic = -0.05
 					instant = yes
 				}
 				carrier = {
-					build_cost_ic = -0.10
+					build_cost_ic = -0.05
 					instant = yes
 				}
 			}
@@ -902,11 +846,6 @@ ideas = {
 				attack_bonus_against = 0.15
 				defense_bonus_against = 0.15
 			}
-			targeted_modifier = {
-				tag = CNT
-				attack_bonus_against = 0.15
-				defense_bonus_against = 0.15
-			}
 			removal_cost = -1
 		}
 		CAN_loyalist_uprising = {
@@ -965,14 +904,6 @@ ideas = {
 					build_cost_ic = -0.10
 					instant = yes
 				}
-				mechanized_equipment = {
-					build_cost_ic = -0.10
-					instant = yes
-				}
-				motorized_equipment = {
-					build_cost_ic = -0.10
-					instant = yes
-				}
 			}
 			removal_cost = -1
 		}
@@ -981,7 +912,6 @@ ideas = {
 			allowed = { always = no }
 			picture = generic_army_war_college
 			modifier = {
-				army_org_factor = 0.10
 				special_forces_cap = 0.08
 			}
 			removal_cost = -1
@@ -992,8 +922,8 @@ ideas = {
 			picture = generic_army_war_college
 			modifier = {
 				army_morale_factor = 0.05
-				army_org_factor = 0.10
-				special_forces_cap = 0.08
+				special_forces_attack_factor = 0.10
+				special_forces_defence_factor = 0.10
 				supply_consumption_factor = -0.05
 			}
 			removal_cost = -1
@@ -1052,6 +982,7 @@ ideas = {
 			modifier = {
 				supply_consumption_factor = -0.05
 				planning_speed = 0.20
+				production_speed_arms_factory_factor = 0.10
 			}
 			research_bonus = {
 				land_doctrine = 0.20
@@ -1499,8 +1430,6 @@ ideas = {
 			allowed = {
 				original_tag = CAN
 			}
-			available = { has_completed_focus = CAN_fighter_programme }
-			visible = { has_completed_focus = CAN_fighter_programme }
 			traits = { fighter_producer_offense_2 }
 			research_bonus = {
 				air_equipment = 0.1

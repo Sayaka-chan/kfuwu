@@ -339,21 +339,8 @@ ideas = {
 			picture = jap_interservice_rivalry_navy_strengthened
 
 			modifier = {
-				political_power_cost = 0.025
-			}
-
-			research_bonus = {
-				land_doctrine = -0.1
-				naval_doctrine = 0.025
-			}
-		}
-
-		JAP_strong_naval_bias = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea JAP_strong_naval_bias"}
-			picture = jap_interservice_rivalry_navy_dominant
-
-			modifier = {
-				political_power_cost = 0.1
+				production_speed_dockyard_factor = 0.05
+				industrial_capacity_dockyard = 0.1
 			}
 
 			research_bonus = {
@@ -362,16 +349,31 @@ ideas = {
 			}
 		}
 
+		JAP_strong_naval_bias = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea JAP_strong_naval_bias"}
+			picture = jap_interservice_rivalry_navy_dominant
+
+			modifier = {
+			production_speed_dockyard_factor = 0.10
+			industrial_capacity_dockyard = 0.15
+			}
+
+			research_bonus = {
+				land_doctrine = -0.2
+				naval_doctrine = 0.2
+			}
+		}
+
 		JAP_slight_army_bias = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea JAP_slight_army_bias"}
 			picture = jap_interservice_rivalry_army_strengthened
 
 			modifier = {
-				political_power_cost = 0.025
+			production_speed_arms_factory_factor = 0.05
 			}
 
 			research_bonus = {
-				land_doctrine = 0.025
+				land_doctrine = 0.1
 				naval_doctrine = -0.1
 			}
 		}
@@ -381,12 +383,13 @@ ideas = {
 			picture = jap_interservice_rivalry_army_dominant
 
 			modifier = {
-				political_power_cost = 0.1
+			production_speed_arms_factory_factor = 0.1
+			industrial_capacity_factory = 0.05
 			}
 
 			research_bonus = {
-				land_doctrine = 0.1
-				naval_doctrine = -0.1
+				land_doctrine = 0.2
+				naval_doctrine = -0.2
 			}
 		}
 

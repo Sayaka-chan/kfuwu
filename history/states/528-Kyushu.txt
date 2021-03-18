@@ -5,6 +5,7 @@ state = {
 	state_category = eight
 	resources = {
 		chromium = 88
+		aluminium = 34
 	}
 
 	history = {

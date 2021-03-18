@@ -15,6 +15,12 @@ set_technology = {
 	early_bomber = 1
 }
 
+add_ideas = {
+	neutral_idea
+	pp_idea
+	no_training
+}
+
 ### Navy - MtG ###
 
 if = {

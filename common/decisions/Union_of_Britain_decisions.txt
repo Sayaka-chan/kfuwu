@@ -3,15 +3,7 @@ ENG_weltkrieg_decisions = {
 		icon = generic_ignite_civil_war
 		allowed = { original_tag = ENG }
 		available = {
-			FRA = {
-				OR = {
-					has_capitulated = yes
-					NOT = {
-						exists = yes
-					}
-				}
-			}
-			has_global_flag = second_weltkrieg_has_started
+			100 = { is_controlled_by = CAN }
 		}
 		fire_only_once = yes
 		cost = 50
@@ -19,17 +11,21 @@ ENG_weltkrieg_decisions = {
 			log = "[GetDateText]: [Root.GetName]: Decision ENG_never_surrender"
 			add_stability = 0.1
 			add_war_support = 0.1
-			add_ideas = ENG_never_surrender_idea
+			add_timed_idea = {
+				idea = ENG_never_surrender_idea
+				days = 180
+			}
 		}
 	}
 	ENG_the_home_guard = {
 		icon = generic_prepare_civil_war
 		allowed = { original_tag = ENG }
 		available = {
-			has_global_flag = second_weltkrieg_has_started
+			has_war_with = CAN
+			has_war_with = GER
 		}
 		fire_only_once = yes
-		cost = 80
+		cost = 50
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision ENG_the_home_guard"
 			custom_effect_tooltip = ENG_summon_the_home_guard_tp
@@ -42,7 +38,7 @@ ENG_weltkrieg_decisions = {
 		icon = generic_naval
 		allowed = { original_tag = ENG }
 		available = {
-			has_global_flag = second_weltkrieg_has_started
+			date > 1939.1.1
 		}
 		fire_only_once = yes
 		cost = 50
@@ -52,6 +48,54 @@ ENG_weltkrieg_decisions = {
 			hidden_effect = {
 				ENG_DECISION_EC01_naval_variant = yes
 				load_oob = ENG_conscript_vessels
+			}
+		}
+	}
+	ENG_build_up_iceland = {
+		icon = generic_prepare_civil_war
+		allowed = { original_tag = ENG }
+		fire_only_once = yes
+		cost = 100
+		days_remove = 1
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision ENG_build_up_iceland"
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision ENG_build_up_iceland"
+			100 = {
+				add_building_construction = {
+					type = naval_base
+					level = 20
+					province = 12674
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 12674
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 20
+					province = 13584
+					instant_build = yes
+				}
+				set_building_level = {
+					type = air_base
+					level = 20
+					instant_build = yes
+				}
+				set_building_level = {
+					type = anti_air_building
+					level = 7
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 10
+					instant_build = yes
+				}
 			}
 		}
 	}

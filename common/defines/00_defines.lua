@@ -1640,8 +1640,8 @@ NNavy = {
 	NAVAL_COMBAT_AIR_SUB_DETECTION_FACTOR = 0.0,						-- A global factor that applies after all others, right before the sub detection contributed by plane is added to the global sub detection of a combatant
 
     NAVAL_COMBAT_AIR_SUB_TARGET_SCORE = 10,                             -- scoring for target picking for planes inside naval combat, one define per ship typ
-	NAVAL_COMBAT_AIR_CAPITAL_TARGET_SCORE = 50,
-	NAVAL_COMBAT_AIR_CARRIER_TARGET_SCORE = 250,
+	NAVAL_COMBAT_AIR_CAPITAL_TARGET_SCORE = 100,
+	NAVAL_COMBAT_AIR_CARRIER_TARGET_SCORE = 200,
 	NAVAL_COMBAT_AIR_CONVOY_TARGET_SCORE = 1.0,
 	NAVAL_COMBAT_AIR_STRENGTH_TARGET_SCORE = 5,                         -- how much score factor from low health (scales between 0->this number)
 	NAVAL_COMBAT_AIR_LOW_AA_TARGET_SCORE = 5,                           -- how much score factor from low AA guns (scales between 0->this number)

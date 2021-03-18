@@ -1798,18 +1798,18 @@ CAN_returning_home_decisions = {
 			101 = {
 				add_building_construction = {
 					type = naval_base
-					level = 10
+					level = 20
 					province = 13601
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = air_base
-					level = 10
+					level = 30
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 5
+					level = 10
 					instant_build = yes
 				}
 			}
@@ -2436,7 +2436,210 @@ CAN_kings_influence_decisions = {
 			}
 		}
 	}
+	CAN_empire_ast1 = {
+		icon = eng_abdication_crisis
 
+		available = {
+			tag = CAN
+		}
+
+		visible = {
+			tag = CAN
+			NOT = {
+				has_country_flag = ast_dev2
+				has_country_flag = ast_dev3
+			}
+		}
+
+		cost = 50
+		days_remove = 365
+		fire_only_once = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision CAN_royal_visit target: [From.GetName]"
+			set_country_flag = ast_dev1
+			AST = {
+			add_timed_idea = {
+				idea = empire_buff1
+				days = 365
+				}
+			}
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove CAN_royal_visit target: [From.GetName]"
+			clr_country_flag = ast_dev1
+		}
+	}
+	CAN_empire_ast2 = {
+		icon = eng_abdication_crisis
+
+		available = {
+			tag = CAN
+		}
+
+		visible = {
+			tag = CAN
+			NOT = {
+				has_country_flag = ast_dev1
+				has_country_flag = ast_dev3
+			}
+		}
+
+		cost = 50
+		days_remove = 365
+		fire_only_once = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision CAN_royal_visit target: [From.GetName]"
+			set_country_flag = ast_dev2
+			AST = {
+			add_timed_idea = {
+				idea = empire_buff2
+				days = 365
+				}
+			}
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove CAN_royal_visit target: [From.GetName]"
+			clr_country_flag = ast_dev2
+		}
+	}
+	CAN_empire_ast3 = {
+		icon = eng_abdication_crisis
+
+		available = {
+			tag = CAN
+		}
+
+		visible = {
+			tag = CAN
+			NOT = {
+				has_country_flag = ast_dev1
+				has_country_flag = ast_dev2
+			}
+		}
+
+		cost = 50
+		days_remove = 365
+		fire_only_once = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision CAN_royal_visit target: [From.GetName]"
+			set_country_flag = ast_dev3
+			AST = {
+			add_timed_idea = {
+				idea = empire_buff3
+				days = 365
+				}
+			}
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove CAN_royal_visit target: [From.GetName]"
+			clr_country_flag = ast_dev3
+		}
+	}
+	CAN_empire_raj1 = {
+		icon = eng_abdication_crisis
+
+		available = {
+			tag = CAN
+		}
+
+		visible = {
+			tag = CAN
+			NOT = {
+				has_country_flag = raj_dev2
+				has_country_flag = raj_dev3
+			}
+		}
+
+		cost = 50
+		days_remove = 365
+		fire_only_once = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision CAN_royal_visit target: [From.GetName]"
+			set_country_flag = raj_dev1
+			DEH = {
+			add_timed_idea = {
+				idea = empire_buff1
+				days = 365
+				}
+			}
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove CAN_royal_visit target: [From.GetName]"
+			clr_country_flag = raj_dev1
+		}
+	}
+	CAN_empire_raj2 = {
+		icon = eng_abdication_crisis
+
+		available = {
+			tag = CAN
+		}
+
+		visible = {
+			tag = CAN
+			NOT = {
+				has_country_flag = raj_dev1
+				has_country_flag = raj_dev3
+			}
+		}
+
+		cost = 50
+		days_remove = 365
+		fire_only_once = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision CAN_royal_visit target: [From.GetName]"
+			set_country_flag = raj_dev2
+			DEH = {
+			add_timed_idea = {
+				idea = empire_buff2
+				days = 365
+				}
+			}
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove CAN_royal_visit target: [From.GetName]"
+			clr_country_flag = raj_dev2
+		}
+	}
+	CAN_empire_raj3 = {
+		icon = eng_abdication_crisis
+
+		available = {
+			tag = CAN
+		}
+
+		visible = {
+			tag = CAN
+			NOT = {
+				has_country_flag = raj_dev1
+				has_country_flag = raj_dev2
+			}
+		}
+
+		cost = 50
+		days_remove = 365
+		fire_only_once = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision CAN_royal_visit target: [From.GetName]"
+			set_country_flag = raj_dev3
+			DEH = {
+			add_timed_idea = {
+				idea = empire_buff3
+				days = 365
+				}
+			}
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove CAN_royal_visit target: [From.GetName]"
+			clr_country_flag = raj_dev3
+		}
+	}
 }
 
 CAN_iedc_decisions = {
@@ -3470,7 +3673,7 @@ annexation_decisions = {
 CAN_Sealion_decisions = {
 	CAN_SealionD = {
 		icon = generic_nationalism
-		allowed = { tag = CAN}
+		allowed = { tag = CAN }
 		available = {
 			has_completed_focus = CAN_Sealion
 		}
@@ -3479,7 +3682,7 @@ CAN_Sealion_decisions = {
 
 		cost = 5
 		complete_effect = {
-
+			log = "[GetDateText]: [Root.GetName]: Decision CAN_sealionD"
 
 			CAN = { add_timed_idea = { idea = CAN_SealionI days = 150 }  }
 			AST = { add_timed_idea = { idea = AST_SealionI days = 150 }  }
@@ -3487,5 +3690,157 @@ CAN_Sealion_decisions = {
 			DEH = { add_timed_idea = { idea = DEH_SealionI days = 150 }  }
 			NFA = { add_timed_idea = { idea = NFA_SealionI days = 150 }  }
 			}
+	}
+}
+CAN_war_in_the_east_decisions = {
+	CAN_fortress_Java = {
+		icon = generic_prepare_civil_war
+		allowed = { tag = CAN }
+		available = {
+			has_war_with = JAP
+			has_full_control_of_state = 1019
+			has_full_control_of_state = 335
+			has_full_control_of_state = 1020
+		}
+		fire_only_once = yes
+
+		cost = 100
+		days_remove = 60
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision CAN_fortress_Java"
+			1020 = {
+				add_building_construction = {
+				type = air_base
+				level = 20
+				instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 7381
+					instant_build = yes
+				}
+			}
+			335 = {
+				add_building_construction = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 10279
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 10
+					province = 10135
+					instant_build = yes
+				}
+			}
+			1019 = {
+				add_building_construction = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 4608
+					instant_build = yes
+				}
+			}
+		}
+	}
+	CAN_Papua = {
+		icon = generic_prepare_civil_war
+		allowed = { tag = CAN }
+		available = {
+			has_war_with = JAP
+			AST= { has_full_control_of_state = 523 }
+			AST= { has_full_control_of_state = 843 }
+		}
+		fire_only_once = yes
+
+		cost = 50
+		days_remove = 30
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision CAN_Papua"
+			523 = {
+				add_building_construction = {
+				type = air_base
+				level = 10
+				instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 10
+					province = 4329
+					instant_build = yes
+				}
+			}
+			843 = {
+				add_building_construction = {
+				type = air_base
+				level = 10
+				instant_build = yes
+				}
+			}
+		}
+	}
+	CAN_Australia = {
+		icon = generic_prepare_civil_war
+		allowed = { tag = CAN }
+		available = {
+			has_war_with = JAP
+			JAP = { has_full_control_of_state = 523 }
+			JAP = { has_full_control_of_state = 843 }
+			AST = { has_full_control_of_state = 986 }
+		}
+		fire_only_once = yes
+
+		cost = 50
+		days_remove = 90
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision CAN_Australia"
+			986 = {
+				add_building_construction = {
+				type = air_base
+				level = 10
+				instant_build = yes
+				}
+			}
+			521 = {
+				add_building_construction = {
+				type = air_base
+				level = 10
+				instant_build = yes
+				}
+			}
+			285 = {
+				add_building_construction = {
+				type = air_base
+				level = 10
+				instant_build = yes
+				}
+			}
+			985 = {
+				add_building_construction = {
+				type = air_base
+				level = 10
+				instant_build = yes
+				}
+			}
+			520 = {
+				add_building_construction = {
+				type = air_base
+				level = 10
+				instant_build = yes
+				}
+			}
+		}
 	}
 }

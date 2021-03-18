@@ -1,0 +1,17 @@
+is_playable_country = {
+	OR = {
+		tag = RUS
+		tag = FRA
+		tag = JAP
+		tag = DEH
+		tag = AST
+		tag = UKR
+		tag = AUS
+		tag = SRI
+		tag = ENG
+		tag = NFA
+		tag = USA
+		tag = CAN
+		tag = OTT
+	}
+}

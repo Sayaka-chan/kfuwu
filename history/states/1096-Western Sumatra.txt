@@ -1,0 +1,14 @@
+state = {
+	id = 1096
+	name = "STATE_1096"
+	impassable = yes
+	state_category = one
+	manpower = 29830
+	history = {
+		owner = GER
+		add_core_of = VEN
+	}
+	provinces = {
+		4446 1460 10354 10382 1428 7368 10194 7440 12415 12138 7308 12209 4320
+	}
+}

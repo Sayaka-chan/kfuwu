@@ -169,6 +169,8 @@ JAP_great_drought_active:0 "is experiencing a terrible drought"
 JAP_food_shipments_continue:0 "Shipments of food and aid to §Y[JAP.GetNameDef]§! will continue\n"
 JAP_food_shipments_cut:0 "Shipments of food and aid to §Y[JAP.GetNameDef]§! will immediately end!\n"
 
+war_in_the_east_tooltip:0 "§RWe will declare war on the Entente and on the Reichspakt!§!"
+
 ### Decisions ###
 JAP_land_reform:0 "Land Reform"
 JAP_land_reform_desc:0 "Land reform has been an ongoing issue in Japanese politics for nearly 70 years. We are not the first to attempt to resolve the issue and, if we are not careful, will not be the last. The more effort and time we put in, the more likely it is our efforts will bear fruit, though we are free to declare an end to our programme at any time...\n\nCurrently our land reform progress is: [?JAP.JAP_land_reform_variable|H0]."

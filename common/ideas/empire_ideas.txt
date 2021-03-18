@@ -1,0 +1,27 @@
+ideas = {
+	country = {
+		empire_buff1 = {
+			picture = generic_production_bonus
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+
+		}
+		empire_buff2 = {
+			picture = generic_production_bonus
+
+			modifier = {
+				research_speed_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+		empire_buff3 = {
+			picture = generic_production_bonus
+			modifier = {
+				production_speed_arms_factory_factor = 0.10
+			}
+		}
+	}
+}

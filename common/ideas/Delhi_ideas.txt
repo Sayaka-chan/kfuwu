@@ -7,6 +7,14 @@ ideas = {
 	##############
 
 	country = {
+		DEH_mp = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea DEH_mp"}
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.60
+			}
+		}
 		DEH_backwards_economy_1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea DEH_backwards_economy_1"}
 			allowed = { always = no }

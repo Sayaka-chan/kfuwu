@@ -7,6 +7,8 @@ SWE = {
 
 add_ideas = {
 	limited_conscription
+	no_training
+	neutral_idea
 }
 
 set_technology = {

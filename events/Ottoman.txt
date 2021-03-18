@@ -3429,55 +3429,6 @@ country_event = {
 # Order restored to the capital!
 # Osman Fuad crowned Osman IV
 
-news_event = {
-	id = ott.137
-	immediate = { log = "[GetDateText]: [Root.GetName]: event ott.137" }
-	title = ott.137.t
-	desc = ott.137.d
-	picture = GFX_osman_fuad_coronation
-
-	is_triggered_only = yes
-
-	option = {
-		name = ott.137.a
-
-		if = {
-			limit = {
-				has_stability > 50
-			}
-			add_stability = 0.15
-
-			else = {
-				add_stability = 0.25
-			}
-		}
-		retire_country_leader = yes
-		create_country_leader = {
-			name = "Osman IV"
-			desc = "POLITICS_OSMAN_FUAD_DESC"
-			picture = "Portrait_Ottoman_OsmanFuad.tga"
-			expire = "1965.1.1"
-			ideology = paternal_autocrat_subtype
-			traits = {
-				warrior_prince
-			}
-		}
-		if = {
-			limit = {
-				focus_progress = {
-					focus = OTT_fight_corruption
-					progress > 0.1
-				}
-				NOT = {
-					has_completed_focus = OTT_fight_corruption
-				}
-			}
-			complete_national_focus = OTT_fight_corruption
-		}
-		remove_ideas = ott_investigation_idea
-	}
-}
-
 #country_event = { # TODO - EMPTY
 #	id = ott.138
 #	title = ott.138.t
@@ -4710,53 +4661,6 @@ country_event = {
 
 
 ### Turkestan gift exchange - Turkic Diplomacy focus
-
-country_event = { # Should we send a gift to the Emir of Bukhara?
-	id = ott.168
-	immediate = { log = "[GetDateText]: [Root.GetName]: event ott.168" }
-	title = ott.168.t
-	desc = ott.168.d
-
-	fire_only_once = yes
-
-	trigger = {
-		tag = OTT
-		has_completed_focus = OTT_turkic_diplomacy
-		has_war = no
-		TRK = {
-			exists = yes
-			is_subject = no
-			has_war = no
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 10
-	}
-
-	option = { # Send a custom-made Ottoman rifle!
-		name = ott.168.a
-
-		ai_chance = {
-			factor = 99
-		}
-		TRK = {
-			country_event = {
-				id = ott.169
-				days = 30
-			}
-		}
-	}
-
-	option = { # Bah, who cares about those lowly nomads?
-		name = ott.168.b
-
-		ai_chance = {
-			factor = 1
-		}
-		add_stability = -0.05
-	}
-}
 
 # TRK - Ottoman Khan sends beautiful gift!
 

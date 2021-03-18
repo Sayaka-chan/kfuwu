@@ -147,8 +147,7 @@ technologies = {
 	cv_fighter1 = {
 
 		allow_branch = {
-
-			always=no
+			always = no
 		}
 
 		enable_equipments = {
