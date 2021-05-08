@@ -3,6 +3,13 @@
 can_create_intelligence_agency = {
 	# change as desired
 	if = {
-		always = yes
+		tag = CAN
+		tag = GER
+		tag = ENG
+		tag = USA
+		tag = RUS
+		tag = JAP
+		tag = FRA
+		tag = AUS
 	}
 }

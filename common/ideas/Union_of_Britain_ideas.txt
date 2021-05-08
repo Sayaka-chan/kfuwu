@@ -212,9 +212,10 @@ ideas = {
 				always = no
 			}
 			modifier = {
-				army_org_Factor = 0.2
-				max_planning = 0.15
-				planning_speed = 0.15
+				army_org_Factor = 0.1
+				max_planning = 0.1
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
 			}
 			removal_cost = -1
 			picture = advisors_england
@@ -271,8 +272,11 @@ ideas = {
 				conscription_factor = 0.1
 				army_morale_factor = 0.1
 				army_org_Factor = -0.1
-				army_core_defence_factor = 0.2
-				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.35
+				army_core_attack_factor = 0.35
+				army_attack_factor = -0.15
+				army_defence_factor = -0.15
+				max_planning = -0.1
 			}
 			picture = UoB_militia_idea
 		}
@@ -453,6 +457,16 @@ ideas = {
 			removal_cost = -1
 			picture = tfv_can_conscription_crisis
 		}
+		ENG_rule_waves = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ENG_rule_waves"}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.1
+			}
+		}
 	}
 	industrial_concern = {# Industrial Manufacturer
 		imperial_chemical_industries = {
@@ -515,6 +529,7 @@ ideas = {
 			research_bonus = {
 				infantry_weapons = 0.1
 			}
+			cost = 100
 		}
 		rsaf = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea rsaf"}
@@ -527,6 +542,7 @@ ideas = {
 			research_bonus = {
 				infantry_weapons = 0.1
 			}
+			cost = 100
 		}
 		webley_scott = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea webley_scott"}
@@ -539,6 +555,7 @@ ideas = {
 			research_bonus = {
 				infantry_weapons = 0.1
 			}
+			cost = 100
 		}
 		sterling = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea sterling"}
@@ -551,6 +568,7 @@ ideas = {
 			research_bonus = {
 				artillery = 0.1
 			}
+			cost = 100
 		}
 		republican_arsenal = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea republican_arsenal"}
@@ -563,6 +581,7 @@ ideas = {
 			research_bonus = {
 				artillery = 0.1
 			}
+			cost = 100
 		}
 		austin = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea austin"}
@@ -575,6 +594,7 @@ ideas = {
 			research_bonus = {
 				motorized_equipment = 0.1
 			}
+			cost = 100
 		}
 		morris = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea morris"}
@@ -587,47 +607,12 @@ ideas = {
 			research_bonus = {
 				motorized_equipment = 0.1
 			}
+			cost = 100
 		}
 
 	}
 	tank_manufacturer = {# Heavy Equipment Manufacturer
 		designer = yes
-		aec = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea aec"}
-			allowed = {
-				original_tag = ENG
-			}
-			traits = {
-				heavy_tank_producer_mass_1
-			}
-			research_bonus = {
-				armor = 0.1
-			}
-		}
-		rolls_royce = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea rolls_royce"}
-			allowed = {
-				original_tag = ENG
-			}
-			traits = {
-				heavy_tank_producer_offense_1
-			}
-			research_bonus = {
-				armor = 0.1
-			}
-		}
-		vauxhall = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea vauxhall"}
-			allowed = {
-				original_tag = ENG
-			}
-			traits = {
-				small_tank_producer_defense_1
-			}
-			research_bonus = {
-				armor = 0.1
-			}
-		}
 	}
 	naval_manufacturer = {
 		designer = yes
@@ -637,11 +622,24 @@ ideas = {
 				original_tag = ENG
 			}
 			traits = {
-				capital_ship_producer_offense_1
+				
+			}
+			equipment_bonus = {
+				carrier = {
+					carrier_size = 0.2
+					naval_range = 0.2
+				}
+				ship_hull_heavy = {
+					hg_attack = 0.07
+					naval_range = 0.2
+					armor_value = 0.10
+				}
 			}
 			research_bonus = {
 				naval_equipment = 0.1
 			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
+			cost = 100
 		}
 		john_brown_company = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea john_brown_company"}
@@ -649,11 +647,24 @@ ideas = {
 				original_tag = ENG
 			}
 			traits = {
-				cruiser_producer_mass_1
+				
+			}
+			equipment_bonus = {
+				light_cruiser = {
+					naval_speed = 0.1
+				}
+				heavy_cruiser = {
+					naval_speed = 0.1
+				}
+				destroyer = {
+					naval_speed = 0.05
+				}
 			}
 			research_bonus = {
 				naval_equipment = 0.1
 			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
+			cost = 100
 		}
 		swan_hunter = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea swan_hunter"}
@@ -661,63 +672,36 @@ ideas = {
 				original_tag = ENG
 			}
 			traits = {
-				small_ship_producer_offense_1
+				
+			}
+			equipment_bonus = {
+				submarine = {
+					naval_speed = 0.1
+					sub_visibility = -0.05
+				}
 			}
 			research_bonus = {
 				naval_equipment = 0.1
 			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
+			cost = 100
 		}
 	}
 
 	aircraft_manufacturer = {
 		designer = yes
-		blackburn = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea blackburn"}
-			allowed = {
-				original_tag = ENG
-			}
-			traits = {
-				nav_cas_producer_defense_1
-			}
-			research_bonus = {
-				air_equipment = 0.1
-			}
-		}
-		baulton_paul = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea baulton_paul"}
-			allowed = {
-				original_tag = ENG
-			}
-			traits = {
-				bomber_producer_defense_1
-			}
-			research_bonus = {
-				air_equipment = 0.1
-			}
-		}
 		handley_page = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea handley_page"}
 			allowed = {
 				original_tag = ENG
 			}
 			traits = {
-				bomber_producer_mass_1
+				bomber_producer_offense_2
 			}
 			research_bonus = {
 				air_equipment = 0.1
 			}
-		}
-		hawker = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea hawker"}
-			allowed = {
-				original_tag = ENG
-			}
-			traits = {
-				fighter_producer_mass_2
-			}
-			research_bonus = {
-				air_equipment = 0.1
-			}
+			cost = 100
 		}
 		short = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea short"}
@@ -725,11 +709,12 @@ ideas = {
 				original_tag = ENG
 			}
 			traits = {
-				nav_cas_producer_offense_1
+				nav_cas_producer_offense_2
 			}
 			research_bonus = {
 				air_equipment = 0.1
 			}
+			cost = 100
 		}
 		supermarine = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea supermarine"}
@@ -742,18 +727,7 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.1
 			}
-		}
-		westland = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea westland"}
-			allowed = {
-				original_tag = ENG
-			}
-			traits = {
-				bomber_producer_offense_1
-			}
-			research_bonus = {
-				air_equipment = 0.1
-			}
+			cost = 100
 		}
 	}
 }

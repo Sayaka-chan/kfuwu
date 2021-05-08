@@ -73,10 +73,9 @@ units = {
 					cv_nav_bomber_equipment_1 =  { owner = "ENG" amount = 18 }
 				}
 			}
-			ship = { name = "RNS Liberty" definition = carrier equipment = { ship_hull_carrier_1 = { amount = 1 owner = ENG version_name = "Republic Class" } }
+			ship = { name = "RNS Liberty" definition = carrier equipment = { ship_hull_carrier_conversion_dng = { amount = 1 owner = ENG version_name = "Rebecca Class" } }
 				air_wings = {
-					cv_fighter_equipment_0 =  { owner = "ENG" amount = 24 }
-					cv_nav_bomber_equipment_1 =  { owner = "ENG" amount = 16 }
+					cv_nav_bomber_equipment_1 =  { owner = "ENG" amount = 75 }
 				}
 			}
 			ship = { name = "RNS Tolpuddle" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Queen Elizabeth/Iron Duke Class" } } }
@@ -139,10 +138,9 @@ units = {
 			ship = { name = "RNS Dreadnought" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Queen Elizabeth/Iron Duke Class" } } }
 			ship = { name = "RNS Godwin" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Queen Elizabeth/Iron Duke Class" } } }
 			ship = { name = "RNS Tyler" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Queen Elizabeth/Iron Duke Class" } } }
-			ship = { name = "RNS Land and Labour" definition = carrier equipment = { ship_hull_carrier_1 = { amount = 1 owner = ENG version_name = "Republic Class" } }
+			ship = { name = "RNS Land and Labour" definition = carrier equipment = { ship_hull_carrier_conversion_dng = { amount = 1 owner = ENG version_name = "Rebecca Class" } }
 				air_wings = {
-					cv_fighter_equipment_0 =  { owner = "ENG" amount = 24 }
-					cv_nav_bomber_equipment_1 =  { owner = "ENG" amount = 16 }
+					cv_nav_bomber_equipment_1 =  { owner = "ENG" amount = 85 }
 				}
 			}
 			ship = { name = "RNS Allen" definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Nelson/Rodney Class" } } }

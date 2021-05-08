@@ -171,10 +171,6 @@ set_autonomy = {
 	autonomy_state = kr_autonomous_puppet
 }
 set_autonomy = {
-	target = ITA
-	autonomy_state = kr_autonomous_puppet
-}
-set_autonomy = {
 	target = CZE
 	autonomy_state = kr_integrated_puppet
 }
@@ -194,6 +190,7 @@ add_ideas = {
 	AUS_army_1
 	pp_idea
 	AUS_divided_society
+	peace_training
 	### Minister
 	limited_conscription
 }
@@ -543,26 +540,6 @@ CZE = {
 		authoritarian_democrat = 6
 		paternal_autocrat = 11
 		national_populist = 2
-	}
-}
-ITA = {
-	set_politics = {
-		ruling_party = social_liberal
-		last_election = "1932.05.01"
-		election_frequency = 60
-		elections_allowed = yes
-	}
-	set_popularities = {
-		totalist = 0
-		radical_socialist = 0
-		syndicalist = 2
-		social_democrat = 4
-		social_liberal = 31
-		market_liberal = 8
-		social_conservative = 18
-		authoritarian_democrat = 16
-		paternal_autocrat = 3
-		national_populist = 18
 	}
 }
 

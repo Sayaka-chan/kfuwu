@@ -71,7 +71,7 @@ technologies = {
 
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -131,7 +131,7 @@ technologies = {
 
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -176,7 +176,7 @@ technologies = {
 
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -257,7 +257,7 @@ technologies = {
 			custom_effect_tooltip = "Each Motorized Artillery requires Batallion 25 less Motorized Equipment"
 		}
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -306,7 +306,7 @@ technologies = {
 
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -357,7 +357,7 @@ technologies = {
 
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -409,7 +409,7 @@ technologies = {
 
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -471,7 +471,7 @@ technologies = {
 
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -532,7 +532,7 @@ technologies = {
 
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -582,7 +582,7 @@ technologies = {
 
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -630,7 +630,7 @@ technologies = {
 			max_organisation = 5
 		}
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -674,7 +674,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 		air_cas_present_factor = 0.25
 		categories = {
 			land_doctrine
@@ -727,7 +727,7 @@ technologies = {
 
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 		categories = {
 			land_doctrine
 			cat_mobile_warfare
@@ -775,7 +775,7 @@ technologies = {
 			defense = 0.1
 		}
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -809,7 +809,7 @@ technologies = {
 		conscription = 0.005
 		#enable_tactic = tactic_guerrilla_tactics
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -897,7 +897,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -946,7 +946,7 @@ technologies = {
 
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -990,7 +990,7 @@ technologies = {
 
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -1034,7 +1034,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -1088,7 +1088,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -1136,7 +1136,7 @@ technologies = {
 
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -1189,7 +1189,7 @@ technologies = {
 
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -1237,7 +1237,7 @@ technologies = {
 
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -1285,7 +1285,7 @@ technologies = {
 
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -1329,7 +1329,7 @@ technologies = {
 
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -1370,7 +1370,7 @@ technologies = {
 		army_bonus_air_superiority_factor = 0.20
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -1418,7 +1418,7 @@ technologies = {
 
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -1463,7 +1463,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -1508,7 +1508,7 @@ technologies = {
 
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -1549,7 +1549,7 @@ technologies = {
 		enable_tactic = tactic_breakthrough
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -1645,7 +1645,7 @@ technologies = {
 		planning_speed = -0.5
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -1696,7 +1696,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -1745,7 +1745,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -1787,7 +1787,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -1841,7 +1841,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -1893,7 +1893,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -1949,7 +1949,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -1995,7 +1995,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -2043,7 +2043,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -2095,7 +2095,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -2142,7 +2142,7 @@ technologies = {
 
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -2191,7 +2191,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 		categories = {
 			land_doctrine
 			cat_grand_battle_plan
@@ -2237,7 +2237,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -2288,7 +2288,7 @@ technologies = {
 		}
 		cas_damage_reduction = 0.20
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -2329,7 +2329,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -2418,7 +2418,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -2472,7 +2472,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -2515,7 +2515,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -2575,7 +2575,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -2625,7 +2625,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -2669,7 +2669,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -2719,7 +2719,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -2775,7 +2775,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -2832,7 +2832,7 @@ technologies = {
 		enable_tactic = tactic_backhand_blow
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -2900,7 +2900,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -2950,7 +2950,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -3011,7 +3011,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -3056,7 +3056,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine
@@ -3102,7 +3102,7 @@ technologies = {
 		#enable_tactic = tactic_guerrilla_tactics
 
 		doctrine = yes
-		research_cost = 4.00
+		research_cost = 3.40
 
 		categories = {
 			land_doctrine

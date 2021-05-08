@@ -98,7 +98,6 @@ division_template = {
 division_template = {
 	name = "Panama Canal Garrison"
 	division_names_group = USA_MAR_01
-	is_locked = yes
 	regiments = {
 		marine = { x = 0 y = 0 }
 		marine = { x = 0 y = 1 }
@@ -165,58 +164,28 @@ units = {
 
 }
 
-air_wings = {
-
-	358 = {
-		fighter_equipment_0 = {
-			owner = USA
-			amount = 200
-		}
-		tac_bomber_equipment_0 = {
-			owner = USA
-			amount = 200
-		}
-	}
-
-	378 = {
-		tac_bomber_equipment_0 = {
-			owner = USA
-			amount = 200
-		}
-	}
-
-	386 = {
-		cas_equipment_1 = {
-			owner = USA
-			amount = 200
-		}
-	}
-
-	366 = {
-		cas_equipment_1 = {
-			owner = USA
-			amount = 200
-		}
-	}
-
-	361 = {
-		fighter_equipment_0 = {
-			owner = USA
-			amount = 200
-		}
-		tac_bomber_equipment_0 = {
-			owner = USA
-			amount = 200
-		}
-	}
-}
-
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
 		}
 		requested_factories = 3
+		progress = 0.82
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+		}
+		requested_factories = 1
+		progress = 0.82
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = anti_tank_equipment_1
+		}
+		requested_factories = 1
 		progress = 0.82
 		efficiency = 100
 	}
@@ -230,26 +199,10 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = fighter_equipment_0
-		}
-		requested_factories = 1
-		progress = 0.39
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
 			type = CAS_equipment_1
 		}
 		requested_factories = 1
 		progress = 0.89
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = tac_bomber_equipment_0
-		}
-		requested_factories = 2
-		progress = 0.11
 		efficiency = 100
 	}
 	add_equipment_production = {

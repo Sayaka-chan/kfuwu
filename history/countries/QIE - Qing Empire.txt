@@ -73,31 +73,15 @@ set_country_flag = china_integration_unlocked
 
 add_ideas = {
 	QIE_army
+	no_training
+	neutral_idea
 }
 
 set_stability = 0.50
 set_war_support = 0.40
 
-add_equipment_to_stockpile = {
-	type = infantry_equipment_0
-	amount = 20000
-	producer = GER
-}
-
-add_equipment_to_stockpile = {
-	type = tac_bomber_equipment_0
-	amount = 50
-	producer = GER
-}
-
-add_equipment_to_stockpile = {
-	type = fighter_equipment_0
-	amount = 25
-	producer = GER
-}
-
-set_research_slots = 3
-set_convoys = 70
+set_research_slots = 0
+set_convoys = 0
 
 add_offsite_building = {
 	type = dockyard
@@ -132,12 +116,6 @@ set_popularities = {
 	authoritarian_democrat = 48
 	paternal_autocrat = 10
 	national_populist = 2
-}
-
-add_ideas = {
-
-	QIE_Jiang_Baili_cos
-	QIE_Wu_Peifu_carm
 }
 
 set_country_flag = legation_council_member

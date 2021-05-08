@@ -22,27 +22,6 @@ state = {
 			infrastructure = 5
 			industrial_complex = 4
 			air_base = 1
-			13081 = {
-				bunker = 4
-			}
-			9444 = {
-				bunker = 4
-			}
-			9536 = {
-				bunker = 4
-			}
-			3516 = {
-				bunker = 4
-			}
-			6537 = {
-				bunker = 1
-			}
-			13661 = {
-				bunker = 1
-			}
-			11519 = {
-				bunker = 3
-			}
 		}
 		add_core_of = GER
 	}

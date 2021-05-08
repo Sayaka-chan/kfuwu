@@ -63,9 +63,6 @@ dont_research_trade_interdiction_if_choice_made = {
 # these countries will never research the first level of Base Strike because they have focuses which require other doctrines
 never_research_base_strike = {
 	OR = {
-		tag = SCA
-		tag = SIA
-		tag = CAR
 		tag = VEN
 	}
 }

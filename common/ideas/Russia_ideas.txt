@@ -741,6 +741,7 @@ ideas = {
 			research_bonus = {
 				infantry_weapons = 0.1
 			}
+			cost = 100
 		}
 
 		izjevskij_mekhanitsjeskij = {
@@ -751,6 +752,7 @@ ideas = {
 			research_bonus = {
 				infantry_weapons = 0.1
 			}
+			cost = 100
 		}
 
 		sestroretskiy_oruzheynyy = {
@@ -761,6 +763,7 @@ ideas = {
 			research_bonus = {
 				infantry_weapons = 0.1
 			}
+			cost = 100
 		}
 
 		tulsky_oruzheiny = {
@@ -771,6 +774,7 @@ ideas = {
 			research_bonus = {
 				infantry_weapons = 0.1
 			}
+			cost = 100
 		}
 
 		gosudarstvennyy_obukhovskiy = {
@@ -781,6 +785,7 @@ ideas = {
 			research_bonus = {
 				artillery = 0.1
 			}
+			cost = 100
 		}
 
 		motovilikha = {
@@ -791,6 +796,7 @@ ideas = {
 			research_bonus = {
 				artillery = 0.1
 			}
+			cost = 100
 		}
 
 		russko_baltiisky = {
@@ -801,6 +807,7 @@ ideas = {
 			research_bonus = {
 				motorized_equipment = 0.1
 			}
+			cost = 100
 		}
 	}
 
@@ -812,30 +819,101 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea uralmash"}
 			allowed = { is_russian_tag = yes }
 			available = { owns_state = 653 } #Yekaterinburg
-			traits = { heavy_tank_producer_offense_1 }
+			traits = { }
+			equipment_bonus = {
+				heavy_tank_equipment = {
+					armor_value = 0.05
+					hard_attack = 0.1
+					soft_attack = 0.1
+					breakthrough = 0.1
+					reliability = 0.1
+					build_cost_ic = 0.1
+				}
+				heavy_tank_aa_equipment = {
+					armor_value = 0.05
+					breakthrough = 0.1
+					anti_air_attack = 0.1
+					reliability = 0.1
+					build_cost_ic = 0.1
+				}
+				heavy_tank_destroyer_equipment = {
+					armor_value = 0.05
+					hard_attack = 0.1
+					breakthrough = 0.1
+					reliability = 0.1
+					build_cost_ic = 0.1
+				}
+			}
 			research_bonus = {
 				armor = 0.1
 			}
+			cost = 100
 		}
 
 		uralvagonzavod = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea uralvagonzavod"}
 			allowed = { is_russian_tag = yes }
 			available = { owns_state = 653 } #Yekaterinburg
-			traits = { medium_tank_producer_offense_1 }
+			traits = { }
+			equipment_bonus = {
+				medium_tank_equipment = {
+					soft_attack = 0.10
+					hard_attack = 0.10
+					reliability = 0.05
+					breakthrough = 0.1
+					maximum_speed = 0.1
+					build_cost_ic = 0.1
+				}
+				medium_tank_aa_equipment = {
+					anti_air_attack = 0.10
+					reliability = 0.05
+					breakthrough = 0.1
+					maximum_speed = 0.1
+					build_cost_ic = 0.1
+				}
+				medium_tank_destroyer_equipment = {
+					hard_attack = 0.10
+					ap_attack = 0.10
+					reliability = 0.05
+					breakthrough = 0.1
+					maximum_speed = 0.1
+					build_cost_ic = 0.1
+				}
+			}
 			research_bonus = {
 				armor = 0.1
 			}
+			cost = 100
 		}
 
 		avtomobilnoe_moskovskoe = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea avtomobilnoe_moskovskoe"}
 			allowed = { is_russian_tag = yes }
 			available = { owns_state = 219 } #Moscow
-			traits = { small_tank_producer_defense_1 }
+			traits = { }
+			equipment_bonus = {
+				medium_tank_equipment = {
+					soft_attack = 0.1
+					hard_attack = 0.1
+					breakthrough = 0.1
+					build_cost_ic = 0.1
+				}
+				medium_tank_aa_equipment = {
+					anti_air_attack = 0.1
+					breakthrough = 0.1
+					build_cost_ic = 0.1
+				}
+				medium_tank_destroyer_equipment = {
+					hard_attack = 0.1
+					ap_attack = 0.10
+					breakthrough = 0.1
+					build_cost_ic = 0.1
+				}
+			}
 			research_bonus = {
 				armor = 0.1
 			}
+			cost = 100
 		}
 	}
 
@@ -851,6 +929,7 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.1
 			}
+			cost = 100
 		}
 
 		admiralteiskie_verfi = {
@@ -861,6 +940,7 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.1
 			}
+			cost = 100
 		}
 
 		rubin = {
@@ -871,6 +951,7 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.1
 			}
+			cost = 100
 		}
 
 	}
@@ -882,70 +963,33 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea dux"}
 			allowed = { is_russian_tag = yes }
 			available = { owns_state = 219 } #Moscow
-			traits = { fighter_producer_mass_1 }
+			traits = { fighter_producer_offense_2 }
 			research_bonus = {
 				air_equipment = 0.1
 			}
+			cost = 100
 		}
 
 		yakovlev = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea yakovlev"}
 			allowed = { is_russian_tag = yes }
 			available = { owns_state = 219 } #Moscow
-			traits = { bomber_producer_offense_1 }
+			traits = { bomber_producer_offense_2 }
 			research_bonus = {
 				air_equipment = 0.1
 			}
-		}
-
-		tupolev = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea tupolev"}
-			allowed = { is_russian_tag = yes }
-			available = { owns_state = 219 } #Moscow
-			traits = { bomber_producer_defense_1 }
-			research_bonus = {
-				air_equipment = 0.1
-			}
-		}
-
-		seversky_aircraft = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea seversky_aircraft"}
-			allowed = { is_russian_tag = yes }
-			available = { owns_state = 195 } #Saint Petersburg
-			traits = { bomber_producer_mass_1 }
-			research_bonus = {
-				air_equipment = 0.1
-			}
-		}
-
-		sukhoi = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea sukhoi"}
-			allowed = { is_russian_tag = yes }
-			available = { owns_state = 219 } #Moscow
-			traits = { nav_cas_producer_offense_1 }
-			research_bonus = {
-				air_equipment = 0.1
-			}
+			cost = 100
 		}
 
 		ilyushin = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ilyushin"}
 			allowed = { is_russian_tag = yes }
 			available = { owns_state = 219 } #Moscow
-			traits = { nav_cas_producer_defense_2 }
+			traits = { nav_cas_producer_offense_2 }
 			research_bonus = {
 				air_equipment = 0.1
 			}
-		}
-
-		sikorsky_aircraft = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea sikorsky_aircraft"}
-			allowed = { is_russian_tag = yes }
-			available = { owns_state = 195 } #Saint Petersburg
-			traits = { nav_cas_producer_mass_2 }
-			research_bonus = {
-				air_equipment = 0.1
-			}
+			cost = 100
 		}
 
 	}

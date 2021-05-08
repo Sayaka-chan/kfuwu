@@ -19,7 +19,7 @@ focus_tree = {
 	focus = {
 		id = CAN_kings_speech
 		icon = GFX_focus_eng_god_save_the_king
-		cost = 1
+		cost = 0
 		x = 3
 		y = 0
 
@@ -43,7 +43,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_privy_council
-		icon = GFX_goal_generic_civilian_oversight
+		icon = GFX_CAN_privy_council
 		cost = 3
 		prerequisite = {
 			focus = CAN_kings_speech
@@ -775,7 +775,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_crown_corporations
-		icon = GFX_focus_generic_industry_3
+		icon = GFX_CAN_crown_corporations
 		prerequisite = {
 			focus = CAN_kings_speech
 		}
@@ -801,14 +801,6 @@ focus_tree = {
 			unlock_decision_tooltip = CAN_civ_in_montreal
 			unlock_decision_tooltip = CAN_mil_in_ottawa
 			unlock_decision_tooltip = CAN_mil_in_quebec
-			add_tech_bonus = {
-				name = CAN_crown_corporations
-				bonus = 1
-				uses = 1
-				category = efficiency_tech
-				category = concentrated_industry_tech
-				category = dispersed_industry_tech
-			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -1105,7 +1097,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_public_works
-		icon = GFX_goal_generic_construction
+		icon = GFX_CAN_public_works
 		cost = 4
 		prerequisite = {
 			focus = CAN_create_iedc
@@ -1147,7 +1139,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_economic_recovery
-		icon = GFX_JBS_goal_syria_coins
+		icon = GFX_GBR_british_money
 		cost = 4
 		prerequisite = {
 			focus = CAN_cp_rail_expansion
@@ -1189,7 +1181,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_national_housing_act
-		icon = GFX_goal_generic_construct_public_housing
+		icon = GFX_CAN_national_housing_act
 		cost = 4
 		prerequisite = {
 			focus = CAN_economic_recovery
@@ -1322,7 +1314,7 @@ focus_tree = {
 	focus = {
 		id = CAN_national_research_council
 		icon = GFX_goal_great_science
-		cost = 8
+		cost = 5
 		prerequisite = {
 			focus = CAN_create_isac
 		}
@@ -1348,7 +1340,7 @@ focus_tree = {
 	focus = {
 		id = CAN_found_cbc
 		icon = GFX_goal_CAN_found_cbc
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = CAN_national_research_council
 		}
@@ -1382,7 +1374,7 @@ focus_tree = {
 	focus = {
 		id = CAN_electronics_training
 		icon = GFX_goal_electronics
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = CAN_found_cbc
 		}
@@ -1872,7 +1864,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_royal_atlantic_aero_corp
-		icon = GFX_focus_CZE_military_aeronautical_institute
+		icon = GFX_GBR_lead_entente
 		cost = 3
 		prerequisite = {
 			focus = CAN_imperial_air_training_plan
@@ -1883,10 +1875,6 @@ focus_tree = {
 
 		available = {
 			is_subject = no
-			CAF = {
-				is_in_faction_with = ROOT
-				controls_all_owned_states = yes
-			}
 		}
 
 		ai_will_do = {
@@ -1901,19 +1889,10 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 
-		bypass = {
-			OR = {
-				is_subject = yes
-				CAF = { exists = no }
-				CAF = { NOT = { is_in_faction_with = ROOT } }
-			}
-		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_royal_atlantic_aero_corp"
 			custom_effect_tooltip = unlock_raac_tt
 			add_political_power = 50
-			CAF = { country_event = entente.213 }
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
 	}
@@ -2047,7 +2026,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_fighter_programme
-		icon = GFX_goal_generic_air_fighter
+		icon = GFX_CAN_fighter_programme
 		cost = 5
 		available = {
 			date > 1938.1.1
@@ -2085,7 +2064,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_bomber_programme
-		icon = GFX_goal_generic_air_bomber
+		icon = GFX_CAN_bomber_programme
 		cost = 5
 		prerequisite = {
 			focus = CAN_cfb_north_bay
@@ -2124,7 +2103,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_focus_on_rcaf
-		icon = GFX_focus_eng_special_air_service
+		icon = GFX_GBR_royal_air_force
 		cost = 5
 		prerequisite = {
 			focus = CAN_fighter_programme
@@ -2320,7 +2299,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_state_of_british_fleet
-		icon = GFX_goal_USA_liberty_ships
+		icon = GFX_GBR_royal_navy
 		cost = 5
 		prerequisite = {
 			focus = CAN_overhaul_navy
@@ -2456,7 +2435,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_deal_with_admiralty
-		icon = GFX_goal_navy_hat_ships
+		icon = GFX_CAN_deal_with_admiralty
 		cost = 5
 		prerequisite = {
 			focus = CAN_state_of_british_fleet
@@ -2506,13 +2485,19 @@ focus_tree = {
 				uses = 1
 				category = naval_doctrine
 			}
+			add_tech_bonus = {
+				name = CAN_deal_with_admiralty
+				bonus = 1
+				uses = 1
+				category = cv_tech
+			}
 		}
 		search_filters = { FOCUS_FILTER_NAVY_BONUS FOCUS_FILTER_RESEARCH }
 	}
 
 	focus = {
 		id = CAN_davie_shipbuilding
-		icon = GFX_goal_generic_occupy_states_coastal
+		icon = GFX_GBR_exile_fleets
 		cost = 5
 		prerequisite = {
 			focus = CAN_deal_with_admiralty
@@ -2631,7 +2616,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_upgrade_fleet
-		icon = GFX_goal_navy_decision
+		icon = GFX_CAN_upgrade_fleet
 		cost = 5
 		prerequisite = {
 			focus = CAN_davie_shipbuilding
@@ -2743,7 +2728,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_canadian_carriers
-		icon = GFX_goal_generic_navy_carrier
+		icon = GFX_CAN_canadian_carriers
 		cost = 5
 		prerequisite = {
 			focus = CAN_upgrade_fleet
@@ -2813,7 +2798,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_focus_on_rcn
-		icon = GFX_goal_generic_wolf_pack
+		icon = GFX_GBR_britannia
 		cost = 5
 		prerequisite = {
 			focus = CAN_upgrade_fleet
@@ -2911,7 +2896,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_preparations_for_war
-		icon = GFX_goal_CAN_home_isles
+		icon = GFX_goal_AST_new_guard
 		cost = 5
 		prerequisite = {
 			focus = CAN_address_army
@@ -3292,10 +3277,6 @@ focus_tree = {
 				limit = {
 					OR = {
 						ENG = { owns_state = 119 }
-						IRE = {
-							owns_state = 119
-							has_socialist_government = yes
-						}
 					}
 				}
 			}
@@ -3351,9 +3332,6 @@ focus_tree = {
 		cost = 5
 		prerequisite = {
 			focus = CAN_address_army
-		}
-		mutually_exclusive = {
-			focus = CAN_vanier_plan
 		}
 		relative_position_id = CAN_address_army
 		x = -1
@@ -3427,7 +3405,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_bring_on_valentine
-		icon = GFX_goal_generic_army_tanks2
+		icon = GFX_CAN_bring_on_valentine
 		cost = 5
 		prerequisite = {
 			focus = CAN_infantry_motorization
@@ -3456,7 +3434,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_bring_on_valentine"
 			add_tech_bonus = {
 				name = CAN_bring_on_valentine
-				bonus = 1
+				bonus = 1.5
 				uses = 2
 				category = armor
 			}
@@ -3466,7 +3444,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_motor_industry
-		icon = GFX_goal_Automobile_Production
+		icon = GFX_CAN_motor_industry
 		cost = 5
 		prerequisite = {
 			focus = CAN_bring_on_valentine
@@ -3503,13 +3481,10 @@ focus_tree = {
 
 	focus = {
 		id = CAN_vanier_plan
-		icon = GFX_goal_CAN_vanier_plan
+		icon = GFX_CAN_vanier_plan
 		cost = 5
 		prerequisite = {
 			focus = CAN_address_army
-		}
-		mutually_exclusive = {
-			focus = CAN_fuller_plan
 		}
 		relative_position_id = CAN_address_army
 		x = 1
@@ -3544,7 +3519,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_organic_support_elements
-		icon = GFX_goal_generic_build_tank
+		icon = GFX_CAN_organic_support_elements
 		cost = 5
 		prerequisite = {
 			focus = CAN_vanier_plan
@@ -3583,7 +3558,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_expand_training
-		icon = GFX_focus_generic_military_academy
+		icon = GFX_CAN_expand_training
 		cost = 5
 		prerequisite = {
 			focus = CAN_organic_support_elements
@@ -3633,7 +3608,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_better_guns
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_CAN_better_guns
 		cost = 5
 		prerequisite = {
 			focus = CAN_expand_training
@@ -3676,7 +3651,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_focus_on_army
-		icon = GFX_goal_conscription
+		icon = GFX_CAN_focus_on_army
 		cost = 5
 		prerequisite = {
 			focus = CAN_better_guns
@@ -3819,7 +3794,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_update_enfield
-		icon = GFX_focus_secret_rearmament
+		icon = GFX_CAN_update_enfield
 		cost = 5
 		prerequisite = {
 			focus = CAN_address_army
@@ -3868,7 +3843,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_expand_artillery
-		icon = GFX_goal_generic_army_artillery2
+		icon = GFX_CAN_expand_artillery
 		cost = 5
 		prerequisite = {
 			focus = CAN_update_enfield
@@ -3911,7 +3886,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_new_munitions_plants
-		icon = GFX_goal_generic_production
+		icon = GFX_CAN_new_munitions_plants
 		cost = 5
 		prerequisite = {
 			focus = CAN_expand_artillery
@@ -3948,13 +3923,12 @@ focus_tree = {
 			unlock_decision_tooltip = CAN_mil_in_quebec
 			unlock_decision_tooltip = CAN_mil_in_newbrunswick
 			unlock_decision_tooltip = CAN_mil_in_winnipeg
-			add_ideas = CAN_munitions_idea_1
 		}
 	}
 
 	focus = {
 		id = CAN_foreign_contractors
-		icon = GFX_goal_generic_foreign_investments
+		icon = GFX_CAN_foreign_contractors
 		cost = 5
 		prerequisite = {
 			focus = CAN_new_munitions_plants
@@ -4087,10 +4061,6 @@ focus_tree = {
 				limit = { is_faction_leader = yes }
 				unlock_decision_tooltip = CAN_mil_in_newfoundland
 				unlock_decision_tooltip = CAN_mil_in_thunderbay
-			}
-			swap_ideas = {
-				remove_idea = CAN_munitions_idea_1
-				add_idea = CAN_munitions_idea_2
 			}
 		}
 	}

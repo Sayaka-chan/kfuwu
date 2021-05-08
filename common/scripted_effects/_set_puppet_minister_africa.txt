@@ -116,69 +116,6 @@ set_puppet_minister_africa = {
 	##
 	##	EGYPT
 	##
-	if = {
-		limit = { tag = EGY }
-		if = {
-			limit = {
-				OR = {
-					has_government = syndicalist
-					has_government = radical_socialist
-					has_government = social_democrat
-				}
-			}
-			add_ideas = {
-				EGY_Gamal_Abdel_Nasser_hog_sde
-				EGY_Salah_Salem_for_sde
-				EGY_Abdel_Latif_Boghdadi_eco_sde
-				EGY_Muhammad_Anwar_el_Sadat_sec_sde
-			}
-		}
-		else_if = {
-			limit = { has_government = social_liberal }
-			add_ideas = {
-				EGY_Ibrahim_Abdel_Hady_hog_sli
-				EGY_Kamil_Abdul_Rahim_for_sli
-				EGY_Saba_Habachy_eco_sli
-				EGY_Muhammad_Husayn_Haykal_sec_sli
-			}
-		}
-		else_if = {
-			limit = { has_government = market_liberal }
-			add_ideas = {
-				EGY_Mostafa_El_Nahas_hog_mli
-				EGY_Hassan_Sabry_for_mli
-				EGY_Makram_Ebeid_eco_mli
-				EGY_Abbas_al_Aqqad_sec_mli
-			}
-		}
-		else_if = {
-			limit = { has_government = social_conservative }
-			add_ideas = {
-				EGY_Ahmed_Naguib_el_Hilaly_hog_sco
-				EGY_Hussein_Serry_for_sco
-				EGY_Hassan_Allam_eco_sco
-				EGY_Abdelfattah_Amr_sec_sco
-			}
-		}
-		else_if = {
-			limit = { has_government = authoritarian_democrat }
-			add_ideas = {
-				EGY_Mohamed_Tawfik_Naseem_hog_ade
-				EGY_Sayyid_Qutb_for_ade
-				EGY_Hassan_al_Hudaybi_eco_ade
-				EGY_Hassan_al_Banna_sec_ade
-			}
-		}
-		else_if = {
-			limit = { has_dictatorship_government = yes }
-			add_ideas = {
-				EGY_Aziz_Ezzat_hog_pau
-				EGY_Mohammed_Ali_Tewfik_for_pau
-				EGY_Youssef_Zulficar_eco_pau
-				EGY_Ahmed_Hassanein_sec_pau
-			}
-		}
-	}
 
 #	##
 #	##	HAUSALAND (no ministers right now)
@@ -243,63 +180,6 @@ set_puppet_minister_africa = {
 	##
 	##	TRIPOLTANIA
 	##
-	if = {
-		limit = { tag = LBA }
-		if = {
-			limit = { has_socialist_government = yes }
-			add_ideas = {
-				LBA_Ahmed_Rafiq_al_Mahdawi_hog_syn
-				LBA_Hussein_al_Ghanai_for_syn
-				LBA_Nuri_al_Kikhia_eco_rso
-				LBA_Ahmed_Rafiq_al_Mahdawi_sec_syn
-			}
-		}
-		else_if = {
-			limit = { has_left_democratic_government = yes }
-			add_ideas = {
-				LBA_Abdul_Majid_Kabar_hog_sli
-				LBA_Mufti_Muhammad_Sadiq_for_sli
-				LBA_Ali_al_Unaizi_eco_sli
-				LBA_Mahmud_al_Muntasir_sec_sli
-			}
-		}
-		else_if = {
-			limit = { has_right_democratic_government = yes }
-			add_ideas = {
-				LBA_Abd_al_Qadir_al_Badri_hog_sco
-				LBA_Abdul_Qadir_al_Allam_for_sco
-				LBA_Ahmed_Rafiq_Almhadoui_eco_sco
-				LBA_Sulayman_al_Baruni_sec_sco
-			}
-		}
-		else_if = {
-			limit = { has_government = authoritarian_democrat }
-			add_ideas = {
-				LBA_Wahbi_Ahmed_El_Bouri_hog_ade
-				LBA_Mahmoud_al_Montaser_for_ade
-				LBA_Abdel_Mawla_Lanki_eco_ade
-				LBA_Nuri_Killigil_sec_ade
-			}
-		}
-		else_if = {
-			limit = { has_government = paternal_autocrat }
-			add_ideas = {
-				LBA_Nuri_Killigil_hog_pau
-				LBA_As_Siddig_al_Mutassir_for_pau
-				LBA_Bashir_al_Sunni_eco_pau
-				LBA_Omar_Faiek_Shennib_sec_pau
-			}
-		}
-		else_if = {
-			limit = { has_government = national_populist }
-			add_ideas = {
-				LBA_Umar_al_Mukhtar_hog_npo
-				LBA_As_Siddig_al_Mutassir_for_pau
-				LBA_Yousef_Borheil_al_Massari_eco_npo
-				LBA_Omar_Faiek_Shennib_sec_pau
-			}
-		}
-	}
 
 #	##
 #	##	MADAGASCAR (no ministers right now)
@@ -400,73 +280,6 @@ set_puppet_minister_africa = {
 	##
 	##	SOUTH AFRICA
 	##
-	if = {
-		limit = { tag = SAF }
-		if = {
-			limit = {
-				has_socialist_government = yes
-				NOT = {
-					has_government = social_democrat
-				}
-			}
-			add_ideas = {
-				SAF_Yusuf_Dadoo_hog_rso
-				SAF_Bram_Fisher_for_rso
-				SAF_Yusuf_Dadoo_eco_rso
-				SAF_Bram_Fisher_sec_rso
-			}
-		}
-		else_if = {
-			limit = { has_government = social_democrat }
-			add_ideas = {
-				SAF_F_H_P_Creswell_hog_sde
-				SAF_Alex_Hepple_for_sde
-				SAF_Walter_Madeley_eco_sde
-				SAF_Jimmy_Green_sec_sde
-			}
-		}
-		else_if = {
-			limit = {
-				OR = {
-					has_government = social_liberal
-					has_government = market_liberal
-				}
-			}
-			add_ideas = {
-				SAF_Jan_Hendrik_Hofmeyr_hog_mli
-				SAF_L_J_du_Plessis_for_mli
-				SAF_Robert_J_Hudson_eco_mli
-				SAF_Nicolaas_J_de_Wet_sec_mli
-			}
-		}
-		else_if = {
-			limit = { has_government = social_conservative }
-			add_ideas = {
-				SAF_Jan_C_Smuts_hog_sco
-				SAF_Pierre_van_Ryneveld_for_sco
-				SAF_Marinus_van_Osterkemp_eco_sco
-				SAF_HG_Lawrence_sec_sco
-			}
-		}
-		else_if = {
-			limit = { has_government = authoritarian_democrat }
-			add_ideas = {
-				SAF_James_Hertzog_hog_ade
-				SAF_EG_Jansen_for_ade
-				SAF_Leonard_Beyers_eco_ade
-				SAF_C_R_Swart_sec_ade
-			}
-		}
-		else_if = {
-			limit = { has_dictatorship_government = yes }
-			add_ideas = {
-				SAF_D_F_Malan_hog_pau
-				SAF_J_G_Strijdom_for_pau
-				SAF_FC_Erasmus_eco_pau
-				SAF_Hendrijk_F_Verwoerd_sec_pau
-			}
-		}
-	}
 
 #	##
 #	##	SENEGAL (no ministers right now)
@@ -483,36 +296,6 @@ set_puppet_minister_africa = {
 	##
 	##	SOUTH AFRICAN REBELS
 	##
-	if = {
-		limit = { tag = SFR }
-		if = {
-			limit = { has_elected_government = yes }
-			add_ideas = {
-				SFR_Jan_C_Smuts_hog_sco
-				SFR_Pierre_van_Ryneveld_for_sco
-				SFR_Marinus_van_Osterkemp_eco_sco
-				SFR_HG_Lawrence_sec_sco
-			}
-		}
-		else_if = {
-			limit = { has_government = authoritarian_democrat }
-			add_ideas = {
-				SFR_James_Hertzog_hog_ade
-				SFR_EG_Jansen_for_ade
-				SFR_C_de_Weenburg_du_Toit_eco_ade
-				SFR_C_R_Swart_sec_ade
-			}
-		}
-		else_if = {
-			limit = { has_dictatorship_government = yes }
-			add_ideas = {
-				SFR_D_F_Malan_hog_pau
-				SFR_J_G_Strijdom_for_pau
-				SFR_FC_Erasmus_eco_pau
-				SFR_Hendrijk_F_Verwoerd_sec_pau
-			}
-		}
-	}
 
 #	##
 #	##	SIERRA LEONE (no ministers right now)
@@ -529,27 +312,6 @@ set_puppet_minister_africa = {
 	##
 	##	SUDAN
 	##
-	if = {
-		limit = { tag = SUD }
-		if = {
-			limit = { has_elected_government = yes }
-			add_ideas = {
-				SUD_Abdella_Bey_Khaleel_hog_sde
-				SUD_Ismael_Alazhari_for_sde
-				SUD_Slah_Elzubir_eco_sde
-				SUD_Farik_Ibrahim_Abboud_sec_sde
-			}
-		}
-		else_if = {
-			limit = { has_authoritarian_government = yes }
-			add_ideas = {
-				SUD_Siddick_Sayed_el_Mahdi_hog_ade
-				SUD_Sayed_Abd_el_Rahman_el_Mahdi_for_ade
-				SUD_Abdel_Khaliq_Mahjub_eco_ade
-				SUD_Mohammed_Ahmed_Sarror_sec_ade
-			}
-		}
-	}
 
 #	##
 #	##	TEKE (no ministers right now)

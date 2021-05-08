@@ -24,27 +24,6 @@ state = {
 			infrastructure = 7
 			industrial_complex = 5
 			air_base = 5
-			678 = {
-				bunker = 3
-			}
-			6529 = {
-				bunker = 2
-			}
-			9559 = {
-				bunker = 3
-			}
-			1346 = {
-				bunker = 1
-			}
-			9503 = {
-				bunker = 1
-			}
-			3629 = {
-				bunker = 1
-			}
-			11502 = {
-				bunker = 1
-			}
 		}
 	}
 

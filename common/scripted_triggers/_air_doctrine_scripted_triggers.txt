@@ -25,7 +25,6 @@ dont_research_strategic_destruction_if_choice_made = {
 	OR = {
 		AND = {
 			tag = GER
-			has_completed_focus = GER_heerflieger
 		}
 	}
 }
@@ -38,10 +37,7 @@ dont_research_strategic_destruction_if_choice_made = {
 never_research_operational_integrity = {
 	OR = {
 		tag = AUS
-		tag = EGY
 		tag = GER
-		tag = ITA
-		tag = CAR
 		tag = VEN
 	}
 }

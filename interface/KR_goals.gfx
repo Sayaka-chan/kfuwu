@@ -6628,4 +6628,380 @@ spriteTypes = {
 		name = "GFX_goal_rhineland_kr"
 		texturefile = "gfx/interface/goals/goal_rhineland.dds"
 	}
+	spriteType = {
+		name = "GFX_GER_cas"
+		texturefile = "gfx/interface/goals/focus_GER_cas.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_AUS_annex_BOH"
+		texturefile = "gfx/interface/goals/GFX_goal_AUS_annex_BOH.tga"
+	}
+	spriteType = {
+		name = "focus_GER_doctrine_mobile"
+		texturefile = "gfx/interface/goals/focus_GER_doctrine_mobile.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_artillery_research"
+		texturefile = "gfx/interface/goals/GER_flak_36.tga"
+	}
+	spriteType = {
+		name = "GFX_GER_Infantry_divs"
+		texturefile = "gfx/interface/goals/GER_new_weapons.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_doctrine_mobile_3"
+		texturefile = "gfx/interface/goals/GER_Schwerer_Panzer.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_infra_1"
+		texturefile = "gfx/interface/goals/GER_autobahn.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_infra_2"
+		texturefile = "gfx/interface/goals/GOAL_disperse_industry.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_siemens"
+		texturefile = "gfx/interface/goals/GER_underground_industry.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_focus_on_army"
+		texturefile = "gfx/interface/goals/USA_tank_experiments.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_efficient_production_program"
+		texturefile = "gfx/interface/goals/USA_well_supplied_and_motivated.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_Blanqui_Research_Institute"
+		texturefile = "gfx/interface/goals/SOV_closed_city_network.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_military_science"
+		texturefile = "gfx/interface/goals/SOV_extra_tech_slot_early.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_doctrine_base_strike"
+		texturefile = "gfx/interface/goals/focus_GER_plan_z.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_doctrine_fleet_in_beeing"
+		texturefile = "gfx/interface/goals/focus_GER_sub_plan.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_better_guns"
+		texturefile = "gfx/interface/goals/focus_ENG_limited.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_update_enfield"
+		texturefile = "gfx/interface/goals/focus_ENG_general.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_upgrade_fleet"
+		texturefile = "gfx/interface/goals/Britannia_Rules.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_bomber_programme"
+		texturefile = "gfx/interface/goals/focus_eng_bomber_command.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_public_works"
+		texturefile = "gfx/interface/goals/focus_can_wheat_board.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_vanier_plan"
+		texturefile = "gfx/interface/goals/Focus_ENG_dday4.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_fighter_programme"
+		texturefile = "gfx/interface/goals/focus_can_victoryaircraft.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_crown_corporations"
+		texturefile = "gfx/interface/goals/Focus_Export_Economy.png"
+	}
+	spriteType = {
+		name = "GFX_CAN_national_housing_act"
+		texturefile = "gfx/interface/goals/goal_eng_develop_can.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_expand_training"
+		texturefile = "gfx/interface/goals/goal_eng_royal_marines.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_deal_with_admiralty"
+		texturefile = "gfx/interface/goals/goal_eng_naval_rearm.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_privy_council"
+		texturefile = "gfx/interface/goals/Goal_House_of_Commons.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_tank_division"
+		texturefile = "gfx/interface/goals/goal_sov_armour_development.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_bring_on_valentine"
+		texturefile = "gfx/interface/goals/mbt.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_expand_artillery"
+		texturefile = "gfx/interface/goals/Royal_Artillery.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_organic_support_elements"
+		texturefile = "gfx/interface/goals/ria.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_motor_industry"
+		texturefile = "gfx/interface/goals/CAN_kangaroo.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_new_munitions_plants"
+		texturefile = "gfx/interface/goals/CAN_department_of_munitions_and_supplies.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_foreign_contractors"
+		texturefile = "gfx/interface/goals/CAN_money.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_canadian_carriers"
+		texturefile = "gfx/interface/goals/ENG_carriers.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_reform_militia"
+		texturefile = "gfx/interface/goals/goal_SOV_defend_the_motherland.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_grand_army_reform"
+		texturefile = "gfx/interface/goals/goal_SOV_penal_troops.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_republican_air_force"
+		texturefile = "gfx/interface/goals/goal_SOV_aviation_cult.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_Industrialisation"
+		texturefile = "gfx/interface/goals/goal_SOV_5year_plan_continue.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_central_industry_research"
+		texturefile = "gfx/interface/goals/goal_sov_found_PCR.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_local_initiative"
+		texturefile = "gfx/interface/goals/goal_SOV_mining_quotas.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_modern_artillery"
+		texturefile = "gfx/interface/goals/goal_SOV_mot_art.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_principe_concentration"
+		texturefile = "gfx/interface/goals/goal_SOV_stalins_hammer.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_War_with_germany"
+		texturefile = "gfx/interface/goals/goal_sov_great_patriotic_war.dds"
+	}
+	spriteType = {
+		name = ""
+		texturefile = "gfx/interface/goals/goal_SOV_red_fleet.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_improve_army"
+		texturefile = "gfx/interface/goals/goal_SOV_ppsh_hand_angry.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_local_talent"
+		texturefile = "gfx/interface/goals/goal_SOV_production_targets.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_Phalanstere_internationale"
+		texturefile = "gfx/interface/goals/goal_sov_socialist_science.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_carriers"
+		texturefile = "gfx/interface/goals/focus_usa_no_navy_allies.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_navy"
+		texturefile = "gfx/interface/goals/usa_fund_navy.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_expand_dockyards"
+		texturefile = "gfx/interface/goals/usa_dockyard_output.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_naval_aviation"
+		texturefile = "gfx/interface/goals/carrier_primacy.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_annex_BOH"
+		texturefile = "gfx/interface/goals/r56_goal_AUS_full_czech_citizenship.dds"
+	}
+	spriteType = {
+		name = "GFX_AUS_military_expansion"
+		texturefile = "gfx/interface/goals/r56_goal_AUS_form_holy_roman_empire.dds"
+	}
+	spriteType = {
+		name = "GFX_AUS_mil_expanded"
+		texturefile = "gfx/interface/goals/r56_goal_AUS_flag_austria.dds"
+	}
+	spriteType = {
+		name = "GFX_AUS_reform_AOK"
+		texturefile = "gfx/interface/goals/r56_goal_AUS_bundesheer_desertion.dds"
+	}
+	spriteType = {
+		name = "GFX_AUS_rifle_trials"
+		texturefile = "gfx/interface/goals/r56_goal_AUS_secret_rearmament.dds"
+	}
+	spriteType = {
+		name = "GFX_AUS_military_mountaineers"
+		texturefile = "gfx/interface/goals/r56_goal_AUS_our_fate_is_our_own.dds"
+	}
+	spriteType = {
+		name = "GFX_AUS_military_tech"
+		texturefile = "gfx/interface/goals/r56_goal_AUS_pro_austrian_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_AUS_fighters"
+		texturefile = "gfx/interface/goals/r56_goal_AUS_fighter.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_hydroelectricity"
+		texturefile = "gfx/interface/goals/r56_goal_generic_communist_pride.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_expand_industry_1"
+		texturefile = "gfx/interface/goals/r56_goal_generic_communist_economy.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_expand_industry_2"
+		texturefile = "gfx/interface/goals/r56_goal_generic_communist_industries.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_autoroutes"
+		texturefile = "gfx/interface/goals/r56_goal_generic_commie_investments.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_MIL_naval_start"
+		texturefile = "gfx/interface/goals/r56_goal_JAP_new_naval_estimates.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_MIL_start_1"
+		texturefile = "gfx/interface/goals/r56_goal_JAP_flag_army.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_Luftwaffe_airbases_1"
+		texturefile = "gfx/interface/goals/fVfliFo.png"
+	}
+	spriteType = {
+		name = "GFX_GER_civ_industry_1"
+		texturefile = "gfx/interface/goals/GER_establish_the_reichswerke.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_civ_industry_2"
+		texturefile = "gfx/interface/goals/GER_expand_the_reichswerke.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_doctrine_great_war"
+		texturefile = "gfx/interface/goals/ger_infantry_tactics.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_doctrine_last"
+		texturefile = "gfx/interface/goals/GER_offense_best_defense.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_synthetic_rubber"
+		texturefile = "gfx/interface/goals/GER_romanian_oil_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_rocket"
+		texturefile = "gfx/interface/goals/GER_weapons_of_vengeance.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_naval_plans"
+		texturefile = "gfx/interface/goals/german_goal_raeder_plan.dds"
+	}
+	spriteType = {
+		name = "GFX_NFA_monarchy"
+		texturefile = "gfx/interface/goals/r56_goal_FRA_orleanism.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_mining_expansion"
+		texturefile = "gfx/interface/goals/r56_goal_FRA_industrial_decentralization.dds"
+	}
+	spriteType = {
+		name = "GFX_NFA_DeGaulle_focus"
+		texturefile = "gfx/interface/goals/r56_goal_FRA_de_gaulle.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_political_commissars"
+		texturefile = "gfx/interface/goals/ENG_Political_Officers.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_merge"
+		texturefile = "gfx/interface/goals/eng_grand_protector.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_united_britain"
+		texturefile = "gfx/interface/goals/ENG_Maximist_Fanaticism.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_revolutionary_admiralty"
+		texturefile = "gfx/interface/goals/ENG_navy.tga"
+	}
+	spriteType = {
+		name = "GFX_FRA_communal_army"
+		texturefile = "gfx/interface/goals/FRA_army.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_military_buildup"
+		texturefile = "gfx/interface/goals/FRA_centralise_the_state.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_socialist_education"
+		texturefile = "gfx/interface/goals/FRA_cult.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_renseignements_generaux"
+		texturefile = "gfx/interface/goals/FRA_establish_secret_police.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_flexible_support"
+		texturefile = "gfx/interface/goals/FRA_french_communism.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_war_industry"
+		texturefile = "gfx/interface/goals/FRA_sorelian_war_industry.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_road_to_war"
+		texturefile = "gfx/interface/goals/FRA_strengthenthemilitary.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_special_forces"
+		texturefile = "gfx/interface/goals/FRA_supreme.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_doctrine_fleet_in_beeing3"
+		texturefile = "gfx/interface/goals/MAG_Navy_with_a_colony.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_McNair_Plan"
+		texturefile = "gfx/interface/goals/USA_army.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_grand_navy"
+		texturefile = "gfx/interface/goals/USA_king.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_defend_our_trade"
+		texturefile = "gfx/interface/goals/USA_leahy.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_reform_plan"
+		texturefile = "gfx/interface/goals/USA_triumvirate.dds"
+	}
 }

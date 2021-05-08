@@ -7,7 +7,7 @@ state = {
 		add_claim_by = NFA
 		add_core_of = FRA
 		victory_points = {
-			6766 10
+			6766 25
 		}
 		buildings = {
 			infrastructure = 6

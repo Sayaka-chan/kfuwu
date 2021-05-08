@@ -4,7 +4,7 @@ state={
 	name="STATE_668"
 
 	history={
-		owner = GER
+		owner = GEA
 		add_core_of = VEN
 		buildings = {
 			infrastructure = 3

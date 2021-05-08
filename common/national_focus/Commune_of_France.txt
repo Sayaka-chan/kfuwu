@@ -58,7 +58,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_hydroelectricity
-		icon = GFX_goal_dam
+		icon = GFX_FRA_hydroelectricity
 		x = -1
 		y = 1
 		relative_position_id = FRA_amenagement
@@ -161,7 +161,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_mining_expansion
-		icon = GFX_goal_generic_coal_mining
+		icon = GFX_FRA_mining_expansion
 		x = -1
 		y = 3
 		relative_position_id = FRA_amenagement
@@ -198,7 +198,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_autoroutes
-		icon = GFX_goal_generic_railroad
+		icon = GFX_FRA_autoroutes
 		x = 1
 		y = 3
 		relative_position_id = FRA_amenagement
@@ -469,7 +469,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_Industrialisation
-		icon = GFX_goal_generic_soviet_construction
+		icon = GFX_FRA_Industrialisation
 		x = -3
 		y = 1
 		relative_position_id = FRA_eco_direction
@@ -760,7 +760,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_war_industry
-		icon = GFX_goal_Focus_Military_Mobilisation
+		icon = GFX_FRA_war_industry
 		x = 1
 		y = 3
 		relative_position_id = FRA_war_eco_agri
@@ -994,7 +994,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_socialist_education
-		icon = GFX_goal_brain
+		icon = GFX_FRA_socialist_education
 		x = 13
 		y = 0
 		cost = 5
@@ -1030,7 +1030,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_Blanqui_Research_Institute
-		icon = GFX_focus_research
+		icon = GFX_FRA_Blanqui_Research_Institute
 		x = 0
 		y = 2
 		relative_position_id = FRA_socialist_education
@@ -1072,7 +1072,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_road_to_war
-		icon = GFX_goal_USA_sabotabby
+		icon = GFX_FRA_road_to_war
 		x = -1
 		y = 1
 		relative_position_id = FRA_military_buildup
@@ -1093,7 +1093,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_renseignements_generaux
-		icon = GFX_goal_foreign_diplomacy
+		icon = GFX_FRA_renseignements_generaux
 		x = 1
 		y = 1
 		allow_branch = {
@@ -1167,7 +1167,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_military_buildup
-		icon = GFX_goal_economic_control
+		icon = GFX_FRA_military_buildup
 
 		prerequisite = {
 			focus = FRA_military_buildup_two
@@ -1520,7 +1520,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_military_science
-		icon = GFX_goal_military_research
+		icon = GFX_FRA_military_science
 		x = -1
 		y = 1
 		relative_position_id = FRA_military_buildup_three
@@ -1618,7 +1618,7 @@ focus_tree = {
 
 		will_lead_to_war_with = GER
 
-		icon = GFX_goal_FRA_kill_the_eagle
+		icon = GFX_FRA_War_with_germany
 		prerequisite = {
 			focus = FRA_Blanqui_Research_Institute
 		}
@@ -1640,12 +1640,94 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_War_with_germany"
-			create_wargoal = {
-				type = annex_everything
+			declare_war_on = {
 				target = GER
+				type = annex_everything
+			}
+			add_timed_idea = {
+				days = 90
+				idea = FRA_summer_offensive
 			}
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
+	}
+	focus = {
+		id = FRA_defend_lille
+		icon = missing
+		relative_position_id = FRA_War_with_germany
+		prerequisite = {
+			focus = FRA_War_with_germany
+		}
+		available = {
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = FRA_defense
+				}
+			}
+		}
+		cost = 0
+		x = -2
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus defend_lille"
+			every_state = {
+				limit={OR={state = 980 state = 24 state = 785 }}
+				add_dynamic_modifier = { modifier = FRA_defense days = 210 }
+			}
+			custom_effect_tooltip = fra_defense
+		}
+	}
+	focus = {
+		id = FRA_defend_paris
+		icon = missing
+		relative_position_id = FRA_War_with_germany
+		prerequisite = {
+			focus = FRA_War_with_germany
+		}
+		available = {
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = FRA_defense
+				}
+			}
+		}
+		cost = 0
+		x = 0
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_defend_paris"
+			every_state = {
+				limit={OR={state = 16 state = 33 state = 15 }}
+				add_dynamic_modifier = { modifier = FRA_defense days = 210 }
+			}
+			custom_effect_tooltip = fra_defense
+		}
+	}
+	focus = {
+		id = FRA_defend_burgundy
+		icon = missing
+		relative_position_id = FRA_War_with_germany
+		prerequisite = {
+			focus = FRA_War_with_germany
+		}
+		available = {
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = FRA_defense
+				}
+			}
+		}
+		cost = 0
+		x = 2
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_defend_burgundy"
+			every_state = {
+				limit={OR={state = 27 state = 20 state = 760 state = 943  }}
+				add_dynamic_modifier = { modifier = FRA_defense days = 210 }
+			}
+			custom_effect_tooltip = fra_defense
+		}
 	}
 
 	focus = {
@@ -1674,7 +1756,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_modern_artillery
-		icon = GFX_goal_generic_army_artillery2
+		icon = GFX_FRA_modern_artillery
 		x = 33
 		y = 4
 		cost = 5
@@ -1698,7 +1780,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_special_forces
-		icon = GFX_goal_yanshan
+		icon = GFX_FRA_special_forces
 		x = 0
 		y = 2
 		relative_position_id = FRA_road_to_war
@@ -1725,7 +1807,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_tank_division
-		icon = GFX_focus_generic_tank_destroyer
+		icon = GFX_FRA_tank_division
 		prerequisite = {
 			focus = FRA_principe_concentration
 		}
@@ -1739,7 +1821,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_tank_division"
 			add_tech_bonus = {
 				name = FRA_tank_division
-				bonus = 1
+				bonus = 1.5
 				uses = 1
 				category = armor
 			}
@@ -1749,7 +1831,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_communal_army
-		icon = GFX_NATFRA_conscription
+		icon = GFX_FRA_communal_army
 		x = 33
 		y = 0
 		cost = 5
@@ -1758,7 +1840,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_communal_army"
-			army_experience = 800
+			army_experience = 1000
 			air_experience = 1000
 			add_war_support = 0.2
 		}
@@ -1767,7 +1849,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_principe_concentration
-		icon = GFX_goal_GEO_Artillery_Tactics
+		icon = GFX_FRA_principe_concentration
 		x = 0
 		y = 1
 		relative_position_id = FRA_communal_army
@@ -1783,7 +1865,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = FRA_principe_concentration
 				bonus = 1
-				uses = 2
+				uses = 3
 				category = land_doctrine
 			}
 		}
@@ -1807,7 +1889,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_tank_research"
 			add_tech_bonus = {
 				name = FRA_tank_research
-				bonus = 1
+				bonus = 1.5
 				uses = 1
 				category = armor
 			}
@@ -1907,7 +1989,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_flexible_support
-		icon = GFX_focus_generic_combined_arms
+		icon = GFX_FRA_flexible_support
 		x = 0
 		y = 1
 		relative_position_id = FRA_principe_concentration
@@ -1939,7 +2021,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_grand_army_reform
-		icon = GFX_goal_reform_socialist_army
+		icon = GFX_FRA_grand_army_reform
 		x = 0
 		y = 5
 		relative_position_id = FRA_communal_army
@@ -1963,7 +2045,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = FRA_grand_army_reform
 				bonus = 1
-				uses = 2
+				uses = 3
 				category = land_doctrine
 			}
 		}
@@ -1975,7 +2057,7 @@ focus_tree = {
 		icon = GFX_goal_FRA_Internationale_Congress
 		x = 19
 		y = 0
-		cost = 10
+		cost = 0
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_Host_the_Internationale"
@@ -2180,7 +2262,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_Phalanstere_internationale
-		icon = GFX_goal_great_science
+		icon = GFX_FRA_Phalanstere_internationale
 
 		prerequisite = {
 			focus = FRA_Host_the_Internationale

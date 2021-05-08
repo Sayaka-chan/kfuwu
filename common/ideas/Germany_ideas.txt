@@ -70,7 +70,6 @@ ideas = {
 			picture = GER_flag_idea
 			modifier = {
 				political_power_gain = 0.1
-				consumer_goods_factor = -0.05
 			}
 		}
 
@@ -79,7 +78,6 @@ ideas = {
 			picture = GER_flag_idea
 			modifier = {
 				political_power_gain = 0.2
-				consumer_goods_factor = -0.05
 			}
 		}
 
@@ -549,6 +547,7 @@ ideas = {
 			research_bonus = {
 				infantry_weapons = 0.1
 			}
+			cost = 100
 		}
 
 		dwm = {
@@ -562,6 +561,7 @@ ideas = {
 			research_bonus = {
 				infantry_weapons = 0.1
 			}
+			cost = 100
 		}
 
 		haenel = {
@@ -575,6 +575,7 @@ ideas = {
 			research_bonus = {
 				infantry_weapons = 0.1
 			}
+			cost = 100
 		}
 
 		walther = {
@@ -588,6 +589,7 @@ ideas = {
 			research_bonus = {
 				infantry_weapons = 0.1
 			}
+			cost = 100
 		}
 
 		sauer_sohn = {
@@ -601,6 +603,7 @@ ideas = {
 			research_bonus = {
 				infantry_weapons = 0.1
 			}
+			cost = 100
 		}
 
 		rheinmetall = {
@@ -614,6 +617,7 @@ ideas = {
 			research_bonus = {
 				artillery = 0.1
 			}
+			cost = 100
 		}
 
 		krupp4 = {
@@ -629,6 +633,7 @@ ideas = {
 			research_bonus = {
 				artillery = 0.1
 			}
+			cost = 100
 		}
 
 		opel = {
@@ -642,6 +647,7 @@ ideas = {
 			research_bonus = {
 				motorized_equipment = 0.1
 			}
+			cost = 100
 		}
 
 		hanomag = {
@@ -655,6 +661,7 @@ ideas = {
 			research_bonus = {
 				motorized_equipment = 0.1
 			}
+			cost = 100
 		}
 
 	}
@@ -673,11 +680,35 @@ ideas = {
 				original_tag = GER
 			}
 			traits = {
-				heavy_tank_producer_offense_2
+			}
+			equipment_bonus = {
+				heavy_tank_equipment = {
+					armor_value = 0.05
+					hard_attack = 0.1
+					soft_attack = 0.1
+					breakthrough = 0.1
+					reliability = 0.1
+					build_cost_ic = 0.1
+				}
+				heavy_tank_aa_equipment = {
+					armor_value = 0.05
+					breakthrough = 0.1
+					anti_air_attack = 0.1
+					reliability = 0.1
+					build_cost_ic = 0.1
+				}
+				heavy_tank_destroyer_equipment = {
+					armor_value = 0.05
+					hard_attack = 0.1
+					breakthrough = 0.1
+					reliability = 0.1
+					build_cost_ic = 0.1
+				}
 			}
 			research_bonus = {
 				armor = 0.1
 			}
+			cost = 100
 		}
 
 		demag = {
@@ -686,11 +717,35 @@ ideas = {
 				original_tag = GER
 			}
 			traits = {
-				heavy_tank_producer_defense_2
+			}
+			equipment_bonus = {
+				heavy_tank_equipment = {
+					armor_value = 0.075
+					hard_attack = 0.15
+					soft_attack = 0.15
+					breakthrough = 0.15
+					reliability = -0.15
+					build_cost_ic = 0.2
+				}
+				heavy_tank_aa_equipment = {
+					armor_value = 0.075
+					breakthrough = 0.15
+					anti_air_attack = 0.15
+					reliability = -0.15
+					build_cost_ic = 0.2
+				}
+				heavy_tank_destroyer_equipment = {
+					armor_value = 0.075
+					hard_attack = 0.15
+					breakthrough = 0.15
+					reliability = -0.15
+					build_cost_ic = 0.2
+				}
 			}
 			research_bonus = {
 				armor = 0.1
 			}
+			cost = 100
 		}
 
 		daimler = {
@@ -699,11 +754,22 @@ ideas = {
 				original_tag = GER
 			}
 			traits = {
-				medium_tank_producer_offense_2
+			}
+			equipment_bonus = {
+				medium_tank_equipment = {
+					hard_attack = 0.10 soft_attack = 0.10 armor_value = -0.1 hardness = -0.1 build_cost_ic = -0.075
+				}
+				medium_tank_aa_equipment = {
+					air_attack = 0.10 armor_value = -0.1 hardness = -0.1 build_cost_ic = -0.075
+				}
+				medium_tank_destroyer_equipment = {
+					hard_attack = 0.15 ap_attack = 0.1 armor_value = -0.1 hardness = -0.1 build_cost_ic = -0.075
+				}
 			}
 			research_bonus = {
 				armor = 0.1
 			}
+			cost = 100
 		}
 
 		man_company = {
@@ -712,11 +778,29 @@ ideas = {
 				original_tag = GER
 			}
 			traits = {
-				medium_tank_producer_defense_2
+			}
+			equipment_bonus = {
+				medium_tank_equipment = {
+					soft_attack = 0.10
+					hard_attack = 0.10
+					maximum_speed = 0.1
+					build_cost_ic = 0.1
+				}
+				medium_tank_aa_equipment = {
+					anti_air_attack = 0.10
+					maximum_speed = 0.1
+					build_cost_ic = 0.1
+				}
+				medium_tank_destroyer_equipment = {
+					ap_attack = 0.10
+					maximum_speed = 0.1
+					build_cost_ic = 0.1
+				}
 			}
 			research_bonus = {
 				armor = 0.1
 			}
+			cost = 100
 		}
 
 		krupp3 = {
@@ -730,37 +814,31 @@ ideas = {
 			available = {
 			}
 			traits = {
-				medium_tank_producer_mass_1
+			}
+			equipment_bonus = {
+				medium_tank_equipment = {
+					soft_attack = 0.1
+					hard_attack = 0.1
+					breakthrough = 0.1
+					build_cost_ic = 0.1
+				}
+				medium_tank_aa_equipment = {
+					anti_air_attack = 0.1
+					breakthrough = 0.1
+					armor_value = 0.1
+					build_cost_ic = 0.1
+				}
+				medium_tank_destroyer_equipment = {
+					hard_attack = 0.1
+					ap_attack = 0.10
+					breakthrough = 0.1
+					build_cost_ic = 0.1
+				}
 			}
 			research_bonus = {
 				armor = 0.1
 			}
-		}
-
-		benz = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea benz"}
-			allowed = {
-				original_tag = GER
-			}
-			traits = {
-				small_tank_producer_offense_2
-			}
-			research_bonus = {
-				armor = 0.1
-			}
-		}
-
-		vomag = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea vomag"}
-			allowed = {
-				original_tag = GER
-			}
-			traits = {
-				small_tank_producer_defense_2
-			}
-			research_bonus = {
-				armor = 0.1
-			}
+			cost = 100
 		}
 	}
 
@@ -774,24 +852,24 @@ ideas = {
 				original_tag = GER
 			}
 			traits = {
-				capital_ship_producer_offense_2
+				
+			}
+			equipment_bonus = {
+				carrier = {
+					carrier_size = 0.2
+					naval_range = 0.2
+				}
+				ship_hull_heavy = {
+					hg_attack = 0.07
+					naval_range = 0.2
+					armor_value = 0.10
+				}
 			}
 			research_bonus = {
 				naval_equipment = 0.1
 			}
-		}
-
-		germaniawerft = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea germaniawerft"}
-			allowed = {
-				original_tag = GER
-			}
-			traits = {
-				capital_ship_producer_defense_2
-			}
-			research_bonus = {
-				naval_equipment = 0.1
-			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
+			cost = 100
 		}
 
 		vulcan_stettin = {
@@ -800,11 +878,24 @@ ideas = {
 				original_tag = GER
 			}
 			traits = {
-				cruiser_producer_defense_2
+				
+			}
+			equipment_bonus = {
+				light_cruiser = {
+					naval_speed = 0.1
+				}
+				heavy_cruiser = {
+					naval_speed = 0.1
+				}
+				destroyer = {
+					naval_speed = 0.05
+				}
 			}
 			research_bonus = {
 				naval_equipment = 0.1
 			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
+			cost = 100
 		}
 
 		schichau_werke = {
@@ -813,29 +904,19 @@ ideas = {
 				original_tag = GER
 			}
 			traits = {
-				cruiser_producer_mass_2
 			}
-			research_bonus = {
-				naval_equipment = 0.1
-			}
-		}
-
-		blohm_voss = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea blohm_voss"}
-			allowed = {
-				OR = {
-					original_tag = GER
-					tag = LEC
+			equipment_bonus = {
+				submarine = {
+					naval_speed = 0.1
+					sub_visibility = -0.05
 				}
 			}
-			available = {
-			}
-			traits = {
-				small_ship_producer_offense_2
-			}
+
 			research_bonus = {
 				naval_equipment = 0.1
 			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
+			cost = 100
 		}
 
 	}
@@ -843,65 +924,8 @@ ideas = {
 	aircraft_manufacturer = {
 		designer = yes
 
-		albatros = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea albatros"}
-			allowed = {
-				original_tag = GER
-			}
-			traits = {
-				fighter_producer_offense_2
-			}
-			research_bonus = {
-				air_equipment = 0.1
-			}
-		}
-
-		fokker_ger = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea fokker_ger"}
-			allowed = {
-				OR = {
-					original_tag = GER
-					tag = LEC
-				}
-			}
-			available = {
-			}
-			traits = {
-				fighter_producer_offense_2
-			}
-			research_bonus = {
-				air_equipment = 0.1
-			}
-		}
-
-		bfw = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea bfw"}
-			allowed = {
-				original_tag = GER
-			}
-			traits = {
-				fighter_producer_defense_2
-			}
-			research_bonus = {
-				air_equipment = 0.1
-			}
-		}
-
-		gothaer_waggonfabrik = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea gothaer_waggonfabrik"}
-			allowed = {
-				original_tag = GER
-			}
-			traits = {
-				fighter_producer_mass_2
-			}
-			research_bonus = {
-				air_equipment = 0.1
-			}
-		}
-
-		kr_dornier = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea kr_dornier"}
+		hansa_brandenburg = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea hansa_brandenburg"}
 			allowed = {
 				original_tag = GER
 			}
@@ -911,54 +935,7 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.1
 			}
-		}
-
-		siemens_schuckert = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea siemens_schuckert"}
-			allowed = {
-				original_tag = GER
-			}
-			available = {
-				NOT = {
-					has_completed_focus = GER_siemens
-				}
-			}
-			traits = {
-				bomber_producer_defense_2
-			}
-			research_bonus = {
-				air_equipment = 0.1
-			}
-		}
-
-		siemens_schuckert2 = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea siemens_schuckert2"}
-			allowed = {
-				original_tag = GER
-			}
-			available = {
-				has_completed_focus = GER_siemens
-			}
-			traits = {
-				bomber_producer_defense_2
-			}
-			research_bonus = {
-				air_equipment = 0.1
-				tactical_bomber = 0.1
-			}
-		}
-
-		hansa_brandenburg = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea hansa_brandenburg"}
-			allowed = {
-				original_tag = GER
-			}
-			traits = {
-				bomber_producer_mass_2
-			}
-			research_bonus = {
-				air_equipment = 0.1
-			}
+			cost = 100
 		}
 
 		junkers = {
@@ -972,6 +949,7 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.1
 			}
+			cost = 100
 		}
 
 		focke_wulf = {
@@ -980,24 +958,12 @@ ideas = {
 				original_tag = GER
 			}
 			traits = {
-				nav_cas_producer_defense_2
+				fighter_producer_offense_2
 			}
 			research_bonus = {
 				air_equipment = 0.1
 			}
-		}
-
-		friedrichshafen = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea friedrichshafen"}
-			allowed = {
-				original_tag = GER
-			}
-			traits = {
-				nav_cas_producer_mass_2
-			}
-			research_bonus = {
-				air_equipment = 0.1
-			}
+			cost = 100
 		}
 
 	}

@@ -600,17 +600,6 @@ ideas = {
 				army_armor_attack_factor = 0.10
 				army_armor_defence_factor = 0.10
 			}
-			equipment_bonus = {
-				medium_tank_equipment = {
-					build_cost_ic = -0.05
-					maximum_speed = 0.05
-					soft_attack = 0.10
-					hard_attack = 0.10
-					reliability = 0.10
-					armor_value = -0.10
-					instant = yes
-				}
-			}
 		}
 		USA_Chaffee_heavies = { #Armored Cavalry
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea USA_Chaffee_heavies"}
@@ -620,17 +609,6 @@ ideas = {
 				army_org_factor = 0.05
 				army_armor_attack_factor = 0.10
 				army_armor_defence_factor = 0.10			
-			}
-			equipment_bonus = {
-				heavy_tank_equipment = {
-					build_cost_ic = 0.10
-					maximum_speed = -0.10
-					hard_attack = 0.10
-					soft_attack = 0.10
-					reliability = 0.10
-					armor_value = 0.10
-					instant = yes
-				}
 			}
 		}
 		USA_american_auto_industry1 = { #American Auto Industry
@@ -1252,19 +1230,6 @@ ideas = {
 			allowed = {
 				OR = {
 					original_tag = USA
-					tag = LEC
-				}
-			}
-			available = {
-				OR = {
-					AND = {
-						controls_state = 377
-						owns_state = 377
-					}
-					tag = LEC
-				}
-				NOT = {
-					has_completed_focus = LEC_pressure_westerners
 				}
 			}
 			traits = {
@@ -1410,6 +1375,7 @@ ideas = {
 			research_bonus = {
 				infantry_weapons = 0.1
 			}
+			cost = 100
 		}
 
 		kr_watervliet_arsenal_usa = { #Watervliet Arsenal
@@ -1432,6 +1398,7 @@ ideas = {
 			research_bonus = {
 				artillery = 0.1
 			}
+			cost = 100
 		}
 	}
 	tank_manufacturer = {# Heavy Equipment Manufacturer
@@ -1447,10 +1414,17 @@ ideas = {
 				controls_state = 393
 				owns_state = 393
 			}
-			traits = { medium_tank_producer_offense_1 }
+			equipment_bonus = {
+				medium_tank_equipment = {
+					soft_attack = 0.10
+					hard_attack = 0.10
+					armor_value = -0.10
+				}
+			}	
 			research_bonus = {
 				armor = 0.1
 			}
+			cost = 100
 		}
 		kr_ford_usa = { #Ford
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea kr_ford_usa"}
@@ -1465,31 +1439,132 @@ ideas = {
 				controls_state = 365
 				owns_state = 365
 			}
-			traits = {
-				heavy_tank_producer_offense_2
+			equipment_bonus = {
+				heavy_tank_equipment = {
+					hard_attack = 0.05
+					soft_attack = 0.05
+					armor_value = 0.10
+					instant = yes
+				}
+				heavy_tank_destroyer_equipment = {
+					hard_attack = 0.10
+					ap_attack = 0.1
+				}
 			}
 			research_bonus = {
 				armor = 0.1
 			}
+			cost = 100
+		}
+		usa_heavy_doctrine = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea usa_heavy_doctrine"}
+			cost = 100
+			allowed = { original_tag = USA }
+			available = {
+				has_idea = USA_Chaffee_heavies
+			}
+			equipment_bonus = {
+					heavy_tank_equipment = {
+						build_cost_ic = 0.10
+						maximum_speed = -0.10
+						hard_attack = 0.10
+						soft_attack = 0.10
+						reliability = 0.10
+						armor_value = 0.10
+						instant = yes
+					}
+					heavy_tank_aa_equipment = {
+						build_cost_ic = 0.10
+						maximum_speed = -0.10
+						reliability = 0.10
+						armor_value = 0.10
+						anti_air_attack = 0.1
+					}
+					heavy_tank_destroyer_equipment = {
+						build_cost_ic = 0.10
+						maximum_speed = -0.10
+						hard_attack = 0.10
+						soft_attack = 0.10
+						reliability = 0.10
+						armor_value = 0.10
+						ap_attack = 0.1
+					}
+				}
+			research_bonus = {
+				armor = 0.1
+			}
+			cost = 100
+		}
+		usa_medium_doctrine = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea usa_medium_doctrine"}
+			cost = 100
+			allowed = { original_tag = USA }
+			available = {
+				has_idea = USA_Chaffee_mediums
+			}
+			equipment_bonus = {
+				medium_tank_equipment = {
+					build_cost_ic = -0.05
+					soft_attack = 0.10
+					hard_attack = 0.10
+					reliability = 0.10
+					ap_attack = 0.1
+					armor_value = -0.10
+				}
+				medium_tank_aa_equipment = {
+					build_cost_ic = -0.05
+					maximum_speed = 0.05
+					anti_air_attack = 0.1
+					reliability = 0.10
+					armor_value = -0.10
+				}
+				medium_tank_destroyer_equipment = {
+					build_cost_ic = -0.05
+					soft_attack = 0.10
+					hard_attack = 0.10
+					reliability = 0.10
+					ap_attack = 0.1
+					armor_value = -0.10
+				}
+			}
+			research_bonus = {
+				armor = 0.1
+			}
+			cost = 100
 		}
 	}
 	naval_manufacturer = {
 		designer = yes
 
 		kr_newport_news_usa = { #Newport News
+		cost = 100
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea kr_newport_news_usa"}
 			allowed = {	original_tag = USA	}
 			available = {
 				controls_state = 362
 				owns_state = 362
 			}
-			traits = { capital_ship_producer_offense_2 }
+			traits = {  }
+			equipment_bonus = {
+				carrier = {
+					carrier_size = 0.2
+					naval_range = 0.2
+				}
+				ship_hull_heavy = {
+					hg_attack = 0.07
+					naval_range = 0.2
+					armor_value = 0.10
+				}
+			}
 			research_bonus = {
 				naval_equipment = 0.1
 			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
+			cost = 100
 		}
 
 		kr_new_york_shipbuilding_usa = { #Newyork Shipbuilding
+		cost = 100
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea kr_new_york_shipbuilding_usa"}
 			allowed = { original_tag = USA }
 			available = {
@@ -1500,11 +1575,25 @@ ideas = {
 				controls_state = 358
 				owns_state = 358
 			}
-			traits = { cruiser_producer_offense_2 }
-			research_bonus = { naval_equipment = 0.05 }
+			traits = {  }
+			equipment_bonus = {
+				light_cruiser = {
+					naval_speed = 0.1
+				}
+				heavy_cruiser = {
+					naval_speed = 0.1
+				}
+				destroyer = {
+					naval_speed = 0.05
+				}
+			}
+			research_bonus = { naval_equipment = 0.1 }
+			modifier = { naval_manufacturer_cost_factor = -1 }
+			cost = 100
 		}
 
 		kr_electric_boat_usa = { #Electric Boat
+		cost = 100
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea kr_electric_boat_usa"}
 			allowed = {
 				original_tag = USA
@@ -1518,11 +1607,18 @@ ideas = {
 				owns_state = 931
 			}
 			traits = {
-				small_ship_producer_defense_1
+			}
+			equipment_bonus = {
+				submarine = {
+					naval_speed = 0.1
+					sub_visibility = -0.05
+				}
 			}
 			research_bonus = {
-				naval_equipment = 0.07
+				naval_equipment = 0.1
 			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
+			cost = 100
 		}
 	}
 
@@ -1548,6 +1644,7 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.1
 			}
+			cost = 100
 		}
 
 		kr_curtiss_wright_usa = { #Curtiss Wright
@@ -1569,6 +1666,7 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.1
 			}
+			cost = 100
 		}
 
 		kr_douglas_usa = { #Douglas
@@ -1583,7 +1681,8 @@ ideas = {
 				owns_state = 798
 			}
 			traits = { bomber_producer_offense_2 }
-			research_bonus = { air_equipment = 0.05 }
+			research_bonus = { air_equipment = 0.1 }
+			cost = 100
 		}
 	}
 }

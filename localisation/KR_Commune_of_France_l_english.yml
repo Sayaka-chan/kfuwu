@@ -1289,3 +1289,6 @@ FRP_GER_syndicalist_DEF:0 "Commune of France"
 FRP_GER_totalist:0 "Commune of France"
 FRP_GER_totalist_ADJ:0 "Communard"
 FRP_GER_totalist_DEF:0 "Commune of France"
+
+
+fra_defense:0 "§GAdds 3 entrenchment to the affected states.§!"

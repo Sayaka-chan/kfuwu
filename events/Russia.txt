@@ -104,16 +104,6 @@ country_event = { #reparations
 			RUS_tsereteli_in_power = no
 		}
 		add_stability = -0.24
-		add_timed_idea = {
-			idea = rus_austerity_measures
-			days = 365
-		}
-		GER = {
-			country_event = {
-				id = russia.4
-				days = 3
-			}
-		}
 	}
 
 	option = {
@@ -125,32 +115,5 @@ country_event = { #reparations
 			}
 		}
 		add_stability = -0.24
-		add_timed_idea = {
-			idea = rus_austerity_measures
-			days = 365
-		}
-		GER = {
-			country_event = {
-				id = russia.4
-				days = 3
-			}
-		}
-	}
-}
-
-country_event = { #reparations for Germany
-	id = russia.4
-	immediate = { log = "[GetDateText]: [Root.GetName]: event russia.4" }
-	title = russia.4.t
-	desc = russia.4.d
-
-	is_triggered_only = yes
-
-	option = {
-		name = russia.4.a
-		add_timed_idea = {
-			idea = ger_brest_litovsk
-			days = 180
-		}
 	}
 }

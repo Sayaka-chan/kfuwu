@@ -4,6 +4,7 @@ state = {
 	resources = {
 		aluminium = 18
 		oil = 1
+		steel = 48
 	}
 
 	history = {
@@ -20,27 +21,6 @@ state = {
 			infrastructure = 6
 			industrial_complex = 1
 			air_base = 2
-			698 = {
-				bunker = 4
-			}
-			6698 = {
-				bunker = 2
-			}
-			3666 = {
-				bunker = 2
-			}
-			3646 = {
-				bunker = 2
-			}
-			6668 = {
-				bunker = 2
-			}
-			6639 = {
-				bunker = 2
-			}
-			9642 = {
-				bunker = 3
-			}
 		}
 	}
 

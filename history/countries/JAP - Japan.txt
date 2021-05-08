@@ -3,7 +3,7 @@ OOB = "JAP"
 
 set_naval_oob = "JAP_naval"
 set_stability = 0.75
-set_war_support = 0.70
+set_war_support = 0.90
 set_fuel_ratio = 0.75
 set_research_slots = 5
 
@@ -42,7 +42,6 @@ set_technology = {
 	fighter1 = 1
 	tactical_bomber1 = 1
 	CAS1 = 1
-	cv_CAS1 = 1
 	heavy_fighter1 = 1
 
 }
@@ -168,6 +167,7 @@ add_ideas = {
 	limited_conscription
 	closed_economy
 	low_economic_mobilisation
+	peace_training
 }
 
 add_opinion_modifier = { target = LEC modifier = LEC_member }
@@ -291,7 +291,6 @@ if = { #JAP_samurai_lineage GFX doesn't show up without Waking the Tiger, hence 
 		name = "Terauchi Hisaichi"
 		picture = "Portrait_Japan_Hisaichi_Terauchi.dds"
 		traits = {
-			offensive_doctrine
 			JAP_samurai_lineage   # hakushaku
 			politically_connected
 			organizer
@@ -307,11 +306,11 @@ if = { #JAP_samurai_lineage GFX doesn't show up without Waking the Tiger, hence 
 	create_field_marshal = {
 		name = "Hata Shunroku"
 		picture = "Portrait_Japan_Shunroku_Hata.dds"
-		traits = { offensive_doctrine JAP_samurai_lineage }
-		skill = 4
-		attack_skill = 3
+		traits = { infantry_leader JAP_samurai_lineage organizer }
+		skill = 5
+		attack_skill = 6
 		defense_skill = 4
-		planning_skill = 2
+		planning_skill = 3
 		logistics_skill = 4
 	}
 
@@ -493,12 +492,12 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Muto Akira"
 	picture = "Portrait_Japan_Akira_Muto.dds"
-	traits = { career_officer  }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
+	traits = { infantry_leader  }
+	skill = 4
+	attack_skill = 5
+	defense_skill = 3
 	planning_skill = 2
-	logistics_skill = 1
+	logistics_skill = 3
 }
 
 create_corps_commander = {
@@ -515,11 +514,11 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Okamura Yasuji"
 	picture = "Portrait_Japan_Yasuji_Okamura.dds"
-	traits = { infantry_leader }
-	skill = 4
-	attack_skill = 4
+	traits = { infantry_leader urban_assault_specialist trait_engineer }
+	skill = 6
+	attack_skill = 6
 	defense_skill = 5
-	planning_skill = 2
+	planning_skill = 3
 	logistics_skill = 3
 }
 
@@ -704,7 +703,7 @@ create_navy_leader = {
 	name = "Yamamoto Isoroku"
 	picture = "Portrait_Japan_Isoroku_Yamamoto.dds"
 	traits = { superior_tactician spotter blockade_runner air_controller }
-	skill = 6
+	skill = 7
 	attack_skill = 7
 	defense_skill = 4
 	maneuvering_skill = 6
@@ -715,9 +714,9 @@ create_navy_leader = {
 	name = "Koga Mineichi"
 	picture = "Portrait_Japan_Mineichi_Koga.dds"
 	traits = { superior_tactician spotter fleet_protector }
-	skill = 4
+	skill = 5
 	attack_skill = 5
-	defense_skill = 3
+	defense_skill = 4
 	maneuvering_skill = 5
 	coordination_skill = 4
 }
@@ -780,11 +779,11 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Ozawa Jisaburo"
 	picture = "Portrait_Japan_Jisaburo_Ozawa.dds"
-	traits = { blockade_runner superior_tactician ironside fly_swatter }
+	traits = { blockade_runner ironside fly_swatter }
 	skill = 6
-	attack_skill = 7
+	attack_skill = 6
 	defense_skill = 5
-	maneuvering_skill = 4
+	maneuvering_skill = 5
 	coordination_skill = 5
 }
 

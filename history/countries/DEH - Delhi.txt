@@ -99,6 +99,7 @@ add_ideas = {
 	pp_idea
 	DEH_backwards_economy_1
 	DEH_mp
+	peace_training
 }
 
 set_research_slots = 3
@@ -187,10 +188,10 @@ create_field_marshal = {
 		infantry_leader
 	}
 	skill = 5
-	attack_skill = 6
+	attack_skill = 5
 	defense_skill = 4
 	planning_skill = 3
-	logistics_skill = 4
+	logistics_skill = 5
 	id = 1220
 }
 
@@ -221,7 +222,7 @@ create_corps_commander = {
 		trickster
 	}
 	skill = 5
-	attack_skill = 6
+	attack_skill = 5
 	defense_skill = 4
 	planning_skill = 3
 	logistics_skill = 4
@@ -233,11 +234,12 @@ create_corps_commander = { #Auto-Generated
 	portrait_path = "gfx/leaders/PRF/Portrait_PRF_Bhupinder_Singh.tga"
 	traits = {
 		desert_fox
+		infantry_leader
 	}
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 1
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 2
 	logistics_skill = 2
 	id = 1223
 }
@@ -246,14 +248,14 @@ create_corps_commander = { #Auto-Generated
 	name = "Nawab Khanji"
 	portrait_path = "gfx/leaders/PRF/Portrait_PRF_Nawab_Khanji.tga"
 	traits = {
-		infantry_officer
+		infantry_leader
 		trait_mountaineer
 	}
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
+	skill = 4
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
 	id = 1224
 }
 

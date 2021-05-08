@@ -5,10 +5,6 @@ ITA_is_catholic_country = {
 	OR = {
 		tag = AUS
 		tag = NFA
-		tag = CAR
-		tag = SPR
-		tag = POR
-		tag = IRE
 		tag = GER
 		is_italian_tag = yes
 	}

@@ -26,8 +26,8 @@ equipments = {
 				gfx = ship_deck_space_slot
 			}
 			fixed_ship_deck_slot_2 = {
-				required = no
-				allowed_module_categories = { ship_deck_space ship_carrier_armor }
+				required = yes
+				allowed_module_categories = { ship_deck_space }
 				gfx = ship_deck_space_slot
 			}
 			fixed_ship_anti_air_slot = {
@@ -48,11 +48,9 @@ equipments = {
 			}
 
 			front_1_custom_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
 					ship_deck_space
-					ship_carrier_armor
-					ship_secondaries
 				}
 			}
 		}

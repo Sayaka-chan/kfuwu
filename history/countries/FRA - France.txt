@@ -2,7 +2,7 @@
 
 oob = "FRA"
 
-set_research_slots = 4
+set_research_slots = 5
 
 ### Starting Technologies ###
 set_technology = {
@@ -141,7 +141,7 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 100000
+	amount = 50000
 	producer = FRA
 }
 add_equipment_to_stockpile = {
@@ -175,7 +175,6 @@ add_opinion_modifier = { target = CZE modifier = embargo }
 add_opinion_modifier = { target = HUN modifier = embargo }
 add_opinion_modifier = { target = CRO modifier = embargo }
 add_opinion_modifier = { target = CAN modifier = embargo }
-add_opinion_modifier = { target = ITA modifier = embargo }
 add_opinion_modifier = { target = OTT modifier = embargo }
 add_opinion_modifier = { target = NFA modifier = embargo }
 add_opinion_modifier = { target = UKR modifier = embargo }
@@ -212,6 +211,7 @@ add_ideas = {
 	FRA_bad_intel
 	pp_idea
 	partial_economic_mobilisation
+	peace_training
 }
 
 create_country_leader = {

@@ -5,10 +5,6 @@ state = {
 
 	state_category = six
 
-	resources = {
-		oil = 74
-	}
-
 	history = {
 		owner = UKR
 		buildings = {

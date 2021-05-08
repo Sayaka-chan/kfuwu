@@ -2,10 +2,10 @@ state = {
 	id = 1021
 	name = "STATE_1021"
 	provinces = {
-		1246 1274 1313 1342 1401 4211 4276 4361 4381 7384 7396 10150 10322 12165 12268 12296
+		1246 1274 1313 1342 1401 4211 4276 4361 4381 7384 7396 10150 10322 12165 12268 12296 1345 1373 1533 4364 10294
 	}
 	resources = {
-		rubber = 36
+		rubber = 100
 	}
 	manpower = 2409049
 
@@ -13,7 +13,7 @@ state = {
 		victory_points = {
 			12268 1
 		}
-		owner = GER
+		owner = GEA
 		add_core_of = VEN
 		buildings = {
 			infrastructure = 3

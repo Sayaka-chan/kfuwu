@@ -1,0 +1,22 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = allow_wargoals
+						option = FREE_75
+					}
+				}
+			set_global_flag = KR_no_guarantees_allowed
+			set_global_flag = KR_no_allow_revoke_guarantees
+			set_global_flag = KR_focuses_only_allow_wargoals
+			set_global_flag = KR_no_allow_create_faction
+			set_global_flag = KR_no_allow_leave_faction
+			set_global_flag = KR_no_allow_join_faction
+			set_global_flag = KR_no_allow_kick_faction
+			set_global_flag = NEWS_ALL
+			}
+		}
+	}
+}

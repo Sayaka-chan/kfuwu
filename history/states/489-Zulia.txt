@@ -9,8 +9,6 @@ state = {
 		owner = VEN
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
-			arms_factory = 1
 			1944 = {
 				naval_base = 5
 			}

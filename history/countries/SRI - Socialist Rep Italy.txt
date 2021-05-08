@@ -9,6 +9,7 @@ add_ideas = {
 	SRI_divided_nation
 	pp_idea
 	SRI_red_guards_idea
+	peace_training
 }
 
 add_opinion_modifier = { target = AST modifier = embargo }
@@ -18,7 +19,6 @@ add_opinion_modifier = { target = HUN modifier = embargo }
 add_opinion_modifier = { target = CRO modifier = embargo }
 add_opinion_modifier = { target = CAN modifier = embargo }
 add_opinion_modifier = { target = GER modifier = embargo }
-add_opinion_modifier = { target = ITA modifier = embargo }
 add_opinion_modifier = { target = UKR modifier = embargo }
 add_opinion_modifier = { target = FRA modifier = KR_close_allies }
 add_opinion_modifier = { target = ENG modifier = KR_close_allies }
@@ -165,6 +165,10 @@ set_popularities = {
 	paternal_autocrat = 0
 	national_populist = 0
 }
+give_resource_rights = {
+	receiver = FRA
+	state = 448
+}
 
 create_country_leader = {# Benito Mussolini
 	name = "Benito Mussolini"
@@ -219,7 +223,7 @@ create_field_marshal = {# Edmondo Rossoni
 		}
 	id = 521
 	skill = 5
-	attack_skill = 4
+	attack_skill = 5
 	defense_skill = 4
 	planning_skill = 2
 	logistics_skill = 4

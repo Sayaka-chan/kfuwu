@@ -24,7 +24,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_political_1
-		icon = GFX_focus_ger_revive_kaiserreich
+		icon = missing
 		prerequisite = {}
 		x = 4
 		y = 0
@@ -440,14 +440,20 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_zollverein"
 			custom_effect_tooltip = ZO_zollverein_idea_tooltip
 			hidden_effect = {
-				every_country = {
-					limit = {
-						has_idea = ZO_idea
-					}
+				GER = {
 					swap_ideas = {
 						remove_idea = ZO_idea
 						add_idea = ZO_zollverein_idea
 					}
+				}
+				AUS = {
+					add_ideas = ZO_zollverein_idea
+				}
+				UKR = {
+					add_ideas = ZO_zollverein_idea
+				}
+				OTT = {
+					add_ideas = ZO_zollverein_idea
 				}
 			}
 		}
@@ -459,7 +465,7 @@ focus_tree = {
 		prerequisite = { focus = GER_black_monday_finish}
 		available = {
 		}
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_goal_flag_ukraine_alternate
 		x = 2
 		y = 4
 		relative_position_id = GER_black_monday_aftermath
@@ -484,14 +490,14 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			}}
-
-			focus = {
+			}
+		}
+	focus = {
 		id = Ger_development_in_Austria
 		prerequisite = { focus = GER_black_monday_finish}
 		available = {
 		}
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_goal_austria
 		x = -2
 		y = 4
 		relative_position_id = GER_black_monday_aftermath
@@ -517,14 +523,14 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			}}
-
-			focus = {
+			}
+		}
+	focus = {
 		id = Ger_development_in_Turkey
 		prerequisite = { focus = GER_black_monday_finish}
 		available = {
 		}
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_goal_ottoman
 		x = 0
 		y = 4
 		relative_position_id = GER_black_monday_aftermath
@@ -549,8 +555,8 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			}}
-
+			}
+		}
 
 	###############
 	### Economy ###
@@ -558,7 +564,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_economy
-		icon = GFX_goal_generic_production
+		icon = missing
 		x = 20
 		y = 0
 		cost = 5
@@ -630,7 +636,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_synthetic
-		icon = GFX_goal_generic_oil_refinery
+		icon = GFX_goal_trees
 		prerequisite = {
 			focus = GER_ig_farben
 		}
@@ -680,7 +686,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_synthetic_rubber
-		icon = GFX_goal_generic_oil_refinery
+		icon = GFX_GER_synthetic_rubber
 		prerequisite = { focus = GER_synthetic}
 		x = 0
 		y = 2
@@ -743,7 +749,7 @@ focus_tree = {
   
 	focus = {
 		id = GER_rocket
-		icon = GFX_focus_rocketry
+		icon = GFX_GER_rocket
 		prerequisite = {
 			focus = GER_zuse
 		}
@@ -770,7 +776,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_siemens
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_GER_siemens
 		prerequisite = {
 			focus = GER_economy
 		}
@@ -789,7 +795,6 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_siemens"
-			custom_effect_tooltip = GER_siemens_unlock
 			64 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -810,22 +815,13 @@ focus_tree = {
 
 
 
-			if = {
-				limit = {
-					has_idea = siemens_schuckert
-				}
-				swap_ideas = {
-					remove_idea = siemens_schuckert
-					add_idea = siemens_schuckert2
-				}
-			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 
 	focus = {
 		id = GER_infra_1
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_GER_infra_1
 		prerequisite = {
 			focus = GER_siemens
 		}
@@ -862,7 +858,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_infra_2
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_GER_infra_2
 		prerequisite = {
 			focus = GER_infra_1
 		}
@@ -900,7 +896,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_krupp_steel_focus
-		icon = GFX_goal_generic_army_artillery2
+		icon = GFX_USA_efficient_production_program
 		prerequisite = {
 			focus = GER_economy
 		}
@@ -947,7 +943,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_civ_industry_1
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_GER_civ_industry_1
 		prerequisite = {
 			focus = GER_siemens
 			focus = GER_krupp_steel_focus
@@ -999,7 +995,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_civ_industry_2
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_GER_civ_industry_2
 		prerequisite = {
 			focus = GER_civ_industry_1
 		}
@@ -1131,7 +1127,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_artillery_research
-		icon = GFX_goal_generic_army_artillery
+		icon = GFX_GER_artillery_research
 		prerequisite = {
 			focus = GER_Infantry_divs
 		}
@@ -1158,7 +1154,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_mil_industry_
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_goal_manage_industries
 		prerequisite = {
 			focus = GER_Mauser_werke
 			focus = GER_krupp_steel_focus
@@ -1210,7 +1206,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_mil_industry_2
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_goal_manage_industries
 		prerequisite = {
 			focus = GER_mil_industry_
 		}
@@ -1261,7 +1257,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_mil_industry_3
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_goal_manage_industries
 		prerequisite = {
 			focus = GER_mil_industry_2
 		}
@@ -1312,7 +1308,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_Mauser_werke
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_goal_workers_rights
 		prerequisite = {
 			focus = GER_economy
 		}
@@ -1372,7 +1368,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_Infantry_divs
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_GER_Infantry_divs
 		prerequisite = {
 			focus = GER_Mauser_werke
 		}
@@ -1399,7 +1395,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_doctrine_mobile_3
-		icon = GFX_goal_Focus_Military_Mobilisation
+		icon = GFX_GER_doctrine_mobile_3
 		prerequisite = {
 			focus = GER_artillery_research
 		}
@@ -1428,7 +1424,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_mil_expansion
-		icon = GFX_goal_generic_axis_build_infantry
+		icon = GFX_goal_germany
 		x = 32
 		y = 0
 		cost = 3
@@ -1468,7 +1464,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_doctrine_mobile_2
-		icon = GFX_goal_generic_army_motorized
+		icon = GFX_goal_authority
 		prerequisite = {
 			focus = GER_mil_expansion
 		}
@@ -1511,7 +1507,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_doctrine_great_war
-		icon = GFX_goal_army_guy_2
+		icon = GFX_GER_doctrine_great_war
 		prerequisite = {
 			focus = GER_doctrine_mobile_2
 		}
@@ -1551,7 +1547,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_doctrine_mobile
-		icon = GFX_goal_generic_army_motorized
+		icon = focus_GER_doctrine_mobile
 		prerequisite = {
 			focus = GER_doctrine_mobile_2
 		}
@@ -1670,7 +1666,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_doctrine_last
-		icon = GFX_focus_generic_military_academy
+		icon = GFX_GER_doctrine_last
 		prerequisite = {
 			focus = GER_doctrine_mobile
 			focus = GER_doctrine_great_war
@@ -1703,13 +1699,12 @@ focus_tree = {
 
 	focus = {
 		id = GER_security_3
-		icon = GFX_goal_doctrine_tank_warfare
+		icon = GFX_goal_broken_red_star
 		prerequisite = {
 			focus = GER_doctrine_last
 			focus = GER_mil_expansion_land_1
 		}
 		available = {
-			has_country_flag = loth_armed
 			NOT = {
 				has_war_with = FRA
 			}
@@ -1742,7 +1737,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_sturzflieger
-		icon = GFX_goal_generic_air_fighter
+		icon = GFX_GER_red_baron
 		available = {
 			date > 1938.1.1
 		}
@@ -1769,7 +1764,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_cas
-		icon = GFX_goal_generic_CAS
+		icon = GFX_goal_air_armada
 		prerequisite = {
 			focus = GER_sturzflieger
 		}
@@ -1796,7 +1791,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_Luftwaffe_airbases_1
-		icon = GFX_goal_generic_build_airforce
+		icon = GFX_GER_Luftwaffe_airbases_1
 		prerequisite = {
 			focus = GER_mil_expansion
 		}
@@ -1811,28 +1806,28 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_Luftwaffe_airbases_1"
 			781 = {
-				add_building_construction = {
+				set_building_level = {
 					type = air_base
 					level = 10
 					instant_build = yes
 				}
 			}
 			42 = {
-				add_building_construction = {
+				set_building_level = {
 					type = air_base
 					level = 10
 					instant_build = yes
 				}
 			}
 			780 = {
-				add_building_construction = {
+				set_building_level = {
 					type = air_base
 					level = 10
 					instant_build = yes
 				}
 			}
 			35 = {
-				add_building_construction = {
+				set_building_level = {
 					type = air_base
 					level = 10
 					instant_build = yes
@@ -1848,7 +1843,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_mil_expansion_naval_1
-		icon = GFX_goal_generic_build_navy
+		icon = GFX_goal_battleship
 		available = {
 			58 = { is_owned_and_controlled_by = GER }
 		}
@@ -2252,7 +2247,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_doctrine_fleet_in_beeing
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_GER_doctrine_fleet_in_beeing
 		prerequisite = {
 			focus = GER_mil_expansion_naval_1
 		}
@@ -2274,7 +2269,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = GER_doctrine_fleet_in_beeing
 				bonus = 1
-				uses = 1
+				uses = 3
 				category = fleet_in_being_tree
 			}
 		}
@@ -2283,7 +2278,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_doctrine_fleet_in_beeing2
-		icon = GFX_goal_generic_wolf_pack
+		icon = GFX_goal_navy_hat_ships
 		prerequisite = {
 			focus = GER_doctrine_fleet2
 		}
@@ -2313,7 +2308,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_doctrine_fleet_in_beeing3
-		icon = GFX_goal_generic_navy_battleship
+		icon = GFX_GER_doctrine_fleet_in_beeing3
 		prerequisite = {
 			focus = GER_doctrine_fleet_in_beeing2
 		}
@@ -2341,7 +2336,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_doctrine_base_strike
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_GER_doctrine_base_strike
 		prerequisite = {
 			focus = GER_mil_expansion_naval_1
 		}
@@ -2363,7 +2358,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = GER_doctrine_base_strike
 				bonus = 1
-				uses = 1
+				uses = 3
 				category = cat_base_strike
 			}
 		}
@@ -2434,9 +2429,6 @@ focus_tree = {
 			focus = GER_doctrine_base_strike3
 			focus = GER_doctrine_fleet_in_beeing3
 		}
-		available = {
-			has_country_flag = navy_1934_complete
-		}
 		x = 6
 		y = 6
 		relative_position_id = GER_mil_expansion_naval_1
@@ -2456,7 +2448,7 @@ focus_tree = {
 	
 	focus = {
 	    id = GER_naval_revival
-		icon = GFX_goal_generic_navy_battleship
+		icon = GFX_goal_battleship
 		prerequisite = {
 			focus = GER_tirpitzprogramm
 		}
@@ -2500,7 +2492,7 @@ focus_tree = {
 		
 		focus = {
 		id = GER_naval_plans
-		icon = GFX_goal_generic_navy_doctrines_tactics # Should be replaced by a proud Battleship *sniff*
+		icon = GFX_GER_naval_plans # Should be replaced by a proud Battleship *sniff*
 		prerequisite = {
 			focus = GER_naval_revival
 		}
@@ -2515,7 +2507,6 @@ focus_tree = {
 
 		available = {
 			OR = {
-				ENG = { has_country_flag = PWH2 }
 				126 = { is_controlled_by_ROOT_or_subject = yes }
 			}
 		}

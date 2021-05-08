@@ -764,7 +764,6 @@ focus_tree = {
 					instant_build = yes
 				}		
 			}
-		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
 		}
 	}
 
@@ -1494,6 +1493,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus RUS_Into_The_Caucasus"
 			annex_country = {
 				target = DKB
+				transfer_troops = yes
 			}
 		}
 	}
@@ -1506,7 +1506,7 @@ focus_tree = {
 		cost = 1
 		relative_position_id = RUS_Expansionism
 		available = {
-			date > 1940.9.1
+			date > 1940.12.24
 			is_subject = no
 			if = {
 				limit = {
@@ -1575,8 +1575,11 @@ focus_tree = {
 				}
 				add_claim_by = ROOT
 			}
-			unlock_decision_tooltip = RUS_Attack_Germany
-		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_POLITICAL }
+			RUS={declare_war_on = { target = GER type = annex_everything }}
+			RUS={declare_war_on = { target = UKR type = annex_everything }}
+			RUS={declare_war_on = { target = OTT type = annex_everything }}
+			RUS={declare_war_on = { target = AUS type = annex_everything }}
+		}
 	}
 }
 	

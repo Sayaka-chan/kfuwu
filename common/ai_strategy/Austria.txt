@@ -116,38 +116,6 @@ austria_worried_about_france = {
 	}
 }
 
-austria_worried_about_soviets = {
-	allowed = {
-		tag = AUS
-	}
-	enable = {
-		tag = AUS
-		not_has_socialist_government = yes
-		is_subject = no
-		SOV = {
-			exists = yes
-			has_socialist_government = yes
-		}
-	}
-	abort = {
-		OR = {
-			has_socialist_government = yes
-			NOT = { is_faction_leader = yes }
-			SOV = { not_has_socialist_government = yes }
-		}
-	}
-	ai_strategy = {
-		type = contain
-		id = "SOV"
-		value = 100
-	}
-	ai_strategy = {
-		type = antagonize
-		id = "SOV"
-		value = 100
-	}
-}
-
 austria_worried_about_russia = {
 	allowed = {
 		tag = AUS
@@ -206,38 +174,3 @@ austria_hates_sri = {
 		value = 100
 	}
 }
-
-austria_hates_italy = {
-	enable = {
-		OR = {
-			tag = AUS
-			is_subject_of = AUS
-			is_in_faction_with = AUS
-		}
-		AUS = { is_subject = no }
-		ITA = {
-			has_government = national_populist
-			is_subject = no
-			NOT = { is_in_faction_with = AUS }
-		}
-	}
-
-	abort_when_not_enabled = yes
-
-	ai_strategy = {
-		type = contain
-		id = "ITA"
-		value = 200
-	}
-	ai_strategy = {
-		type = conquer
-		id = "ITA"
-		value = 200
-	}
-	ai_strategy = {
-		type = antagonize
-		id = "ITA"
-		value = 200
-	}
-}
-

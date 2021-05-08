@@ -618,18 +618,6 @@ ROOT_is_restriction_exception = {
 			AUS = { at_conference_has_war_with_ROOT = yes }
 			HUN = { at_conference_no_war_with_ROOT = yes }
 		}
-		# Bulgaria restricts itself if dividing up Romania/Serbia with Austria/Hungary
-		AND = {
-			tag = BUL
-			OR = {
-				ROM = { at_conference_has_war_with_ROOT = yes }
-				SER = { at_conference_has_war_with_ROOT = yes }
-			}
-			OR = {
-				AUS = { at_conference_no_war_with_ROOT = yes }
-				HUN = { at_conference_no_war_with_ROOT = yes }
-			}
-		}
 		# Don Kuban restricts itself if dividing up ALO or Russia
 		AND = {
 			tag = DKB
@@ -649,35 +637,6 @@ ROOT_is_restriction_exception = {
 					}
 				}
 			}
-		}
-		# Greece, Romania, and Royalist Romania will restrict themselves if dividing up Bulgaria/Ottomans with Serbia
-		AND = {
-			OR = {
-				tag = ROM
-				tag = RRM
-				tag = GRE
-			}
-			OR = {
-				AND = {
-					BUL = { at_conference_has_war_with_ROOT = yes }
-				}
-				AND = {
-					OTT = { at_conference_has_war_with_ROOT = yes }
-					SER = { at_conference_no_war_with_ROOT = yes }
-				}
-			}
-		}
-		# Serbia will restrict itself if dividing up the Ottomans with Egypt
-		AND = {
-			tag = SER
-			OTT = { at_conference_has_war_with_ROOT = yes }
-			EGY = { at_conference_no_war_with_ROOT = yes }
-		}
-		# Arabia will restrict itself if dividing up Iran with Egypt
-		AND = {
-			tag = SAU
-			PER = { at_conference_has_war_with_ROOT = yes }
-			EGY = { at_conference_no_war_with_ROOT = yes }
 		}
 		# Russia will restrict itself if dividing up Europe
 		AND = {
@@ -3052,12 +3011,10 @@ rule_stay_out_of_alands_ROOT = {
 		tag = SOV
 		tag = FIN
 		tag = SWE
-		tag = SCA
 	}
 	any_country = {
 		OR = {
 			tag = RUS
-			tag = SOV
 			is_claim_or_core_or_ambition_of_PREV = yes
 		}
 		at_conference_no_war_with_ROOT = yes
@@ -3076,12 +3033,10 @@ rule_stay_out_of_alands_PREV = {
 		tag = SOV
 		tag = FIN
 		tag = SWE
-		tag = SCA
 	}
 	any_country = {
 		OR = {
 			tag = RUS
-			tag = SOV
 			is_claim_or_core_or_ambition_of_PREV = yes
 		}
 		at_conference_no_war_with_PREV = yes
@@ -3090,175 +3045,10 @@ rule_stay_out_of_alands_PREV = {
 	}
 }
 
-rule_BHC_stay_out_of_siam_ROOT = {
-	tag = BHC
-	SIA = { at_conference_has_war_with_ROOT = yes }
-	BUR = {
-		at_conference_no_war_with_ROOT = yes
-		is_willing_to_take_state_PREV = yes
-	}
-	var:global.eval_state = {
-		is_core_of = SIA
-		NOT = {
-			num_owned_neighbour_states = { count > 0 owner = ROOT }
-			num_claimed_peace_conference_neighbour_states = { count > 0 owner = ROOT }
-		}
-	}
-}
-
-rule_BHC_stay_out_of_siam_PREV = {
-	tag = BHC
-	SIA = { at_conference_has_war_with_PREV = yes }
-	BUR = {
-		at_conference_no_war_with_PREV = yes
-		is_willing_to_take_state_PREV = yes
-	}
-	var:global.eval_state = {
-		is_core_of = SIA
-		NOT = {
-			num_owned_neighbour_states = { count > 0 owner = PREV }
-			num_claimed_peace_conference_neighbour_states = { count > 0 owner = PREV }
-		}
-	}
-}
-
-rule_let_ROM_finish_civil_war_ROOT = {
-	RRM = { at_conference_has_war_with_ROOT = yes }
-	ROM = { at_conference_no_war_with_ROOT = yes }
-	var:global.eval_state = {
-		is_claim_or_core_of_ROOT = no
-		is_core_of = RRM
-		is_owned_by = RRM
-	}
-}
-
-rule_let_ROM_finish_civil_war_PREV = {
-	RRM = { at_conference_has_war_with_PREV = yes }
-	ROM = { at_conference_no_war_with_PREV = yes }
-	var:global.eval_state = {
-		is_claim_or_core_of_PREV = no
-		is_core_of = RRM
-		is_owned_by = RRM
-	}
-}
-
-rule_let_RRM_finish_civil_war_ROOT = {
-	ROM = { at_conference_has_war_with_ROOT = yes }
-	RRM = { at_conference_no_war_with_ROOT = yes }
-	var:global.eval_state = {
-		is_claim_or_core_of_ROOT = no
-		is_core_of = ROM
-		is_owned_by = ROM
-	}
-}
-
-rule_let_RRM_finish_civil_war_PREV = {
-	ROM = { at_conference_has_war_with_PREV = yes }
-	RRM = { at_conference_no_war_with_PREV = yes }
-	var:global.eval_state = {
-		is_claim_or_core_of_PREV = no
-		is_core_of = ROM
-		is_owned_by = ROM
-	}
-}
-
-rule_let_KUR_take_cores_ROOT = {
-	OR = {
-		tag = SAU
-		tag = JBS
-	}
-	KUR = { at_conference_no_war_with_ROOT = yes }
-	var:global.eval_state = {
-		is_core_of = KUR
-		OR = {
-			state = 676 #Al Mawsli
-			state = 819 #Kirkuk
-		}
-	}
-}
-
-rule_let_KUR_take_cores_PREV = {
-	OR = {
-		tag = SAU
-		tag = JBS
-	}
-	KUR = { at_conference_no_war_with_PREV = yes }
-	var:global.eval_state = {
-		is_core_of = KUR
-		OR = {
-			state = 676 #Al Mawsli
-			state = 819 #Kirkuk
-		}
-	}
-}
-
-rule_POR_stay_out_of_spain_ROOT = {
-	tag = POR
-	OR = {
-		SPR = {
-			at_conference_no_war_with_ROOT = yes
-			at_conference_has_war_with_owner = yes
-		}
-		CNT = {
-			at_conference_no_war_with_ROOT = yes
-			at_conference_has_war_with_owner = yes
-		}
-		CAR = {
-			at_conference_no_war_with_ROOT = yes
-			at_conference_has_war_with_owner = yes
-		}
-	}
-	var:global.eval_state = {
-		OR = {
-			region = 41 #Eastern Iberia
-			region = 236 #Southern Iberia
-			region = 237 #Western Iberia
-		}
-		NOT = {
-			is_claim_or_core_of_ROOT = yes
-			state = 171 #Galicia
-			state = 793 #Asturias
-			state = 118 #Gibraltar
-		}
-	}
-}
-
-rule_POR_stay_out_of_spain_PREV = {
-	tag = POR
-	OR = {
-		SPR = {
-			at_conference_no_war_with_PREV = yes
-			at_conference_has_war_with_owner = yes
-		}
-		CNT = {
-			at_conference_no_war_with_PREV = yes
-			at_conference_has_war_with_owner = yes
-		}
-		CAR = {
-			at_conference_no_war_with_PREV = yes
-			at_conference_has_war_with_owner = yes
-		}
-	}
-	var:global.eval_state = {
-		OR = {
-			region = 41 #Eastern Iberia
-			region = 236 #Southern Iberia
-			region = 237 #Western Iberia
-		}
-		NOT = {
-			is_claim_or_core_of_PREV = yes
-			state = 171 #Galicia
-			state = 793 #Asturias
-			state = 118 #Gibraltar
-		}
-	}
-}
-
 rule_leave_UKR_to_RUS_ROOT = {
 	NOT = {
 		tag = UKR
 		tag = RUS
-		tag = SOV
 		tag = GER
 		AND = {
 			is_faction_leader = yes
@@ -3269,11 +3059,6 @@ rule_leave_UKR_to_RUS_ROOT = {
 	}
 	OR = {
 		RUS = {
-			at_conference_has_war_with_owner = yes
-			at_conference_no_war_with_ROOT = yes
-			is_willing_to_take_state_PREV = yes
-		}
-		SOV = {
 			at_conference_has_war_with_owner = yes
 			at_conference_no_war_with_ROOT = yes
 			is_willing_to_take_state_PREV = yes
@@ -3391,11 +3176,6 @@ rule_stay_out_of_western_russia_PREV = {
 			tag = FRA
 			tag = UKR
 			tag = DKB
-			tag = WHR
-			tag = LIT
-			tag = LAT
-			tag = EST
-			tag = BAT
 			tag = FIN
 		}
 		at_conference_has_war_with_owner = yes
@@ -3412,11 +3192,6 @@ rule_stay_out_of_siberia_ROOT = {
 		tag = FRA
 		tag = UKR
 		tag = DKB
-		tag = WHR
-		tag = LIT
-		tag = LAT
-		tag = EST
-		tag = BAT
 		tag = FIN
 	}
 	var:global.eval_state = {
@@ -3453,11 +3228,6 @@ rule_stay_out_of_siberia_PREV = {
 		tag = FRA
 		tag = UKR
 		tag = DKB
-		tag = WHR
-		tag = LIT
-		tag = LAT
-		tag = EST
-		tag = BAT
 		tag = FIN
 	}
 	restrict_territorial_ambitions_PREV = no
@@ -3942,35 +3712,5 @@ rule_Tyrol_neighbor_PREV = {
 				}
 			}
 		}
-	}
-}
-
-rule_leave_INS_to_DEI_ROOT = {
-	NOT = { tag = DEI }
-	var:global.eval_state = {
-		is_claim_or_core_of_ROOT = no
-		is_core_of = DEI
-	}
-	DEI = {
-		OR = {
-			is_subject_of = ROOT
-			is_in_faction_with = ROOT
-		}
-		at_conference_has_war_with_owner = yes
-	}
-}
-
-rule_leave_INS_to_DEI_PREV = {
-	NOT = { tag = DEI }
-	var:global.eval_state = {
-		is_claim_or_core_of_ROOT = no
-		is_core_of = DEI
-	}
-	DEI = {
-		OR = {
-			is_subject_of = PREV
-			is_in_faction_with = PREV
-		}
-		at_conference_has_war_with_owner = yes
 	}
 }

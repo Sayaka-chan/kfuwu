@@ -169,21 +169,3 @@ ITA_turn_off_srd_ministers = {
 	set_country_flag = Rino_Corso_Fougier_dead
 	set_country_flag = Angelo_Iachino_dead
 }
-
-SRI_next_neosanfedisti_attack = {
-	hidden_effect = {
-		if = {
-			limit = { has_idea = SRI_neosanfedisti_1 }
-			country_event = { id = socitaly.23 days = 90 random = 240 }
-		}
-		else_if = {
-			limit = { has_idea = SRI_neosanfedisti_2 }
-			country_event = { id = socitaly.23 days = 90 random = 1080 }
-		}
-		if = {
-			limit = { has_idea = SRI_neosanfedisti_3 }
-			country_event = { id = socitaly.23 days = 90 random = 2160 }
-		}
-	}
-}
-

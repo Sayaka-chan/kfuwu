@@ -55,15 +55,6 @@ intelligence_agency = {
 
 intelligence_agency = {
 
-	picture = GFX_intelligence_agency_logo_kr_csa
-	names = { "Combined Intelligence Agency" }
-
-	default = { tag = CSA }
-	available = { original_tag = CSA }
-}
-
-intelligence_agency = {
-
 	picture = GFX_intelligence_agency_logo_kr_eng
 	names = { "Revolutionary Exportation Directory" }
 
@@ -71,17 +62,6 @@ intelligence_agency = {
 
 	default = { tag = ENG }
 	available = { original_tag = ENG }
-}
-
-intelligence_agency = {
-
-	picture = GFX_intelligence_agency_logo_kr_fng
-	names = { "Military and Political Executive Office" }
-
-	available = { always = yes }
-
-	default = { tag = FNG }
-	available = { original_tag = FNG }
 }
 
 intelligence_agency = {
@@ -165,29 +145,6 @@ intelligence_agency = {
 
 	default = { tag = IRE }
 	available = { original_tag = IRE }
-}
-
-intelligence_agency = {
-
-	picture = GFX_intelligence_agency_logo_ita # vanilla icon
-	names = { "Servizio Informazioni Militare" }
-
-	default = {
-		OR = {
-			tag = SRD # Direct Successor
-			tag = SIC
-			tag = TUS
-			tag = EMI
-		}
-	}
-	available = {
-		OR = {
-			original_tag = SRD # Direct Successor
-			original_tag = SIC
-			original_tag = TUS
-			original_tag = EMI
-		}
-	}
 }
 
 intelligence_agency = {
@@ -317,28 +274,17 @@ intelligence_agency = {
 
 intelligence_agency = {
 
-	picture = GFX_intelligence_agency_logo_kr_tex
-	names = { "Military Intelligence Service" }
-
-	default = { tag = TEX }
-	available = { original_tag = TEX }
-}
-
-intelligence_agency = {
-
 	picture = GFX_intelligence_agency_logo_usa # vanilla icon
 	names = { "Office of Strategic Services" }
 
 	default = {
 		OR = {
 			tag = USA
-			tag = CAL
 		}
 	}
 	available = {
 		OR = {
 			original_tag = USA
-			original_tag = CAL
 		}
 	}
 }

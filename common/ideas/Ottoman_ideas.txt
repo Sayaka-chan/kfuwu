@@ -246,24 +246,6 @@ ideas = {
 			picture = german_advisors
 		}
 
-		ZO_idea = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ZO_idea"}
-			available = { country_exists = GER }
-			picture = ger_revive_the_kaiserreich
-		}
-
-		ZO_zollverein_idea = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ZO_zollverein_idea"}
-			available = { country_exists = GER }
-			picture = ger_revive_the_kaiserreich
-			modifier = {
-				industrial_capacity_factory = 0.05
-				production_speed_arms_factory_factor = 0.15
-				production_speed_dockyard_factor = 0.1
-				stability_factor = 0.1
-			}
-		}
-
 		ott_protests_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ott_protests_idea"}
 			picture = FRA_matignon_agreements
@@ -418,7 +400,6 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea OTT_Ottoman_Stand"}
 			available = {
 				OR = {
-					has_war_with = EGY
 					has_war_with = PER
 				}
 			}
@@ -516,6 +497,7 @@ ideas = {
 			research_bonus = {
 				infantry_weapons = 0.1
 			}
+			cost = 100
 		}
 
 		ankara_tufek = {
@@ -524,7 +506,9 @@ ideas = {
 			traits = { infantry_equipment_producer_defense_1 }
 			research_bonus = {
 				infantry_weapons = 0.1
+			
 			}
+			cost = 100
 		}
 
 		sarsilmaz = {
@@ -537,6 +521,7 @@ ideas = {
 			research_bonus = {
 				infantry_weapons = 0.1
 			}
+			cost = 100
 		}
 
 		zeytinburnu_fabrika = {
@@ -546,6 +531,7 @@ ideas = {
 			research_bonus = {
 				artillery = 0.1
 			}
+			cost = 100
 		}
 
 		mke_ottoman = {
@@ -558,6 +544,7 @@ ideas = {
 			research_bonus = {
 				artillery = 0.1
 			}
+			cost = 100
 		}
 
 		opel_osmanen = {
@@ -570,6 +557,7 @@ ideas = {
 			research_bonus = {
 				motorized_equipment = 0.1
 			}
+			cost = 100
 		}
 
 	}
@@ -588,6 +576,7 @@ ideas = {
 			research_bonus = {
 				armor = 0.1
 			}
+			cost = 100
 		}
 
 		eskisehir_lokomotif = {
@@ -597,6 +586,7 @@ ideas = {
 			research_bonus = {
 				armor = 0.1
 			}
+			cost = 100
 		}
 	}
 
@@ -614,6 +604,7 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.1
 			}
+			cost = 100
 		}
 
 		taskizak_tersanesi = {
@@ -623,6 +614,7 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.1
 			}
+			cost = 100
 		}
 
 		golcuk_tersanesi = {
@@ -635,6 +627,7 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.1
 			}
+			cost = 100
 		}
 
 	}
@@ -652,6 +645,7 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.1
 			}
+			cost = 100
 		}
 
 		tomtas = {
@@ -664,6 +658,7 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.1
 			}
+			cost = 100
 		}
 
 	}

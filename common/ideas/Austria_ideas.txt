@@ -16,7 +16,7 @@ ideas = {
 			}
 		}
 
-		AUS_vienna_circle-1 = {
+		AUS_vienna_circle_1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUS_vienna_circle-1" }
 			name = AUS_vienna_circle
 			picture = generic_research_bonus
@@ -109,24 +109,6 @@ ideas = {
 			modifier = {
 				political_power_gain = -0.25
 				consumer_goods_factor = 0.05
-			}
-		}
-
-		ZO_idea = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ZO_idea"}
-			available = { country_exists = GER }
-			picture = ger_revive_the_kaiserreich
-		}
-
-		ZO_zollverein_idea = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ZO_zollverein_idea"}
-			available = { country_exists = GER }
-			picture = ger_revive_the_kaiserreich
-			modifier = {
-				industrial_capacity_factory = 0.05
-				production_speed_arms_factory_factor = 0.15
-				production_speed_dockyard_factor = 0.1
-				stability_factor = 0.1
 			}
 		}
 
@@ -431,6 +413,7 @@ ideas = {
 			research_bonus = {
 				infantry_weapons = 0.1
 			}
+			cost = 100
 		}
 
 		leopold_gasser_waffenfabrik = {
@@ -444,6 +427,7 @@ ideas = {
 			research_bonus = {
 				infantry_weapons = 0.1
 			}
+			cost = 100
 		}
 
 		bohler = {
@@ -457,6 +441,7 @@ ideas = {
 			research_bonus = {
 				artillery = 0.1
 			}
+			cost = 100
 		}
 
 		hirtenberger = {
@@ -470,6 +455,7 @@ ideas = {
 			research_bonus = {
 				artillery = 0.1
 			}
+			cost = 100
 		}
 
 		puch = {
@@ -483,6 +469,7 @@ ideas = {
 			research_bonus = {
 				motorized_equipment = 0.1
 			}
+			cost = 100
 		}
 
 		sauerwerke = {
@@ -496,6 +483,7 @@ ideas = {
 			research_bonus = {
 				motorized_equipment = 0.1
 			}
+			cost = 100
 		}
 	}
 
@@ -508,21 +496,41 @@ ideas = {
 			allowed = {
 				OR = {
 					original_tag = AUS
-					original_tag = CZE
 				}
 			}
 			available = {
 				OR = {
 					has_completed_focus = AUS_skoda
-					tag = CZE
 				}
 			}
 			traits = {
-				skoda_tank_factories
+			}
+			equipment_bonus = {
+				medium_tank_equipment = {
+					soft_attack = 0.15
+					hard_attack = 0.15
+					breakthrough = 0.1
+					armor_value = 0.1
+					build_cost_ic = 0.1
+				}
+				medium_tank_aa_equipment = {
+					anti_air_attack = 0.15
+					breakthrough = 0.1
+					armor_value = 0.1
+					build_cost_ic = 0.1
+				}
+				medium_tank_destroyer_equipment = {
+					hard_attack = 0.15
+					ap_attack = 0.10
+					breakthrough = 0.1
+					armor_value = 0.1
+					build_cost_ic = 0.1
+				}
 			}
 			research_bonus = {
 				armor = 0.1
 			}
+			cost = 100
 		}
 
 		simmering_graz_pauker = {
@@ -531,11 +539,35 @@ ideas = {
 				original_tag = AUS
 			}
 			traits = {
-				heavy_tank_producer_defense_1
+			}
+			equipment_bonus = {
+				heavy_tank_equipment = {
+					armor_value = 0.1
+					hard_attack = 0.1
+					soft_attack = 0.1
+					breakthrough = 0.1
+					reliability = 0.15
+					build_cost_ic = 0.1
+				}
+				heavy_tank_aa_equipment = {
+					armor_value = 0.1
+					breakthrough = 0.1
+					anti_air_attack = 0.1
+					reliability = 0.15
+					build_cost_ic = 0.1
+				}
+				heavy_tank_destroyer_equipment = {
+					armor_value = 0.1
+					hard_attack = 0.1
+					breakthrough = 0.1
+					reliability = 0.15
+					build_cost_ic = 0.1
+				}
 			}
 			research_bonus = {
 				armor = 0.1
 			}
+			cost = 100
 		}
 
 		wiener_neu_lokomotiv = {
@@ -544,24 +576,36 @@ ideas = {
 				original_tag = AUS
 			}
 			traits = {
-				medium_tank_producer_offense_2
+			}
+			equipment_bonus = {
+				medium_tank_equipment = {
+					soft_attack = 0.10
+					hard_attack = 0.10
+					reliability = 0.05
+					breakthrough = 0.1
+					maximum_speed = 0.1
+					build_cost_ic = 0.1
+				}
+				medium_tank_aa_equipment = {
+					anti_air_attack = 0.10
+					reliability = 0.05
+					breakthrough = 0.1
+					maximum_speed = 0.1
+					build_cost_ic = 0.1
+				}
+				medium_tank_destroyer_equipment = {
+					hard_attack = 0.10
+					ap_attack = 0.10
+					reliability = 0.05
+					breakthrough = 0.1
+					maximum_speed = 0.1
+					build_cost_ic = 0.1
+				}
 			}
 			research_bonus = {
 				armor = 0.1
 			}
-		}
-
-		graef_stift = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea graef_stift" }
-			allowed = {
-				original_tag = AUS
-			}
-			traits = {
-				small_tank_producer_mass_1
-			}
-			research_bonus = {
-				armor = 0.1
-			}
+			cost = 100
 		}
 	}
 
@@ -580,6 +624,7 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.1
 			}
+			cost = 100
 		}
 
 		ganz_danubius = {
@@ -597,6 +642,7 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.1
 			}
+			cost = 100
 		}
 	}
 
@@ -609,11 +655,12 @@ ideas = {
 				original_tag = AUS
 			}
 			traits = {
-				fighter_producer_defense_1
+				fighter_producer_offense_2
 			}
 			research_bonus = {
 				air_equipment = 0.1
 			}
+			cost = 100
 		}
 
 		aviatik = {
@@ -622,24 +669,12 @@ ideas = {
 				original_tag = AUS
 			}
 			traits = {
-				bomber_producer_offense_1
+				bomber_producer_offense_2
 			}
 			research_bonus = {
 				air_equipment = 0.1
 			}
-		}
-
-		hansa_brandenburg_aus = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea hansa_brandenburg_aus" }
-			allowed = {
-				original_tag = AUS
-			}
-			traits = {
-				bomber_producer_defense_1
-			}
-			research_bonus = {
-				air_equipment = 0.1
-			}
+			cost = 100
 		}
 
 		oeffag = {
@@ -648,24 +683,12 @@ ideas = {
 				original_tag = AUS
 			}
 			traits = {
-				nav_cas_producer_offense_1
+				nav_cas_producer_offense_2
 			}
 			research_bonus = {
 				air_equipment = 0.1
 			}
-		}
-
-		lohner = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea lohner" }
-			allowed = {
-				original_tag = AUS
-			}
-			traits = {
-				nav_cas_producer_mass_1
-			}
-			research_bonus = {
-				air_equipment = 0.1
-			}
+			cost = 100
 		}
 	}
 }

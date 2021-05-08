@@ -9,10 +9,18 @@ set_technology = {
 
 	### Infantry ###
 	infantry_weapons = 1
+	infantry_weapons1  = 1
+	motorised_infantry = 1
 	tech_support = 1
 	tech_engineers = 1
 	tech_mountaineers = 1
 	gw_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	basic_light_tank = 1
+	improved_light_tank = 1
+	radio = 1
+	electronic_mechanical_engineering = 1
 
 	### Air ###
 	early_fighter = 1
@@ -88,24 +96,19 @@ add_ideas = {
 	limited_conscription
 	pp_idea
 	free_trade
+	ott_decline
+	ott_opda_idea
+	peace_training
 
-	OTT_Mustafa_Kemal_Pasa_cos_pau
 }
 
 set_country_flag = ott_opda_flag
 
-add_opinion_modifier = { target = EGY modifier = embargo }
 add_opinion_modifier = { target = FRA modifier = embargo }
 add_opinion_modifier = { target = ENG modifier = embargo }
 add_opinion_modifier = { target = SRI modifier = embargo }
-add_opinion_modifier = { target = GEO modifier = embargo }
-add_opinion_modifier = { target = BHC modifier = embargo }
 add_opinion_modifier = { target = GRE modifier = embargo }
-add_opinion_modifier = { target = ROM modifier = embargo }
-add_opinion_modifier = { target = RRM modifier = embargo }
 add_opinion_modifier = { target = PER modifier = embargo }
-add_opinion_modifier = { target = SER modifier = embargo }
-add_opinion_modifier = { target = SAU modifier = embargo }
 
 set_convoys = 50
 add_equipment_to_stockpile = { type = gw_tank_equipment amount = 28 producer = NFA }
@@ -575,33 +578,6 @@ create_navy_leader = {
 	attack_skill = 1
 }
 
-set_autonomy = {
-	target = LBA
-	autonomy_state = kr_default_puppet
-}
-
-"LBA" = {
-	set_politics = {
-		ruling_party = authoritarian_democrat
-		last_election = "1930.11.9"
-		election_frequency = 48
-		elections_allowed = no
-	}
-
-	set_popularities = {
-		totalist = 0
-		radical_socialist = 0
-		syndicalist = 2
-		social_democrat = 4
-		social_liberal = 6
-		market_liberal = 8
-		social_conservative = 12
-		authoritarian_democrat = 41
-		paternal_autocrat = 19
-		national_populist = 8
-	}
-}
-
 country_event = { id = afro.1 days = 29 }
 country_event = { id = afro.2 days = 1800 }
 country_event = { id = afro.5 days = 247 }
@@ -609,14 +585,6 @@ country_event = { id = afro.6 days = 3158 }
 country_event = { id = afro.8 days = 1044 }
 ### Eid-ul Fitr
 country_event = { id = afro.3 days = 348 }
-TRK = { country_event = { id = afro.3 days = 348 } }
-EGY = { country_event = { id = afro.3 days = 348 } }
-SAU = { country_event = { id = afro.3 days = 348 } }
-AFG = { country_event = { id = afro.3 days = 348 } }
-AZE = { country_event = { id = afro.3 days = 348 } }
-OMA = { country_event = { id = afro.3 days = 348 } }
-YEM = { country_event = { id = afro.3 days = 348 } }
-"LBA" = { country_event = { id = afro.3 days = 348 } }
 ###
 
 OTT_start_naval_variant = yes

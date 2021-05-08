@@ -9,10 +9,12 @@ set_technology = {
 	fuel_silos = 1
 	advanced_fire_control_system = 1
 	improved_ship_torpedo_launcher = 1
+	improved_airplane_launcher = 1
 
 	### Tanks ###
 	gwtank = 1
 	basic_light_tank = 1
+	improved_light_tank = 1
 	basic_heavy_tank = 1
 
 	### Infantry ###
@@ -33,8 +35,6 @@ set_technology = {
 	early_fighter = 1
 	early_bomber = 1
 	naval_bomber1 = 1
-	cv_early_fighter = 1
-	cv_CAS1 = 1
 	cv_naval_bomber1 = 1
 	fighter1 = 1
 	tactical_bomber1 = 1
@@ -111,7 +111,7 @@ if = {
 	}
 }
 
-set_research_slots = 4
+set_research_slots = 5
 
 create_faction = Entente
 add_to_faction = CAN
@@ -123,7 +123,6 @@ add_to_faction = USA
 add_opinion_modifier = { target = ENG modifier = embargo }
 add_opinion_modifier = { target = FRA modifier = embargo }
 add_opinion_modifier = { target = SRI modifier = embargo }
-add_opinion_modifier = { target = SOV modifier = embargo }
 add_opinion_modifier = { target = LEC modifier = LEC_member }
 
 LEC = { give_military_access = CAN }
@@ -168,33 +167,7 @@ set_popularities = {
 	national_populist = 10
 }
 
-
-set_autonomy = {
-	target = CAF
-	autonomy_state = kr_initial_wif_puppet
-}
-
 # reloading CAF politics
-CAF = {
-	set_politics = {
-		ruling_party = market_liberal
-		last_election = "1933.8.9"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-		totalist = 2
-		syndicalist = 12
-		radical_socialist = 8
-		social_democrat = 7
-		social_liberal = 10
-		market_liberal = 30
-		social_conservative = 21
-		authoritarian_democrat = 8
-		paternal_autocrat = 2
-		national_populist = 0
-	}
-}
 
 set_convoys = 1000
 add_equipment_to_stockpile = {
@@ -243,6 +216,8 @@ add_ideas = {
 	CAN_great_depression_2
 	pp_idea
 	CAN_slots
+	CAN_darkest_hour
+	peace_training
 	# Starting Cabinet
 }
 
@@ -319,14 +294,12 @@ create_field_marshal = {# Bernard Montgomery
 	picture = "Portrait_England_Bernard_Montgomery.tga"
 	traits = {
 		logistics_wizard
-		offensive_doctrine
-		media_personality
-		trait_cautious
 		infantry_leader
 		organizer
 		trickster
+		ranger
 	}
-	skill = 6
+	skill = 5
 	attack_skill = 6
 	defense_skill = 3
 	planning_skill = 3
@@ -376,7 +349,6 @@ create_corps_commander = {# Claude Auchinleck
 		career_officer
 		infantry_leader
 		naval_invader
-		hill_fighter
 		trait_engineer
 	}
 	skill = 5
@@ -404,12 +376,13 @@ create_corps_commander = {# Guy Simonds
 		trait_reckless
 		career_officer
 		infantry_leader
+		trait_mountaineer
 	}
 	skill = 4
 	attack_skill = 5
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
 	id = 915
 }
 create_corps_commander = {# Henry Maitland Wilson
@@ -486,9 +459,10 @@ create_corps_commander = {# Orde Wingate
 	traits = {
 		trickster
 		jungle_rat
+		infantry_leader
 	}
 	skill = 4
-	attack_skill = 3
+	attack_skill = 4
 	defense_skill = 2
 	planning_skill = 3
 	logistics_skill = 5
@@ -715,7 +689,7 @@ create_navy_leader = {# Andrew Cunningham
 	skill = 6
 	attack_skill = 7
 	defense_skill = 4
-	maneuvering_skill = 5
+	maneuvering_skill = 6
 	coordination_skill = 5
 	id = 904
 }

@@ -99,6 +99,14 @@ on_actions = {
 					set_country_flag = LEC_war_backer
 				}
 			}
+			if = {
+				limit = {
+					GER = { has_war_with = RUS }
+				}
+				GER = {
+					add_ideas = GER_two_front_idea
+				}
+			}
 		}
 	}
 }

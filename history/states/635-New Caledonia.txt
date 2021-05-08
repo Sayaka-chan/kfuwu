@@ -8,7 +8,7 @@ state = {
 	state_category = one_island
 
 	history = {
-		owner = GER
+		owner = GEA
 		add_core_of = VEN
 
 		victory_points = {

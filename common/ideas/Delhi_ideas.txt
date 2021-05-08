@@ -191,24 +191,6 @@ ideas = {
 			removal_cost = -1
 			picture = generic_air_bonus
 		}
-		DEH_war_fever = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea DEH_war_fever"}
-			allowed = { always = no }
-			available = {
-				OR = {
-					country_exists = PRF
-					country_exists = BHC
-				}
-			}
-			modifier = {
-				surrender_limit = 0.10
-				war_support_factor = 0.25
-				conscription_factor = 0.05
-				army_morale_factor = 0.10
-			}
-			removal_cost = -1
-			picture = raj_all_india_forward_bloc
-		}
 		DEH_SealionI = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea DEH_SealionI"}
 			allowed = {	always = no	}
@@ -240,12 +222,22 @@ ideas = {
 				attack_bonus_against = 0.15
 				defense_bonus_against = 0.15
 			}
-			targeted_modifier = {
-				tag = CNT
-				attack_bonus_against = 0.15
-				defense_bonus_against = 0.15
-			}
+			
 			removal_cost = -1
+		}
+		DEH_research = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea DEH_research"}
+			allowed = {	always = no	}
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		DEH_idea_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea DEH_idea_3"}
+			allowed = {	always = no	}
+			modifier = {
+				army_morale_factor = 0.1
+			}
 		}
 	}
 
@@ -293,6 +285,7 @@ ideas = {
 			research_bonus = {
 				infantry_weapons = 0.1
 			}
+			cost = 100
 		}
 
 		ashok_leyland = {
@@ -302,6 +295,7 @@ ideas = {
 			research_bonus = {
 				motorized_equipment = 0.1
 			}
+			cost = 100
 		}
 
 	}
@@ -318,6 +312,7 @@ ideas = {
 			research_bonus = {
 				armor = 0.1
 			}
+			cost = 100
 		}
 
 		vickers_armstrong_india = {
@@ -327,6 +322,7 @@ ideas = {
 			research_bonus = {
 				armor = 0.1
 			}
+			cost = 100
 		}
 	}
 
@@ -341,6 +337,7 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.1
 			}
+			cost = 100
 		}
 
 	}
@@ -355,6 +352,7 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.1
 			}
+			cost = 100
 		}
 
 	}

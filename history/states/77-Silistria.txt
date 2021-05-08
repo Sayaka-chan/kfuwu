@@ -1,9 +1,17 @@
 state = {
 	id = 77
 	name = "STATE_77" # Silistra
-	manpower = 1
+	manpower = 243000
 
 	state_category = two
+
+	history = {
+		owner = OTT
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = OTT
+	}
 
 	provinces = {
 		657 9614 11597

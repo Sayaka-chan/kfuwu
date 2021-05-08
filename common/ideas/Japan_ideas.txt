@@ -40,6 +40,14 @@ ideas = {
 				war_support_factor = -0.10
 			}
 		}
+		JAP_capital = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea JAP_capital"}
+			picture = imperial_glory_idea
+			modifier = {
+				navy_capital_ship_attack_factor = 0.1
+				navy_screen_attack_factor = 0.1
+			}
+		}
 
 		### Fengtian ###
 
@@ -339,7 +347,7 @@ ideas = {
 			picture = jap_interservice_rivalry_navy_strengthened
 
 			modifier = {
-				production_speed_dockyard_factor = 0.05
+				production_speed_dockyard_factor = 0.075
 				industrial_capacity_dockyard = 0.1
 			}
 
@@ -354,7 +362,7 @@ ideas = {
 			picture = jap_interservice_rivalry_navy_dominant
 
 			modifier = {
-			production_speed_dockyard_factor = 0.10
+			production_speed_dockyard_factor = 0.15
 			industrial_capacity_dockyard = 0.15
 			}
 
@@ -780,6 +788,7 @@ ideas = {
 			research_bonus = {
 				armor = 0.1
 			}
+			cost = 100
 		}
 
 		Ishikawajima_Heavy_Industries = {
@@ -793,6 +802,7 @@ ideas = {
 			research_bonus = {
 				armor = 0.1
 			}
+			cost = 100
 		}
 
 		nissan = {
@@ -815,6 +825,7 @@ ideas = {
 			research_bonus = {
 				armor = 0.1
 			}
+			cost = 100
 		}
 
 		tokyo_gas = {
@@ -828,6 +839,7 @@ ideas = {
 			research_bonus = {
 				armor = 0.1
 			}
+			cost = 100
 		}
 	}
 
@@ -844,11 +856,24 @@ ideas = {
 				original_tag = JAP
 			}
 			traits = {
-				capital_ship_producer_offense_2
+				
+			}
+			equipment_bonus = {
+				carrier = {
+					carrier_size = 0.2
+					naval_range = 0.2
+				}
+				ship_hull_heavy = {
+					hg_attack = 0.07
+					naval_range = 0.2
+					armor_value = 0.10
+				}
 			}
 			research_bonus = {
 				naval_equipment = 0.1
 			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
+			cost = 100
 		}
 
 		kure_naval_arsenal = {
@@ -857,11 +882,24 @@ ideas = {
 				original_tag = JAP
 			}
 			traits = {
-				capital_ship_producer_defense_2
+				
+			}
+			equipment_bonus = {
+				light_cruiser = {
+					naval_speed = 0.1
+				}
+				heavy_cruiser = {
+					naval_speed = 0.1
+				}
+				destroyer = {
+					naval_speed = 0.05
+				}
 			}
 			research_bonus = {
 				naval_equipment = 0.1
 			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
+			cost = 100
 		}
 
 		sasebo_naval_arsenal = {
@@ -870,27 +908,20 @@ ideas = {
 				original_tag = JAP
 			}
 			traits = {
-				cruiser_producer_mass_2
+				
 			}
-			research_bonus = {
-				naval_equipment = 0.1
-			}
-		}
-
-		maizuru_naval_arsenal = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea maizuru_naval_arsenal"}
-			allowed = {
-				OR = {
-					original_tag = JAP
-					tag = LEC
+			equipment_bonus = {
+				submarine = {
+					naval_speed = 0.1
+					sub_visibility = -0.05
 				}
 			}
-			traits = {
-				small_ship_producer_offense_1
-			}
+
 			research_bonus = {
 				naval_equipment = 0.1
 			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
+			cost = 100
 		}
 
 	}
@@ -907,47 +938,23 @@ ideas = {
 			allowed = {
 				OR = {
 					original_tag = JAP
-					tag = LEC
-				}
-			}
-			available = {
-				if = {
-					limit = { tag = JAP }
-					NOT = { has_completed_focus = JAP_NAT_ZAI}
 				}
 			}
 			traits = {
 				fighter_producer_offense_2
 			}
-			research_bonus = {
-				air_equipment = 0.1
-			}
-		}
-
-		kyushu_hikoki = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea kyushu_hikoki"}
-			allowed = {
-				original_tag = JAP
-			}
-			traits = {
-				fighter_producer_defense_1
+			equipment_bonus = {
+				heavy_fighter = {
+					build_cost_ic = -0.075
+				}
+				fighter = {
+					build_cost_ic = -0.075
+				}
 			}
 			research_bonus = {
 				air_equipment = 0.1
 			}
-		}
-
-		aichi = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea aichi"}
-			allowed = {
-				original_tag = JAP
-			}
-			traits = {
-				fighter_producer_mass_1
-			}
-			research_bonus = {
-				air_equipment = 0.1
-			}
+			cost = 100
 		}
 
 		tachikawa = {
@@ -961,24 +968,7 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.1
 			}
-		}
-
-		kr_nakajima = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea kr_nakajima"}
-			allowed = {
-				original_tag = JAP
-			}
-			available = {
-				NOT = {
-					has_completed_focus = JAP_NAT_ZAI
-				}
-			}
-			traits = {
-				bomber_producer_defense_1
-			}
-			research_bonus = {
-				air_equipment = 0.1
-			}
+			cost = 100
 		}
 
 		yokosuka = {
@@ -992,19 +982,7 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.1
 			}
-		}
-
-		kawanishi = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea kawanishi"}
-			allowed = {
-				original_tag = JAP
-			}
-			traits = {
-				nav_cas_producer_defense_1
-			}
-			research_bonus = {
-				air_equipment = 0.1
-			}
+			cost = 100
 		}
 
 	}
@@ -1027,6 +1005,7 @@ ideas = {
 			research_bonus = {
 				infantry_weapons = 0.1
 			}
+			cost = 100
 		}
 
 		nagoya_arsenal = {
@@ -1040,6 +1019,7 @@ ideas = {
 			research_bonus = {
 				infantry_weapons = 0.1
 			}
+			cost = 100
 		}
 
 		kr_osaka_army_arsenal = {
@@ -1053,6 +1033,7 @@ ideas = {
 			research_bonus = {
 				artillery = 0.1
 			}
+			cost = 100
 		}
 
 		isuzu = {
@@ -1069,6 +1050,7 @@ ideas = {
 			research_bonus = {
 				motorized_equipment = 0.1
 			}
+			cost = 100
 		}
 
 		toyota = {
@@ -1082,6 +1064,7 @@ ideas = {
 			research_bonus = {
 				motorized_equipment = 0.1
 			}
+			cost = 100
 		}
 
 	}
@@ -1097,14 +1080,9 @@ ideas = {
 			allowed = {
 				OR = {
 					original_tag = JAP
-					tag = LEC
 				}
 			}
 			available = {
-				if = {
-					limit = { tag = JAP }
-					NOT = { has_completed_focus = JAP_NAT_ZAI }
-				}
 			}
 			traits = {
 				industrial_manufacturer
@@ -1124,9 +1102,6 @@ ideas = {
 				original_tag = JAP
 			}
 			available = {
-				NOT = {
-					has_completed_focus = JAP_NAT_ZAI
-				}
 			}
 			traits = {
 				electronics_manufacturer
@@ -1155,9 +1130,6 @@ ideas = {
 				original_tag = JAP
 			}
 			available = {
-				NOT = {
-					has_completed_focus = JAP_NAT_ZAI
-				}
 			}
 			traits = {
 				chemical_producer

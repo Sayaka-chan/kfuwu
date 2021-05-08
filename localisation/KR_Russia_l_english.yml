@@ -664,6 +664,8 @@ RUS_Machine_And_Tractor_Stations_tooltip:0 "Modify §HVerkhovny Ekonomicheskiy S
 RUS_Railway_Nationalisation_tooltip:0 "Modify §HVerkhovny Ekonomicheskiy Sovet§! by\nRecruitable Population Factor: [?-0.05|%+0]\nConstruction Speed: [?0.1|%+=]\n"
 RUS_Industrial_Draft_Scheme_tooltip:0 "Modify §HVerkhovny Ekonomicheskiy Sovet§! by\nRecruitable Population Factor: [?-0.05|%+0]\nConsumer Goods Factories: [?-0.1|%H0]\n"
 
+RUS_Repudiate_Brest_Litovsk_tooltip:0 "§RThe time has come to destroy Germany once and for all and have our revenge!§!"
+
 ### Events ###
 russia.1.t:0 "A Troubled History"
 russia.1.d:0 "After the October Revolution Anti-Bolshevik forces started to consolidate across the former Russian Empire, leading to a massive rebellion against the Soviet Republic in Siberia, and the Don and Kuban steppes during the middle of 1918. The White movement made considerable gains, but could not defeat the well placed Red Army, which still dominated the Russian industrial heartland and transportation networks. The war changed when the German Empire, fearing the success of a dangerous ideology, intervened on behalf of the Whites in exchange for recognition of the treaty of Brest-Litovsk. By January 1920, both Moscow and Petrograd had fallen to the White forces and a new Russian Republic was established in the former Imperial capital. For the past fifteen years the leading political parties, the Social Revolutionaries and Kadets, have governed in an uneasy coalition under Kerensky, maintaining their power through electoral manipulation and a lack of serious political opposition. Today Russia is becoming increasingly unstable, and other political forces are growing. They consider that it is now time for change, so that the country may once again assert its power in the world..."
@@ -2171,3 +2173,16 @@ RUS_vozhdct_syndicalist_DEF:0 "the Russian Republic"
 RUS_vozhdct_totalist:0 "Russian Republic"
 RUS_vozhdct_totalist_ADJ:0 "Russian"
 RUS_vozhdct_totalist_DEF:0 "the Russian Republic"
+
+rus_free_trade:0 "National-Populist Economy"
+RUS_transformation_of_nature:0 "Transformation of Nature"
+RUS_synthetic_rubber:0 "Research Into Synthetics"
+RUS_synthetic:0 "Efficient Refineries"
+RUS_Siberian_Arms_Industry:0 "Siberian Armament Industry"
+RUS_Modern_Artillery:0 "Modern Artillery"
+RUS_cas:0 "New Close Air Support Models"
+RUS_Katyushas:0 "Motorised Rocket Artillery Divisions"
+RUS_Civilian_Industry:0 "5 Year Plans"
+RUS_Rearmament_Programme:0 "Rebuild the Russian Army"
+RUS_Russian_realism:0 "Workers of Russia"
+RUS_tradition:0 "Efficient Mining"

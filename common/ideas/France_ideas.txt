@@ -424,7 +424,7 @@ ideas = {
 			allowed = { always = no }
 			modifier = {
 				army_org_Factor = -0.05
-				army_infantry_attack_factor = 0.03
+				army_infantry_attack_factor = 0.05
 				army_morale_factor = 0.05
 			}
 		}
@@ -454,6 +454,31 @@ ideas = {
 				political_power_cost = -0.1
 			}
 			picture = generic_syndicalist_medal
+		}
+		FRA_summer_offensive = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_summer_offensive"}
+			allowed = { always = no }
+			picture = HOL_syndicalist_neutrality
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = AUS
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = UKR
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = OTT
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
 		}
 	}
 
@@ -510,6 +535,7 @@ ideas = {
 			research_bonus = {
 				infantry_weapons = 0.1
 			}
+			cost = 100
 		}
 		manufacture_bayonne = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea manufacture_bayonne"}
@@ -518,6 +544,7 @@ ideas = {
 			research_bonus = {
 				infantry_weapons = 0.1
 			}
+			cost = 100
 		}
 		brandt = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea brandt"}
@@ -526,6 +553,7 @@ ideas = {
 			research_bonus = {
 				artillery = 0.1
 			}
+			cost = 100
 		}
 		atelier_de_puteaux = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea atelier_de_puteaux"}
@@ -534,6 +562,7 @@ ideas = {
 			research_bonus = {
 				artillery = 0.1
 			}
+			cost = 100
 		}
 		berliet = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea berliet"}
@@ -542,6 +571,7 @@ ideas = {
 			research_bonus = {
 				motorized_equipment = 0.1
 			}
+			cost = 100
 		}
 
 	}
@@ -552,43 +582,161 @@ ideas = {
 
 		famh = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea famh"}
-			allowed = { tag = FRA }
-			traits = { heavy_tank_producer_offense_2 }
+			allowed = { tag = FRA
+						tag = SRI
+						tag = ENG }
+			traits = { }
+			equipment_bonus = {
+				heavy_tank_equipment = {
+					armor_value = 0.05
+					hard_attack = 0.1
+					soft_attack = 0.1
+					breakthrough = 0.1
+					reliability = 0.1
+					build_cost_ic = 0.1
+				}
+				heavy_tank_aa_equipment = {
+					armor_value = 0.05
+					breakthrough = 0.1
+					anti_air_attack = 0.1
+					reliability = 0.1
+					build_cost_ic = 0.1
+				}
+				heavy_tank_destroyer_equipment = {
+					armor_value = 0.05
+					hard_attack = 0.1
+					breakthrough = 0.1
+					reliability = 0.1
+					build_cost_ic = 0.1
+				}
+			}
 			research_bonus = {
 				armor = 0.1
 			}
+			cost = 100
 		}
 		de_dion_bouton = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea de_dion_bouton"}
 			allowed = { tag = FRA }
-			traits = { heavy_tank_producer_defense_2 }
+			traits = { }
+			equipment_bonus = {
+				heavy_tank_equipment = {
+					armor_value = 0.075
+					hard_attack = 0.15
+					soft_attack = 0.15
+					breakthrough = 0.15
+					reliability = -0.15
+					build_cost_ic = 0.2
+				}
+				heavy_tank_aa_equipment = {
+					armor_value = 0.075
+					breakthrough = 0.15
+					anti_air_attack = 0.15
+					reliability = -0.15
+					build_cost_ic = 0.2
+				}
+				heavy_tank_destroyer_equipment = {
+					armor_value = 0.075
+					hard_attack = 0.15
+					breakthrough = 0.15
+					reliability = -0.15
+					build_cost_ic = 0.2
+				}
+			}
 			research_bonus = {
 				armor = 0.1
 			}
+			cost = 100
 		}
 		lorraine_dietrich = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea lorraine_dietrich"}
-			allowed = { tag = FRA }
-			traits = { medium_tank_producer_offense_2}
+			allowed = { 
+				or = { 	original_tag = FRA 
+						original_tag = ENG
+						original_tag = SRI
+				} 
+			}
+			traits = { }
+			equipment_bonus = {
+				medium_tank_equipment = {
+					soft_attack = 0.1
+					hard_attack = 0.1
+					breakthrough = 0.1
+					build_cost_ic = 0.1
+				}
+				medium_tank_aa_equipment = {
+					anti_air_attack = 0.1
+					breakthrough = 0.1
+					build_cost_ic = 0.1
+				}
+				medium_tank_destroyer_equipment = {
+					hard_attack = 0.15
+					ap_attack = 0.10
+					breakthrough = 0.1
+					build_cost_ic = 0.1
+				}
+			}
 			research_bonus = {
 				armor = 0.1
 			}
+			cost = 100
 		}
 		somua = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea somua"}
-			allowed = { tag = FRA }
-			traits = { medium_tank_producer_defense_2 }
+			allowed = { 
+				or = { 	original_tag = FRA 
+						original_tag = ENG
+						original_tag = SRI
+				} 
+			}
+			traits = { }
+			equipment_bonus = {
+				medium_tank_equipment = {
+					soft_attack = 0.10
+					hard_attack = 0.10
+					maximum_speed = 0.1
+					build_cost_ic = 0.1
+				}
+				medium_tank_aa_equipment = {
+					anti_air_attack = 0.10
+					maximum_speed = 0.1
+					build_cost_ic = 0.1
+				}
+				medium_tank_destroyer_equipment = {
+					ap_attack = 0.10
+					maximum_speed = 0.1
+					build_cost_ic = 0.1
+				}
+			}
 			research_bonus = {
 				armor = 0.1
 			}
+			cost = 100
 		}
 		panhard = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea panhard"}
-			allowed = { tag = FRA }
-			traits = { small_tank_producer_mass_2 }
+			allowed = { 
+				or = { 	original_tag = FRA 
+						original_tag = ENG
+						original_tag = SRI
+				} 
+			}
+			traits = { }
+			equipment_bonus = {
+				medium_tank_equipment = {
+					hard_attack = 0.10 soft_attack = 0.10 armor_value = -0.1 hardness = -0.1 build_cost_ic = -0.075
+				}
+				medium_tank_aa_equipment = {
+					air_attack = 0.10 armor_value = -0.1 hardness = -0.1 build_cost_ic = -0.075
+				}
+				medium_tank_destroyer_equipment = {
+					hard_attack = 0.15 ap_attack = 0.1 armor_value = -0.1 hardness = -0.1 build_cost_ic = -0.075
+				}
+			}
 			research_bonus = {
 				armor = 0.1
 			}
+			cost = 100
 		}
 	}
 
@@ -603,6 +751,7 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.1
 			}
+			cost = 100
 		}
 		ateliers_de_saint_nazaire = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ateliers_de_saint_nazaire"}
@@ -611,6 +760,7 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.1
 			}
+			cost = 100
 		}
 		fcm = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea fcm"}
@@ -619,6 +769,7 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.1
 			}
+			cost = 100
 		}
 	}
 
@@ -633,6 +784,7 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.1
 			}
+			cost = 100
 		}
 		fouga = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea fouga"}
@@ -641,6 +793,7 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.1
 			}
+			cost = 100
 		}
 		potez = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea potez"}
@@ -649,6 +802,7 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.1
 			}
+			cost = 100
 		}
 		breguet = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea breguet"}
@@ -657,6 +811,7 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.1
 			}
+			cost = 100
 		}
 		kr_levasseur = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea kr_levasseur"}
@@ -665,6 +820,7 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.1
 			}
+			cost = 100
 		}
 	}
 }

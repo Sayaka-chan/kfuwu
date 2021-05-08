@@ -28,7 +28,6 @@ ideas = {
 			picture = generic_production_bonus
 			modifier = {
 				industrial_capacity_dockyard = -0.75
-				consumer_goods_factor = 0.10
 			}
 		}
 		AST_depression_1 = {
@@ -817,6 +816,7 @@ ideas = {
 			research_bonus = {
 				infantry_weapons = 0.1
 			}
+			cost = 100
 		}
 
 		royal_australian_artillery = {
@@ -826,6 +826,7 @@ ideas = {
 			research_bonus = {
 				artillery = 0.1
 			}
+			cost = 100
 		}
 
 		holden = {
@@ -835,6 +836,7 @@ ideas = {
 			research_bonus = {
 				motorized_equipment = 0.1
 			}
+			cost = 100
 		}
 
 	}
@@ -852,6 +854,7 @@ ideas = {
 			research_bonus = {
 				armor = 0.1
 			}
+			cost = 100
 		}
 
 		ford_australasia = {
@@ -861,6 +864,7 @@ ideas = {
 			research_bonus = {
 				armor = 0.1
 			}
+			cost = 100
 		}
 
 		new_south_wales = {
@@ -870,6 +874,7 @@ ideas = {
 			research_bonus = {
 				armor = 0.1
 			}
+			cost = 100
 		}
 	}
 	#### Air and Naval Manufacturers ####
@@ -883,6 +888,7 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.1
 			}
+			cost = 100
 		}
 
 		walkers_limited = {
@@ -892,6 +898,7 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.1
 			}
+			cost = 100
 		}
 
 	}
@@ -906,6 +913,7 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.1
 			}
+			cost = 100
 		}
 
 		de_havilland_australia = {
@@ -915,6 +923,7 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.1
 			}
+			cost = 100
 		}
 
 		government_aircraft_factories = {
@@ -924,6 +933,7 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.1
 			}
+			cost = 100
 		}
 
 	}

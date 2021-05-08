@@ -2,6 +2,10 @@ state = {
 	id = 33
 	name = "STATE_33"
 
+	resources = {
+		steel = 70
+	}
+
 	history = {
 		owner = FRA
 		add_claim_by = NFA

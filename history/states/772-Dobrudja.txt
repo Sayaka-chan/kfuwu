@@ -1,8 +1,15 @@
 state = {
 	id = 772
 	name = "STATE_772" # Dobrudzha
-	manpower = 1
+	manpower = 234970
 
+	history = {
+		owner = OTT
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = OTT
+	}
 
 	state_category = four
 

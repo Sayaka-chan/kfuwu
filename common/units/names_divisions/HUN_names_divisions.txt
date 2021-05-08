@@ -33,7 +33,7 @@
 HUN_INF_01 = {
 	name = "Landwehr Division"
 
-	for_countries = { HUN TRS }
+	for_countries = { HUN }
 
 	can_use = { always = yes }
 
@@ -58,7 +58,7 @@ HUN_INF_01 = {
 HUN_MIL_01 = {
 	name = "Militia"
 
-	for_countries = { HUN TRS }
+	for_countries = { HUN }
 
 	can_use = { always = yes }
 
@@ -83,7 +83,7 @@ HUN_MIL_01 = {
 HUN_CAV_01 = {
 	name = "Cavalry Division"
 
-	for_countries = { HUN TRS }
+	for_countries = { HUN }
 
 	can_use = { always = yes }
 
@@ -108,7 +108,7 @@ HUN_CAV_01 = {
 HUN_MOT_01 = {
 	name = "Motorized Division"
 
-	for_countries = { HUN TRS }
+	for_countries = { HUN }
 
 	can_use = { always = yes }
 
@@ -133,7 +133,7 @@ HUN_MOT_01 = {
 HUN_MEC_01 = {
 	name = "Mechanized Division"
 
-	for_countries = { HUN TRS }
+	for_countries = { HUN }
 
 	can_use = { always = yes }
 
@@ -158,7 +158,7 @@ HUN_MEC_01 = {
 HUN_ARM_01 = {
 	name = "Armored Division"
 
-	for_countries = { HUN TRS }
+	for_countries = { HUN }
 
 	can_use = { always = yes }
 
@@ -183,7 +183,7 @@ HUN_ARM_01 = {
 HUN_PAR_01 = {
 	name = "Paratrooper Division"
 
-	for_countries = { HUN TRS }
+	for_countries = { HUN }
 
 	can_use = { always = yes }
 
@@ -208,7 +208,7 @@ HUN_PAR_01 = {
 HUN_MAR_01 = {
 	name = "Marine Division"
 
-	for_countries = { HUN TRS }
+	for_countries = { HUN }
 
 	can_use = { always = yes }
 
@@ -233,7 +233,7 @@ HUN_MAR_01 = {
 HUN_MTN_01 = {
 	name = "Mountain Division"
 
-	for_countries = { HUN TRS }
+	for_countries = { HUN }
 
 	can_use = { always = yes }
 
@@ -258,7 +258,7 @@ HUN_MTN_01 = {
 HUN_GAR_01 = {
 	name = "Garrison Division"
 
-	for_countries = { HUN TRS }
+	for_countries = { HUN }
 
 	can_use = { always = yes }
 

@@ -28,22 +28,10 @@ focus_tree = {
 				has_completed_focus = AUS_sdap_7
 			}
 		}
-		icon = GFX_focus_chi_army_reform
+		icon = GFX_AUS_military_expansion
 		x = 30
 		y = 0
 		cost = 5
-		custom_trigger_tooltip = {
-				tooltip = AUS_economy_ready_tooltip
-				NOT = {
-					has_idea = AUS_black_monday
-					has_idea = AUS_black_monday_cs-1
-					has_idea = AUS_black_monday_cs-2
-					has_idea = AUS_black_monday_cs-3
-					has_idea = AUS_black_monday_sdap-1
-					has_idea = AUS_black_monday_sdap-2
-					has_idea = AUS_black_monday_sdap-3
-				}
-			}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AUS_military_expansion"
@@ -55,7 +43,7 @@ focus_tree = {
 	### Land tech
 	focus = {
 		id = AUS_military_tech
-		icon = GFX_focus_generic_license_production
+		icon = GFX_AUS_military_tech
 		x = 2
 		y = 1
 		cost = 5
@@ -81,7 +69,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_rifle_trials
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_AUS_rifle_trials
 		x = 0
 		y = 1
 		cost = 10
@@ -131,7 +119,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_military_mountaineers
-		icon = GFX_goal_generic_special_forces
+		icon = GFX_AUS_military_mountaineers
 		x = 0
 		y = 1
 		cost = 5
@@ -157,7 +145,7 @@ focus_tree = {
 	### Land Doctrine
 	focus = {
 		id = AUS_reform_AOK
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_AUS_reform_AOK
 		x = -2
 		y = 1
 		cost = 5
@@ -181,7 +169,7 @@ focus_tree = {
 		icon = GFX_goal_doctrine_tank_warfare
 		x = 0
 		y = 2
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -211,7 +199,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_fighters
-		icon = GFX_goal_generic_air_fighter2
+		icon = GFX_AUS_fighters
 		x = 0
 		y = 1
 		relative_position_id = AUS_military_expansion
@@ -264,7 +252,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_tanks
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 
 		relative_position_id = AUS_reform_AOK
 
@@ -277,7 +265,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = AUS_kavalleriepanzer
 				bonus = 1.2
-				uses = 2
+				uses = 3
 				category = cat_medium_armor
 			}
 		}
@@ -287,7 +275,7 @@ focus_tree = {
 	### Military finished
 	focus = {
 		id = AUS_mil_expanded
-		icon = GFX_focus_RAJ_lions_of_the_great_war
+		icon = GFX_AUS_mil_expanded
 		x = 0
 		y = 5
 		cost = 10
@@ -387,7 +375,7 @@ focus_tree = {
 		icon = GFX_focus_research
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 
 		available = {
 			custom_trigger_tooltip = {
@@ -449,7 +437,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus AUS_vienna_circle_2"
 			swap_ideas = {
 				remove_idea = AUS_vienna_circle
-				add_idea = AUS_vienna_circle-1
+				add_idea = AUS_vienna_circle_1
 			}
 			if = {
 				limit = {
@@ -621,13 +609,18 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus AUS_alpine_mines"
 			add_resource = {
 				type = steel
-				amount = 30
+				amount = 45
 				state = 775
 			}
 			add_resource = {
 				type = chromium
 				amount = 60
 				state = 835
+			}
+			add_resource = {
+				type = tungsten
+				amount = 40
+				state = 39
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -724,10 +717,6 @@ focus_tree = {
 
 		available = {
 			has_government = social_democrat
-		}
-
-		mutually_exclusive = {
-			focus = AUS_cs_national_austerity_council
 		}
 
 		ai_will_do = {
@@ -972,10 +961,6 @@ focus_tree = {
 			has_government = social_conservative
 		}
 
-		mutually_exclusive = {
-			focus = AUS_sdap_industrial_workers_council
-		}
-
 		ai_will_do = {
 			factor = 100
 		}
@@ -1214,6 +1199,7 @@ focus_tree = {
 	######################
 	focus = {
 		id = annex_BOH
+		icon = GFX_goal_annex_BOH
 		x = 0
 		y = 10
 		cost = 10
@@ -1502,7 +1488,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_decentralised_docks
-		icon = GFX_goal_generic_construct_naval_dockyard
+		icon = missing
 		x = 23
 		y = 0
 		cost = 5
@@ -1550,7 +1536,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus AUS_doctrine_fleet1"
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_Cruisers"
 			add_tech_bonus = {
 				name = AUS_doctrine_fleet1
 				bonus = 1
@@ -1581,7 +1567,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus GER_doctrine_base_strike"
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_Carriers"
 			add_tech_bonus = {
 				name = GER_doctrine_base_strike
 				bonus = 1
@@ -1611,7 +1597,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus GER_doctrine_fleet_in_beeing3"
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_BBs"
 			add_tech_bonus = {
 				name = GER_doctrine_fleet_in_beeing3
 				bonus = 1
@@ -1638,7 +1624,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus GER_tirpitzprogramm"
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_Horthy_Program"
 			add_timed_idea = {
 				idea = GER_tirpitz_idea
 				days = 520
@@ -1659,6 +1645,62 @@ focus_tree = {
 		cost = 7
 		ai_will_do = {
 			factor = 10
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_Spawn_ins"
+			create_equipment_variant = {
+				name = "Austria-class"
+				type = ship_hull_heavy_3
+				name_group = AUS_BB_Schlachtschiffe
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = ship_heavy_battery_3
+					fixed_ship_anti_air_slot = ship_anti_air_3
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = heavy_ship_engine_3
+					fixed_ship_secondaries_slot = dp_ship_secondaries
+					fixed_ship_armor_slot = ship_armor_bb_3
+					front_1_custom_slot = ship_heavy_battery_3
+					mid_1_custom_slot = ship_anti_air_3
+					mid_2_custom_slot = ship_anti_air_3
+					mid_3_custom_slot = ship_heavy_battery_3
+					rear_1_custom_slot = ship_heavy_battery_3
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_heavy_3
+					creator = "AUS"
+					version_name = "Austria-class"
+				}
+				name = "SMS Wien"
+				requested_factories = 1
+				progress = 0.9
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_heavy_3
+					creator = "AUS"
+					version_name = "Austria-class"
+				}
+				name = "SMS Karl I"
+				requested_factories = 1
+				progress = 0.9
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_heavy_3
+					creator = "AUS"
+					version_name = "Austria-class"
+				}
+				name = "SMS Mailand"
+				requested_factories = 1
+				progress = 0.9
+				amount = 1
+			}
 		}
     }
 

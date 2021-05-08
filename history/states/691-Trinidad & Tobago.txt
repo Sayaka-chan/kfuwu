@@ -11,6 +11,7 @@ state = {
 
 	history = {
 		owner = CAN
+		add_core_of = VEN
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 2

@@ -111,7 +111,6 @@ JAP_fading_sun = {
 		# end the economic sphere
 		every_country = {
 			limit = { is_in_array = { global.asian_economic_sphere = THIS } }
-			country_event = japfor.404
 		}
 	}
 }
@@ -140,12 +139,6 @@ JAP_increase_naval_bias = {
 				OR = {
 					check_variable = {
 						army_bias > 4
-					}
-					AND = {
-						has_completed_focus = JAP_MIL_DOC_MAS
-						check_variable = {
-							army_bias > 2
-						}
 					}
 				}
 			}
@@ -220,7 +213,6 @@ JAP_increase_naval_bias = {
 					}
 					JAP_remove_all_bias = yes
 					add_ideas = JAP_slight_naval_bias
-					country_event = japdom.236
 				}
 
 				else_if = {
@@ -271,12 +263,6 @@ JAP_increase_army_bias = {
 				OR = {
 					check_variable = {
 						army_bias > 4
-					}
-					AND = {
-						has_completed_focus = JAP_MIL_DOC_MAS
-						check_variable = {
-							army_bias > 2
-						}
 					}
 				}
 			}
@@ -339,7 +325,6 @@ JAP_increase_army_bias = {
 					}
 					JAP_remove_all_bias = yes
 					add_ideas = JAP_slight_army_bias
-					country_event = japdom.237
 				}
 
 				else_if = {

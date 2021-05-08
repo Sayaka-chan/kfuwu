@@ -231,7 +231,7 @@ ENG_CV_COMMUNISM = {
 	fallback_name = "Carrier %s"
 
 	unique = {
-		"Illustrious" "Formidable" "Victorious" "Indomitable" "Implacable" "Indefatigable" "Inevitable"
+		"Indomitable" "Implacable" "Indefatigable" "Inevitable"
 		"Audacious" "Malta" "New Zealand" "Gibraltar" "Africa"
 		"Glorious" "Courageous" "Furious" "Eagle"
 		"Europa" "Andromeda" "Centaur" "Albion" "Bulwark" "Elephant" "Leviathan" "Arrogant" "Monmouth" "Polyphemus"

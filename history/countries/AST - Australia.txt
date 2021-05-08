@@ -25,7 +25,6 @@ set_technology = {
 	early_bomber = 1
 	naval_bomber1 = 1
 	cv_early_fighter = 1
-	cv_CAS1 = 1
 	cv_naval_bomber1 = 1
 	fighter1 = 1
 	CAS1 = 1
@@ -111,6 +110,7 @@ add_ideas = {
 	pp_idea
 	AST_bled_dry
 	AST_anzac_spirit_1
+	peace_training
 }
 
 set_research_slots = 3
@@ -130,7 +130,7 @@ give_guarantee = LEC
 set_country_flag = cannot_have_conscription
 save_global_event_target_as = LEC_has_british_vote
 
-set_war_support = 0.3
+set_war_support = 0.7
 
 set_politics = {
 	ruling_party = authoritarian_democrat
@@ -155,9 +155,6 @@ set_popularities = {
 add_opinion_modifier = { target = ENG modifier = embargo }
 add_opinion_modifier = { target = FRA modifier = embargo }
 add_opinion_modifier = { target = SRI modifier = embargo }
-add_opinion_modifier = { target = SOV modifier = embargo }
-add_opinion_modifier = { target = BHC modifier = embargo }
-add_opinion_modifier = { target = SAF modifier = embargo }
 add_opinion_modifier = { target = LEC modifier = LEC_member }
 LEC = { give_military_access = AST }
 diplomatic_relation = { country = LEC relation = non_aggression_pact }
@@ -435,7 +432,7 @@ create_navy_leader = {
 	skill = 5
 	attack_skill = 5
 	defense_skill = 3
-	maneuvering_skill = 7
+	maneuvering_skill = 5
 	coordination_skill = 4
 }
 

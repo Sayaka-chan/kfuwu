@@ -6,7 +6,7 @@ state = {
 	impassable = yes
 
 	history = {
-		owner = GER
+		owner = GEA
 		add_core_of = VEN
 	}
 	provinces = {

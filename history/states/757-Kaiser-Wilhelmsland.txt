@@ -3,7 +3,7 @@ state = {
 	name = "STATE_757"
 
 	history = {
-		owner = GER
+		owner = GEA
 		add_core_of = VEN
 		buildings = {
 			infrastructure = 2

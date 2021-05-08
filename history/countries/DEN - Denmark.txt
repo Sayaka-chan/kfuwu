@@ -1,7 +1,7 @@
 ﻿capital = 37
 OOB = "DEN"
 set_naval_oob= "DEN_naval"
-set_research_slots = 3
+set_research_slots = 0
 set_technology = {
 
 	### Tanks ###
@@ -16,6 +16,11 @@ set_technology = {
 	### Air ###
 	early_fighter = 1
 
+}
+
+add_ideas = {
+	neutral_idea
+	no_training
 }
 
 ### Navy - MtG ###
@@ -88,7 +93,7 @@ set_popularities = {
 	national_populist = 0
 }
 
-set_convoys = 40
+set_convoys = 0
 
 create_country_leader = {
 	name = "Olga Eggers"

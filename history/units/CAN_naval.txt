@@ -1,17 +1,36 @@
 ﻿###OOB File for CAN.txt
 units = {
 	fleet = {
-		name = "Royal Canadian Fleet"
+		name = "Royal Canadian Navy"
 		naval_base = 7361 ###Change to proper province number
 		task_force = {
-			name = "Royal Canadian Fleet"
+			name = "Royal Canadian Navy"
 			location = 7361 ###Change to proper province number
 			ship = { name = "HMCS Howe" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = CAN version_name = "Nelson/Rodney Class" } } }
 			ship = { name = "HMCS Empress" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CAN version_name = "Neptune Class" } } }
-			ship = { name = "HMCS Canada" definition = carrier equipment = { ship_hull_carrier_1 = { amount = 1 owner = CAN version_name = "Ark Royal Class" } }
+			ship = { name = "HMCS Canada" definition = carrier equipment = { ship_hull_carrier_2 = { amount = 1 owner = CAN version_name = "Ark Royal Class" } }
 				air_wings = {
-					cv_fighter_equipment_0 =  { owner = "CAN" amount = 8 }
-					cv_nav_bomber_equipment_1 =  { owner = "CAN" amount = 12 }
+					cv_nav_bomber_equipment_1 =  { owner = "CAN" amount = 20 }
+				}
+			}
+			ship = { name = "HMCS Batavia" definition = carrier equipment = { ship_hull_carrier_2 = { amount = 1 owner = CAN version_name = "Ark Royal Class" } }
+			air_wings = {
+				cv_nav_bomber_equipment_1 =  { owner = "CAN" amount = 20 }
+				}
+			}
+			ship = { name = "HMCS Australia" definition = carrier equipment = { ship_hull_carrier_2 = { amount = 1 owner = CAN version_name = "Ark Royal Class" } }
+			air_wings = {
+				cv_nav_bomber_equipment_1 =  { owner = "CAN" amount = 20 }
+				}
+			}
+			ship = { name = "HMCS Java" definition = carrier equipment = { ship_hull_carrier_2 = { amount = 1 owner = CAN version_name = "Ark Royal Class" } }
+			air_wings = {
+				cv_nav_bomber_equipment_1 =  { owner = "CAN" amount = 20 }
+				}
+			}
+			ship = { name = "HMCS New Brunswick" definition = carrier equipment = { ship_hull_carrier_2 = { amount = 1 owner = CAN version_name = "Ark Royal Class" } }
+			air_wings = {
+				cv_nav_bomber_equipment_1 =  { owner = "CAN" amount = 20 }
 				}
 			}
 			ship = { name = "HMCS Acasta" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAN version_name = "Acasta Class" } } }
@@ -83,7 +102,7 @@ units = {
 			ship = { name = "HMCS Carysfort" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CAN version_name = "Town/C-Class" } } }
 			ship = { name = "HMCS Conquest" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CAN version_name = "Town/C-Class" } } }
 			ship = { name = "HMCS Dartmouth" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CAN version_name = "Town/C-Class" } } }
-			ship = { name = "HMCS Magnificent" definition = SH_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = CAN version_name = "Magnificent Class" } } }
+			ship = { name = "HMCS Monarch" definition = SH_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = CAN version_name = "Magnificent Class" } } }
 			ship = { name = "HMCS Majestic" definition = SH_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = CAN version_name = "Magnificent Class" } } }
 			ship = { name = "HMCS Victorious" definition = SH_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = CAN version_name = "Magnificent Class" } } }
 			ship = { name = "HMCS Hawke" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = CAN version_name = "Nelson/Rodney Class" } } }
@@ -136,10 +155,9 @@ units = {
 			ship = { name = "HMCS Cambrian" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CAN version_name = "Town/C-Class" } } }
 			ship = { name = "HMCS Canterbury" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CAN version_name = "Town/C-Class" } } }
 			ship = { name = "HMCS Argus" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CAN version_name = "Town/C-Class" } } }
-			ship = { name = "HMCS Centaur" definition = carrier equipment = { ship_hull_carrier_1 = { amount = 1 owner = CAN version_name = "Ark Royal Class" } }
+			ship = { name = "HMCS Centaur" definition = carrier equipment = { ship_hull_carrier_2 = { amount = 1 owner = CAN version_name = "Ark Royal Class" } }
 				air_wings = {
-					cv_fighter_equipment_0 =  { owner = "CAN" amount = 8 }
-					cv_nav_bomber_equipment_1 =  { owner = "CAN" amount = 12 }
+					cv_nav_bomber_equipment_1 =  { owner = "CAN" amount = 20 }
 				}
 			}
 			ship = { name = "HMCS Scimitar" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAN version_name = "River/S Class" } } }

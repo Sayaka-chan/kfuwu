@@ -122,6 +122,7 @@ add_ideas = {
 	ENG_militia_idea
 	pp_idea
 	partial_economic_mobilisation
+	peace_training
 	# Starting Cabinet
 }
 
@@ -136,8 +137,6 @@ add_opinion_modifier = { target = AUS modifier = embargo }
 add_opinion_modifier = { target = CZE modifier = embargo }
 add_opinion_modifier = { target = HUN modifier = embargo }
 add_opinion_modifier = { target = CRO modifier = embargo }
-add_opinion_modifier = { target = ITA modifier = embargo }
-add_opinion_modifier = { target = LIT modifier = embargo }
 add_opinion_modifier = { target = UKR modifier = embargo }
 add_opinion_modifier = { target = SRI modifier = KR_close_allies }
 add_opinion_modifier = { target = FRA modifier = KR_close_allies }

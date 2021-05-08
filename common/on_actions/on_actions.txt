@@ -242,6 +242,30 @@ on_actions = {
 				limit = { is_ai = yes }
 				country_event = kr.political.10
 			}
+			OTT = {
+				give_resource_rights = { receiver = GER state = 447 }
+				give_resource_rights = { receiver = GER state = 446 }
+				give_resource_rights = { receiver = GER state = 349 }
+			}
+			PER = {
+				give_resource_rights = { receiver = GER state = 413 }
+			}
+			SRI = {
+				give_resource_rights = { receiver = FRA state = 448 }
+			}
+			UKR = {
+				give_resource_rights = { receiver = GER state = 46 }
+			}
+			GEA={every_owned_state={
+				if = { 
+					limit = { NOT={ is_core_of=GEA } 
+					}
+					add_compliance = 100 
+				}
+				GEA={	GER={remove_resource_rights = PREV.PREV} 
+					give_resource_rights = { receiver = GER state = PREV }
+			}	}
+			}
 		}
 	}
 
@@ -296,64 +320,6 @@ on_actions = {
 	}
 
 	#ROOT is winner #FROM is loser
-	on_peaceconference_ended = {
-		effect = {
-			log = "[GetDateText] [Root.GetName] (ROOT) on_peaceconference_ended [From.GetName] (FROM)"
-			if = {
-				limit = {
-					OR = {
-						AND = {
-							tag = INS
-							FROM = { tag = DEI }
-						}
-						AND = {
-							tag = DEI
-							FROM = { tag = INS }
-						}
-					}
-				}
-				country_event = dei.31
-			}
-			if = {
-				limit = {
-					ROOT = { has_country_flag = ITA_libya_war_@FROM }
-				}
-				ROOT = {
-					clr_country_flag = ITA_libya_war_@FROM
-					clr_country_flag = ITA_war_for_libya
-				}
-			}
-			if = {
-				limit = {
-					has_global_flag = romanian_civil_war
-					ROOT = {
-						OR = {
-							tag = ROM
-							tag = RRM
-						}
-					}
-					FROM = {
-						OR = {
-							tag = ROM
-							tag = RRM
-						}
-					}
-				}
-			}
-			ROOT = {
-				if = {
-					limit = { NOT = { has_country_flag = AI_move_unit_check } }
-					country_event = kr.political.200
-				}
-			}
-			FROM = {
-				if = {
-					limit = { NOT = { has_country_flag = AI_move_unit_check } }
-					country_event = kr.political.200
-				}
-			}
-		}
-	}
 
 	# ROOT is capitulated country, FROM is winner
 	on_capitulation = {
@@ -368,9 +334,6 @@ on_actions = {
 					}
 					is_in_asia = yes
 				}
-				GER = {
-					country_event = { id = asiapeace.1 days = 20 }
-				}
 			}
 			if = {
 				limit = {
@@ -379,9 +342,6 @@ on_actions = {
 						is_subject_of = HOL
 					}
 					is_in_asia = yes
-				}
-				HOL = {
-					country_event = { id = asiapeace.4 days = 20 }
 				}
 			}
 			if = {
@@ -414,9 +374,6 @@ on_actions = {
 							is_subject = no
 						}
 					}
-				}
-				RUS = {
-					country_event = { id = bulgaria.99 months = 2 }
 				}
 			}
 			# double-checking exile system
@@ -670,14 +627,6 @@ on_actions = {
 		effect = {
 			log = "[GetDateText] [Root.GetName] on_offer_join_faction FROM = [From.GetName]"
 			# removing from Japan's economic sphere
-			if = {
-				limit = {
-					NOT = { tag = JAP }
-					JAP = { has_completed_focus = JAP_osaka_conference }
-					is_in_array = { global.asian_economic_sphere = FROM }
-				}
-				JAP = { country_event = japfor.411 }
-			}
 		}
 	}
 
@@ -706,7 +655,6 @@ on_actions = {
 					is_in_array = { global.asian_economic_sphere = ROOT }
 					has_socialist_government = yes
 				}
-				country_event = japfor.404
 			}
 
 			else_if = {
@@ -841,7 +789,6 @@ on_actions = {
 						set_nationality = event_target:exile_host
 						#add_unit_leader_trait = exiled_leader (doesn't work yet so I commented it out. PDX pls fix)
 						set_variable = { exile_tag = event_target:exile_nation.id }
-						unit_leader_event = { id = mtg_exile_government.1 }
 					}
 				}
 			}
@@ -939,5 +886,35 @@ on_actions = {
 				refresh_click_effect = yes
 			}
 			update_pacific_war=yes
-			}}
+		}
+	}
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					GEA = {
+						has_capitulated = yes
+						}
+					}
+					GER = {
+						annex_country = {
+						target = GEA
+					}
+				}
+			}
+			if = {
+				limit = {
+					UKR = {
+						has_capitulated = yes
+					}
+					GER = {
+						annex_country = {
+						target = UKR
+						transfer_troops = yes
+						}
+					}
+				}
+			}
+		}
+	}
 }

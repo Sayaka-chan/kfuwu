@@ -85,8 +85,6 @@ international_delhi = {
 			is_in_faction_with = ENG
 		}
 		country_exists = DEH
-		country_exists = BHC
-		BHC = { has_socialist_government = yes }
 		DEH = { has_socialist_government = no }
 	}
 
@@ -361,34 +359,6 @@ international_likes_sri = {
 	ai_strategy = {
 		type = alliance
 		id = "SRI"
-		value = 100
-	}
-}
-
-international_likes_sov = {
-	enable = {
-		SOV = {
-			exists = yes
-			has_socialist_government = yes
-			NOT = { has_war_with = ROOT }
-		}
-		NOT = {
-			tag = UKR
-		}
-		is_in_europe = yes
-		has_socialist_government = yes
-	}
-
-	abort_when_not_enabled = yes
-
-	ai_strategy = {
-		type = befriend
-		id = "SOV"
-		value = 100
-	}
-	ai_strategy = {
-		type = alliance
-		id = "SOV"
 		value = 100
 	}
 }

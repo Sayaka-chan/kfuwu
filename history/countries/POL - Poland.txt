@@ -42,14 +42,6 @@ set_popularities = {
 	national_populist = 17
 }
 
-add_ideas = {
-	limited_conscription
-	POL_Zdzislaw_Lubomirski_hog_ade
-	POL_Jan_hr_Szembek_for_ade
-	POL_Andrzej_Wierzbicki_eco_ade
-	POL_Stanislaw_Bukowiecki_sec_ade
-}
-
 ### Events
 
 ### PLC-only events

@@ -13,16 +13,6 @@ state = {
 			infrastructure = 5
 			6336 = {
 				naval_base = 3
-				bunker = 1
-			}
-			11318 = {
-				bunker = 3
-			}
-			9309 = {
-				bunker = 3
-			}
-			9335 = {
-				bunker = 1
 			}
 		}
 	}

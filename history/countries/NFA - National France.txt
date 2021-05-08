@@ -135,8 +135,6 @@ set_war_support = 0.20
 set_major = yes
 
 add_opinion_modifier = { target = FRA modifier = embargo }
-add_opinion_modifier = { target = PRF modifier = embargo }
-add_opinion_modifier = { target = SAF modifier = embargo }
 
 set_politics = {
 	ruling_party = authoritarian_democrat
@@ -167,6 +165,7 @@ add_ideas = {
 	pp_idea
 	NFA_french_in_exile
 	NFA_political_unrest
+	peace_training
 }
 
 create_country_leader = {
@@ -234,13 +233,11 @@ create_field_marshal = {
 	picture = "Portrait_NFA_Petain_Army.tga"
 	traits = {
 		old_guard
-		inflexible_strategist
-		war_hero
-		media_personality
-		unyielding_defender
+		organizer
+		panzer_leader
 	}
-	skill = 3
-	attack_skill = 2
+	skill = 4
+	attack_skill = 5
 	defense_skill = 4
 	planning_skill = 2
 	logistics_skill = 2
@@ -251,15 +248,13 @@ create_corps_commander = {
 	name = "Charles de Gaulle"
 	picture = "Portrait_NFA_Charles_de_Gaulle.tga"
 	traits = {
-		career_officer
 		infantry_leader
 		trickster
-		naval_invader
-		organizer
-		hill_fighter
+		trait_mountaineer
+		trait_engineer
 	}
-	skill = 6
-	attack_skill = 7
+	skill = 5
+	attack_skill = 6
 	defense_skill = 4
 	planning_skill = 4
 	logistics_skill = 4
@@ -273,9 +268,10 @@ create_field_marshal = {
 		old_guard
 		organizer
 		infantry_leader
+		hill_fighter
 	}
-	skill = 5
-	attack_skill = 6
+	skill = 4
+	attack_skill = 5
 	defense_skill = 4
 	planning_skill = 4
 	logistics_skill = 5
@@ -319,10 +315,10 @@ create_corps_commander = {
 	traits = {
 		infantry_officer
 		infantry_leader
-		organizer
+		ranger
 	}
 	skill = 4
-	attack_skill = 3
+	attack_skill = 4
 	defense_skill = 3
 	planning_skill = 3
 	logistics_skill = 4

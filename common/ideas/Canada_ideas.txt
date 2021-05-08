@@ -385,8 +385,8 @@ ideas = {
 			available = { is_subject = no }
 			picture = man_five_year_plan_industry
 			modifier = {
-				industrial_capacity_factory = 0.20
-				industrial_capacity_dockyard = 0.20
+				industrial_capacity_factory = 0.10
+				industrial_capacity_dockyard = 0.10
 			}
 			removal_cost = -1
 		}
@@ -549,11 +549,6 @@ ideas = {
 			picture = CAN_transcanada_airlines
 			research_bonus = {
 				air_equipment = 0.10
-			}
-			equipment_bonus = {
-				fighter_equipment = {
-					build_cost_ic = -0.05 instant = yes
-				}
 			}
 			removal_cost = -1
 		}
@@ -912,7 +907,7 @@ ideas = {
 			allowed = { always = no }
 			picture = generic_army_war_college
 			modifier = {
-				special_forces_cap = 0.08
+				special_forces_cap = 0.1
 			}
 			removal_cost = -1
 		}
@@ -925,6 +920,7 @@ ideas = {
 				special_forces_attack_factor = 0.10
 				special_forces_defence_factor = 0.10
 				supply_consumption_factor = -0.05
+				special_forces_cap = 0.1
 			}
 			removal_cost = -1
 		}
@@ -1006,9 +1002,8 @@ ideas = {
 			available = { has_war = yes }
 			picture = stiff_upper_lip
 			modifier = {
-				conscription = 0.02
-				army_core_defence_factor = 0.20
-				war_support_factor = 0.20
+				army_core_defence_factor = 0.15
+				army_core_attack_factor = 0.15
 				surrender_limit = 0.15
 			}
 			removal_cost = -1
@@ -1019,9 +1014,8 @@ ideas = {
 			available = { has_war = yes }
 			picture = CAN_darkest_hour
 			modifier = {
-				conscription = 0.02
-				army_core_defence_factor = 0.20
-				war_support_factor = 0.20
+				army_core_defence_factor = 0.15
+				army_core_attack_factor = 0.15
 				surrender_limit = 0.15
 			}
 			removal_cost = -1
@@ -1244,6 +1238,7 @@ ideas = {
 			research_bonus = {
 				infantry_weapons = 0.1
 			}
+			cost = 100
 		}
 		dominion_cartridge = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea dominion_cartridge"}
@@ -1252,6 +1247,7 @@ ideas = {
 			research_bonus = {
 				infantry_weapons = 0.1
 			}
+			cost = 100
 		}
 		canadian_industries_limited = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea canadian_industries_limited"}
@@ -1260,6 +1256,7 @@ ideas = {
 			research_bonus = {
 				artillery = 0.1
 			}
+			cost = 100
 		}
 		royal_canadian_ordnance_corps = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea royal_canadian_ordnance_corps"}
@@ -1268,6 +1265,7 @@ ideas = {
 			research_bonus = {
 				artillery = 0.1
 			}
+			cost = 100
 		}
 		general_motors_canada = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea general_motors_canada"}
@@ -1278,153 +1276,117 @@ ideas = {
 			research_bonus = {
 				motorized_equipment = 0.1
 			}
+			cost = 100
 		}
 	}
 	tank_manufacturer = {# Heavy Equipment Manufacturer
 		designer = yes
-		massey_harris = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea massey_harris"}
-			allowed = {
-				original_tag = CAN
-			}
-			available = { has_completed_focus = CAN_foreign_contractors }
-			visible = { has_completed_focus = CAN_foreign_contractors }
-			traits = { heavy_tank_producer_defense_1 }
-			research_bonus = {
-				armor = 0.1
-			}
-		}
 		leyland = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea leyland"}
-			allowed = { original_tag = CAN }
-			available = { NOT = { country_exists = GBR } }
-			visible = { NOT = { country_exists = GBR } }
-			traits = { medium_tank_producer_offense_2 }
-			research_bonus = {
-				armor = 0.1
-			}
-		}
-		canadian_pacific = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea canadian_pacific"}
-			allowed = {
-				original_tag = CAN
-			}
-			available = { has_completed_focus = CAN_cp_rail_expansion }
-			visible = { has_completed_focus = CAN_cp_rail_expansion }
-			traits = { medium_tank_producer_defense_1 }
-			research_bonus = {
-				armor = 0.1
-			}
-		}
-		canadian_car = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea canadian_car"}
-			allowed = {
-				original_tag = CAN
-			}
-			available = { has_completed_focus = CAN_new_munitions_plants }
-			visible = { has_completed_focus = CAN_new_munitions_plants }
-			traits = { small_tank_producer_mass_2 }
-			research_bonus = {
-				armor = 0.1
-			}
-		}
-		montreal_locomotive_works = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea montreal_locomotive_works"}
-			allowed = {
-				OR = {
-					tag = CAN
+			allowed = { 
+				or = { 	original_tag = CAN
+						original_tag = AST 
+						original_tag = NFA
+						original_tag = DEH 
 				}
 			}
-			available = { owns_state = 832 }
-			visible = { owns_state = 832 }
-			traits = { small_tank_producer_offense_1 }
+			available = { NOT = { country_exists = GBR } }
+			visible = { NOT = { country_exists = GBR } }
+			traits = { }
+			equipment_bonus = {
+				medium_tank_equipment = {
+					soft_attack = 0.1
+					hard_attack = 0.1
+					breakthrough = 0.1
+				}
+				medium_tank_aa_equipment = {
+					anti_air_attack = 0.1
+					breakthrough = 0.1
+				}
+				medium_tank_destroyer_equipment = {
+					hard_attack = 0.1
+					ap_attack = 0.10
+					breakthrough = 0.1
+				}
+			}
 			research_bonus = {
 				armor = 0.1
 			}
-		}
-		canadian_vickers = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea canadian_vickers"}
-			allowed = { original_tag = CAN }
-			traits = { heavy_tank_producer_offense_1 }
-			research_bonus = {
-				armor = 0.1
-			}
+			cost = 100
 		}
 	}
 	naval_manufacturer = {
 		designer = yes
 		halifax_shipyard = {
+			cost = 100
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea halifax_shipyard"}
 			allowed = { original_tag = CAN }
-			available = {
-				has_completed_focus = CAN_cfb_halifax
-				owns_state = 464
+			traits = {  }
+			equipment_bonus = {
+				light_cruiser = {
+					naval_speed = 0.1
+				}
+				heavy_cruiser = {
+					naval_speed = 0.1
+				}
+				destroyer = {
+					naval_speed = 0.05
+				}
 			}
-			visible = { owns_state = 464 }
-			traits = { capital_ship_producer_defense_1 }
 			research_bonus = {
 				naval_equipment = 0.1
 			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
+			cost = 100
 		}
 		davie_shipbuilding = {
+			cost = 100
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea davie_shipbuilding"}
 			allowed = {
 				OR = {
 					original_tag = CAN
 				}
 			}
-			available = {
-				if = {
-					limit = { tag = CAN }
-					has_completed_focus = CAN_davie_shipbuilding
+			traits = {  }
+			equipment_bonus = {
+				carrier = {
+					carrier_size = 0.2
+					naval_range = 0.2
 				}
-				owns_state = 468
+				ship_hull_heavy = {
+					hg_attack = 0.07
+					naval_range = 0.2
+					armor_value = 0.10
+				}
 			}
-			visible = { owns_state = 468 }
-			traits = { capital_ship_producer_offense_2 }
 			research_bonus = {
 				naval_equipment = 0.1
 			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
+			cost = 100
 		}
 		yarrow_shipbuilders = {
+			cost = 100
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea yarrow_shipbuilders"}
 			allowed = {
 				original_tag = CAN
 			}
-			available = {
-				has_completed_focus = CAN_upgrade_fleet
-				NOT = { country_exists = GBR }
+			traits = { }
+			equipment_bonus = {
+				submarine = {
+					naval_speed = 0.1
+					sub_visibility = -0.05
+				}
 			}
-			visible = {
-				has_completed_focus = CAN_upgrade_fleet
-				NOT = { country_exists = GBR }
-			}
-			traits = { cruiser_producer_defense_2 }
 			research_bonus = {
 				naval_equipment = 0.1
 			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
+			cost = 100
 		}
 	}
 	aircraft_manufacturer = {
 		designer = yes
-		gloster = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea gloster"}
-			allowed = { original_tag = CAN }
-			available = { NOT = { country_exists = GBR } }
-			visible = { NOT = { country_exists = GBR } }
-			traits = { fighter_producer_offense_1 }
-			research_bonus = {
-				air_equipment = 0.1
-			}
-		}
-		canadair = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea canadair"}
-			allowed = { original_tag = CAN }
-			traits = { fighter_producer_mass_1 }
-			research_bonus = {
-				air_equipment = 0.1
-			}
-		}
 		de_havilland_canada = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea de_havilland_canada"}
 			allowed = {
@@ -1434,6 +1396,7 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.1
 			}
+			cost = 100
 		}
 		avro_canada = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea avro_canada"}
@@ -1442,10 +1405,11 @@ ideas = {
 			}
 			available = { has_completed_focus = CAN_bomber_programme }
 			visible = { has_completed_focus = CAN_bomber_programme }
-			traits = { bomber_producer_offense_1 }
+			traits = { bomber_producer_offense_2 }
 			research_bonus = {
 				air_equipment = 0.1
 			}
+			cost = 100
 		}
 		bristol = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea bristol"}
@@ -1456,62 +1420,7 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.1
 			}
+			cost = 100
 		}
-		fairey_aviation_canada = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea fairey_aviation_canada"}
-			allowed = {
-				original_tag = CAN
-			}
-			available = { has_completed_focus = CAN_naval_bomber_programme }
-			visible = { has_completed_focus = CAN_naval_bomber_programme }
-			traits = { nav_cas_producer_offense_1 }
-			research_bonus = {
-				air_equipment = 0.1
-			}
-		}
-		orenda_engines = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea orenda_engines"}
-			allowed = {
-				original_tag = CAN
-			}
-			available = { has_completed_focus = CAN_jet_propulsion }
-			visible = { has_completed_focus = CAN_jet_propulsion }
-			traits = { bomber_producer_mass_2 }
-			research_bonus = {
-				air_equipment = 0.1
-			}
-		}
-		raac_canada = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea raac_canada"}
-			allowed = {
-				OR = {
-					tag = CAN
-					tag = CAF
-				}
-			}
-			available = {
-				CAN = {
-					has_completed_focus = CAN_royal_atlantic_aero_corp
-				}
-				CAF = {
-					exists = yes
-					is_in_faction_with = CAN
-				}
-			}
-			visible = {
-				CAN = {
-					has_completed_focus = CAN_royal_atlantic_aero_corp
-				}
-				CAF = {
-					exists = yes
-					is_in_faction_with = CAN
-				}
-			}
-			traits = { fighter_producer_mass_2 }
-			research_bonus = {
-				air_equipment = 0.1
-			}
-		}
-
 	}
 }

@@ -22,6 +22,9 @@ state = {
 			4073 2
 		}
 	}
+	resources = {
+		oil = 52
+	}
 
 	provinces = {
 		4073 9947

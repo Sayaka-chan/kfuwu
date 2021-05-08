@@ -275,10 +275,6 @@ political_actions = {
 				exists = yes
 				OR = {
 					tag = JAP
-					tag = SAF
-					tag = PRF
-					tag = BHC
-					tag = SIA
 					tag = FRA
 					tag = ENG
 					owns_state = 797 #San Francisco
@@ -315,10 +311,6 @@ political_actions = {
 			FROM = {
 				OR = {
 					tag = JAP
-					tag = SAF
-					tag = PRF
-					tag = BHC
-					tag = SIA
 					owns_state = 797 #San Francisco
 					owns_state = 408 #Vladivostok
 					owns_state = 608 #Beijing
@@ -2063,7 +2055,6 @@ AST_exploit_resources = {
 		allowed = {
 			OR = {
 				tag = AST
-				tag = NZL
 			}
 		}
 
@@ -2280,7 +2271,6 @@ AST_exploit_resources = {
 		allowed = {
 			OR = {
 				tag = AST
-				tag = NZL
 			}
 		}
 

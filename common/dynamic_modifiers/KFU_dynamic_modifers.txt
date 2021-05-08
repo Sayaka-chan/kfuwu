@@ -1,0 +1,7 @@
+western_front_attack = {
+	max_dig_in = -10
+}
+FRA_defense = {
+	max_dig_in = 3
+	dig_in_speed_factor = 0.1
+}

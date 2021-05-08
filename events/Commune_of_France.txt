@@ -733,20 +733,8 @@ country_event = {
 			modifier = FRA_internationalism
 		}
 		add_opinion_modifier = {
-			target = BHC
-			modifier = FRA_internationalism
-		}
-		add_opinion_modifier = {
 			target = ENG
 			modifier = FRA_internationalism
-		}
-		add_opinion_modifier = {
-			target = SOV
-			modifier = FRA_internationalism2
-		}
-		add_opinion_modifier = {
-			target = CNT
-			modifier = FRA_internationalism2
 		}
 		add_popularity = {
 			ideology = syndicalist
@@ -798,19 +786,7 @@ country_event = {
 			modifier = FRA_world_revolution_op
 		}
 		add_opinion_modifier = {
-			target = BHC
-			modifier = FRA_world_revolution_op
-		}
-		add_opinion_modifier = {
 			target = ENG
-			modifier = FRA_world_revolution_op
-		}
-		add_opinion_modifier = {
-			target = SOV
-			modifier = FRA_world_revolution_op
-		}
-		add_opinion_modifier = {
-			target = CNT
 			modifier = FRA_world_revolution_op
 		}
 		add_opinion_modifier = {
@@ -834,10 +810,6 @@ country_event = {
 			modifier = FRA_world_revolution2_op
 		}
 		add_opinion_modifier = {
-			target = BEL
-			modifier = FRA_world_revolution2_op
-		}
-		add_opinion_modifier = {
 			target = POL
 			modifier = FRA_world_revolution2_op
 		}
@@ -850,15 +822,7 @@ country_event = {
 			modifier = FRA_world_revolution2_op
 		}
 		add_opinion_modifier = {
-			target = BUL
-			modifier = FRA_world_revolution2_op
-		}
-		add_opinion_modifier = {
 			target = OTT
-			modifier = FRA_world_revolution2_op
-		}
-		add_opinion_modifier = {
-			target = ITA
 			modifier = FRA_world_revolution2_op
 		}
 		add_opinion_modifier = {
@@ -926,10 +890,6 @@ country_event = {
 			modifier = FRA_revenge_germany
 		}
 		add_opinion_modifier = {
-			target = BEL
-			modifier = FRA_revenge_germany
-		}
-		add_opinion_modifier = {
 			target = POL
 			modifier = FRA_revenge_germany
 		}
@@ -942,23 +902,11 @@ country_event = {
 			modifier = FRA_revenge_germany
 		}
 		add_opinion_modifier = {
-			target = BUL
-			modifier = FRA_revenge_germany
-		}
-		add_opinion_modifier = {
 			target = OTT
 			modifier = FRA_revenge_germany
 		}
 		add_opinion_modifier = {
-			target = BAT
-			modifier = FRA_revenge_germany
-		}
-		add_opinion_modifier = {
 			target = UKR
-			modifier = FRA_revenge_germany
-		}
-		add_opinion_modifier = {
-			target = LIT
 			modifier = FRA_revenge_germany
 		}
 		add_opinion_modifier = {
@@ -971,10 +919,6 @@ country_event = {
 		}
 		add_opinion_modifier = {
 			target = CRO
-			modifier = FRA_revenge_germany
-		}
-		add_opinion_modifier = {
-			target = BOS
 			modifier = FRA_revenge_germany
 		}
 		add_opinion_modifier = {
@@ -1026,14 +970,6 @@ country_event = {
 			modifier = FRA_european_socialism2
 		}
 		add_opinion_modifier = {
-			target = CNT
-			modifier = FRA_european_socialism2
-		}
-		add_opinion_modifier = {
-			target = SOV
-			modifier = FRA_european_socialism2
-		}
-		add_opinion_modifier = {
 			target = ENG
 			modifier = FRA_european_socialism2
 		}
@@ -1046,10 +982,6 @@ country_event = {
 			modifier = FRA_european_socialism
 		}
 		add_opinion_modifier = {
-			target = BEL
-			modifier = FRA_european_socialism
-		}
-		add_opinion_modifier = {
 			target = POL
 			modifier = FRA_european_socialism
 		}
@@ -1059,14 +991,6 @@ country_event = {
 		}
 		add_opinion_modifier = {
 			target = HUN
-			modifier = FRA_european_socialism
-		}
-		add_opinion_modifier = {
-			target = BUL
-			modifier = FRA_european_socialism
-		}
-		add_opinion_modifier = {
-			target = ITA
 			modifier = FRA_european_socialism
 		}
 		add_popularity = {
@@ -2045,24 +1969,12 @@ country_event = {
 			modifier = FRA_first_inter1
 		}
 		add_opinion_modifier = {
-			target = ITA
-			modifier = FRA_first_inter1
-		}
-		add_opinion_modifier = {
-			target = PAP
-			modifier = FRA_first_inter1
-		}
-		add_opinion_modifier = {
 			target = AUS
 			modifier = FRA_first_inter1
 		}
 		add_opinion_modifier = {
 			target = HUN
 			modifier = FRA_first_inter1
-		}
-		add_opinion_modifier = {
-			target = BUL
-			modifier = FRA_first_inter2
 		}
 		add_opinion_modifier = {
 			target = OTT
@@ -2078,14 +1990,6 @@ country_event = {
 		}
 		add_opinion_modifier = {
 			target = SRI
-			modifier = FRA_first_inter4
-		}
-		add_opinion_modifier = {
-			target = GEO
-			modifier = FRA_first_inter4
-		}
-		add_opinion_modifier = {
-			target = BHC
 			modifier = FRA_first_inter4
 		}
 
@@ -2113,20 +2017,12 @@ country_event = {
 			modifier = FRA_cancel_first_inter1
 		}
 		add_opinion_modifier = {
-			target = ITA
-			modifier = FRA_cancel_first_inter1
-		}
-		add_opinion_modifier = {
 			target = AUS
 			modifier = FRA_cancel_first_inter1
 		}
 		add_opinion_modifier = {
 			target = HUN
 			modifier = FRA_cancel_first_inter1
-		}
-		add_opinion_modifier = {
-			target = BUL
-			modifier = FRA_cancel_first_inter2
 		}
 		add_opinion_modifier = {
 			target = OTT
@@ -2142,14 +2038,6 @@ country_event = {
 		}
 		add_opinion_modifier = {
 			target = SRI
-			modifier = FRA_cancel_first_inter4
-		}
-		add_opinion_modifier = {
-			target = GEO
-			modifier = FRA_cancel_first_inter4
-		}
-		add_opinion_modifier = {
-			target = BHC
 			modifier = FRA_cancel_first_inter4
 		}
 	}
@@ -2194,32 +2082,6 @@ country_event = {
 			SRI = {
 				country_event = {
 					id = comfrance.31
-					days = 1
-				}
-			}
-		}
-		if = {
-			limit = {
-				GEO = {
-					has_socialist_government = yes
-				}
-			}
-			GEO = {
-				country_event = {
-					id = comfrance.32
-					days = 1
-				}
-			}
-		}
-		if = {
-			limit = {
-				BHC = {
-					has_socialist_government = yes
-				}
-			}
-			BHC = {
-				country_event = {
-					id = comfrance.33
 					days = 1
 				}
 			}
@@ -2272,34 +2134,6 @@ country_event = {
 			RUS = {
 				country_event = {
 					id = comfrance.38
-					days = 1
-				}
-			}
-		}
-		if = {
-			limit = {
-				SOV = {
-					exists = yes
-					has_socialist_government = yes
-				}
-			}
-			SOV = {
-				country_event = {
-					id = comfrance.39
-					days = 1
-				}
-			}
-		}
-		if = {
-			limit = {
-				CNT = {
-					exists = yes
-					has_socialist_government = yes
-				}
-			}
-			CNT = {
-				country_event = {
-					id = comfrance.40
 					days = 1
 				}
 			}
@@ -2667,35 +2501,6 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			if = {
-				limit = {
-					NOT = {
-						country_exists = CNT
-					}
-				}
-				country_event = {
-					id = comfrance.43
-					days = 3
-				}
-			}
-		}
-		hidden_effect = {
-			if = {
-				limit = {
-					has_global_flag = first_inter_congress_ENG
-					NOT = {
-						country_exists = CNT
-					}
-				}
-				ENG = {
-					country_event = {
-						id = comfrance.44
-						days = 2
-					}
-				}
-			}
-		}
-		hidden_effect = {
 			country_event = {
 				id = comfrance.45
 				days = 12
@@ -2783,37 +2588,10 @@ country_event = {
 				days = 9
 			}
 		}
-
-		hidden_effect = {
-			if = {
-				limit = {
-					has_global_flag = first_inter_congress_SRI
-				}
-				SRI = {
-					country_event = {
-						id = comfrance.53
-						days = 8
-					}
-				}
-			}
-		}
 		hidden_effect = {
 			country_event = {
 				id = comfrance.55
 				days = 13
-			}
-		}
-		hidden_effect = {
-			if = {
-				limit = {
-					has_global_flag = first_inter_congress_BHC
-				}
-				BHC = {
-					country_event = {
-						id = comfrance.56
-						days = 11
-					}
-				}
 			}
 		}
 		hidden_effect = {
@@ -2846,19 +2624,11 @@ country_event = {
 			modifier = FRA_overthrow_bourgeoisie
 		}
 		reverse_add_opinion_modifier = {
-			target = ITA
-			modifier = FRA_overthrow_bourgeoisie
-		}
-		reverse_add_opinion_modifier = {
 			target = AUS
 			modifier = FRA_overthrow_bourgeoisie
 		}
 		reverse_add_opinion_modifier = {
 			target = HUN
-			modifier = FRA_overthrow_bourgeoisie
-		}
-		reverse_add_opinion_modifier = {
-			target = BUL
 			modifier = FRA_overthrow_bourgeoisie
 		}
 		reverse_add_opinion_modifier = {
@@ -2895,64 +2665,6 @@ country_event = {
 	#		ai_chance = { factor = 0 }				Can't add malus on this one in HOI4
 	#		add_political_power = 100
 	#	}
-}
-
-country_event = {
-	id = comfrance.43
-	immediate = { log = "[GetDateText]: [Root.GetName]: event comfrance.43" }
-	title = comfrance.43.t
-	desc = comfrance.43.d
-	picture = GFX_report_event_soviet_soldiers_tank
-
-	is_triggered_only = yes
-
-	option = { #The French pledge their support and ask all other members to do the same
-		name = comfrance.43.a
-		ai_chance = {
-			factor = 98
-		}
-		reverse_add_opinion_modifier = {
-			target = SPR
-			modifier = FRA_help_cnt
-		}
-		set_country_flag = FRA_support_cnt
-	}
-
-	option = { #The CNT-FAI need no aid, lets move on
-		name = comfrance.43.b
-		ai_chance = {
-			factor = 2
-		}
-	}
-}
-
-country_event = {
-	id = comfrance.44
-	immediate = { log = "[GetDateText]: [Root.GetName]: event comfrance.44" }
-	title = comfrance.44.t
-	desc = comfrance.44.d
-	picture = GFX_report_event_soviet_soldiers_tank
-
-	is_triggered_only = yes
-
-	option = { #Britain will do what it can to help the CNT-FAI
-		name = comfrance.44.a
-		ai_chance = {
-			factor = 95
-		}
-		reverse_add_opinion_modifier = {
-			target = SPR
-			modifier = FRA_help_cnt
-		}
-		set_country_flag = ENG_support_cnt
-	}
-
-	option = { #The CNT-FAI need no aid, lets move on
-		name = comfrance.44.b
-		ai_chance = {
-			factor = 5
-		}
-	}
 }
 
 country_event = {
@@ -3153,81 +2865,6 @@ country_event = {
 	}
 }
 
-country_event = { # The socialist Risorgimento
-	id = comfrance.53
-	immediate = { log = "[GetDateText]: [Root.GetName]: event comfrance.53" }
-	title = comfrance.53.t
-	desc = comfrance.53.d
-	picture = GFX_report_event_soviet_soldiers_tank
-
-	is_triggered_only = yes
-
-	option = { #Ask for support to achieve the Risorgimento!
-		name = comfrance.53.a
-		ai_chance = {
-			factor = 95
-		}
-		reverse_add_opinion_modifier = {
-			target = ITA
-			modifier = FRA_support_sri
-		}
-		reverse_add_opinion_modifier = {
-			target = PAP
-			modifier = FRA_support_sri
-		}
-		FRA = {
-			country_event = comfrance.54
-		}
-	}
-
-	option = { #There are more important issues at hand
-		name = comfrance.53.b
-		ai_chance = {
-			factor = 5
-		}
-	}
-}
-
-country_event = { # The socialist Risorgimento
-	id = comfrance.54
-	immediate = { log = "[GetDateText]: [Root.GetName]: event comfrance.54" }
-	title = comfrance.54.t
-	desc = comfrance.54.d
-	picture = GFX_report_event_soviet_soldiers_tank
-
-	is_triggered_only = yes
-
-	option = { #Guarantee our friends in Torino aid when the time comes
-		name = comfrance.54.a
-		ai_chance = {
-			factor = 95
-		}
-		reverse_add_opinion_modifier = {
-			target = ITA
-			modifier = FRA_support_sri
-		}
-		reverse_add_opinion_modifier = {
-			target = PAP
-			modifier = FRA_support_sri
-		}
-		reverse_add_opinion_modifier = {
-			target = SRI
-			modifier = FRA_support_sri2
-		}
-	}
-
-	option = { #Lets not waste time on Italy
-		name = comfrance.54.b
-		ai_chance = {
-			factor = 5
-		}
-		reverse_add_opinion_modifier = {
-			target = SRI
-			modifier = FRA_not_support_sri
-		}
-	}
-}
-
 country_event = {
 	id = comfrance.55
 	immediate = { log = "[GetDateText]: [Root.GetName]: event comfrance.55" }
@@ -3271,60 +2908,12 @@ country_event = {
 			target = DEH
 			modifier = FRA_mission_bharitya
 		}
-		reverse_add_opinion_modifier = {
-			target = PRF
-			modifier = FRA_mission_bharitya
-		}
-		FRA = {
-			country_event = comfrance.57
-		}
-		ENG = {
-			country_event = comfrance.58
-		}
 	}
 
 	option = { #No, we're fine as we are.
 		name = comfrance.56.b
 		ai_chance = {
 			factor = 5
-		}
-	}
-}
-
-country_event = {
-	id = comfrance.57
-	immediate = { log = "[GetDateText]: [Root.GetName]: event comfrance.57" }
-	title = comfrance.57.t
-	desc = comfrance.57.d
-	picture = GFX_report_event_soviet_soldiers_tank
-
-	is_triggered_only = yes
-
-	option = { #Send military advisors to train their army!
-		name = comfrance.57.a
-		ai_chance = {
-			factor = 95
-		}
-		add_political_power = -50
-		reverse_add_opinion_modifier = {
-			target = DEH
-			modifier = FRA_mission_bharitya
-		}
-		reverse_add_opinion_modifier = {
-			target = PRF
-			modifier = FRA_mission_bharitya
-		}
-		set_country_flag = FRA_mission_bharitya_flag
-	}
-
-	option = { #We can't waste our resources
-		name = comfrance.57.b
-		ai_chance = {
-			factor = 5
-		}
-		reverse_add_opinion_modifier = {
-			target = BHC
-			modifier = FRA_decline_mission_bharitya
 		}
 	}
 }
@@ -3350,44 +2939,6 @@ country_event = {
 		name = comfrance.5701.b
 		ai_chance = {
 			factor = 20
-		}
-	}
-}
-
-country_event = {
-	id = comfrance.58
-	immediate = { log = "[GetDateText]: [Root.GetName]: event comfrance.58" }
-	title = comfrance.58.t
-	desc = comfrance.58.d
-	picture = GFX_report_event_soviet_soldiers_tank
-
-	is_triggered_only = yes
-
-	option = { #Send military advisors to train their army!
-		name = comfrance.58.a
-		ai_chance = {
-			factor = 95
-		}
-		add_political_power = -50
-		add_opinion_modifier = {
-			target = DEH
-			modifier = FRA_mission_bharitya
-		}
-		add_opinion_modifier = {
-			target = PRF
-			modifier = FRA_mission_bharitya
-		}
-		set_country_flag = ENG_mission_bharitya_flag
-	}
-
-	option = { #We can't waste our resources
-		name = comfrance.58.b
-		ai_chance = {
-			factor = 5
-		}
-		add_opinion_modifier = {
-			target = BHC
-			modifier = FRA_decline_mission_bharitya
 		}
 	}
 }
@@ -3487,18 +3038,6 @@ country_event = {
 			GER = {
 				country_event = {
 					id = comfrance.65
-					days = 2
-				}
-			}
-			SPR = {
-				country_event = {
-					id = comfrance.67
-					days = 2
-				}
-			}
-			CAR = {
-				country_event = {
-					id = comfrance.67
 					days = 2
 				}
 			}
@@ -4176,45 +3715,12 @@ country_event = {
 			target = RUS
 			modifier = GER_RUS_reinsurance_treaty
 		}
-		RUS = {
-			clr_country_flag = RUS_GER_blocks_caucasus
-		}
 		if = {
 			limit = {
 				country_exists = DKB
 			}
 			diplomatic_relation = {
 				country = DKB
-				relation = guarantee
-				active = no
-			}
-		}
-		if = {
-			limit = {
-				country_exists = AZE
-			}
-			diplomatic_relation = {
-				country = AZE
-				relation = guarantee
-				active = no
-			}
-		}
-		if = {
-			limit = {
-				country_exists = GEO
-			}
-			diplomatic_relation = {
-				country = GEO
-				relation = guarantee
-				active = no
-			}
-		}
-		if = {
-			limit = {
-				country_exists = ARM
-			}
-			diplomatic_relation = {
-				country = ARM
 				relation = guarantee
 				active = no
 			}
@@ -5538,18 +5044,6 @@ country_event = {
 			modifier = FRA_1941_election
 		}
 		reverse_add_opinion_modifier = {
-			target = BHC
-			modifier = FRA_1941_election
-		}
-		reverse_add_opinion_modifier = {
-			target = CNT
-			modifier = FRA_1941_election
-		}
-		reverse_add_opinion_modifier = {
-			target = SOV
-			modifier = FRA_1941_election
-		}
-		reverse_add_opinion_modifier = {
 			target = ENG
 			modifier = FRA_1941_election
 		}
@@ -5583,18 +5077,6 @@ country_event = {
 		}
 		reverse_add_opinion_modifier = {
 			target = SRI
-			modifier = FRA_1941_election
-		}
-		reverse_add_opinion_modifier = {
-			target = BHC
-			modifier = FRA_1941_election
-		}
-		reverse_add_opinion_modifier = {
-			target = CNT
-			modifier = FRA_1941_election
-		}
-		reverse_add_opinion_modifier = {
-			target = SOV
 			modifier = FRA_1941_election
 		}
 		reverse_add_opinion_modifier = {
@@ -5633,18 +5115,6 @@ country_event = {
 			modifier = FRA_1941_election
 		}
 		reverse_add_opinion_modifier = {
-			target = BHC
-			modifier = FRA_1941_election
-		}
-		reverse_add_opinion_modifier = {
-			target = CNT
-			modifier = FRA_1941_election
-		}
-		reverse_add_opinion_modifier = {
-			target = SOV
-			modifier = FRA_1941_election
-		}
-		reverse_add_opinion_modifier = {
 			target = ENG
 			modifier = FRA_1941_election
 		}
@@ -5672,18 +5142,6 @@ country_event = {
 		}
 		reverse_add_opinion_modifier = {
 			target = SRI
-			modifier = FRA_1941_election
-		}
-		reverse_add_opinion_modifier = {
-			target = BHC
-			modifier = FRA_1941_election
-		}
-		reverse_add_opinion_modifier = {
-			target = CNT
-			modifier = FRA_1941_election
-		}
-		reverse_add_opinion_modifier = {
-			target = SOV
 			modifier = FRA_1941_election
 		}
 		reverse_add_opinion_modifier = {

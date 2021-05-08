@@ -79,7 +79,7 @@ focus_tree = {
 
 	focus = {
 		id = NFA_monarchy
-		icon = GFX_goal_NFA_French_Kingdom
+		icon = GFX_NFA_monarchy
 		mutually_exclusive = {
 			focus = NFA_empire
 			focus = NFA_restore_constitution
@@ -124,10 +124,6 @@ focus_tree = {
 				hidden_effect = {
 					random_other_country = { news_event = { id = worldnews.29 days = 1 } }
 				}
-			}
-			add_popularity = {
-				ideology = authoritarian_democrat
-				popularity = 0.1
 			}
 			add_popularity = {
 				ideology = social_conservative
@@ -462,26 +458,11 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus NFA_Constitutionalism"
 			custom_effect_tooltip = NFA_constit_mon_tooltip
 			set_country_flag = NFA_demo
+
 			add_stability = 0.04
 			set_politics = {
-				ruling_party = social_conservative
+				ruling_party = market_liberal
 				elections_allowed = no
-			}
-			add_popularity = {
-				ideology = social_liberal
-				popularity = 0.05
-			}
-			add_popularity = {
-				ideology = market_liberal
-				popularity = 0.05
-			}
-			add_popularity = {
-				ideology = social_conservative
-				popularity = 0.1
-			}
-			add_popularity = {
-				ideology = authoritarian_democrat
-				popularity = -0.15
 			}
 			remove_ideas = NFA_political_unrest
 		}
@@ -1419,7 +1400,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		icon = GFX_goal_NFA_De_Gaulle_Plan
+		icon = GFX_NFA_DeGaulle_focus
 		x = 20
 		y = 0
 		cost = 10

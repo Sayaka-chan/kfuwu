@@ -5,7 +5,7 @@ state = {
 	state_category = zero_island
 
 	history = {
-		owner = GER
+		owner = GEA
 		add_core_of = VEN
 		buildings = {
 			infrastructure = 3

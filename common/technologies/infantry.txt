@@ -980,7 +980,7 @@ technologies = {
 			jaeger
 		}
 
-		on_research_complete = {
+		on_research_complete_limit  = {
 			limit = {
 				NOT = {
 					has_template_containing_unit = jaeger
@@ -1070,7 +1070,7 @@ technologies = {
 			jungletroop
 		}
 
-		on_research_complete = {
+		on_research_complete_limit  = {
 			limit = {
 				NOT = {
 					has_template_containing_unit = jungletroop
@@ -1159,7 +1159,7 @@ technologies = {
 			shocktroop
 		}
 
-		on_research_complete = {
+		on_research_complete_limit  = {
 			limit = {
 				NOT = {
 					has_template_containing_unit = shocktroop
@@ -1811,7 +1811,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 0.5
 		start_year = 1914
 		folder = {
 			name = infantry_folder
@@ -1858,8 +1858,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
-		start_year = 1940
+		research_cost = 1
+		start_year = 1938
 		folder = {
 			name = infantry_folder
 			position = { x = 4 y = @1940 }
@@ -1900,8 +1900,8 @@ technologies = {
 			armored_car_equipment_2
 		}
 
-		research_cost = 2
-		start_year = 1942
+		research_cost = 1
+		start_year = 1940
 		folder = {
 			name = infantry_folder
 			position = { x = 4 y = @1942 }
@@ -1947,7 +1947,7 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 1942
+		start_year = 1940
 		sub_tech_index = 1
 
 		categories = {

@@ -58,17 +58,9 @@ country_event = {
 						tag = AUS
 						tag = GER
 						tag = UKR
-						tag = BAT
 						tag = GEA
-						tag = ITA
-						tag = SIA
-						tag = SPR
-						tag = POR
-						tag = SAF
-						tag = BUL
 						tag = GRE
 						tag = PER
-						tag = BEL
 						tag = RUS
 						tag = CAN
 					}
@@ -376,14 +368,6 @@ country_event = {
 		ai_chance = {
 			factor = 25
 		}
-		reverse_add_opinion_modifier = {
-			target = LIT
-			modifier = GER_INVEST
-		}
-		reverse_add_opinion_modifier = {
-			target = BAT
-			modifier = GER_INVEST
-		}
 		5 = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
@@ -437,10 +421,6 @@ country_event = {
 		}
 		reverse_add_opinion_modifier = {
 			target = SWE
-			modifier = GER_INVEST
-		}
-		reverse_add_opinion_modifier = {
-			target = HOL
 			modifier = GER_INVEST
 		}
 		58 = {

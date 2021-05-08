@@ -334,19 +334,6 @@ country_event = { #Pied-Noir unrest
 				country_event = nfa.10
 			}
 		}
-		if = {
-			limit = {
-				country_exists = PAP
-				PAP = {
-					NOT = {
-						has_war_with = NFA
-					}
-				}
-			}
-			PAP = {
-				country_event = nfa.11
-			}
-		}
 	}
 
 	option = {
@@ -3103,7 +3090,6 @@ country_event = { #The Liberation of Metropolitan France
 		is_in_faction_with = NFA
 		NOT = {
 			tag = NFA
-			tag = FRP
 			country_exists = FRA
 			NFA = {
 				is_subject = yes
@@ -3268,34 +3254,6 @@ country_event = { #Conflict in Africa seized rif
 		name = nfa.65.c #Offer what resistance we can.....
 		ai_chance = { factor = 50 }
 		NFA = { transfer_state = 699 add_political_power = -60 }
-	}
-
-}
-
-country_event = { #Conflict in Africa gave rif
-	id = nfa.66
-	immediate = { log = "[GetDateText]: [Root.GetName]: event nfa.66" }
-	title = nfa.66.t
-	desc = nfa.66.d
-
-	is_triggered_only = yes
-
-	option = {
-		name = nfa.66.a #Let them take them
-		ai_chance = { factor = 30 }
-		CAR = { transfer_state = 699 }
-	}
-
-	option = {
-		name = nfa.66.b #To war!
-		ai_chance = { factor = 10 }
-		declare_war_on = { target = NFA type = annex_everything }
-	}
-
-	option = {
-		name = nfa.66.c #Offer what resistance we can.....
-		ai_chance = { factor = 60 }
-		CAR = { transfer_state = 699 add_political_power = -60 }
 	}
 
 }

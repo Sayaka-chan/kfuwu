@@ -11,20 +11,6 @@
 
 create_ambition_areas = {
 	every_state = {
-		# AFG = Afghanistan
-		if = {
-			limit = {
-				OR = {
-					is_core_of = AFG
-					is_claimed_by = AFG
-					region = 162 #Afghanistan
-					state = 442 #West of Indus
-					state = 445
-					state = 444
-				}
-			}
-			set_variable = { ambition_area_@AFG = 1 }
-		}
 		# ALO = Alash Orda
 		if = {
 			limit = {
@@ -46,20 +32,6 @@ create_ambition_areas = {
 				}
 			}
 			set_variable = { ambition_area_@ALO = 1 }
-		}
-		# ARM = Armenia
-		if = {
-			limit = {
-				OR = {
-					is_core_of = ARM
-					is_claimed_by = ARM
-					state = 230 #Yerevan
-					state = 998 #Syunik
-					state = 1000 #Kars
-					state = 1082 #Lori
-				}
-			}
-			set_variable = { ambition_area_@ARM = 1 }
 		}
 		# AST = Australasia
 		if = {
@@ -113,185 +85,6 @@ create_ambition_areas = {
 			}
 			set_variable = { ambition_area_@AUS = 1 }
 		}
-		# AZE = Azerbaijan
-		if = {
-			limit = {
-				OR = {
-					is_core_of = AZE
-					is_claimed_by = AZE
-					state = 229 #Azerbaijan
-					state = 990 #Baku
-					state = 1081 #Zaqatala
-				}
-			}
-			set_variable = { ambition_area_@AZE = 1 }
-		}
-		# BAT = Baltic States
-		if = {
-			limit = {
-				OR = {
-					is_core_of = BAT
-					is_claimed_by = BAT
-				}
-			}
-			set_variable = { ambition_area_@BAT = 1 }
-		}
-		# BAV = Bavaria
-		if = {
-			limit = {
-				OR = {
-					is_core_of = BAV
-					is_claimed_by = BAV
-					region = 7 #Western Germany
-				}
-			}
-			set_variable = { ambition_area_@BAV = 1 }
-		}
-		# BEL = Flanders-Wallonia
-		if = {
-			limit = {
-				OR = {
-					is_core_of = BEL
-					is_claimed_by = BEL
-					state = 741 #Southern Wallonia
-					state = 980 #French Hainaut
-					state = 978 #Limburg
-					state = 979 #Westerscheldt
-					state = 8 #Luxembourg
-				}
-			}
-			set_variable = { ambition_area_@BEL = 1 }
-		}
-		# BHC = Bharatiya Commune
-		if = {
-			limit = {
-				OR = {
-					is_core_of = BHC
-					is_claimed_by = BHC
-					region = 101 #Bay of Bengal
-					region = 31 #Southern India
-					region = 141 #Eastern India
-					region = 153 #Northern India
-					region = 195 #Burma
-					region = 60 #West Indian Ocean
-					state = 323 #Nepal
-					state = 324 #Bhutan
-					state = 441 #Kashmir
-					state = 814 #Uttarakhand
-					state = 858 #Tawang
-					state = 888 #Sikkim
-					state = 890 #Shimla
-				}
-			}
-			set_variable = { ambition_area_@BHC = 1 }
-		}
-		# BOR = Borneo
-		if = {
-			limit = {
-				OR = {
-					is_core_of = BOR
-					is_claimed_by = BOR
-					region = 159 #Borneo
-				}
-			}
-			set_variable = { ambition_area_@BOR = 1 }
-		}
-		# BOS = Bosnia
-		if = {
-			limit = {
-				OR = {
-					is_core_of = BOS
-					is_claimed_by = BOS
-					state = 104
-					state = 163
-				}
-			}
-			set_variable = { ambition_area_@BOS = 1 }
-		}
-		# BRI = Brittany
-		if = {
-			limit = {
-				OR = {
-					is_core_of = BRI
-					is_claimed_by = BRI
-					state = 14
-				}
-			}
-			set_variable = { ambition_area_@BRI = 1 }
-		}
-		# BUL = Bulgaria
-		if = {
-			limit = {
-				OR = {
-					is_core_of = BUL
-					is_claimed_by = BUL
-					region = 26 #Bulgaria
-					state = 184 #Western Thrace
-					state = 341 #Adrianople
-					state = 347 #Gallipoli
-					state = 767 #Nis
-					state = 731 #Western Salonica
-					state = 769 #Eastern Salonica
-					state = 772 #Dobrudja
-					state = 773 #Constantinople
-					state = 989 #Chalcidice
-				}
-			}
-			set_variable = { ambition_area_@BUL = 1 }
-		}
-		# BUR = Burma
-		if = {
-			limit = {
-				OR = {
-					is_core_of = BUR
-					is_claimed_by = BUR
-					### Burma Proper ###
-					region = 195 # Burma
-					region = 194 # Malay Peninsula
-					state = 749 # Tenassarim
-					### Further claim based up on Bayinnaung's conquest ###
-					state = 289 # Siam - not using the region here since that also include Battambang
-					state = 822 # Lanna
-					state = 882 # Chaiyaburi
-					state = 670 # Laos
-					state = 823 # Isan
-					state = 824 # Rayong
-					state = 434 # Manipur
-				}
-			}
-			set_variable = { ambition_area_@BUR = 1 }
-		}
-		# CAF = West Indies Federation
-		if = {
-			limit = {
-				OR = {
-					is_core_of = CAF
-					is_claimed_by = CAF
-					region = 53 #Carribean Sea
-					region = 170 #Florida Coast
-					region = 57 #Sargasso Sea
-				}
-			}
-			set_variable = { ambition_area_@CAF = 1 }
-		}
-		# CAM = Cambodia
-		if = {
-			limit = {
-				OR = {
-					is_core_of = CAM
-					is_claimed_by = CAM
-					### Cambodian Proper ###
-					state = 750 # Phnom Penh
-					state = 825 # Battambang
-					state = 826 # Stungtreng
-					### Khmer Krom and other further claims ###
-					state = 286 # Saigon
-					state = 856 # Mekong Delta
-					state = 824 # Rayong
-				}
-			}
-			set_variable = { ambition_area_@CAM = 1 }
-		}
 		# CAN = Canada
 		if = {
 			limit = {
@@ -318,50 +111,6 @@ create_ambition_areas = {
 			}
 			set_variable = { ambition_area_@CAN = 1 }
 		}
-		# CAR = Carlist Spain
-		if = {
-			limit = {
-				OR = {
-					is_core_of = CAR
-					is_claimed_by = CAR
-					region = 41 #Iberia
-					region = 236 #Southern Iberia
-					region = 237 #Western Iberia
-					region = 189 #North Africa
-					region = 140 #Central Africa
-					state = 984 #Pyrennes
-					state = 817 #Rousillon
-				}
-			}
-			set_variable = { ambition_area_@CAR = 1 }
-		}
-		# CAT = Catalonia
-		if = {
-			limit = {
-				OR = {
-					is_core_of = CAT
-					is_claimed_by = CAT
-					state = 165
-					state = 166
-					state = 167
-					state = 177
-				}
-			}
-			set_variable = { ambition_area_@CAT = 1 }
-		}
-		# CNT = CNT-FAI
-		if = {
-			limit = {
-				OR = {
-					is_core_of = CNT
-					is_claimed_by = CNT
-					region = 41 #Iberia
-					region = 236 #Southern Iberia
-					region = 237 #Western Iberia
-				}
-			}
-			set_variable = { ambition_area_@CNT = 1 }
-		}
 		# CZE = Bohemia
 		if = {
 			limit = {
@@ -373,17 +122,6 @@ create_ambition_areas = {
 				}
 			}
 			set_variable = { ambition_area_@CZE = 1 }
-		}
-		# DDR = Prussia
-		if = {
-			limit = {
-				OR = {
-					is_core_of = DDR
-					is_claimed_by = DDR
-					region = 8
-				}
-			}
-			set_variable = { ambition_area_@DDR = 1 }
 		}
 		# DEH = Delhi
 		if = {
@@ -407,22 +145,6 @@ create_ambition_areas = {
 				}
 			}
 			set_variable = { ambition_area_@DEH = 1 }
-		}
-		# DEI = Dutch East Indies
-		if = {
-			limit = {
-				OR = {
-					is_core_of = DEI
-					is_claimed_by = DEI
-					region = 159
-					region = 192
-					region = 158
-					region = 93
-					region = 91
-					region = 167
-				}
-			}
-			set_variable = { ambition_area_@DEI = 1 }
 		}
 		# DEN = Denmark
 		if = {
@@ -458,24 +180,6 @@ create_ambition_areas = {
 			}
 			set_variable = { ambition_area_@DKB = 1 }
 		}
-		# EGY = Egypt
-		if = {
-			limit = {
-				OR = {
-					is_core_of = EGY
-					is_claimed_by = EGY
-					region = 69 #Eastern Med
-					region = 126 #Egypt
-					region = 238 #Tripolitania
-					region = 128 #Sudan
-					state = 862 #Sudanese Sahara
-					state = 273 #Fizzan
-					state = 1009 #Kufra
-					state = 552 #Al Gharbia
-				}
-			}
-			set_variable = { ambition_area_@EGY = 1 }
-		}
 		# ENG = Union of Britain
 		if = {
 			limit = {
@@ -487,27 +191,6 @@ create_ambition_areas = {
 				}
 			}
 			set_variable = { ambition_area_@ENG = 1 }
-		}
-		# ENP = England (Puppet)
-		if = {
-			limit = {
-				OR = {
-					is_core_of = ENP
-					is_claimed_by = ENP
-					is_british_isles = yes
-				}
-			}
-			set_variable = { ambition_area_@ENP = 1 }
-		}
-		# EST = Estonia
-		if = {
-			limit = {
-				OR = {
-					state = 13 #Estonia
-					state = 191 #Northern Livonia
-				}
-			}
-			set_variable = { ambition_area_@EST = 1 }
 		}
 		# FIN = Finland
 		if = {
@@ -529,18 +212,6 @@ create_ambition_areas = {
 			}
 			set_variable = { ambition_area_@FIN = 1 }
 		}
-		# FLN = Flanders
-		if = {
-			limit = {
-				OR = {
-					is_core_of = FLN
-					is_claimed_by = FLN
-					region = 5
-					state = 741
-				}
-			}
-			set_variable = { ambition_area_@FLN = 1 }
-		}
 		# FRA = Commune of France
 		if = {
 			limit = {
@@ -557,24 +228,6 @@ create_ambition_areas = {
 				}
 			}
 			set_variable = { ambition_area_@FRA = 1 }
-		}
-		# FRP = France (Puppet)
-		if = {
-			limit = {
-				OR = {
-					is_core_of = FRP
-					is_claimed_by = FRP
-					region = 20 #Southern France
-					region = 19 #Northern France
-					region = 164 #Western France
-					state = 779 #Nancy
-					state = 943 #Haute Savoie
-					state = 735 #Savoie
-					state = 762 #Nice
-					state = 1 #Corsica
-				}
-			}
-			set_variable = { ambition_area_@FRP = 1 }
 		}
 		# GAL = Galicia
 		if = {
@@ -601,16 +254,6 @@ create_ambition_areas = {
 				}
 			}
 			set_variable = { ambition_area_@GBR = 1 }
-		}
-		# GBP = Great Britain (Puppet)
-		if = {
-			limit = {
-				OR = {
-					is_british_isles = yes
-					region = 4 #Ireland
-				}
-			}
-			set_variable = { ambition_area_@GBP = 1 }
 		}
 		# GEA = German East Asia
 		if = {
@@ -649,21 +292,6 @@ create_ambition_areas = {
 			}
 			set_variable = { ambition_area_@GEA = 1 }
 		}
-		# GEO = Georgia
-		if = {
-			limit = {
-				OR = {
-					is_core_of = GEO
-					is_claimed_by = GEO
-					state = 231
-					state = 1082
-					state = 1081
-					state = 1080
-					state = 1001
-				}
-			}
-			set_variable = { ambition_area_@GEO = 1 }
-		}
 		# GER = Germany
 		if = {
 			limit = {
@@ -688,30 +316,6 @@ create_ambition_areas = {
 			}
 			set_variable = { ambition_area_@GER = 1 }
 		}
-		# GEX = Germany-in-Exile
-		if = {
-			limit = {
-				OR = {
-					is_core_of = GEX
-					is_claimed_by = GEX
-					region = 189 #Maghreb
-					region = 126 #Egypt
-					region = 238 #Tripolitania
-					region = 193 #Madagascar
-					region = 7 #Southern Germany
-					region = 6 #Northwest Germany
-					region = 8 #Eastern Germany
-					region = 37 #Baltic States
-					region = 21 #Austria
-					region = 22 #Bohemia
-					state = 273 #Fizzan
-					state = 1009 #Kufra
-					state = 552 #Al Gharbia
-					state = 514 #Sahara
-				}
-			}
-			set_variable = { ambition_area_@GEX = 1 }
-		}
 		# GRE = Greece
 		if = {
 			limit = {
@@ -727,48 +331,6 @@ create_ambition_areas = {
 			}
 			set_variable = { ambition_area_@GRE = 1 }
 		}
-		# GRU = German Union
-		if = {
-			limit = {
-				OR = {
-					is_core_of = GRU
-					is_claimed_by = GRU
-					is_germany = yes
-					state = 69 #German Bohemia
-					state = 39 #Sudtirol
-					state = 153 #Tirol
-					state = 836 #Salzburg
-					state = 152 #Oberosterreich
-					state = 4 #Niederosterreich
-					state = 775 #Steiermark
-					state = 835 #Karnten
-					state = 151 #Ostschweiz
-					state = 942 #Vorarlberg
-				}
-			}
-			set_variable = { ambition_area_@GRU = 1 }
-		}
-		# HOL = Netherlands
-		if = {
-			limit = {
-				OR = {
-					is_core_of = HOL
-					is_claimed_by = HOL
-					region = 5 #Benelux
-					region = 158 #Sunda Islands
-					region = 192 #Sumatra
-					region = 93 #Java Sea
-					region = 159 #Borneo
-					region = 167 #New Guinea
-					region = 91 #Arafura Sea
-					region = 99 #Indian Ocean
-					region = 71 #Indian Ocean
-					state = 741 #Southern Wallonia
-					state = 8 #Luxembourg
-				}
-			}
-			set_variable = { ambition_area_@HOL = 1 }
-		}
 		# HUN = Hungary
 		if = {
 			limit = {
@@ -782,18 +344,6 @@ create_ambition_areas = {
 				}
 			}
 			set_variable = { ambition_area_@HUN = 1 }
-		}
-		# IKH = Ikhwan
-		if = {
-			limit = {
-				OR = {
-					is_core_of = IKH
-					is_claimed_by = IKH
-					region = 187 #Northern Arabia
-					region = 240 #Southern Arabia
-				}
-			}
-			set_variable = { ambition_area_@IKH = 1 }
 		}
 		# CRO = Illyria
 		if = {
@@ -809,71 +359,6 @@ create_ambition_areas = {
 				}
 			}
 			set_variable = { ambition_area_@CRO = 1 }
-		}
-		# INC = Indochina
-		if = {
-			limit = {
-				OR = {
-					is_core_of = INC
-					is_claimed_by = INC
-					### Truly the 'Indochinese Union' if Burma isn't Syndie ###
-					region = 196 # Indochina Proper
-					region = 142 # Siam
-					region = 194 # Malay Peninsular
-					region = 195 # Burma
-				}
-			}
-			set_variable = { ambition_area_@INC = 1 }
-		}
-		# INS = Insulindia
-		if = {
-			limit = {
-				OR = {
-					is_core_of = INS
-					is_claimed_by = INS
-					region = 158 # Sunda Isles
-					region = 192 # Sumatra
-					region = 159 # Kalimantan
-					region = 93 # Java Sea (Celebes)
-					region = 91 # Arafura Sea
-					region = 167 # New Guinea
-				}
-			}
-			set_variable = { ambition_area_@INS = 1 }
-		}
-		# IRQ = Iraq
-		if = {
-			limit = {
-				OR = {
-					is_core_of = IRQ
-					is_claimed_by = IRQ
-					region = 187 #Northern Arabia
-					region = 240 #Southern Arabia
-					region = 28 #Syria
-				}
-			}
-			set_variable = { ambition_area_@IRQ = 1 }
-		}
-		# ITA = Italy
-		if = {
-			limit = {
-				OR = {
-					is_core_of = ITA
-					is_claimed_by = ITA
-					is_european_italy = yes
-					state = 735 #Savoy
-					state = 943 #Haute Savoie
-					state = 762 #Nice
-					state = 736 #Istria
-					state = 783 #Trentino
-					state = 39 #South Tyrol
-					state = 761 #Ticino
-					state = 103 #Lika
-					state = 163 #Dalmatia
-					state = 116 #Malta
-				}
-			}
-			set_variable = { ambition_area_@ITA = 1 }
 		}
 		# JAP = Japan
 		if = {
@@ -919,71 +404,6 @@ create_ambition_areas = {
 			}
 			set_variable = { ambition_area_@JAP = 1 }
 		}
-		# JBS = Jabal Shammar
-		if = {
-			limit = {
-				OR = {
-					is_core_of = JBS
-					is_claimed_by = JBS
-					region = 187 #Northern Arabia
-					region = 240 #Southern Arabia
-					region = 28 #Syria
-				}
-			}
-			set_variable = { ambition_area_@JBS = 1 }
-		}
-		# KAC = Kachin
-		if = {
-			limit = {
-				OR = {
-					is_core_of = KAC
-					is_claimed_by = KAC
-					state = 701 # Kachin
-					state = 816 # Dali
-				}
-			}
-			set_variable = { ambition_area_@KAC = 1 }
-		}
-		# KUR = Kurdistan
-		if = {
-			limit = {
-				OR = {
-					is_core_of = KUR
-					is_claimed_by = KUR
-					state = 677 #Halab
-					state = 413 #Kuzhestan
-					state = 419 #Eastern Azerbaijan
-				}
-			}
-			set_variable = { ambition_area_@KUR = 1 }
-		}
-		# LAO = Laos
-		if = {
-			limit = {
-				OR = {
-					is_core_of = LAO
-					is_claimed_by = LAO
-					### Laotian Proper ###
-					state = 882 # Chaiyaburi
-					state = 670 # Laos
-					### Further Claim by Laos ###
-					state = 823 # Isan
-				}
-			}
-			set_variable = { ambition_area_@LAO = 1 }
-		}
-		# LAT = Latvia
-		if = {
-			limit = {
-				OR = {
-					state = 12 #Livonia
-					state = 190 #Courland
-					state = 880 #Dvinsk
-					state = 1091 #Riga
-				}
-			}
-			set_variable = { ambition_area_@LAT = 1 }
-		}
 		# LEC = Legation Cities
 		if = {
 			limit = {
@@ -997,75 +417,6 @@ create_ambition_areas = {
 				}
 			}
 			set_variable = { ambition_area_@LEC = 1 }
-		}
-		# LIT = Lithuania
-		if = {
-			limit = {
-				OR = {
-					is_core_of = LIT
-					is_claimed_by = LIT
-					state = 188 #Memel
-				}
-			}
-			set_variable = { ambition_area_@LIT = 1 }
-		}
-		# MAD = Madras
-		if = {
-			limit = {
-				OR = {
-					is_core_of = MAD
-					is_claimed_by = MAD
-					state = 422 #Ceylon
-					state = 423 #Madurai
-					state = 424 #Andhra
-					state = 425 #Mysore
-					state = 867 #Travancore
-				}
-			}
-			set_variable = { ambition_area_@MAD = 1 }
-		}
-		# MLY = Malaysia
-		if = {
-			limit = {
-				OR = {
-					is_core_of = MLY
-					is_claimed_by = MLY
-					### Malay-inhabited region ### - didn't use the Malay peninsular region here as further north is Buddhist majority area
-					state = 830 # Patani, Setul
-					state = 751 # Kelantan, Kedah, Terenggannu, Perlis
-					state = 846 # Pahang, Selangor,Johor, Malakka
-					state = 336 # Singapore
-					state = 333 # Sarawak, Brunei
-					state = 828 # Sabah
-					state = 672 # East Sumatra (Siak)
-					state = 334 # West Kalim-... Borneo :v
-					state = 999 # Syburi
-					### Push it further to cover all of Borneo and Sumatra ###
-					state = 1023 # Aceh
-					state = 1022 # Middle Sumatra
-					state = 1021 # Palembang
-					state = 1016 # East Kalimantan
-				}
-			}
-			set_variable = { ambition_area_@MLY = 1 }
-		}
-		# MTN = Montenegro
-		if = {
-			limit = {
-				state = 105 #Montenegro
-			}
-			set_variable = { ambition_area_@MTN = 1 }
-		}
-		# MYS = Mysore
-		if = {
-			limit = {
-				OR = {
-					is_core_of = MYS
-					is_claimed_by = MYS
-					region = 31 #Southern India
-				}
-			}
-			set_variable = { ambition_area_@MYS = 1 }
 		}
 		# NFA = Nat France
 		if = {
@@ -1086,17 +437,6 @@ create_ambition_areas = {
 				}
 			}
 			set_variable = { ambition_area_@NFA = 1 }
-		}
-		# NGF = North German Federation
-		if = {
-			limit = {
-				OR = {
-					is_core_of = NGF
-					is_claimed_by = NGF
-					region = 6
-				}
-			}
-			set_variable = { ambition_area_@NGF = 1 }
 		}
 		# NOR = Norway
 		if = {
@@ -1148,21 +488,6 @@ create_ambition_areas = {
 			}
 			set_variable = { ambition_area_@OTT = 1 }
 		}
-		# PAP = Papal State
-		if = {
-			limit = {
-				OR = {
-					is_core_of = PAP
-					is_claimed_by = PAP
-					state = 2
-					state = 764
-					state = 1005
-					state = 157
-					state = 161
-				}
-			}
-			set_variable = { ambition_area_@PAP = 1 }
-		}
 		# PER = Iran
 		if = {
 			limit = {
@@ -1179,18 +504,6 @@ create_ambition_areas = {
 				}
 			}
 			set_variable = { ambition_area_@PER = 1 }
-		}
-		# PHI = Philippines
-		if = {
-			limit = {
-				OR = {
-					is_core_of = PHI
-					is_claimed_by = PHI
-					region = 160 # Philippines
-					state = 828 # Sabah
-				}
-			}
-			set_variable = { ambition_area_@PHI = 1 }
 		}
 		# POL = Poland
 		if = {
@@ -1212,52 +525,6 @@ create_ambition_areas = {
 			}
 			set_variable = { ambition_area_@POL = 1 }
 		}
-		# POR = Portugal
-		if = {
-			limit = {
-				OR = {
-					is_core_of = POR
-					is_claimed_by = POR
-					state = 112 #Lisbon
-					state = 179 #Beja
-					state = 180 #Porto
-					state = 181 #Guarda
-					is_portuguese_colonial_claim = yes
-					#Pink Map
-					state = 545 #Rhodesia
-					state = 957 #Western Barotseland
-					state = 958 #Eastern Barotseland
-					state = 813 #South Zambezia
-					state = 956 #North Zambezia
-					state = 955 #East Zambezia
-					state = 871 #Nyasaland
-				}
-			}
-			set_variable = { ambition_area_@POR = 1 }
-		}
-		# PRF = Princely Federation
-		if = {
-			limit = {
-				OR = {
-					is_core_of = PRF
-					is_claimed_by = PRF
-					region = 101 #Bay of Bengal
-					region = 31 #Southern India
-					region = 141 #Eastern India
-					region = 153 #Northern India
-					region = 195 #Burma
-					region = 60 #West Indian Ocean
-					state = 323 #Nepal
-					state = 324 #Bhutan
-					state = 441 #Kashmir
-					state = 814 #Uttarakhand
-					state = 858 #Tawang
-					state = 888 #Sikkim
-					state = 890 #Shimla
-				}
-			}
-			set_variable = { ambition_area_@PRF = 1 }
-		}
 		# QIE = Qing Empire
 		if = {
 			limit = {
@@ -1269,36 +536,6 @@ create_ambition_areas = {
 				}
 			}
 			set_variable = { ambition_area_@QIE = 1 }
-		}
-		# ROM = Romania
-		if = {
-			limit = {
-				OR = {
-					is_core_of = ROM
-					is_claimed_by = ROM
-					region = 144 #Transylvania
-					state = 77 #Silistra
-					state = 80 #Cernauti
-					state = 713 #Suceava
-					state = 772 #Dobrudja
-				}
-			}
-			set_variable = { ambition_area_@ROM = 1 }
-		}
-		# RRM = Royalist Romania
-		if = {
-			limit = {
-				OR = {
-					is_core_of = RRM
-					is_claimed_by = RRM
-					region = 144 #Transylvania
-					state = 77 #Silistra
-					state = 80 #Cernauti
-					state = 772 #Dobrudja
-					state = 713 #Suceava
-				}
-			}
-			set_variable = { ambition_area_@RRM = 1 }
 		}
 		# RUS = Russia
 		if = {
@@ -1341,206 +578,6 @@ create_ambition_areas = {
 			}
 			set_variable = { ambition_area_@RUS = 1 }
 		}
-		# SAF = South Africa
-		if = {
-			limit = {
-				OR = {
-					is_core_of = SAF
-					is_claimed_by = SAF
-					region = 139 #South Africa
-				}
-			}
-			set_variable = { ambition_area_@SAF = 1 }
-		}
-		# SAR = Sarawak
-		if = {
-			limit = {
-				OR = {
-					is_core_of = SAR
-					is_claimed_by = SAR
-					region = 159 # Borneo
-				}
-			}
-			set_variable = { ambition_area_@SAR = 1 }
-		}
-		# SAU = Nejd
-		if = {
-			limit = {
-				OR = {
-					is_core_of = SAU
-					is_claimed_by = SAU
-					region = 187 #Northern Arabia
-					region = 240 #Southern Arabia
-					region = 28 #Syria
-					region = 239 #Mesopotamia
-					state = 352 #Van
-					state = 350 #Diyarbarkir
-					state = 753 #Suez
-				}
-			}
-			set_variable = { ambition_area_@SAU = 1 }
-		}
-		# SCA = Scandinavia
-		if = {
-			limit = {
-				OR = {
-					is_core_of = SCA
-					is_claimed_by = SCA
-					region = 11
-					region = 10
-					region = 12
-					region = 13
-					region = 9
-					region = 45
-					state = 37
-					state = 99
-					state = 782
-					state = 839
-				}
-			}
-			set_variable = { ambition_area_@SCA = 1 }
-		}
-		# SCT = Scotland
-		if = {
-			limit = {
-				OR = {
-					is_core_of = SCT
-					is_claimed_by = SCT
-					region = 3
-				}
-			}
-			set_variable = { ambition_area_@SCT = 1 }
-		}
-		# SER = Serbia
-		if = {
-			limit = {
-				OR = {
-					is_core_of = SER
-					is_claimed_by = SER
-					region = 24 #Southern Balkans
-					region = 26 #Bulgaria
-					region = 143 #Northern Balkans
-					state = 45 #Vajdasag
-					state = 102 #Slovenia
-					state = 184 #Western Thrace
-					state = 731 #Western Salonica
-					state = 736 #Istria
-					state = 769 #Eastern Salonica
-					state = 875 #Nyugat-Bansag
-					state = 989 #Chalcidice
-				}
-			}
-			set_variable = { ambition_area_@SER = 1 }
-		}
-		# SIA = Siam
-		if = {
-			limit = {
-				OR = {
-					is_core_of = SIA
-					is_claimed_by = SIA
-					### Siamese Proper ###
-					region = 142 #Siam - the Chao Phraya river plateau
-					state = 724 # Kra Isthmus
-					state = 830 # Pattani
-					state = 831 # Moulmein
-					state = 751 # Upper Malay/Sirat Malai
-					state = 756 # Kengtung
-					state = 999 # Syburi
-					### Historical Claim + Phibun era map ### - Keep Vietnam and Burma heartland out
-					state = 72 # Taunggyi
-					state = 831 # Moulmein/Thaton
-					state = 831 # Laos
-					state = 750 # Phnom Penh
-					state = 826 # Stung Treng
-					state = 856 # Mekong Delta - "Putthaimart" claim
-					state = 286 # Saigon (more like using Cambodian claim here based from those nationalist map, but whatever)
-					### Extended Claim ###
-					state = 846 # Malaya (as Pahang isn't seperate state in KR yet)
-					state = 336 # Singapur
-				}
-			}
-			set_variable = { ambition_area_@SIA = 1 }
-		}
-		# SIK = Xinjiang Clique
-		if = {
-			limit = {
-				OR = {
-					is_core_of = SIK
-					is_claimed_by = SIK
-					region = 221 #Xinjiang
-				}
-			}
-			set_variable = { ambition_area_@SIK = 1 }
-		}
-		# SLO = Slovenia
-		if = {
-			limit = {
-				OR = {
-					is_core_of = SLO
-					is_claimed_by = SLO
-					state = 736 #Istria
-					state = 835 #Carinthia
-				}
-			}
-			set_variable = { ambition_area_@SLO = 1 }
-		}
-		# SOV = Russian Socialist Republic
-		if = {
-			limit = {
-				OR = {
-					is_core_of = RUS
-					is_claimed_by = RUS
-					state = 147 #Kuoalajarvi
-					state = 148 #Lapland
-					region = 13 #Finland
-					region = 132 #Northern Front
-					region = 37 #Baltic States
-					region = 39 #Belarus
-					region = 130 #Western Ukraine
-					region = 165 #Eastern Ukraine
-					state = 78 #Bessarabia
-					state = 80 #Cernauti
-					state = 773 #Constantinople
-					state = 347 #Gallipoli
-					region = 135 #Kuban
-					region = 134 #Caucasus
-					region = 136 #Great Steppes
-					region = 218 #N. Manchuria
-					region = 219 #S. Manchuria
-					region = 148 #Amur
-					region = 87 #Sea of Ohstk
-					region = 149 #Eastern Siberia
-					region = 147 #Northern Siberia
-					region = 151 #Western Siberia
-					region = 14 #Trans-Urals
-					region = 138 #Ural
-					region = 137 #Western Steppe
-					region = 40 #Transvolga
-					region = 150 #Arctic Russia
-					region = 133 #Central Russia
-					region = 235 #Central Siberia
-					region = 234 #Arkhangelsk
-				}
-			}
-			set_variable = { ambition_area_@SOV = 1 }
-		}
-		# SPR = Spain
-		if = {
-			limit = {
-				OR = {
-					is_core_of = SPR
-					is_claimed_by = SPR
-					region = 41 #Eastern Iberia
-					region = 236 #Southern Iberia
-					region = 237 #Western Iberia
-					region = 189 #North Africa
-					region = 140 #Central Africa
-					state = 984 #Pyrennes
-					state = 817 #Rousillon
-				}
-			}
-			set_variable = { ambition_area_@SPR = 1 }
-		}
 		# SRI = Socialist Republic of Italy
 		if = {
 			limit = {
@@ -1561,13 +598,6 @@ create_ambition_areas = {
 				}
 			}
 			set_variable = { ambition_area_@SRI = 1 }
-		}
-		# SVK = Slovakia
-		if = {
-			limit = {
-				region = 145 #Slovakia
-			}
-			set_variable = { ambition_area_@SVK = 1 }
 		}
 		# SWE = Sweden
 		if = {
@@ -1591,32 +621,6 @@ create_ambition_areas = {
 			}
 			set_variable = { ambition_area_@SWE = 1 }
 		}
-		# SWI = Switzerland
-		if = {
-			limit = {
-				OR = {
-					is_core_of = SWI
-					is_claimed_by = SWI
-					region = 131 #Switzerland
-					state = 942 #Vorarlberg
-					state = 943 #Haute-Savoie
-					state = 735 #Savoie
-					state = 1003 #Valle d'Aosta
-				}
-			}
-			set_variable = { ambition_area_@SWI = 1 }
-		}
-		# SYR = Syria
-		if = {
-			limit = {
-				OR = {
-					is_core_of = SYR
-					is_claimed_by = SYR
-					region = 28 #Syria
-				}
-			}
-			set_variable = { ambition_area_@SYR = 1 }
-		}
 		# TRK = Turkestan
 		if = {
 			limit = {
@@ -1628,41 +632,6 @@ create_ambition_areas = {
 				}
 			}
 			set_variable = { ambition_area_@TRK = 1 }
-		}
-		# TRS = Transylvania
-		if = {
-			limit = {
-				region = 144 #Transylvania
-			}
-			set_variable = { ambition_area_@TRS = 1 }
-		}
-		# TRV = Travancore
-		if = {
-			limit = {
-				OR = {
-					is_core_of = TRV
-					is_claimed_by = TRV
-					region = 31 #Southern India
-				}
-			}
-			set_variable = { ambition_area_@TRV = 1 }
-		}
-		# TUR = Turkey
-		if = {
-			limit = {
-				OR = {
-					is_core_of = TUR
-					is_claimed_by = TUR
-					region = 129 #Asia Minor
-					region = 69 #Eastern Med
-					state = 773 #Constantinople
-					state = 341 #Edirne
-					state = 347 #Gelibolu
-					state = 184 #Eastern Macedonia
-					state = 187 #Ionian Islands
-				}
-			}
-			set_variable = { ambition_area_@TUR = 1 }
 		}
 		# UKR = Ukraine
 		if = {
@@ -1712,23 +681,6 @@ create_ambition_areas = {
 			}
 			set_variable = { ambition_area_@USA = 1 }
 		}
-		# VIE = Vietnam
-		if = {
-			limit = {
-				OR = {
-					is_core_of = VIE
-					is_claimed_by = VIE
-					### Historical goal ###
-					region = 196 # Indochina Proper - Vietnam tried to pursue this historically
-					state = 825 # Battambong
-					state = 882 # Xianyabouli
-					### Further claim (a.k.a. pushing Laotian and Cambodian claim) ###
-					state = 823 # Isan
-					state = 824 # Rayong
-				}
-			}
-			set_variable = { ambition_area_@VIE = 1 }
-		}
 		# VEN = Venezuela
 		if = {
 			limit = {
@@ -1747,19 +699,6 @@ create_ambition_areas = {
 				}
 			}
 			set_variable = { ambition_area_@VEN = 1 }
-		}
-		# WAL = Wallonia
-		if = {
-			limit = {
-				OR = {
-					is_core_of = WAL
-					is_claimed_by = WAL
-					state = 34
-					state = 741
-					state = 8
-				}
-			}
-			set_variable = { ambition_area_@WAL = 1 }
 		}
 	}
 }

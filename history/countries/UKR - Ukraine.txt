@@ -26,9 +26,6 @@ set_technology = {
 	naval_bomber1 = 1
 	tactical_bomber1 = 1
 	CAS1 = 1
-	cv_early_fighter = 1
-	cv_naval_bomber1 = 1
-	cv_CAS1 = 1
 }
 
 ### Navy - MtG ###
@@ -150,6 +147,11 @@ add_ideas = {
 	Hetman_Army
 	pp_idea
 	language_issue
+	peace_training
+}
+give_resource_rights = {
+	receiver = GER
+	state = 46
 }
 
 create_country_leader = {

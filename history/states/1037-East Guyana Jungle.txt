@@ -2,7 +2,7 @@ state = {
 	id = 1037
 	name = "STATE_1037"
 	history = {
-		owner = CAN
+		owner = NFA
 		buildings = {
 			infrastructure = 1
 		}

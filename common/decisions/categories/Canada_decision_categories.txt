@@ -21,7 +21,6 @@ CAN_kings_influence_decisions = {
 			tag = AST
 			tag = DEH
 			tag = GBR
-			tag = SAF
 		}
 	}
 	visible = {

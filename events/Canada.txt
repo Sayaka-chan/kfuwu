@@ -4582,16 +4582,6 @@ country_event = {
 			else_if = {
 				limit = {
 					is_faction_leader = yes
-					SOV = {
-						is_in_faction_with = ENG
-						has_capitulated = no
-					}
-				}
-				SOV = { set_faction_leader = yes }
-			}
-			else_if = {
-				limit = {
-					is_faction_leader = yes
 					any_country = {
 						is_actual_major = yes
 						is_in_faction_with = ENG

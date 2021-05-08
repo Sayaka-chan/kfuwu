@@ -65,7 +65,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_fem_reform
-		icon = GFX_goal_japanese_democracy
+		icon = GFX_goal_JAP_tokyo_conf
 		prerequisite = {
 			focus = JAP_democratic_path
 		}
@@ -103,7 +103,6 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_tech_team"
 			add_research_slot = 1
 			add_ideas = JAP_DEM_SCI_idea
-			add_ideas = JAP_DEM_fem_idea
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -120,13 +119,51 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = JAP_tech_team
-		cost = 5
+		cost = 10
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_small_rail"
-			hidden_effect = {
-				add_ideas = JAP_change_rail
+			528 = {
+				set_building_level = {
+					type = infrastructure
+					level = 10
+				}
 			}
-			custom_effect_tooltip = small_rail
+			282 = {
+				set_building_level = {
+					type = infrastructure
+					level = 10
+				}
+			}
+			535 = {
+				set_building_level = {
+					type = infrastructure
+					level = 6
+				}
+			}
+			534 = {
+				set_building_level = {
+					type = infrastructure
+					level = 6
+				}
+			}
+			533 = {
+				set_building_level = {
+					type = infrastructure
+					level = 5
+				}
+			}
+			536 = {
+				set_building_level = {
+					type = infrastructure
+					level = 5
+				}
+			}
+			530 = {
+				set_building_level = {
+					type = infrastructure
+					level = 5
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
@@ -234,6 +271,73 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
+	focus = {
+		id = JAP_manchu_aluminium
+		icon = GFX_goal_generic_production
+		prerequisite = {
+			focus = JAP_need_oil
+		}
+		x = 0
+		y = 1
+		relative_position_id = JAP_need_oil
+		cost = 5
+		completion_reward = {
+			if = {
+				limit = { controls_state = 715 }
+				add_resource = {
+					type = aluminium
+					amount = 24
+					state = 715
+				}
+			}
+		}
+	}
+	focus = {
+		id = JAP_china_aluminium
+		icon = GFX_goal_generic_production
+		prerequisite = {
+			focus = JAP_manchu_aluminium
+		}
+		x = 0
+		y = 1
+		relative_position_id = JAP_manchu_aluminium
+		cost = 5
+		completion_reward = {
+			add_resource = {
+				type = aluminium
+				amount = 12
+				state = 1050
+			}
+			add_resource = {
+				type = aluminium
+				amount = 8
+				state = 606
+			}
+		}
+	}
+	focus = {
+		id = JAP_china_steel
+		icon = GFX_goal_generic_production
+		prerequisite = {
+			focus = JAP_china_aluminium
+		}
+		x = 1
+		y = 1
+		relative_position_id = JAP_china_aluminium
+		cost = 5
+		completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 14
+				state = 1050
+			}
+			add_resource = {
+				type = steel
+				amount = 12
+				state = 606
+			}
+		}
+	}
 
 	focus = {
 		id = JAP_industrial_reform
@@ -247,7 +351,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = JAP_tech_team
-		cost = 5
+		cost = 10
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_industrial_reform"
 			remove_ideas = JAP_bad_land
@@ -262,7 +366,7 @@ focus_tree = {
 	##################################
 
 	focus = {
-		id = JAP_NAT
+		id = JAP_NAT_ECO
 		icon = GFX_goal_state_economy
 		prerequisite = {
 			focus = JAP_industrial_reform
@@ -300,7 +404,7 @@ focus_tree = {
 		id = JAP_NAT_ZAI
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = {
-			focus = JAP_NAT
+			focus = JAP_NAT_ECO
 		}
 		available = {
 			OR = {
@@ -314,7 +418,7 @@ focus_tree = {
 		}
 		x = -1
 		y = 1
-		relative_position_id = JAP_NAT
+		relative_position_id = JAP_NAT_ECO
 		cost = 5
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_NAT_ZAI"
@@ -342,7 +446,7 @@ focus_tree = {
 		id = JAP_NAT_AIR
 		icon = GFX_goal_generic_build_airforce
 		prerequisite = {
-			focus = JAP_NAT
+			focus = JAP_NAT_ECO
 		}
 		available = {
 			OR = {
@@ -355,7 +459,7 @@ focus_tree = {
 		}
 		x = 1
 		y = 1
-		relative_position_id = JAP_NAT
+		relative_position_id = JAP_NAT_ECO
 		cost = 5
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_NAT_AIR"
@@ -441,7 +545,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_MIL_start_1
-		icon = GFX_focus_AST_war_japan
+		icon = GFX_JAP_MIL_start_1
 		ai_will_do = {
 			factor = 100
 		}
@@ -503,6 +607,7 @@ focus_tree = {
 			}
 			custom_effect_tooltip = mil_choose_Nagata
 			JAP_increase_army_bias = yes
+			custom_effect_tooltip = "increases military bias"
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -533,6 +638,7 @@ focus_tree = {
 					}
 				}
 			}
+			custom_effect_tooltip = "increases military bias"
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -570,6 +676,7 @@ focus_tree = {
 					}
 				}
 			}
+			custom_effect_tooltip = "increases military bias"
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -608,13 +715,14 @@ focus_tree = {
 					}
 				}
 			}
+			custom_effect_tooltip = "increases military bias"
 		}
 		search_filters = { FOCUS_FILTER_ARMY_BONUS }
 	}
 
 	focus = {
 		id = JAP_MIL_DOC_FIR5
-		icon = GFX_goal_generic_occupy_start_war
+		icon = GFX_goal_japan_helmet
 		prerequisite = {
 			focus = JAP_MIL_DOC_FIR3
 		}
@@ -652,6 +760,7 @@ focus_tree = {
 					}
 				}
 			}
+			custom_effect_tooltip = "increases military bias"
 		}
 		search_filters = { FOCUS_FILTER_ARMY_BONUS }
 	}
@@ -690,12 +799,13 @@ focus_tree = {
 					}
 				}
 			}
+			custom_effect_tooltip = "increases military bias"
 		}
 		search_filters = { FOCUS_FILTER_ARMY_BONUS }
 	}
 	focus = {
 		id = JAP_invasion
-		icon = missing
+		icon = GFX_goal_Japanese_Glory
 		cost = 5
 		prerequisite = {
 			focus = JAP_MIL_DOC_MOB4
@@ -711,8 +821,31 @@ focus_tree = {
 				uses = 2
 				category = tp_tech
 			}
+			JAP_increase_army_bias = yes
+			custom_effect_tooltip = "increases military bias"
 		}
 	}
+	focus = {
+		id = JAP_jungle_1
+		icon = GFX_goal_Japanese_Glory
+		cost = 5
+		prerequisite = {
+			focus = JAP_MIL_DOC_FIR5
+		}
+		x = 0
+		y = 1
+		relative_position_id = JAP_MIL_DOC_FIR5
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus JAP_jungle_1"
+			custom_effect_tooltip = SIA_jungle_warfare_effect
+			hidden_effect = {
+				set_technology = { jungle_warfare = 1 }
+			}
+			JAP_increase_army_bias = yes
+			custom_effect_tooltip = "increases military bias"
+		}
+	}
+
 
 	########################
 	### Military - Naval ###
@@ -720,7 +853,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_MIL_naval_start
-		icon = GFX_goal_generic_build_navy
+		icon = GFX_JAP_MIL_naval_start
 		prerequisite = {
 			focus = JAP_MIL_start_2
 		}
@@ -751,6 +884,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			custom_effect_tooltip = "increases navy bias"
 		}
 		search_filters = { FOCUS_FILTER_NAVY_BONUS }
 	}
@@ -777,6 +911,7 @@ focus_tree = {
 				category = marine_tech
 			}
 			JAP_increase_naval_bias = yes
+			custom_effect_tooltip = "increases navy bias"
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -820,6 +955,7 @@ focus_tree = {
 				}
 			}
 			JAP_increase_naval_bias = yes
+			custom_effect_tooltip = "increases navy bias"
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
@@ -860,8 +996,23 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			custom_effect_tooltip = "increases navy bias"
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = JAP_ship_attack
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = {
+			focus = JAP_MIL_BIG_SHIPS
+		}
+		x = 0
+		y = 1
+		relative_position_id = JAP_MIL_BIG_SHIPS
+		cost = 5
+		completion_reward = {
+			add_ideas = JAP_capital
+		}
 	}
 
 	focus = {
@@ -887,6 +1038,7 @@ focus_tree = {
 				category = cl_tech
 			}
 			JAP_increase_naval_bias = yes
+			custom_effect_tooltip = "increases navy bias"
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -913,6 +1065,7 @@ focus_tree = {
 				category = ss_tech
 			}
 			JAP_increase_naval_bias = yes
+			custom_effect_tooltip = "increases navy bias"
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -942,6 +1095,7 @@ focus_tree = {
 				category = naval_bomber
 			}
 			JAP_increase_naval_bias = yes
+			custom_effect_tooltip = "increases navy bias"
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -982,6 +1136,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			custom_effect_tooltip = "increases navy bias"
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -1008,6 +1163,7 @@ focus_tree = {
 				category = naval_doctrine
 			}
 			JAP_increase_naval_bias = yes
+			custom_effect_tooltip = "increases navy bias"
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -1018,7 +1174,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_MIL_air_start
-		icon = GFX_goal_generic_build_airforce
+		icon = GFX_goal_japanese_officer
 		prerequisite = {
 			focus = JAP_MIL_start_2
 		}
@@ -1173,7 +1329,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_go_south #Nanshin-ron
-		icon = GFX_goal_generic_navy_battleship
+		icon = GFX_JAP_sakura_tree
 		prerequisite = {
 			focus = JAP_fight_giants
 		}
@@ -1185,22 +1341,16 @@ focus_tree = {
 		relative_position_id = JAP_fight_giants
 		cost = 0
 		completion_reward = {
+			set_variable={Global.super_event=1}
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_go_south"
 			custom_effect_tooltip = war_in_the_east_tooltip
 			JAP={declare_war_on = { target = CAN type = annex_everything }}
 			JAP={declare_war_on = { target = GER type = annex_everything }}
+			JAP={declare_war_on = { target = GEA type = annex_everything }}
 			JAP={declare_war_on = { target = USA type = annex_everything }}
 			JAP={declare_war_on = { target = DEH type = annex_everything }}
 			JAP={declare_war_on = { target = NFA type = annex_everything }}
 			JAP={declare_war_on = { target = AST type = annex_everything }}
-			add_dynamic_modifier={modifier=pacific_war}
-			USA={add_dynamic_modifier={modifier=pacific_war}}
-			CAN={add_dynamic_modifier={modifier=pacific_war}}
-			GER={add_dynamic_modifier={modifier=pacific_war_minor}}
-			every_country={
-				limit={is_in_faction_with=CAN NOT={original_tag=USA} NOT={original_tag=CAN}}
-				add_dynamic_modifier={modifier=pacific_war_minor}
-			}
 		}
 	}
 	#################################

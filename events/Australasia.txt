@@ -256,12 +256,6 @@ country_event = {
 			ideology = market_liberal
 			popularity = 0.20
 		}
-		add_ideas = {
-			AST_Earle_Page_hog_mli
-			AST_Percy_C_Spender_for_mli
-			AST_Eric_J_Harrison_eco_mli
-			AST_Harold_Thorby_sec_mli
-		}
 		hidden_effect = {
 			country_event = { id = austral.11 days = 1 } #New Guard election results
 			country_event = { id = austral.12 days = 3 } #Replace Birdwood?
@@ -1425,42 +1419,6 @@ country_event = {
 		name = austral.37.a #We have no choice but to agree
 		set_country_flag = AST_uap_in_coalition
 		increase_ruling_party_popularity_by_5 = yes
-		remove_ideas_with_trait = economy_minister
-		if = {
-			limit = {
-				has_government = social_conservative
-			}
-			add_ideas = {
-				AST_Eric_J_Harrison_eco_mli
-			}
-			else = {
-				if = {
-					limit = {
-						has_country_flag = Joseph_A_Lyons_dead
-					}
-					add_ideas = AST_Archibald_C_Blacklow_eco_sco
-					else = {
-						add_ideas = {
-							AST_Joseph_A_Lyons_eco_sco
-						}
-					}
-				}
-			}
-		}
-		remove_ideas_with_trait = security_minister
-		if = {
-			limit = {
-				has_government = social_conservative
-			}
-			add_ideas = {
-				AST_Harold_Thorby_sec_mli
-			}
-			else = {
-				add_ideas = {
-					AST_George_F_Pearce_sec_sco
-				}
-			}
-		}
 	}
 	option = {
 		name = austral.37.b #No - we will stick to our principles, no matter what
@@ -1718,41 +1676,6 @@ country_event = {
 			ideology = social_conservative
 			popularity = 0.20
 		}
-		if = {
-			limit = {
-				has_country_flag = AST_uap_in_coalition
-			}
-			add_ideas = {
-				AST_Stanley_M_Bruce_hog_sco
-				AST_Earle_Page_for_mli
-				AST_Archibald_C_Blacklow_eco_sco
-				AST_Archdale_Parkhill_sec_sco
-			}
-			else = {
-				add_ideas = {
-					AST_Stanley_M_Bruce_hog_sco
-				}
-				add_ideas = {
-					AST_Enid_M_Lyons_for_sco
-				}
-				if = {
-					limit = {
-						has_country_flag = Joseph_A_Lyons_dead
-					}
-					add_ideas = {
-						AST_Archibald_C_Blacklow_eco_sco
-					}
-					else = {
-						add_ideas = {
-							AST_Joseph_A_Lyons_eco_sco
-						}
-					}
-				}
-				add_ideas = {
-					AST_Archdale_Parkhill_sec_sco
-				}
-			}
-		}
 		hidden_effect = {
 			country_event = {
 				id = austral.51
@@ -1797,25 +1720,6 @@ country_event = {
 			ideology = market_liberal
 			popularity = 0.20
 		}
-		if = {
-			limit = {
-				has_country_flag = AST_uap_in_coalition
-			}
-			add_ideas = {
-				AST_Earle_Page_hog_mli
-				AST_Enid_M_Lyons_for_sco
-				AST_Arthur_W_Fadden_eco_mli
-				AST_Archdale_Parkhill_sec_sco
-			}
-			else = {
-				add_ideas = {
-					AST_Earle_Page_hog_mli
-					AST_Percy_C_Spender_for_mli
-					AST_Arthur_W_Fadden_eco_mli
-					AST_Harold_Thorby_sec_mli
-				}
-			}
-		}
 		hidden_effect = {
 			country_event = {
 				id = austral.51
@@ -1858,12 +1762,6 @@ country_event = {
 		add_popularity = {
 			ideology = national_populist
 			popularity = 0.20
-		}
-		add_ideas = {
-			AST_Eric_Campbell_hog_npo
-			AST_John_F_Dynon_for_npo
-			AST_Hubert_L_Primrose_eco_npo
-			AST_Thomas_Blamey_sec_npo
 		}
 		hidden_effect = {
 			random_other_country = {
@@ -1943,12 +1841,6 @@ country_event = {
 			picture = "Portrait_AST_Thomas_Blamey.tga"
 			expire = "1965.1.1"
 			ideology = national_populist_subtype
-		}
-		add_ideas = {
-			AST_Eric_Campbell_hog_npo
-			AST_John_F_Dynon_for_npo
-			AST_Hubert_L_Primrose_eco_npo
-			AST_Thomas_Blamey_sec_npo
 		}
 		add_ideas = AST_new_unrest
 		set_politics = {
@@ -2053,46 +1945,6 @@ country_event = {
 			ideology = social_conservative
 			popularity = 0.20
 		}
-		if = {
-			limit = {
-				has_country_flag = AST_menzies_leads_uap
-			}
-			add_ideas = {
-				AST_Robert_G_Menzies_hog_sco
-			}
-			else = {
-				if = {
-					limit = {
-						has_country_flag = AST_holland_leads_uap
-					}
-					add_ideas = {
-						AST_Sidney_G_Holland_hog_sco
-					}
-					else = {
-						add_ideas = {
-							AST_Stanley_M_Bruce_hog_sco
-						}
-					}
-				}
-			}
-		}
-		if = {
-			limit = {
-				has_country_flag = AST_uap_in_coalition
-			}
-			add_ideas = {
-				AST_Earle_Page_for_mli
-				AST_Robert_G_Menzies_eco_sco
-				AST_Harold_Thorby_sec_mli
-			}
-			else = {
-				add_ideas = {
-					AST_Enid_M_Lyons_for_sco
-					AST_Robert_G_Menzies_eco_sco
-					AST_Archdale_Parkhill_sec_sco
-				}
-			}
-		}
 	}
 	option = {
 		name = austral.53.b #The Country Party wins a slim majority
@@ -2115,60 +1967,6 @@ country_event = {
 		add_popularity = {
 			ideology = market_liberal
 			popularity = 0.20
-		}
-		if = {
-			limit = {
-				has_country_flag = AST_fadden_leads_acp
-			}
-			add_ideas = {
-				AST_Arthur_W_Fadden_hog_mli
-			}
-			else = {
-				add_ideas = {
-					AST_Earle_Page_hog_mli
-				}
-			}
-		}
-		if = {
-			limit = {
-				has_country_flag = AST_uap_in_coalition
-			}
-			if = {
-				limit = {
-					has_country_flag = Earle_Page_dead
-				}
-				add_ideas = {
-					AST_Percy_C_Spender_for_mli
-				}
-				else = {
-					add_ideas = {
-						AST_Earle_Page_for_mli
-					}
-				}
-			}
-			add_ideas = {
-				AST_Harold_E_Holt_eco_sco
-				AST_Archdale_Parkhill_sec_sco
-			}
-			else = {
-				if = {
-					limit = {
-						has_country_flag = Earle_Page_dead
-					}
-					add_ideas = {
-						AST_Percy_C_Spender_for_mli
-					}
-					else = {
-						add_ideas = {
-							AST_Earle_Page_for_mli
-						}
-					}
-				}
-				add_ideas = {
-					AST_Arthur_W_Fadden_eco_mli
-					AST_Harold_Thorby_sec_mli
-				}
-			}
 		}
 	}
 	option = {
@@ -2197,12 +1995,6 @@ country_event = {
 			ideology = authoritarian_democrat
 			popularity = 0.20
 		}
-		add_ideas = {
-			AST_William_M_Hughes_hog_ade
-			AST_Vernon_AH_Sturdee_for_ade
-			AST_James_Mitchell_eco_ade
-			AST_Thomas_W_White_sec_ade
-		}
 	}
 	option = {
 		name = austral.53.f #Lang Labor wins the day!
@@ -2228,12 +2020,6 @@ country_event = {
 		add_popularity = {
 			ideology = social_liberal
 			popularity = 0.20
-		}
-		add_ideas = {
-			AST_Jack_T_Lang_hog_sli
-			AST_John_A_Beasley_for_sli
-			AST_Daniel_Mulcahy_eco_sli
-			AST_Edward_J_Ward_sec_sli
 		}
 	}
 }
@@ -3688,89 +3474,8 @@ country_event = {
 }
 
 # Economic development in the Carribean Federation due to Australasian trade
-country_event = {
-	id = austral.208
-	title = austral.208.t
-	desc = austral.208.d
-	picture = GFX_report_event_AST_melbourne
-
-	fire_only_once = yes
-
-	trigger = {
-		tag = CAF
-		controls_all_owned_states = yes
-		has_country_flag = AST_accepted_trade
-		is_in_faction_with = AST
-	}
-
-	mean_time_to_happen = {
-		months = 6
-	}
-
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event austral.208"
-		clr_country_flag = AST_accepted_trade
-	}
-
-	option = {
-		name = austral.208.a
-		add_political_power = 20
-		capital_scope = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
-		}
-	}
-}
 
 # Economic development in Cape Town due to Australasian trade
-country_event = {
-	id = austral.209
-	title = austral.209.t
-	desc = austral.209.d
-	picture = GFX_report_event_AST_melbourne
-
-	fire_only_once = yes
-
-	trigger = {
-		tag = SAF
-		681 = {
-			is_owned_and_controlled_by = SAF
-			} #Cape Town
-		has_country_flag = AST_accepted_trade
-		is_in_faction_with = AST
-	}
-
-	mean_time_to_happen = {
-		months = 6
-	}
-
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event austral.209"
-		clr_country_flag = AST_accepted_trade
-	}
-
-	option = {
-		name = austral.209.a
-		add_political_power = 20
-		681 = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = yes
-			}
-		}
-	}
-}
 
 # Growth of American trade in Australasia
 country_event = {
@@ -4111,7 +3816,7 @@ country_event = {
 	option = {
 		name = AI_OPTION #Vote YES
 		ai_chance = {
-			factor = 75
+			factor = 100
 			modifier = {
 				factor = 1.4
 				AST = {
@@ -4121,15 +3826,6 @@ country_event = {
 		}
 		AST = {
 			country_event = austral.217
-		}
-	}
-	option = {
-		name = AI_OPTION #Vote NO
-		ai_chance = {
-			factor = 25
-		}
-		AST = {
-			country_event = austral.218
 		}
 	}
 }
@@ -4149,25 +3845,6 @@ country_event = {
 		modify_country_flag = {
 			flag = AST_plebiscite
 			value = 1
-		}
-	}
-}
-
-# New South Wales votes no
-country_event = {
-	id = austral.218
-	immediate = { log = "[GetDateText]: [Root.GetName]: event austral.218" }
-	title = austral.218.t
-	desc = austral.218.d
-	picture = GFX_report_event_AST_sydney
-
-	is_triggered_only = yes
-
-	option = {
-		name = austral.218.a
-		modify_country_flag = {
-			flag = AST_plebiscite
-			value = -1
 		}
 	}
 }
@@ -4192,7 +3869,7 @@ country_event = {
 	option = {
 		name = AI_OPTION #Vote YES
 		ai_chance = {
-			factor = 60
+			factor = 100
 			modifier = {
 				factor = 1.4
 				AST = {
@@ -4202,15 +3879,6 @@ country_event = {
 		}
 		AST = {
 			country_event = austral.220
-		}
-	}
-	option = {
-		name = AI_OPTION #Vote NO
-		ai_chance = {
-			factor = 40
-		}
-		AST = {
-			country_event = austral.221
 		}
 	}
 }
@@ -4230,25 +3898,6 @@ country_event = {
 		modify_country_flag = {
 			flag = AST_plebiscite
 			value = 1
-		}
-	}
-}
-
-# Northern Territory votes no
-country_event = {
-	id = austral.221
-	immediate = { log = "[GetDateText]: [Root.GetName]: event austral.221" }
-	title = austral.221.t
-	desc = austral.221.d
-	picture = GFX_report_event_AST_conscription
-
-	is_triggered_only = yes
-
-	option = {
-		name = austral.218.a
-		modify_country_flag = {
-			flag = AST_plebiscite
-			value = -1
 		}
 	}
 }
@@ -4273,7 +3922,7 @@ country_event = {
 	option = {
 		name = AI_OPTION #Vote YES
 		ai_chance = {
-			factor = 75
+			factor = 100
 			modifier = {
 				factor = 1.4
 				AST = {
@@ -4283,15 +3932,6 @@ country_event = {
 		}
 		AST = {
 			country_event = austral.223
-		}
-	}
-	option = {
-		name = AI_OPTION #Vote NO
-		ai_chance = {
-			factor = 25
-		}
-		AST = {
-			country_event = austral.224
 		}
 	}
 }
@@ -4311,25 +3951,6 @@ country_event = {
 		modify_country_flag = {
 			flag = AST_plebiscite
 			value = 1
-		}
-	}
-}
-
-# Western Australia votes no
-country_event = {
-	id = austral.224
-	immediate = { log = "[GetDateText]: [Root.GetName]: event austral.224" }
-	title = austral.224.t
-	desc = austral.224.d
-	picture = GFX_report_event_AST_conscription
-
-	is_triggered_only = yes
-
-	option = {
-		name = austral.218.a
-		modify_country_flag = {
-			flag = AST_plebiscite
-			value = -1
 		}
 	}
 }
@@ -4354,7 +3975,7 @@ country_event = {
 	option = {
 		name = AI_OPTION #Vote YES
 		ai_chance = {
-			factor = 60
+			factor = 100
 			modifier = {
 				factor = 1.4
 				AST = {
@@ -4364,15 +3985,6 @@ country_event = {
 		}
 		AST = {
 			country_event = austral.226
-		}
-	}
-	option = {
-		name = AI_OPTION #Vote NO
-		ai_chance = {
-			factor = 40
-		}
-		AST = {
-			country_event = austral.227
 		}
 	}
 }
@@ -4392,25 +4004,6 @@ country_event = {
 		modify_country_flag = {
 			flag = AST_plebiscite
 			value = 1
-		}
-	}
-}
-
-# South Australia votes no
-country_event = {
-	id = austral.227
-	immediate = { log = "[GetDateText]: [Root.GetName]: event austral.227" }
-	title = austral.227.t
-	desc = austral.227.d
-	picture = GFX_report_event_AST_conscription
-
-	is_triggered_only = yes
-
-	option = {
-		name = austral.218.a
-		modify_country_flag = {
-			flag = AST_plebiscite
-			value = -1
 		}
 	}
 }
@@ -4440,7 +4033,7 @@ country_event = {
 	option = {
 		name = AI_OPTION #Vote YES
 		ai_chance = {
-			factor = 75
+			factor = 100
 			modifier = {
 				factor = 1.4
 				AST = {
@@ -4450,15 +4043,6 @@ country_event = {
 		}
 		AST = {
 			country_event = austral.229
-		}
-	}
-	option = {
-		name = AI_OPTION #Vote NO
-		ai_chance = {
-			factor = 25
-		}
-		AST = {
-			country_event = austral.230
 		}
 	}
 }
@@ -4478,25 +4062,6 @@ country_event = {
 		modify_country_flag = {
 			flag = AST_plebiscite
 			value = 1
-		}
-	}
-}
-
-# Queensland votes no
-country_event = {
-	id = austral.230
-	immediate = { log = "[GetDateText]: [Root.GetName]: event austral.230" }
-	title = austral.230.t
-	desc = austral.230.d
-	picture = GFX_report_event_AST_conscription
-
-	is_triggered_only = yes
-
-	option = {
-		name = austral.218.a
-		modify_country_flag = {
-			flag = AST_plebiscite
-			value = -1
 		}
 	}
 }
@@ -4521,7 +4086,7 @@ country_event = {
 	option = {
 		name = AI_OPTION #Vote YES
 		ai_chance = {
-			factor = 80
+			factor = 100
 			modifier = {
 				factor = 1.4
 				AST = {
@@ -4531,15 +4096,6 @@ country_event = {
 		}
 		AST = {
 			country_event = austral.232
-		}
-	}
-	option = {
-		name = AI_OPTION #Vote NO
-		ai_chance = {
-			factor = 20
-		}
-		AST = {
-			country_event = austral.233
 		}
 	}
 }
@@ -4559,25 +4115,6 @@ country_event = {
 		modify_country_flag = {
 			flag = AST_plebiscite
 			value = 1
-		}
-	}
-}
-
-# Victoria votes no
-country_event = {
-	id = austral.233
-	immediate = { log = "[GetDateText]: [Root.GetName]: event austral.233" }
-	title = austral.233.t
-	desc = austral.233.d
-	picture = GFX_report_event_AST_melbourne
-
-	is_triggered_only = yes
-
-	option = {
-		name = austral.218.a
-		modify_country_flag = {
-			flag = AST_plebiscite
-			value = -1
 		}
 	}
 }
@@ -4602,7 +4139,7 @@ country_event = {
 	option = {
 		name = AI_OPTION #Vote YES
 		ai_chance = {
-			factor = 75
+			factor = 100
 			modifier = {
 				factor = 1.4
 				AST = {
@@ -4612,15 +4149,6 @@ country_event = {
 		}
 		AST = {
 			country_event = austral.235
-		}
-	}
-	option = {
-		name = AI_OPTION #Vote NO
-		ai_chance = {
-			factor = 25
-		}
-		AST = {
-			country_event = austral.236
 		}
 	}
 }
@@ -4640,25 +4168,6 @@ country_event = {
 		modify_country_flag = {
 			flag = AST_plebiscite
 			value = 1
-		}
-	}
-}
-
-# Tasmania votes no
-country_event = {
-	id = austral.236
-	immediate = { log = "[GetDateText]: [Root.GetName]: event austral.236" }
-	title = austral.236.t
-	desc = austral.236.d
-	picture = GFX_report_event_AST_conscription
-
-	is_triggered_only = yes
-
-	option = {
-		name = austral.218.a
-		modify_country_flag = {
-			flag = AST_plebiscite
-			value = -1
 		}
 	}
 }
@@ -4688,7 +4197,7 @@ country_event = {
 	option = {
 		name = AI_OPTION #Vote YES
 		ai_chance = {
-			factor = 30
+			factor = 100
 			modifier = {
 				factor = 2
 				AST = {
@@ -4698,15 +4207,6 @@ country_event = {
 		}
 		AST = {
 			country_event = austral.238
-		}
-	}
-	option = {
-		name = AI_OPTION #Vote NO
-		ai_chance = {
-			factor = 70
-		}
-		AST = {
-			country_event = austral.239
 		}
 	}
 }
@@ -4726,26 +4226,6 @@ country_event = {
 		modify_country_flag = {
 			flag = AST_plebiscite
 			value = 1
-		}
-	}
-}
-
-# New Zealand votes no
-country_event = {
-	id = austral.239
-	immediate = { log = "[GetDateText]: [Root.GetName]: event austral.239" }
-	title = austral.239.t
-	desc = austral.239.d
-	picture = GFX_report_event_AST_newzealand
-
-	is_triggered_only = yes
-
-	option = {
-		name = austral.218.a
-		set_country_flag = AST_NZL_voted_no
-		modify_country_flag = {
-			flag = AST_plebiscite
-			value = -1
 		}
 	}
 }
@@ -4811,67 +4291,6 @@ country_event = {
 		set_country_flag = AST_plebiscite_failed
 		add_political_power = -200
 		decrease_ruling_party_popularity_by_5 = yes
-	}
-}
-
-# New Zealand conscription riots
-country_event = {
-	id = austral.243
-	immediate = { log = "[GetDateText]: [Root.GetName]: event austral.243" }
-	title = austral.243.t
-	picture = GFX_report_event_AST_riot1
-
-	desc = {
-		text = austral.243.d.forced
-		trigger = {
-			has_country_flag = AST_plebiscite_forced
-		}
-	}
-	desc = {
-		text = austral.243.d.voted
-		trigger = {
-			NOT = {
-				has_country_flag = AST_plebiscite_forced
-			}
-		}
-	}
-
-	fire_only_once = yes
-
-	trigger = {
-		tag = AST
-		has_idea = limited_conscription
-		OR = {
-			284 = {
-				is_owned_and_controlled_by = AST
-			}
-			723 = {
-				is_owned_and_controlled_by = AST
-			}
-		}
-		OR = {
-			has_country_flag = AST_plebiscite_forced
-			has_country_flag = AST_NZL_voted_no
-		}
-	}
-
-	option = {
-		name = austral.243.a
-		add_stability = -0.05
-		set_country_flag = AST_NZL_secede
-		if = {
-			limit = {
-				has_country_flag = AST_plebiscite_forced
-			}
-			284 = {
-				remove_core_of = AST
-				add_claim_by = AST
-			}
-			723 = {
-				remove_core_of = AST
-				add_claim_by = AST
-			}
-		}
 	}
 }
 
@@ -4972,423 +4391,6 @@ country_event = {
 			popularity = 0.05
 		}
 		set_country_flag = AST_new_guard_hughes
-	}
-}
-
-# Australasia loses New Zealand
-country_event = {
-	id = austral.248
-	title = austral.248.t
-	desc = austral.248.d
-	picture = GFX_report_event_AST_newzealand
-
-	trigger = {
-		tag = AST
-		has_war = no
-		NOT = {
-			owns_state = 284
-			} #New Zealand
-		NOT = {
-			owns_state = 723
-			} #South Island
-		controls_all_owned_states = yes
-		NOT = {
-			has_country_flag = AST_no_new_zealand
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 1
-	}
-
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event austral.248"
-		set_country_flag = AST_no_new_zealand
-	}
-
-	option = {
-		name = austral.248.a
-		if = {
-			limit = {
-				has_country_flag = AST_is_republic
-			}
-			set_cosmetic_tag = AST_australia_republic
-			else = {
-				set_cosmetic_tag = AST_australia
-			}
-		}
-		284 = {
-			if = {
-				limit = {
-					is_core_of = AST
-				}
-				remove_core_of = AST
-				add_claim_by = AST
-			}
-		}
-		723 = {
-			if = {
-				limit = {
-					is_core_of = AST
-				}
-				remove_core_of = AST
-				add_claim_by = AST
-			}
-		}
-	}
-}
-
-# Australia regains New Zealand
-country_event = {
-	id = austral.249
-	title = austral.249.t
-	desc = austral.249.d
-	picture = GFX_report_event_AST_newzealand
-
-	trigger = {
-		tag = AST
-		has_country_flag = AST_no_new_zealand
-		has_war = no
-		controls_all_owned_states = yes
-		owns_state = 284 #New Zealand
-		owns_state = 723 #South Island
-	}
-
-	mean_time_to_happen = {
-		months = 1
-	}
-
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event austral.249"
-		clr_country_flag = AST_no_new_zealand
-	}
-
-	option = {
-		name = austral.249.a
-		if = {
-			limit = {
-				has_country_flag = AST_is_republic
-			}
-			set_cosmetic_tag = AST_republic
-			else = {
-				drop_cosmetic_tag = yes
-			}
-		}
-	}
-}
-
-# New Zealand wants to have a vote on secession
-country_event = {
-	id = austral.250
-	immediate = { log = "[GetDateText]: [Root.GetName]: event austral.250" }
-	title = austral.250.t
-	picture = GFX_report_event_AST_newzealand
-
-	desc = {
-		text = austral.250.d.gbr
-		trigger = {
-			country_exists = GBR
-		}
-	}
-	desc = {
-		text = austral.250.d.faction
-		trigger = {
-			NOT = {
-				country_exists = GBR
-			}
-		}
-	}
-
-	fire_only_once = yes
-
-	trigger = {
-		tag = AST
-		has_war = no
-		has_country_flag = AST_NZL_secede
-		owns_state = 284 #New Zealand
-		owns_state = 723 #South Island
-		OR = {
-			has_democratic_government = yes
-			has_government = national_populist
-		}
-		OR = {
-			country_exists = GBR
-			is_in_faction = no
-		}
-		NOT = {
-			has_country_flag = AST_nzl_crisis_happened
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 2
-	}
-
-	option = {
-		name = austral.250.a #They are free to hold their referendum, if they wish
-		ai_chance = {
-			factor = 70
-			modifier = {
-				factor = 0.5
-				has_government = authoritarian_democrat
-			}
-		}
-		custom_effect_tooltip = AST_nzl_referendum
-		hidden_effect = {
-			random_other_country = {
-				limit = {
-					is_ai = yes
-				}
-				country_event = austral.251
-			}
-		}
-	}
-	option = {
-		name = austral.250.b #We would consider that an illegal act
-		ai_chance = {
-			factor = 30
-			modifier = {
-				factor = 0
-				has_government = social_liberal
-			}
-			modifier = {
-				factor = 0.5
-				has_government = social_democrat
-			}
-			modifier = {
-				factor = 5
-				has_government = national_populist
-			}
-		}
-		add_political_power = -200
-		add_stability = -0.05
-		284 = {
-			if = {
-				limit = {
-					is_core_of = AST
-				}
-				remove_core_of = AST
-				add_claim_by = AST
-			}
-		}
-		723 = {
-			if = {
-				limit = {
-					is_core_of = AST
-				}
-				remove_core_of = AST
-				add_claim_by = AST
-			}
-		}
-	}
-}
-
-# Bounce event for referendum
-country_event = {
-	id = austral.251
-	immediate = { log = "[GetDateText]: [Root.GetName]: event austral.251" }
-	title = austral.250.t
-	desc = austral.250.d.gbr
-	picture = GFX_report_event_AST_newzealand
-
-	is_triggered_only = yes
-
-	trigger = {
-		is_ai = yes
-	}
-
-	option = {
-		name = austral.251.a #Stay
-		ai_chance = {
-			factor = 40
-			modifier = {
-				factor = 1.5
-				AST = {
-					has_idea = AST_maori_rights
-				}
-			}
-			modifier = {
-				factor = 1.25
-				AST = {
-					has_country_flag = AST_NZL_voted_no
-				}
-			}
-			modifier = {
-				factor = 1.25
-				AST = {
-					has_government = social_democrat
-				}
-			}
-		}
-		AST = {
-			country_event = {
-				id = austral.252
-				days = 30
-			}
-		}
-	}
-	option = {
-		name = austral.251.b #Secede
-		ai_chance = {
-			factor = 60
-			modifier = {
-				factor = 1.25
-				country_exists = GBR
-			}
-			modifier = {
-				factor = 1.5
-				AST = {
-					has_government = national_populist
-				}
-			}
-			modifier = {
-				factor = 1.5
-				AST = {
-					has_idea = AST_maori_no_rights
-				}
-			}
-			modifier = {
-				factor = 2
-				AST = {
-					has_country_flag = AST_plebiscite_forced
-				}
-			}
-		}
-		AST = {
-			country_event = {
-				id = austral.253
-				days = 30
-			}
-		}
-	}
-}
-
-# New Zealand votes to stay
-country_event = {
-	id = austral.252
-	immediate = { log = "[GetDateText]: [Root.GetName]: event austral.252" }
-	title = austral.252.t
-	desc = austral.252.d
-	picture = GFX_report_event_AST_newzealand
-
-	is_triggered_only = yes
-
-	option = {
-		name = austral.252.a
-		add_political_power = 100
-	}
-}
-
-# New Zealand votes to leave
-country_event = {
-	id = austral.253
-	immediate = { log = "[GetDateText]: [Root.GetName]: event austral.253" }
-	title = austral.253.t
-	desc = austral.253.d
-	picture = GFX_report_event_AST_newzealand
-
-	is_triggered_only = yes
-
-	option = {
-		name = austral.253.a
-		add_political_power = -100
-		284 = {
-			if = {
-				limit = {
-					is_core_of = AST
-				}
-				remove_core_of = AST
-			}
-			if = {
-				limit = {
-					is_claimed_by = AST
-				}
-				remove_claim_by = AST
-			}
-		}
-		723 = {
-			if = {
-				limit = {
-					is_core_of = AST
-				}
-				remove_core_of = AST
-			}
-			if = {
-				limit = {
-					is_claimed_by = AST
-				}
-				remove_claim_by = AST
-			}
-		}
-		NZL = {
-			set_country_flag = NZL_voted_to_leave
-			add_state_core = 284
-			add_state_core = 723
-			transfer_state = 284
-			transfer_state = 723
-			hidden_effect = {
-				AST = {
-					NZL = {
-						transfer_technology = yes
-					}
-				}
-				load_oob = "NZL"
-				add_equipment_to_stockpile = {
-					type = infantry_equipment_1
-					amount = 1000
-					producer = CAN
-				}
-				add_equipment_to_stockpile = {
-					type = convoy_1
-					amount = 25
-					producer = CAN
-				}
-			}
-		}
-		if = {
-			limit = {
-				is_in_faction = yes
-			}
-			random_country = {
-				limit = {
-					is_faction_leader = yes
-					is_in_faction_with = AST
-				}
-				add_to_faction = NZL
-			}
-		}
-		every_unit_leader = {
-			limit = {
-				OR = {
-					has_id = 2108 #Freyberg
-					has_id = 2109 #Stevens
-					has_id = 2110 #Morshead
-				}
-			}
-			set_nationality = NZL
-		}
-		if = {
-			limit = {
-				has_idea = AST_Sidney_G_Holland_hog_sco
-			}
-			remove_ideas = AST_Sidney_G_Holland_hog_sco
-		}
-		set_country_flag = Sidney_G_Holland_dead
-		hidden_effect = {
-			country_event = {
-				id = austral.248
-				days = 3
-			}
-			random_other_country = {
-				limit = {
-					is_ai = yes
-				}
-				news_event = {
-					id = worldnews.132
-					days = 1
-				}
-			}
-		}
 	}
 }
 
@@ -5775,7 +4777,6 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = AST
-			tag = NZL
 		}
 		723 = {
 			is_owned_and_controlled_by = ROOT
@@ -6557,9 +5558,6 @@ country_event = {
 
 	trigger = {
 		has_democratic_government = yes
-		NOT = {
-			country_exists = NZL
-		}
 	}
 
 	option = {

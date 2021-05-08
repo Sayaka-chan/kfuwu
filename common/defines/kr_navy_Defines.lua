@@ -9,6 +9,10 @@ NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 0.0		-- XP cost for conv
 NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0.0		-- XP cost for removing an equipment module and leaving the slot empty when creating an equipment variant.
 
 --- Navy
+NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0					-- Chances one ship get damage each hour while on training 
+NDefines.NNavy.TRAINING_ACCIDENT_CRITICAL_HIT_CHANCES = 0				-- If an accident happens, how likely it is to be a critical hit
+NDefines.NNavy.ACCIDENTS_CHANCE_BALANCE_FACTOR = 0							-- General chance for naval accidents for balancing the gameplay.
+
 NDefines.NNavy.LEADER_EXPERIENCE_SCALE = 0
 NDefines.NNavy.SCREEN_RATIO_FOR_FULL_SCREENING_FOR_CAPITALS = 2
 
@@ -18,20 +22,20 @@ NDefines.NNavy.ANTI_AIR_MULT_ON_INCOMING_AIR_DAMAGE = 0.07 --- (0.15 -> 0.07)
 NDefines.NNavy.MAX_ANTI_AIR_REDUCTION_EFFECT_ON_INCOMING_AIR_DAMAGE = 0.8 --- (0.5 -> 0.8)
 
 NDefines.NNavy.HIGHER_SHIP_RATIO_POSITIONING_PENALTY_FACTOR	= 0.3 -- if one side has more ships than the other, that side will get this penalty for each +100% ship ratio it has
-NDefines.NNavy.MAX_POSITIONING_PENALTY_FROM_HIGHER_SHIP_RATIO = 0.6  -- maximum penalty to get from larger fleets
+NDefines.NNavy.MAX_POSITIONING_PENALTY_FROM_HIGHER_SHIP_RATIO = 0.8  -- maximum penalty to get from larger fleets
 NDefines.NNavy.MAX_POSITIONING_PENALTY_FOR_NEWLY_JOINED_SHIPS = 0.0  -- the accumulated penalty from new ships will be clamped to this value
-NDefines.NNavy.DAMAGE_PENALTY_ON_MINIMUM_POSITIONING = 0.9	-- damage penalty at 0% positioning
-NDefines.NNavy.SCREENING_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING = 0.5   -- screening efficiency (screen to capital ratio) at 0% positioning
+NDefines.NNavy.DAMAGE_PENALTY_ON_MINIMUM_POSITIONING = 0.95	-- damage penalty at 0% positioning
+NDefines.NNavy.SCREENING_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING = 0.7   -- screening efficiency (screen to capital ratio) at 0% positioning
 
 NDefines.NNavy.COMBAT_ARMOR_PIERCING_CRITICAL_BONUS = 2 -- Bonus to critical chance when shooter armor piercing is higher then target armor.
 NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 0 -- cost to unassign/replace pride of the fleet
 
-NDefines.NNavy.CARRIER_STACK_PENALTY = 5 -- The most efficient is 4 carriers in combat. 5+ brings the penalty to the amount of wings in battle.
+NDefines.NNavy.CARRIER_STACK_PENALTY = 6 -- The most efficient is 4 carriers in combat. 5+ brings the penalty to the amount of wings in battle.
 NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 0.167 -- Each carrier above the optimal amount decreases the amount of airplanes being able to takeoff by such %.
 
 NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profile is lower the gun will have lower accuracy
-		95.0,	-- big guns
-		140.0,	-- torpedos
+		100.0,	-- big guns
+		150.0,	-- torpedos
 		55.0,	-- small guns
 	}
 
@@ -39,7 +43,7 @@ NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profi
 NDefines.NNavy.COMBAT_MIN_DURATION = 12
 
 NDefines.NNavy.INITIAL_ALLOWED_DOCKYARD_RATIO_FOR_REPAIRS = 1
-NDefines.NNavy.NAVY_VISIBILITY_BONUS_ON_RETURN_FOR_REPAIR = 0.8
+NDefines.NNavy.NAVY_VISIBILITY_BONUS_ON_RETURN_FOR_REPAIR = 0.5
 NDefines.NNavy.SUBMARINE_ESCAPE_RATIOS = { -- subs will escape battle in convoy raid if there are enemies that can attack
 		1000,     -- do not engage
 		15,   -- low
@@ -99,6 +103,18 @@ NDefines.NNavy.CONVOY_ROUTE_SIZE_CONVOY_SCALE = 0.4     -- scales impact of conv
 NDefines.NNavy.SUPREMACY_PER_SHIP_PER_MANPOWER = 0.07						-- supremacy of a ship is calculated using its IC, manpower and a base define
 NDefines.NNavy.SUPREMACY_PER_SHIP_BASE = 15.0
 NDefines.NNavy.SUPPLY_NEED_FACTOR = 0
+
+NDefines.NNavy.AGGRESSION_TORPEDO_EFFICIENCY_ON_LIGHT_SHIPS = 0   -- ratio for scoring for different gun types against light ships
+NDefines.NNavy.AGGRESSION_HEAVY_GUN_EFFICIENCY_ON_LIGHT_SHIPS = 0.2 -- ratio for scoring for different gun types against light ships
+
+NDefines.NNavy.AGGRESSION_HEAVY_GUN_EFFICIENCY_ON_HEAVY_SHIPS = 1.2 -- ratio for scoring for different gun types against heavy ships
+
+NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_TARGET_SCORE = 10                             -- scoring for target picking for planes inside naval combat, one define per ship typ
+NDefines.NNavy.NAVAL_COMBAT_AIR_CAPITAL_TARGET_SCORE = 150							
+NDefines.NNavy.NAVAL_COMBAT_AIR_CARRIER_TARGET_SCORE = 150						
+NDefines.NNavy.NAVAL_COMBAT_AIR_CONVOY_TARGET_SCORE = 1.0							
+NDefines.NNavy.NAVAL_COMBAT_AIR_STRENGTH_TARGET_SCORE = 5                         -- how much score factor from low health (scales between 0->this number)
+NDefines.NNavy.NAVAL_COMBAT_AIR_LOW_AA_TARGET_SCORE = 25                           -- how much score factor from low AA guns (scales between 0->this number)
 	
 ---Air
 NDefines.NAir.COMBAT_DAMAGE_SCALE_CARRIER = 0.1    -- same as above but used inside naval combat for carrier battles
@@ -106,5 +122,6 @@ NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 0.8
 NDefines.NAir.NAVAL_KAMIKAZE_DAMAGE_MULT = 5.0  -- vanilla is like 20
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 1
 NDefines.NAir.NAVAL_STRIKE_DETECTION_BALANCE_FACTOR = 0.4		-- Value used to scale the surface_visibility stats to balance the gameplay, so 100% detection chance still won't spam the strikes.
-NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 6        -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)	
+NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 8        -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)	
 NDefines.NAir.DISRUPTION_FACTOR_CARRIER = 3.0
+

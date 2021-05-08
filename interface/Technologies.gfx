@@ -18911,4 +18911,46 @@ spriteTypes = {
 		name = "GFX_fuel_refining5_medium"
 		texturefile = "gfx/interface/technologies/fuel_refining5.dds"
 	}
+
+
+
+	SpriteType = {
+		name = "GFX_tech_sniper4_medium"
+		texturefile = "gfx/interface/technologies/sniper4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_sniper3_medium"
+		texturefile = "gfx/interface/technologies/sniper3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_tech_sniper2_medium"
+		texturefile = "gfx/interface/technologies/sniper2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_tech_sniper_medium"
+		texturefile = "gfx/interface/technologies/sniper.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_tech_flamethrower4_medium"
+		texturefile = "gfx/interface/technologies/flamethrower4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_flamethrower3_medium"
+		texturefile = "gfx/interface/technologies/flamethrower3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_tech_flamethrower2_medium"
+		texturefile = "gfx/interface/technologies/flamethrower2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_tech_flamethrower_medium"
+		texturefile = "gfx/interface/technologies/flamethrower.dds"
+	}
 }

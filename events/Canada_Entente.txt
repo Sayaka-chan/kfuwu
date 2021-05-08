@@ -1032,66 +1032,6 @@ country_event = {
 		}
 	}
 	desc = {
-		text = entente.20.d.caf_syndicalist
-		trigger = {
-			CAF = { has_socialist_government = yes }
-			event_target:KR_king_base = {
-				NOT = {
-					has_country_flag = CAN_speech_caf_syndicalist
-					AND = {
-						tag = GBR
-						NOT = { has_country_flag = CAN_speech_home_isles }
-					}
-					AND = {
-						has_war_with = ENG
-						NOT = { has_country_flag = CAN_speech_war_eng }
-					}
-					AND = {
-						has_war_with = GER
-						NOT = { has_country_flag = CAN_speech_war_ger }
-					}
-					AND = {
-						OR = {
-							has_war_with = USA
-						}
-						NOT = { has_country_flag = CAN_speech_war_acw }
-					}
-					AND = {
-						NFA = {
-							owns_state = 16
-							is_in_faction_with = PREV
-						}
-						NOT = { has_country_flag = CAN_speech_france_taken }
-					}
-					AND = {
-						NFA = {
-							owns_state = 21
-							NOT = { owns_state = 16 }
-							is_in_faction_with = PREV
-						}
-						NOT = { has_country_flag = CAN_speech_france_mainland }
-					}
-					AND = {
-						DEH = {
-							is_in_faction_with = PREV
-							owns_state = 431
-							owns_state = 427
-						}
-						NOT = { has_country_flag = CAN_speech_india_united }
-					}
-					AND = {
-						NOT = { country_exists = DEH }
-						NOT = { has_country_flag = CAN_speech_india_defeated }
-					}
-					AND = {
-						AST = { has_socialist_government = yes }
-						NOT = { has_country_flag = CAN_speech_aus_syndicalist }
-					}
-				}
-			}
-		}
-	}
-	desc = {
 		text = entente.20.d.acw_begins
 		trigger = {
 			event_target:KR_king_base = {
@@ -1145,10 +1085,6 @@ country_event = {
 					AND = {
 						AST = { has_socialist_government = yes }
 						NOT = { has_country_flag = CAN_speech_aus_syndicalist }
-					}
-					AND = {
-						CAF = { has_socialist_government = yes }
-						NOT = { has_country_flag = CAN_speech_caf_syndicalist }
 					}
 				}
 			}
@@ -1208,10 +1144,6 @@ country_event = {
 					AND = {
 						AST = { has_socialist_government = yes }
 						NOT = { has_country_flag = CAN_speech_aus_syndicalist }
-					}
-					AND = {
-						CAF = { has_socialist_government = yes }
-						NOT = { has_country_flag = CAN_speech_caf_syndicalist }
 					}
 					AND = {
 						NOT = { has_country_flag = CAN_speech_acw_begins }
@@ -1277,10 +1209,6 @@ country_event = {
 						NOT = { has_country_flag = CAN_speech_aus_syndicalist }
 					}
 					AND = {
-						CAF = { has_socialist_government = yes }
-						NOT = { has_country_flag = CAN_speech_caf_syndicalist }
-					}
-					AND = {
 						NOT = { has_country_flag = CAN_speech_acw_begins }
 					}
 				}
@@ -1342,10 +1270,6 @@ country_event = {
 					AND = {
 						AST = { has_socialist_government = yes }
 						NOT = { has_country_flag = CAN_speech_aus_syndicalist }
-					}
-					AND = {
-						CAF = { has_socialist_government = yes }
-						NOT = { has_country_flag = CAN_speech_caf_syndicalist }
 					}
 					AND = {
 						NOT = { has_country_flag = CAN_speech_acw_begins }
@@ -1440,13 +1364,6 @@ country_event = {
 				NOT = { has_country_flag = CAN_speech_aus_syndicalist }
 			}
 			set_country_flag = CAN_speech_aus_syndicalist
-		}
-		else_if = {
-			limit = {
-				CAF = { has_socialist_government = yes }
-				NOT = { has_country_flag = CAN_speech_caf_syndicalist }
-			}
-			set_country_flag = CAN_speech_caf_syndicalist
 		}
 		else_if = {
 			limit = {
@@ -4663,16 +4580,6 @@ country_event = {
 			}
 			modifier = {
 				factor = 0
-				tag = SAF
-				has_government = authoritarian_democrat
-			}
-			modifier = {
-				factor = 2
-				NOT = { tag = SAF }
-				has_government = authoritarian_democrat
-			}
-			modifier = {
-				factor = 0
 				has_government = social_democrat
 			}
 			modifier = {
@@ -4731,9 +4638,6 @@ country_event = {
 					tag = CAN
 					tag = GBR
 					tag = AST
-					tag = NZL
-					tag = SAF
-					tag = CAF
 				}
 			}
 		}
@@ -5645,10 +5549,6 @@ country_event = {
 		ai_chance = {
 			factor = 50
 			modifier = {
-				factor = 3
-				tag = CAF
-			}
-			modifier = {
 				factor = 0.1
 				any_of = {
 					array = global.CAN_imperial_conference
@@ -6011,7 +5911,6 @@ country_event = {
 				factor = 0
 				OR = {
 					tag = AST
-					tag = CAF
 				}
 			}
 		}
@@ -6098,7 +5997,6 @@ country_event = {
 			tag = AST
 			tag = DEH
 			tag = GBR
-			tag = SAF
 		}
 		tag = event_target:KR_king_base
 		has_war = yes
@@ -6229,7 +6127,6 @@ country_event = {
 			tag = AST
 			tag = DEH
 			tag = GBR
-			tag = SAF
 		}
 		tag = event_target:KR_king_base
 		has_war = yes
@@ -6339,22 +6236,6 @@ country_event = {
 				}
 				set_global_flag = KR_king_flees
 				DEH = { save_event_target_as = king_flees_to }
-			}
-			else_if = {
-				limit = {
-					SAF = {
-						exists = yes
-						is_in_faction_with = ROOT
-						surrender_progress < 0.30
-						NOT = {
-							tag = ROOT
-							has_capitulated = yes
-							has_global_flag = KR_king_flees
-						}
-					}
-				}
-				set_global_flag = KR_king_flees
-				SAF = { save_event_target_as = king_flees_to }
 			}
 			else = {
 				set_global_flag = KR_king_captured
@@ -6783,10 +6664,6 @@ country_event = {
 					has_war_with = ROOT
 					NOT = {
 						tag = NFA
-						AND = {
-							tag = NZL
-							AST = { is_in_faction_with = ROOT }
-						}
 						has_capitulated = yes
 						is_in_europe = yes
 						any_owned_state = {
@@ -6816,14 +6693,6 @@ country_event = {
 					NOT = {
 						has_capitulated = yes
 						is_in_asia = yes
-						AND = {
-							tag = NZL
-							AST = { is_in_faction_with = ROOT }
-						}
-						AND = {
-							tag = HOL
-							ROOT = { tag = INS }
-						}
 						any_owned_state = {
 							any_neighbor_state = {
 								is_owned_by_ROOT_or_ally = yes
@@ -6846,14 +6715,6 @@ country_event = {
 					has_war_with = ROOT
 					NOT = {
 						has_capitulated = yes
-						AND = {
-							same_continent_as_ROOT = yes
-							NOT = { tag = HAW }
-						}
-						AND = {
-							tag = HOL
-							ROOT = { tag = INS }
-						}
 						any_owned_state = {
 							any_neighbor_state = {
 								is_owned_by_ROOT_or_ally = yes
@@ -7361,8 +7222,6 @@ country_event = {
 	option = {
 		name = entente.305.e # British renounce claims to Northern Ireland
 		trigger = {
-			119 = { is_owned_by = IRE } #Ulster
-			is_in_faction_with = IRE
 			NOT = {
 				has_country_flag = GER_conf_demand_northireland
 				GBR = { has_country_flag = CAN_promised_ireland_ind }
@@ -8164,11 +8023,6 @@ country_event = {
 		country_event = { id = entente.305 days = 1 }
 	}
 	option = {
-		name = entente.318.c
-		trigger = { tag = IRE }
-		add_political_power = 50
-	}
-	option = {
 		name = entente.318.e
 		trigger = {
 			OR = {
@@ -8187,7 +8041,6 @@ country_event = {
 			NOT = {
 				tag = ENT
 				tag = GER
-				tag = IRE
 				tag = GBR
 				AND = {
 					tag = CAN
@@ -8738,8 +8591,6 @@ country_event = {
 					NOT = { gives_military_access_to = ROOT }
 					OR = {
 						any_neighbor_country = { has_war_with = ROOT }
-						tag = IRE
-						tag = ICE
 					}
 				}
 				give_military_access = ROOT
@@ -8794,8 +8645,6 @@ country_event = {
 						NOT = { gives_military_access_to = ROOT }
 						OR = {
 							any_neighbor_country = { has_war_with = ROOT }
-							tag = IRE
-							tag = ICE
 						}
 					}
 					give_military_access = ROOT

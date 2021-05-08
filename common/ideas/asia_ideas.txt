@@ -1,0 +1,154 @@
+ideas = {
+	country = {
+		jap_asia_1 = {
+			allowed = {
+				always = no
+			}
+			cancel = {
+				JAP = {
+					NOT = {
+						has_full_control_of_state = 336
+					}
+					NOT = {
+						has_full_control_of_state = 1021
+					}
+					NOT = {
+						has_full_control_of_state = 673
+					}
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+		jap_asia_2 = {
+			allowed = {
+				always = no
+			}
+			cancel = {
+				JAP = {
+					NOT = {
+						has_full_control_of_state = 1020
+					}
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+		jap_asia_3 = {
+			allowed = {
+				always = no
+			}
+			cancel = {
+				JAP = {
+					NOT = {
+						has_full_control_of_state = 985
+					}
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+		jap_asia_4 = {
+			allowed = {
+				always = no
+			}
+			cancel = {
+				JAP = {
+					NOT = {
+						has_full_control_of_state = 439
+					}
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+		jap_asia_5 = {
+			allowed = {
+				always = no
+			}
+			cancel = {
+				JAP = {
+					NOT = {
+						has_full_control_of_state = 327
+					}
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.025
+			}
+		}
+		entente_asia_1 = {
+			allowed = {
+				always = no
+			}
+			cancel = {
+				JAP = {
+					NOT = {
+						has_full_control_of_state = 1020
+					}
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.05
+			}
+		}
+		entente_asia_2 = {
+			allowed = {
+				always = no
+			}
+			cancel = {
+				JAP = {
+					NOT = {
+						has_full_control_of_state = 985
+					}
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.05
+			}
+		}
+		entente_asia_3 = {
+			allowed = {
+				always = no
+			}
+			cancel = {
+				JAP = {
+					NOT = {
+						has_full_control_of_state = 439
+					}
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.05
+			}
+		}
+		entente_asia_4 = {
+			allowed = {
+				always = no
+			}
+			cancel = {
+				JAP = {
+					NOT = {
+						has_full_control_of_state = 327
+					}
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.025
+			}
+		}
+	}
+}

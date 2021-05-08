@@ -5,97 +5,6 @@
 ###########################
 
 political_actions = {
-
-	OTT_demand_western_thrace = {
-		icon = generic_flags
-
-		allowed = { tag = OTT }
-
-		available = {
-			controls_all_owned_states = yes
-		}
-
-		visible = {
-			has_global_flag = balkan_war_started
-			NOT = { has_global_flag = balkan_war_ended }
-			owns_state = 341 #Adrianople
-			can_declare_war_on = FROM
-			FROM = {
-				has_war_with = SER
-				OR = {
-					owns_state = 184 #Western Thrace
-					owns_state = 1089 #Momchilgrad
-				}
-			}
-		}
-
-		targets = { BUL }
-
-		target_trigger = {
-			can_declare_war_on = FROM
-			FROM = {
-				has_war_with = SER
-				OR = {
-					owns_state = 184 #Western Thrace
-					owns_state = 1089 #Momchilgrad
-				}
-			}
-		}
-
-		fire_only_once = yes
-		cost = freedec?0
-		days_remove = 14
-
-		war_with_on_remove = BUL
-
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision OTT_demand_western_thrace target: [From.GetName]"
-			add_war_support = 0.05
-		}
-		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove OTT_demand_western_thrace target: [From.GetName]"
-			if = {
-				limit = {
-					can_declare_war_on = FROM
-					FROM = {
-						has_war_with = SER
-						OR = {
-							owns_state = 184 #Western Thrace
-							owns_state = 1089 #Momchilgrad
-						}
-					}
-				}
-			}
-		}
-
-		ai_will_do = {
-			factor = 100
-			modifier = {
-				factor = 0
-				has_war = yes
-				NOT = {
-					OR = {
-						has_game_rule = {
-							rule = BUL_fourth_balkan_war
-							option = BUL_FOURTH_BALKAN_WAR_BUL_VS_PACT_OTT
-						}
-						has_game_rule = {
-							rule = BUL_fourth_balkan_war
-							option = BUL_FOURTH_BALKAN_WAR_BUL_ALB_VS_PACT_OTT
-						}
-						has_game_rule = {
-							rule = BUL_fourth_balkan_war
-							option = BUL_FOURTH_BALKAN_WAR_BUL_VS_PACT_SUBMIT_TO_OTT
-						}
-						has_game_rule = {
-							rule = BUL_fourth_balkan_war
-							option = BUL_FOURTH_BALKAN_WAR_BUL_ALB_VS_PACT_SUBMIT_TO_OTT
-						}
-					}
-				}
-			}
-		}
-	}
 }
 
 OTT_OPDA_decisions = {
@@ -107,10 +16,6 @@ OTT_OPDA_decisions = {
 		}
 
 		icon = ger_mefo_bills
-
-		available = {
-			date > 1954.5.24
-		}
 
 		selectable_mission = yes
 		days_mission_timeout = 6720
@@ -160,10 +65,6 @@ OTT_OPDA_decisions = {
 
 		icon = ger_mefo_bills
 
-		available = {
-			date > 1954.5.24
-		}
-
 		selectable_mission = yes
 		days_mission_timeout = 6720
 		is_good = yes
@@ -212,10 +113,6 @@ OTT_OPDA_decisions = {
 
 		icon = ger_mefo_bills
 
-		available = {
-			date > 1954.5.24
-		}
-
 		selectable_mission = yes
 		days_mission_timeout = 6720
 		is_good = yes
@@ -262,37 +159,7 @@ OTT_OPDA_decisions = {
 		}
 
 		available = {
-			AUS = {
-				OR = {
-					has_war_with = HUN
-					has_war_with = FRA
-					has_war_with = RUS
-					has_war_with = CAN
-					has_war_with = USA
-					has_war_with = ITA
-					has_war_with = SRI
-					has_war_with = GER
-					AND = {
-						HUN = {
-							NOT = {
-								is_subject_of = AUS
-							}
-						}
-						NOT = {
-							43 = {
-								is_owned_by = AUS
-							}
-						}
-					}
-					GER = { exists = no }
-					date > 1940.1.1
-				}
-			}
 			has_completed_focus = OTT_opda
-		}
-
-		modifier = {
-			political_power_gain = -0.1
 		}
 
 		ai_will_do = {
@@ -313,10 +180,11 @@ OTT_OPDA_decisions = {
 			reverse_add_opinion_modifier = {
 				target = AUS modifier = ott_r_opda
 			}
-			custom_effect_tooltip = OTT_creditors_tt
-			country_event = {
-				id = ott.154 days = 1
+			swap_ideas = {
+				remove_idea = ott_opda_idea_1
+				add_idea = ott_opda_idea_3
 			}
+			custom_effect_tooltip = OTT_creditors_tt
 		}
 	}
 
@@ -331,18 +199,9 @@ OTT_OPDA_decisions = {
 			GER = {
 				OR = {
 					has_war_with = FRA
-					has_war_with = RUS
-					has_war_with = CAN
-					has_war_with = USA
-					has_war_with = AUS
-					date > 1942.1.1
 				}
 			}
 			has_completed_focus = OTT_opda
-		}
-
-		modifier = {
-			political_power_gain = -0.1
 		}
 
 		ai_will_do = {
@@ -363,10 +222,8 @@ OTT_OPDA_decisions = {
 			reverse_add_opinion_modifier = {
 				target = GER modifier = ott_r_opda
 			}
+			remove_ideas = ott_opda_idea_3
 			custom_effect_tooltip = OTT_creditors_tt
-			country_event = {
-				id = ott.145 days = 1
-			}
 		}
 	}
 }

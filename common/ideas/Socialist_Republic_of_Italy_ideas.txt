@@ -409,6 +409,7 @@ ideas = {
 			research_bonus = {
 				infantry_weapons = 0.1
 			}
+			cost = 100
 		}
 		centro_addestramento_alpino = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea centro_addestramento_alpino"}
@@ -417,6 +418,7 @@ ideas = {
 			research_bonus = {
 				infantry_weapons = 0.1
 			}
+			cost = 100
 		}
 		armiguerra = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea armiguerra"}
@@ -425,6 +427,7 @@ ideas = {
 			research_bonus = {
 				infantry_weapons = 0.1
 			}
+			cost = 100
 		}
 		fabbrica_darmi_terni = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea fabbrica_darmi_terni"}
@@ -433,6 +436,7 @@ ideas = {
 			research_bonus = {
 				infantry_weapons = 0.1
 			}
+			cost = 100
 		}
 		officine_sestri_ponente = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea officine_sestri_ponente"}
@@ -441,6 +445,7 @@ ideas = {
 			research_bonus = {
 				motorized_equipment = 0.1
 			}
+			cost = 100
 		}
 		industrie_belliche_liguri = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea industrie_belliche_liguri"}
@@ -449,6 +454,7 @@ ideas = {
 			research_bonus = {
 				artillery = 0.1
 			}
+			cost = 100
 		}
 		acciaierie_terni = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea acciaierie_terni"}
@@ -459,6 +465,7 @@ ideas = {
 			research_bonus = {
 				artillery = 0.1
 			}
+			cost = 100
 		}
 		officine_meccaniche_reggiane = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea officine_meccaniche_reggiane"}
@@ -467,41 +474,12 @@ ideas = {
 			research_bonus = {
 				artillery = 0.1
 			}
+			cost = 100
 		}
 
 	}
 	tank_manufacturer = {# Heavy Equipment Manufacturer
 		designer = yes
-		fiat = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea fiat"}
-			allowed = { is_italian_tag = yes }
-			available = { owns_state = 158 }
-			visible = { owns_state = 158 }
-			traits = { small_tank_producer_mass_2 }
-			research_bonus = {
-				armor = 0.1
-			}
-		}
-		Stop_inting = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea Stop_inting"}
-			allowed = { is_italian_tag = yes }
-			available = { owns_state = 158 }
-			visible = { owns_state = 158 }
-			traits = { medium_tank_producer_offense_1 }
-			research_bonus = {
-				armor = 0.1
-			}
-		}
-		Stop_inting2 = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea Stop_inting2"}
-			allowed = { is_italian_tag = yes }
-			available = { owns_state = 158 }
-			visible = { owns_state = 158 }
-			traits = { heavy_tank_producer_offense_1 }
-			research_bonus = {
-				armor = 0.1
-			}
-		}
 	}
 	naval_manufacturer = {
 		designer = yes
@@ -509,10 +487,11 @@ ideas = {
 		accademia_navale_livorno = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea accademia_navale_livorno"}
 			allowed = { original_tag = SRI }
-			traits = { cruiser_producer_defense_1 }
+			traits = { cruiser_producer_defense_2 }
 			research_bonus = {
 				naval_equipment = 0.1
 			}
+			cost = 100
 		}
 		cantieri_navali_riuniti = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea cantieri_navali_riuniti"}
@@ -523,6 +502,7 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.1
 			}
+			cost = 100
 		}
 		cantieri_navali_livorno = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea cantieri_navali_livorno"}
@@ -533,6 +513,7 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.1
 			}
+			cost = 100
 		}
 	}
 	aircraft_manufacturer = {
@@ -545,6 +526,7 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.1
 			}
+			cost = 100
 		}
 		reggiane_aeronautica = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea reggiane_aeronautica"}
@@ -555,6 +537,7 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.1
 			}
+			cost = 100
 		}
 		fiat_aviazione = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea fiat_aviazione"}
@@ -565,6 +548,7 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.1
 			}
+			cost = 100
 		}
 		cmasa = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea cmasa"}
@@ -573,6 +557,7 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.1
 			}
+			cost = 100
 		}
 		siamic = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea siamic"}
@@ -581,6 +566,7 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.1
 			}
+			cost = 100
 		}
 
 	}

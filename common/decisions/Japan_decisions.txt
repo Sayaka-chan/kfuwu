@@ -3,3 +3,123 @@
 ################################
 # By Zankoas and The Alpha Dog
 ################################
+JAP_war_in_the_east_category = {
+	consolidate_java = {
+		icon = generic_agreement
+		allowed = {
+			tag = JAP
+		}
+		available = {
+			JAP = {
+				has_full_control_of_state = 1020
+				has_full_control_of_state = 335
+				has_full_control_of_state = 1019
+			}
+			NOT  = {
+				has_idea = consolidate_java
+			}
+		}
+		fire_only_once = no
+		complete_effect = {
+			add_ideas = jap_asia_2
+			USA = {
+				add_ideas = entente_asia_1
+			}
+			CAN = {
+				add_ideas = entente_asia_1
+			}
+		}
+	}
+	consolidate_east_indies = {
+		icon = generic_agreement
+		allowed = {
+			tag = JAP
+		}
+		available = {
+			JAP = {
+				has_full_control_of_state = 1021
+				has_full_control_of_state = 336
+				has_full_control_of_state = 673
+			}
+			NOT  = {
+				has_idea = consolidate_east_indies
+			}
+		}
+		fire_only_once = no
+		complete_effect = {
+			add_ideas = jap_asia_1
+		}
+	}
+	consolidate_australia = {
+		icon = generic_agreement
+		allowed = {
+			tag = JAP
+		}
+		available = {
+			AST = {
+				has_capitulated = yes
+			}
+			NOT  = {
+				has_idea = consolidate_australia
+			}
+		}
+		fire_only_once = no
+		complete_effect = {
+			add_ideas = jap_asia_3
+			USA = {
+				add_ideas = entente_asia_2
+			}
+			CAN = {
+				add_ideas = entente_asia_2
+			}
+		}
+	}
+	consolidate_india = {
+		icon = generic_agreement
+		allowed = {
+			tag = JAP
+		}
+		available = {
+			DEH = {
+				has_capitulated = yes
+			}
+			NOT  = {
+				has_idea = consolidate_india
+			}
+		}
+		fire_only_once = no
+		complete_effect = {
+			add_ideas = jap_asia_4
+			USA = {
+				add_ideas = entente_asia_3
+			}
+			CAN = {
+				add_ideas = entente_asia_3
+			}
+		}
+	}
+	consolidate_phillipphines = {
+		icon = generic_agreement
+		allowed = {
+			tag = JAP
+		}
+		available = {
+			JAP = {
+				has_full_control_of_state = 327
+			}
+			NOT  = {
+				has_idea = consolidate_phillipphines
+			}
+		}
+		fire_only_once = no
+		complete_effect = {
+			add_ideas = jap_asia_5
+			USA = {
+				add_ideas = entente_asia_4
+			}
+			CAN = {
+				add_ideas = entente_asia_4
+			}
+		}
+	}
+}

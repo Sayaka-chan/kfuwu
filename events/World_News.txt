@@ -7,71 +7,8 @@
 add_namespace = worldnews
 
 # Russian Civil War
-news_event = {
-	id = worldnews.3
-	title = worldnews.3.t
-	desc = worldnews.3.d
-	picture = GFX_news_event_second_russian_civil_war
-
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		RUS = {
-			has_war_with = SOV
-		}
-		NOT = {
-			has_global_flag = kerensky_did_nothing_wrong
-		}
-		wants_world_news = yes
-	}
-
-	show_major = {
-		NOT = {
-			tag = RUS
-			tag = SOV
-		}
-	}
-
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event worldnews.3"
-		set_global_flag = kerensky_did_nothing_wrong
-	}
-
-	option = {
-		name = worldnews.3.a
-	}
-}
 
 # Spanish Civil War
-news_event = {
-	id = worldnews.4
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.4" }
-	title = worldnews.4.t
-	desc = worldnews.4.d
-	picture = GFX_news_event_spanish_civil_war
-
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		NOT = {
-			tag = CNT
-			tag = SPR
-			tag = CAR
-		}
-	}
-
-	option = {
-		name = worldnews.4.a
-	}
-}
 
 # Second Weltkrieg
 news_event = {
@@ -277,41 +214,6 @@ news_event = {
 }
 
 # The Arab Congress
-news_event = {
-	id = worldnews.17
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.17" }
-	title = worldnews.17.t
-	desc = worldnews.17.d
-	picture = GFX_news_event_EGY_Arab_Congress
-
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		NOT = {
-			tag = EGY
-			tag = OTT
-			tag = SAU
-			tag = LBA
-			tag = OMA
-			tag = YEM
-		}
-		OR = {
-			regional_europe_news = yes
-			regional_middle_east_news = yes
-			regional_africa_news = yes
-		}
-	}
-
-	option = {
-		name = worldnews.17.a
-	}
-}
 
 # The end of American Democracy
 news_event = {
@@ -868,71 +770,6 @@ news_event = {
 }
 
 # The Third Balkan War
-news_event = {
-	id = worldnews.37
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.37" }
-	title = worldnews.37.t
-	picture = GFX_news_event_ROM_tank_parade_1
-
-	desc = {
-		text = worldnews.37.d.bulgaria
-		trigger = {
-			BUL = { has_country_flag = BUL_started_balkan_war }
-		}
-	}
-	desc = {
-		text = worldnews.37.d
-		trigger = {
-			BUL = { NOT = { has_country_flag = BUL_started_balkan_war } }
-		}
-	}
-
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		OR = {
-			regional_europe_news = yes
-			regional_middle_east_news = yes
-		}
-	}
-
-	option = {
-		name = worldnews.37.a
-
-		trigger = {
-			NOT = {
-				tag = BUL
-				tag = SER
-				is_in_faction_with = SER
-			}
-		}
-	}
-
-	option = {
-		name = worldnews.37.b
-
-		trigger = {
-			OR = {
-				tag = SER
-				is_in_faction_with = SER
-			}
-		}
-	}
-
-	option = {
-		name = worldnews.37.c
-
-		trigger = {
-			tag = BUL
-		}
-	}
-}
 
 # USA wins ACW (democratic)
 news_event = {
@@ -1040,38 +877,6 @@ news_event = {
 }
 
 # Revolt in the Völkerbund
-news_event = {
-	id = worldnews.43
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.43" }
-	title = worldnews.43.t
-	desc = worldnews.43.d
-	picture = GFX_LIT_rebellion_event
-
-	major = yes
-	is_triggered_only = yes
-
-	trigger = {
-		LIT = {
-			has_war_with = GER
-			has_government = national_populist
-		}
-		wants_world_news = yes
-	}
-
-	show_major = {
-		NOT = {
-			tag = LIT
-		}
-		OR = {
-			regional_europe_news = yes
-			is_in_faction_with = GER
-		}
-	}
-
-	option = {
-		name = worldnews.43.a
-	}
-}
 
 # The Kurdish Uprising
 news_event = {
@@ -1540,184 +1345,6 @@ news_event = {
 }
 
 # The South African Civil War
-news_event = {
-	id = worldnews.62
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.62" }
-	title = worldnews.62.t
-	picture = GFX_news_event_soldiers_marching
-
-	desc = {
-		text = worldnews.62.d.apartheid
-		trigger = {
-			SAF = {
-				has_country_flag = SAF_apartheid_civil_war
-			}
-		}
-	}
-	desc = {
-		text = worldnews.62.d.federation
-		trigger = {
-			SAF = {
-				has_country_flag = SAF_federation_civil_war
-			}
-		}
-	}
-	desc = {
-		text = worldnews.62.d.centenary1
-		trigger = {
-			SAF = {
-				has_country_flag = SAF_centenary_civil_war
-				NOT = {
-					has_government = social_conservative
-				}
-			}
-		}
-	}
-	desc = {
-		text = worldnews.62.d.centenary2
-		trigger = {
-			SAF = {
-				has_country_flag = SAF_centenary_civil_war
-				has_government = social_conservative
-			}
-		}
-	}
-
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		OR = {
-			regional_africa_news = yes
-			tag = CAN
-			is_in_faction_with = CAN
-		}
-	}
-
-	option = {
-		name = worldnews.62.a
-	}
-}
-
-# Dominionists Win in South Africa
-news_event = {
-	id = worldnews.63
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.63" }
-	title = worldnews.63.t
-	desc = worldnews.63.d
-	picture = GFX_news_event_SAF_war
-
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		OR = {
-			regional_africa_news = yes
-			tag = CAN
-			is_in_faction_with = CAN
-		}
-	}
-
-	option = {
-		name = worldnews.63.a
-	}
-}
-
-# Nationalists Win in South Africa
-news_event = {
-	id = worldnews.64
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.64" }
-	title = worldnews.64.t
-	desc = worldnews.64.d
-	picture = GFX_news_event_SAF_war
-
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		OR = {
-			regional_africa_news = yes
-			tag = CAN
-			is_in_faction_with = CAN
-		}
-	}
-
-	option = {
-		name = worldnews.64.a
-	}
-}
-
-# The Romanian Civil War
-news_event = {
-	id = worldnews.65
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.65" }
-	title = worldnews.65.t
-	desc = worldnews.65.d
-	picture = GFX_news_event_032
-
-	is_triggered_only = yes
-
-	major = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		NOT = {
-			tag = ROM
-			tag = RRM
-		}
-		regional_europe_news = yes
-	}
-
-	option = {
-		name = worldnews.65.a
-	}
-}
-
-# Pope Pius Dies
-news_event = {
-	id = worldnews.67
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.67" }
-	title = worldnews.67.t
-	desc = worldnews.67.d
-	picture = GFX_news_event_ITA_pius
-
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		NOT = {
-			tag = ITA
-		}
-		regional_europe_news = yes
-	}
-
-	option = {
-		name = worldnews.67.a
-	}
-}
 
 # ANI wins the Italian elections
 news_event = {
@@ -1744,7 +1371,6 @@ news_event = {
 		trigger = {
 			NOT = {
 				tag = AUS
-				tag = ITA
 			}
 		}
 	}
@@ -1752,12 +1378,6 @@ news_event = {
 		name = worldnews.70.b
 		trigger = {
 			tag = AUS
-		}
-	}
-	option = {
-		name = worldnews.70.c
-		trigger = {
-			tag = ITA
 		}
 	}
 }
@@ -1824,9 +1444,6 @@ news_event = {
 		NOT = {
 			tag = DEH
 		}
-		NOT = {
-			tag = BHC
-		}
 		OR = {
 			regional_middle_east_news = yes
 			regional_asia_news = yes
@@ -1876,9 +1493,6 @@ news_event = {
 	}
 
 	show_major = {
-		NOT = {
-			tag = BHC
-		}
 		OR = {
 			regional_middle_east_news = yes
 			regional_asia_news = yes
@@ -1908,9 +1522,6 @@ news_event = {
 	}
 
 	show_major = {
-		NOT = {
-			tag = BHC
-		}
 		OR = {
 			regional_middle_east_news = yes
 			regional_asia_news = yes
@@ -1940,9 +1551,6 @@ news_event = {
 	}
 
 	show_major = {
-		NOT = {
-			tag = BHC
-		}
 		OR = {
 			regional_middle_east_news = yes
 			regional_asia_news = yes
@@ -1997,9 +1605,6 @@ news_event = {
 	}
 
 	show_major = {
-		NOT = {
-			tag = BHC
-		}
 		OR = {
 			regional_middle_east_news = yes
 			regional_asia_news = yes
@@ -2058,9 +1663,6 @@ news_event = {
 	}
 
 	show_major = {
-		NOT = {
-			tag = BHC
-		}
 		OR = {
 			regional_middle_east_news = yes
 			regional_asia_news = yes
@@ -2103,52 +1705,6 @@ news_event = {
 }
 
 # Free elections in the Kingdom of Spain
-news_event = {
-	id = worldnews.85
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.85" }
-	title = worldnews.85.t
-	picture = GFX_news_event_SPR_victory
-
-	desc = {
-		text = worldnews.85.d.spr
-		trigger = {
-			country_exists = SPR
-		}
-	}
-	desc = {
-		text = worldnews.85.d.cnt
-		trigger = {
-			country_exists = CNT
-		}
-	}
-	desc = {
-		text = worldnews.85.d.car
-		trigger = {
-			country_exists = CAR
-		}
-	}
-
-	is_triggered_only = yes
-
-	major = yes
-
-	trigger = {
-		wants_world_news = yes
-		NOT = {
-			tag = SPR
-			tag = CAR
-			tag = CNT
-		}
-	}
-
-	show_major = {
-		regional_europe_news = yes
-	}
-
-	option = {
-		name = worldnews.85.a
-	}
-}
 
 # Kingdom of Spain wins Spanish civil war
 news_event = {
@@ -2553,7 +2109,6 @@ news_event = {
 
 	show_major = {
 		NOT = {
-			tag = ITA
 			tag = SRI
 		}
 		regional_europe_news = yes
@@ -2565,64 +2120,8 @@ news_event = {
 }
 
 # 1936 Siamese Revolution (World News) - xxxxxxx
-news_event = {
-	id = worldnews.105
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.105" }
-	title = worldnews.105.t
-	desc = worldnews.105.d
-	picture = GFX_news_event_khana_ratsadon_declaration
-
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		NOT = {
-			tag = SIA
-		}
-		OR = {
-			regional_asia_news = yes
-			is_in_faction_with = SIA
-		}
-	}
-
-	option = {
-		name = worldnews.105.a
-	}
-}
 
 # Siam turns Constitutional Monarchy (World News) - xxxxxxx
-news_event = {
-	id = worldnews.106
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.106" }
-	title = worldnews.106.t
-	desc = worldnews.106.d
-	picture = GFX_news_event_rama_7_constitution
-
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		OR = {
-			regional_asia_news = yes
-			tag = SIA
-			is_in_faction_with = SIA
-		}
-	}
-
-	option = {
-		name = worldnews.106.a
-	}
-}
 
 # National Party winds South Africa election
 news_event = {
@@ -2683,390 +2182,24 @@ news_event = {
 }
 
 # Boworadet Rebellion a.k.a. Royalist (World News) - xxxxxxx
-news_event = {
-	id = worldnews.109
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.109" }
-	title = worldnews.109.t
-	desc = worldnews.109.d
-	picture = GFX_news_event_Boworadet_Rebellion
-
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		OR = {
-			regional_asia_news = yes
-			tag = SIA
-			is_in_faction_with = SIA
-		}
-	}
-
-	option = {
-		name = worldnews.109.a
-	}
-}
 
 # Songsuradet Rebellion a.k.a. Parliamentarian (World News) - xxxxxxx
-news_event = {
-	id = worldnews.110
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.110" }
-	title = worldnews.110.t
-	desc = worldnews.110.d
-	picture = GFX_news_event_Songsuradet_Rebellion
-
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		OR = {
-			regional_asia_news = yes
-			tag = SIA
-			is_in_faction_with = SIA
-		}
-	}
-
-	option = {
-		name = worldnews.110.a
-	}
-}
 
 # Phibunsongkhram's Coup (World News) - xxxxxxx
-news_event = {
-	id = worldnews.111
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.111" }
-	title = worldnews.111.t
-	desc = worldnews.111.d
-	picture = GFX_news_event_Phibunsongkhram_Coup
-
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		OR = {
-			regional_asia_news = yes
-			tag = SIA
-			is_in_faction_with = SIA
-		}
-	}
-
-	option = {
-		name = worldnews.111.a
-	}
-}
 
 # 37th Siamese-Burmese War (World News) - xxxxxxx
-news_event = {
-	id = worldnews.112
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.112" }
-	title = worldnews.112.t
-	desc = worldnews.112.d
-	picture = GFX_news_event_saharat_thai_doem_tank
-
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		OR = {
-			regional_asia_news = yes
-			tag = SIA
-			tag = BUR
-			is_in_faction_with = SIA
-			is_in_faction_with = BUR
-		}
-	}
-
-	option = {
-		name = worldnews.112.a
-	}
-}
 
 # Syndicalist Win in Siam
-news_event = {
-	id = worldnews.114
-	title = worldnews.114.t
-	desc = worldnews.114.d
-	picture = GFX_news_event_SIA_Pridi_Phanomyong
-
-	major = yes
-
-	trigger = {
-		is_ai = no
-		NOT = {
-			has_global_flag = SIA_Pridi_fuckyeah
-		}
-		SIA = {
-			NOT = {
-				has_civil_war = yes
-				has_war = yes
-				is_subject = yes
-			}
-			OR = {
-				has_government = radical_socialist
-				has_government = syndicalist
-			}
-			controls_state = 289 # Bangkok under control
-		}
-		has_global_flag = SIA_yes_civil_war # Yes - the civil war happens
-		wants_world_news = yes
-	}
-
-	mean_time_to_happen = {
-		days = 3
-	}
-
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event worldnews.114"
-		hidden_effect = {
-			set_global_flag = SIA_Pridi_fuckyeah
-		}
-	}
-
-	show_major = {
-		OR = {
-			regional_asia_news = yes
-			tag = SIA
-			is_in_faction_with = SIA
-		}
-	}
-
-	option = {
-		name = worldnews.114.a
-	}
-}
 
 # Paternal Autocrats Win in Siam
-news_event = {
-	id = worldnews.115
-	title = worldnews.115.t
-	desc = worldnews.115.d
-	picture = GFX_news_event_SIA_Boworadet
-
-	major = yes
-
-	trigger = {
-		is_ai = no
-		NOT = {
-			has_global_flag = SIA_Boworadet_fuckyeah
-		}
-		SIA = {
-			NOT = {
-				has_civil_war = yes
-				has_war = yes
-				is_subject = yes
-			}
-			has_government = paternal_autocrat
-			controls_state = 289 # Bangkok under control
-		}
-		has_global_flag = SIA_yes_civil_war # Yes - the civil war happens
-		wants_world_news = yes
-	}
-
-	mean_time_to_happen = {
-		days = 3
-	}
-
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event worldnews.115"
-		hidden_effect = {
-			set_global_flag = SIA_Boworadet_fuckyeah
-		}
-	}
-
-	show_major = {
-		OR = {
-			regional_asia_news = yes
-			tag = SIA
-			is_in_faction_with = SIA
-		}
-	}
-
-	option = {
-		name = worldnews.115.a
-	}
-}
 
 # Rebellion in Siam Crushed
-news_event = {
-	id = worldnews.116
-	title = worldnews.116.t
-	desc = worldnews.116.d
-	picture = GFX_news_event_khana_ratsadon_dead_boworadet_sanam_luang
-
-	major = yes
-
-	trigger = {
-		is_ai = no
-		NOT = {
-			has_global_flag = SIA_Plaek_fuckyeah
-		}
-		SIA = {
-			has_country_flag = SIA_GOVERNMENT
-			NOT = {
-				has_civil_war = yes
-				has_war = yes
-				is_subject = yes
-			}
-			OR = {
-				has_government = social_conservative
-				has_government = social_liberal
-				has_government = social_democrat
-			}
-			controls_state = 289 # Bangkok under control
-		}
-		has_global_flag = SIA_yes_civil_war # Yes - the civil war happens
-		wants_world_news = yes
-	}
-
-	mean_time_to_happen = {
-		days = 3
-	}
-
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event worldnews.116"
-		hidden_effect = {
-			set_global_flag = SIA_Plaek_fuckyeah
-		}
-	}
-
-	show_major = {
-		OR = {
-			regional_asia_news = yes
-			tag = SIA
-			is_in_faction_with = SIA
-		}
-	}
-
-	option = {
-		name = worldnews.116.a
-	}
-}
 
 # Serbia crowns the king
-news_event = {
-	id = worldnews.117
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.117" }
-	title = worldnews.117.t
-	desc = worldnews.117.d
-	picture = GFX_news_event_ITA_kingdom
-
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		OR = {
-			regional_europe_news = yes
-			is_neighbor_of = SER
-		}
-		NOT = {
-			tag = SER
-		}
-	}
-
-	option = {
-		name = worldnews.117.a
-
-		trigger = {
-			NOT = {
-				tag = AUS
-				tag = BUL
-			}
-		}
-	}
-
-	option = {
-		name = worldnews.117.b
-
-		trigger = {
-			OR = {
-				tag = AUS
-				tag = BUL
-			}
-		}
-	}
-}
 
 # Serbia becomes a republic
-news_event = {
-	id = worldnews.118
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.118" }
-	title = worldnews.118.t
-	desc = worldnews.118.d
-	picture = GFX_news_event_ITA_parliament
-
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		OR = {
-			regional_europe_news = yes
-			is_neighbor_of = SER
-		}
-		NOT = {
-			tag = SER
-		}
-	}
-
-	option = {
-		name = worldnews.118.a
-	}
-}
 
 # Yugoslavia formed
-news_event = {
-	id = worldnews.119
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.119" }
-	title = worldnews.119.t
-	desc = worldnews.119.d
-	picture = GFX_news_event_ITA_big_crowd
-
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		NOT = {
-			tag = SER
-		}
-	}
-
-	option = {
-		name = worldnews.119.a
-	}
-}
 
 # New Guard wins election in Australasia
 news_event = {
@@ -3519,287 +2652,8 @@ news_event = {
 }
 
 # Belgium Declares it's Independence
-news_event = {
-	id = worldnews.136
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.136" }
-	title = worldnews.136.t
-	desc = worldnews.136.d
-	picture = GFX_News_Belgium_Liberated
-
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-		BEL = {
-			has_country_flag = Belgium_Independent
-		}
-	}
-
-	option = {
-		name = worldnews.136.a
-	}
-}
 
 # Wallonia Falls to Syndicalism
-news_event = {
-	id = worldnews.137
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.137" }
-	title = worldnews.137.t
-	desc = worldnews.137.d
-	picture = GFX_News_Belgium_Liberated
-
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		NOT = {
-			tag = BEL
-		}
-		regional_europe_news = yes
-	}
-
-	option = {
-		name = worldnews.137.a
-	}
-}
-
-# Agrarians/RadDems/BroadSocs take power in Bulgaria - Balkan War loss
-news_event = {
-	id = worldnews.138
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.138" }
-	title = worldnews.138.t
-	desc = worldnews.138.d
-	picture = GFX_news_event_ITA_parliament
-
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		OR = {
-			regional_europe_news = yes
-			is_neighbor_of = BUL
-		}
-		NOT = {
-			tag = BUL
-		}
-	}
-
-	option = {
-		name = worldnews.138.a
-	}
-}
-
-# Agrarians couped by Absolutists - Bulgaria
-news_event = {
-	id = worldnews.139
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.139" }
-	title = worldnews.139.t
-	desc = worldnews.139.d
-	picture = GFX_news_event_ITA_parliament
-
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		OR = {
-			regional_europe_news = yes
-			is_neighbor_of = BUL
-		}
-		NOT = {
-			tag = BUL
-		}
-	}
-
-	option = {
-		name = worldnews.139.a
-	}
-}
-
-# Agrarians couped following Serbian refusal - Bulgaria
-news_event = {
-	id = worldnews.140
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.140" }
-	title = worldnews.140.t
-	desc = worldnews.140.d
-	picture = GFX_news_event_ITA_parliament
-
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		OR = {
-			regional_europe_news = yes
-			is_neighbor_of = BUL
-		}
-		NOT = {
-			tag = BUL
-		}
-	}
-
-	option = {
-		name = worldnews.140.a
-
-		trigger = {
-			NOT = {
-				tag = BUL
-			}
-		}
-	}
-
-	option = {
-		name = worldnews.140.b
-
-		trigger = {
-			tag = BUL
-		}
-	}
-}
-
-# Agrarians couped following Yugoslavian refusal - Bulgaria
-news_event = {
-	id = worldnews.141
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.141" }
-	title = worldnews.141.t
-	desc = worldnews.141.d
-	picture = GFX_news_event_ITA_parliament
-
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		OR = {
-			regional_europe_news = yes
-			is_neighbor_of = BUL
-		}
-		NOT = {
-			tag = BUL
-		}
-	}
-
-	option = {
-		name = worldnews.141.a
-	}
-}
-
-# RadDems/BroadSocs take power - Bulgarian victory in Balkan War
-news_event = {
-	id = worldnews.142
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.142" }
-	title = worldnews.142.t
-	desc = worldnews.142.d
-	picture = GFX_news_event_ITA_parliament
-
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		OR = {
-			regional_europe_news = yes
-			is_neighbor_of = BUL
-		}
-		NOT = {
-			tag = BUL
-		}
-	}
-
-	option = {
-		name = worldnews.142.a
-	}
-}
-
-# Absolutists take power - Bulgarian victory in Balkan War
-news_event = {
-	id = worldnews.143
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.143" }
-	title = worldnews.143.t
-	desc = worldnews.143.d
-	picture = GFX_news_event_ITA_parliament
-
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		OR = {
-			regional_europe_news = yes
-			is_neighbor_of = BUL
-		}
-		NOT = {
-			tag = BUL
-		}
-	}
-
-	option = {
-		name = worldnews.143.a
-	}
-}
-
-# Absolutist/Syndicalists take power - Bulgarian democratic party elected
-news_event = {
-	id = worldnews.144
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.144" }
-	title = worldnews.144.t
-	desc = worldnews.144.d
-	picture = GFX_news_event_ITA_parliament
-
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		OR = {
-			regional_europe_news = yes
-			is_neighbor_of = BUL
-		}
-		NOT = {
-			tag = BUL
-		}
-	}
-
-	option = {
-		name = worldnews.144.a
-	}
-}
 
 # Germany capitulates
 news_event = {
@@ -3841,7 +2695,6 @@ news_event = {
 				tag = ENG
 				tag = AUS
 				tag = RUS
-				tag = SOV
 				tag = CAN
 				tag = NFA
 			}
@@ -3873,13 +2726,6 @@ news_event = {
 		name = worldnews.145.f
 		trigger = {
 			tag = RUS
-		}
-	}
-
-	option = {
-		name = worldnews.145.g
-		trigger = {
-			tag = SOV
 		}
 	}
 
@@ -4491,361 +3337,20 @@ news_event = {
 }
 
 # Baltic Revolt
-news_event = {
-	id = worldnews.188
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.188" }
-	title = worldnews.188.t
-	desc = worldnews.188.d
-	picture = GFX_news_event_UBD_revolt
-
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		NOT = {
-			tag = BAT
-		}
-	}
-
-	option = {
-		name = worldnews.188.a
-	}
-}
 
 # Netherlands 1937 Election
-news_event = {
-	id = worldnews.189
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.189" }
-	title = worldnews.189.t
-	desc = {
-		text = worldnews.189.d.CNAalone
-		trigger = {
-			HOL = {
-				has_country_flag = hol_cna_government
-			}
-		}
-	}
-	desc = {
-		text = worldnews.189.d.CNAandLSP
-		trigger = {
-			HOL = {
-				has_country_flag = hol_coalition_cna_lsp
-			}
-		}
-	}
-	desc = {
-		text = worldnews.189.d.rightallianceCNAwon
-		trigger = {
-			HOL = {
-				has_country_flag = hol_coalition_cna_vnh
-			}
-		}
-	}
-	desc = {
-		text = worldnews.189.d.rightallianceVNHwon
-		trigger = {
-			HOL = {
-				has_country_flag = hol_coalition_vnh_cna
-			}
-		}
-	}
-	desc = {
-		text = worldnews.189.d.moderateleft
-		trigger = {
-			HOL = {
-				has_country_flag = hol_coalition_sdap_vdb
-			}
-		}
-	}
-	desc = {
-		text = worldnews.189.d.leftcoalition
-		trigger = {
-			HOL = {
-				has_country_flag = hol_coalition_sdap_rsap
-			}
-		}
-	}
-	picture = GFX_news_event_HOL_binnenhof
-
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		NOT = {
-			tag = HOL
-		}
-	}
-
-	option = {
-		name = worldnews.189.a
-	}
-}
 # Military putsch in Netherlands
-news_event = {
-	id = worldnews.190
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.190" }
-	title = worldnews.190.t
-	desc = {
-		text = worldnews.190.d.junta
-		trigger = {
-			HOL = {
-				has_country_flag = hol_junta_consolidated
-			}
-		}
-	}
-	desc = {
-		text = worldnews.190.d.vnh
-		trigger = {
-			NOT = {
-				HOL = {
-					has_country_flag = hol_junta_consolidated
-				}
-			}
-		}
-	}
-	picture = GFX_news_event_HOL_cars
 
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		NOT = {
-			tag = HOL
-		}
-	}
-
-	option = {
-		name = worldnews.190.a
-	}
-}
 # Dutch Revolution
-news_event = {
-	id = worldnews.191
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.191" }
-	title = worldnews.191.t
-	desc = {
-		text = worldnews.191.d.RSAPelection
-		trigger = {
-			HOL = {
-				has_country_flag = hol_radicalleft
-			}
-		}
-	}
-	desc = {
-		text = worldnews.191.d.mutiny
-		trigger = {
-			HOL = {
-				has_country_flag = hol_binnenhof_burning
-			}
-		}
-	}
-	picture = GFX_news_event_HOL_syndies
 
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		NOT = {
-			tag = HOL
-		}
-	}
-
-	option = {
-		name = worldnews.191.a
-	}
-}
 # Military putsch in Netherlands
-news_event = {
-	id = worldnews.192
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.192" }
-	title = worldnews.192.t
-	desc = {
-		text = worldnews.192.d.parliament
-		trigger = {
-			HOL = {
-				has_country_flag = hol_vnh_dictatorship
-			}
-		}
-	}
-	desc = {
-		text = worldnews.192.d.finsterwolde
-		trigger = {
-			HOL = {
-				has_country_flag = hol_binnenhof_burning
-				has_country_flag = hol_dutch_republic
-			}
-		}
-	}
-	desc = {
-		text = worldnews.192.d.haguemarch
-		trigger = {
-			HOL = {
-				has_country_flag = hol_binnenhof_burning
-				NOT = {
-					has_country_flag = hol_dutch_republic
-				}
-			}
-		}
-	}
-	picture = GFX_news_event_HOL_troops
 
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		NOT = {
-			tag = HOL
-		}
-	}
-
-	option = {
-		name = worldnews.192.a
-	}
-}
 # Dutch Recognition of France
-news_event = {
-	id = worldnews.193
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.193" }
-	title = worldnews.193.t
-	desc = {
-		text = worldnews.193.d
-		trigger = {
-			HOL = {
-				NOT = { has_country_flag = HOL_officially_recognized_commune }
-			}
-		}
-	}
-	desc = {
-		text = worldnews.193.d.dejure
-		trigger = {
-			HOL = {
-				has_country_flag = HOL_officially_recognized_commune
-			}
-		}
-	}
-	picture = GFX_news_event_HOL_binnenhof
 
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		NOT = {
-			tag = HOL
-		}
-	}
-
-	option = {
-		name = worldnews.193.a
-	}
-}
 # Dutch Nationalisation of German Assets
-news_event = {
-	id = worldnews.194
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.194" }
-	title = worldnews.194.t
-	desc = worldnews.194.d
-	picture = GFX_news_event_HOL_binnenhof
 
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		NOT = {
-			tag = HOL
-		}
-	}
-
-	option = {
-		name = worldnews.194.a
-	}
-}
 # Abdication of Wilhelmina
-news_event = {
-	id = worldnews.195
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.195" }
-	title = worldnews.195.t
-	desc = {
-		text = worldnews.195.d.republicalbarda
-		trigger = {
-			HOL = {
-				has_country_flag = hol_dutch_republic
-			}
-		}
-	}
-	desc = {
-		text = worldnews.195.d.juliana
-		trigger = {
-			HOL = {
-				NOT = {
-					has_country_flag = hol_dutch_republic
-				}
-			}
-		}
-	}
-	desc = {
-		text = worldnews.195.d.republic
-		trigger = {
-			HOL = {
-				has_country_flag = hol_radicalleft
-				has_country_flag = hol_second_election
-			}
-		}
-	}
-	picture = GFX_news_event_HOL_abdication
 
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		NOT = {
-			tag = HOL
-		}
-	}
-
-	option = {
-		name = worldnews.195.a
-	}
-}
 # Treaty of Beyrut
 news_event = {
 	id = worldnews.196
@@ -4913,46 +3418,6 @@ news_event = {
 	}
 }
 # Congress of Arlon
-news_event = {
-	id = worldnews.199
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.199" }
-	title = worldnews.199.t
-	desc = {
-		text = worldnews.199.d.failed
-		trigger = {
-			BEL = {
-				has_country_flag = TOA_Refused
-			}
-		}
-	}
-	desc = {
-		text = worldnews.199.d
-		trigger = {
-			NOT = {
-				BEL = {
-					has_country_flag = TOA_Refused
-				}
-			}
-		}
-	}
-	picture = GFX_news_event_BEL_arlon
-
-	major = yes
-
-	is_triggered_only = yes
-
-	fire_only_once = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {}
-
-	option = {
-		name = worldnews.199.a
-	}
-}
 # Tensions Over Wallonia
 news_event = {
 	id = worldnews.200
@@ -4996,36 +3461,6 @@ news_event = {
 	}
 }
 # Sudan Rebellion
-news_event = {
-	id = worldnews.201
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.201" }
-	title = worldnews.201.t
-	desc = worldnews.201.d
-	picture = GFX_news_event_MAF_collapse
-
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		NOT = {
-			tag = SUD
-			tag = EGY
-		}
-		OR = {
-			regional_africa_news = yes
-			regional_middle_east_news = yes
-		}
-	}
-
-	option = {
-		name = worldnews.201.a
-	}
-}
 # Crusade Against Syndicalism
 news_event = {
 	id = worldnews.202
@@ -5100,83 +3535,6 @@ news_event = { #The Totalist Charter is drafted
 }
 
 # Italian Federation Restored via Revolt
-news_event = {
-	id = worldnews.210
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.210" }
-	title = worldnews.210.t
-	picture = GFX_news_event_ITA_kingdom
-
-	desc = {
-		text = worldnews.210.d.tuscwaus
-		trigger = {
-			ITA = {
-				has_country_leader = { name = "Pietro I" ruling_only = yes }
-				has_country_flag = VNC_accepted_austrian_help
-			}
-		}
-	}
-	desc = {
-		text = worldnews.210.d.lombwaus
-		trigger = {
-			ITA = {
-				has_country_leader = { name = "Adriano I" ruling_only = yes }
-				has_country_flag = VNC_accepted_austrian_help
-			}
-		}
-	}
-	desc = {
-		text = worldnews.210.d.venwaus
-		trigger = {
-			ITA = {
-				has_country_leader = { name = "Giuseppe Volpi" ruling_only = yes }
-				has_country_flag = VNC_accepted_austrian_help
-			}
-		}
-	}
-	desc = {
-		text = worldnews.210.d.tuscnoaus
-		trigger = {
-			ITA = {
-				has_country_leader = { name = "Pietro I" ruling_only = yes }
-				NOT = { has_country_flag = VNC_accepted_austrian_help }
-			}
-		}
-	}
-	desc = {
-		text = worldnews.210.d.lombnoaus
-		trigger = {
-			ITA = {
-				has_country_leader = { name = "Adriano I" ruling_only = yes }
-				NOT = { has_country_flag = VNC_accepted_austrian_help }
-			}
-		}
-	}
-	desc = {
-		text = worldnews.210.d.vennoaus
-		trigger = {
-			ITA = {
-				has_country_leader = { name = "Giuseppe Volpi" ruling_only = yes }
-				NOT = { has_country_flag = VNC_accepted_austrian_help }
-			}
-		}
-	}
-
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		regional_europe_news = yes
-	}
-
-	option = {
-		name = worldnews.210.a
-	}
-}
 
 # Venice and Lombardy split apart after the Revolt
 news_event = {
@@ -5254,38 +3612,6 @@ news_event = {
 }
 
 # Austrian withdrawal from Italy
-news_event = {
-	id = worldnews.214
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.214" }
-	title = worldnews.214.t
-	desc = worldnews.214.d
-	picture = GFX_news_event_ITA_milan
-
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		NOT = {
-			tag = ITA
-			tag = AUS
-		}
-		regional_europe_news = yes
-	}
-
-	option = {
-		name = worldnews.214.a
-		trigger = { NOT = { tag = SRI } }
-	}
-	option = {
-		name = worldnews.214.b
-		trigger = { tag = SRI }
-	}
-}
 
 # Italian Republic Survives
 news_event = {
@@ -5313,53 +3639,6 @@ news_event = {
 }
 
 # Italian Republic Falls
-news_event = {
-	id = worldnews.216
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.216" }
-	title = worldnews.216.t
-	picture = GFX_news_event_ITA_parliament
-
-	desc = {
-		text = worldnews.216.d.tusc
-		trigger = {
-			ITA = {
-				has_country_leader = { name = "Pietro I" ruling_only = yes }
-				exists = yes
-			}
-		}
-	}
-	desc = {
-		text = worldnews.216.d.lomb
-		trigger = {
-			ITA = {
-				has_country_leader = { name = "Adriano I" ruling_only = yes }
-				exists = yes
-			}
-		}
-	}
-	desc = {
-		text = worldnews.216.d.separate
-		trigger = {
-			NOT = { country_exists = ITA }
-		}
-	}
-
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		regional_europe_news = yes
-	}
-
-	option = {
-		name = worldnews.216.a
-	}
-}
 
 # Italian Republic Overthrown by ANI
 news_event = {
@@ -5387,52 +3666,6 @@ news_event = {
 }
 
 # Italy Reunited by ITA
-news_event = {
-	id = worldnews.218
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.218" }
-	title = worldnews.218.t
-	picture = GFX_news_event_ITA_big_crowd
-
-	desc = {
-		text = worldnews.218.d.ani
-		trigger = {
-			ITA = { has_government = national_populist }
-		}
-	}
-	desc = {
-		text = worldnews.218.d.fed
-		trigger = {
-			ITA = { has_government = authoritarian_democrat }
-		}
-	}
-	desc = {
-		text = worldnews.218.d.rep
-		trigger = {
-			ITA = {
-				NOT = {
-					has_government = national_populist
-					has_government = authoritarian_democrat
-				}
-			}
-		}
-	}
-
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		regional_europe_news = yes
-	}
-
-	option = {
-		name = worldnews.218.a
-	}
-}
 
 # Italy Reunited by SRI
 news_event = {
@@ -5536,130 +3769,6 @@ news_event = {
 
 	option = {
 		name = worldnews.222.a
-	}
-}
-
-# Papal Conclave elects PiusXII
-news_event = {
-	id = worldnews.223
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.223" }
-	title = worldnews.223.t
-	desc = worldnews.223.d
-	picture = GFX_news_event_PAP_history_pope
-
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		NOT = { tag = PAP }
-		regional_europe_news = yes
-	}
-
-	option = {
-		name = worldnews.223.a
-		trigger = { not_has_socialist_government = yes }
-	}
-	option = {
-		name = worldnews.223.b
-		trigger = { has_socialist_government = yes }
-	}
-}
-
-# Papal Conclave elects StephenX
-news_event = {
-	id = worldnews.224
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.224" }
-	title = worldnews.224.t
-	desc = worldnews.224.d
-	picture = GFX_news_event_PAP_charity_pope
-
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		NOT = { tag = PAP }
-		regional_europe_news = yes
-	}
-
-	option = {
-		name = worldnews.224.a
-		trigger = { not_has_socialist_government = yes }
-	}
-	option = {
-		name = worldnews.224.b
-		trigger = { has_socialist_government = yes }
-	}
-}
-
-# Papal Conclave elects John XXIII
-news_event = {
-	id = worldnews.225
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.225" }
-	title = worldnews.225.t
-	desc = worldnews.225.d
-	picture = GFX_news_event_PAP_red_pope
-
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		NOT = { tag = PAP }
-		regional_europe_news = yes
-	}
-
-	option = {
-		name = worldnews.225.a
-		trigger = { not_has_socialist_government = yes }
-	}
-	option = {
-		name = worldnews.225.b
-		trigger = { has_socialist_government = yes }
-	}
-}
-
-# Papal Conclave elects Julius IV
-news_event = {
-	id = worldnews.226
-	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.226" }
-	title = worldnews.226.t
-	desc = worldnews.226.d
-	picture = GFX_news_event_PAP_natpope
-
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		NOT = { tag = PAP }
-		regional_europe_news = yes
-	}
-
-	option = {
-		name = worldnews.226.a
-		trigger = { not_has_socialist_government = yes }
-	}
-	option = {
-		name = worldnews.226.b
-		trigger = { has_socialist_government = yes }
 	}
 }
 
@@ -5893,7 +4002,6 @@ news_event = { #International Avantgarde
 		trigger = {
 			NOT = {
 				tag = GER
-				tag = PAP
 				tag = ENG
 				tag = SRI
 				tag = FRA
@@ -5905,13 +4013,6 @@ news_event = { #International Avantgarde
 		name = worldnews.244.b
 		trigger = {
 			tag = GER
-		}
-	}
-
-	option = {
-		name = worldnews.244.c
-		trigger = {
-			tag = PAP
 		}
 	}
 

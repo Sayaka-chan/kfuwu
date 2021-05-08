@@ -58,7 +58,6 @@ news_event = {
 	trigger = {
 		OR = {
 			tag = OTT
-			tag = TUR
 		}
 		date > 1936.3.4
 	}
@@ -86,7 +85,6 @@ news_event = {
 	trigger = {
 		OR = {
 			tag = OTT
-			tag = TUR
 		}
 		has_idea = ott_black_monday
 		date > 1937.5.1
@@ -121,7 +119,6 @@ news_event = {
 	trigger = {
 		OR = {
 			tag = OTT
-			tag = TUR
 		}
 		has_idea = ott_black_monday1
 		date > 1937.6.1
@@ -156,7 +153,6 @@ news_event = {
 	trigger = {
 		OR = {
 			tag = OTT
-			tag = TUR
 		}
 		has_idea = ott_black_monday2
 		date > 1938.1.1
@@ -190,7 +186,6 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = OTT
-			tag = TUR
 		}
 		date > 1940.4.1
 		owns_state = 454
@@ -330,7 +325,6 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = OTT
-			tag = TUR
 		}
 		has_country_flag = ott_jews_settled
 		NOT = {
@@ -388,27 +382,7 @@ country_event = {
 		}
 
 		reverse_add_opinion_modifier = {
-			target = LBA
-			modifier = ott_jews
-			} #relations worsened, -25
-		reverse_add_opinion_modifier = {
-			target = SAU
-			modifier = ott_jews
-		}
-		reverse_add_opinion_modifier = {
-			target = OMA
-			modifier = ott_jews
-		}
-		reverse_add_opinion_modifier = {
-			target = YEM
-			modifier = ott_jews
-		}
-		reverse_add_opinion_modifier = {
 			target = PER
-			modifier = ott_jews
-		}
-		reverse_add_opinion_modifier = {
-			target = EGY
 			modifier = ott_jews
 		}
 	}
@@ -445,106 +419,6 @@ country_event = {
 ###############################################################################
 
 ### OTT seizes Suez
-
-country_event = {
-	id = ott.71
-	immediate = { log = "[GetDateText]: [Root.GetName]: event ott.71" }
-	title = ott.71.t
-	desc = ott.71.d
-
-	fire_only_once = yes
-
-	trigger = {
-		tag = OTT
-		GEX = {
-			controls_state = 753
-			} # the canal
-		OTT = {
-			NOT = {
-				is_subject_of = GEX
-				is_in_faction_with = GEX
-				has_war_with = GEX
-			}
-			controls_state = 453 # sinai
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 10
-	}
-
-	option = { # take suez
-		name = ott.71.a
-
-		ai_chance = {
-			factor = 100
-		}
-		reverse_add_opinion_modifier = {
-			target = GEX
-			modifier = egy_suez
-			} #-100
-		GEX = {
-			country_event = {
-				id = ott.72
-				days = 2
-			}
-			} #german response
-	}
-
-	option = { # rather not
-		name = ott.71.b
-
-		ai_chance = {
-			factor = 0
-		}
-		reverse_add_opinion_modifier = {
-			target = GEX
-			modifier = egy_suez1
-			} #+50
-		add_war_support = -0.10
-	}
-}
-
-country_event = { # German response
-	id = ott.72
-	immediate = { log = "[GetDateText]: [Root.GetName]: event ott.72" }
-	title = ott.72.t
-	desc = ott.72.d
-
-	is_triggered_only = yes
-
-	option = { # there's nothing we can do
-		name = ott.72.a
-
-		ai_chance = {
-			factor = 100
-		}
-		if = {
-			limit = {
-				GEX = {
-					owns_state = 753
-				}
-			}
-			OTT = {
-				transfer_state = 753
-			}
-		}
-		add_war_support = -0.02
-	}
-
-	option = { # this means war
-		name = ott.72.b
-
-		ai_chance = {
-			factor = 0
-		}
-		declare_war_on = {
-			target = OTT
-			type = annex_everything
-		}
-		add_stability = -0.10
-	}
-}
 
 ###############################################################################
 # Cores on Arab lands
@@ -592,12 +466,6 @@ country_event = {
 			is_owned_by = OTT
 			is_controlled_by = OTT
 			} # al hajara
-		NOT = {
-			has_war_with = EGY
-			has_war_with = SAU
-			has_war_with = IRQ
-			has_war_with = SYR
-		}
 		not_has_socialist_government = yes
 		is_subject = no
 	}
@@ -658,12 +526,6 @@ country_event = {
 			is_owned_by = OTT
 			is_controlled_by = OTT
 			} # jordan
-		NOT = {
-			has_war_with = EGY
-			has_war_with = SAU
-			has_war_with = IRQ
-			has_war_with = SYR
-		}
 		not_has_socialist_government = yes
 		is_subject = no
 	}
@@ -726,12 +588,6 @@ country_event = {
 		455 = {
 			is_core_of = OTT
 			} # jordan
-		NOT = {
-			has_war_with = EGY
-			has_war_with = SAU
-			has_war_with = IRQ
-			has_war_with = SYR
-		}
 		not_has_socialist_government = yes
 		is_subject = no
 	}
@@ -798,12 +654,6 @@ country_event = {
 		754 = {
 			is_core_of = OTT
 			} # medina
-		NOT = {
-			has_war_with = EGY
-			has_war_with = SAU
-			has_war_with = IRQ
-			has_war_with = SYR
-		}
 		not_has_socialist_government = yes
 		is_subject = no
 	}
@@ -859,12 +709,6 @@ country_event = {
 			is_owned_by = OTT
 			is_controlled_by = OTT
 			} # sinai
-		NOT = {
-			has_war_with = EGY
-			has_war_with = SAU
-			has_war_with = IRQ
-			has_war_with = SYR
-		}
 		not_has_socialist_government = yes
 		is_subject = no
 	}
@@ -927,12 +771,6 @@ country_event = {
 		453 = {
 			is_core_of = OTT
 			} # sinai
-		NOT = {
-			has_war_with = EGY
-			has_war_with = SAU
-			has_war_with = IRQ
-			has_war_with = SYR
-		}
 		not_has_socialist_government = yes
 		is_subject = no
 	}
@@ -1418,22 +1256,6 @@ country_event = { # Marmara & Black Sea
 			target = DKB
 			modifier = ott_naval_dominance
 		}
-		reverse_add_opinion_modifier = {
-			target = GEO
-			modifier = ott_naval_dominance
-		}
-		reverse_add_opinion_modifier = {
-			target = BUL
-			modifier = ott_naval_dominance
-		}
-		reverse_add_opinion_modifier = {
-			target = ROM
-			modifier = ott_naval_dominance
-		}
-		reverse_add_opinion_modifier = {
-			target = RRM
-			modifier = ott_naval_dominance
-		}
 	}
 }
 
@@ -1449,10 +1271,6 @@ country_event = { # Mediterranean
 		name = ott.83.a
 
 		add_political_power = 20
-		reverse_add_opinion_modifier = {
-			target = EGY
-			modifier = ott_naval_dominance
-		}
 		reverse_add_opinion_modifier = {
 			target = GRE
 			modifier = ott_naval_dominance
@@ -1474,18 +1292,6 @@ country_event = { # Gulf of Persia
 		add_political_power = 20
 		reverse_add_opinion_modifier = {
 			target = PER
-			modifier = ott_naval_dominance
-		}
-		reverse_add_opinion_modifier = {
-			target = SAU
-			modifier = ott_naval_dominance
-		}
-		reverse_add_opinion_modifier = {
-			target = OMA
-			modifier = ott_naval_dominance
-		}
-		reverse_add_opinion_modifier = {
-			target = JBS
 			modifier = ott_naval_dominance
 		}
 		reverse_add_opinion_modifier = {
@@ -2776,10 +2582,6 @@ country_event = {
 			}
 		}
 		set_country_flag = ott_osmanlyasfuck
-		country_event = {
-			id = ott.119
-			hours = 2
-		}
 	}
 }
 
@@ -2787,47 +2589,6 @@ country_event = {
 
 # Osman takes control of Ertugrul Cavalry
 # Osman captures the palace
-
-country_event = {
-	id = ott.119
-	immediate = { log = "[GetDateText]: [Root.GetName]: event ott.119" }
-	title = ott.119.t
-	desc = ott.119.d
-
-	is_triggered_only = yes
-
-	option = {
-		name = ott.119.a
-		hidden_effect = {
-			if = {
-				limit = {
-					has_war = yes
-				}
-				country_event = {
-					id = ott.121
-					hours = 1
-				}
-
-				else = {
-					random_list = {
-						90 = {
-							country_event = {
-								id = ott.121
-								hours = 1
-							}
-						}
-						10 = {
-							country_event = {
-								id = ott.129
-								hours = 1
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
 
 #country_event = { # TODO - EMPTY
 #	id = ott.120
@@ -2845,48 +2606,6 @@ country_event = {
 # Army reinforcements join loyalist forces
 # Osman captures the Parliament
 # Osman captures Galata Bridge
-
-country_event = {
-	id = ott.121
-	immediate = { log = "[GetDateText]: [Root.GetName]: event ott.121" }
-	title = ott.121.t
-	desc = ott.121.d
-
-	is_triggered_only = yes
-
-	option = {
-		name = ott.121.a
-
-		hidden_effect = {
-			if = {
-				limit = {
-					has_war = yes
-				}
-				country_event = {
-					id = ott.125
-					hours = 4
-				}
-
-				else = {
-					random_list = {
-						90 = {
-							country_event = {
-								id = ott.125
-								hours = 4
-							}
-						}
-						10 = {
-							country_event = {
-								id = ott.130
-								hours = 6
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
 
 #country_event = { # TODO - EMPTY
 #	id = ott.122
@@ -2933,26 +2652,6 @@ country_event = {
 # Osman sends radio orders to Constantinople Corps
 # Osman directs cleanup operations
 
-country_event = {
-	id = ott.125
-	immediate = { log = "[GetDateText]: [Root.GetName]: event ott.125" }
-	title = ott.125.t
-	desc = ott.125.d
-
-	is_triggered_only = yes
-
-	option = {
-		name = ott.125.a
-
-		hidden_effect = {
-			country_event = {
-				id = ott.135
-				days = 3
-			}
-		}
-	}
-}
-
 #country_event = { # TODO - EMPTY
 #	id = ott.126
 #	title = ott.126.t
@@ -2995,54 +2694,8 @@ country_event = {
 # Army reinforcements overwhelm loyalist forces
 # Osman Fuad retreats to Edirne
 
-country_event = {
-	id = ott.129
-	immediate = { log = "[GetDateText]: [Root.GetName]: event ott.129" }
-	title = ott.129.t
-	desc = ott.129.d
-
-	is_triggered_only = yes
-
-	option = {
-		name = ott.129.a
-
-		hidden_effect = {
-			load_oob = OTT_ertugrul
-			country_event = {
-				id = ott.132
-				days = 1
-			}
-		}
-		custom_effect_tooltip = OTT_ertugrul_tt
-		set_capital = 341
-	}
-}
-
 # Rebels successfully defend the Sublime Porte
 # Osman Fuad retreats to Edirne
-
-country_event = {
-	id = ott.130
-	immediate = { log = "[GetDateText]: [Root.GetName]: event ott.130" }
-	title = ott.130.t
-	desc = ott.130.d
-
-	is_triggered_only = yes
-
-	option = {
-		name = ott.130.a
-
-		hidden_effect = {
-			load_oob = OTT_ertugrul
-			country_event = {
-				id = ott.132
-				days = 1
-			}
-		}
-		custom_effect_tooltip = OTT_ertugrul_tt
-		set_capital = 341
-	}
-}
 
 #country_event = { # TODO - EMPTY
 #	id = ott.131
@@ -3059,372 +2712,7 @@ country_event = {
 
 # Civil War
 
-country_event = {
-	id = ott.132
-	immediate = { log = "[GetDateText]: [Root.GetName]: event ott.132" }
-	title = ott.132.t
-	desc = ott.132.d
-
-	is_triggered_only = yes
-
-	option = {
-		name = ott.132.a
-
-		add_stability = -0.20
-		custom_effect_tooltip = ott_civil_war_tt
-		hidden_effect = {
-			TUR = {
-				add_state_core = 341
-				add_state_core = 773
-				add_state_core = 340
-				add_state_core = 339
-				add_state_core = 342
-				add_state_core = 343
-				add_state_core = 345
-				add_state_core = 346
-				add_state_core = 49
-				add_state_core = 347
-				add_state_core = 356
-				add_state_core = 344
-				add_state_core = 355
-				add_state_core = 349
-				add_state_core = 354
-				add_state_core = 350
-				add_state_core = 352
-				add_state_core = 1000
-				add_state_core = 1001
-			}
-		}
-		hidden_effect = {
-			if = {
-				limit = {
-					has_unit_leader = 672
-				}
-				remove_unit_leader = 672
-			}
-			TUR = {
-				create_country_leader = {
-					name = "Mehmed Cavid Gerçel"
-					desc = "POLITICS_MEHMED_CAVID_DESC"
-					picture = "Portrait_Mehmed_Cavid.tga"
-					expire = "1965.1.1"
-					ideology = authoritarian_democrat_subtype
-				}
-				transfer_state = 773
-				transfer_state = 340
-				set_capital = 773
-				transfer_technology = yes
-				add_stability = 0.050
-				load_oob = OTT_tf
-				random_list = {
-					50 = {
-						load_oob = OTT_tf1
-					}
-					50 = {
-						add_stability = -0.010
-					}
-				}
-				random_list = {
-					30 = {
-						load_oob = OTT_tf2
-					}
-					70 = {
-						add_stability = -0.010
-					}
-				}
-				random_list = {
-					30 = {
-						load_oob = OTT_tf3
-					}
-					70 = {
-						add_stability = -0.010
-					}
-				}
-				set_cosmetic_tag = TUR_TF
-				declare_war_on = {
-					target = OTT
-					type = annex_everything
-				}
-			}
-			country_event = {
-				id = ott.134
-				days = 100
-			}
-		}
-		set_global_flag = OTT_civil_war
-	}
-}
-
 # Osman Fuad wins civil war
-
-country_event = {
-	id = ott.133
-	immediate = { log = "[GetDateText]: [Root.GetName]: event ott.133" }
-	title = ott.133.t
-	desc = ott.133.d
-
-	fire_only_once = yes
-
-	trigger = {
-		tag = OTT
-		has_global_flag = OTT_civil_war
-		controls_state = 341
-		owns_state = 773
-		controls_state = 773
-	}
-
-	option = {
-		name = ott.133.a
-
-		add_stability = 0.020
-		set_capital = 773
-		hidden_effect = {
-			TUR = {
-				drop_cosmetic_tag = yes
-				kill_country_leader = yes
-			}
-			country_event = {
-				id = ott.135
-				days = 4
-			}
-		}
-		clr_global_flag = OTT_civil_war
-	}
-}
-
-# Osman Fuad loses civil war
-
-country_event = {
-	id = ott.134
-	immediate = { log = "[GetDateText]: [Root.GetName]: event ott.134" }
-	title = ott.134.t
-	desc = ott.134.d
-
-	is_triggered_only = yes
-
-	trigger = {
-		tag = OTT
-		has_global_flag = OTT_civil_war
-		NOT = {
-			controls_state = 773
-		}
-		TUR = {
-			controls_state = 773
-		}
-	}
-
-	option = {
-		name = ott.134.a
-
-		add_stability = -0.10
-		hidden_effect = {
-			TUR = {
-				add_state_core = 341 #Edirne
-				add_state_core = 773 #Kostantiniyye
-				add_state_core = 340 #Bursa
-				add_state_core = 339 #Izmir
-				add_state_core = 342 #Mugla
-				add_state_core = 343 #Afyon
-				add_state_core = 345 #Sivas
-				add_state_core = 346 #Konya
-				add_state_core = 49 #Ankara
-				add_state_core = 347 #Gelibolu
-				add_state_core = 356 #Sinop
-				add_state_core = 344 #Adana
-				add_state_core = 355 #Samsun
-				add_state_core = 349 #Maras
-				add_state_core = 354 #Gümüshane
-				add_state_core = 350 #Diyarbakır
-				add_state_core = 352 #Van
-				add_state_core = 1000 #Kars-Igdir
-				add_state_core = 1001 #Lazistan
-			}
-			every_owned_state = {
-				limit = {
-					is_core_of = OTT
-					NOT = {
-						is_core_of = TUR
-					}
-				}
-				add_core_of = TUR
-			}
-			every_state = {
-				limit = {
-					is_core_of = OTT
-				}
-				remove_core_of = OTT
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = OTT
-				}
-				remove_claim_by = OTT
-			}
-
-			random_owned_controlled_state = {
-				TUR = {
-					transfer_state = PREV
-				}
-			}
-			transfer_navy = {
-				target = TUR
-			}
-		}
-
-		TUR = {
-			drop_cosmetic_tag = yes
-			annex_country = {
-				target = OTT
-				transfer_troops = yes
-			}
-			transfer_technology = yes
-			if = {
-				limit = {
-					event_target:old_overlord = {
-						exists = yes
-					}
-				}
-				event_target:old_overlord = {
-					puppet = TUR
-				}
-			}
-			change_tag_from = OTT
-		}
-		clr_global_flag = OTT_civil_war
-	}
-}
-
-# Osman executes rebels
-
-country_event = {
-	id = ott.135
-	immediate = { log = "[GetDateText]: [Root.GetName]: event ott.135" }
-	title = ott.135.t
-	desc = ott.135.d
-
-	is_triggered_only = yes
-
-	option = {
-		name = ott.135.a
-
-		custom_effect_tooltip = OTT_executions1_tt
-		hidden_effect = {
-			if = {
-				limit = {
-					has_unit_leader = 672
-				}
-				remove_unit_leader = 672
-			}
-			remove_ideas = OTT_Ali_Ihsan_Pasa_carm_ade
-			set_country_flag = Ali_Ihsan_Pasa_dead
-			TUR = {
-				if = {
-					limit = {
-						has_unit_leader = 678
-					}
-					remove_unit_leader = 678
-				}
-			}
-		}
-		country_event = {
-			id = ott.136
-			days = 1
-		}
-	}
-}
-
-# Osman executes Abdulmecid's murderers
-
-country_event = {
-	id = ott.136
-	immediate = { log = "[GetDateText]: [Root.GetName]: event ott.136" }
-	title = ott.136.t
-	desc = ott.136.d
-
-	is_triggered_only = yes
-
-	option = { # firing squad
-		name = ott.136.a
-
-		add_political_power = 50
-		custom_effect_tooltip = OTT_executions2_tt
-		hidden_effect = {
-			set_country_flag = Mehmed_Cavid_Bey_dead
-			set_country_flag = Filibeli_Hilmi_Bey_dead
-			set_country_flag = Kara_Kemal_Bey_dead
-			set_country_flag = Abduelkadir_Pasa_dead
-			set_country_flag = Yenibahceli_Nail_Bey_dead
-			set_country_flag = Doktor_Nazim_Bey_dead
-			remove_ideas = OTT_Mehmed_Cavid_Bey_hog_ade
-			remove_ideas = OTT_Filibeli_Hilmi_Bey_for_ade
-			remove_ideas = OTT_Kara_Kemal_Bey_eco_ade
-			remove_ideas = OTT_Abduelkadir_Pasa_sec_ade
-		}
-		add_popularity = {
-			ideology = authoritarian_democrat
-			popularity = -0.05
-		}
-		set_party_name = {
-			ideology = authoritarian_democrat
-			long_name = "Terakkiperver Fırka"
-			name = "TF"
-		}
-		hidden_effect = {
-			create_country_leader = {
-				name = "Mustafa İsmet Paşa"
-				desc = "MUSTAFA_ISMET_PASA"
-				picture = "Portrait_OTT_Mustafa_Ismet.tga"
-				expire = "1965.1.1"
-				ideology = authoritarian_democrat_subtype
-			}
-			news_event = {
-				id = ott.137
-				days = 5
-			}
-		}
-	}
-
-	option = { # hanging
-		name = ott.136.b
-
-		add_stability = 0.050
-		custom_effect_tooltip = OTT_executions2_tt
-		hidden_effect = {
-			set_country_flag = Mehmed_Cavid_Bey_dead
-			set_country_flag = Filibeli_Hilmi_Bey_dead
-			set_country_flag = Kara_Kemal_Bey_dead
-			set_country_flag = Abduelkadir_Pasa_dead
-			set_country_flag = Yenibahceli_Nail_Bey_dead
-			set_country_flag = Doktor_Nazim_Bey_dead
-			remove_ideas = OTT_Mehmed_Cavid_Bey_hog_ade
-			remove_ideas = OTT_Filibeli_Hilmi_Bey_for_ade
-			remove_ideas = OTT_Kara_Kemal_Bey_eco_ade
-			remove_ideas = OTT_Abduelkadir_Pasa_sec_ade
-		}
-		add_popularity = {
-			ideology = authoritarian_democrat
-			popularity = -0.05
-		}
-		set_party_name = {
-			ideology = authoritarian_democrat
-			long_name = "Terakkiperver Fırka"
-			name = "TF"
-		}
-		hidden_effect = {
-			create_country_leader = {
-				name = "Mustafa İsmet Paşa"
-				desc = "MUSTAFA_ISMET_PASA"
-				picture = "Portrait_OTT_Mustafa_Ismet.tga"
-				expire = "1965.1.1"
-				ideology = authoritarian_democrat_subtype
-			}
-			news_event = {
-				id = ott.137
-				days = 5
-			}
-		}
-	}
-}
 
 # Order restored to the capital!
 # Osman Fuad crowned Osman IV
@@ -4756,129 +4044,6 @@ country_event = {
 #############################
 # New Arabian Revolt events
 #############################
-
-country_event = {
-	id = ott.8
-	immediate = { log = "[GetDateText]: [Root.GetName]: event ott.8" }
-	title = ott.8.t
-	desc = ott.8.d
-	fire_only_once = yes
-
-	trigger = {
-		OR = {
-			tag = OTT
-			tag = TUR
-		}
-		has_war_with = EGY
-		controls_state = 455 #Jordan
-		controls_state = 754 #Suriye
-	}
-
-	mean_time_to_happen = {
-		days = 10
-	}
-
-	option = {
-		name = ott.8.a
-		add_stability = -0.20
-		hidden_effect = {
-			set_global_flag = EGY_arab_rebels
-		}
-		JOR = {
-			transfer_state = 455 #Jordan
-			transfer_state = 554 #Suriye
-			add_state_core = 554
-			add_state_core = 455
-			add_state_core = 754
-			add_state_core = 679
-			declare_war_on = {
-				target = OTT
-				type = annex_everything
-			}
-			if = {
-				limit = {
-					EGY = {
-						is_faction_leader = yes
-					}
-				}
-				EGY = {
-					add_to_faction = JOR
-				}
-			}
-			hidden_effect = {
-				load_oob = OTT_syr
-				set_technology = {
-					basic_machine_tools = 1
-				}
-				add_political_power = 100
-				set_politics = {
-					ruling_party = authoritarian_democrat
-					elections_allowed = no
-				}
-				add_popularity = {
-					ideology = authoritarian_democrat
-					popularity = 0.6
-				}
-				if = {
-					limit = {
-						OTT = {
-							has_completed_focus = OTT_legal_reform
-						}
-					}
-					add_ideas = ott_arab_revolt_reforms_1
-				}
-				if = {
-					limit = {
-						OTT = {
-							has_completed_focus = OTT_judicial_reform
-						}
-					}
-					add_ideas = ott_arab_revolt_reforms_2
-				}
-				if = {
-					limit = {
-						OTT = {
-							has_completed_focus = OTT_administrative_reform
-						}
-					}
-					add_ideas = ott_arab_revolt_reforms_3
-				}
-				if = {
-					limit = {
-						OTT = {
-							has_completed_focus = OTT_bureaucratic_reform
-						}
-					}
-					add_ideas = ott_arab_revolt_reforms_4
-				}
-				if = {
-					limit = {
-						OTT = {
-							has_country_flag = ott_constitution_petitions
-						}
-					}
-					add_ideas = ott_arab_revolt_reforms_5
-				}
-				if = {
-					limit = {
-						OTT = {
-							has_country_flag = ott_admin_decentralise
-						}
-					}
-					add_ideas = ott_arab_revolt_reforms_6
-				}
-				if = {
-					limit = {
-						OTT = {
-							has_idea = ott_solid_constitution
-						}
-					}
-					add_ideas = ott_arab_revolt_reforms_7
-				}
-			}
-		}
-	}
-}
 
 #Ask for Weapons
 country_event = {

@@ -68,8 +68,8 @@ if = {
 	}
 }
 
-set_research_slots = 3
-set_convoys = 247
+set_research_slots = 0
+set_convoys = 0
 set_stability = 0.57
 set_war_support = 0.10
 
@@ -127,13 +127,14 @@ add_opinion_modifier = { target = GER modifier = LEC_member }
 add_opinion_modifier = { target = JAP modifier = LEC_member }
 add_opinion_modifier = { target = USA modifier = LEC_member }
 add_opinion_modifier = { target = AUS modifier = LEC_member }
-add_opinion_modifier = { target = BEL modifier = LEC_member }
 set_variable = { global.legations_yes_votes = 0 }
 set_variable = { global.legations_no_votes = 0 }
 set_variable = { global.legations_abstain_votes = 0 }
 
 add_ideas = {
 	free_trade
+	no_training
+	neutral_idea
 }
 
 create_country_leader = {

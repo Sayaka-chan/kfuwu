@@ -89,10 +89,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus DEH_economyreform2"
-			swap_ideas = {
-				remove_idea = DEH_backwards_economy_1
-				add_idea = DEH_backwards_economy_2
-			}
+			remove_ideas = DEH_backwards_economy_1
 			country_event = delhi.12
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -378,10 +375,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -403,10 +400,10 @@ focus_tree = {
 		}
 
 		complete_tooltip = {
-			add_extra_state_shared_building_slots = 3
+			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = industrial_complex
-				level = 3
+				level = 2
 				instant_build = yes
 			}
 		}
@@ -437,10 +434,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -647,7 +644,37 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus DEH_new_economy"
-			remove_ideas = DEH_backwards_economy_2
+			random_owned_state = {
+				prioritize = { 891 } #Lahore
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 8
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -656,7 +683,7 @@ focus_tree = {
 	focus = {
 		id = DEH_ISAC
 		icon = GFX_goal_generic_scientific_exchange
-		x = 32
+		x = 24
 		y = 0
 		cost = 10
 		available = {
@@ -707,7 +734,7 @@ focus_tree = {
 		relative_position_id = DEH_ISAC
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -739,7 +766,7 @@ focus_tree = {
 		}
 		x = 0
 		y = 2
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 5
@@ -838,7 +865,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus DEH_armyreform1"
-			army_experience = 15
+			army_experience = 200
 		}
 		search_filters = { FOCUS_FILTER_ARMY_BONUS }
 	}
@@ -930,6 +957,79 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
+	focus = {
+		id = DEH_doctrine_2
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = DEH_princearmyreform }
+		prerequisite = { focus = DEH_diarchy }
+		relative_position_id = DEH_armyreform1
+		x = 3
+		y = 2
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_war = yes
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DEH_doctrine_2"
+			add_tech_bonus = {
+				name = DEH_doctrine
+				bonus = 1
+				uses = 1
+				category = land_doctrine
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = DEH_diarchy_2
+		icon = GFX_focus_RAJ_indian_gentlemen_offcers
+		prerequisite = { focus = DEH_doctrine_2 }
+		relative_position_id = DEH_doctrine_2
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DEH_diarchy_2"
+			add_ideas = DEH_research
+		}
+	}
+	focus = {
+		id = DEH_diarchy_3
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = DEH_diarchy_2 }
+		relative_position_id = DEH_diarchy_2
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DEH_diarchy_3"
+			add_ideas = DEH_idea_3
+		}
+	}
 
 	focus = {
 		id = DEH_motorized_focus
@@ -968,7 +1068,7 @@ focus_tree = {
 		relative_position_id = DEH_armyreform1
 		x = -1
 		y = 4
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -997,7 +1097,7 @@ focus_tree = {
 		relative_position_id = DEH_armyreform1
 		x = -1
 		y = 5
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1055,7 +1155,7 @@ focus_tree = {
 		relative_position_id = DEH_armyreform1
 		x = 1
 		y = 4
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1116,9 +1216,9 @@ focus_tree = {
 	focus = {
 		id = DEH_naval_effort
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 16
+		x = 20
 		y = 0
-		cost = 10
+		cost = 5
 
 		available = {
 			any_owned_state = {
@@ -1238,6 +1338,14 @@ focus_tree = {
 					}
 				}
 			}
+			430 = {
+				set_building_level = {
+					type = naval_base
+					level = 20
+					province = 11929
+					instant_build = yes
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_NAVY_BONUS FOCUS_FILTER_INDUSTRY }
 	}
@@ -1249,7 +1357,7 @@ focus_tree = {
 		relative_position_id = DEH_naval_effort
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 
 		available = {
 			owns_state = 443
@@ -1285,7 +1393,6 @@ focus_tree = {
 		id = DEH_flexible_navy
 		icon = GFX_goal_generic_build_navy
 		prerequisite = { focus = DEH_old_canada_ships }
-		mutually_exclusive = { focus = DEH_large_navy }
 		relative_position_id = DEH_naval_effort
 		x = -1
 		y = 2
@@ -1304,15 +1411,21 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus DEH_flexible_navy"
-			add_tech_bonus = {
-				name = DEH_flexible_navy
-				bonus = 1
-				uses = 2
-				technology = convoy_interdiction_ti
-				technology = unrestricted_submarine_warfare
-				technology = wolfpacks
-				technology = advanced_submarine_warfare
-				technology = combined_operations_raiding
+			random_owned_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -1322,7 +1435,6 @@ focus_tree = {
 		id = DEH_large_navy
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = DEH_old_canada_ships }
-		mutually_exclusive = { focus = DEH_flexible_navy }
 		relative_position_id = DEH_naval_effort
 		x = 1
 		y = 2
@@ -1341,11 +1453,21 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus DEH_large_navy"
-			add_tech_bonus = {
-				name = DEH_large_navy
-				bonus = 1
-				uses = 2
-				category = fleet_in_being_tree
+			random_owned_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -1376,11 +1498,21 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus DEH_submarine_effort"
-			add_tech_bonus = {
-				name = DEH_submarine_effort
-				bonus = 1
-				uses = 1
-				category = ss_tech
+			random_owned_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -1411,12 +1543,21 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus DEH_cruiser_effort"
-			add_tech_bonus = {
-				name = DEH_cruiser_effort
-				bonus = 1
-				uses = 1
-				category = cl_tech
-				category = ca_tech
+			random_owned_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -1480,8 +1621,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = DEH_capital_ships_effort
 				bonus = 1
-				uses = 1
-				category = ca_tech
+				uses = 2
 				category = bb_tech
 				category = cv_tech
 			}
@@ -1524,9 +1664,9 @@ focus_tree = {
 	focus = {
 		id = DEH_aviation_effort
 		icon = GFX_goal_generic_build_airforce
-		x = 12
+		x = 16
 		y = 0
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -1534,75 +1674,32 @@ focus_tree = {
 
 		complete_tooltip = {
 			air_experience = 25
-			if = {
-				limit = { has_country_flag = aviation_effort_AB }
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}
-			add_tech_bonus = {
-				name = DEH_aviation_effort
-				bonus = 1
-				uses = 1
-				category = air_doctrine
-			}
 		}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus DEH_aviation_effort"
 			air_experience = 25
 
-			if = {
-				limit = {
-					capital_scope = {
-						NOT = {
-							free_building_slots = {
-								building = air_base
-								size > 1
-							}
-						}
-					}
-				}
-				random_owned_state = {
-					limit = {
-						free_building_slots = {
-							building = air_base
-							size > 1
-						}
-					}
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
-					ROOT = { set_country_flag = aviation_effort_AB }
+			430 = {
+				set_building_level = {
+					type = air_base
+					level = 10
+					instant_build = yes
 				}
 			}
-			if = {
-				limit = {
-					capital_scope = {
-						free_building_slots = {
-							building = air_base
-							size > 1
-						}
-					}
-				}
-				capital_scope = {
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
-					ROOT = { set_country_flag = aviation_effort_AB }
+			431 = {
+				set_building_level = {
+					type = air_base
+					level = 10
+					instant_build = yes
 				}
 			}
-			add_tech_bonus = {
-				name = DEH_aviation_effort
-				bonus = 1
-				uses = 1
-				category = air_doctrine
+			432 = {
+				set_building_level = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY FOCUS_FILTER_AIRFORCE_BONUS }

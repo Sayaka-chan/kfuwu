@@ -3,7 +3,13 @@ ENG_weltkrieg_decisions = {
 		icon = generic_ignite_civil_war
 		allowed = { original_tag = ENG }
 		available = {
-			100 = { is_controlled_by = CAN }
+			or = {
+				100 = { is_controlled_by = USA }
+				100 = { is_controlled_by = CAN }
+				100 = { is_controlled_by = NFA }
+				100 = { is_controlled_by = AST }
+				100 = { is_controlled_by = DEH }
+			}
 		}
 		fire_only_once = yes
 		cost = 50
@@ -56,7 +62,7 @@ ENG_weltkrieg_decisions = {
 		allowed = { original_tag = ENG }
 		fire_only_once = yes
 		cost = 100
-		days_remove = 1
+		days_remove = 60
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision ENG_build_up_iceland"
 		}

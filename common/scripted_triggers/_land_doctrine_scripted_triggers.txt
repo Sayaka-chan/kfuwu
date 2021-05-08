@@ -22,14 +22,6 @@
 # because they have focuses which require other doctrines
 # note that countries NOT on this list will only research MW if they
 # have a higher level of military factories
-never_research_mobile_warfare = {
-	OR = {
-		tag = BEL
-		tag = INC
-		tag = SER
-		tag = SIA
-	}
-}
 
 # these countries have choices in their focus trees between land doctrines
 # this list is for countries that have a choice of Mobile Warfare, but shouldn't
@@ -40,10 +32,6 @@ dont_research_mobile_warfare_if_choice_made = {
 			tag = CAN
 			has_completed_focus = CAN_vanier_plan
 		}
-		AND = {
-			tag = HOL
-			NOT = { has_country_flag = HOL_army_mobile }
-		}
 	}
 }
 
@@ -51,9 +39,7 @@ dont_research_mobile_warfare_if_choice_made = {
 # because they have focuses which require other doctrines
 never_research_superior_firepower = {
 	OR = {
-		tag = FLN
 		tag = GER
-		tag = INC
 		tag = VEN
 	}
 }
@@ -76,7 +62,6 @@ never_research_grand_battle_plan = {
 	OR = {
 		tag = CAN
 		tag = ENG
-		tag = INC
 	}
 }
 
@@ -101,9 +86,7 @@ never_research_mass_assault = {
 		tag = AUS
 		tag = CAN
 		tag = ENG
-		tag = FLN
 		tag = GER
-		tag = INC
 		tag = VEN
 	}
 }

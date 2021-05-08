@@ -88,7 +88,6 @@ if = {
 	}
 }
 
-add_opinion_modifier = { target = SOV modifier = embargo }
 add_opinion_modifier = { target = LEC modifier = LEC_member }
 LEC = { give_military_access = RUS }
 diplomatic_relation = { country = LEC relation = non_aggression_pact }
@@ -163,6 +162,7 @@ add_ideas = {
 	rus_free_trade
 	pp_idea
 	closed_economy
+	peace_training
 }
 
 create_country_leader = {

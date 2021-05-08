@@ -720,50 +720,6 @@ CAN_add_british_pm_in_exile = {
 	}
 }
 
-CAN_setup_uk_government = {
-	remove_all_ministers = yes
-	if = {
-		limit = { has_country_flag = GBR_Croft_PM }
-		set_country_flag = GBR_cons_leader_croft
-		add_ideas = {
-			GBR_Henry_Page_Croft_hog_ade
-			GBR_Arthur_Wellesley_for_ade
-			GBR_John_Carnegie_eco_ade
-			GBR_Maxwell_Knight_sec_ade
-		}
-	}
-	else_if = {
-		limit = { has_country_flag = GBR_Cecil_PM }
-		set_country_flag = GBR_cons_leader_cecil
-		add_ideas = {
-			GBR_Robert_Cecil_hog_sco
-			GBR_Adrian_Carton_de_Wiart_for_sco
-			GBR_George_Lane_Fox_eco_sco
-			GBR_Desmond_Morton_sec_sco
-		}
-	}
-	else_if = {
-		limit = { has_country_flag = GBR_Eden_PM }
-		set_country_flag = GBR_cons_leader_eden
-		add_ideas = {
-			GBR_Anthony_Eden_hog_sco
-			GBR_John_Colville_for_sco
-			GBR_John_Siddeley_eco_sco
-			GBR_Edward_Cavendish_sec_sco
-		}
-	}
-	else_if = {
-		limit = { has_country_flag = GBR_Vansittart_PM }
-		set_country_flag = GBR_cons_leader_vansittart
-		add_ideas = {
-			GBR_Robert_Vansittart_hog_sco
-			GBR_Robert_Boothby_for_sco
-			GBR_Philip_Lloyd_Greame_eco_sco
-			GBR_Randolph_Churchill_sec_sco
-		}
-	}
-}
-
 CAN_create_monarchy = {
 	if = {
 		limit = { has_global_flag = CAN_king_george_V }

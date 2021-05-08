@@ -294,24 +294,6 @@ ideas = {
 			}
 		}
 
-		ZO_idea = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ZO_idea"}
-			available = { country_exists = GER }
-			picture = ger_revive_the_kaiserreich
-		}
-
-		ZO_zollverein_idea = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ZO_zollverein_idea"}
-			available = { country_exists = GER }
-			picture = ger_revive_the_kaiserreich
-			modifier = {
-				industrial_capacity_factory = 0.05
-				production_speed_arms_factory_factor = 0.15
-				production_speed_dockyard_factor = 0.1
-				stability_factor = 0.1
-			}
-		}
-
 		UKR_Local_radas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea UKR_Local_radas"}
 			picture = generic_morale_bonus
@@ -328,6 +310,9 @@ ideas = {
 				tag = RUS
 				attack_bonus_against = 0.10
 				defense_bonus_against = 0.10
+			}
+			modifier = {
+				surrender_limit = 0.3
 			}
 		}
 	}
@@ -386,6 +371,7 @@ ideas = {
 			research_bonus = {
 				infantry_weapons = 0.1
 			}
+			cost = 100
 		}
 
 		motor_sich = {
@@ -395,6 +381,7 @@ ideas = {
 			research_bonus = {
 				motorized_equipment = 0.1
 			}
+			cost = 100
 		}
 
 		zaporizhia_automobile_plant = {
@@ -404,6 +391,7 @@ ideas = {
 			research_bonus = {
 				motorized_equipment = 0.1
 			}
+			cost = 100
 		}
 
 	}
@@ -421,6 +409,7 @@ ideas = {
 			research_bonus = {
 				armor = 0.1
 			}
+			cost = 100
 		}
 
 		kr_morozov_design_bureau = {
@@ -430,6 +419,7 @@ ideas = {
 			research_bonus = {
 				armor = 0.1
 			}
+			cost = 100
 		}
 	}
 
@@ -444,6 +434,7 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.1
 			}
+			cost = 100
 		}
 
 		kommunara_nikolayev_shipyards = {
@@ -453,6 +444,7 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.1
 			}
+			cost = 100
 		}
 
 	}
@@ -467,6 +459,7 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.1
 			}
+			cost = 100
 		}
 
 		anatra = {
@@ -476,6 +469,7 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.1
 			}
+			cost = 100
 		}
 
 		kr_beriev = {
@@ -485,6 +479,7 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.1
 			}
+			cost = 100
 		}
 
 	}
