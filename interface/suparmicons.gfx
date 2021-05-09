@@ -1,0 +1,6 @@
+spriteTypes = {	
+
+spriteType = { name = "GFX_unit_support_motorized_rocket_icon_medium" textureFile = "gfx/texticons/unit_support_motorized_rocket_brigade_icon.dds" noOfFrames = 2 }	
+spriteType = { name = "GFX_unit_support_motorized_rocket_icon_medium_white"	textureFile = "gfx/interface/counters/divisions_small/onmap_unit_support_motorized_rocket_icon.dds" noOfFrames = 2}
+spriteType = { name = "GFX_unit_armored_car_at_recon_icon_small" texturefile = "gfx/texticons/support_light_armored_recon.dds"	legacy_lazy_load = no	noOfFrames = 2	}
+}

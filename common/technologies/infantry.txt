@@ -1774,6 +1774,7 @@ technologies = {
 
 		enable_subunits = {
 			motorized_rocket_brigade
+			support_motorized_rocket
 		}
 		enable_equipments = {
 			motorized_rocket_equipment_1

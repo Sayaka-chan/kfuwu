@@ -904,7 +904,9 @@ technologies = {
 			building = rocket_site
 			level = 2
 		}
-
+		support_motorized_rocket = { 
+			soft_attack = 0.15
+		}
 		path = {
 			leads_to_tech = rocket_engines
 			research_cost_coeff = 1
