@@ -102,7 +102,7 @@ set_research_slots = 3
 set_convoys = 500
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
-	amount = 2000
+	amount = 1500
 	producer = NFA
 }
 add_equipment_to_stockpile = {
@@ -112,7 +112,7 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 50000
+	amount = 30000
 	producer = NFA
 }
 add_equipment_to_stockpile = {
@@ -127,7 +127,7 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = anti_tank_equipment_1
-	amount = 800
+	amount = 600
 	producer = NFA
 }
 set_stability = 0.5

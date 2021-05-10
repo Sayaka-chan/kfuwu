@@ -36,7 +36,6 @@ set_technology = {
 	early_fighter = 1
 	naval_bomber1 = 1
 	fighter1 = 1
-	CAS1 = 1
 	early_bomber = 1
 	cv_early_fighter = 1
 	cv_naval_bomber1 = 1
@@ -207,7 +206,6 @@ add_to_faction = SRI
 
 add_ideas = {
 	limited_conscription
-	FRA_communard_spirit
 	FRA_bad_intel
 	pp_idea
 	partial_economic_mobilisation
@@ -277,7 +275,7 @@ create_field_marshal = {
 		panzer_leader
 		trickster
 	}
-	skill = 7
+	skill = 6
 	attack_skill = 6
 	defense_skill = 4
 	planning_skill = 5
@@ -424,8 +422,8 @@ create_corps_commander = {
 		trait_engineer
 		trickster
 	}
-	skill = 8
-	attack_skill = 8
+	skill = 6
+	attack_skill = 6
 	defense_skill = 5
 	planning_skill = 5
 	logistics_skill = 6

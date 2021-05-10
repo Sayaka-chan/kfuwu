@@ -280,24 +280,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = RUS_State_Revanchism
-		icon = GFX_focus_generic_eagle
-		prerequisite = {
-			focus = RUS_Natsguardiya
-			focus = RUS_tradition
-		}
-		relative_position_id = RUS_Centralised_Apparatus_Of_State
-		x = 0
-		y = 7
-		cost = 1
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus RUS_State_Revanchism"
-			add_ideas = RUS_state_revanchism
-		}
-		search_filters = { FOCUS_FILTER_ARMY_BONUS }
-	}
-
-	focus = {
 		id = RUS_Rearmament_Programme
 		icon = GFX_focus_generic_license_production
 		relative_position_id = RUS_Centralised_Apparatus_Of_State
@@ -342,14 +324,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus RUS_Establish_The_VES"
 			add_stability = 0.1
-			572 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
 		}
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
 	}
@@ -518,18 +492,37 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus RUS_Industrial_Draft_Scheme"
 			RUS_reduce_black_monday = yes
 			add_ideas = RUS_supreme_economic_council_9
-			add_stability = 0.3
-			add_research_slot = 1
+			add_stability = 0.1
 		}
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH FOCUS_FILTER_STABILITY }
 	}
 
 	focus = {
+		id = RUS_Research_Slot
+		icon = GFX_FRA_Blanqui_Research_Institute
+		x = 0
+		y = 1
+		relative_position_id = RUS_Industrial_Draft_Scheme
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = RUS_Industrial_Draft_Scheme
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus RUS_Research_Slot"
+			add_research_slot = 1
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
 		id = RUS_tranformation_of_nature
 		icon = GFX_goal_generic_soviet_construction
-		prerequisite = { focus = RUS_Industrial_Draft_Scheme }
+		prerequisite = { focus = RUS_Research_Slot }
 		x = -4
-		y = 3
+		y = 4
 		relative_position_id = RUS_Establish_The_VES
 		cost = 5
 		ai_will_do = {
@@ -549,9 +542,9 @@ focus_tree = {
 	focus = {
 		id = RUS_synthetic_rubber
 		icon = GFX_goal_generic_oil_refinery
-		prerequisite = { focus = RUS_Industrial_Draft_Scheme}
+		prerequisite = { focus = RUS_Research_Slot}
 		x = 0
-		y = 3
+		y = 4
 		relative_position_id = RUS_Establish_The_VES
 		cost = 5
 		ai_will_do = {
@@ -592,7 +585,7 @@ focus_tree = {
 			focus = RUS_tranformation_of_nature
 		}
 		x = -2
-		y = 4
+		y = 5
 		relative_position_id = RUS_Establish_The_VES
 		cost = 5
 
@@ -747,23 +740,7 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}		
-			}
-		    563 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory 
-					level = 2
-					instant_build = yes
-				}		
 			}		
-		    564 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory 
-					level = 2
-					instant_build = yes
-				}		
-			}
 		}
 	}
 
@@ -1502,7 +1479,7 @@ focus_tree = {
 		id = RUS_Repudiate_Brest_Litovsk
 		icon = GFX_goal_RUS_eastern_europe
 		x = 0
-		y = 6
+		y = 5
 		cost = 1
 		relative_position_id = RUS_Expansionism
 		available = {
@@ -1536,9 +1513,12 @@ focus_tree = {
 		}
 
 		prerequisite = {
-			focus = RUS_State_Revanchism
+			focus = RUS_Rearmament_Programme
 		}
-
+		prerequisite = {
+			focus = RUS_tradition
+			focus = RUS_Natsguardiya
+		}
 		ai_will_do = {
 			factor = 20
 			modifier = {

@@ -162,19 +162,7 @@ ideas = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
-				cv_fighter_equipment = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
 				CAS_equipment = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
-				cv_CAS_equipment = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
-				cv_nav_bomber_equipment = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
@@ -187,10 +175,6 @@ ideas = {
 					instant = yes
 				}
 				heavy_fighter_equipment = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
-				strat_bomber_equipment = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
@@ -268,8 +252,7 @@ ideas = {
 			picture = ger_revive_the_kaiserreich
 			modifier = {
 				industrial_capacity_factory = 0.05
-				production_speed_arms_factory_factor = 0.1
-				production_speed_buildings_factor = 0.2
+				production_speed_arms_factory_factor = 0.2
 				production_speed_dockyard_factor = 0.1
 				stability_factor = 0.1
 			}

@@ -22,7 +22,7 @@ ideas = {
 			picture = generic_research_bonus
 			allowed = { always = no }
 			modifier = {
-				research_speed_factor = 0.03
+				research_speed_factor = 0.1
 			}
 		}
 
@@ -90,6 +90,20 @@ ideas = {
 			}
 		}
 
+		AUS_cult_of_aviation_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GER_cult_of_aviation_idea"}
+			picture = generic_air_bonus
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				CAS_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+            }
+        }    
 		AUS_part_of_the_Empire = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUS_part_of_the_Empire" }
 			picture = AUS_part_of_the_Empire
