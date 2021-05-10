@@ -37,42 +37,6 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					tag = BAT
-					FROM = {
-						OR = {
-							tag = EST
-							tag = LAT
-						}
-					}
-				}
-			}
-			if = {
-				limit = {
-					OR = {
-						FROM = { tag = GER }
-						FROM = { tag = AZE }
-					}
-				}
-				GER = {
-					remove_resource_rights = 990
-				}
-			}
-			if = {
-				limit = {
-					OR = {
-						FROM = { tag = OTT }
-						FROM = { tag = JBS }
-					}
-				}
-				OTT = {
-					remove_resource_rights = 907
-					remove_resource_rights = 993
-					remove_resource_rights = 658
-					remove_resource_rights = 678
-				}
-			}
-			if = {
-				limit = {
 					tag = USA
 					FROM = {
 						OR = {

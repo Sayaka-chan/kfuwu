@@ -274,8 +274,6 @@ AST_enact_syndicalist_trade = {
 				tag = ENG
 				tag = FRA
 				tag = SRI
-				tag = SOV
-				tag = BHC
 			}
 		}
 		AST = { remove_opinion_modifier = { target = PREV modifier = embargo } }

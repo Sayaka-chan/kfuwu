@@ -56,34 +56,6 @@ country_event = {
 					}
 				}
 			}
-			AND = {
-				is_spanish_tag = yes
-				any_enemy_country = { is_spanish_tag = yes }
-			}
-			AND = {
-				tag = GRE
-				has_war_with = GRR
-			}
-			AND = {
-				tag = GRR
-				has_war_with = GRE
-			}
-			AND = {
-				tag = SAF
-				has_war_with = SFR
-			}
-			AND = {
-				tag = SFR
-				has_war_with = SAF
-			}
-			AND = {
-				tag = RUS
-				has_war_with = SOV
-			}
-			AND = {
-				tag = SOV
-				has_war_with = RUS
-			}
 		}
 	}
 

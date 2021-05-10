@@ -12,7 +12,7 @@ sub_units = {
 			infantry
 			support
 		}
-		same_support_type = rocket_artillery
+		same_support_type = artillery
 		group = support
 
 		categories = {

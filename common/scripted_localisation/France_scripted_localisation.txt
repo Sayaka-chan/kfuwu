@@ -14,21 +14,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			is_brz_portuguese = yes
-		}
-		localization_key = FRA_workers_of_the_world_unite_POR
-	}
-	text = {
-		trigger = {
 			is_russian_tag = yes
 		}
 		localization_key = FRA_workers_of_the_world_unite_RUS
-	}
-	text = {
-		trigger = {
-			tag = IRE
-		}
-		localization_key = FRA_workers_of_the_world_unite_IRE
 	}
 	text = {
 		localization_key = FRA_workers_of_the_world_unite_ENG

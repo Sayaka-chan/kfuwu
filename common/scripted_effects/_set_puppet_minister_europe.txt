@@ -154,60 +154,6 @@ set_puppet_minister_europe = {
 	##
 	##	ENGLAND
 	##
-	if = {
-		limit = { tag = ENP }
-		if = {
-			limit = { has_socialist_government = yes }
-			add_ideas = {
-				ENP_Stafford_Cripps_hog_rso
-				ENP_Phil_Piratin_for_tot
-				ENP_Leslie_Solley_eco_tot
-				ENP_Eric_Blair_sec_rso
-			}
-		}
-		else_if = {
-			limit = {
-				OR = {
-					has_government = social_democrat
-					has_government = social_liberal
-					has_government = market_liberal
-				}
-			}
-			add_ideas = {
-				ENP_Neville_Chamberlain_hog_mli
-				ENP_Margaret_Bondfield_for_sde
-				ENP_Hugh_Gaitskell_eco_sli
-				ENP_Stanley_Baldwin_sec_mli
-			}
-		}
-		else_if = {
-			limit = { has_government = social_conservative }
-			add_ideas = {
-				ENP_Winston_Churchill_hog_sco
-				ENP_Alec_Douglas_Home_for_sco
-				ENP_Leslie_Hore_Belisha_eco_ade
-				ENP_Stanley_Baldwin_sec_mli
-			}
-		}
-		else_if = {
-			limit = { has_government = authoritarian_democrat }
-			add_ideas = {
-				ENP_Bernard_Montgomery_hog_ade
-				ENP_Archibald_Ramsay_for_ade
-				ENP_Leslie_Hore_Belisha_eco_ade
-				ENP_Arnold_Leese_sec_ade
-			}
-		}
-		else_if = {
-			limit = { has_dictatorship_government = yes }
-			add_ideas = {
-				ENP_Enoch_Powell_hog_pau
-				ENP_Henry_Williamson_for_pau
-				ENP_Leslie_Hore_Belisha_eco_ade
-				ENP_Arnold_Leese_sec_ade
-			}
-		}
-	}
 
 	##
 	##	COMMUNE OF FRANCE

@@ -20,9 +20,6 @@ country_event = {
 				tag = GER
 			}
 			NOT = {
-				tag = ITA
-			}
-			NOT = {
 				tag = FRA
 			}
 			NOT = {
@@ -33,9 +30,6 @@ country_event = {
 			}
 			NOT = {
 				tag = ENG
-			}
-			NOT = {
-				tag = SOV
 			}
 			NOT = {
 				tag = AUS
@@ -50,12 +44,10 @@ country_event = {
 		trigger = {
 			OR = {
 				tag = GER
-				tag = ITA
 				tag = FRA
 				tag = JAP
 				tag = USA
 				tag = ENG
-				tag = SOV
 				tag = AUS
 			}
 		}
@@ -87,9 +79,6 @@ country_event = {
 				tag = GER
 			}
 			NOT = {
-				tag = ITA
-			}
-			NOT = {
 				tag = FRA
 			}
 			NOT = {
@@ -100,9 +89,6 @@ country_event = {
 			}
 			NOT = {
 				tag = ENG
-			}
-			NOT = {
-				tag = SOV
 			}
 			NOT = {
 				tag = AUS
@@ -114,12 +100,10 @@ country_event = {
 		trigger = {
 			OR = {
 				tag = GER
-				tag = ITA
 				tag = FRA
 				tag = JAP
 				tag = USA
 				tag = ENG
-				tag = SOV
 				tag = AUS
 			}
 		}
@@ -146,9 +130,6 @@ country_event = {
 				tag = GER
 			}
 			NOT = {
-				tag = ITA
-			}
-			NOT = {
 				tag = FRA
 			}
 			NOT = {
@@ -159,9 +140,6 @@ country_event = {
 			}
 			NOT = {
 				tag = ENG
-			}
-			NOT = {
-				tag = SOV
 			}
 			NOT = {
 				tag = AUS
@@ -173,12 +151,10 @@ country_event = {
 		trigger = {
 			OR = {
 				tag = GER
-				tag = ITA
 				tag = FRA
 				tag = JAP
 				tag = USA
 				tag = ENG
-				tag = SOV
 				tag = AUS
 			}
 		}
@@ -208,12 +184,10 @@ country_event = {
 						OWNER = {
 							OR = {
 								tag = GER
-								tag = ITA
 								tag = FRA
 								tag = JAP
 								tag = USA
 								tag = ENG
-								tag = SOV
 								tag = AUS
 							}
 						}
@@ -224,12 +198,10 @@ country_event = {
 						OWNER = {
 							OR = {
 								tag = GER
-								tag = ITA
 								tag = FRA
 								tag = JAP
 								tag = USA
 								tag = ENG
-								tag = SOV
 								tag = AUS
 							}
 						}
@@ -246,12 +218,10 @@ country_event = {
 				OWNER = {
 					OR = {
 						tag = GER
-						tag = ITA
 						tag = FRA
 						tag = JAP
 						tag = USA
 						tag = ENG
-						tag = SOV
 						tag = AUS
 					}
 				}
@@ -260,12 +230,10 @@ country_event = {
 				OWNER = {
 					OR = {
 						tag = GER
-						tag = ITA
 						tag = FRA
 						tag = JAP
 						tag = USA
 						tag = ENG
-						tag = SOV
 						tag = AUS
 					}
 				}
@@ -297,12 +265,10 @@ country_event = {
 						OWNER = {
 							OR = {
 								tag = GER
-								tag = ITA
 								tag = FRA
 								tag = JAP
 								tag = USA
 								tag = ENG
-								tag = SOV
 								tag = AUS
 							}
 						}
@@ -313,12 +279,10 @@ country_event = {
 						OWNER = {
 							OR = {
 								tag = GER
-								tag = ITA
 								tag = FRA
 								tag = JAP
 								tag = USA
 								tag = ENG
-								tag = SOV
 								tag = AUS
 							}
 						}
@@ -335,12 +299,10 @@ country_event = {
 				OWNER = {
 					OR = {
 						tag = GER
-						tag = ITA
 						tag = FRA
 						tag = JAP
 						tag = USA
 						tag = ENG
-						tag = SOV
 						tag = AUS
 					}
 				}
@@ -349,12 +311,10 @@ country_event = {
 				OWNER = {
 					OR = {
 						tag = GER
-						tag = ITA
 						tag = FRA
 						tag = JAP
 						tag = USA
 						tag = ENG
-						tag = SOV
 						tag = AUS
 					}
 				}
@@ -386,12 +346,10 @@ country_event = {
 						OWNER = {
 							OR = {
 								tag = GER
-								tag = ITA
 								tag = FRA
 								tag = JAP
 								tag = USA
 								tag = ENG
-								tag = SOV
 								tag = AUS
 							}
 						}
@@ -402,12 +360,10 @@ country_event = {
 						OWNER = {
 							OR = {
 								tag = GER
-								tag = ITA
 								tag = FRA
 								tag = JAP
 								tag = USA
 								tag = ENG
-								tag = SOV
 								tag = AUS
 							}
 						}
@@ -424,12 +380,10 @@ country_event = {
 				OWNER = {
 					OR = {
 						tag = GER
-						tag = ITA
 						tag = FRA
 						tag = JAP
 						tag = USA
 						tag = ENG
-						tag = SOV
 						tag = AUS
 					}
 				}
@@ -438,12 +392,10 @@ country_event = {
 				OWNER = {
 					OR = {
 						tag = GER
-						tag = ITA
 						tag = FRA
 						tag = JAP
 						tag = USA
 						tag = ENG
-						tag = SOV
 						tag = AUS
 					}
 				}

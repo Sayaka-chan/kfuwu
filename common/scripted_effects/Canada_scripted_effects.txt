@@ -686,7 +686,6 @@ CAN_release_uk = {
 			OR = {
 				is_core_of = GBR
 				AND = {
-					is_core_of = IRE
 					is_not_claim_or_core_of_ROOT = yes
 					is_owned_by = ROOT
 				}

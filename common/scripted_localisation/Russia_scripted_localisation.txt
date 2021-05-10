@@ -48,24 +48,6 @@ defined_text = {
 		}
 		localization_key = RUS_Attack_Caucasus_DKB
 	}
-	text = {
-		trigger = {
-			FROM = { tag = AZE }
-		}
-		localization_key = RUS_Attack_Caucasus_AZE
-	}
-	text = {
-		trigger = {
-			FROM = { tag = GEO }
-		}
-		localization_key = RUS_Attack_Caucasus_GEO
-	}
-	text = {
-		trigger = {
-			FROM = { tag = ARM }
-		}
-		localization_key = RUS_Attack_Caucasus_ARM
-	}
 }
 
 defined_text = {
@@ -75,49 +57,5 @@ defined_text = {
 			FROM = { tag = DKB }
 		}
 		localization_key = RUS_Attack_Caucasus_desc_DKB
-	}
-	text = {
-		trigger = {
-			FROM = { tag = AZE }
-		}
-		localization_key = RUS_Attack_Caucasus_desc_AZE
-	}
-	text = {
-		trigger = {
-			FROM = { tag = GEO }
-		}
-		localization_key = RUS_Attack_Caucasus_desc_GEO
-	}
-	text = {
-		trigger = {
-			FROM = { tag = ARM }
-		}
-		localization_key = RUS_Attack_Caucasus_desc_ARM
-	}
-}
-
-defined_text = {
-	name = RUS_accept_ally_text
-	text = {
-		trigger = {
-			FROM = { tag = ROM }
-		}
-		localization_key = RUS_accept_ally_ROM
-	}
-	text = {
-		localization_key = RUS_accept_ally_other
-	}
-}
-
-defined_text = {
-	name = RUS_refuse_ally_text
-	text = {
-		trigger = {
-			FROM = { tag = ROM }
-		}
-		localization_key = RUS_refuse_ally_ROM
-	}
-	text = {
-		localization_key = RUS_refuse_ally_other
 	}
 }

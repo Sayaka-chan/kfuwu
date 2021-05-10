@@ -15,16 +15,12 @@ germany_ignore_indian_islands = {
 			}
 		}
 		NOT = {
-			has_war_with = PRF
 			has_war_with = DEH
-			has_war_with = BHC
 		}
 	}
 	abort = {
 		OR = {
-			has_war_with = PRF
 			has_war_with = DEH
-			has_war_with = BHC
 			NOT = {
 				any_owned_state = {
 					OR = {
@@ -45,48 +41,6 @@ germany_ignore_indian_islands = {
 	ai_strategy = {
 		type = area_priority
 		id = indian_ocean
-		value = -500
-	}
-}
-
-germany_ignore_atlantic_islands = {
-	enable = {
-		tag = GER
-		any_owned_state = {
-			OR = {
-				region = 61 #Cap Verde Plain
-				region = 62 #Gulf of Guinea
-				region = 64 #South Georgia Sea
-				region = 66 #South Central Atlantic
-				region = 67 #Antlantic-Indian Ridge
-			}
-		}
-		NOT = {
-			has_war_with = POR
-			has_war_with = SAF
-		}
-	}
-	abort = {
-		OR = {
-			has_war_with = POR
-			has_war_with = SAF
-			NOT = {
-				any_owned_state = {
-					OR = {
-						region = 61 #Cap Verde Plain
-						region = 62 #Gulf of Guinea
-						region = 64 #South Georgia Sea
-						region = 66 #South Central Atlantic
-						region = 67 #Antlantic-Indian Ridge
-					}
-				}
-			}
-		}
-	}
-
-	ai_strategy = {
-		type = area_priority
-		id = south_atlantic
 		value = -500
 	}
 }

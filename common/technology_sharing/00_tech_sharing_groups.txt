@@ -141,69 +141,6 @@ technology_sharing_group = { #Scandinavian Scientist Conference (Nordics)
 			tag = NOR
 			tag = DEN
 			tag = FIN
-			tag = ICE
-		}
-	}
-}
-
-technology_sharing_group = { #Koninklijke Academie (Belgium-Netherlands)
-	id = belgian_research
-	name = belgian_research_name
-	desc = belgian_research_desc
-	picture = GFX_technology_sharing_default
-
-	research_sharing_per_country_bonus = 0.20
-
-	available = {
-		not_has_socialist_government = yes
-		OR = {
-			tag = BEL
-			is_subject_of = BEL
-			tag = HOL
-			is_subject_of = HOL
-			tag = FLN
-		}
-	}
-}
-
-technology_sharing_group = { #German Joint Doctrine Group (Belgium-Germany)
-	id = belgian_german_joint_research
-	name = belgian_german_joint_research
-	desc = belgian_german_joint_research_desc
-	picture = GFX_technology_sharing_default
-
-	research_sharing_per_country_bonus = 0.1
-
-	categories = { land_doctrine air_doctrine }
-
-	available = {
-		OR = {
-			tag = BEL
-			AND = {
-				is_in_faction_with = BEL
-				is_faction_leader = yes
-			}
-		}
-	}
-}
-
-technology_sharing_group = { #Flemish-Walloon Naval Cooperation Program (Belgium-Germany)
-	id = belgian_german_naval_program
-	name = belgian_german_naval_program
-	desc = belgian_german_naval_program_desc
-	picture = GFX_technology_sharing_default
-
-	research_sharing_per_country_bonus = 0.2
-
-	categories = { naval_doctrine naval_equipment }
-
-	available = {
-		OR = {
-			tag = BEL
-			AND = {
-				is_in_faction_with = BEL
-				is_faction_leader = yes
-			}
 		}
 	}
 }
@@ -219,20 +156,5 @@ technology_sharing_group = { #Generic continous
 
 	available = {
 		is_in_faction = yes
-	}
-}
-
-technology_sharing_group = { #Maliphinsul Research Group (Insulindia)
-	id = maliphinsul_research_group
-	name = maliphinsul_research_group_name
-	desc = maliphinsul_research_group_desc
-	picture = GFX_technology_sharing_default
-
-	research_sharing_per_country_bonus = 0.1
-
-	available = {
-		INS = {
-			is_faction_leader = yes
-		}
 	}
 }
