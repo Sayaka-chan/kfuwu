@@ -121,7 +121,7 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 50000
+	amount = 30000
 	producer = SRI
 }
 add_equipment_to_stockpile = {

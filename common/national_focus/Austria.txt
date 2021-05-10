@@ -72,7 +72,7 @@ focus_tree = {
 		icon = GFX_AUS_rifle_trials
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 
 		relative_position_id = AUS_military_tech
 
@@ -97,7 +97,7 @@ focus_tree = {
 		icon = GFX_goal_national_artillery
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 
 		relative_position_id = AUS_rifle_trials
 
@@ -216,8 +216,15 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_fighters"
+			add_ideas = AUS_cult_of_aviation_idea
 			set_technology = {
 				fighter2 = 1
+			}
+			add_tech_bonus = {
+				name = AUS_cas
+				bonus = 1
+				uses = 2
+				category = cas_bomber
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -1202,7 +1209,7 @@ focus_tree = {
 		icon = GFX_goal_annex_BOH
 		x = 0
 		y = 10
-		cost = 10
+		cost = 5
 		relative_position_id = AUS_elections
 		prerequisite = {
 			focus = AUS_decentralised_resources
@@ -1788,7 +1795,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construction2
 		x = 1
 		y = 3
-		cost = 10
+		cost = 5
 
 		relative_position_id = AUS_decentralised_development_scheme
 
@@ -1813,18 +1820,18 @@ focus_tree = {
 				state = 89
 			}
 			89 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			91 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}

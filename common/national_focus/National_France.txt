@@ -780,10 +780,10 @@ focus_tree = {
 					region = 189
 				}
 
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 				set_state_flag = NFA_industrial_expansion_2IC
@@ -799,10 +799,10 @@ focus_tree = {
 					region = 189
 				}
 
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 				set_state_flag = NFA_industrial_expansion_2IC
@@ -843,7 +843,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 				set_state_flag = NFA_military_factories_2MF
@@ -862,7 +862,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 				set_state_flag = NFA_military_factories_2MF
@@ -1135,10 +1135,10 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NFA_cotton_mali"
 			556 = {
-				add_extra_state_shared_building_slots = 3	#could add an event chain in the future
+				add_extra_state_shared_building_slots = 2	#could add an event chain in the future
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1555,7 +1555,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus NFA_tank_research"
 			add_tech_bonus = {
 				name = NFA_tank_research
-				bonus = 1.5
+				bonus = 1
 				uses = 2
 				category = armor
 			}

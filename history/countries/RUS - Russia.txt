@@ -99,7 +99,7 @@ set_war_support = 0.7
 
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 150000
+	amount = 80000
 	producer = RUS
 }
 add_equipment_to_stockpile = {
