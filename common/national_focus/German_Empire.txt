@@ -1999,7 +1999,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = GER_mil_expansion_naval_1
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 10
@@ -2026,19 +2026,19 @@ focus_tree = {
 				58 = {
 					add_building_construction = {
 						type = coastal_bunker
-						level = 1
+						level = 3
 						province = 3231
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = coastal_bunker
-						level = 1
+						level = 3
 						province = 3368
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = coastal_bunker
-						level = 1
+						level = 3
 						province = 9347
 						instant_build = yes
 					}
@@ -2051,19 +2051,19 @@ focus_tree = {
 				59 = {
 					add_building_construction = {
 						type = coastal_bunker
-						level = 1
+						level = 3
 						province = 3326
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = coastal_bunker
-						level = 1
+						level = 3
 						province = 6349
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = coastal_bunker
-						level = 1
+						level = 3
 						province = 6325
 						instant_build = yes
 					}
@@ -2076,13 +2076,13 @@ focus_tree = {
 				56 = {
 					add_building_construction = {
 						type = coastal_bunker
-						level = 1
+						level = 3
 						province = 241
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = coastal_bunker
-						level = 1
+						level = 3
 						province = 11360
 						instant_build = yes
 					}
@@ -2120,7 +2120,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = GER_mil_expansion_naval_1
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 10
@@ -2153,7 +2153,7 @@ focus_tree = {
 				753 = {
 					add_building_construction = {
 						type = coastal_bunker
-						level = 1
+						level = 3
 						province = 9947
 						instant_build = yes
 					}
@@ -2166,8 +2166,51 @@ focus_tree = {
 				704 = {
 					add_building_construction = {
 						type = coastal_bunker
-						level = 1
+						level = 3
 						province = 13016
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 422
+				}
+				422 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 10229
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 12258
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 10201
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 7334
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 7260
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 4219
 						instant_build = yes
 					}
 				}
@@ -2179,7 +2222,7 @@ focus_tree = {
 				647 = {
 					add_building_construction = {
 						type = coastal_bunker
-						level = 1
+						level = 3
 						province = 4357
 						instant_build = yes
 					}
@@ -2192,7 +2235,7 @@ focus_tree = {
 				744 = {
 					add_building_construction = {
 						type = coastal_bunker
-						level = 1
+						level = 3
 						province = 10000
 						instant_build = yes
 					}
@@ -2205,7 +2248,7 @@ focus_tree = {
 				268 = {
 					add_building_construction = {
 						type = coastal_bunker
-						level = 1
+						level = 3
 						province = 8124
 						instant_build = yes
 					}

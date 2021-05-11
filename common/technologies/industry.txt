@@ -744,7 +744,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 0.5
 		start_year = 1936
 		folder = {
 			name = industry_folder
@@ -828,14 +828,14 @@ technologies = {
 		on_research_complete = { log = "[GetDateText]: [Root.GetName]: add tech fuel_refining"}
 
 		fuel_gain_factor = 0.2
-		fuel_gain_factor_from_states = 0.1
+		fuel_gain_factor_from_states = 0.6
 
 		path = {
 			leads_to_tech = fuel_refining2
 			research_cost_coeff = 1
 		}
 
-		research_cost = 3
+		research_cost = 1
 		start_year = 1936
 		folder = {
 			name = industry_folder
@@ -894,14 +894,14 @@ technologies = {
 		on_research_complete = { log = "[GetDateText]: [Root.GetName]: add tech fuel_refining2"}
 
 		fuel_gain_factor = 0.2
-		fuel_gain_factor_from_states = 0.1
+		fuel_gain_factor_from_states = 0.6
 
 		path = {
 			leads_to_tech = fuel_refining3
 			research_cost_coeff = 1
 		}
 
-		research_cost = 3
+		research_cost = 1
 		start_year = 1937
 		folder = {
 			name = industry_folder
@@ -952,13 +952,13 @@ technologies = {
 		on_research_complete = { log = "[GetDateText]: [Root.GetName]: add tech fuel_refining3"}
 
 		fuel_gain_factor = 0.2
-		fuel_gain_factor_from_states = 0.1
+		fuel_gain_factor_from_states = 0.6
 
 		path = {
 			leads_to_tech = fuel_refining4
 			research_cost_coeff = 1
 		}
-		research_cost = 3
+		research_cost = 1
 		start_year = 1939
 		folder = {
 			name = industry_folder
@@ -1000,13 +1000,13 @@ technologies = {
 		on_research_complete = { log = "[GetDateText]: [Root.GetName]: add tech fuel_refining4"}
 
 		fuel_gain_factor = 0.20
-		fuel_gain_factor_from_states = 0.1
+		fuel_gain_factor_from_states = 0.6
 
 		path = {
 			leads_to_tech = fuel_refining5
 			research_cost_coeff = 1
 		}
-		research_cost = 3
+		research_cost = 1
 		start_year = 1941
 		folder = {
 			name = industry_folder
@@ -1048,9 +1048,9 @@ technologies = {
 		on_research_complete = { log = "[GetDateText]: [Root.GetName]: add tech fuel_refining5"}
 
 		fuel_gain_factor = 0.20
-		fuel_gain_factor_from_states = 0.1
+		fuel_gain_factor_from_states = 0.6
 
-		research_cost = 3
+		research_cost = 1
 		start_year = 1943
 		folder = {
 			name = industry_folder
@@ -1097,15 +1097,11 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = oil_processing
-			research_cost_coeff = 1
-		}
-		path = {
 			leads_to_tech = rubber_processing
 			research_cost_coeff = 1
 		}
 
-		research_cost = 3
+		research_cost = 1
 		start_year = 1936
 		folder = {
 			name = industry_folder
@@ -1147,218 +1143,6 @@ technologies = {
 		}
 	}
 
-	oil_processing = {
-		on_research_complete = { log = "[GetDateText]: [Root.GetName]: add tech oil_processing"}
-
-		fuel_gain_factor_from_states = 0.5
-
-		start_year = 1937
-
-		path = {
-			leads_to_tech = improved_oil_processing
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-
-		folder = {
-			name = industry_folder
-			position = { x = -1 y = 4 }
-		}
-
-		categories = {
-			industry
-			synth_resources
-		}
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				OR = {
-					tag = GER
-					tag = ITA
-					tag = JAP
-				}
-				has_war = yes
-				factor = 25
-			}
-			modifier = {
-				factor = 0.5
-				oil > 10
-			}
-			modifier = {
-				factor = 0.5
-				oil > 20
-			}
-			modifier = {
-				factor = 0.5
-				oil > 30
-			}
-		}
-
-		ai_research_weights = {
-			oil = -2.0
-		}
-
-		show_effect_as_desc = yes
-	}
-
-	improved_oil_processing = {
-		on_research_complete = { log = "[GetDateText]: [Root.GetName]: add tech improved_oil_processing"}
-
-		fuel_gain_factor_from_states = 0.5
-
-		path = {
-			leads_to_tech = advanced_oil_processing
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1939
-
-		folder = {
-			name = industry_folder
-			position = { x = -1 y = 6 }
-		}
-
-		categories = {
-			industry
-			synth_resources
-		}
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				OR = {
-					tag = GER
-					tag = ITA
-					tag = JAP
-				}
-				has_war = yes
-				factor = 25
-			}
-			modifier = {
-				factor = 0.5
-				oil > 10
-			}
-			modifier = {
-				factor = 0.5
-				oil > 20
-			}
-			modifier = {
-				factor = 0.5
-				oil > 30
-			}
-			modifier = {
-				original_tag = GER
-				has_war = yes
-				factor = 3
-			}
-		}
-
-		ai_research_weights = {
-			oil = -2.0
-		}
-
-		show_effect_as_desc = yes
-	}
-
-	advanced_oil_processing = {
-		on_research_complete = { log = "[GetDateText]: [Root.GetName]: add tech advanced_oil_processing"}
-
-		fuel_gain_factor_from_states = 0.5
-
-		path = {
-			leads_to_tech = modern_oil_processing
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1941
-
-		folder = {
-			name = industry_folder
-			position = { x = -1 y = 8 }
-		}
-
-		categories = {
-			industry
-			synth_resources
-		}
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				OR = {
-					tag = GER
-					tag = ITA
-					tag = JAP
-				}
-				has_war = yes
-				factor = 25
-			}
-			modifier = {
-				factor = 0.5
-				rubber > 10
-			}
-			modifier = {
-				factor = 0.5
-				rubber > 20
-			}
-			modifier = {
-				factor = 0.5
-				rubber > 30
-			}
-		}
-
-		ai_research_weights = {
-			rubber = -2.0
-		}
-
-		show_effect_as_desc = yes
-	}
-
-	modern_oil_processing = {
-		on_research_complete = { log = "[GetDateText]: [Root.GetName]: add tech modern_oil_processing"}
-
-		fuel_gain_factor_from_states = 0.5
-
-		research_cost = 1.5
-		start_year = 1943
-
-		folder = {
-			name = industry_folder
-			position = { x = -1 y = 10 }
-		}
-
-		categories = {
-			industry
-			synth_resources
-		}
-
-		ai_will_do = {
-			factor = 0.5
-			modifier = {
-				factor = 0.5
-				oil > 10
-			}
-			modifier = {
-				factor = 0.5
-				oil > 20
-			}
-			modifier = {
-				factor = 0.5
-				oil > 30
-			}
-		}
-
-		ai_research_weights = {
-			oil = -2.0
-		}
-
-		show_effect_as_desc = yes
-	}
-
 	#####################################
 	rubber_processing = {
 
@@ -1376,12 +1160,12 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1937
 
 		folder = {
 			name = industry_folder
-			position = { x = 1 y = 4 }
+			position = { x = 0 y = 4 }
 		}
 
 		categories = {
@@ -1435,12 +1219,12 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1939
 
 		folder = {
 			name = industry_folder
-			position = { x = 1 y = 6 }
+			position = { x = 0 y = 6 }
 		}
 
 		categories = {
@@ -1494,12 +1278,12 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1941
 
 		folder = {
 			name = industry_folder
-			position = { x = 1 y = 8 }
+			position = { x = 0 y = 8 }
 		}
 
 		categories = {
@@ -1548,12 +1332,12 @@ technologies = {
 			}
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1943
 
 		folder = {
 			name = industry_folder
-			position = { x = 1 y = 10 }
+			position = { x = 0 y = 10 }
 		}
 
 		categories = {
