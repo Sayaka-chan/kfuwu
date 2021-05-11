@@ -124,7 +124,7 @@ technologies = {
 		}
 
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1938
 		folder = {
 			name = infantry_folder
