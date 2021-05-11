@@ -90,21 +90,6 @@ on_actions = {
 				}
 				# Calcutta (Siam)
 				# New Delhi (Siam)
-				if = {
-					limit = {
-						FROM.FROM = { state = 439}
-						ROOT = {controls_province = 2086}
-					}
-					news_event = { id = worldnews.269 }
-				}
-				# Bangkok
-				if = {
-					limit = {
-						FROM.FROM = { state = 289}
-						ROOT = {controls_province = 7408}
-					}
-					news_event = { id = worldnews.270 }
-				}
 				# Moscow
 				if = {
 					limit = {
@@ -186,13 +171,6 @@ on_actions = {
 					news_event = { id = worldnews.280 }
 				}
 				# Sydney
-				if = {
-					limit = {
-						FROM.FROM = { state = 285 }
-						ROOT = {controls_province = 12406}
-					}
-					news_event = { id = worldnews.281 }
-				}
 				# Mexico City
 				if = {
 					limit = {

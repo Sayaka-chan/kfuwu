@@ -1454,7 +1454,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NFA_military_preparation"
-			army_experience = 10
+			army_experience = 1000
 			add_tech_bonus = {
 				name = NFA_military_preparation
 				bonus = 1

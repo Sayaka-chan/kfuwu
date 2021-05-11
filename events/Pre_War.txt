@@ -110,12 +110,6 @@ country_event = { #Alliance with the Commune of France?
 			target = FRA
 			modifier = join_international
 		}
-		FRA = {
-			country_event = {
-				id = prewar.30
-				days = 1
-			}
-		}
 	}
 	option = { #No, we do not need them!
 		name = prewar.29.b

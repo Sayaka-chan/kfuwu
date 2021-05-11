@@ -28,6 +28,12 @@ set_technology = {
 	cv_naval_bomber1 = 1
 	fighter1 = 1
 	CAS1 = 1
+	shocktroops = 1
+	jungletroops = 1
+	jaegers = 1
+	desertinfantry_at = 1
+	marines = 1
+	tech_mountaineers = 1
 }
 
 ### Navy - MtG ###
@@ -111,6 +117,7 @@ add_ideas = {
 	AST_bled_dry
 	AST_anzac_spirit_1
 	peace_training
+	USA_no_rubber
 }
 
 set_research_slots = 3

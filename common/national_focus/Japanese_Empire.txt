@@ -197,8 +197,6 @@ focus_tree = {
 					OR = {
 						state = 535
 						state = 531
-						state = 528
-						state = 533
 					}
 				}
 				add_extra_state_shared_building_slots = 1
@@ -386,7 +384,6 @@ focus_tree = {
 					OR = {
 						state = 530
 						state = 532
-						state = 528
 					}
 				}
 				add_extra_state_shared_building_slots = 1
@@ -428,7 +425,6 @@ focus_tree = {
 					OR = {
 						state = 530
 						state = 532
-						state = 528
 					}
 				}
 				add_extra_state_shared_building_slots = 1
@@ -466,10 +462,10 @@ focus_tree = {
 			if = {
 				limit = { controls_state = 282 }
 				282 = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -516,10 +512,10 @@ focus_tree = {
 			if = {
 				limit = { controls_state = 531 }
 				531 = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -749,17 +745,6 @@ focus_tree = {
 				uses = 1
 				category = cat_anti_air
 			}
-			if = {
-				limit = { controls_state = 531 }
-				531 = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
-				}
-			}
 			custom_effect_tooltip = "increases military bias"
 		}
 		search_filters = { FOCUS_FILTER_ARMY_BONUS }
@@ -787,17 +772,6 @@ focus_tree = {
 				bonus = 1
 				uses = 2
 				category = infantry_weapons
-			}
-			if = {
-				limit = { controls_state = 531 }
-				531 = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
-				}
 			}
 			custom_effect_tooltip = "increases military bias"
 		}

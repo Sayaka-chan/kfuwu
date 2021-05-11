@@ -28,24 +28,6 @@ intelligence_agency = {
 
 intelligence_agency = {
 
-	picture = GFX_intelligence_agency_logo_bel # vanilla icon
-	names = { "ADIV" "SGRS" }
-
-	default = { tag = BEL }
-	available = { original_tag = BEL }
-}
-
-intelligence_agency = {
-
-	picture = GFX_intelligence_agency_logo_kr_bul
-	names = { "DANS" }
-
-	default = { tag = BUL }
-	available = { original_tag = BUL }
-}
-
-intelligence_agency = {
-
 	picture = GFX_intelligence_agency_logo_kr_can
 	names = { "RCMP Special Branch" }
 
@@ -113,65 +95,11 @@ intelligence_agency = {
 
 intelligence_agency = {
 
-	picture = GFX_intelligence_agency_logo_ind
-	names = { "Research and Analysis Wing" }
-
-	default = {
-		OR = {
-			tag = DEH
-			tag = PRF
-			tag = BHC
-			tag = MAD
-			tag = MYS
-			tag = TRV
-		}
-	}
-	available = {
-		OR = {
-			original_tag = DEH
-			original_tag = PRF
-			original_tag = BHC
-			original_tag = MAD
-			original_tag = MYS
-			original_tag = TRV
-		}
-	}
-}
-
-intelligence_agency = {
-
-	picture = GFX_intelligence_agency_logo_kr_ire
-	names = { "Directorate of Military Intelligence" }
-
-	default = { tag = IRE }
-	available = { original_tag = IRE }
-}
-
-intelligence_agency = {
-
 	picture = GFX_intelligence_agency_logo_jap # vanilla icon
 	names = { "IJA G-2 Department" "IJN 3rd Section" }
 
 	default = { tag = JAP }
 	available = { original_tag = JAP }
-}
-
-intelligence_agency = {
-
-	picture = GFX_intelligence_agency_logo_kr_spr
-	names = { "Dirección General de Seguridad" }
-
-	default = { tag = SPR }
-	available = { original_tag = SPR }
-}
-
-intelligence_agency = {
-
-	picture = GFX_intelligence_agency_logo_kr_lit
-	names = { "Second Investigation Department" }
-
-	default = { tag = LIT }
-	available = { original_tag = LIT }
 }
 
 intelligence_agency = {
@@ -194,15 +122,6 @@ intelligence_agency = {
 
 intelligence_agency = {
 
-	picture = GFX_intelligence_agency_logo_kr_pap
-	names = { "L'Entità" "Santa Alleanza" }
-
-	default = { tag = PAP }
-	available = { original_tag = PAP }
-}
-
-intelligence_agency = {
-
 	picture = GFX_intelligence_agency_logo_pol # vanilla icon
 	names = { "Dwójka" }
 
@@ -210,57 +129,6 @@ intelligence_agency = {
 
 	default = { tag = POL }
 	available = { original_tag = POL }
-}
-
-intelligence_agency = {
-
-	picture = GFX_intelligence_agency_logo_por # vanilla icon
-	names = { "PIDE" }
-
-	available = { always = yes }
-
-	default = { tag = POR }
-	available = { original_tag = POR }
-}
-
-
-intelligence_agency = {
-
-	picture = GFX_intelligence_agency_logo_rom 	# vanila icon
-	names = { "Serviciul Special de Informații" }
-
-	available = { always = yes }
-
-	default = { tag = ROM }
-	available = { original_tag = ROM }
-}
-
-
-intelligence_agency = {
-
-	picture = GFX_intelligence_agency_logo_kr_rus
-	names = { "Okhrannoye Otdeleniye" }
-
-	default = { tag = RUS }
-	available = { original_tag = RUS }
-}
-
-intelligence_agency = {
-
-	picture = GFX_intelligence_agency_logo_sov
-	names = { "Cheka" }
-	
-	default = { tag = SOV }
-	available = { original_tag = SOV }
-}
-
-intelligence_agency = {
-
-	picture = GFX_intelligence_agency_logo_kr_sia
-	names = { "Samnak Khaokrong Haeng Chart" "SDSI" }
-
-	default = { tag = SIA }
-	available = { original_tag = SIA }
 }
 
 intelligence_agency = {

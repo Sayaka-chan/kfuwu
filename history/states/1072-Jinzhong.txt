@@ -8,7 +8,6 @@ state = { #Central Shanxi
 		add_core_of = QIE
 		buildings = {
 			infrastructure = 4
-			arms_factory = 2
 		}
 		victory_points = {
 			4174 10

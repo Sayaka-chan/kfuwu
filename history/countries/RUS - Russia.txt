@@ -7,6 +7,7 @@ set_cosmetic_tag = RUS_vozhdct
 set_research_slots = 4
 
 ### Starting Technologies ###
+create_intelligence_agency = yes
 set_technology = {
 	radio = 1
 	infantry_weapons = 1
@@ -29,6 +30,12 @@ set_technology = {
 	CAS1 = 1
 	synth_oil_experiments = 1
 	fuel_silos = 1
+	shocktroops = 1
+	jungletroops = 1
+	jaegers = 1
+	desertinfantry_at = 1
+	marines = 1
+	tech_mountaineers = 1
 }
 
 ### Navy - MtG ###

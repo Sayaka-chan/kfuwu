@@ -58,7 +58,11 @@ if = {
 		basic_cruiser_armor_scheme = 1
 		weltkrieg_naval_gunnery = 1
 		weltkrieg_naval_gunnery = 1
-
+		shocktroops = 1
+		jungletroops = 1
+		jaegers = 1
+		desertinfantry_at = 1
+		marines = 1
 		### Transport ###
 		transport = 1
 	}
@@ -581,7 +585,6 @@ country_event = { id = afro.5 days = 247 }
 country_event = { id = afro.6 days = 3158 }
 country_event = { id = afro.8 days = 1044 }
 ### Eid-ul Fitr
-country_event = { id = afro.3 days = 348 }
 ###
 
 OTT_start_naval_variant = yes

@@ -23,6 +23,10 @@ technologies = {
 			building = anti_air_building
 			level = 5
 		}
+		enable_building = {
+			building = naval_base
+			level = 20
+		}
 
 		enable_equipments = {
 			infantry_equipment_0

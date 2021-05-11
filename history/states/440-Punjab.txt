@@ -11,7 +11,6 @@ state = {
 		victory_points = { 10772 1 } #Ludhiana
 		buildings = {
 			infrastructure = 5
-			industrial_complex = 1
 		}
 	}
 

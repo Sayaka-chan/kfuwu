@@ -68,7 +68,10 @@ if = {
 		weltkrieg_naval_gunnery = 1
 		naval_ammo_one = 1
 		naval_ammo_two = 1
-
+		shocktroops = 1
+		jungletroops = 1
+		jaegers = 1
+		desertinfantry_at = 1
 		### Transport ###
 		transport = 1
 	}
@@ -166,6 +169,7 @@ add_ideas = {
 	NFA_french_in_exile
 	NFA_political_unrest
 	peace_training
+	USA_no_rubber
 }
 
 create_country_leader = {

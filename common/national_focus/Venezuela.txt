@@ -1,0 +1,57 @@
+focus_tree = {
+	id = VEN
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = VEN
+		}
+	}
+	default = no
+	focus = {
+		id = FRA_hp
+		icon = missing
+		cost = 0
+		x = 1
+		y = 0
+		ai_will_do = {
+			factor = 1000
+		}
+		available = {
+			FRA = {
+				has_completed_focus = FRA_War_with_germany
+			}
+		}
+		completion_reward = {
+			every_country={
+				limit={is_playable_country=yes}
+			if = {
+				limit={NOT={has_idea=france_hp}}
+				add_ideas = france_hp
+				set_technology = { africa_hp = 1 popup = no }
+				add_ideas = speed3_africa
+			}
+			}
+		}
+	}
+	focus = {
+		id = USA_war_eco
+		icon = missing
+		cost = 0
+		x = 3
+		y = 0
+		ai_will_do = {
+			factor = 1000
+		}
+		available = {
+			JAP = {
+				has_completed_focus = JAP_go_south
+			}
+		}
+		completion_reward = { 
+			USA = {
+				add_ideas = war_economy
+			}
+		}
+	}
+}

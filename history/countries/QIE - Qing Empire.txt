@@ -84,18 +84,13 @@ set_research_slots = 0
 set_convoys = 0
 
 add_offsite_building = {
-	type = dockyard
-	level = 3
-}
-
-add_offsite_building = {
 	type = arms_factory
 	level = 4
 }
 
 add_offsite_building = {
 	type = industrial_complex
-	level = 5
+	level = 2
 }
 
 set_politics = {

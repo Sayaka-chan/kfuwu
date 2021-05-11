@@ -22,6 +22,11 @@ set_technology = {
 	early_fighter = 1
 	early_bomber = 1
 	naval_bomber1 = 1
+	shocktroops = 1
+	jungletroops = 1
+	jaegers = 1
+	desertinfantry_at = 1
+	marines = 1
 }
 
 ### Navy - MtG ###
@@ -90,7 +95,6 @@ if = {
 }
 
 set_convoys = 150
-add_political_power = -50
 
 add_opinion_modifier = { target = GER modifier = embargo }
 
@@ -100,6 +104,7 @@ add_ideas = {
 	DEH_backwards_economy_1
 	DEH_mp
 	peace_training
+	USA_no_rubber
 }
 
 set_research_slots = 3

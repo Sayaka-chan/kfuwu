@@ -5,7 +5,7 @@ set_naval_oob= "AUS_naval"
 set_cosmetic_tag = AUS_social_conservative
 
 set_research_slots = 4
-
+create_intelligence_agency = yes
 set_technology = {
 	### Tanks ###
 	gwtank = 1
@@ -27,6 +27,11 @@ set_technology = {
 	### Air ###
 	early_fighter = 1
 	naval_bomber1 = 1
+	shocktroops = 1
+	jungletroops = 1
+	jaegers = 1
+	desertinfantry_at = 1
+	marines = 1
 }
 
 ### Navy - MtG ###

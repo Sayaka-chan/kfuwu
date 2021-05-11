@@ -35,6 +35,20 @@ ideas = {
 			}
 			removal_cost = -1
 		}
+		USA_no_rubber = {
+			allowed = {
+				always = no
+			}
+			cancel = {
+				JAP = {
+					has_completed_focus = JAP_go_south
+				}
+			}
+			modifier = {
+				production_speed_synthetic_refinery_factor = -0.9
+			}
+			removal_cost = -1
+		}
 	### Starting Ideas ###
 		USA_great_depression = { #The Great Depression
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea USA_great_depression"}
@@ -1132,7 +1146,6 @@ ideas = {
 			visible = {
 				controls_state = 796
 				owns_state = 796
-				has_country_flag = USA_industrial_companies_allowed
 			}
 			traits = {
 				electronics_manufacturer
@@ -1154,7 +1167,6 @@ ideas = {
 			visible = {
 				controls_state = 796
 				owns_state = 796
-				has_country_flag = USA_industrial_companies_allowed
 			}
 			traits = {
 				electronics_manufacturer
@@ -1176,7 +1188,6 @@ ideas = {
 			visible = {
 				controls_state = 932
 				owns_state = 932
-				has_country_flag = USA_industrial_companies_allowed
 			}
 			traits = { electronics_manufacturer }
 			research_bonus = {
@@ -1302,7 +1313,6 @@ ideas = {
 			visible = {
 				controls_state = 360
 				owns_state = 360
-				has_country_flag = USA_industrial_companies_allowed
 			}
 			traits = {
 				chemical_producer
@@ -1326,7 +1336,6 @@ ideas = {
 			visible = {
 				controls_state = 375
 				owns_state = 375
-				has_country_flag = USA_industrial_companies_allowed
 			}
 			traits = {
 				chemical_producer

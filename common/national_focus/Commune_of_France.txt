@@ -938,8 +938,8 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
-			add_ideas = FRA_ruralism_idea
 	        }
+			add_ideas = FRA_ruralism_idea
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
@@ -2051,35 +2051,35 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_air_bases"
 			random_owned_controlled_state = {
 			33 = {
-				add_building_construction = {
+				set_building_level = {
 					type = air_base
 					level = 10
 					instant_build = yes
 				}
 			}
 			30 = {
-				add_building_construction = {
+				set_building_level = {
 					type = air_base
 					level = 10
 					instant_build = yes
 				}
 			}
 			26 = {
-				add_building_construction = {
+				set_building_level = {
 					type = air_base
 					level = 10
 					instant_build = yes
 				}
 			}
 			27 = {
-				add_building_construction = {
+				set_building_level = {
 					type = air_base
 					level = 10
 					instant_build = yes
                 }
 			}
 			943 = {
-				add_building_construction = {
+				set_building_level = {
 					type = air_base
 					level = 10
 					instant_build = yes

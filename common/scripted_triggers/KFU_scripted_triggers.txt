@@ -1,5 +1,7 @@
 is_playable_country = {
 	OR = {
+		tag = GER
+		tag = GRE
 		tag = RUS
 		tag = FRA
 		tag = JAP

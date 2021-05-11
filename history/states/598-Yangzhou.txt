@@ -9,9 +9,7 @@ state = {
 		add_core_of = QIE
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
 			dockyard = 1
-			arms_factory = 1
 			4091 = {
 				naval_base = 3
 			}

@@ -17,7 +17,7 @@ add_ideas = {
 }
 
 ### Starting Technologies ###
-
+create_intelligence_agency = yes
 set_technology = {
 	### General ###
 	electronic_mechanical_engineering = 1
@@ -56,6 +56,10 @@ set_technology = {
 	fighter1 = 1
 	tactical_bomber1 = 1
 	CAS1 = 1
+	shocktroops = 1
+	jungletroops = 1
+	jaegers = 1
+	desertinfantry_at = 1
 }
 
 ### Navy - MtG ###
@@ -242,11 +246,6 @@ add_to_faction = OTT
 country_event = {
 	id = black.1
 	days = 34
-}
-
-country_event = { #Tintin and the Blue Lotus
-	id = literature.15
-	days = 952
 }
 
 create_country_leader = {

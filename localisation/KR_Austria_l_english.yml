@@ -332,17 +332,17 @@ AUS_small_ships_effort_desc:0 "It has been decided that we need new models for d
 AUS_cattaro:0 "The Cattaro Airbase"
 AUS_cattaro_desc:0 "First built in 1914 as a base from which reconnaisance flights over the Adria were flown during the Weltkrieg, the k.k. airbase in the Bay of Cattaro, or Kotor, has fallen in disuse after the end of the war. However, its position close to the entry of the Adria might still prove strategically important."
 
-AUS_Cruisers:0 "Kreuzers"
+AUS_Cruisers:0 "Kreuzer"
 
-AUS_Carriers:0 "Flugzeugträgers"
+AUS_Carriers:0 "Flugzeugträger"
 
-AUS_BBs:0 "Panzerschiffes"
+AUS_BBs:0 "Panzerschiffe"
 
 AUS_navs:0 "Develop Naval Aircraft"
 
 AUS_Horthy_Program:0 "Announce the Horthy Program"
 
-AUS_Spawn_ins:0 "Launch New Schlachtschiffes"
+AUS_Spawn_ins:0 "Launch New Schlachtschiffe"
 
 AUS_fighters:0 "New Fighters"
 

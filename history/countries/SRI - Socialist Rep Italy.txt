@@ -43,6 +43,12 @@ set_technology = {
 	CAS1 = 1
 	interwar_antiair = 1
 	interwar_antitank = 1
+	shocktroops = 1
+	jungletroops = 1
+	jaegers = 1
+	desertinfantry_at = 1
+	marines = 1
+	tech_mountaineers = 1
 }
 
 ### Navy - MtG ###
