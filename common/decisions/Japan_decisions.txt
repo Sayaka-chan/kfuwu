@@ -16,7 +16,7 @@ JAP_war_in_the_east_category = {
 				has_full_control_of_state = 1019
 			}
 			NOT  = {
-				has_idea = consolidate_java
+				has_idea = jap_asia_2
 			}
 		}
 		fire_only_once = no
@@ -42,7 +42,7 @@ JAP_war_in_the_east_category = {
 				has_full_control_of_state = 673
 			}
 			NOT  = {
-				has_idea = consolidate_east_indies
+				has_idea = jap_asia_1
 			}
 		}
 		fire_only_once = no
@@ -60,7 +60,7 @@ JAP_war_in_the_east_category = {
 				has_capitulated = yes
 			}
 			NOT  = {
-				has_idea = consolidate_australia
+				has_idea = jap_asia_3
 			}
 		}
 		fire_only_once = no
@@ -84,7 +84,7 @@ JAP_war_in_the_east_category = {
 				has_capitulated = yes
 			}
 			NOT  = {
-				has_idea = consolidate_india
+				has_idea = jap_asia_4
 			}
 		}
 		fire_only_once = no
@@ -108,7 +108,7 @@ JAP_war_in_the_east_category = {
 				has_full_control_of_state = 327
 			}
 			NOT  = {
-				has_idea = consolidate_phillipphines
+				has_idea = jap_asia_5
 			}
 		}
 		fire_only_once = no

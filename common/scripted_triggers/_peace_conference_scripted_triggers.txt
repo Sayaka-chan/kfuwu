@@ -598,7 +598,6 @@ is_in_conference_with_chinese_ally = {
 ROOT_is_restriction_exception = {
 	OR = {
 		# is Switzerland, because Switzerland
-		tag = SWI
 		# Austria restricts itself if any other faction leader is present
 		AND = {
 			tag = AUS
@@ -642,7 +641,6 @@ ROOT_is_restriction_exception = {
 		AND = {
 			OR = {
 				tag = RUS
-				tag = SOV
 			}
 			OR = {
 				FRA = { at_conference_no_war_with_ROOT = yes }
@@ -663,7 +661,6 @@ ROOT_is_restriction_exception = {
 PREV_is_restriction_exception = {
 	OR = {
 		# is Switzerland, because Switzerland
-		tag = SWI
 		# Austria restricts itself if any other faction leader is present
 		AND = {
 			tag = AUS
@@ -685,17 +682,6 @@ PREV_is_restriction_exception = {
 			HUN = { at_conference_no_war_with_PREV = yes }
 		}
 		# Bulgaria restricts itself if dividing up Romania/Serbia with Austria/Hungary
-		AND = {
-			tag = BUL
-			OR = {
-				ROM = { at_conference_has_war_with_PREV = yes }
-				SER = { at_conference_has_war_with_PREV = yes }
-			}
-			OR = {
-				AUS = { at_conference_no_war_with_PREV = yes }
-				HUN = { at_conference_no_war_with_PREV = yes }
-			}
-		}
 		# Don Kuban restricts itself if dividing up ALO or Russia
 		AND = {
 			tag = DKB
@@ -704,47 +690,17 @@ PREV_is_restriction_exception = {
 					ALO = { at_conference_has_war_with_PREV = yes }
 					OR = {
 						RUS = { at_conference_no_war_with_PREV = yes }
-						SOV = { at_conference_no_war_with_PREV = yes }
 					}
 				}
 				AND = {
 					RUS = { at_conference_has_war_with_PREV = yes }
 					OR = {
-						SOV = { at_conference_no_war_with_PREV = yes }
 						JAP = { at_conference_no_war_with_PREV = yes }
 					}
 				}
 			}
 		}
 		# Greece, Romania, and Royalist Romania will restrict themselves if dividing up Bulgaria/Ottomans with Serbia
-		AND = {
-			OR = {
-				tag = ROM
-				tag = RRM
-				tag = GRE
-			}
-			OR = {
-				AND = {
-					BUL = { at_conference_has_war_with_PREV = yes }
-				}
-				AND = {
-					OTT = { at_conference_has_war_with_PREV = yes }
-					SER = { at_conference_no_war_with_PREV = yes }
-				}
-			}
-		}
-		# Serbia will restrict itself if dividing up the Ottomans with Egypt
-		AND = {
-			tag = SER
-			OTT = { at_conference_has_war_with_PREV = yes }
-			EGY = { at_conference_no_war_with_PREV = yes }
-		}
-		# Arabia will restrict itself if dividing up Iran with Egypt
-		AND = {
-			tag = SAU
-			PER = { at_conference_has_war_with_PREV = yes }
-			EGY = { at_conference_no_war_with_PREV = yes }
-		}
 		# Russia will restrict itself if dividing up Europe
 		AND = {
 			OR = {
@@ -1371,11 +1327,6 @@ is_willing_to_take_state_ROOT = {
 	rule_CAN_Illinois_check_ROOT = no
 	rule_CAN_Indiana_check_ROOT = no
 	rule_stay_out_of_alands_ROOT = no
-	rule_BHC_stay_out_of_siam_ROOT = no
-	rule_let_ROM_finish_civil_war_ROOT = no
-	rule_let_RRM_finish_civil_war_ROOT = no
-	rule_let_KUR_take_cores_ROOT = no
-	rule_POR_stay_out_of_spain_ROOT = no
 	rule_leave_UKR_to_RUS_ROOT = no
 	rule_stay_out_of_western_russia_ROOT = no
 	rule_stay_out_of_siberia_ROOT = no
@@ -1388,7 +1339,6 @@ is_willing_to_take_state_ROOT = {
 	rule_leave_italy_to_italy_ROOT = no
 	rule_leave_india_to_india_ROOT = no
 	rule_Tyrol_neighbor_ROOT = no
-	rule_leave_INS_to_DEI_ROOT = no
 }
 
 is_willing_to_take_state_PREV = {

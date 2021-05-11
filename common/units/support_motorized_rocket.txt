@@ -39,7 +39,8 @@ sub_units = {
 		supply_consumption = 0.15
 		
 		soft_attack = -0.15
-		hard_attack = -0.15
+		hard_attack = -0.25
+		defense = -0.25
 		
 		same_support_type = artillery	
 	}

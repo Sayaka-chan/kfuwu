@@ -33,10 +33,6 @@ country_event = {
 			remove_state_core = 525
 			remove_state_core = 527
 		}
-		SIA = {
-			remove_state_core = 750
-			remove_state_core = 756
-		}
 	}
 }
 
@@ -1197,7 +1193,6 @@ country_event = {
 			limit = {
 				OR = {
 					tag = GER
-					tag = GEX
 					tag = AUS
 					tag = FRA
 					tag = ENG
@@ -1205,7 +1200,6 @@ country_event = {
 					tag = GBR
 					tag = NFA
 					tag = RUS
-					tag = SOV
 					tag = JAP
 					tag = USA
 				}
@@ -1247,7 +1241,6 @@ country_event = {
 			limit = {
 				OR = {
 					tag = GER
-					tag = GEX
 					tag = AUS
 					tag = FRA
 					tag = ENG
@@ -1255,7 +1248,6 @@ country_event = {
 					tag = GBR
 					tag = NFA
 					tag = RUS
-					tag = SOV
 					tag = JAP
 					tag = USA
 				}

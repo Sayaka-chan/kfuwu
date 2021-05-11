@@ -56,17 +56,6 @@ on_actions = {
 					news_event = { id = worldnews.255 }
 				}
 				# Burgos (SCW only)
-				if = {
-					limit = {
-						FROM.FROM = { state = 176 }
-						ROOT = {controls_province = 885}
-						OR = {
-							ROOT = { tag = SPR }
-							ROOT = { tag = CNT }
-						}
-					}
-					news_event = { id = worldnews.256 }
-				}
 				# Gibraltar
 				if = {
 					limit = {
@@ -100,14 +89,6 @@ on_actions = {
 					news_event = { id = worldnews.266 }
 				}
 				# Calcutta (Siam)
-				if = {
-					limit = {
-						FROM = {tag = SIA}
-						FROM.FROM = { state = 431}
-						ROOT = {controls_province = 4245}
-					}
-					news_event = { id = worldnews.268 }
-				}
 				# New Delhi (Siam)
 				if = {
 					limit = {

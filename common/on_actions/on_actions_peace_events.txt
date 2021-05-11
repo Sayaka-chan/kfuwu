@@ -6,10 +6,8 @@ on_actions = {
 				limit = {
 					OR = {
 						ROOT = { tag = UKR }
-						FROM = { tag = ROM }
 					}
 					OR = {
-						ROOT = { tag = ROM }
 						FROM = { tag = UKR }
 					}
 				}

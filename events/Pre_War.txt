@@ -125,29 +125,6 @@ country_event = { #Alliance with the Commune of France?
 	}
 }
 
-country_event = { #Union of Britain joins the internationale!
-	id = prewar.30
-	immediate = { log = "[GetDateText]: [Root.GetName]: event prewar.30" }
-	title = prewar.30.t
-	desc = prewar.30.d
-
-	is_triggered_only = yes
-
-	option = {
-		name = prewar.30.a
-		if = {
-			limit = {
-				ICE = {
-					is_in_faction_with = ENG
-				}
-			}
-			add_to_faction = ICE
-		}
-		add_to_faction = ENG
-		add_political_power = 60
-	}
-}
-
 ####
 ##############################
 #### Armed unrests in Nanzig/Lothringen and subsequent military maneuvers
@@ -786,7 +763,6 @@ country_event = { #war in the east
 			exists = yes
 			OR = {
 				has_war_with = RUS
-				has_war_with = SOV
 			}
 		}
 		controls_state = 16

@@ -355,40 +355,6 @@ news_event = {
 }
 
 # Nuclear Attack on Rome (ItaFed)
-news_event = {
-	id = nuke_dropped.9
-	immediate = { log = "[GetDateText]: [Root.GetName]: event nuke_dropped.9" }
-	title = nuke_dropped.9.t
-	desc = nuke_dropped.9.d
-	picture = GFX_news_event_nuke
-
-	is_triggered_only = yes
-
-	fire_only_once = yes
-
-	trigger = {
-		FROM = {
-			state = 2
-			is_owned_by = ITA
-			} # Rome - Italian Fed
-	}
-
-	option = {
-		name = nuke_dropped.9.a
-		trigger = {
-			NOT = {
-				owns_state = FROM
-			}
-		}
-	}
-
-	option = {
-		name = nuke_dropped.9.b
-		trigger = {
-			owns_state = FROM
-		}
-	}
-}
 
 # Nuclear Attack on Paris
 news_event = {
