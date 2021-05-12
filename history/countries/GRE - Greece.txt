@@ -1,6 +1,7 @@
 ﻿capital = 47
 
 oob = "GRE"
+set_naval_oob= "GRE_naval"
 
 set_research_slots = 3
 
@@ -9,6 +10,11 @@ set_technology = {
 	gwtank = 1
 	### Infantry ###
 	infantry_weapons = 1
+	infantry_weapons1 = 1
+	motorised_infantry = 1
+	tech_engineers = 1
+	interwar_antiair = 1
+	interwar_antitank = 1
 	gw_artillery = 1
 	tech_support = 1
 	tech_recon = 1
@@ -23,6 +29,7 @@ if = {
 		has_dlc = "Man the Guns"
 	}
 	set_technology = {
+		electronic_mechanical_engineering = 1
 		weltkrieg_light_ship_hull = 1
 		contact_mine = 1
 		light_ship_hull_1936 = 1
@@ -44,6 +51,8 @@ if = {
 		basic_cruiser_armor_scheme = 1
 		weltkrieg_naval_gunnery = 1
 		weltkrieg_naval_gunnery = 1
+		mechanical_computing = 1
+		basic_fire_control_system = 1
 	}
 }
 
@@ -67,14 +76,50 @@ if = {
 	}
 }
 
-set_convoys = 40
+set_convoys = 200
 set_stability = 0.35
 set_war_support = 0.2
 
-add_ideas = {
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 800
+	producer = GRE
+}
+add_equipment_to_stockpile = {
+	type = anti_air_equipment_1
+	amount = 200
+	producer = GRE
+}
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 12000
+	producer = GRE
+}
+add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 300
+	producer = GRE
+}
+	add_equipment_to_stockpile = {
+	type = anti_tank_equipment_1
+	amount = 300
+	producer = GRE
 }
 
-add_opinion_modifier = { target = OTT modifier = embargo }
+add_ideas = {
+	GRE_foreign_industry_GER1
+	GRE_foreign_industry_AUS1
+	GRE_memories_of_king
+	peace_training
+	GRE_legacy_of_alexander_idea
+	GRE_Georgios_Papandreou_hog_sli
+	GRE_Themistoklis_Sofoulis_for_mli
+	GRE_Georgios_Athanasiadis_Novas_eco_sli
+	GRE_Pafsanias_Katsotas_sec_sli
+}
+
+country_event = { id = gre.1 days = 1 } #Intro event
+country_event = { id = gre.3 days = 85 } #Independence Day
 
 set_politics = {
 	ruling_party = social_liberal
@@ -84,91 +129,91 @@ set_politics = {
 }
 
 set_popularities = {
-	totalist = 2
+	totalist = 24
 	radical_socialist = 5
 	syndicalist = 0
 	social_democrat = 14
-	social_liberal = 36
+	social_liberal = 25
 	market_liberal = 10
-	social_conservative = 21
+	social_conservative = 10
 	authoritarian_democrat = 6
 	paternal_autocrat = 5
 	national_populist = 1
 }
 
+set_country_flag = Aris_Velouchiotis_dead
+set_country_flag = Stephanos_Sarafis_dead
+set_country_flag = King_Georgios_II_dead
+set_country_flag = King_Alexandros_I_dead
+set_country_flag = King_Pavlos_I_dead
+set_country_flag = Prince_Alexandros_dead
+set_country_flag = Prince_Georgios_dead
+
+set_country_flag = { flag = gre_monarchist_sympathies value = 0 }
+
 create_country_leader = {
 	name = "Aris Velouchiotis"
-	desc = "POLITICS_ARIS_VELOUCHIOTIS_DESC"
 	picture = "Portrait_GRE_Athanasios_Klaras.tga"
 	expire = "1965.1.1"
 	ideology = totalist_subtype
 }
 create_country_leader = {
 	name = "Nikos Zachariadis"
-	desc = "POLITICS_NIKOS_ZACHARIADIS_DESC"
 	picture = "Portrait_GRE_Nikos_Zachariadis.tga"
 	expire = "1965.1.1"
 	ideology = syndicalist_subtype
 }
 create_country_leader = {
 	name = "Kostas Gavriilides"
-	desc = "POLITICS_KOSTAS_GAVRIILIDES_DESC"
 	picture = "Portrait_GRE_Kostas_Gavriilides.tga"
 	expire = "1965.1.1"
 	ideology = radical_socialist_subtype
 }
 create_country_leader = {
 	name = "Alexandros Papanastasiou"
-	desc = "POLITICS_ALEXANDROS_PAPANASTASIOU_DESC"
 	picture = "Portrait_GRE_Alexandros_Papanastasiou.tga"
 	expire = "1965.1.1"
 	ideology = social_democrat_subtype
 }
 create_country_leader = {
 	name = "Geórgios Papandreou"
-	desc = "POLITICS_GEORGIOS_PAPANDREOU_DESC"
 	picture = "Portrait_GRE_Georgios_Papandreou.tga"
 	expire = "1965.1.1"
 	ideology = social_liberal_subtype
 }
 create_country_leader = {
 	name = "Themistoklis Sofoulis"
-	desc = "POLITICS_THEMISTOKLIS_SOFOULIS_DESC"
 	picture = "Portrait_GRE_Themistoklis_Sofoulis.tga"
 	expire = "1965.1.1"
 	ideology = market_liberal_subtype
 }
 create_country_leader = {
 	name = "Panagis Tsaldaris"
-	desc = "POLITICS_PANAGIS_TSALDARIS_DESC"
 	picture = "Portrait_GRE_Pangalis_Tsaldaris.tga"
 	expire = "1965.1.1"
 	ideology = social_conservative_subtype
 }
 create_country_leader = {
 	name = "Ioannis Metaxas"
-	desc = "POLITICS_IOANNIS_METAXAS_DESC"
 	picture = "Portrait_GRE_Ioannis_Metaxas_KR.tga"
 	expire = "1965.1.1"
 	ideology = paternal_autocrat_subtype
 }
 create_country_leader = {
 	name = "Aléxandros I"
-	desc = "POLITICS_KING_ALEXANDROS_DESC"
 	picture = "Portrait_GRE_Alexander.tga"
 	expire = "1965.1.1"
 	ideology = authoritarian_democrat_subtype
 }
 create_country_leader = {
 	name = "Georgios Mercouris"
-	desc = "POLITICS_GEORGIOS_MERCOURIS_DESC"
 	picture = "Portrait_GRE_Georgios_Mercouris.tga"
 	expire = "1965.1.1"
 	ideology = national_populist_subtype
 }
 
 ### Field Marshals ###
-create_field_marshal = { #Auto-Generated
+create_field_marshal = {
 	name = "Alexandros Papagos"
 	portrait_path = "gfx/leaders/GRE/Portrait_GRE_Alexandros_Papagos.tga"
 	traits = {
@@ -184,7 +229,7 @@ create_field_marshal = { #Auto-Generated
 	logistics_skill = 3
 }
 ### Corps Commanders ###
-#create_field_marshal = { #Auto-Generated
+#create_field_marshal = {
 #	name = "Athanasios Klaras"
 #	portrait_path = "gfx/leaders/GRE/Portrait_GRE_Athanasios_Klaras.tga"
 #	traits = {
@@ -199,7 +244,7 @@ create_field_marshal = { #Auto-Generated
 #	planning_skill = 2
 #	logistics_skill = 3
 #}
-#create_corps_commander = { #Auto-Generated
+#create_corps_commander = {
 #	name = "Stefanos Sarafis"
 #	portrait_path = "gfx/leaders/GRE/Portrait_GRE_Stefanos_Sarafis.tga"
 #	traits = {
@@ -213,13 +258,15 @@ create_field_marshal = { #Auto-Generated
 #	planning_skill = 2
 #	logistics_skill = 2
 #}
-create_corps_commander = { #Auto-Generated
+create_corps_commander = {
 	name = "Napoleon Zervas"
 	portrait_path = "gfx/leaders/GRE/Portrait_GRE_Napoleon_Zervas.tga"
 	traits = {
 		harsh_leader
 		commando
 		hill_fighter
+		infantry_leader
+		trait_mountaineer
 	}
 	id = 573
 	skill = 4
@@ -228,7 +275,7 @@ create_corps_commander = { #Auto-Generated
 	planning_skill = 3
 	logistics_skill = 2
 }
-create_corps_commander = { #Auto-Generated
+create_corps_commander = {
 	name = "Manolis Mantakas"
 	portrait_path = "gfx/leaders/GRE/Portrait_GRE_Manolis_Mantakas.tga"
 	traits = {
@@ -241,7 +288,7 @@ create_corps_commander = { #Auto-Generated
 	planning_skill = 1
 	logistics_skill = 1
 }
-create_corps_commander = { #Auto-Generated
+create_corps_commander = {
 	name = "Konstantinos Bakopoulos"
 	portrait_path = "gfx/leaders/GRE/Portrait_GRE_Konstantinos_Bakopoulos.tga"
 	traits = {
@@ -254,7 +301,7 @@ create_corps_commander = { #Auto-Generated
 	planning_skill = 1
 	logistics_skill = 1
 }
-#create_field_marshal = { #Auto-Generated
+#create_field_marshal = {
 #	name = "Prince Geórgios II"
 #	portrait_path = "gfx/leaders/GRE/Portrait_GRE_George_army.tga"
 #	traits = {
@@ -267,16 +314,18 @@ create_corps_commander = { #Auto-Generated
 #	planning_skill = 2
 #	logistics_skill = 1
 #}
-create_corps_commander = { #Auto-Generated
+create_corps_commander = {
 	name = "Georgios Grivas"
 	portrait_path = "gfx/leaders/GRE/Portrait_GRE_Georgios_Grivas.tga"
 	traits = {
 		trickster
+		infantry_leader
+		trait_mountaineer
 	}
 	id = 578
 	skill = 3
 	attack_skill = 4
-	defense_skill = 1
+	defense_skill = 5
 	planning_skill = 3
 	logistics_skill = 2
 }
@@ -286,13 +335,14 @@ create_corps_commander = {
 	traits = {
 		artillery_officer
 		trait_mountaineer
+		infantry_leader
 	}
 	id = 579
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 4
 }
 create_corps_commander = {
 	name = "Vasileios Vrachnos"
@@ -300,6 +350,7 @@ create_corps_commander = {
 	traits = {
 		career_officer
 		infantry_leader
+		trait
 	}
 	id = 580
 	skill = 2
@@ -325,7 +376,7 @@ create_corps_commander = {
 
 ### Admirals ###
 
-create_navy_leader = { #Auto-Generated
+create_navy_leader = {
 	name = "Alexandros Sakellariou"
 	portrait_path = "gfx/leaders/GRE/Portrait_GRE_Alexandros_Sakellariou.tga"
 	traits = {
@@ -339,7 +390,7 @@ create_navy_leader = { #Auto-Generated
 	coordination_skill = 3
 }
 
-create_navy_leader = { #Auto-Generated
+create_navy_leader = {
 	name = "Petros Voulgaris"
 	portrait_path = "gfx/leaders/GRE/Portrait_GRE_Petros_Voulgaris.tga"
 	traits = { }
@@ -350,7 +401,7 @@ create_navy_leader = { #Auto-Generated
 	coordination_skill = 2
 }
 
-create_navy_leader = { #Auto-Generated
+create_navy_leader = {
 	name = "Ioannis Toumbas"
 	portrait_path = "gfx/leaders/GRE/Portrait_GRE_Ioannis_Toumbas.tga"
 	traits = {
@@ -363,7 +414,7 @@ create_navy_leader = { #Auto-Generated
 	coordination_skill = 2
 }
 
-create_navy_leader = { #Auto-Generated
+create_navy_leader = {
 	name = "Antonis Mezeviris"
 	portrait_path = "gfx/leaders/GRE/Portrait_GRE_Antonis_Mezeviris.tga"
 	traits = {
@@ -376,7 +427,7 @@ create_navy_leader = { #Auto-Generated
 	coordination_skill = 3
 }
 
-create_navy_leader = { #Auto-Generated
+create_navy_leader = {
 	name = "Stylianos Lykoudis"
 	portrait_path = "gfx/leaders/GRE/Portrait_GRE_Stylianos_Lykoudis.tga"
 	traits = {
@@ -389,3 +440,47 @@ create_navy_leader = { #Auto-Generated
 	coordination_skill = 2
 }
 
+GRE_start_naval_variant = yes
+if = {
+       limit = { has_dlc = "Man the Guns" }
+	   ### Variants ###
+       # Battlecruisers #
+        create_equipment_variant = {
+		name = "Euboea Class"
+		type = ship_hull_heavy_1
+		name_group = GRE_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_2
+                        fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_2
+			fixed_ship_armor_slot = ship_armor_bc_2
+			front_1_custom_slot = ship_heavy_battery_2
+			mid_1_custom_slot = ship_anti_air_2
+			mid_2_custom_slot = ship_anti_air_2
+			rear_1_custom_slot = ship_heavy_battery_2
+                  }
+         }
+
+		 # Light Cruisers #
+       create_equipment_variant = {
+               name = "Elli Class "
+               type = ship_hull_cruiser_1
+               name_group = GRE_CL_HISTORICAL
+               parent_version = 0
+               modules = {
+                       fixed_ship_battery_slot = ship_light_medium_battery_1
+                       fixed_ship_anti_air_slot = ship_anti_air_2
+                       fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+                       fixed_ship_radar_slot = empty
+	               fixed_ship_engine_slot = cruiser_ship_engine_1
+		       fixed_ship_armor_slot = ship_armor_cruiser_1
+		       fixed_ship_secondaries_slot = ship_secondaries_2
+		       mid_1_custom_slot = ship_secondaries_2
+		       mid_2_custom_slot = ship_secondaries_2
+		       rear_1_custom_slot = ship_light_medium_battery_2
+		}
+	}

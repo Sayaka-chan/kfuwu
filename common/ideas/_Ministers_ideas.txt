@@ -41265,4 +41265,478 @@ ideas = {
 	chief_of_air_force = { ### Chief of Air Force ###
 	}
 
+chief_of_staff = { ### Chief of Staff ###
+		GRE_Stephanos_Sarafis_cos_tot = {
+			allowed = { original_tag = GRE }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Stephanos_Sarafis_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GRE_Stephanos_Sarafis_cos_tot"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_mass_combat
+			}
+			cancel_if_invalid = yes
+		}
+
+		GRE_Nikolaos_Plastiras_cos_sde = {
+			allowed = { original_tag = GRE }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Nikolaos_Plastiras_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GRE_Nikolaos_Plastiras_cos_sde"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_psychology
+			}
+			cancel_if_invalid = yes
+		}
+
+		GRE_Theodoros_Pangalos_cos_sli = {
+			allowed = { original_tag = GRE }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Theodoros_Pangalos_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GRE_Theodoros_Pangalos_cos_sli"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_defence
+			}
+			cancel_if_invalid = yes
+		}
+
+		GRE_Paraskos_Melissinos_cos_sco = {
+			allowed = { original_tag = GRE }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Paraskos_Melissinos_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GRE_Paraskos_Melissinos_cos_sco"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_mass_combat
+			}
+			cancel_if_invalid = yes
+		}
+
+		GRE_Vassilios_Tsounoukas_cos_sco = {
+			allowed = { original_tag = GRE }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Vassilios_Tsounoukas_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GRE_Vassilios_Tsounoukas_cos_sco"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_fire_support
+			}
+			cancel_if_invalid = yes
+		}
+
+		GRE_Alexandros_Papagos_cos_ade = {
+			allowed = { original_tag = GRE }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Alexandros_Papagos_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GRE_Alexandros_Papagos_cos_ade"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_fire_support
+			}
+			cancel_if_invalid = yes
+		}
+
+		GRE_King_Georgios_II_cos_ade = {
+			allowed = { original_tag = GRE }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = King_Georgios_II_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GRE_King_Georgios_II_cos_ade"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_mass_combat
+			}
+			cancel_if_invalid = yes
+		}
+
+		GRE_Prince_Georgios_cos_ade = {
+			allowed = { original_tag = GRE }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Prince_Georgios_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GRE_Prince_Georgios_cos_ade"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_mass_combat
+			}
+			cancel_if_invalid = yes
+		}
+
+		GRE_Georgios_Tsolakoglou_cos_npo = {
+			allowed = { original_tag = GRE }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Georgios_Tsolakoglou_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GRE_Georgios_Tsolakoglou_cos_npo"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_manoeuvre
+			}
+			cancel_if_invalid = yes
+		}
+
+	}
+
+	chief_of_army = { ### Chief of Army ###
+		GRE_Aris_Velouchiotis_carm_tot = {
+			allowed = { original_tag = GRE }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Aris_Velouchiotis_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GRE_Aris_Velouchiotis_carm_tot"
+			}
+			traits = {
+				chief_of_army
+				carm_decisive_battle_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		GRE_Germanos_Dimakos_carm_tot = {
+			allowed = { original_tag = GRE }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Germanos_Dimakos_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GRE_Germanos_Dimakos_carm_tot"
+			}
+			traits = {
+				chief_of_army
+				carm_doctrine_of_autonomy
+			}
+			cancel_if_invalid = yes
+		}
+
+		GRE_Nikolaos_Plastiras_carm_sde = {
+			allowed = { original_tag = GRE }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Nikolaos_Plastiras_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GRE_Nikolaos_Plastiras_carm_sde"
+			}
+			traits = {
+				chief_of_army
+				carm_guns_and_butter_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		GRE_Giorgios_Roussoupoulos_carm_sli = {
+			allowed = { original_tag = GRE }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Giorgios_Roussoupoulos_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GRE_Giorgios_Roussoupoulos_carm_sli"
+			}
+			traits = {
+				chief_of_army
+				carm_elastic_defence_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		GRE_Theodoros_Pangalos_carm_sli = {
+			allowed = { original_tag = GRE }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Theodoros_Pangalos_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GRE_Theodoros_Pangalos_carm_sli"
+			}
+			traits = {
+				chief_of_army
+				carm_static_defence_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		GRE_Vassilios_Tsounoukas_carm_sco = {
+			allowed = { original_tag = GRE }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Vassilios_Tsounoukas_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GRE_Vassilios_Tsounoukas_carm_sco"
+			}
+			traits = {
+				chief_of_army
+				carm_decisive_battle_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		GRE_Alexandros_Papagos_carm_ade = {
+			allowed = { original_tag = GRE }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Alexandros_Papagos_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GRE_Alexandros_Papagos_carm_ade"
+			}
+			traits = {
+				chief_of_army
+				carm_elastic_defence_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		GRE_Napoleon_Zervas_carm_ade = {
+			allowed = { original_tag = GRE }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Napoleon_Zervas_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GRE_Napoleon_Zervas_carm_ade"
+			}
+			traits = {
+				chief_of_army
+				carm_commando_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		GRE_Georgios_Tsolakoglou_carm_npo = {
+			allowed = { original_tag = GRE }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Georgios_Tsolakoglou_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GRE_Georgios_Tsolakoglou_carm_npo"
+			}
+			traits = {
+				chief_of_army
+				carm_decisive_battle_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		GRE_Georgios_Bakos_carm_npo = {
+			allowed = { original_tag = GRE }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Georgios_Bakos_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GRE_Georgios_Bakos_carm_npo"
+			}
+			traits = {
+				chief_of_army
+				carm_doctrine_of_autonomy
+			}
+			cancel_if_invalid = yes
+		}
+
+	}
+
+	chief_of_navy = { ### Chief of Navy ###
+		GRE_Militiades_Porphyrogins_cnav_tot = {
+			allowed = { original_tag = GRE }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Militiades_Porphyrogins_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GRE_Militiades_Porphyrogins_cnav_tot"
+			}
+			traits = {
+				chief_of_navy
+				cnav_decisive_battle_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		GRE_Ioannis_Demestichas_cnav_sli = {
+			allowed = { original_tag = GRE }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Ioannis_Demestichas_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GRE_Ioannis_Demestichas_cnav_sli"
+			}
+			traits = {
+				chief_of_navy
+				cnav_indirect_approach_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		GRE_Alexandros_Sakellariou_cnav_sco = {
+			allowed = { original_tag = GRE }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Alexandros_Sakellariou_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GRE_Alexandros_Sakellariou_cnav_sco"
+			}
+			traits = {
+				chief_of_navy
+				cnav_open_seas_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		GRE_Petros_Voulgaris_cnav_sco = {
+			allowed = { original_tag = GRE }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Petros_Voulgaris_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GRE_Petros_Voulgaris_cnav_sco"
+			}
+			traits = {
+				chief_of_navy
+				cnav_indirect_approach_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		GRE_Dimitrios_Oikonomou_cnav_ade = {
+			allowed = { original_tag = GRE }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Dimitrios_Oikonomou_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GRE_Dimitrios_Oikonomou_cnav_ade"
+			}
+			traits = {
+				chief_of_navy
+				cnav_power_projection_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+	}
+
+	chief_of_air_force = { ### Chief of Air Force ###
+		GRE_Nikos_Beloyannis_cair_tot = {
+			allowed = { original_tag = GRE }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Nikos_Beloyannis_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GRE_Nikos_Beloyannis_cair_tot"
+			}
+			traits = {
+				chief_of_air_force
+				cair_naval_aviation_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		GRE_Kostas_Perrikos_cair_sli = {
+			allowed = { original_tag = GRE }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Kostas_Perrikos_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GRE_Kostas_Perrikos_cair_sli"
+			}
+			traits = {
+				chief_of_air_force
+				cair_vertical_envelopment_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		GRE_Anastassios_Bardivilias_cair_sco = {
+			allowed = { original_tag = GRE }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Anastassios_Bardivilias_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GRE_Anastassios_Bardivilias_cair_sco"
+			}
+			traits = {
+				chief_of_air_force
+				cair_naval_aviation_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		GRE_Antoine_Frangulis_cair_sco = {
+			allowed = { original_tag = GRE }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Antoine_Frangulis_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GRE_Antoine_Frangulis_cair_sco"
+			}
+			traits = {
+				chief_of_air_force
+				cair_air_superiority_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		GRE_Panagotis_Papanikolaou_cair_pau = {
+			allowed = { original_tag = GRE }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Panagotis_Papanikolaou_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GRE_Panagotis_Papanikolaou_cair_pau"
+			}
+			traits = {
+				chief_of_air_force
+				cair_carpet_bombing_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+	}
 }

@@ -1,0 +1,131 @@
+﻿###########################
+# Greece Events
+###########################
+
+add_namespace = gre
+
+### Intro Events
+country_event = {
+	id = gre.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gre.1 FROM = [From.GetName]" }
+	title = gre.1.t
+	desc = gre.1.d
+	picture = GFX_report_event_GRE_athens
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = gre.1.a
+		hidden_effect = {
+			country_event = {
+				id = gre.2
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = gre.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gre.2 FROM = [From.GetName]" }
+	title = gre.2.t
+	desc = gre.2.d
+	picture = GFX_report_event_GRE_referendum
+
+	is_triggered_only = yes
+
+	option = {
+		name = gre.2.a
+	}
+}
+
+### Political Events
+
+# Greek Independence Day
+country_event = {
+	id = gre.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gre.3 FROM = [From.GetName]" }
+	title = gre.3.t
+	desc = gre.3.d
+	picture = GFX_report_event_GRE_crowd2
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_subject = no
+	}
+
+	option = {
+		name = gre.3.a
+		add_political_power = 20
+		hidden_effect = {
+			country_event = {
+				id = gre.4
+				days = 365
+			}
+		}
+	}
+}
+
+# Greek Independence Day (subsequent years)
+country_event = {
+	id = gre.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gre.4 FROM = [From.GetName]" }
+	title = gre.3.t
+	desc = gre.4.d
+	picture = GFX_report_event_GRE_crowd2
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_subject = no
+	}
+
+	option = {
+		name = gre.4.a
+		add_political_power = 20
+		hidden_effect = {
+			country_event = {
+				id = gre.4
+				days = 365
+			}
+		}
+	}
+}
+
+### SYNDICALIST EVENTS
+
+# First Hellenic Congress (fired by focus)
+country_event = {
+	id = gre.150
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gre.150 FROM = [From.GetName]" }
+	title = gre.150.t
+	desc = gre.150.d
+	picture = GFX_report_event_GRE_aris
+
+	is_triggered_only = yes
+
+	option = {
+		name = gre.150.b # Aris Velouchiotis commands the room, in the end
+		set_country_flag = GRE_held_first_congress
+		remove_all_ministers = yes
+		add_ideas = {
+			GRE_Aris_Velouchiotis_hog_tot
+			GRE_Stephanos_Sarafis_for_tot
+			GRE_Leonidas_Strigkos_eco_syn
+			GRE_Georgios_Siantos_sec_tot
+		}
+		set_politics = {
+			ruling_party = totalist
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.10
+		}
+	}
+}
+
+
+
