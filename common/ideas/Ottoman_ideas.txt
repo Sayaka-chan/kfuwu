@@ -91,7 +91,7 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ott_opda_idea_3"}
 			picture = denbts
 			modifier = {
-				consumer_goods_factor = 0.20
+				consumer_goods_factor = 0.15
 			}
 		}
 
