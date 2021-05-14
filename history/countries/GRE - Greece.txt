@@ -320,7 +320,7 @@ create_corps_commander = {
 	traits = {
 		trickster
 		infantry_leader
-		trait_mountaineer
+		urban_assault_specialist
 	}
 	id = 578
 	skill = 3
@@ -334,7 +334,6 @@ create_corps_commander = {
 	portrait_path = "gfx/leaders/GRE/Portrait_GRE_Dimitrios_Psarros.tga"
 	traits = {
 		artillery_officer
-		trait_mountaineer
 		infantry_leader
 	}
 	id = 579

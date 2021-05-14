@@ -725,7 +725,7 @@ focus_tree = {
 		relative_position_id = OTT_economic_initiative
 		x = -1
 		y = 2
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 30
 		}
@@ -764,7 +764,7 @@ focus_tree = {
 		relative_position_id = OTT_anatolian_factories
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 30
 		}
@@ -852,6 +852,11 @@ focus_tree = {
 			}
 			add_resource = {
 				type = tungsten
+				amount = 70
+				state = 356
+			}
+			add_resource = {
+				type = aluminium
 				amount = 50
 				state = 356
 			}
@@ -1204,7 +1209,7 @@ focus_tree = {
 		relative_position_id = OTT_ottoman_army
 		x = -3
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 40
 		}
@@ -1292,7 +1297,7 @@ focus_tree = {
 		relative_position_id = OTT_ottoman_army
 		x = -5
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 40
 		}
@@ -1324,7 +1329,7 @@ focus_tree = {
 		relative_position_id = OTT_ottoman_army
 		x = -3
 		y = 2
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 40
 		}
@@ -1411,7 +1416,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus OTT_armor_effort_unq"
 			add_tech_bonus = {
 				name = OTT_armor_effort_unq
-				bonus = 1
+				bonus = 1.5
 				uses = 2
 				category = armor
 			}
@@ -1434,7 +1439,7 @@ focus_tree = {
 		relative_position_id = OTT_ottoman_army
 		x = -3
 		y = 4
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 80
 		}
@@ -1466,14 +1471,14 @@ focus_tree = {
 		relative_position_id = OTT_ottoman_army
 		x = 3
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 800
 		}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus OTT_edok"
-			army_experience = 25
+			army_experience = 500
 			add_tech_bonus = {
 				name = OTT_edok
 				bonus = 1
@@ -1648,7 +1653,7 @@ focus_tree = {
 		relative_position_id = OTT_ottoman_army
 		x = 0
 		y = 1
-		cost = 10
+		cost = 1
 		ai_will_do = {
 			factor = 70
 		}
@@ -1689,7 +1694,7 @@ focus_tree = {
 		relative_position_id = OTT_industrial_investments
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 70
 		}

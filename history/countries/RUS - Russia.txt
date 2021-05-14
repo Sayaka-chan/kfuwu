@@ -111,12 +111,12 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = support_equipment_1
-	amount = 3000
+	amount = 2000
 	producer = RUS
 }
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
-	amount = 4000
+	amount = 2000
 	producer = RUS
 }
 add_equipment_to_stockpile = {
@@ -126,7 +126,7 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = fighter_equipment_1
-	amount = 1000
+	amount = 1
 	producer = RUS
 }
 add_equipment_to_stockpile = {

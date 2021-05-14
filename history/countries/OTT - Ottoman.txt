@@ -242,6 +242,7 @@ create_field_marshal = {
 		war_hero
 		desert_fox
 		infantry_leader
+		organizer
 		logistics_wizard
 	}
 	skill = 5
@@ -294,11 +295,12 @@ create_corps_commander = {
 	traits = {
 		old_guard
 		war_hero
+		cavalry_leader
 		desert_fox
 		commando
 	}
 	skill = 4
-	attack_skill = 2
+	attack_skill = 4
 	defense_skill = 3
 	planning_skill = 3
 	logistics_skill = 5
@@ -308,14 +310,15 @@ create_corps_commander = {
 	name = "Süleyman Şefik Paşa"
 	portrait_path = "gfx/leaders/OTT/Portrait_OTT_Suleyman_Sefik.tga"
 	traits = {
-		old_guard
-		career_officer
+		panzer_leader
+		organizer
+		desert_fox
 	}
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
+	skill = 5
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 5
 }
 
 create_corps_commander = {
@@ -385,12 +388,14 @@ create_corps_commander = {
 	portrait_path = "gfx/leaders/OTT/Portrait_OTT_Mehmed_Vehip.tga"
 	traits = {
 		old_guard
+		infantry_leader
+		trait_mountaineer
 	}
-	skill = 2
-	attack_skill = 2
-	defense_skill = 1
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
 	planning_skill = 3
-	logistics_skill = 1
+	logistics_skill = 5
 }
 
 create_corps_commander = {
@@ -478,11 +483,12 @@ create_corps_commander = {
 	traits = {
 		career_officer
 		panzer_leader
+		trait_engineer
 		desert_fox
 	}
-	skill = 3
-	attack_skill = 3
-	defense_skill = 1
+	skill = 5
+	attack_skill = 5
+	defense_skill = 3
 	planning_skill = 3
 	logistics_skill = 3
 }

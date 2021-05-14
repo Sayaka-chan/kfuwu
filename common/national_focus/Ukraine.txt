@@ -432,7 +432,7 @@ focus_tree = {
 		x = -1
 		y = 3
 		relative_position_id = UKR_Ukrainian_Recovery
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -573,7 +573,7 @@ focus_tree = {
 	focus = {# Weapon Manufactories
 		id = UKR_Weapon_Manufactories
 		icon = GFX_goal_USA_national_guard
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = UKR_Arms_Industry
 		}
@@ -605,7 +605,7 @@ focus_tree = {
 	focus = {# Artillery Manufactories
 		id = UKR_Artillery_Manufactories
 		icon = GFX_goal_USA_national_guard
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = UKR_Arms_Industry
 		}
@@ -970,7 +970,7 @@ focus_tree = {
 		x = 0
 		y = 4
 		relative_position_id = UKR_Reorg_army
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}

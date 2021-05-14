@@ -115,7 +115,7 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_fast_army_idea"}
 			allowed = { always = no }
 			modifier = {
-				army_speed_factor = 0.10
+				army_speed_factor = 0.05
 			}
 			picture = FRA_motorized_focus
 		}
@@ -125,9 +125,8 @@ ideas = {
 			allowed = { always = no }
 			equipment_bonus = {
 				armor = {
-					build_cost_ic = -0.05
-					reliability = -0.1
-					soft_attack = -0.1
+					build_cost_ic = -0.075
+					soft_attack = -0.05
 					instant = yes
 				}
 			}
@@ -139,9 +138,9 @@ ideas = {
 			allowed = { always = no }
 			equipment_bonus = {
 				armor = {
-					build_cost_ic = 0.05
+					build_cost_ic = 0.075
 					reliability = 0.1
-					soft_attack = 0.1
+					soft_attack = 0.05
 					instant = yes
 				}
 			}
@@ -201,8 +200,8 @@ ideas = {
 			allowed = { always = no }
 			picture = MEX_revolutionary_army
 			modifier = {
-				army_attack_factor = 0.05
-				army_defence_factor = 0.05
+				army_attack_factor = 0.03
+				army_defence_factor = 0.03
 				minimum_training_level = -0.1
 			}
 		}

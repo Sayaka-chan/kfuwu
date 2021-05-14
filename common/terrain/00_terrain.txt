@@ -68,7 +68,7 @@ categories =  {
 			#movement = -0.15
 		}
 
-		enemy_army_bonus_air_superiority_factor = -0.1
+		enemy_army_bonus_air_superiority_factor = -0.15
 	}
 
 	hills = {
@@ -83,7 +83,7 @@ categories =  {
 			attack = -0.2
 			#movement = -0.15
 		}
-		enemy_army_bonus_air_superiority_factor = -0.05
+		enemy_army_bonus_air_superiority_factor = -0.3
 	}
 
 	mountain = {
@@ -100,7 +100,7 @@ categories =  {
 			#movement = -0.4
 		}
 
-		enemy_army_bonus_air_superiority_factor = -0.60
+		enemy_army_bonus_air_superiority_factor = -0.5
 	}
 
 	plains = {
@@ -119,11 +119,11 @@ categories =  {
 		sound_type = plains
 
 		units = {
-			attack = -0.3
+			attack = -0.35
 			#movement = -0.2
 		}
 
-		enemy_army_bonus_air_superiority_factor = -0.25
+		enemy_army_bonus_air_superiority_factor = -0.45
 	}
 
 	jungle = {

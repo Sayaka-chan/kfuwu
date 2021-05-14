@@ -247,7 +247,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus AUS_mech_cavalry"
 			add_tech_bonus = {
 				name = AUS_mech_cavalry
-				bonus = 1
+				bonus = 3
 				category = cat_mechanized_equipment
 			}
 		}
@@ -271,7 +271,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus AUS_kavalleriepanzer"
 			add_tech_bonus = {
 				name = AUS_kavalleriepanzer
-				bonus = 1.2
+				bonus = 1.5
 				uses = 3
 				category = cat_medium_armor
 			}
