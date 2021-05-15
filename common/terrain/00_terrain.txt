@@ -83,7 +83,7 @@ categories =  {
 			attack = -0.2
 			#movement = -0.15
 		}
-		enemy_army_bonus_air_superiority_factor = -0.3
+		enemy_army_bonus_air_superiority_factor = -0.25
 	}
 
 	mountain = {
@@ -100,7 +100,7 @@ categories =  {
 			#movement = -0.4
 		}
 
-		enemy_army_bonus_air_superiority_factor = -0.5
+		enemy_army_bonus_air_superiority_factor = -0.45
 	}
 
 	plains = {
@@ -123,7 +123,7 @@ categories =  {
 			#movement = -0.2
 		}
 
-		enemy_army_bonus_air_superiority_factor = -0.45
+		enemy_army_bonus_air_superiority_factor = -0.35
 	}
 
 	jungle = {
@@ -140,7 +140,7 @@ categories =  {
 			#movement = -0.25
 		}
 
-		enemy_army_bonus_air_superiority_factor = -0.20
+		enemy_army_bonus_air_superiority_factor = -0.30
 
 	}
 
@@ -157,7 +157,7 @@ categories =  {
 			attack = -0.35
 			#movement = -0.4
 		}
-
+          enemy_army_bonus_air_superiority_factor = -0.50
 	}
 
 	desert = {
