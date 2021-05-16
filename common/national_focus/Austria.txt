@@ -273,7 +273,7 @@ focus_tree = {
 				name = AUS_kavalleriepanzer
 				bonus = 1.5
 				uses = 3
-				category = cat_medium_armor
+				category = armor
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
