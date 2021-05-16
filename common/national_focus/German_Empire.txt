@@ -1718,6 +1718,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_security_3"
 			army_experience = 50
 			air_experience = 25
+			add_offsite_building = { type = arms_factory level = 15 }
 			add_equipment_to_stockpile = {
 				type = infantry_equipment_1
 				amount = 20000
@@ -1738,7 +1739,7 @@ focus_tree = {
 				amount = 1500
 				producer = GER
 			}
-		}
+	    }
 		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_AIRFORCE_BONUS }
 	}
 
