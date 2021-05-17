@@ -355,10 +355,11 @@ create_corps_commander = {
 		commando
 		panzer_leader
 		desert_fox
+		engineer
 	}
 	id = 530
-	skill = 5
-	attack_skill = 4
+	skill = 6
+	attack_skill = 6
 	defense_skill = 4
 	planning_skill = 4
 	logistics_skill = 4

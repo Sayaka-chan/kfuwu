@@ -449,13 +449,15 @@ create_corps_commander = {
 	traits = {
 		trait_reckless
 		trait_engineer
+		trait_mountaineer
 		fortress_buster
+		infantry_leader
 	}
-	skill = 2
-	attack_skill = 3
-	defense_skill = 1
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
 	planning_skill = 2
-	logistics_skill = 1
+	logistics_skill = 2
 }
 
 #Retired in 1928

@@ -61,13 +61,13 @@ ideas = {
 			equipment_bonus = {
 				fighter_equipment = {
 
-					build_cost_ic = -0.05
+					build_cost_ic = -0.1
 					instant = yes
 				}
 
 				CAS_equipment = {
 
-					build_cost_ic = -0.05
+					build_cost_ic = -0.1
 					instant = yes
 				}
             }
@@ -689,18 +689,18 @@ ideas = {
 					soft_attack = 0.1
 					hard_attack = 0.1
 					breakthrough = 0.1
-					build_cost_ic = 0.1
+					build_cost_ic = 0.025
 				}
 				medium_tank_aa_equipment = {
 					anti_air_attack = 0.1
 					breakthrough = 0.1
-					build_cost_ic = 0.1
+					build_cost_ic = 0.025
 				}
 				medium_tank_destroyer_equipment = {
 					hard_attack = 0.15
 					ap_attack = 0.10
 					breakthrough = 0.1
-					build_cost_ic = 0.1
+					build_cost_ic = 0.025
 				}
 			}
 			research_bonus = {
@@ -722,17 +722,17 @@ ideas = {
 					soft_attack = 0.10
 					hard_attack = 0.10
 					maximum_speed = 0.1
-					build_cost_ic = 0.1
+					build_cost_ic = 0.025
 				}
 				medium_tank_aa_equipment = {
 					anti_air_attack = 0.10
 					maximum_speed = 0.1
-					build_cost_ic = 0.1
+					build_cost_ic = 0.025
 				}
 				medium_tank_destroyer_equipment = {
 					ap_attack = 0.10
 					maximum_speed = 0.1
-					build_cost_ic = 0.1
+					build_cost_ic = 0.025
 				}
 			}
 			research_bonus = {

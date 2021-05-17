@@ -365,13 +365,12 @@ create_field_marshal = {
 	id = 455
 	picture = "Portrait_RUS_Vasily_Chuikov.tga"
 	traits = {
-		trait_engineer
 		urban_assault_specialist
 		panzer_leader
 		organizer
 	}
-	skill = 7
-	attack_skill = 7
+	skill = 5
+	attack_skill = 5
 	defense_skill = 4
 	planning_skill = 5
 	logistics_skill = 5
@@ -394,26 +393,6 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Georgiy Zhukov"
-	id = 457
-	picture = "Portrait_RUS_Gregory_Zhukov.tga"
-	traits = {
-		career_officer
-		brilliant_strategist
-		organizer
-		panzer_leader
-		trickster
-		trait_engineer
-		ranger
-	}
-	skill = 7
-	attack_skill = 6
-	defense_skill = 5
-	planning_skill = 5
-	logistics_skill = 5
-}
-
-create_corps_commander = {
 	name = "Konstantin Rokossovskiy"
 	picture = "Portrait_RUS_Konstantin_Rokossovsky.tga"
 	id = 490
@@ -421,9 +400,10 @@ create_corps_commander = {
 		brilliant_strategist
 		cavalry_leader
 		infantry_leader
+		ranger
 	}
-	skill = 6
-	attack_skill = 5
+	skill = 5
+	attack_skill = 4
 	defense_skill = 4
 	planning_skill = 3
 	logistics_skill = 3
@@ -487,8 +467,10 @@ create_corps_commander = {
 		career_officer
 		panzer_leader
 		trickster
+		trait_engineer
+		ranger
 	}
-	skill = 4
+	skill = 5
 	attack_skill = 4
 	defense_skill = 3
 	planning_skill = 3

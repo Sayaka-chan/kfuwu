@@ -68,6 +68,22 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus RUS_A_New_Russia"
 			add_ideas = RUS_a_new_russia_1
+			every_unit_leader = {
+				limit={has_id=455}
+				promote_leader = yes
+				add_skill_level=1
+				add_attack=2
+				add_logistics = 2
+				add_planning = 1
+				add_unit_leader_trait=trait_engineer
+			}
+			every_unit_leader = {
+				limit={has_id=416}
+				promote_leader = yes
+				add_skill_level=1
+				add_attack=2
+				add_defense=1
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 	}
@@ -215,19 +231,13 @@ focus_tree = {
 		cost = 5
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus RUS_Stratocratic_Government"
-			if = { #has mil. spir
-				limit = { has_idea = RUS_legacy_of_the_whites_3 }
-				swap_ideas = {
-					remove_idea = RUS_legacy_of_the_whites_3
-					add_idea = RUS_legacy_of_the_whites_4
+			limit = {
+					has_idea = putilov
 				}
-			}
-			else = { #has only basic
 				swap_ideas = {
-					remove_idea = RUS_legacy_of_the_whites_1
-					add_idea = RUS_legacy_of_the_whites_2
+					remove_idea = putilov
+					add_idea = putilov2
 				}
-			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY FOCUS_FILTER_ARMY_BONUS }
 	}
@@ -382,11 +392,14 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus RUS_Machine_And_Tractor_Stations"
 			RUS_reduce_black_monday = yes
 			add_stability = 0.03
-			unlock_decision_tooltip = RUS_Develop_Industry_In_Novgorod
-			unlock_decision_tooltip = RUS_Develop_Industry_In_Pskov
-			unlock_decision_tooltip = RUS_Develop_Industry_In_Ufa
-			unlock_decision_tooltip = RUS_Develop_Industry_In_Yaroslavl
-			unlock_decision_tooltip = RUS_Develop_Industry_In_Nizhny_Novgorod
+			572 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
 	}
@@ -449,11 +462,14 @@ focus_tree = {
 				category = industry
 			}
 			add_stability = 0.02
-			unlock_decision_tooltip = RUS_Develop_Industry_In_Yekaterinburg
-			unlock_decision_tooltip = RUS_Develop_Industry_In_Omsk
-			unlock_decision_tooltip = RUS_Develop_Industry_In_Irkutsk
-			unlock_decision_tooltip = RUS_Develop_Industry_In_Novo_Nikolayevsk
-			unlock_decision_tooltip = RUS_Develop_Industry_In_Krasnoyarsk
+			572 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
 			hidden_effect = {
 				country_event = {
 					id = rusd.137
@@ -503,7 +519,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = RUS_Industrial_Draft_Scheme
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
@@ -518,12 +534,35 @@ focus_tree = {
 	}
 
 	focus = {
+		id = RUS_peoples_commissariat
+		icon = GFX_goal_SOV_belarus
+		cost = 5
+		prerequisite = {
+			focus = RUS_Research_Slot
+		}
+			mutually_exclusive = {
+			focus = RUS_production_effort
+		}
+		x = 2
+		y = 2
+		relative_position_id = RUS_Industrial_Draft_Scheme
+
+							available = {
+					date > 1938.1.1 }
+					
+			completion_reward = {
+			add_timed_idea = {idea = peoples_commissariat_focus days = 900}
+
+		}
+    }
+
+	focus = {
 		id = RUS_tranformation_of_nature
 		icon = GFX_goal_generic_soviet_construction
-		prerequisite = { focus = RUS_Research_Slot }
-		x = -4
-		y = 4
-		relative_position_id = RUS_Establish_The_VES
+		prerequisite = { focus = RUS_Expand_The_Transsiberian }
+		x = 0
+		y = 1
+		relative_position_id = RUS_Expand_The_Transsiberian
 		cost = 5
 		ai_will_do = {
 			factor = 5
@@ -540,12 +579,78 @@ focus_tree = {
 	}
 
 	focus = {
+		id = RUS_production_effort
+		text = production_effort
+		icon = GFX_Soviet_War_Economy
+		cost = 5
+		prerequisite = {
+			focus = RUS_Research_Slot
+		}
+			mutually_exclusive = {
+			focus = RUS_peoples_commissariat
+		}
+		relative_position_id = RUS_Industrial_Draft_Scheme
+		x = -2
+		y = 2
+			
+			available_if_capitulated = yes
+				available = {
+					date > 1938.1.1 }
+			
+
+		completion_reward = {
+			566 = {
+			add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+				type = arms_factory
+				level = 6
+				instant_build = yes
+			    }
+			}
+			565 = {
+			add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+				type = arms_factory
+				level = 6
+				instant_build = yes
+			    }
+			}
+			564 = {
+			add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+				type = arms_factory
+				level = 6
+				instant_build = yes
+			    }
+			}
+			563 = {
+			add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+				type = arms_factory
+				level = 6
+				instant_build = yes
+			    }
+			}
+			561 = {
+			add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+				type = arms_factory
+				level = 6
+				instant_build = yes
+			    }
+			}
+		
+			}
+
+	}
+
+	focus = {
 		id = RUS_synthetic_rubber
 		icon = GFX_goal_generic_oil_refinery
-		prerequisite = { focus = RUS_Research_Slot}
+		prerequisite = { focus = RUS_tranformation_of_nature}
 		x = 0
-		y = 4
-		relative_position_id = RUS_Establish_The_VES
+		y = 2
+		relative_position_id = RUS_Expand_The_Transsiberian
 		cost = 5
 		ai_will_do = {
 			factor = 4
@@ -581,12 +686,9 @@ focus_tree = {
 		prerequisite = {
 			focus = RUS_synthetic_rubber
 		}
-		prerequisite = {
-			focus = RUS_tranformation_of_nature
-		}
-		x = -2
-		y = 5
-		relative_position_id = RUS_Establish_The_VES
+		x = 0
+		y = 2
+		relative_position_id = RUS_tranformation_of_nature
 		cost = 5
 
 		ai_will_do = {
@@ -699,50 +801,11 @@ focus_tree = {
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-	}
+    }
 
-	focus = {
-		id = RUS_Siberian_Arms_Industry
-		icon = GFX_goal_economic_control
-		x = 0
-		y = 1
-		relative_position_id = RUS_Expand_The_Transsiberian
-		cost = 10
-		prerequisite = {
-			focus = RUS_Expand_The_Transsiberian
-		}
 
-		ai_will_do = {
-			factor = 25
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus RUS_Establish_The_VES"
-			572 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory 
-					level = 2
-					instant_build = yes
-			    }
-			}	
-			561 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory 
-					level = 2
-					instant_build = yes
-				}		
-			}
-            657 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory 
-					level = 2
-					instant_build = yes
-				}		
-			}		
-		}
-	}
+
+	
 
 	#############
 	###### Military #######
@@ -1118,7 +1181,7 @@ focus_tree = {
 		x = 1
 		y = 3
 		relative_position_id = RUS_Army_Modernisation
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1229,7 +1292,7 @@ focus_tree = {
 		relative_position_id = RUS_Spearhead_Doctrine
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = RUS_Spearhead_Doctrine
 		}
@@ -1483,7 +1546,7 @@ focus_tree = {
 		cost = 1
 		relative_position_id = RUS_Expansionism
 		available = {
-			date > 1940.12.24
+			date > 1940.6.24
 			is_subject = no
 			if = {
 				limit = {

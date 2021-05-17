@@ -266,7 +266,7 @@ create_field_marshal = {
 		trickster
 	}
 	skill = 6
-	attack_skill = 7
+	attack_skill = 5
 	defense_skill = 4
 	planning_skill = 5
 	logistics_skill = 5
@@ -330,8 +330,8 @@ create_corps_commander = {
 		trait_engineer
 		organizer
 	}
-	skill = 7
-	attack_skill = 7
+	skill = 6
+	attack_skill = 6
 	defense_skill = 5
 	planning_skill = 5
 	logistics_skill = 5

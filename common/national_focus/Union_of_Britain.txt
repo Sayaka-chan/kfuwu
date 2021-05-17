@@ -17,7 +17,7 @@ focus_tree = {
 	}
 	default = no
 
-	continuous_focus_position = { x = 520 y = 950 }
+	continuous_focus_position = { x = 620 y = 1200 }
 
 	### Politics ###
 
@@ -908,7 +908,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus ENG_motorized"
 			add_tech_bonus = {
 				name = ENG_motorized
-				bonus = 1
+				bonus = 1.5
 				uses = 1
 				category = motorized_equipment
 			}
@@ -936,7 +936,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus ENG_tank_research"
 			add_tech_bonus = {
 				name = ENG_tank_research
-				bonus = 1
+				bonus = 2
 				uses = 2
 				category = armor
 			}
@@ -1836,17 +1836,23 @@ focus_tree = {
 		icon = GFX_goal_syndicalist_workers
 		cost = 10
 		prerequisite = {
-			focus = ENG_blood
+			focus = ENG_total_mobilization
 		}
-		x = 1
-		y = 6
+		x = 0
+		y = 7
 		relative_position_id = ENG_tuc
 		ai_will_do = {
 			factor = 15
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ENG_home_front_victory"
-			add_ideas = ENG_home_front_victory_idea
+			if = {
+				limit = { has_idea = ENG_air_production}
+				swap_ideas = {
+					remove_idea = ENG_air_production
+					add_idea = ENG_air_production2
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 	}
@@ -1861,7 +1867,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_fortress_britain
 		}
-		x = -1
+		x = 0
 		y = 6
 		relative_position_id = ENG_tuc
 		ai_will_do = {
@@ -1915,7 +1921,7 @@ focus_tree = {
 	focus = {# Fortress Britania
 		id = ENG_fortress_britain
 		icon = GFX_focus_generic_bastion_of_democracy
-		cost = 3
+		cost = 10
 		prerequisite = {
 			focus = ENG_class_warfare
 		}
@@ -1932,25 +1938,25 @@ focus_tree = {
 				127 = {
 					add_building_construction = {
 						type = coastal_bunker
-						level = 2
+						level = 5
 						province = 3501
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = coastal_bunker
-						level = 2
+						level = 5
 						province = 11446
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = coastal_bunker
-						level = 2
+						level = 5
 						province = 9458
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = coastal_bunker
-						level = 2
+						level = 5
 						province = 13070
 						instant_build = yes
 					}
@@ -1958,25 +1964,25 @@ focus_tree = {
 				127 = {
 					add_building_construction = {
 						type = coastal_bunker
-						level = 2
+						level = 5
 						province = 3422
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = coastal_bunker
-						level = 2
+						level = 5
 						province = 3463
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = coastal_bunker
-						level = 2
+						level = 5
 						province = 540
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = coastal_bunker
-						level = 2
+						level = 5
 						province = 6526
 						instant_build = yes
 					}
@@ -1984,7 +1990,7 @@ focus_tree = {
 				126 = {
 					add_building_construction = {
 						type = coastal_bunker
-						level = 3
+						level = 5
 						province = 11374
 						instant_build = yes
 					}
@@ -1992,31 +1998,31 @@ focus_tree = {
 				221 = {
 					add_building_construction = {
 						type = coastal_bunker
-						level = 2
+						level = 5
 						province = 221
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = coastal_bunker
-						level = 2
+						level = 5
 						province = 271
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = coastal_bunker
-						level = 2
+						level = 5
 						province = 322
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = coastal_bunker
-						level = 2
+						level = 5
 						province = 3287
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = coastal_bunker
-						level = 2
+						level = 5
 						province = 296
 						instant_build = yes
 					}
@@ -2024,19 +2030,19 @@ focus_tree = {
 				129 = {
 					add_building_construction = {
 						type = coastal_bunker
-						level = 2
+						level = 5
 						province = 9322
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = coastal_bunker
-						level = 2
+						level = 5
 						province = 3353
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = coastal_bunker
-						level = 2
+						level = 5
 						province = 9250
 						instant_build = yes
 					}
@@ -2044,13 +2050,13 @@ focus_tree = {
 				130 = {
 					add_building_construction = {
 						type = coastal_bunker
-						level = 2
+						level = 5
 						province = 11297
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = coastal_bunker
-						level = 2
+						level = 5
 						province = 11317
 						instant_build = yes
 					}
@@ -2058,45 +2064,77 @@ focus_tree = {
 				131 = {
 					add_building_construction = {
 						type = coastal_bunker
-						level = 2
+						level = 5
 						province = 11270
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = coastal_bunker
-						level = 2
+						level = 5
 						province = 351
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = coastal_bunker
-						level = 2
+						level = 5
 						province = 11299
+						instant_build = yes
+					}
+				}
+				135 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 5
+						province = 7394
+						instant_build = yes
+					}
+				}
+				134 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 5
+						province = 9303
+						instant_build = yes
+					}
+				}
+				119 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 5
+						province = 3379
+						instant_build = yes
+					}
+				}
+				113 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 5
+						province = 11293
 						instant_build = yes
 					}
 				}
 				131 = {
 					add_building_construction = {
 						type = coastal_bunker
-						level = 2
+						level = 5
 						province = 11378
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = coastal_bunker
-						level = 2
+						level = 5
 						province = 9392
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = coastal_bunker
-						level = 2
+						level = 5
 						province = 9383
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = coastal_bunker
-						level = 2
+						level = 5
 						province = 6300
 						instant_build = yes
 					}
@@ -2105,26 +2143,6 @@ focus_tree = {
 			custom_effect_tooltip = ENG_fortress_britain_tp
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-	}
-
-	focus = {# Bletchley Park
-		id = ENG_bletchley_park
-		icon = GFX_focus_generic_socialist_science
-		cost = 10
-		prerequisite = {
-			focus = ENG_class_warfare
-		}
-		x = 0
-		y = 5
-		relative_position_id = ENG_tuc
-		ai_will_do = {
-			factor = 20
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus ENG_bletchley_park"
-			add_ideas = ENG_bletchley_park_idea
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 }
 
