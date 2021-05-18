@@ -15,7 +15,7 @@ add_ideas = {
 	peace_training
     # Starting Cabinet
 }
-
+set_country_flag=fuel_system_enabled
 ### Starting Technologies ###
 create_intelligence_agency = yes
 set_technology = {

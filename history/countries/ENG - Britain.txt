@@ -7,7 +7,7 @@ set_research_slots = 5
 
 set_stability = 0.5
 set_war_support = 0.3
-
+set_country_flag=fuel_system_enabled
 ### Starting Technologies ###
 create_intelligence_agency = yes
 set_technology = {

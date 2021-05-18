@@ -1,7 +1,7 @@
 ﻿capital = 739
 oob = "CAN"
 set_naval_oob = "CAN_naval"
-
+set_country_flag=fuel_system_enabled
 set_technology = {
 	### General ###
 	electronic_mechanical_engineering = 1
