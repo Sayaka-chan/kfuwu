@@ -18,6 +18,12 @@ set_technology = {
 	gw_artillery = 1
 	tech_support = 1
 	tech_recon = 1
+	shocktroops = 1
+	jungletroops = 1
+	jaegers = 1
+	desertinfantry_at = 1
+	tech_mountaineers = 1
+	marines = 1
 	### Air ###
 	early_fighter = 1
 }
@@ -112,10 +118,6 @@ add_ideas = {
 	GRE_memories_of_king
 	peace_training
 	GRE_legacy_of_alexander_idea
-	GRE_Georgios_Papandreou_hog_sli
-	GRE_Themistoklis_Sofoulis_for_mli
-	GRE_Georgios_Athanasiadis_Novas_eco_sli
-	GRE_Pafsanias_Katsotas_sec_sli
 }
 
 country_event = { id = gre.1 days = 1 } #Intro event
@@ -349,7 +351,6 @@ create_corps_commander = {
 	traits = {
 		career_officer
 		infantry_leader
-		trait
 	}
 	id = 580
 	skill = 2
@@ -438,21 +439,20 @@ create_navy_leader = {
 	maneuvering_skill = 2
 	coordination_skill = 2
 }
-
 GRE_start_naval_variant = yes
 if = {
-       limit = { has_dlc = "Man the Guns" }
-	   ### Variants ###
-       # Battlecruisers #
-        create_equipment_variant = {
-		name = "Euboea Class"
-		type = ship_hull_heavy_1
-		name_group = GRE_BB_HISTORICAL
-		parent_version = 0
-		modules = {
+    limit = { has_dlc = "Man the Guns" }
+	### Variants ###
+    # Battlecruisers #
+    create_equipment_variant = {
+			name = "Euboea Class"
+			type = ship_hull_heavy_1
+			name_group = GRE_BB_HISTORICAL
+			parent_version = 0
+			modules = {
 			fixed_ship_battery_slot = ship_heavy_battery_2
 			fixed_ship_anti_air_slot = ship_anti_air_2
-                        fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+            fixed_ship_fire_control_system_slot = ship_fire_control_system_1
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = heavy_ship_engine_2
 			fixed_ship_secondaries_slot = ship_secondaries_2
@@ -461,25 +461,42 @@ if = {
 			mid_1_custom_slot = ship_anti_air_2
 			mid_2_custom_slot = ship_anti_air_2
 			rear_1_custom_slot = ship_heavy_battery_2
-                  }
-         }
+        }
+    }
 
-		 # Light Cruisers #
-       create_equipment_variant = {
-               name = "Elli Class "
-               type = ship_hull_cruiser_1
-               name_group = GRE_CL_HISTORICAL
-               parent_version = 0
-               modules = {
-                       fixed_ship_battery_slot = ship_light_medium_battery_1
-                       fixed_ship_anti_air_slot = ship_anti_air_2
-                       fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-                       fixed_ship_radar_slot = empty
-	               fixed_ship_engine_slot = cruiser_ship_engine_1
-		       fixed_ship_armor_slot = ship_armor_cruiser_1
-		       fixed_ship_secondaries_slot = ship_secondaries_2
-		       mid_1_custom_slot = ship_secondaries_2
-		       mid_2_custom_slot = ship_secondaries_2
-		       rear_1_custom_slot = ship_light_medium_battery_2
+	# Light Cruisers #
+	create_equipment_variant = {
+            name = "Elli Class "
+            type = ship_hull_cruiser_1
+            name_group = GRE_CL_HISTORICAL
+            parent_version = 0
+            modules = {
+            fixed_ship_battery_slot = ship_light_medium_battery_1
+            fixed_ship_anti_air_slot = ship_anti_air_2
+            fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+            fixed_ship_radar_slot = empty
+	        fixed_ship_engine_slot = cruiser_ship_engine_1
+		    fixed_ship_armor_slot = ship_armor_cruiser_1
+		    fixed_ship_secondaries_slot = ship_secondaries_2
+		    mid_1_custom_slot = ship_secondaries_2
+		    mid_2_custom_slot = ship_secondaries_2
+		    rear_1_custom_slot = ship_light_medium_battery_2
 		}
 	}
+	create_equipment_variant = {
+		name = "Clemson/Wickes Class"
+		type = ship_hull_light_1
+		name_group = GRE_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+		fixed_ship_battery_slot = ship_light_battery_2
+		fixed_ship_anti_air_slot = ship_anti_air_2
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+		fixed_ship_radar_slot = ship_sonar_1
+		fixed_ship_engine_slot = light_ship_engine_2
+		fixed_ship_torpedo_slot = ship_torpedo_1
+		mid_1_custom_slot = ship_torpedo_1
+		rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+}

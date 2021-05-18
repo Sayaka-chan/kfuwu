@@ -300,8 +300,9 @@ if = { #JAP_samurai_lineage GFX doesn't show up without Waking the Tiger, hence 
 			politically_connected
 			organizer
 			infantry_leader
+			trait_engineer
 		}
-		skill = 6
+		skill = 5
 		attack_skill = 6
 		defense_skill = 4
 		planning_skill = 3
@@ -311,7 +312,7 @@ if = { #JAP_samurai_lineage GFX doesn't show up without Waking the Tiger, hence 
 	create_field_marshal = {
 		name = "Hata Shunroku"
 		picture = "Portrait_Japan_Shunroku_Hata.dds"
-		traits = { infantry_leader JAP_samurai_lineage organizer }
+		traits = { infantry_leader JAP_samurai_lineage organizer trait_engineer }
 		skill = 5
 		attack_skill = 6
 		defense_skill = 4
@@ -508,7 +509,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Tanaka Shizuichi"
 	picture = "Portrait_Japan_Shizuichi_Tanaka.dds"
-	traits = { trickster career_officer infantry_leader trait_mountaineer ranger  }
+	traits = { trickster career_officer infantry_leader trait_mountaineer ranger trait_engineer  }
 	skill = 6
 	attack_skill = 6
 	defense_skill = 3

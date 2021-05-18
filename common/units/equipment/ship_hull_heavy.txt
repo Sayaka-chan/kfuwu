@@ -52,22 +52,18 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_heavy_battery
-                    ship_super_heavy_battery
 				}
 			}
 			mid_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
 					ship_anti_air
-                    ship_depth_charge
 				}
 			}
 			mid_2_custom_slot = {
 				required = no
 				allowed_module_categories = {
 					ship_anti_air
-					ship_secondaries
-                    ship_depth_charge
 				}
 			}
 			rear_1_custom_slot = {
@@ -75,7 +71,6 @@ equipments = {
 				allowed_module_categories = {
 					ship_anti_air
 					ship_heavy_battery
-					ship_super_heavy_battery
 				}
 			}
 		}
@@ -153,16 +148,14 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_anti_air
-					ship_secondaries
 					ship_airplane_launcher
-                                        ship_depth_charge
 				}
 			}
 			rear_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
 					ship_airplane_launcher
-                                        ship_heavy_battery
+                    ship_heavy_battery
 				}
 			}
 		}
@@ -225,7 +218,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_heavy_battery
-                    ship_super_heavy_battery
 				}
 			}
 			mid_1_custom_slot = {
@@ -233,7 +225,6 @@ equipments = {
 				allowed_module_categories = {
 					ship_anti_air
 					ship_airplane_launcher
-                    ship_depth_charge
 				}
 			}
 			mid_2_custom_slot = {
@@ -241,15 +232,12 @@ equipments = {
 				allowed_module_categories = {
 					ship_airplane_launcher
 					ship_anti_air
-					ship_secondaries
-                    ship_depth_charge
 				}
 			}
 			rear_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
 					ship_heavy_battery
-					ship_super_heavy_battery
 				}
 			}
 		}
@@ -281,7 +269,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_heavy_battery
-                    ship_super_heavy_battery
 				}
 			}
 			mid_1_custom_slot = {
@@ -290,19 +277,14 @@ equipments = {
 					ship_anti_air
 					ship_airplane_launcher
 					ship_heavy_battery
-                    ship_super_heavy_battery
-                    ship_depth_charge
 				}
 			}
 			mid_2_custom_slot = {
 				required = no
 				allowed_module_categories = {
 					ship_anti_air
-					ship_secondaries
 					ship_airplane_launcher
 					ship_heavy_battery
-                    ship_super_heavy_battery
-                    ship_depth_charge
 				}
 			}
 			rear_1_custom_slot = {
@@ -310,9 +292,7 @@ equipments = {
 				allowed_module_categories = {
 					ship_anti_air
 					ship_heavy_battery
-					ship_secondaries
 					ship_airplane_launcher
-					ship_super_heavy_battery
 				}
 			}
 		}
@@ -354,7 +334,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_heavy_battery
-                                        ship_super_heavy_battery
 				}
 			}
 			mid_1_custom_slot = {
@@ -363,19 +342,14 @@ equipments = {
 					ship_anti_air
 					ship_airplane_launcher
 					ship_heavy_battery 
-                    ship_super_heavy_battery
-                    ship_depth_charge
 				}
 			}
 			mid_2_custom_slot = {
 				required = no
 				allowed_module_categories = {
 					ship_anti_air
-					ship_secondaries
 					ship_airplane_launcher
 					ship_heavy_battery 
-                    ship_super_heavy_battery
-                    ship_depth_charge
 				}
 			}
 			mid_3_custom_slot = mid_2_custom_slot
@@ -384,7 +358,6 @@ equipments = {
 				allowed_module_categories = {
 					ship_heavy_battery
 					ship_airplane_launcher
-					ship_super_heavy_battery
 				}
 			}
 		}
@@ -523,9 +496,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_anti_air
-					ship_secondaries
 					ship_airplane_launcher
-                    ship_depth_charge
 				}
 			}
 			mid_2_custom_slot = {
@@ -533,16 +504,13 @@ equipments = {
 				allowed_module_categories = {
 					ship_anti_air
 					ship_airplane_launcher
-                    ship_depth_charge
 				}
 			}
 			mid_3_custom_slot = {
 				required = no
 				allowed_module_categories = {
 					ship_anti_air
-					ship_secondaries
 					ship_airplane_launcher
-                    ship_depth_charge
 				}
 			}
 			rear_1_custom_slot = {
@@ -550,7 +518,6 @@ equipments = {
 				allowed_module_categories = {
 					ship_super_heavy_battery
 					ship_heavy_battery
-					ship_airplane_launcher
 				}
 			}
 			rear_2_custom_slot = {
@@ -558,7 +525,6 @@ equipments = {
 				allowed_module_categories = {
 					ship_super_heavy_battery
 					ship_heavy_battery
-					ship_airplane_launcher
 				}
 			}
 		}

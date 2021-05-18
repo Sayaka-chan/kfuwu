@@ -2,6 +2,7 @@
 oob = "CAN"
 set_naval_oob = "CAN_naval"
 set_country_flag=fuel_system_enabled
+
 set_technology = {
 	### General ###
 	electronic_mechanical_engineering = 1
@@ -221,7 +222,6 @@ add_ideas = {
 	CAN_great_depression_2
 	pp_idea
 	CAN_slots
-	CAN_darkest_hour
 	peace_training
 	USA_no_rubber
 	# Starting Cabinet
@@ -356,6 +356,7 @@ create_corps_commander = {# Claude Auchinleck
 		infantry_leader
 		naval_invader
 		trait_engineer
+		desert_fox
 	}
 	skill = 5
 	attack_skill = 6
@@ -604,7 +605,7 @@ create_navy_leader = {# Louis Mountbatten
 		blockade_runner
 		blue_water_expert
 	}
-	skill = 5
+	skill = 6
 	attack_skill = 6
 	defense_skill = 4
 	maneuvering_skill = 5
@@ -681,7 +682,7 @@ create_navy_leader = {# James Somerville
 	name = "James Somerville"
 	picture = "Portrait_England_James_Somerville.tga"
 	traits = { superior_tactician fly_swatter green_water_expert fleet_protector }
-	skill = 5
+	skill = 6
 	attack_skill = 5
 	defense_skill = 4
 	maneuvering_skill = 6
@@ -692,7 +693,7 @@ create_navy_leader = {# Andrew Cunningham
 	name = "Andrew Cunningham"
 	picture = "Portrait_England_Andrew_Cunningham.tga"
 	traits = { blockade_runner superior_tactician air_controller blue_water_expert }
-	skill = 6
+	skill = 7
 	attack_skill = 7
 	defense_skill = 4
 	maneuvering_skill = 6

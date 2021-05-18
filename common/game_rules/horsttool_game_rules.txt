@@ -1,0 +1,81 @@
+horst_host_country = {
+	name = "Select Host"
+	group = "KFU Rules"
+	icon = "GFX_volunteers"
+	default = {
+		name = GER
+		text = "Germany"
+		desc = ""
+	}
+
+	option = {
+		name = AUS
+		text = "Austria"
+		desc = ""
+	}
+	option = {
+		name = OTT
+		text = "Ottomans"
+		desc = ""
+	}
+	option = {
+		name = UKR
+		text = "Ruthenia"
+		desc = ""
+	}
+	option = {
+		name = FRA
+		text = "Commune of France"
+		desc = ""
+	}
+	option = {
+		name = ENG
+		text = "Union of Britain"
+		desc = ""
+	}
+	option = {
+		name = SRI
+		text = "Socialist Republic of Italy"
+		desc = ""
+	}
+	option = {
+		name = GRE
+		text = "Greece"
+		desc = ""
+	}
+	option = {
+		name = CAN
+		text = "Canada"
+		desc = ""
+	}
+	option = {
+		name = USA
+		text = "USA"
+		desc = ""
+	}
+	option = {
+		name = DEH
+		text = "Dominion of India"
+		desc = ""
+	}
+	option = {
+		name = AST
+		text = "Australia"
+		desc = ""
+	}
+	option = {
+		name = NFA
+		text = "Free France"
+		desc = ""
+	}
+	option = {
+		name = JAP
+		text = "Japan"
+		desc = ""
+	}
+	option = {
+		name = RUS
+		text = "Russia"
+		desc = ""
+	}
+}

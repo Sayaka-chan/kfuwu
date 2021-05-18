@@ -35,6 +35,10 @@ set_technology = {
 	marines = 1
 	tech_mountaineers = 1
 }
+add_offsite_building = {
+	type = arms_factory
+	level = 4
+}
 
 ### Navy - MtG ###
 
@@ -118,6 +122,7 @@ add_ideas = {
 	AST_anzac_spirit_1
 	peace_training
 	USA_no_rubber
+	asia_focus
 }
 
 set_research_slots = 3

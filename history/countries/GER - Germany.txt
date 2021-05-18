@@ -2,6 +2,7 @@
 
 oob = "GER"
 set_naval_oob= "GER_naval"
+set_country_flag=fuel_system_enabled
 
 add_ideas = {
 	GER_victors_of_wwi
@@ -15,7 +16,7 @@ add_ideas = {
 	peace_training
     # Starting Cabinet
 }
-set_country_flag=fuel_system_enabled
+
 ### Starting Technologies ###
 create_intelligence_agency = yes
 set_technology = {

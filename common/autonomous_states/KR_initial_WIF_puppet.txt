@@ -36,11 +36,6 @@ autonomy_state = {
 		always = yes
 	}
 
-	allowed = {
-		tag = CAF
-		overlord = { tag = CAN }
-	}
-
 	can_take_level = {
 		custom_trigger_tooltip = {
 			tooltip = can_raise_autonomy_level

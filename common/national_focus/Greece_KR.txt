@@ -11,67 +11,35 @@ focus_tree = {
 
 	default = no
 	continuous_focus_position = { x = 3200 y = 1000 }
-
-	focus = {
-		id = GRE_board_of_industry
-		icon = GFX_goal_generic_production
-		cost = 8.0
-		prerequisite = {
-			focus = GRE_breadbasket
-		}
-		prerequisite = {
-			focus = GRE_planned_industry
-		}
-		relative_position_id = GRE_focus_on_economy
-		x = 0
-		y = 2
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus GRE_board_of_industry"
-			add_tech_bonus = {
-				name = GRE_board_of_industry
-				bonus = 1
-				uses = 1
-				category = industry
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
 	
 	# Socialists
 	focus = {
-		id = GRE_abolish_landlordism
-		icon = GFX_focus_renounce_the_treaty_of_trianon
+		id = GRE_focus_on_economy
+		icon = GFX_focus_generic_industry_3
 		cost = 8.0
-		prerequisite = {
-			focus = GRE_cooperate_with_agrarians
-		}
-		relative_position_id = GRE_old_order_overthrown
-		x = -2
-		y = 2
+		
+		x = 8
+		y = 0
 
 		available = {
-			has_government = totalist
+				has_completed_focus = GRE_syndicalism_forever
 		}
 
 		ai_will_do = {
 			factor = 3
+			modifier = {
+				factor = 0.5
+				has_government = totalist
+			}
 		}
 
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus GRE_abolish_landlordism"
-			add_political_power = 100
-			add_stability = -0.05
+			log = "[GetDateText]: [Root.GetName]: Focus GRE_focus_on_economy"
+			add_ideas = GRE_focus_on_economy_idea
 		}
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = GRE_planned_industry
@@ -136,52 +104,19 @@ focus_tree = {
 					add_idea = command_economy
 				}
 			}
-			if = {
-				limit = {
-					NOT = {
-						has_completed_focus = GRE_free_trade
-						has_completed_focus = GRE_industrialization_program
-						has_completed_focus = GRE_export_focus
-						has_completed_focus = GRE_finding_our_own_way
-						has_completed_focus = GRE_new_enterprise
-						has_completed_focus = GRE_state_industry
-						has_completed_focus = GRE_foreign_investment
-					}
-				}
-				47 = {
-					limit = {
-						is_controlled_by = GRE
-						is_core_of = GRE
-						is_in_home_area = yes
-						arms_factory > 0
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
-				}
-				186 = {
-					limit = {
-						is_controlled_by = GRE
-						is_core_of = GRE
-						is_in_home_area = yes
-						arms_factory > 0
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
-				}
-				47 = {
-					limit = {
-						is_controlled_by = GRE
-						is_core_of = GRE
-						is_in_home_area = yes
-						industrial_complex > 0
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
-				}
+			47 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
 			}
-			else = {
-				add_timed_idea = { idea = GRE_planned_industry_idea days = 365 }
+			186 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
 			}
+			47 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+				#add_timed_idea = { idea = GRE_planned_industry_idea days = 365 }
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 	}
@@ -208,6 +143,37 @@ focus_tree = {
 			add_ideas = GRE_breadbasket_idea
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
+	}
+	focus = {
+		id = GRE_board_of_industry
+		icon = GFX_goal_generic_production
+		cost = 8.0
+		prerequisite = {
+			focus = GRE_breadbasket
+		}
+		prerequisite = {
+			focus = GRE_planned_industry
+		}
+		relative_position_id = GRE_focus_on_economy
+		x = 0
+		y = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus GRE_board_of_industry"
+			add_tech_bonus = {
+				name = GRE_board_of_industry
+				bonus = 1
+				uses = 1
+				category = industry
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
 	focus = {
@@ -314,7 +280,34 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 	}
+	focus = {
+		id = GRE_abolish_landlordism
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		cost = 8.0
+		prerequisite = {
+			focus = GRE_cooperate_with_agrarians
+		}
+		relative_position_id = GRE_old_order_overthrown
+		x = -2
+		y = 2
 
+		available = {
+			has_government = totalist
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus GRE_abolish_landlordism"
+			add_political_power = 100
+			add_stability = -0.05
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+	}
 	focus = {
 		id = GRE_crush_bourgeoisie
 		icon = GFX_goal_demand_sudetenland
@@ -430,48 +423,9 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRE_leap_forward"
-			if = {
-				limit = {
-					OR = {
-						has_completed_focus = GRE_education_programs
-						has_completed_focus = GRE_sponsor_church_schools
-						has_completed_focus = GRE_planned_research
-						has_completed_focus = GRE_greek_science
-					}
-				}
 				add_timed_idea = { idea = GRE_research_idea days = 730 }
-				else = { add_research_slot = 1 }
-			}
+				add_research_slot = 1
 		}
-	}
-	focus = {
-		id = GRE_focus_on_economy
-		icon = GFX_focus_generic_industry_3
-		cost = 8.0
-		
-		relative_position_id = GRE_syndicalist_victory
-		x = 8
-		y = 0
-
-		available = {
-				has_completed_focus = GRE_syndicalism_forever
-		}
-
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0.5
-				has_government = totalist
-			}
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus GRE_focus_on_economy"
-			add_ideas = GRE_focus_on_economy_idea
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	
 	focus = {
@@ -540,10 +494,6 @@ focus_tree = {
 			}
 			modifier = {
 				factor = 5
-				OR = {
-					is_in_faction_with = SER
-					BUL = { has_war = yes }
-				}
 			}
 		}
 
@@ -1610,10 +1560,6 @@ focus_tree = {
 			}
 			modifier = {
 				factor = 2
-				OR = {
-					is_in_faction_with = SER
-					BUL = { has_war_with = SER }
-				}
 			}
 			modifier = {
 				factor = 2
@@ -1784,5 +1730,4 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
-	
-
+}

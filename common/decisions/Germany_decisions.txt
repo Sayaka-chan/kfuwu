@@ -245,4 +245,70 @@ GER_black_monday_category = {
 
 		}
 	}
+	GER_Entente_colonies = {
+		icon = generic_agreement
+		allowed = {
+			tag = GER
+		}
+		fire_only_once = yes
+		complete_effect = {
+			CAN = {
+				transfer_state = 422
+				transfer_state = 281
+				transfer_state = 709
+				transfer_state = 710
+				transfer_state = 941
+				transfer_state = 643
+				transfer_state = 725
+				transfer_state = 639
+				transfer_state = 633
+				transfer_state = 684
+				transfer_state = 647
+				transfer_state = 707
+				transfer_state = 646
+				transfer_state = 641
+				transfer_state = 703
+				transfer_state = 704
+			}
+			NFA = {
+				transfer_state = 706
+				transfer_state = 543
+				transfer_state = 708
+			}
+
+		}
+	}
+	GER_Entente_rubber = {
+		icon = generic_agreement
+		allowed = {
+			tag = GER
+		}
+		fire_only_once = yes
+		complete_effect = {
+			CAN = {
+				give_resource_rights = { receiver = GER state = 422 }
+			}
+			NFA = {
+				give_resource_rights = { receiver = GER state = 543 }
+			}
+		}
+	}
+	GER_Egypt_resources = {
+		icon = generic_agreement
+		allowed = {
+			tag = GER
+		}
+		available = {
+			OTT = {
+				has_full_control_of_state = 446
+			}
+		}
+		fire_only_once = no
+		complete_effect = {
+			OTT = {
+				give_resource_rights = { receiver = GER state = 446 }
+				give_resource_rights = { receiver = GER state = 447 }
+			}
+		}
+	}
 }

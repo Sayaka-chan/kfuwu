@@ -20,11 +20,9 @@ units = {
 			ship = { name = "USS Indiana" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "South Dakota Class" } } }
 			ship = { name = "USS Montana" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "South Dakota Class" } } }
 			ship = { name = "USS Langley" definition = carrier equipment = { ship_hull_carrier_conversion_ca = { amount = 1 owner = USA version_name = "Langley Class" } } #CSA
-				air_wings = {
-					cv_fighter_equipment_0 =  { owner = "USA" amount = 8 }
-					cv_CAS_equipment_1 =  { owner = "USA" amount = 6 }
-					cv_nav_bomber_equipment_1 =  { owner = "USA" amount = 6 }
-				}
+			air_wings = {
+				nav_bomber_equipment_1 =  { owner = "USA" amount = 1 }	
+			}
 			}
 			ship = { name = "USS Abel P. Upshur" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson/Wickes Class" } } } #CSA
 			ship = { name = "USS Goldsborough" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson/Wickes Class" } } } #CSA
@@ -139,9 +137,7 @@ units = {
 			ship = { name = "USS North Carolina" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "South Dakota Class" } } } #HAW
 			ship = { name = "USS Yorktown" definition = carrier equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = USA version_name = "Yorktown Class" } } #CAL
 				air_wings = {
-					cv_fighter_equipment_0 =  { owner = "USA" amount = 24 }
-					cv_CAS_equipment_1 =  { owner = "USA" amount = 18 }
-					cv_nav_bomber_equipment_1 =  { owner = "USA" amount = 18 }
+					nav_bomber_equipment_1 =  { owner = "USA" amount = 1 }	
 				}
 			}
 			ship = { name = "USS Bonita" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "Barracuda/Cachalot Class" } } }

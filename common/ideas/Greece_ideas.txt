@@ -23,7 +23,6 @@ ideas = {
 				land_reinforce_rate = 0.05
 				conscription_factor = 0.10
 				army_morale_factor = 0.05
-				unit_limit_bonus = 5
 			}
 		}
 		GRE_foreign_industry_GER1 = {

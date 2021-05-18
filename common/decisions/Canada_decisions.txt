@@ -3180,7 +3180,6 @@ prospect_for_resources = {
 		available = {
 			num_of_civilian_factories_available_for_projects > 2
 			470 = { is_owned_and_controlled_by = ROOT }
-			has_tech = oil_processing
 		}
 
 		visible = {

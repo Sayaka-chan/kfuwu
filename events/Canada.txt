@@ -4472,52 +4472,6 @@ country_event = {
 }
 
 # Contacting the Irish Unionists (fired by decision)
-country_event = {
-	id = canada.177
-	immediate = { log = "[GetDateText]: [Root.GetName]: event canada.177" }
-	title = canada.177.t
-	desc = canada.177.d
-	picture = GFX_report_event_CAN_army2
-
-	is_triggered_only = yes
-
-	option = {
-		name = canada.177.a
-		if = {
-			limit = {
-				NOT = { country_exists = IRE }
-			}
-			IRE = {
-				transfer_state = 119
-				hidden_effect = {
-					add_manpower = 80000
-					load_oob = "IRE_REV_FULL_SUPP"
-					add_political_power = 100
-					add_popularity = { ideology = paternal_autocrat popularity = 0.35 }
-					add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2500 producer = CAN }
-					create_country_leader = {
-						name = "Gearóid Ó Cuinneagáin"
-						desc = "POLITICS_GEAROID_O_CUINNEAGAIN_DESC"
-						picture = "Portrait_Ireland_Gearoid_O_Cuinneagain.tga"
-						expire = "1965.1.1"
-						ideology = paternal_autocrat_subtype
-					}
-					set_politics = {
-						ruling_party = paternal_autocrat
-						elections_allowed = no
-					}
-				}
-			}
-			add_to_faction = IRE
-		}
-		else = {
-			set_country_flag = CAN_has_irish_loyalists
-			add_manpower = 80000
-			custom_effect_tooltip = CAN_unionists_spawn_ire
-			hidden_effect = { load_oob = "IRE_REV_FULL_SUPP" }
-		}
-	}
-}
 
 # Informing ENG/IRE of uprising
 country_event = {

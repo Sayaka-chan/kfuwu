@@ -6,8 +6,8 @@ state = {
 	state_category = zero
 
 	history = {
-		owner = LEC
-		add_core_of = LEC
+		owner = VEN
+		add_core_of = VEN
 		victory_points = {
 			4189 1
 		}

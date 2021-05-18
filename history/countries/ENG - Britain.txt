@@ -2,12 +2,13 @@
 
 oob = "ENG"
 set_naval_oob= "ENG_naval"
+set_country_flag=fuel_system_enabled
 
 set_research_slots = 5
 
 set_stability = 0.5
 set_war_support = 0.3
-set_country_flag=fuel_system_enabled
+
 ### Starting Technologies ###
 create_intelligence_agency = yes
 set_technology = {
@@ -166,7 +167,7 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 60000
+	amount = 80000
 	producer = ENG
 }
 add_equipment_to_stockpile = {

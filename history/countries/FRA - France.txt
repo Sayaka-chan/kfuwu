@@ -215,6 +215,7 @@ add_ideas = {
 	pp_idea
 	partial_economic_mobilisation
 	peace_training
+	FRA_home_of_the_revolution
 }
 
 create_country_leader = {

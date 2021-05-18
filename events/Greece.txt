@@ -110,12 +110,6 @@ country_event = {
 		name = gre.150.b # Aris Velouchiotis commands the room, in the end
 		set_country_flag = GRE_held_first_congress
 		remove_all_ministers = yes
-		add_ideas = {
-			GRE_Aris_Velouchiotis_hog_tot
-			GRE_Stephanos_Sarafis_for_tot
-			GRE_Leonidas_Strigkos_eco_syn
-			GRE_Georgios_Siantos_sec_tot
-		}
 		set_politics = {
 			ruling_party = totalist
 			elections_allowed = no

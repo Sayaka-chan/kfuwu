@@ -17,6 +17,8 @@ sub_units = {
 		categories = {
 			category_all_armor
 			category_army
+			category_mobile_artillery
+			category_anti_air
 		}
 
 		combat_width = 1
@@ -83,6 +85,8 @@ sub_units = {
 		categories = {
 			category_all_armor
 			category_army
+			category_mobile_artillery
+			category_anti_air
 		}
 
 		combat_width = 1
@@ -152,6 +156,8 @@ sub_units = {
 		categories = {
 			category_all_armor
 			category_army
+			category_mobile_artillery
+			category_anti_air
 		}
 
 		combat_width = 1
@@ -211,6 +217,8 @@ sub_units = {
 		categories = {
 			category_all_armor
 			category_army
+			category_mobile_artillery
+			category_anti_air
 		}
 
 		group = armor

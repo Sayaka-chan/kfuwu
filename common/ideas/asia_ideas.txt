@@ -150,5 +150,31 @@ ideas = {
 				industrial_capacity_factory = -0.025
 			}
 		}
+		asia_focus = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			targeted_modifier = {
+				tag = FRA
+				attack_bonus_against = -0.15
+				defense_bonus_against = -0.15
+			}
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = -0.15
+				defense_bonus_against = -0.15
+			}
+			targeted_modifier = {
+				tag = SRI
+				attack_bonus_against = -0.15
+				defense_bonus_against = -0.15
+			}
+			targeted_modifier = {
+				tag = GRE
+				attack_bonus_against = -0.15
+				defense_bonus_against = -0.15
+			}
+		}
 	}
 }

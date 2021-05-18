@@ -2252,9 +2252,21 @@ focus_tree = {
 			ENG = {
 				country_event = comfrance.128
 			}
+			SRI = {
+				country_event = comfrance.128
+			}
+			GRE = {
+				country_event = comfrance.128
+			}
 			add_to_tech_sharing_group = phalanstere_research
 			set_global_flag = scientific_phalanstere
 			ENG = {
+				country_event = comfrance.127
+			}
+			SRI = {
+				country_event = comfrance.127
+			}
+			GRE = {
 				country_event = comfrance.127
 			}
 		}

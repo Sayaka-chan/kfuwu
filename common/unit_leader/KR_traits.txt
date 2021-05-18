@@ -110,32 +110,4 @@ leader_traits = {
 	##
 	##	COUNTRY-SPECIFIC TRAITS
 	##
-
-	four_musketeers = {
-		type = all
-		trait_type = personality_trait
-		gain_xp = {
-			always = no # not gainable
-		}
-		allowed = {
-			FROM = {
-				tag = SIA
-			}
-		}
-		modifier = {
-			planning_speed = 0.025
-			army_morale_factor = 0.05
-		}
-
-		non_shared_modifier = {
-			reassignment_duration_factor = 1
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-		new_commander_weight = {
-			factor = 0 # Only added for 5 commander
-		}
-	}
 }
