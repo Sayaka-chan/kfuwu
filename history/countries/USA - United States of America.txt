@@ -39,6 +39,10 @@ set_technology = {
 	desertinfantry_at = 1
 	tech_mountaineers = 1
 }
+add_offsite_building = {
+	type = arms_factory
+	level = 8
+}
 
 ### Navy - MtG ###
 
@@ -136,37 +140,22 @@ set_research_slots = 5
 set_convoys = 1000
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
-	amount = 400
+	amount = 800
 	producer = USA
 }
 add_equipment_to_stockpile = {
 	type = anti_air_equipment_1
-	amount = 200
+	amount = 800
 	producer = USA
 }
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 10000
+	amount = 30000
 	producer = USA
 }
 add_equipment_to_stockpile = {
 	type = support_equipment_1
-	amount = 300
-	producer = USA
-}
-add_equipment_to_stockpile = {
-	type = fighter_equipment_1
-	amount = 200
-	producer = USA
-}
-add_equipment_to_stockpile = {
-	type = tac_bomber_equipment_1
-	amount = 100
-	producer = USA
-}
-add_equipment_to_stockpile = {
-	type = CAS_equipment_1
-	amount = 200
+	amount = 1000
 	producer = USA
 }
 set_global_flag = monroe_doctrine
@@ -323,7 +312,7 @@ create_field_marshal = {# George Marshall
 		panzer_leader
 	}
 	skill = 6
-	attack_skill = 7
+	attack_skill = 6
 	defense_skill = 4
 	planning_skill = 4
 	logistics_skill = 5
@@ -493,16 +482,15 @@ create_corps_commander = {# Walter Krueger
 	desc = "USA_WALTER_KRUEGER_ARMY_DESC"
 	portrait_path = "gfx/leaders/USA/Portrait_USA_gen_Walter_Krueger.tga"
 	traits = {
-		armor_officer
-		career_officer
-		brilliant_strategist
+		infantry_leader
+		trait_mountaineer
 	}
-	skill = 2
+	skill = 5
 
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 1
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
 	id = 961
 }
 create_corps_commander = {# Adna Chaffee

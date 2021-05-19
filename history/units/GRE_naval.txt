@@ -20,14 +20,14 @@ units = {
 			ship = { name = "HNS Nafkratoussa" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Clemson/Wickes Class" } } }
 			ship = { name = "HNS Sfendoni" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Clemson/Wickes Class" } } }
 			ship = { name = "HNS Thyella" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Clemson/Wickes Class" } } }
-			ship = { name = "HNS Euboea" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = GRE version_name = "Euboea Class" } } }
-			ship = { name = "HNS Salamis" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = GRE version_name = "Euboea Class" } } }
-			ship = { name = "HNS Elli" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name = "Elli Class" } } }
-                        ship = { name = "HNS Elli" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name = "Elli Class" } } }
-                        ship = { name = "HNS Elli" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name = "Elli Class" } } }
-                        ship = { name = "HNS Elli" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name = "Elli Class" } } }
-                        ship = { name = "HNS Elli" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name = "Elli Class" } } }
-			ship = { name = "HNS Vasilefs Konstantinos" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = GRE version_name = "Euboea Class" } } }
+			ship = { name = "HNS Euboea" definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = GRE version_name = "Euboea Class" } } }
+			ship = { name = "HNS Salamis" definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = GRE version_name = "Euboea Class" } } }
+			ship = { name = "HNS Athena" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name = "Elli Class" } } }
+            ship = { name = "HNS Patras" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name = "Elli Class" } } }
+            ship = { name = "HNS Larissa" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name = "Elli Class" } } }
+            ship = { name = "HNS Arta" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name = "Elli Class" } } }
+            ship = { name = "HNS Elli" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name = "Elli Class" } } }
+			ship = { name = "HNS Vasilefs Konstantinos" definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = GRE version_name = "Euboea Class" } } }
 		}
 	}
 }

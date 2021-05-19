@@ -932,18 +932,16 @@ ideas = {
 		mitsubishi = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea mitsubishi"}
 			allowed = {
-				OR = {
-					original_tag = JAP
-				}
+				tag = JAP
 			}
 			traits = {
 				fighter_producer_offense_2
 			}
 			equipment_bonus = {
-				heavy_fighter = {
+				heavy_fighter_equipment = {
 					build_cost_ic = -0.075
 				}
-				fighter = {
+				fighter_equipment = {
 					build_cost_ic = -0.075
 				}
 			}
@@ -956,7 +954,7 @@ ideas = {
 		tachikawa = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea tachikawa"}
 			allowed = {
-				original_tag = JAP
+				tag = JAP
 			}
 			traits = {
 				bomber_producer_offense_2
@@ -970,10 +968,18 @@ ideas = {
 		yokosuka = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea yokosuka"}
 			allowed = {
-				original_tag = JAP
+				tag = JAP
 			}
 			traits = {
 				nav_cas_producer_offense_2
+			}
+			equipment_bonus = {
+				nav_bomber_equipment = {
+					build_cost_ic = -0.1
+				}
+				CAS_equipment = {
+					build_cost_ic = -0.1
+				}
 			}
 			research_bonus = {
 				air_equipment = 0.1

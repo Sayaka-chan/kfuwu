@@ -21,8 +21,8 @@ state = {
 			1164 = {
 				bunker = 1
 			}
-			add_core_of = GRE
 		}
+		add_core_of = GRE
 	}
 	provinces = {
 		1164 4170 9940 12058

@@ -1846,12 +1846,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ENG_home_front_victory"
-			if = {
-				limit = { has_idea = ENG_air_production}
-				swap_ideas = {
-					remove_idea = ENG_air_production
-					add_idea = ENG_air_production2
-				}
+			swap_ideas = {
+				remove_idea = ENG_air_production
+				add_idea = ENG_air_production2
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }

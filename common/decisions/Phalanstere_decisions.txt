@@ -5,11 +5,8 @@
 FRA_phalanstere_category = {
 	FRA_Develop_ENG = {
 		icon = GFX_decision_generic_construction
-		visible = {
-			phalanstere_target = yes
-		}
-		target_trigger = {
-			phalanstere_target = yes
+		available = {
+			has_completed_focus = FRA_Phalanstere_internationale
 		}
 		targets = { ENG }
 
@@ -52,11 +49,8 @@ FRA_phalanstere_category = {
 
 	FRA_Develop_SRI = {
 		icon = GFX_decision_generic_construction
-		visible = {
-			phalanstere_target = yes
-		}
-		target_trigger = {
-			phalanstere_target = yes
+		available = {
+			has_completed_focus = FRA_Phalanstere_internationale
 		}
 		targets = { SRI }
 
@@ -105,6 +99,50 @@ FRA_phalanstere_category = {
 				type = aluminium
 				amount = 14
 				state = 162
+			}
+		}
+	}
+	FRA_Develop_GRE = {
+		icon = GFX_decision_generic_construction
+		available = {
+			has_completed_focus = FRA_Phalanstere_internationale
+		}
+		targets = { GRE }
+	
+		cancel_trigger = {
+			NOT = {
+				phalanstere_target = yes
+			}
+		}
+	
+		fire_only_once = yes
+		cost = 50
+		days_remove = 50
+	
+		ai_will_do = {
+			factor = 4
+		}
+	
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision FRA_Develop_ENG target: [From.GetName]"
+			set_global_flag = helped_phalanstere
+		}
+	
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove FRA_Develop_ENG target: [From.GetName]"
+			clr_global_flag = helped_phalanstere
+			FROM = {
+				FRA_phalanstere_opinion = yes
+				FRA_phalanstere_development_in_random_state = yes
+				FRA_phalanstere_development_in_random_state = yes
+				if = {
+					limit = {
+						has_global_flag = PHALANSTERE_ENG
+					}
+					FRA_phalanstere_development_in_random_state = yes
+					FRA_phalanstere_development_in_random_state = yes
+				}
+				FRA_phalanstere_tech_sharing = yes
 			}
 		}
 	}

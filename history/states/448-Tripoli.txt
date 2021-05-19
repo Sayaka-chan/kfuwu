@@ -13,7 +13,7 @@ state = {
 		owner = SRI
 		add_core_of = VEN
 		victory_points = {
-			1149 5
+			1149 20
 		}
 		buildings = {
 			infrastructure = 7

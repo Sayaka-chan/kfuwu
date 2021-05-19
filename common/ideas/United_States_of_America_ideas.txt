@@ -1399,7 +1399,6 @@ ideas = {
 			visible = {
 				controls_state = 796
 				owns_state = 796
-				has_country_flag = USA_heavy_equipment_companies_allowed
 			}
 			traits = {
 				artillery_producer_offense_1

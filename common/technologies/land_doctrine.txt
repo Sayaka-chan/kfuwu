@@ -298,12 +298,18 @@ technologies = {
 			hard_attack= 0.075
 
 		}
-
+		mechanized={
+			need = {
+				mechanized_equipment = -10
+			}
+		}
 		path = {
 			leads_to_tech = kampfgruppe
 			research_cost_coeff = 1
 		}
-
+		on_research_complete = {
+			custom_effect_tooltip = "Each Mechanized Batallion requires 10 less Mechanized Equipment"
+		}
 
 		doctrine = yes
 		research_cost = 3.40
@@ -1669,7 +1675,6 @@ technologies = {
 
 			modifier = {
 				factor = 0.25
-				has_idea = FRA_victors_of_wwi
 			}
 		}
 
@@ -2535,10 +2540,6 @@ technologies = {
 					has_army_experience > 120
 				}
 				factor = 0.8
-			}
-			modifier = {
-				tag = SOV
-				factor = 2
 			}
 
 

@@ -2870,7 +2870,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_address_army"
-			army_experience = 50
+			army_experience = 1000
 			if = {
 				limit = {
 					country_exists = GBR
@@ -2897,7 +2897,7 @@ focus_tree = {
 	focus = {
 		id = CAN_preparations_for_war
 		icon = GFX_goal_AST_new_guard
-		cost = 5
+		cost = 3
 		prerequisite = {
 			focus = CAN_address_army
 		}
@@ -3011,7 +3011,7 @@ focus_tree = {
 	focus = {
 		id = CAN_rally_exiles
 		icon = GFX_goal_CAN_lets_go_canada
-		cost = 5
+		cost = 3
 		prerequisite = {
 			focus = CAN_preparations_for_war
 		}
@@ -3406,7 +3406,7 @@ focus_tree = {
 	focus = {
 		id = CAN_bring_on_valentine
 		icon = GFX_CAN_bring_on_valentine
-		cost = 5
+		cost = 3
 		prerequisite = {
 			focus = CAN_infantry_motorization
 		}
@@ -3445,7 +3445,7 @@ focus_tree = {
 	focus = {
 		id = CAN_motor_industry
 		icon = GFX_CAN_motor_industry
-		cost = 5
+		cost = 3
 		prerequisite = {
 			focus = CAN_bring_on_valentine
 		}

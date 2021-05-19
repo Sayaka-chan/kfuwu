@@ -508,7 +508,7 @@ focus_tree = {
 		icon = GFX_goal_construction_engineering
 		cost = 0.00
 		available = {
-			date > 1938.6.1
+			date > 1938.5.1
 		}
 		x = 20
 		y = 0
@@ -754,6 +754,45 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			random_owned_state = {
+				limit = {
+					is_core_of = USA
+					is_controlled_by = USA
+					industrial_complex > 0
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = USA
+					is_controlled_by = USA
+					industrial_complex > 0
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = USA
+					is_controlled_by = USA
+					industrial_complex > 0
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -815,6 +854,45 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = USA
+					is_controlled_by = USA
+					industrial_complex > 0
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = USA
+					is_controlled_by = USA
+					industrial_complex > 0
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = USA
+					is_controlled_by = USA
+					industrial_complex > 0
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
 					level = 1
 					instant_build = yes
 				}
@@ -1357,7 +1435,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_reconstruction_finished"
-			add_ideas = civilian_economy
+			add_ideas = low_economic_mobilisation
 		}
 	}
 
@@ -1380,6 +1458,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_war_department"
 			add_ideas = USA_war_department_idea
 			country_event = ustates.600
+			army_experience = 500
 		}
 		search_filters = { FOCUS_FILTER_ARMY_BONUS }
 	}
@@ -1398,7 +1477,12 @@ focus_tree = {
 		relative_position_id = USA_war_department
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_reform_plan"
-			army_experience = 75
+			add_tech_bonus = {
+				name = USA_reform_plan
+				bonus = 1
+				uses = 2
+				category = land_doctrine
+			}
 		}
 	}
 	focus = {
@@ -1416,7 +1500,7 @@ focus_tree = {
 		relative_position_id = USA_war_department
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_air_force_debate"
-			air_experience = 600
+			air_experience = 2000
 		}
 	}
 	focus = {
@@ -1902,9 +1986,15 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_tanks"
 			add_tech_bonus = {
 				name = USA_tanks
-				bonus = 1.20
+				bonus = 1.25
 				uses = 2
 				category = armor
+			}
+			add_tech_bonus = {
+				name = USA_tanks
+				bonus = 1
+				uses = 2
+				category = motorized_equipment
 			}
 		}
 	}

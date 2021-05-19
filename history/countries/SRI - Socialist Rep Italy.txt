@@ -355,7 +355,7 @@ create_corps_commander = {
 		commando
 		panzer_leader
 		desert_fox
-		engineer
+		trait_engineer
 	}
 	id = 530
 	skill = 6

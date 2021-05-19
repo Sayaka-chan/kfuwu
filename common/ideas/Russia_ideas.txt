@@ -200,10 +200,6 @@ ideas = {
 
 			picture = generic_production_bonus
 
-			allowed_civil_war = {
-				has_government = communism
-			}
-
 			modifier = {
 				production_speed_arms_factory_factor = 0.25
 				consumer_goods_factor = -0.05

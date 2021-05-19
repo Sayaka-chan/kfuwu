@@ -1,40 +1,4 @@
 ability = {
-	
-	staff_office_plan = {
-		name = ABILITY_STAFF_OFFICE_PLAN
-		desc = ABILITY_STAFF_OFFICE_PLAN_DESC
-
-		sound_effect = command_power_ability_defensive
-
-		type = army_leader
-
-		allowed = {
-			is_border_war = no
-		}
-
-		cost = 0.12
-		duration = 168
-
-		unit_modifiers = {
-			planning_speed = 4.0
-		}
-
-
-		ai_will_do = {
-			factor = -1
-			modifier = {
-				FROM = {
-					command_power > 2.0
-				}
-				check_variable = { num_units > 6 }
-				check_variable = { unit_ratio_ready_for_plan > 0.55 }
-				check_variable = { avg_unit_planning_ratio < 0.4 }
-
-				add = 2
-			}
-		}
-	}
-
 
 	siege_artillery = {
 		name = ABILITY_SIEGE_ARTILLERY

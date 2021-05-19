@@ -23,18 +23,17 @@ units = {
 
 			ship = { name = "KMS Mainz" definition = carrier equipment = { ship_hull_carrier_conversion_ca = { amount = 1 owner = GER version_name = "Mainz Class" } }
 				air_wings = {
-					cv_fighter_equipment_0 =  { owner = "GER" amount = 16 }
+					nav_bomber_equipment_1 =  { owner = "GER" amount = 1 }				
 				}
 			}
 			ship = { name = "KMS Rhein" definition = carrier equipment = { ship_hull_carrier_conversion_ca = { amount = 1 owner = GER version_name = "Mainz Class" } }
 				air_wings = {
-					cv_fighter_equipment_0 =  { owner = "GER" amount = 16 }
+					nav_bomber_equipment_1 =  { owner = "GER" amount = 1 }	
 				}
 			}
 			ship = { name = "KMS Peter Strasser" definition = carrier equipment = { ship_hull_carrier_1 = { amount = 1 owner = GER version_name = "Maas Class" } }
 				air_wings = {
-					cv_fighter_equipment_0 =  { owner = "GER" amount = 16 }
-					cv_nav_bomber_equipment_1 =  { owner = "GER" amount = 4 }
+					nav_bomber_equipment_1 =  { owner = "GER" amount = 1 }	
 				}
 			}
 
@@ -99,8 +98,7 @@ units = {
 
 			ship = { name = "SMS Maas" definition = carrier equipment = { ship_hull_carrier_1 = { amount = 1 owner = GER version_name = "Maas Class" } }
 				air_wings = {
-					cv_fighter_equipment_0 =  { owner = "GER" amount = 16 }
-					cv_nav_bomber_equipment_1 =  { owner = "GER" amount = 4 }
+					nav_bomber_equipment_1 =  { owner = "GER" amount = 1 }	
 				}
 			}
 

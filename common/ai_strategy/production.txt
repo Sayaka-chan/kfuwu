@@ -361,7 +361,6 @@ extra_marine_production = {
 			tag = ENG
 			tag = JAP
 			tag = NFA
-			tag = GEX
 			AND = {
 				has_war = yes
 				num_of_naval_factories > 10
