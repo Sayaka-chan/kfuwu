@@ -97,7 +97,7 @@ ideas = {
 			picture = generic_disjointed_gov
 			modifier = {
 				political_power_gain = -0.05
-				industrial_capacity_factory = 0.1
+				industrial_capacity_factory = 0.05
 			}
 		}
 
@@ -105,7 +105,7 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GER_dcgb_idea"}
 			picture = generic_disjointed_gov
 			modifier = {
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.025
 			}
 		}
 
