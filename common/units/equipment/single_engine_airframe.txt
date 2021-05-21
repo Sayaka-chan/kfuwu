@@ -213,10 +213,10 @@ equipments = {
 		reliability = 0.8
 
 		# Air vs Navy - high damage / medium hit chance / easy to hurt
-		naval_strike_attack = 14
+		naval_strike_attack = 17
 		naval_strike_targetting = 7.5
 		
-		build_cost_ic = 50
+		build_cost_ic = 40
 		resources = {
 			#oil = 1
 			aluminium = 2
@@ -723,7 +723,7 @@ equipments = {
 		naval_strike_attack = 20
 		naval_strike_targetting = 10
 		
-		build_cost_ic = 70
+		build_cost_ic = 45
 		resources = {
 			#oil = 1
 			aluminium = 3
