@@ -4,7 +4,7 @@ oob = "AUS"
 set_naval_oob= "AUS_naval"
 set_cosmetic_tag = AUS_social_conservative
 
-set_research_slots = 4
+set_research_slots = 5
 create_intelligence_agency = yes
 set_technology = {
 	### Tanks ###
@@ -21,6 +21,7 @@ set_technology = {
 	tech_mountaineers = 1
 	gw_artillery = 1
 	interwar_antiair = 1
+	tech_engineers = 1
 	interwar_antitank = 1
 	radio = 1
 

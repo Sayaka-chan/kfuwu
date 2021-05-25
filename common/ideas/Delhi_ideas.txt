@@ -287,6 +287,16 @@ ideas = {
 			}
 			cost = 100
 		}
+		
+		royal_canadian_ordnance_corps = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea royal_canadian_ordnance_corps"}
+			allowed = { original_tag = CAN }
+			traits = { artillery_producer_offense_1 }
+			research_bonus = {
+				artillery = 0.1
+			}
+			cost = 100
+		}
 
 		ashok_leyland = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ashok_leyland"}

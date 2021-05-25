@@ -147,7 +147,7 @@ focus_tree = {
 		x = -3
 		y = 4
 		relative_position_id = UKR_Our_Future
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -716,7 +716,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = UKR_Reorg_army
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -814,7 +814,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = UKR_Reorg_army
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -833,7 +833,7 @@ focus_tree = {
 	focus = {# Anti-tank artillery
 		id = UKR_anti_tank
 		icon = GFX_focus_generic_tank_destroyer
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = UKR_Art1
 		}

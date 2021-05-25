@@ -548,7 +548,7 @@ ideas = {
 			picture = generic_agrarian_reform
 			modifier = {
 				political_power_cost = 0.20
-				consumer_goods_factor = -0.15
+				consumer_goods_factor = -0.1
 				global_building_slots_factor = 0.30
 				stability_factor = 0.10
 			}
