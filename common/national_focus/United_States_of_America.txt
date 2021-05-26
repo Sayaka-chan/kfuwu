@@ -29,7 +29,6 @@ focus_tree = {
 
 		available = {
 			has_elected_government = yes
-			has_country_flag = USA_start_economic_timer
 		}
 
 		select_effect = {
@@ -217,7 +216,7 @@ focus_tree = {
 	focus = {# Bill of Rights
 		id = USA_bill_of_rights
 		icon = GFX_goal_constitutional_guarantees
-		cost = 4.00
+		cost = 1.00
 		prerequisite = {
 			focus = USA_defend_democracy
 		}
@@ -263,6 +262,9 @@ focus_tree = {
 		cost = 4.00
 		x = 6
 		y = 0
+		available = {
+				has_completed_focus = USA_reintroduce_gwbill
+		}
 		ai_will_do = {
 			factor = 50
 		}
@@ -392,6 +394,9 @@ focus_tree = {
 		cost = 10
 		x = 8
 		y = 0
+		available = {
+				has_completed_focus = USA_reintroduce_gwbill
+		}
 		ai_will_do = {
 			factor = 50
 		}
@@ -1443,6 +1448,9 @@ focus_tree = {
 		cost = 5.00
 		x = 44
 		y = 0
+		available = {
+				has_completed_focus = USA_reintroduce_gwbill
+		}
 
 		ai_will_do = {
 			factor = 40
@@ -2049,10 +2057,12 @@ focus_tree = {
 			is_controlled_by = ROOT
 		}
 	}
-	cost = 5.00
+	cost = 1.00
 	x = 60
 	y = 0
-
+    available = {
+				has_completed_focus = USA_reintroduce_gwbill
+		}
 
 	ai_will_do = {
 		factor = 1
@@ -2067,6 +2077,45 @@ focus_tree = {
 	}
 	search_filters = { FOCUS_FILTER_NAVY_BONUS FOCUS_FILTER_RESEARCH }
 	}
+
+    focus = {# Battle Cruisers
+	id = USA_battle_cruisers
+	icon = GFX_focus_generic_cruiser2
+	cost = 5.00
+	prerequisite = {
+		focus = USA_navy
+	}
+	available = {
+		any_owned_state = {
+			is_coastal = yes
+			is_controlled_by = ROOT
+		}
+	}
+	relative_position_id = USA_navy
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			has_war = yes
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_battle_cruisers"
+		if = {
+			limit = { has_dlc = "Man the Guns" }
+			add_tech_bonus = {
+				name = USA_battle_cruisers
+				bonus = 1
+				uses = 1
+				category = bb_tech
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_BONUS }
+}
+
 	focus = {# Grand Navy
 	id = USA_grand_navy
 	icon = GFX_USA_grand_navy
@@ -2080,7 +2129,7 @@ focus_tree = {
 	}
 	relative_position_id = USA_navy
 	x = -6
-	y = 1
+	y = 2
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -2123,6 +2172,44 @@ focus_tree = {
 	search_filters = { FOCUS_FILTER_RESEARCH }
 }
 
+focus = {# Light Cruisers
+	id = USA_light_cruisers
+	icon = GFX_focus_generic_destroyer
+	cost = 5.00
+	prerequisite = {
+		focus = USA_navy
+	}
+	available = {
+		any_owned_state = {
+			is_coastal = yes
+			is_controlled_by = ROOT
+		}
+	}
+	relative_position_id = USA_navy
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			has_war = yes
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_light_cruisers"
+		if = {
+			limit = { has_dlc = "Man the Guns" }
+			add_tech_bonus = {
+				name = USA_light_cruisers
+				bonus = 1
+				uses = 1
+				category = cl_tech
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_BONUS }
+}
+
 focus = {# Battleships
 	id = USA_battleships
 	icon = GFX_focus_generic_navy_battleship2
@@ -2144,8 +2231,8 @@ focus = {# Battleships
 		log = "[GetDateText]: [Root.GetName]: Focus USA_battleships"
 		add_tech_bonus = {
 			name = USA_battleships
-			bonus = 1
-			uses = 1
+			bonus = 2
+			uses = 2
 			category = bb_tech
 		}
 		create_equipment_variant = {
@@ -2327,7 +2414,7 @@ focus = {# Defend our Trade
 	}
 	relative_position_id = USA_navy
 	x = 0
-	y = 1
+	y = 2
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -2405,7 +2492,7 @@ focus = {# Carriers
 	}
 	relative_position_id = USA_navy
 	x = 6
-	y = 1
+	y = 2
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -2484,7 +2571,6 @@ focus = {# Carriers
 			progress = 0.4
 			amount = 1
 		}
-		add_ideas = USA_cv_navy
 	}
 	search_filters = { FOCUS_FILTER_RESEARCH }
 }
@@ -2514,17 +2600,41 @@ focus = {# Naval Aviation
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus USA_naval_aviation"
+		add_ideas = USA_cv_navy
+	}
+	search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_BONUS }
+}
+
+focus = {# Naval Bomber
+	id = USA_naval_bomber
+	icon = GFX_goal_generic_air_naval_bomber
+	cost = 5.00
+	prerequisite = {
+		focus = USA_naval_aviation
+	}
+	available = {
+		any_owned_state = {
+			is_coastal = yes
+			is_controlled_by = ROOT
+		}
+	}
+	relative_position_id = USA_carriers
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			has_war = yes
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_naval_aviation"
 		add_tech_bonus = {
 			name = USA_naval_aviation
 			bonus = 1.5
 			uses = 1
 			category = naval_air
-		}
-		add_tech_bonus = {
-			name = USA_carriers
-			bonus = 1.5
-			uses = 1
-			category = cv_tech
 		}
 	}
 	search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_BONUS }
@@ -2539,7 +2649,7 @@ focus = {# Expand Dockyards
 	}
 	relative_position_id = USA_navy
 	x = -2
-	y = 2
+	y = 3
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -2595,7 +2705,7 @@ focus = {# Submarines
 		}
 	}
 	relative_position_id = USA_expand_dockyards
-	x = -2
+	x = -0
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -2614,82 +2724,6 @@ focus = {# Submarines
 				bonus = 1
 				uses = 1
 				category = ss_tech
-			}
-		}
-	}
-	search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_BONUS }
-}
-
-focus = {# Battle Cruisers
-	id = USA_battle_cruisers
-	icon = GFX_focus_generic_cruiser2
-	cost = 5.00
-	prerequisite = {
-		focus = USA_expand_dockyards
-	}
-	available = {
-		any_owned_state = {
-			is_coastal = yes
-			is_controlled_by = ROOT
-		}
-	}
-	relative_position_id = USA_expand_dockyards
-	x = -1
-	y = 2
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			has_war = yes
-		}
-	}
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus USA_battle_cruisers"
-		if = {
-			limit = { has_dlc = "Man the Guns" }
-			add_tech_bonus = {
-				name = USA_battle_cruisers
-				bonus = 1
-				uses = 1
-				category = bb_tech
-			}
-		}
-	}
-	search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_BONUS }
-}
-
-focus = {# Light Cruisers
-	id = USA_light_cruisers
-	icon = GFX_focus_generic_destroyer
-	cost = 5.00
-	prerequisite = {
-		focus = USA_expand_dockyards
-	}
-	available = {
-		any_owned_state = {
-			is_coastal = yes
-			is_controlled_by = ROOT
-		}
-	}
-	relative_position_id = USA_expand_dockyards
-	x = 0
-	y = 1
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			has_war = yes
-		}
-	}
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus USA_light_cruisers"
-		if = {
-			limit = { has_dlc = "Man the Guns" }
-			add_tech_bonus = {
-				name = USA_light_cruisers
-				bonus = 1
-				uses = 1
-				category = cl_tech
 			}
 		}
 	}
@@ -2760,7 +2794,7 @@ focus = {# maritime industry
 focus = {# New Admirals
 	id = USA_new_admirals
 	icon = GFX_goal_navy_hat_ships
-	cost = 5.00
+	cost = 1.00
 	prerequisite = {
 		focus = USA_defend_our_trade
 	}
@@ -2772,7 +2806,7 @@ focus = {# New Admirals
 	}
 	relative_position_id = USA_navy
 	x = 2
-	y = 2
+	y = 3
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -2826,22 +2860,17 @@ focus = {# America Rules the waves
 	cost = 5.00
 	prerequisite = {
 		focus = USA_liberty_ships
-	}
-	prerequisite = {
-		focus = USA_new_ship_buildings
-	}
-	prerequisite = {
 		focus = USA_expand_waves
+		focus = USA_new_ship_buildings
+		focus = USA_naval_bomber
+		focus = USA_bb_navy
 	}
 	available = {
-		any_owned_state = {
-			is_coastal = yes
-			is_controlled_by = ROOT
-		}
+			date > 1939.1.1
 	}
 	relative_position_id = USA_navy
 	x = 0
-	y = 5
+	y = 6
 	ai_will_do = {
 		factor = 1
 		modifier = {
