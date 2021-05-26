@@ -254,8 +254,11 @@ technologies = {
 
 		naval_retreat_speed = 0.2
 
-		research_cost = 0.75
-
+		research_cost = 0.5
+		
+		xp_research_type = navy
+		xp_research_cost = 25
+		xp_research_bonus = 2
 		start_year = 1920
 
 		folder = {
@@ -308,7 +311,7 @@ technologies = {
                 
 		xp_research_type = navy
 		xp_research_cost = 25
-		xp_research_bonus = 1.50
+		xp_research_bonus = 2
 		start_year = 1914
 
 		folder = {
@@ -356,7 +359,7 @@ technologies = {
                 
 		xp_research_type = navy
 		xp_research_cost = 25
-		xp_research_bonus = 1.50
+		xp_research_bonus = 2
 		start_year = 1936
 
 		folder = {
@@ -406,7 +409,7 @@ technologies = {
 
 		xp_research_type = navy
 		xp_research_cost = 25
-		xp_research_bonus = 1.50
+		xp_research_bonus = 2
 		research_cost = 1
 
 		start_year = 1936
@@ -455,7 +458,7 @@ technologies = {
 		research_cost = 1.5
 		xp_research_type = navy
 		xp_research_cost = 25
-		xp_research_bonus = 1
+		xp_research_bonus = 2
 
 		start_year = 1940
 
@@ -494,7 +497,7 @@ technologies = {
 		research_cost = 1.5
 		xp_research_type = navy
 		xp_research_cost = 50
-		xp_research_bonus = 1.50
+		xp_research_bonus = 2
 
 		start_year = 1944
 
@@ -891,8 +894,8 @@ technologies = {
 
 		xp_research_type = navy
 		xp_research_cost = 50
-		xp_research_bonus = 1.50
-		research_cost = 2.5
+		xp_research_bonus = 2
+		research_cost = 2
 
 		start_year = 1944
 
@@ -938,7 +941,7 @@ technologies = {
 		}
                 xp_research_type = navy
 		xp_research_cost = 25
-		xp_research_bonus = 1.50
+		xp_research_bonus = 2
 		research_cost = 0.5
 
 		start_year = 1920
@@ -1098,6 +1101,9 @@ technologies = {
 
 		research_cost = 1
 
+		xp_research_type = navy
+		xp_research_cost = 25
+		xp_research_bonus = 2
 		start_year = 1939
 
 		folder = {
@@ -1216,8 +1222,8 @@ technologies = {
 
 		xp_research_type = navy
 		xp_research_cost = 25
-		xp_research_bonus = 1.50
-		research_cost = 2
+		xp_research_bonus = 2
+		research_cost = 1
 
 		start_year = 1936
 
@@ -1296,7 +1302,7 @@ technologies = {
 
 		xp_research_type = navy
 		xp_research_cost = 25
-		xp_research_bonus = 1.50
+		xp_research_bonus = 2
 		research_cost = 1
 
 		start_year = 1939
@@ -1379,7 +1385,7 @@ technologies = {
 
 		xp_research_type = navy
 		xp_research_cost = 50
-		xp_research_bonus = 1.50
+		xp_research_bonus = 2
 		research_cost = 1
 
 		start_year = 1942
@@ -1477,7 +1483,7 @@ technologies = {
 
         xp_research_type = navy
 		xp_research_cost = 25
-		xp_research_bonus = 1.50
+		xp_research_bonus = 2
 		start_year = 1939
 
 		folder = {
@@ -1521,7 +1527,7 @@ technologies = {
 
 		research_cost = 1
 		xp_research_cost = 25
-		xp_research_bonus = 1.50
+		xp_research_bonus = 2
 		start_year = 1940
 
 		folder = {
@@ -1905,7 +1911,7 @@ technologies = {
 
 		xp_research_type = navy
 		xp_research_cost = 25
-		xp_research_bonus = 1.50
+		xp_research_bonus = 2
 		research_cost = 1
 
 		start_year = 1940

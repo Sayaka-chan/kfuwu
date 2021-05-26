@@ -2,6 +2,64 @@
 ideas = {
 	### Country ideas ###
 	country = {
+		USA_bb_navy = {
+			allowed = {
+				always = no
+			}
+			picture = AST_oversized_fleet
+			equipment_bonus = {
+				battleship = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				SH_battleship = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+		}
+		USA_big_gun_navy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea USA_big_gun_navy"}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				navy_capital_ship_attack_factor = 0.1
+			}
+		}
+		USA_cv_navy = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				naval_retreat_speed = 0.2
+			}
+		}
+		USA_screen_navy_1 = {
+			allowed = {
+				always = no
+			}
+			equipment_bonus = {
+				screen_ship = {
+					naval_speed = 0.05
+					surface_visibility = -0.05
+				}
+			}
+		}
+		USA_screen_navy_2 = {
+			allowed = {
+				always = no
+			}
+			equipment_bonus = {
+				screen_ship = {
+					naval_speed = 0.1
+					surface_visibility = -0.05
+				}
+			}
+			modifier = {
+				navy_screen_attack_factor = 0.1
+			}
+		}
 		USA_SealionI = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea USA_SealionI"}
 			allowed = {	always = no	}
@@ -554,8 +612,8 @@ ideas = {
 			allowed = { always = no }
 			picture = generic_artillery_regiments
 			modifier = {
-				army_attack_factor = 0.10
-				army_defence_factor = 0.10
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
 			}
 		}
 		USA_McNair_plan2 = { #Restart the Examining Boards
@@ -576,8 +634,6 @@ ideas = {
 			picture = generic_artillery_regiments
 			equipment_bonus = {
 				artillery = {
-					soft_attack = 0.10
-					breakthrough = 0.10
 					instant = yes
 				}
 			}
@@ -590,9 +646,6 @@ ideas = {
 				marine = {
 					breakthrough = 0.10
 				}
-			}
-			modifier = {
-				max_planning = 0.10
 			}
 		}
 		USA_Chaffee_plan1 = { #Chaffee Plan

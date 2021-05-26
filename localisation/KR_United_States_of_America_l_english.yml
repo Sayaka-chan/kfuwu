@@ -131,6 +131,7 @@ league_of_american_states:0 "League of American States"
 american_russian_alliance:0 "Russian-American Coalition"
 
 ### ToolTips ###
+USA_obsolete_navy_tooltip:0 "§ROur old ships will be scrapped§!\n"
 USA_macarthur_victory_tooltip:0 "§RMacArthur assumes control of America§!\n"
 USA_semper_fi_tooltip:0 "§GWill create an elite unit of marines§!\n"
 USA_trade_contracts_tooltip:0 "We shall seek to improve trade relations around the world\n"

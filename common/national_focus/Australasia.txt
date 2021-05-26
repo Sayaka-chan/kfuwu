@@ -2983,9 +2983,7 @@ focus_tree = {
 		icon = GFX_goal_national_mobilization
 		cost = 5
 		available = {
-			has_war = yes
 			has_idea = AST_bled_dry
-			NOT = { has_idea = volunteer_only }
 		}
 		prerequisite = { focus = AST_artillery_focus }
 		prerequisite = { focus = AST_improve_equipment }

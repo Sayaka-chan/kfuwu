@@ -4,6 +4,25 @@
 # By Zankoas and The Alpha Dog
 ################################
 JAP_war_in_the_east_category = {
+	annex_siam = {
+		icon = generic_agreement
+		allowed = {
+			tag = JAP
+		}
+		available = {
+			tag = JAP
+			SIA = { is_ai = yes }
+		}
+		fire_only_once = yes
+		complete_effect = {
+			JAP = {
+				annex_country = {
+					target = SIA
+					transfer_troops = yes
+				}
+			}
+		}
+	}
 	consolidate_java = {
 		icon = generic_agreement
 		allowed = {

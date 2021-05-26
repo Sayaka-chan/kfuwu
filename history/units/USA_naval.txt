@@ -8,12 +8,8 @@ units = {
 			location = 788 ###Change to proper province number
 			ship = { name = "USS Colorado" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Colorado Class" } } } #CSA
 			ship = { name = "USS Maryland" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Colorado Class" } } } #NEE
-			ship = { name = "USS Constellation" definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Lexington Class" } } } #CSA
-			ship = { name = "USS Lexington" definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Lexington Class" } } } #AUS
-			ship = { name = "USS Saratoga" definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Lexington Class" } } }
 			ship = { name = "USS New York" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "New York /Arkansas Class" } } } #AUS
 			ship = { name = "USS Nevada" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Pennsylvania/New Mexico Class" } } } #CSA
-			ship = { name = "USS Oklahoma" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Pennsylvania/New Mexico Class" } } } #NEE
 			ship = { name = "USS Arizona" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Pennsylvania/New Mexico Class" } } } #AUS
 			ship = { name = "USS Pennsylvania" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Pennsylvania/New Mexico Class" } } } #AUS
 			ship = { name = "USS South Dakota" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "South Dakota Class" } } }
@@ -50,8 +46,6 @@ units = {
 			ship = { name = "USS Detroit" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Omaha Class" } } }
 			ship = { name = "USS Milwaukee" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Omaha Class" } } }
 			ship = { name = "USS Raleigh" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Omaha Class" } } }
-			ship = { name = "USS Georgia" definition = SH_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = USA version_name = "Missouri Class" } } }
-			ship = { name = "USS Missouri" definition = SH_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = USA version_name = "Missouri Class" } } }
 			ship = { name = "USS Argonaut" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = USA version_name = "Argonaut Class" } } } #NEE
 			ship = { name = "USS Barracuda" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "Barracuda/Cachalot Class" } } } #NEE
 			ship = { name = "USS Bass" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "Barracuda/Cachalot Class" } } }
@@ -110,9 +104,6 @@ units = {
 			ship = { name = "USS Noa" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = USA version_name = "Litchfield Class" } } }
 			ship = { name = "USS Perry" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = USA version_name = "Litchfield Class" } } }
 			ship = { name = "USS William B. Preston" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = USA version_name = "Litchfield Class" } } }
-			ship = { name = "USS Constitution" definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Lexington Class" } } }
-			ship = { name = "USS Ranger" definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Lexington Class" } } }
-			ship = { name = "USS United States" definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Lexington Class" } } } #CAL
 			ship = { name = "USS Concord" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Omaha Class" } } } #CAL
 			ship = { name = "USS Marblehead" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Omaha Class" } } } #CAL
 			ship = { name = "USS Memphis" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Omaha Class" } } } #HAW

@@ -792,7 +792,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_invasion"
 			add_tech_bonus = {
 				name = JAP_MIL_DOC_FIR2
-				bonus = 1
+				bonus = 3
 				uses = 2
 				category = tp_tech
 			}
@@ -881,7 +881,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_MIL_MARINES"
 			add_tech_bonus = {
 				name = JAP_MIL_MARINES
-				bonus = 1
+				bonus = 3
 				uses = 2
 				category = marine_tech
 			}
@@ -952,8 +952,8 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_MIL_BIG_SHIPS"
 			add_tech_bonus = {
 				name = JAP_MIL_BIG_SHIPS
-				bonus = 1
-				uses = 1
+				bonus = 1.5
+				uses = 2
 				category = bb_tech
 			}
 			JAP_increase_naval_bias = yes
@@ -1007,8 +1007,8 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_MIL_SMALL_SHIPS"
 			add_tech_bonus = {
 				name = JAP_MIL_SMALL_SHIPS
-				bonus = 1
-				uses = 2
+				bonus = 1.5
+				uses = 3
 				category = dd_tech
 				category = cl_tech
 			}
@@ -1035,7 +1035,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_MIL_SUBMARINES"
 			add_tech_bonus = {
 				name = JAP_MIL_SUBMARINES
-				bonus = 1
+				bonus = 1.5
 				uses = 1
 				category = ss_tech
 			}
@@ -1065,7 +1065,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_MIL_NAVBOM_FOCUS"
 			add_tech_bonus = {
 				name = JAP_MIL_NAVBOM_FOCUS
-				bonus = 1
+				bonus = 1.5
 				uses = 1
 				category = naval_bomber
 			}
@@ -1092,7 +1092,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_MIL_CARRIER"
 			add_tech_bonus = {
 				name = JAP_MIL_CARRIER
-				bonus = 1
+				bonus = 1.5
 				uses = 1
 				category = cv_tech
 			}
@@ -1184,7 +1184,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_MIL_FIGHTER_FOCUS"
 			add_tech_bonus = {
 				name = JAP_MIL_FIGHTER_FOCUS
-				bonus = 1.25
+				bonus = 1.5
 				uses = 2
 				category = light_fighter
 				category = cat_heavy_fighter

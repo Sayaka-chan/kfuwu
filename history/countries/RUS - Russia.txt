@@ -25,7 +25,6 @@ set_technology = {
 	basic_heavy_tank = 1
 	early_fighter = 1
 	fighter1 = 1
-	cv_early_fighter = 1
 	early_bomber = 1
 	CAS1 = 1
 	synth_oil_experiments = 1
@@ -311,6 +310,22 @@ create_field_marshal = {
 	defense_skill = 3
 	planning_skill = 2
 	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Gregory Zhukov"
+	picture = "Portrait_RUS_Gregory_Zhukov.tga"
+	traits = {
+		panzer_leader
+		trickster
+		trait_engineer
+		ranger
+	}
+	skill = 5
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+	id = 457
 }
 
 create_corps_commander = {

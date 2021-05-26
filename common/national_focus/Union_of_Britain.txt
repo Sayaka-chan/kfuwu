@@ -203,26 +203,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 
-	focus = {# State of the Economy
-		id = ENG_tuc2_economy
-		icon = GFX_goal_FRA_develop_ENG
-		cost = 5
-		prerequisite = {
-			focus = ENG_technical_expertise
-		}
-		x = 0
-		y = 6
-		relative_position_id = ENG_the_common_land
-		ai_will_do = {
-			factor = 50
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus ENG_tuc2_economy"
-			country_event = uob.351
-		}
-	}
-
 	focus = {# Cut out Red Tape
 		id = ENG_tuc2_internal
 		icon = GFX_goal_agency
@@ -638,40 +618,25 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 	}
-
-	focus = {
-		id = ENG_synthetic
-		icon = GFX_goal_generic_oil_refinery
-		prerequisite = {
-			focus = ENG_autarky
-		}
-		x = 0
-		y = 1
-		relative_position_id = ENG_autarky
-		cost = 5
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus GER_synthetic"
-			add_tech_bonus = {
-				name = GER_synthetic
-				bonus = 1
-				uses = 2
-				category = synth_resources
-                }
-
-					modify_building_resources = {
-				building = synthetic_refinery
-				resource = rubber
-				amount = 2
-		
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
+	focus = {# State of the Economy
+	id = ENG_tuc2_economy
+	icon = GFX_goal_FRA_develop_ENG
+	cost = 5
+	prerequisite = {
+		focus = ENG_technical_expertise
 	}
+	x = 0
+	y = 6
+	relative_position_id = ENG_the_common_land
+	ai_will_do = {
+		factor = 50
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_tuc2_economy"
+		country_event = uob.351
+	}
+}
 
 	focus = {# Technical Expertise
 		id = ENG_technical_expertise
@@ -1119,6 +1084,12 @@ focus_tree = {
 				bonus = 1
 				uses = 2
 				category = cat_base_strike
+			}
+			add_tech_bonus = {
+				name = ENG_anstice_plan
+				bonus = 1.5
+				uses = 1
+				category = cv_tech
 			}
 		}
 		search_filters = { FOCUS_FILTER_NAVY_BONUS FOCUS_FILTER_RESEARCH }
@@ -1570,6 +1541,31 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
+	focus = {
+		id = ENG_autarky
+		icon = GFX_goal_Workers_Paradise
+		prerequisite = { focus = ENG_tuc }
+		x = 13
+		y = 1
+		relative_position_id = ENG_tuc
+		cost = 10
+		ai_will_do = {
+			factor = 9
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = ENG_autarky
+				bonus = 1.0
+				uses = 2
+				technology = excavation1
+				technology = excavation2
+				technology = excavation3
+				technology = excavation4
+				technology = excavation5
+			}
+			add_ideas = ENG_autarky_idea
+		}
+	}
 
 	focus = {# Aviation Fuel Administration
 		id = ENG_aviation_fuel_administration
@@ -1614,6 +1610,39 @@ focus_tree = {
 		}
 	}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+	focus = {
+		id = ENG_synthetic
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = {
+			focus = ENG_autarky
+		}
+		x = 0
+		y = 1
+		relative_position_id = ENG_autarky
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus GER_synthetic"
+			add_tech_bonus = {
+				name = GER_synthetic
+				bonus = 1
+				uses = 2
+				category = synth_resources
+                }
+
+					modify_building_resources = {
+				building = synthetic_refinery
+				resource = rubber
+				amount = 2
+		
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
 	focus = {
@@ -1679,32 +1708,6 @@ focus_tree = {
 			add_ideas = ENG_autarky_achieved_idea
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-	}
-
-	focus = {
-		id = ENG_autarky
-		icon = GFX_goal_Workers_Paradise
-		prerequisite = { focus = ENG_tuc }
-		x = 13
-		y = 1
-		relative_position_id = ENG_tuc
-		cost = 10
-		ai_will_do = {
-			factor = 9
-		}
-		completion_reward = {
-			add_tech_bonus = {
-				name = ENG_autarky
-				bonus = 1.0
-				uses = 2
-				technology = excavation1
-				technology = excavation2
-				technology = excavation3
-				technology = excavation4
-				technology = excavation5
-			}
-			add_ideas = ENG_autarky_idea
-		}
 	}
 
 	focus = {# Controlling the Air
@@ -2140,6 +2143,173 @@ focus_tree = {
 			custom_effect_tooltip = ENG_fortress_britain_tp
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+	focus = {
+		id = ENG_exile
+		icon = missing
+		cost = 0
+		available = {
+			has_capitulated = yes
+		}
+		x = 19
+		y = 4
+		completion_reward = {
+			transfer_state = 1097
+			add_state_core = 1097
+			add_equipment_to_stockpile = {
+				type = fighter_equipment_2
+				amount = 6000
+			}
+			add_equipment_to_stockpile = {
+				type = CAS_equipment_2
+				amount = 800
+			}
+			FRA = {
+				add_ideas = tot_economic_mobilisation
+			}
+			SRI = {
+				add_ideas = tot_economic_mobilisation
+			}
+			GRE = {
+				add_ideas = tot_economic_mobilisation
+			}
+		}
+	}
+	focus = {
+		id = ENG_manpower
+		icon = missing
+		relative_position_id = ENG_exile
+		prerequisite = {
+			focus = ENG_exile
+		}
+		cost = 2
+		x = 0
+		y = 1
+		completion_reward = { 
+			add_manpower = 300000
+		}
+	}
+	focus = {
+		id = ENG_guns
+		icon = missing
+		relative_position_id = ENG_manpower
+		prerequisite = {
+			focus = ENG_manpower
+		}
+		cost = 5
+		x = -2
+		y = 1
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 60000
+			}
+		}
+	}
+	focus = {
+		id = ENG_support
+		icon = missing
+		relative_position_id = ENG_manpower
+		prerequisite = {
+			focus = ENG_manpower
+		}
+		cost = 5
+		x = 2
+		y = 1
+		completion_reward = { 
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 2000
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 2000
+			}
+			add_equipment_to_stockpile = {
+				type = anti_air_equipment
+				amount = 2000
+			}
+			add_equipment_to_stockpile = {
+				type = anti_tank_equipment
+				amount = 2000
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 2000
+			}
+		}
+	}
+	focus = {
+		id = ENG_factories
+		icon = missing
+		relative_position_id = ENG_manpower
+		prerequisite = {
+			focus = ENG_manpower
+		}
+		cost = 5
+		x = 0
+		y = 1
+		completion_reward = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 15
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 20
+			}
+		}
+	}
+	focus = {
+		id = ENG_resources
+		icon = missing
+		relative_position_id = ENG_factories
+		prerequisite = {
+			focus = ENG_factories
+		}
+		cost = 5
+		x = 0
+		y = 1
+		completion_reward = { 
+			add_resource = {
+				type = steel
+				amount = 40
+				state = 1097
+			}
+			add_resource = {
+				type = aluminium
+				amount = 60
+				state = 1097
+			}
+			add_resource = {
+				type = rubber
+				amount = 12
+				state = 1097
+			}
+			1097 = { 
+				set_building_level = {
+				type = infrastructure
+				level = 10
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_mils
+		icon = missing
+		relative_position_id = ENG_resources
+		prerequisite = {
+			focus = ENG_resources
+		}
+		cost = 5
+		x = 0
+		y = 1
+		completion_reward = { 
+			add_offsite_building = {
+				type = arms_factory
+				level = 40
+			}
+		}
 	}
 }
 

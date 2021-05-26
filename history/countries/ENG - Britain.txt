@@ -45,8 +45,6 @@ set_technology = {
 	early_bomber = 1
 	tactical_bomber1 = 1
 	CAS1 = 1
-	cv_early_fighter = 1
-	cv_naval_bomber1 = 1
 	shocktroops = 1
 	jungletroops = 1
 	jaegers = 1
@@ -136,6 +134,7 @@ add_ideas = {
 
 country_event = { id = uob.0 days = 1 } #Intro event
 country_event = { id = uob.363 days = 345 }
+country_event = { id = uob.400 days = 400 }
 
 add_opinion_modifier = { target = GER modifier = embargo }
 add_opinion_modifier = { target = CAN modifier = embargo }

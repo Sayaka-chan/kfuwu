@@ -31,6 +31,7 @@ GEA = "countries/Asian.txt" #German East Asia
 JAP = "countries/Asian.txt"
 LEC = "countries/Asian.txt"
 QIE = "countries/Asian.txt" #Qing Empire
+SIA = "countries/Asian.txt"
 
 ### Indian ###
 DEH = "countries/Indian.txt"

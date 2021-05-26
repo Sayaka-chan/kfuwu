@@ -73,7 +73,7 @@ weather_arctic_water = { # on Region
 weather_mud = { # on Province
 	attrition = 0.7
 	army_speed_factor = -0.5
-	army_attack_factor = -0.4
+	army_attack_factor = -0.2
 }
 weather_extreme_cold = { # on Province
 	winter_attrition = 0.2
@@ -123,7 +123,7 @@ unplanned_offensive = { # on Province
 
 night = { # On province. Multiplied by amount of darkness.
 	naval_hit_chance = -0.25
-	carrier_traffic = -0.8
+	carrier_traffic = -0.6
 	air_bombing_targetting = -0.5
 	naval_retreat_speed = 0.1
 }
@@ -401,7 +401,7 @@ capital_screening_bonus = {
 }
 
 country_is_at_peace = {
-	decryption_power_factor = -0.5
+	decryption_power_factor = 0.5
 }
 
 country_is_at_war = {
@@ -410,10 +410,10 @@ country_is_at_war = {
 # targeted modifiers that will apply when you have fully decrypted a country's cipher
 passive_decryption_modifier = {
 	air_detection = 0.05
-	civilian_intel_decryption_bonus = 10
-	army_intel_decryption_bonus = 10
-	navy_intel_decryption_bonus = 10
-	airforce_intel_decryption_bonus = 10
+	civilian_intel_decryption_bonus = 15
+	army_intel_decryption_bonus = 15
+	navy_intel_decryption_bonus = 15
+	airforce_intel_decryption_bonus = 15
 }
 
 # targeted modifiers that will apply when you have activated your active decryption bonuses against a country

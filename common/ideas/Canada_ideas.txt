@@ -113,9 +113,7 @@ ideas = {
 			}
 			picture = CAN_iedc_econ
 			modifier = {
-				local_resources_factor = 0.02
-				industrial_capacity_factory = 0.02
-				consumer_goods_factor = -0.02
+				consumer_goods_factor = -0.025
 			}
 		}
 		CAN_iedc_econ2 = {
@@ -129,9 +127,7 @@ ideas = {
 			}
 			picture = CAN_iedc_econ
 			modifier = {
-				local_resources_factor = 0.05
-				industrial_capacity_factory = 0.05
-				consumer_goods_factor = -0.035
+				consumer_goods_factor = -0.05
 			}
 		}
 		CAN_iedc_econ3 = {
@@ -145,8 +141,8 @@ ideas = {
 			}
 			picture = CAN_iedc_econ
 			modifier = {
-				local_resources_factor = 0.10
-				industrial_capacity_factory = 0.10
+				local_resources_factor = 0.05
+				industrial_capacity_factory = 0.05
 				consumer_goods_factor = -0.05
 			}
 		}
@@ -385,8 +381,9 @@ ideas = {
 			available = { is_subject = no }
 			picture = man_five_year_plan_industry
 			modifier = {
-				industrial_capacity_factory = 0.10
-				industrial_capacity_dockyard = 0.10
+				global_building_slots_factor = 0.20
+				industrial_capacity_dockyard = 0.05
+				local_resources_factor = 0.15
 			}
 			removal_cost = -1
 		}
@@ -396,8 +393,8 @@ ideas = {
 			available = { is_subject = no }
 			picture = man_five_year_plan_industry
 			modifier = {
-				consumer_goods_factor = -0.05
-				global_building_slots_factor = 0.10
+				global_building_slots_factor = 0.20
+				industrial_capacity_dockyard = 0.05
 			}
 			removal_cost = -1
 		}
@@ -407,10 +404,9 @@ ideas = {
 			available = { is_subject = no }
 			picture = man_five_year_plan_industry
 			modifier = {
-				consumer_goods_factor = -0.05
-				global_building_slots_factor = 0.05
-				industrial_capacity_factory = 0.05
+				global_building_slots_factor = 0.20
 				industrial_capacity_dockyard = 0.05
+				local_resources_factor = 0.15
 			}
 			removal_cost = -1
 		}
@@ -917,8 +913,8 @@ ideas = {
 			picture = generic_army_war_college
 			modifier = {
 				army_morale_factor = 0.05
-				special_forces_attack_factor = 0.10
-				special_forces_defence_factor = 0.10
+				special_forces_attack_factor = 0.05
+				special_forces_defence_factor = 0.05
 				supply_consumption_factor = -0.05
 				special_forces_cap = 0.1
 			}
@@ -989,7 +985,6 @@ ideas = {
 		CAN_all_hands_on_deck_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CAN_all_hands_on_deck_idea"}
 			allowed = { always = no }
-			available = { has_war = yes }
 			picture = FRA_national_mobilization_focus
 			modifier = {
 				conscription = 0.02
@@ -999,7 +994,6 @@ ideas = {
 		CAN_rally_the_country = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CAN_rally_the_country"}
 			allowed = { always = no }
-			available = { has_war = yes }
 			picture = stiff_upper_lip
 			modifier = {
 				army_core_defence_factor = 0.15

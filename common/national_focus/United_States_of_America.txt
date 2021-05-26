@@ -85,7 +85,7 @@ focus_tree = {
 	focus = {
 		id = USA_hawking_plan
 		icon = GFX_DAH_Topke
-		cost = 6.00
+		cost = 2.00
 		prerequisite = {
 			focus = USA_gwbill_succeeds
 		}
@@ -107,7 +107,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_hawking_plan"
 			increase_ruling_party_popularity_by_5 = yes
-			add_political_power = -50
 			country_event = ustates.512
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -116,7 +115,7 @@ focus_tree = {
 	focus = {
 		id = USA_new_industrial_act
 		icon = GFX_goal_factory_complex
-		cost = 6.00
+		cost = 2.00
 		prerequisite = {
 			focus = USA_hawking_plan
 		}
@@ -138,7 +137,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_new_industrial_act"
 			increase_ruling_party_popularity_by_5 = yes
-			add_political_power = -50
 			country_event = ustates.513
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -147,7 +145,7 @@ focus_tree = {
 	focus = {
 		id = USA_new_shipyards
 		icon = GFX_goal_generic_shipyard
-		cost = 6.00
+		cost = 2.00
 		prerequisite = {
 			focus = USA_new_industrial_act
 		}
@@ -169,7 +167,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_new_shipyards"
 			increase_ruling_party_popularity_by_5 = yes
-			add_political_power = -50
 			country_event = ustates.514
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1687,7 +1684,18 @@ focus_tree = {
 		relative_position_id = USA_restart_examining_boards
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_efficient_production_program"
-			add_ideas = USA_McNair_plan3
+			random_owned_state = {
+				limit = {
+					is_core_of = USA
+					is_controlled_by = USA
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_ARMY_BONUS }
 	}
@@ -2045,6 +2053,7 @@ focus_tree = {
 	x = 60
 	y = 0
 
+
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -2054,13 +2063,7 @@ focus_tree = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus USA_navy"
-		navy_experience = 100
-		add_tech_bonus = {
-			name = USA_navy
-			bonus = 1
-			uses = 2
-			category = naval_doctrine
-		}
+		custom_effect_tooltip = USA_obsolete_navy_tooltip
 	}
 	search_filters = { FOCUS_FILTER_NAVY_BONUS FOCUS_FILTER_RESEARCH }
 	}
@@ -2076,7 +2079,7 @@ focus_tree = {
 		focus = USA_carriers
 	}
 	relative_position_id = USA_navy
-	x = -3
+	x = -6
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -2087,11 +2090,34 @@ focus_tree = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus USA_grand_navy"
-		add_tech_bonus = {
-			name = USA_grand_navy
-			bonus = 1
-			uses = 3
-			category = cat_fleet_in_being
+		create_equipment_variant = {
+			name = "Hawaii Class"
+			type = ship_hull_heavy_2
+			parent_version = 0
+			modules = {
+					fixed_ship_battery_slot = ship_super_heavy_battery_1
+					fixed_ship_anti_air_slot = ship_anti_air_2
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+					fixed_ship_radar_slot = ship_radar_1
+					fixed_ship_engine_slot = heavy_ship_engine_2
+					fixed_ship_secondaries_slot = dp_ship_secondaries
+					fixed_ship_armor_slot = ship_armor_bc_3
+					front_1_custom_slot = ship_heavy_battery_2
+					mid_1_custom_slot = empty
+					mid_2_custom_slot = empty
+					rear_1_custom_slot = empty
+				}
+		}
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_heavy_2
+				creator = "USA"
+				version_name = "Hawaii Class"
+			}
+			name = "USS Hawaii"
+			requested_factories = 1
+			progress = 0.5
+			amount = 1
 		}
 	}
 	search_filters = { FOCUS_FILTER_RESEARCH }
@@ -2105,7 +2131,7 @@ focus = {# Battleships
 		focus = USA_grand_navy
 	}
 	relative_position_id = USA_grand_navy
-	x = -1
+	x = -2
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -2122,8 +2148,170 @@ focus = {# Battleships
 			uses = 1
 			category = bb_tech
 		}
+		create_equipment_variant = {
+			name = "Montana Class"
+			type = ship_hull_super_heavy_1
+			parent_version = 0
+			modules = {
+					fixed_ship_battery_slot = ship_super_heavy_battery_1
+					fixed_ship_anti_air_slot = ship_anti_air_2
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+					fixed_ship_radar_slot = ship_radar_1
+					fixed_ship_engine_slot = heavy_ship_engine_2
+					fixed_ship_secondaries_slot = dp_ship_secondaries
+					fixed_ship_armor_slot = ship_armor_shbb
+					front_1_custom_slot = ship_super_heavy_battery_1
+					mid_1_custom_slot = empty
+					mid_2_custom_slot = empty
+					mid_3_custom_slot = ship_anti_air_2
+					rear_1_custom_slot = empty
+					rear_2_custom_slot = empty
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_super_heavy_1
+					creator = "USA"
+					version_name = "Montana Class"
+				}
+				name = "USS Montana"
+				requested_factories = 1
+				progress = 0.25
+				amount = 1
+			}
+		}
 	}
 	search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_BONUS }
+}
+focus = {
+	id = USA_bb_ic
+	icon = missing
+	prerequisite = {
+		focus = USA_grand_navy
+	}
+	relative_position_id = USA_grand_navy
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = { 
+	add_ideas = USA_bb_navy
+	}
+}
+focus = {
+	id = USA_bb_docks
+	icon = missing
+	prerequisite = {
+		focus = USA_bb_ic
+	}
+	relative_position_id = USA_bb_ic
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = {
+		random_owned_controlled_state = {
+			prioritize = { 361 }
+			limit = {
+				is_mainland_america = yes
+				is_coastal = yes
+				free_building_slots = { building = dockyard size > 1 include_locked = yes }
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			prioritize = { 362 }
+			limit = {
+				is_mainland_america = yes
+				is_coastal = yes
+				free_building_slots = { building = dockyard size > 1 include_locked = yes }
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+focus = {
+	id = USA_bb_doctrine
+	icon = missing
+	prerequisite = {
+		focus = USA_battleships
+	}
+	relative_position_id = USA_battleships
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = { 
+		add_tech_bonus = {
+			name = USA_grand_navy
+			bonus = 1
+			uses = 3
+			category = cat_fleet_in_being
+			}
+		}
+}
+focus = {
+	id = USA_bb_navy
+	icon = missing
+	prerequisite = {
+		focus = USA_bb_doctrine
+	}
+	prerequisite = {
+		focus = USA_bb_docks
+	}
+	relative_position_id = USA_bb_doctrine
+	cost = 5
+	x = 1
+	y = 1
+	completion_reward = { 
+		create_equipment_variant = {
+			name = "Los Angeles Class"
+			type = ship_hull_heavy_2
+			parent_version = 0
+			modules = {
+					fixed_ship_battery_slot = ship_heavy_battery_3
+					fixed_ship_anti_air_slot = ship_anti_air_2
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+					fixed_ship_radar_slot = ship_radar_1
+					fixed_ship_engine_slot = heavy_ship_engine_3
+					fixed_ship_secondaries_slot = dp_ship_secondaries
+					fixed_ship_armor_slot = ship_armor_bb_2
+					front_1_custom_slot = ship_heavy_battery_3
+					mid_1_custom_slot = empty
+					mid_2_custom_slot = empty
+					rear_1_custom_slot = empty
+				}
+		}
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_heavy_2
+				creator = "USA"
+				version_name = "Los Angeles Class"
+			}
+			name = "USS Los Angeles"
+			requested_factories = 1
+			progress = 0.5
+			amount = 1
+		}
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_heavy_2
+				creator = "USA"
+				version_name = "Los Angeles Class"
+			}
+			name = "USS Manila"
+			requested_factories = 1
+			progress = 0.5
+			amount = 1
+		}
+		add_ideas = USA_big_gun_navy
+	}
 }
 
 focus = {# Defend our Trade
@@ -2158,6 +2346,12 @@ focus = {# Defend our Trade
 			bonus = 1
 			uses = 3
 			category = cat_trade_interdiction
+		}
+		add_tech_bonus = {
+			name = USA_defend_our_trade
+			bonus = 1
+			uses = 1
+			category = cl_tech
 		}
 	}
 	search_filters = { FOCUS_FILTER_RESEARCH }
@@ -2210,7 +2404,7 @@ focus = {# Carriers
 		focus = USA_defend_our_trade
 	}
 	relative_position_id = USA_navy
-	x = 3
+	x = 6
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -2231,6 +2425,66 @@ focus = {# Carriers
 			uses = 3
 			category = cat_base_strike
 		}
+		create_equipment_variant = {
+			name = "Essex Class"
+			type = ship_hull_carrier_2
+			parent_version = 0
+			modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_anti_air_slot = ship_anti_air_3
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = carrier_ship_engine_3
+				fixed_ship_secondaries_slot = dp_ship_secondaries
+				front_1_custom_slot = ship_deck_space
+				mid_1_custom_slot = ship_deck_space
+			}
+		}
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_carrier_2
+				creator = "USA"
+				version_name = "Essex Class"
+			}
+			name = "USS Essex"
+			requested_factories = 1
+			progress = 0.4
+			amount = 1
+		}
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_carrier_2
+				creator = "USA"
+				version_name = "Essex Class"
+			}
+			name = "USS Enterprise"
+			requested_factories = 1
+			progress = 0.4
+			amount = 1
+		}
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_carrier_2
+				creator = "USA"
+				version_name = "Essex Class"
+			}
+			name = "USS Yorktown"
+			requested_factories = 1
+			progress = 0.4
+			amount = 1
+		}
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_carrier_2
+				creator = "USA"
+				version_name = "Essex Class"
+			}
+			name = "USS Bunker Hill"
+			requested_factories = 1
+			progress = 0.4
+			amount = 1
+		}
+		add_ideas = USA_cv_navy
 	}
 	search_filters = { FOCUS_FILTER_RESEARCH }
 }
@@ -2249,7 +2503,7 @@ focus = {# Naval Aviation
 		}
 	}
 	relative_position_id = USA_carriers
-	x = 1
+	x = 0
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -2262,13 +2516,13 @@ focus = {# Naval Aviation
 		log = "[GetDateText]: [Root.GetName]: Focus USA_naval_aviation"
 		add_tech_bonus = {
 			name = USA_naval_aviation
-			bonus = 1
+			bonus = 1.5
 			uses = 1
 			category = naval_air
 		}
 		add_tech_bonus = {
 			name = USA_carriers
-			bonus = 1
+			bonus = 1.5
 			uses = 1
 			category = cv_tech
 		}
@@ -2279,11 +2533,9 @@ focus = {# Naval Aviation
 focus = {# Expand Dockyards
 	id = USA_expand_dockyards
 	icon = GFX_USA_expand_dockyards
-	cost = 10.00
+	cost = 5.00
 	prerequisite = {
-		focus = USA_grand_navy
 		focus = USA_defend_our_trade
-		focus = USA_carriers
 	}
 	relative_position_id = USA_navy
 	x = -2
@@ -2304,10 +2556,10 @@ focus = {# Expand Dockyards
 				is_coastal = yes
 				free_building_slots = { building = dockyard size > 1 include_locked = yes }
 			}
-			add_extra_state_shared_building_slots = 3
+			add_extra_state_shared_building_slots = 5
 			add_building_construction = {
 				type = dockyard
-				level = 3
+				level = 5
 				instant_build = yes
 			}
 		}
@@ -2318,10 +2570,10 @@ focus = {# Expand Dockyards
 				is_coastal = yes
 				free_building_slots = { building = dockyard size > 1 include_locked = yes }
 			}
-			add_extra_state_shared_building_slots = 3
+			add_extra_state_shared_building_slots = 5
 			add_building_construction = {
 				type = dockyard
-				level = 3
+				level = 5
 				instant_build = yes
 			}
 		}
@@ -2397,7 +2649,7 @@ focus = {# Battle Cruisers
 			limit = { has_dlc = "Man the Guns" }
 			add_tech_bonus = {
 				name = USA_battle_cruisers
-				bonus = 0.75
+				bonus = 1
 				uses = 1
 				category = bb_tech
 			}
@@ -2500,7 +2752,7 @@ focus = {# maritime industry
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus USA_new_ship_buildings"
-		add_stability = 0.05
+		add_ideas = USA_screen_navy_1
 	}
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 }
@@ -2510,9 +2762,7 @@ focus = {# New Admirals
 	icon = GFX_goal_navy_hat_ships
 	cost = 5.00
 	prerequisite = {
-		focus = USA_grand_navy
 		focus = USA_defend_our_trade
-		focus = USA_carriers
 	}
 	available = {
 		any_owned_state = {
@@ -2562,8 +2812,10 @@ focus = {# Expand WAVEs
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus USA_expand_waves"
-		add_manpower = 60000
-		add_stability = 0.05
+		swap_ideas = {
+			remove_idea = USA_screen_navy_1
+			add_idea = USA_screen_navy_2
+		}
 	}
 	search_filters = { FOCUS_FILTER_NAVY_BONUS FOCUS_FILTER_MANPOWER }
 }
@@ -2571,7 +2823,7 @@ focus = {# Expand WAVEs
 focus = {# America Rules the waves
 	id = USA_america_rules_the_waves
 	icon = GFX_goal_generic_navy_battleship
-	cost = 10.00
+	cost = 5.00
 	prerequisite = {
 		focus = USA_liberty_ships
 	}
@@ -2582,7 +2834,6 @@ focus = {# America Rules the waves
 		focus = USA_expand_waves
 	}
 	available = {
-		date > 1938.6.1
 		any_owned_state = {
 			is_coastal = yes
 			is_controlled_by = ROOT

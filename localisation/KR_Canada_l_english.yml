@@ -1936,3 +1936,5 @@ CAN_empire_ast3:0 "Mobilize the Australian economy"
 CAN_empire_raj1:0 "Build factories in the Dominion of India"
 CAN_empire_raj2:0 "Send construction engineers to the Dominion of India"
 CAN_empire_raj3:0 "Mobilize the Indian economy"
+
+CAN_UK:0 "Liberation day"

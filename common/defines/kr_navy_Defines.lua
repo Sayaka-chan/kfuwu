@@ -36,7 +36,7 @@ NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 0.167 -- Each carrier above the op
 NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profile is lower the gun will have lower accuracy
 		100.0,	-- big guns
 		150.0,	-- torpedos
-		55.0,	-- small guns
+		50.0,	-- small guns
 	}
 
 
@@ -63,8 +63,8 @@ NDefines.NNavy.ESCAPE_SPEED_HIDDEN_SUB = 0.3									-- hidden subs get faster e
 NDefines.NNavy.ESCAPE_SPEED_SUB_BASE = -0.20
 NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_DETECTION_FACTOR = 0.1
 
-NDefines.NNavy.COMBAT_DAMAGE_TO_STR_FACTOR = 0.3	-- casting damage value to ship strength multiplier. Use it ot balance the game difficulty.
-NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 0.7	-- casting damage value to ship organisation multiplier. Use it to balance the game difficulty.
+NDefines.NNavy.COMBAT_DAMAGE_TO_STR_FACTOR = 0.2	-- casting damage value to ship strength multiplier. Use it ot balance the game difficulty.
+NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 0.5	-- casting damage value to ship organisation multiplier. Use it to balance the game difficulty.
 NDefines.NNavy.MAX_ORG_ON_MANUAL_MOVE = 1.0	-- org will clamped to this ratio on manual move
 
 NDefines.NNavy.UNIT_TRANSFER_DETECTION_CHANCE_BASE = 1.0  -- unit transfer and naval invasion base chance detection percentage (if this fails, no detection is done on that tick)
@@ -104,13 +104,13 @@ NDefines.NNavy.SUPREMACY_PER_SHIP_PER_MANPOWER = 0.07						-- supremacy of a shi
 NDefines.NNavy.SUPREMACY_PER_SHIP_BASE = 15.0
 NDefines.NNavy.SUPPLY_NEED_FACTOR = 0
 
-NDefines.NNavy.AGGRESSION_TORPEDO_EFFICIENCY_ON_LIGHT_SHIPS = 0   -- ratio for scoring for different gun types against light ships
+NDefines.NNavy.AGGRESSION_TORPEDO_EFFICIENCY_ON_LIGHT_SHIPS = 0.0   -- ratio for scoring for different gun types against light ships
 NDefines.NNavy.AGGRESSION_HEAVY_GUN_EFFICIENCY_ON_LIGHT_SHIPS = 0.2 -- ratio for scoring for different gun types against light ships
 
-NDefines.NNavy.AGGRESSION_HEAVY_GUN_EFFICIENCY_ON_HEAVY_SHIPS = 1.2 -- ratio for scoring for different gun types against heavy ships
+NDefines.NNavy.AGGRESSION_HEAVY_GUN_EFFICIENCY_ON_HEAVY_SHIPS = 1.5 -- ratio for scoring for different gun types against heavy ships
 
 NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_TARGET_SCORE = 10                             -- scoring for target picking for planes inside naval combat, one define per ship typ
-NDefines.NNavy.NAVAL_COMBAT_AIR_CAPITAL_TARGET_SCORE = 150							
+NDefines.NNavy.NAVAL_COMBAT_AIR_CAPITAL_TARGET_SCORE = 225							
 NDefines.NNavy.NAVAL_COMBAT_AIR_CARRIER_TARGET_SCORE = 150						
 NDefines.NNavy.NAVAL_COMBAT_AIR_CONVOY_TARGET_SCORE = 1.0							
 NDefines.NNavy.NAVAL_COMBAT_AIR_STRENGTH_TARGET_SCORE = 5                         -- how much score factor from low health (scales between 0->this number)
@@ -122,6 +122,6 @@ NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 0.8
 NDefines.NAir.NAVAL_KAMIKAZE_DAMAGE_MULT = 5.0  -- vanilla is like 20
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 1
 NDefines.NAir.NAVAL_STRIKE_DETECTION_BALANCE_FACTOR = 0.4		-- Value used to scale the surface_visibility stats to balance the gameplay, so 100% detection chance still won't spam the strikes.
-NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 8        -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)	
-NDefines.NAir.DISRUPTION_FACTOR_CARRIER = 3.0
+NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 9        -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)	
+NDefines.NAir.DISRUPTION_FACTOR_CARRIER = 4.0
 

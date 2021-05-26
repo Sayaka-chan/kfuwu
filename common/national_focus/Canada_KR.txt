@@ -205,6 +205,23 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_draft_bill_c7"
 			country_event = canada.58 #Voting begins
+			add_ideas = CAN_billc7_mix
+			276 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			832 = {
+				add_extra_state_shared_building_slots = 2
+			}
 		}
 	}
 
@@ -2487,7 +2504,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = CAN_deal_with_admiralty
-				bonus = 1
+				bonus = 1.5
 				uses = 1
 				category = cv_tech
 			}
@@ -3323,6 +3340,29 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_Sealion"
 			unlock_decision_category_tooltip = CAN_Sealion_decisions
+		}
+	}
+	focus = {
+		id = CAN_UK
+		icon = GFX_goal_CAN_home_isles
+		cost = 1
+		prerequisite = {
+			focus = CAN_Sealion
+		}
+		relative_position_id = CAN_Sealion
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			ENG = {
+				has_capitulated = yes
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAN_UK"
+			set_cosmetic_tag = GBR_britain_social_conservative
 		}
 	}
 

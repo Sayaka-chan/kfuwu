@@ -1,0 +1,31 @@
+add_namespace = engcap
+
+country_event = {
+	id = engcap.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event engcap.1" }
+	title = engcap.1
+	desc = engcap.1
+	is_triggered_only = yes
+	trigger = {
+		tag = ENG
+		ENG = {
+		   has_war_with = CAN
+		   surrender_progress > 0.90
+		}
+	}
+	immediate = {
+		ENG = {
+			set_equipment_fraction = 0
+		}
+	}
+	option = {
+		name = engcap.a
+		ENG = {
+			set_global_flag = ENG_capped
+		}
+		CAN = {
+			set_global_flag = ENG_free
+		}
+	}
+
+}

@@ -404,7 +404,6 @@ propaganda_efforts = {
 			NOT = { has_country_flag = war_propaganda_campaign_running }
 			threat > 0.5
 			has_war_support < 0.5
-			has_offensive_war = no
 		}
 
 		visible = {
@@ -415,7 +414,7 @@ propaganda_efforts = {
 
 		days_remove = 90
 
-		cost = 50
+		cost = 25
 
 		modifier = {
 			war_support_weekly = 0.01

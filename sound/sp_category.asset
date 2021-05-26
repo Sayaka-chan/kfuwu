@@ -1,0 +1,8 @@
+######################################
+category = {
+ name = "Speeches"
+ soundeffects = {
+	eisenhower
+ }
+ 
+}

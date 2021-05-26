@@ -429,10 +429,6 @@ country_event = {
 
 		hidden_effect = {
 			remove_all_ministers = yes
-			add_ideas = AUS_Otto_Ender_hog_sco
-			add_ideas = AUS_Rudolf_Ramek_for_sco
-			add_ideas = AUS_Carl_Vaugoin_eco_sco
-			add_ideas = AUS_Richard_Schmitz_sec_sco
 
 			add_popularity = {
 				ideology = social_conservative
@@ -470,10 +466,6 @@ country_event = {
 
 		hidden_effect = {
 			remove_all_ministers = yes
-			add_ideas = AUS_Karl_Renner_hog_sde
-			add_ideas = AUS_Otto_Bauer_for_sde
-			add_ideas = AUS_Wilhelm_Ellenbogen_eco_sde
-			add_ideas = AUS_Ferdinand_Hanusch_sec_sde
 
 			add_popularity = {
 				ideology = social_democrat

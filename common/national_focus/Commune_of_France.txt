@@ -1021,7 +1021,111 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 	}
+	
+	focus = {
+		id = FRA_military_buildup_two
+		icon = GFX_Socialist_Law
+		x = 13
+		y = 0
+		relative_position_id = FRA_socialist_education
+		cost = 3
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 10
+				OR = {
+					date > 1937.6.1
+					has_war = yes
+				}
+			}
+			modifier = {
+				factor = 10
+				OR = {
+					date > 1938.6.1
+					has_war = yes
+				}
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_military_buildup_two"
+			add_stability = 0.05
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
+	}
 
+	focus = {
+		id = FRA_military_buildup
+		icon = GFX_FRA_military_buildup
+
+		prerequisite = {
+			focus = FRA_military_buildup_two
+		}
+
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = FRA_military_buildup_two
+
+		offset = {
+			x = -1
+			y = 0
+			trigger = {
+				NOT = { has_dlc = "La Resistance" }
+			}
+		}
+
+		ai_will_do = {
+			factor = 70
+			modifier = {
+				factor = 100
+				date > 1937.1.1
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_military_buildup"
+			add_tech_bonus = {
+				name = FRA_military_buildup
+				bonus = 1
+				uses = 2
+				category = industry
+			}
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+	}
+	
 	focus = {
 		id = FRA_road_to_war
 		icon = GFX_FRA_road_to_war
@@ -1115,79 +1219,6 @@ focus_tree = {
 				}
 			}
 		}
-	}
-
-	focus = {
-		id = FRA_military_buildup
-		icon = GFX_FRA_military_buildup
-
-		prerequisite = {
-			focus = FRA_military_buildup_two
-		}
-
-		cost = 10
-		x = 0
-		y = 1
-		relative_position_id = FRA_military_buildup_two
-
-		offset = {
-			x = -1
-			y = 0
-			trigger = {
-				NOT = { has_dlc = "La Resistance" }
-			}
-		}
-
-		ai_will_do = {
-			factor = 70
-			modifier = {
-				factor = 100
-				date > 1937.1.1
-			}
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FRA_military_buildup"
-			add_tech_bonus = {
-				name = FRA_military_buildup
-				bonus = 1
-				uses = 2
-				category = industry
-			}
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 	}
 
 	focus = {
@@ -1296,107 +1327,6 @@ focus_tree = {
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-	}
-
-	focus = {
-		id = FRA_military_buildup_two
-		icon = GFX_Socialist_Law
-		x = 13
-		y = 0
-		relative_position_id = FRA_socialist_education
-		cost = 3
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 10
-				OR = {
-					date > 1937.6.1
-					has_war = yes
-				}
-			}
-			modifier = {
-				factor = 10
-				OR = {
-					date > 1938.6.1
-					has_war = yes
-				}
-			}
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FRA_military_buildup_two"
-			add_stability = 0.05
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
-	}
-
-	focus = {
-		id = FRA_synthetic_rubber
-		icon = GFX_goal_generic_oil_refinery
-		prerequisite = { focus = FRA_Host_the_Internationale}
-		x = -2
-		y = 1
-		relative_position_id = FRA_Host_the_Internationale
-		cost = 5
-		ai_will_do = {
-			factor = 4
-		}
-		completion_reward = {
-			19 = {
-				add_building_construction = {
-					type = synthetic_refinery
-					level = 3
-					instant_build = yes
-				}
-			}
-			984 = {
-				add_building_construction = {
-					type = synthetic_refinery
-					level = 3
-					instant_build = yes
-				}
-			}
-			25 = {
-				add_building_construction = {
-					type = synthetic_refinery
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = FRA_synthetic
-		icon = GFX_goal_generic_oil_refinery
-		prerequisite = {
-			focus = FRA_synthetic_rubber
-		}
-		x = 0
-		y = 1
-		relative_position_id = FRA_synthetic_rubber
-		cost = 5
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus GER_synthetic"
-			add_tech_bonus = {
-				name = GER_synthetic
-				bonus = 1
-				uses = 2
-				category = synth_resources
-                }
-
-					modify_building_resources = {
-				building = synthetic_refinery
-				resource = rubber
-				amount = 2
-		
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
 	focus = {
@@ -2010,6 +1940,74 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_Host_the_Internationale"
 			custom_effect_tooltip = unlock_focuses
 		}
+	}
+	focus = {
+		id = FRA_synthetic_rubber
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = FRA_Host_the_Internationale}
+		x = -2
+		y = 1
+		relative_position_id = FRA_Host_the_Internationale
+		cost = 5
+		ai_will_do = {
+			factor = 4
+		}
+		completion_reward = {
+			19 = {
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
+			984 = {
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
+			25 = {
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = FRA_synthetic
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = {
+			focus = FRA_synthetic_rubber
+		}
+		x = 0
+		y = 1
+		relative_position_id = FRA_synthetic_rubber
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus GER_synthetic"
+			add_tech_bonus = {
+				name = GER_synthetic
+				bonus = 1
+				uses = 2
+				category = synth_resources
+                }
+
+					modify_building_resources = {
+				building = synthetic_refinery
+				resource = rubber
+				amount = 2
+		
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
 	focus = {

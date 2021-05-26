@@ -5219,3 +5219,16 @@ country_event = {# Pentagon is finished
 		name = ustates.629.a
 	}
 }
+country_event = {
+	id = ustates.1000
+	immediate = { log = "[GetDateText]: [Root.GetName]: event ustates.1000" }
+	title = ustates.1000.t
+	desc = ustates.1000.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ustates.1000
+		effect = {
+		}
+	}
+}

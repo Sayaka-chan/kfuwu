@@ -11,7 +11,7 @@ units = {
 			ship = { name = "NdP poggers" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SRI version_name = "Italia Class" } } }
 			ship = { name = "NdP not poggers" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SRI version_name = "Italia Class" } } }
 			ship = { name = "NdP Risorgimento" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SRI version_name = "Italia Class" } } }
-			ship = { name = "NdP Spartaco" definition = battleship equipment = { ship_hull_light_2 = { amount = 1 owner = SRI version_name = "Italia Class" } } }
+			ship = { name = "NdP Spartaco" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SRI version_name = "Italia Class" } } }
 			ship = { name = "NdP Confienza" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SRI version_name = "Etruria Class" } } }
 			ship = { name = "NdP Palestro" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SRI version_name = "Etruria Class" } } }
 			ship = { name = "NdP San Martino" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SRI version_name = "Etruria Class" } } }

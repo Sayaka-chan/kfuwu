@@ -5,18 +5,14 @@ state = {
 
 	state_category = two
 
-	resources = {
-		rubber = 70
-	}
-
 
 	history = {
-		owner = JAP
-		add_core_of = VEN
+		owner = SIA
+		add_core_of = SIA
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
-			arms_factory = 1
+			arms_factory = 4
 			7236 = { # Songkhla Landing Zone
 				naval_base = 1
 			}

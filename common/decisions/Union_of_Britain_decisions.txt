@@ -17,9 +17,9 @@ ENG_weltkrieg_decisions = {
 			log = "[GetDateText]: [Root.GetName]: Decision ENG_never_surrender"
 			add_stability = 0.1
 			add_war_support = 0.1
-			add_timed_idea = {
-				idea = ENG_never_surrender_idea
-				days = 180
+			add_ideas = ENG_never_surrender_idea
+			hidden_effect = {
+				news_event = worldnews.300
 			}
 		}
 	}

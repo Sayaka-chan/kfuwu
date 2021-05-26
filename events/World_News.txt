@@ -4107,3 +4107,22 @@ news_event = { # Korean Liberated
 	}
 
 }
+news_event = {
+	id = worldnews.300
+	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.300" }
+	title = worldnews.300.t
+	desc = worldnews.300.d
+	picture = GFX_news_event_ENG_Mosley_1
+	major = yes
+	is_triggered_only = yes
+	trigger = {
+		wants_world_news = yes
+	}
+
+	show_major = {
+		regional_asia_news = yes
+	}
+	option = {
+		name = worldnews.300.a
+	}
+}

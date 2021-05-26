@@ -1,0 +1,9 @@
+########################DEBUG #########################
+sound =
+{
+	name = "eisenhower"
+	file = "speeches/eisenhower.wav"
+	always_load = yes
+	volume = 1
+ 
+}

@@ -1,0 +1,13 @@
+state = {
+	id = 1097
+	name = "STATE_1097"
+	state_category = five
+	manpower = 2983
+	history = {
+		owner = FRA
+		add_core_of = FRA
+	}
+	provinces = {
+		4777
+	}
+}

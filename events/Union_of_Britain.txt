@@ -486,10 +486,6 @@ country_event = { # Maximist Victory
 			ruling_party = totalist
 		}
 		hidden_effect = {
-			add_ideas = ENG_Eric_Blair_hog_tot
-			add_ideas = ENG_Cynthia_Mosley_for_tot
-			add_ideas = ENG_Leslie_Solley_eco_tot
-			add_ideas = ENG_Mary_Richardson_sec_tot
 			set_country_flag = mosley_chairman
 			random_country = {
 				limit = {
@@ -535,10 +531,6 @@ country_event = { # Federalist Victory
 			ideology = syndicalist_subtype
 		}
 		hidden_effect = {
-			add_ideas = ENG_Arthur_Horner_hog_syn
-			add_ideas = ENG_Elizabeth_Andrews_for_syn
-			add_ideas = ENG_Clement_Attlee_eco_syn
-			add_ideas = ENG_John_Platts_Mills_sec_syn
 			set_party_name = {
 				ideology = syndicalist
 				long_name = ENG_CON_syndicalist_party_long
@@ -567,10 +559,6 @@ country_event = { # Federalist Victory
 			ruling_party = syndicalist
 		}
 		hidden_effect = {
-			add_ideas = ENG_Annie_Kenney_hog_syn
-			add_ideas = ENG_James_Maxton_for_syn
-			add_ideas = ENG_Nye_Bevan_eco_syn
-			add_ideas = ENG_Lewis_Valentine_sec_syn
 			set_party_name = {
 				ideology = syndicalist
 				long_name = ENG_FED_syndicalist_party_long
@@ -614,10 +602,6 @@ country_event = { # Autonomist Victory
 			ruling_party = radical_socialist
 		}
 		hidden_effect = {
-			add_ideas = ENG_Jim_Callaghan_hog_rso
-			add_ideas = ENG_Ethel_MacDonald_for_rso
-			add_ideas = ENG_David_Kirkwood_eco_rso
-			add_ideas = ENG_Cecil_Dudgeon_sec_rso
 			set_country_flag = glais_chairman
 			random_country = {
 				limit = {
@@ -669,10 +653,6 @@ country_event = { # No majority achieved
 			name = ENG_FED_syndicalist_party
 		}
 		hidden_effect = {
-			add_ideas = ENG_Oswald_Mosley_hog_tot
-			add_ideas = ENG_Ernest_Bevin_for_syn
-			add_ideas = ENG_Sylvia_Pankhurst_eco_syn
-			add_ideas = ENG_Eric_Blair_sec_tot
 			set_country_flag = mann_chairman
 			random_country = {
 				limit = {
@@ -721,10 +701,6 @@ country_event = { # No majority achieved
 			ideology = syndicalist_subtype
 		}
 		hidden_effect = {
-			add_ideas = ENG_Niclas_y_Glais_hog_rso
-			add_ideas = ENG_Mary_Agnes_Hamilton_for_rso
-			add_ideas = ENG_Sylvia_Pankhurst_eco_syn
-			add_ideas = ENG_Margaret_Cole_sec_syn
 			set_country_flag = mann_chairman
 			random_country = {
 				limit = {
@@ -807,18 +783,58 @@ country_event = { # Canada
 			}
 		}
 	}
+}
+country_event = {
+	id = uob.400
+	immediate = { log = "[GetDateText]: [Root.GetName]: event uob.400" }
+	title = uob.400.t
+	desc = uob.400.d
+
+	is_triggered_only = yes
+
+	trigger = {
+		ENG = { exists = yes }
+	}
 	option = {
-		name = uob.25.b #Spend our resources on further buildup
+		name = uob.400.a #Shoot back
 		ai_chance = {
-			factor = 65
+			factor = 50
 		}
 		hidden_effect = {
-			ENG = {
-				news_event = { id = uob.27 days = 3 }
+			CAN = {
+
 			}
-			FRA = {
-				news_event = { id = uob.27 days = 3 }
+		}
+	}
+	option = {
+		name = uob.400.b #Diplo
+		ai_chance = {
+			factor = 50
+		}
+		hidden_effect = {
+			CAN = {
+
 			}
+		}
+	}
+}
+country_event = {
+	id = uob.401
+	immediate = { log = "[GetDateText]: [Root.GetName]: event uob.401" }
+	title = uob.401.t
+	desc = uob.401.d
+
+	is_triggered_only = yes
+	trigger = {
+		ENG = { exists = yes }
+	}
+	option = {
+		name = uob.401.a
+		ai_chance = {
+			factor = 50
+		}
+		hidden_effect = {
+			news_event = { id = uob.26 days = 1 }
 		}
 	}
 }
@@ -845,29 +861,7 @@ news_event = { # Royal Navy on the Atlantic
 		}
 	}
 }
-news_event = { # Canadians cower
-	id = uob.27
-	immediate = { log = "[GetDateText]: [Root.GetName]: event uob.27" }
-	title = uob.27.t
-	desc = uob.27.d
-	picture = GFX_news_event_020
 
-	is_triggered_only = yes
-
-	option = {
-		name = uob.27.a
-		trigger = {
-			tag = ENG
-		}
-	}
-
-	option = {
-		name = uob.27.b
-		trigger = {
-			tag = FRA
-		}
-	}
-}
 country_event = { # Germany
 	id = uob.28
 	immediate = { log = "[GetDateText]: [Root.GetName]: event uob.28" }
@@ -990,7 +984,6 @@ country_event = {
 	option = {
 		name = uob.103.a
 		add_popularity = { ideology = totalist popularity = 0.10 }
-		add_ideas = ENG_Oswald_Mosley_hog_tot
 		ai_chance = {
 			factor = 100
 		}
@@ -1017,9 +1010,7 @@ country_event = {
 	picture = GFX_report_event_election_vote
 
 	trigger = {
-		has_idea = ENG_Oswald_Mosley_hog_tot
 		OR = {
-			has_idea = ENG_Oswald_Mosley_eco_tot
 			has_country_flag = mosley_chairman
 		}
 	}
@@ -1035,9 +1026,6 @@ country_event = {
 		ai_chance = {
 			factor = 30
 		}
-		hidden_effect = {
-			add_ideas = ENG_Abe_Moffat_eco_syn
-		}
 	}
 
 	option = {
@@ -1045,18 +1033,12 @@ country_event = {
 		ai_chance = {
 			factor = 30
 		}
-		hidden_effect = {
-			add_ideas = ENG_David_Kirkwood_eco_rso
-		}
 	}
 
 	option = {
 		name = uob.106.ac
 		ai_chance = {
 			factor = 30
-		}
-		hidden_effect = {
-			add_ideas = ENG_Nye_Bevan_eco_syn
 		}
 	}
 
@@ -1503,14 +1485,14 @@ country_event = {
 		name = uob.211.b
 		hidden_effect = {
 			random_list = {
-				50 = {
+				100 = {
 					country_event = uob.210
 					news_event = {
 						id = uob.221
 						days = 7
 					}
 					} # Yay
-				50 = {
+				0 = {
 					country_event = uob.212
 					news_event = {
 						id = uob.223
@@ -2484,7 +2466,6 @@ country_event = {
 		ai_chance = {
 			factor = 40
 		}
-		add_ideas = ENG_John_Strachey_hog_tot
 	}
 
 	option = {
@@ -2504,7 +2485,6 @@ country_event = {
 			ideology = totalist_subtype
 		}
 		set_country_flag = blair_chairman
-		add_ideas = ENG_Phil_Piratin_hog_tot
 		add_political_power = 60
 	}
 
@@ -2524,7 +2504,6 @@ country_event = {
 			ideology = syndicalist_subtype
 		}
 		set_country_flag = kenney_chairman
-		add_ideas = ENG_Barbara_Castle_hog_syn
 		hidden_effect = {
 			set_party_name = {
 				ideology = syndicalist
@@ -2757,10 +2736,6 @@ country_event = {
 			expire = "1965.1.1"
 			ideology = radical_socialist_subtype
 		}
-		add_ideas = ENG_Harry_Pollitt_hog_syn
-		add_ideas = ENG_Barbara_Castle_eco_syn
-		add_ideas = ENG_Nye_Bevan_sec_syn
-		add_ideas = ENG_James_Maxton_for_syn
 		add_political_power = -50
 		set_politics = {
 			ruling_party = radical_socialist
@@ -3022,14 +2997,14 @@ country_event = {
 		text = uobflavour.3.d_1
 		trigger = {
 			NOT = {
-				has_completed_focus = ENG_bletchley_park
+				has_completed_focus = ENG_home_front_victory
 			}
 		}
 	}
 	desc = {
 		text = uobflavour.3.d_2
 		trigger = {
-			has_completed_focus = ENG_bletchley_park
+			has_completed_focus = ENG_home_front_victory
 		}
 	}
 	picture = GFX_report_event_physics_lab_02

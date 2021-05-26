@@ -228,12 +228,6 @@ country_event = {
 			factor = 35
 		}
 		DEH_election_liberal = yes
-		add_ideas = {
-			DEH_V_S_Srinivasa_Sastri_hog_mli
-			DEH_Sir_Tej_Bahadur_Sapru_for_sli
-			DEH_Sir_C_P_Ramaswami_Iyer_sec_mli
-			DEH_Jehangir_Ratanji_Dadabhoy_Tata_eco_mli
-		}
 	}
 	option = {
 		name = delhi.8.b #Swaraj Party
@@ -241,12 +235,6 @@ country_event = {
 			factor = 10
 		}
 		DEH_election_swaraj = yes
-		add_ideas = {
-			DEH_Narasimha_Chintaman_Kelkar_hog_sli
-			DEH_Sir_Shah_Nawaz_Bhutto_for_sli
-			DEH_M_R_Jayakar_sec_sli
-			DEH_Kanaiyalal_Maneklal_Munshi_eco_sli
-		}
 	}
 	option = {
 		name = delhi.8.c #Jinnah Party
@@ -254,12 +242,6 @@ country_event = {
 			factor = 25
 		}
 		DEH_election_jinnah = yes
-		add_ideas = {
-			DEH_Muhammad_Ali_Jinnah_hog_sde
-			DEH_Huseyn_Shaheed_Suhrawardy_for_sde
-			DEH_K_P_Kesava_Menon_sec_sde
-			DEH_Ghanshyam_Das_Birla_eco_sde
-		}
 	}
 	option = {
 		name = delhi.8.e #Unionist Party
@@ -267,12 +249,6 @@ country_event = {
 			factor = 30
 		}
 		DEH_election_unionist = yes
-		add_ideas = {
-			DEH_Sir_Sikander_Hayat_Khan_hog_sco
-			DEH_Malik_Khizar_Hayat_Tiwana_for_sco
-			DEH_Sir_Chhotu_Ram_sec_sco
-			DEH_Sir_C_D_Deshmukh_eco_sco
-		}
 	}
 }
 
@@ -302,12 +278,6 @@ country_event = {
 			factor = 35
 		}
 		DEH_election_liberal = yes
-		add_ideas = {
-			DEH_V_S_Srinivasa_Sastri_hog_mli
-			DEH_Sir_Tej_Bahadur_Sapru_for_sli
-			DEH_Sir_C_P_Ramaswami_Iyer_sec_mli
-			DEH_Jehangir_Ratanji_Dadabhoy_Tata_eco_mli
-		}
 	}
 	option = {
 		name = delhi.9.b #Swaraj Party
@@ -315,12 +285,6 @@ country_event = {
 			factor = 10
 		}
 		DEH_election_swaraj = yes
-		add_ideas = {
-			DEH_Narasimha_Chintaman_Kelkar_hog_sli
-			DEH_Sir_Shah_Nawaz_Bhutto_for_sli
-			DEH_M_R_Jayakar_sec_sli
-			DEH_Kanaiyalal_Maneklal_Munshi_eco_sli
-		}
 	}
 	option = {
 		name = delhi.9.c #Jinnah Party
@@ -328,12 +292,6 @@ country_event = {
 			factor = 25
 		}
 		DEH_election_jinnah = yes
-		add_ideas = {
-			DEH_Muhammad_Ali_Jinnah_hog_sde
-			DEH_Huseyn_Shaheed_Suhrawardy_for_sde
-			DEH_K_P_Kesava_Menon_sec_sde
-			DEH_Ghanshyam_Das_Birla_eco_sde
-		}
 	}
 	option = {
 		name = delhi.9.e #Unionist Party
@@ -341,12 +299,6 @@ country_event = {
 			factor = 30
 		}
 		DEH_election_unionist = yes
-		add_ideas = {
-			DEH_Sir_Sikander_Hayat_Khan_hog_sco
-			DEH_Malik_Khizar_Hayat_Tiwana_for_sco
-			DEH_Sir_Chhotu_Ram_sec_sco
-			DEH_Sir_C_D_Deshmukh_eco_sco
-		}
 	}
 }
 

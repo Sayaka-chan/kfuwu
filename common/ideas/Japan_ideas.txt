@@ -110,7 +110,7 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea JAP_DEM_SCI_idea"}
 			picture = generic_research_bonus
 			modifier = {
-				research_speed_factor = 0.05
+				research_speed_factor = 0.15
 			}
 		}
 

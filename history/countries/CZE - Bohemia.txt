@@ -1,7 +1,5 @@
 ﻿capital = 9
 
-oob = "CZE"
-
 set_cosmetic_tag = CZE_habsburg
 
 set_technology = {
