@@ -8,7 +8,6 @@ set_technology = {
 	gwtank = 1
 	basic_light_tank = 1
 	improved_light_tank = 1
-	basic_heavy_tank = 1
 	advanced_fire_control_system = 1
 	improved_airplane_launcher = 1
 

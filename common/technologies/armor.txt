@@ -918,7 +918,7 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = advanced_medium_tank 
+			leads_to_tech = main_battle_tank 
 			research_cost_coeff = 1
 		}
 		path = {
@@ -1123,25 +1123,15 @@ technologies = {
 			armor
 		}
 	}
-	
+
 	advanced_medium_tank = { #Panther
-
-		allow_branch = {
-
-		always=no
-		}
 
 		enable_equipments = {
 			medium_tank_equipment_3 
 		}
-		
-		path = {
-			leads_to_tech = main_battle_tank 
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = advanced_heavy_tank 
-			research_cost_coeff = 0.9
+
+		allow_branch = { 
+			always=no
 		}
 		
 		research_cost = 2
@@ -1200,6 +1190,7 @@ technologies = {
 				factor = 160
 				OR = {
 					tag = GER
+					tag = SOV
 				}
 				any_enemy_country = {
 					ROOT = {
@@ -1318,13 +1309,9 @@ technologies = {
 		}
 	}
 	
+	
 	main_battle_tank = { #E-50
 	
-		allow_branch = {
-
-			always=no
-		}
-
 		enable_equipments = {
 			modern_tank_equipment_1
 		}	
@@ -1332,12 +1319,12 @@ technologies = {
 			modern_armor
 		}
 		
-		research_cost = 2.5
-		start_year = 1945
+		research_cost = 2
+		start_year = 1943
 		
 		folder = {
 			name = armour_folder
-			position = { x = 2 y = 12 }
+			position = { x = 2 y = 10 }
 		}
 		
 		sub_technologies = {
@@ -1382,7 +1369,7 @@ technologies = {
 		}
 	
 		research_cost = 0.5
-		start_year = 1945
+		start_year = 1936
 		
 		ai_will_do = {
 			factor = 1
@@ -1419,7 +1406,7 @@ technologies = {
 		}
 	
 		research_cost = 0.5
-		start_year = 1945
+		start_year = 1936
 		
 		ai_will_do = {
 			factor = 1
@@ -1456,7 +1443,7 @@ technologies = {
 		}
 	
 		research_cost = 0.5
-		start_year = 1945
+		start_year = 1936
 		
 		ai_will_do = {
 			factor = 0
@@ -1509,11 +1496,11 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1934
+		start_year = 1939
 		
 		folder = {
 			name = armour_folder
-			position = { x = 4 y = 2 }
+			position = { x = 4 y = 6 }
 		}
 		
 		sub_technologies = {
@@ -1574,7 +1561,7 @@ technologies = {
 		}
 	
 		research_cost = 0.5
-		start_year = 1934
+		start_year = 1936
 
 		ai_will_do = {
 			factor = 0
@@ -1663,18 +1650,14 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = advanced_heavy_tank 
+			leads_to_tech = main_battle_tank 
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = improved_medium_tank 
+			leads_to_tech = improved_medium_tank
 			research_cost_coeff = 0.9
 		}
 		
-		path = {
-			leads_to_tech = super_heavy_tank 
-			research_cost_coeff = 1
-		}
 		
 		research_cost = 2.5
 		start_year = 1941
@@ -1733,7 +1716,7 @@ technologies = {
 		}
 	
 		research_cost = 0.5
-		start_year = 1941
+		start_year = 1936
 		
 		ai_will_do = {
 			factor = 0
@@ -1760,7 +1743,7 @@ technologies = {
 		}
 	
 		research_cost = 0.5
-		start_year = 1941
+		start_year = 1936
 		
 		ai_will_do = {
 			factor = 0
@@ -1788,7 +1771,7 @@ technologies = {
 		}
 	
 		research_cost = 0.5
-		start_year = 1941
+		start_year = 1936
 		
 		ai_will_do = {
 			factor = 0
@@ -1807,25 +1790,16 @@ technologies = {
 			armor
 		}
 	}
-	
+
 	advanced_heavy_tank = { #King Tiger
-
-		allow_branch = {
-
-		always=no
-		}
 
 		enable_equipments = {
 			heavy_tank_equipment_3 
 		}
 		
-		path = {
-			leads_to_tech = main_battle_tank 
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = advanced_medium_tank 
-			research_cost_coeff = 0.9
+		allow_branch = {
+
+		always=no
 		}
 		
 		research_cost = 2.5
