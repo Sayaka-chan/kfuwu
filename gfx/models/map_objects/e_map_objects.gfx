@@ -1,0 +1,26 @@
+objectTypes = {
+	pdxmesh = {
+		name = "test_mesh"
+		file = "gfx/models/map_objects/test.mesh"
+		meshsettings = {
+			#texture_diffuse = "towerTexture.dds"
+			#texture_normal = "towerNormal.dds"
+			#texture_specular = "towerSpec.dds"
+			shader = PdxMeshAdvanced
+		}
+		scale = 1.0
+	}
+	
+	pdxmesh = {
+		name = "giza_mesh"
+		file = "gfx/models/map_objects/giza/mesh_giza.mesh"
+		meshsettings = {
+			#texture_diffuse = "towerTexture.dds"
+			#texture_normal = "towerNormal.dds"
+			#texture_specular = "towerSpec.dds"
+			shader = PdxMeshAdvanced
+		}
+		scale = 1.0
+	}
+	
+}
