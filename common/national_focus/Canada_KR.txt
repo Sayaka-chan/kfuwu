@@ -3373,6 +3373,9 @@ focus_tree = {
 		prerequisite = {
 			focus = CAN_address_army
 		}
+		mutually_exclusive = {
+			focus = CAN_vanier_plan
+	    }
 		relative_position_id = CAN_address_army
 		x = -1
 		y = 1
@@ -3476,7 +3479,8 @@ focus_tree = {
 				name = CAN_bring_on_valentine
 				bonus = 1.5
 				uses = 2
-				category = armor
+				category = cat_medium_armor
+				category = cat_heavy_armor
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -3526,6 +3530,9 @@ focus_tree = {
 		prerequisite = {
 			focus = CAN_address_army
 		}
+		mutually_exclusive = {
+			focus = CAN_fuller_plan
+	    }
 		relative_position_id = CAN_address_army
 		x = 1
 		y = 1
@@ -3741,6 +3748,12 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_focus_on_army"
 			add_ideas = CAN_army_focus
+			add_tech_bonus = {
+				name = GER_rocket
+				bonus = 0.5
+				uses = 1
+				technology = main_battle_tank
+			}
 		}
 		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_RESEARCH }
 	}

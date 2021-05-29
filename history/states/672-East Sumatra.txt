@@ -7,7 +7,7 @@ state = {
 	}
 
 	history = {
-		owner = GEA
+		owner = CAN
 		add_core_of = VEN
 		victory_points = {
 			4652 1

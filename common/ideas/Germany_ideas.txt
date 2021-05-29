@@ -466,7 +466,7 @@ ideas = {
 				has_completed_focus = GER_krupp_steel_focus
 			}
 			modifier = {
-				production_speed_arms_factory_factor = 0.20
+				production_speed_arms_factory_factor = 0.15
 				production_speed_industrial_complex_factor = 0.05
 			}
 			research_bonus = {
@@ -526,10 +526,33 @@ ideas = {
 				has_completed_focus = GER_Mauser_werke
 			}
 			traits = {
-				infantry_equipment_producer_offense_2
 			}
+			equipment_bonus = { 
+			infantry_equipment = 
+			hard_attack = 0.1
+			soft_attack = 0.1
+			breakthrough = 0.1
+			reliability = 0.1
+			defense = 0.1
+		    }
+            artillery_equipment = { 
+			soft_attack = 0.1
+			defense = 0.05
+			breakthrough = 0.05
+		    }
+			anti_air_equipment = { 
+			air_attack = 0.1
+			defense = 0.1
+		    }
+			anti_tank_equipment = { 
+			hard_attack = 0.1
+			defense = 0.1
+			breakthrough = 0.1
+		    }
+		}
 			research_bonus = {
 				infantry_weapons = 0.1
+				artillery = 0.1
 			}
 			cost = 100
 		}
@@ -582,7 +605,7 @@ ideas = {
 				original_tag = GER
 			}
 			traits = {
-				infantry_equipment_producer_mass_2
+				artillery_producer_offense_1
 			}
 			research_bonus = {
 				infantry_weapons = 0.1
@@ -764,11 +787,15 @@ ideas = {
 			traits = {
 			}
 			equipment_bonus = {
+				modern_tank_equipment_1 = {
+					soft_attack = 0.1
+					hard_attack = 0.1
+				}
 				medium_tank_equipment = {
 					soft_attack = 0.10
 					hard_attack = 0.10
 					maximum_speed = 0.1
-					build_cost_ic = 0.1
+					build_cost_ic = 0.025
 				}
 				medium_tank_aa_equipment = {
 					anti_air_attack = 0.10
@@ -804,7 +831,7 @@ ideas = {
 					soft_attack = 0.1
 					hard_attack = 0.1
 					breakthrough = 0.1
-					build_cost_ic = 0.1
+					build_cost_ic = 0.025
 				}
 				medium_tank_aa_equipment = {
 					anti_air_attack = 0.1

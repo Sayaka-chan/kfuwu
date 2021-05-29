@@ -272,8 +272,9 @@ focus_tree = {
 			add_tech_bonus = {
 				name = AUS_kavalleriepanzer
 				bonus = 1.5
-				uses = 3
-				category = armor
+				uses = 2
+				category = cat_medium_armor
+				category = cat_heavy_armor
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }

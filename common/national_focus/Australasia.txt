@@ -2854,7 +2854,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AST_state_of_the_army"
-			army_experience = 25
+			army_experience = 500
 		}
 		search_filters = { FOCUS_FILTER_ARMY_BONUS }
 	}
@@ -3135,7 +3135,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus AST_tank_penetration"
 			add_tech_bonus = {
 				name = AST_tank_penetration
-				bonus = 1
+				bonus = 1.2
 				uses = 2
 				category = cat_medium_armor
 			}

@@ -5,7 +5,7 @@ state = {
 	resources = {
 		steel = 20
 		chromium = 4
-		tungsten = 4
+		tungsten = 60
 	}
 
 	state_category = eight

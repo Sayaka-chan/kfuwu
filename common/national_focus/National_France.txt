@@ -1603,9 +1603,32 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus NFA_tank_research"
 			add_tech_bonus = {
 				name = NFA_tank_research
-				bonus = 1
+				bonus = 1.2
 				uses = 2
-				category = armor
+				category = cat_medium_armor
+				category = cat_heavy_armor
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = NFA_tank_research2
+		icon = GFX_goal_generic_army_tanks
+		x = 0
+		y = 1
+		relative_position_id = NFA_tank_research
+		cost = 10
+		prerequisite = {
+			focus = NFA_tank_research
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus NFA_tank_research2"
+			add_tech_bonus = {
+				name = NFA_tank_research2
+				bonus = 0.5
+				uses = 1
+				technology = main_battle_tank
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }

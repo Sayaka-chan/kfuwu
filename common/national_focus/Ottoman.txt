@@ -1418,7 +1418,8 @@ focus_tree = {
 				name = OTT_armor_effort_unq
 				bonus = 1.5
 				uses = 2
-				category = armor
+				category = cat_medium_armor
+				category = cat_heavy_armor
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }

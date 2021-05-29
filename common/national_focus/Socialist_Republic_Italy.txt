@@ -1657,7 +1657,7 @@ focus_tree = {
 			add_ideas = SRI_italian_auto_industry_idea
 			add_tech_bonus = {
 				name = SRI_italian_auto_industry
-				bonus = 1
+				bonus = 1.2
 				uses = 1
 				category = motorized_equipment
 			}
@@ -1721,7 +1721,8 @@ focus_tree = {
 				name = SRI_tanks
 				bonus = 1.5
 				uses = 2
-				category = armor
+				category = cat_medium_armor
+				category = cat_heavy_armor    
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }

@@ -1306,7 +1306,8 @@ focus_tree = {
 				name = RUS_Armour_Modernisation
 				bonus = 1.5
 				uses = 2
-				category = armor
+				category = cat_medium_armor
+				category = cat_heavy_armor
 			add_tech_bonus = {
 				name = RUS_High_Command_Reforms
 				bonus = 1
@@ -1317,6 +1318,7 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
+
 
 	focus = {
 		id = RUS_National_Armoured_School
@@ -1336,6 +1338,32 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus RUS_National_Armoured_School"
 			add_ideas = tank_academy
 		}
+	}
+
+	focus = {
+		id = RUS_Armour_Modernisation2
+		icon = GFX_focus_generic_tank_destroyer
+		relative_position_id = RUS_Armour_Modernisation
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = {
+			focus = RUS_National_Armoured_School
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus RUS_Armour_Modernisation2"
+			add_tech_bonus = {
+				name = RUS_Armour_Modernisation
+				bonus = 0.5
+				uses = 1
+				technology = main_battle_tank
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
 	### Navy Tree ###

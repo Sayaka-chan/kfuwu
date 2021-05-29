@@ -13,7 +13,7 @@ state = {
 		victory_points = {
 			12268 1
 		}
-		owner = GEA
+		owner = CAN
 		add_core_of = VEN
 		buildings = {
 			infrastructure = 3

@@ -1033,7 +1033,7 @@ technologies = {
 		}
 
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1939
 		categories = {
 			year_1939
@@ -1123,7 +1123,7 @@ technologies = {
 		}
 
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1939
 		categories = {
 			year_1939
@@ -1212,7 +1212,7 @@ technologies = {
 		}
 
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1939
 		categories = {
 			year_1939
@@ -1301,7 +1301,7 @@ technologies = {
 		}
 
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1939
 		categories = {
 			year_1939

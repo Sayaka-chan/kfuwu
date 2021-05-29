@@ -520,6 +520,10 @@ ideas = {
 			traits = {
 			}
 			equipment_bonus = {
+				modern_tank_equipment_1 = {
+					soft_attack = 0.1
+					hard_attack = 0.1
+				}
 				medium_tank_equipment = {
 					soft_attack = 0.1
 					hard_attack = 0.1
