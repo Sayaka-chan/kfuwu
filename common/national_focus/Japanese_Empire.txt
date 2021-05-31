@@ -34,7 +34,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_NSA_focus"
-			add_ideas = tot_economic_mobilisation
+			add_ideas = war_economy
 		}
 	}
 
@@ -50,22 +50,46 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = JAP_NSA_focus
-		cost = 5
+		cost = 10
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_democratic_path"
+			add_timed_idea = {
+				idea = Zaibatsu_Idea
+				days = 400
+			}
 			set_country_flag = JAP_democracy
 			add_stability = 0.20
 			}
 		search_filters = { FOCUS_FILTER_STABILITY }
 	}
 
-	##############################
-	### Political - Democratic ###
-	##############################
+	#######################
+	### Economic - Base ###
+	#######################
 
 	focus = {
-		id = JAP_fem_reform
-		icon = GFX_goal_JAP_tokyo_conf
+		id = JAP_tech_team
+		icon = GFX_goal_tfv_generic_tech_sharing
+		prerequisite = {
+			focus = JAP_industrial_reform
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		x = 0
+		y = 4
+		relative_position_id = JAP_democratic_path
+		cost = 10
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus JAP_tech_team"
+			add_research_slot = 1
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = JAP_small_rail
+		icon = GFX_goal_generic_railway_construction
 		prerequisite = {
 			focus = JAP_democratic_path
 		}
@@ -77,133 +101,47 @@ focus_tree = {
 		relative_position_id = JAP_democratic_path
 		cost = 5
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus JAP_fem_reform"
-			add_ideas = JAP_DEM_fem_idea
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
-	}
-	#######################
-	### Economic - Base ###
-	#######################
-
-	focus = {
-		id = JAP_tech_team
-		icon = GFX_goal_tfv_generic_tech_sharing
-		prerequisite = {
-			focus = JAP_fem_reform
-		}
-		ai_will_do = {
-			factor = 100
-		}
-		x = 0
-		y = 1
-		relative_position_id = JAP_fem_reform
-		cost = 5
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus JAP_tech_team"
-			add_research_slot = 1
-			add_ideas = JAP_DEM_SCI_idea
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = JAP_small_rail
-		icon = GFX_goal_generic_railway_construction
-		prerequisite = {
-			focus = JAP_tech_team
-		}
-		ai_will_do = {
-			factor = 100
-		}
-		x = -2
-		y = 1
-		relative_position_id = JAP_tech_team
-		cost = 10
-		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_small_rail"
 			528 = {
-				set_building_level = {
+				add_building_construction = {
 					type = infrastructure
-					level = 10
+					level = 2
 				}
 			}
 			282 = {
-				set_building_level = {
+				add_building_construction = {
 					type = infrastructure
-					level = 10
+					level = 2
 				}
 			}
 			535 = {
-				set_building_level = {
+				add_building_construction = {
 					type = infrastructure
-					level = 6
+					level = 3
 				}
 			}
 			534 = {
-				set_building_level = {
+				add_building_construction = {
 					type = infrastructure
-					level = 6
+					level = 2
 				}
 			}
 			533 = {
-				set_building_level = {
+				add_building_construction = {
 					type = infrastructure
-					level = 5
+					level = 2
 				}
 			}
 			536 = {
-				set_building_level = {
+				add_building_construction = {
 					type = infrastructure
-					level = 5
+					level = 2
 				}
 			}
 			530 = {
-				set_building_level = {
-					type = infrastructure
-					level = 5
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-	}
-
-	focus = {
-		id = JAP_rapid_industrialisation
-		icon = GFX_goal_construction
-		prerequisite = {
-			focus = JAP_tech_team
-		}
-		available = {
-			OR = {
-				controls_state = 535
-				controls_state = 531
-				controls_state = 528
-				controls_state = 533
-			}
-		}
-		ai_will_do = {
-			factor = 100
-		}
-		x = 0
-		y = 1
-		relative_position_id = JAP_tech_team
-		cost = 5
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus JAP_rapid_industrialisation"
-			every_owned_state = {
-				limit = {
-					is_controlled_by = JAP
-					OR = {
-						state = 535
-						state = 531
-					}
-				}
-				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
+					type = infrastructure
+					level = 2
 				}
 			}
 		}
@@ -341,14 +279,20 @@ focus_tree = {
 		id = JAP_industrial_reform
 		icon = GFX_goal_generic_production
 		prerequisite = {
-			focus = JAP_rapid_industrialisation
+			focus = JAP_NAT_ECO
+		}
+		prerequisite = {
+			focus = JAP_small_rail
+		}
+		prerequisite = {
+			focus = JAP_NAT_ZAI
 		}
 		ai_will_do = {
 			factor = 100
 		}
 		x = 0
-		y = 2
-		relative_position_id = JAP_tech_team
+		y = 3
+		relative_position_id = JAP_democratic_path
 		cost = 10
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_industrial_reform"
@@ -367,14 +311,14 @@ focus_tree = {
 		id = JAP_NAT_ECO
 		icon = GFX_goal_state_economy
 		prerequisite = {
-			focus = JAP_industrial_reform
+			focus = JAP_democratic_path
 		}
 		ai_will_do = {
 			factor = 25
 		}
-		x = 0
-		y = 3
-		relative_position_id = JAP_tech_team
+		x = 1
+		y = 2
+		relative_position_id = JAP_democratic_path
 		cost = 5
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_NAT_ECO"
@@ -386,10 +330,10 @@ focus_tree = {
 						state = 532
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -401,7 +345,7 @@ focus_tree = {
 		id = JAP_NAT_ZAI
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = {
-			focus = JAP_NAT_ECO
+			focus = JAP_democratic_path
 		}
 		available = {
 			OR = {
@@ -414,8 +358,8 @@ focus_tree = {
 			factor = 50
 		}
 		x = -1
-		y = 1
-		relative_position_id = JAP_NAT_ECO
+		y = 2
+		relative_position_id = JAP_democratic_path
 		cost = 5
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_NAT_ZAI"
@@ -427,108 +371,11 @@ focus_tree = {
 						state = 532
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = industrial_complex
-					level = 1
+					type = arms_factory
+					level = 2
 					instant_build = yes
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-	}
-
-	focus = {
-		id = JAP_NAT_AIR
-		icon = GFX_goal_generic_build_airforce
-		prerequisite = {
-			focus = JAP_NAT_ECO
-		}
-		available = {
-			OR = {
-				282 = { is_owned_and_controlled_by = JAP }
-				535 = { is_owned_and_controlled_by = JAP }
-			}
-		}
-		ai_will_do = {
-			factor = 50
-		}
-		x = 1
-		y = 1
-		relative_position_id = JAP_NAT_ECO
-		cost = 5
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus JAP_NAT_AIR"
-			if = {
-				limit = { controls_state = 282 }
-				282 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = { controls_state = 535 }
-				535 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-	}
-
-	focus = {
-		id = JAP_NAT_IND
-		icon = GFX_focus_generic_industry_2
-		prerequisite = {
-			focus = JAP_NAT_ZAI
-		}
-		prerequisite = {
-			focus = JAP_NAT_AIR
-		}
-		available = {
-			OR = {
-				531 = { is_owned_and_controlled_by = JAP }
-				529 = { is_owned_and_controlled_by = JAP }
-			}
-		}
-		ai_will_do = {
-			factor = 50
-		}
-		x = 1
-		y = 1
-		relative_position_id = JAP_NAT_ZAI
-		cost = 5
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus JAP_NAT_IND"
-			if = {
-				limit = { controls_state = 531 }
-				531 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = { controls_state = 529 }
-				529 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
 				}
 			}
 		}
@@ -601,9 +448,6 @@ focus_tree = {
 				uses = 2
 				category = land_doctrine
 			}
-			custom_effect_tooltip = mil_choose_Nagata
-			JAP_increase_army_bias = yes
-			custom_effect_tooltip = "increases military bias"
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -634,8 +478,6 @@ focus_tree = {
 					}
 				}
 			}
-			JAP_increase_army_bias = yes
-			custom_effect_tooltip = "increases military bias"
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -661,7 +503,6 @@ focus_tree = {
 				uses = 2
 				category = land_doctrine
 			}
-			JAP_increase_army_bias = yes
 			if = {
 				limit = { controls_state = 531 }
 				531 = {
@@ -673,7 +514,6 @@ focus_tree = {
 					}
 				}
 			}
-			custom_effect_tooltip = "increases military bias"
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -694,12 +534,17 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_MIL_DOC_FIR4"
 			add_ideas = JAP_MIL_DOC_FIR_idea_1
-			JAP_increase_army_bias = yes
 			add_tech_bonus = {
 				name = JAP_MIL_DOC_FIR2
 				bonus = 1
 				uses = 2
 				category = artillery
+			}
+			add_tech_bonus = {
+				name = JAP_MIL_DOC_FIR2
+				bonus = 1
+				uses = 2
+				category = rocketry
 			}
 			if = {
 				limit = { controls_state = 531 }
@@ -712,7 +557,6 @@ focus_tree = {
 					}
 				}
 			}
-			custom_effect_tooltip = "increases military bias"
 		}
 		search_filters = { FOCUS_FILTER_ARMY_BONUS }
 	}
@@ -733,7 +577,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_MIL_DOC_FIR5"
 			add_ideas = JAP_MIL_DOC_FIR_idea_2
-			JAP_increase_army_bias = yes
 			add_tech_bonus = {
 				name = JAP_MIL_DOC_FIR2
 				bonus = 1
@@ -746,7 +589,6 @@ focus_tree = {
 				uses = 1
 				category = cat_anti_air
 			}
-			custom_effect_tooltip = "increases military bias"
 		}
 		search_filters = { FOCUS_FILTER_ARMY_BONUS }
 	}
@@ -767,14 +609,12 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_MIL_DOC_MOB4"
 			add_ideas = JAP_MIL_DOC_MOB_idea_1
-			JAP_increase_army_bias = yes
 			add_tech_bonus = {
 				name = JAP_MIL_DOC_FIR2
 				bonus = 1
 				uses = 2
 				category = infantry_weapons
 			}
-			custom_effect_tooltip = "increases military bias"
 		}
 		search_filters = { FOCUS_FILTER_ARMY_BONUS }
 	}
@@ -796,8 +636,6 @@ focus_tree = {
 				uses = 2
 				category = tp_tech
 			}
-			JAP_increase_army_bias = yes
-			custom_effect_tooltip = "increases military bias"
 		}
 	}
 	focus = {
@@ -816,8 +654,6 @@ focus_tree = {
 			hidden_effect = {
 				set_technology = { jungle_warfare = 1 }
 			}
-			JAP_increase_army_bias = yes
-			custom_effect_tooltip = "increases military bias"
 		}
 	}
 
@@ -838,11 +674,10 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = JAP_MIL_start_2
-		cost = 5
+		cost = 10
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_MIL_naval_start"
 			navy_experience = 25
-			JAP_increase_naval_bias = yes
 			every_owned_state = {
 				limit = {
 					is_controlled_by = ROOT
@@ -859,7 +694,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			custom_effect_tooltip = "increases navy bias"
 		}
 		search_filters = { FOCUS_FILTER_NAVY_BONUS }
 	}
@@ -868,14 +702,14 @@ focus_tree = {
 		id = JAP_MIL_MARINES
 		icon = GFX_goal_generic_amphibious_assault
 		prerequisite = {
-			focus = JAP_MIL_naval_start
+			focus = JAP_MIL_start_2
 		}
 		ai_will_do = {
 			factor = 10
 		}
-		x = -2
+		x = 0
 		y = 1
-		relative_position_id = JAP_MIL_naval_start
+		relative_position_id = JAP_MIL_start_2
 		cost = 5
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_MIL_MARINES"
@@ -885,78 +719,35 @@ focus_tree = {
 				uses = 2
 				category = marine_tech
 			}
-			JAP_increase_naval_bias = yes
-			custom_effect_tooltip = "increases navy bias"
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = JAP_MIL_NAV_BASES
-		icon = GFX_goal_generic_construct_naval_dockyard
-		prerequisite = {
-			focus = JAP_MIL_naval_start
-		}
-		available = {
-			OR = {
-				528 = { is_owned_and_controlled_by = JAP }
-				531 = { is_owned_and_controlled_by = JAP }
-				529 = { is_owned_and_controlled_by = JAP }
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		x = 0
-		y = 1
-		relative_position_id = JAP_MIL_naval_start
-		cost = 5
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus JAP_MIL_NAV_BASES"
-			every_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					OR = {
-						state = 528
-						state = 531
-						state = 529
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
-			JAP_increase_naval_bias = yes
-			custom_effect_tooltip = "increases navy bias"
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 
 	focus = {
 		id = JAP_MIL_BIG_SHIPS
 		icon = GFX_goal_generic_navy_battleship
 		prerequisite = {
-			focus = JAP_MIL_NAV_BASES
+			focus = JAP_MIL_naval_start
+		}
+		mutually_exclusive = {
+			focus = JAP_MIL_CARRIER
 		}
 		ai_will_do = {
 			factor = 10
 		}
-		x = -1
+		x = -2
 		y = 1
-		relative_position_id = JAP_MIL_NAV_BASES
-		cost = 5
+		relative_position_id = JAP_MIL_naval_start
+		cost = 10
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_MIL_BIG_SHIPS"
+			add_ideas = Mitsumasa_doctrine
 			add_tech_bonus = {
 				name = JAP_MIL_BIG_SHIPS
 				bonus = 1.5
 				uses = 2
 				category = bb_tech
 			}
-			JAP_increase_naval_bias = yes
 			every_owned_state = {
 				limit = {
 					is_controlled_by = ROOT
@@ -971,76 +762,67 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			custom_effect_tooltip = "increases navy bias"
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
-	focus = {
-		id = JAP_ship_attack
+
+    focus = {
+		id = JAP_MIL_BIG_SHIPS2
 		icon = GFX_goal_generic_navy_battleship
 		prerequisite = {
-			focus = JAP_MIL_BIG_SHIPS
+			focus = JAP_MIL_CARRIER
 		}
-		x = 0
+		ai_will_do = {
+			factor = 10
+		}
+		x = -1
 		y = 1
-		relative_position_id = JAP_MIL_BIG_SHIPS
+		relative_position_id = JAP_MIL_CARRIER
 		cost = 5
 		completion_reward = {
-			add_ideas = JAP_capital
+			log = "[GetDateText]: [Root.GetName]: Focus JAP_MIL_BIG_SHIPS"
+			add_tech_bonus = {
+				name = JAP_MIL_BIG_SHIPS
+<<<<<<< Updated upstream
+				bonus = 1.5
+=======
+				bonus = 0.5
+>>>>>>> Stashed changes
+				uses = 2
+				category = bb_tech
+			}
 		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
 	focus = {
 		id = JAP_MIL_SMALL_SHIPS
 		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = {
-			focus = JAP_MIL_NAV_BASES
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		x = 1
-		y = 1
-		relative_position_id = JAP_MIL_NAV_BASES
-		cost = 5
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus JAP_MIL_SMALL_SHIPS"
-			add_tech_bonus = {
-				name = JAP_MIL_SMALL_SHIPS
-				bonus = 1.5
-				uses = 3
-				category = dd_tech
-				category = cl_tech
-			}
-			JAP_increase_naval_bias = yes
-			custom_effect_tooltip = "increases navy bias"
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = JAP_MIL_SUBMARINES
-		icon = GFX_goal_generic_navy_submarine
-		prerequisite = {
-			focus = JAP_MIL_SMALL_SHIPS
+			focus = JAP_MIL_CARRIER
+			focus = JAP_MIL_BIG_SHIPS
 		}
 		ai_will_do = {
 			factor = 10
 		}
 		x = 0
-		y = 1
-		relative_position_id = JAP_MIL_SMALL_SHIPS
+		y = 3
+		relative_position_id = JAP_MIL_naval_start
 		cost = 5
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus JAP_MIL_SUBMARINES"
+			log = "[GetDateText]: [Root.GetName]: Focus JAP_MIL_SMALL_SHIPS"
 			add_tech_bonus = {
-				name = JAP_MIL_SUBMARINES
+				name = JAP_MIL_SMALL_SHIPS
+<<<<<<< Updated upstream
 				bonus = 1.5
-				uses = 1
-				category = ss_tech
+				uses = 3
+=======
+				bonus = 2
+				uses = 2
+>>>>>>> Stashed changes
+				category = dd_tech
+				category = cl_tech
 			}
-			JAP_increase_naval_bias = yes
-			custom_effect_tooltip = "increases navy bias"
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -1049,28 +831,58 @@ focus_tree = {
 		id = JAP_MIL_NAVBOM_FOCUS
 		icon = GFX_goal_generic_air_naval_bomber
 		prerequisite = {
-			focus = JAP_MIL_naval_start
-		}
-		prerequisite = {
-			focus = JAP_MIL_air_start
+			focus = JAP_MIL_CARRIER
 		}
 		ai_will_do = {
 			factor = 10
 		}
-		x = 3
+		x = 1
 		y = 1
-		relative_position_id = JAP_MIL_naval_start
+		relative_position_id = JAP_MIL_CARRIER
 		cost = 5
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_MIL_NAVBOM_FOCUS"
 			add_tech_bonus = {
-				name = JAP_MIL_NAVBOM_FOCUS
+<<<<<<< Updated upstream
+				name = JAP_MIL_SUBMARINES
 				bonus = 1.5
+=======
+				name = JAP_MIL_NAVBOM_FOCUS
+				bonus = 2
+>>>>>>> Stashed changes
 				uses = 1
 				category = naval_bomber
 			}
-			JAP_increase_naval_bias = yes
-			custom_effect_tooltip = "increases navy bias"
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = JAP_MIL_CARRIER2
+		icon = GFX_goal_generic_navy_carrier
+		prerequisite = {
+			focus = JAP_MIL_BIG_SHIPS
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		x = -1
+		y = 1
+		relative_position_id = JAP_MIL_BIG_SHIPS
+		cost = 5
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus JAP_MIL_CARRIER"
+			add_tech_bonus = {
+<<<<<<< Updated upstream
+				name = JAP_MIL_NAVBOM_FOCUS
+				bonus = 1.5
+=======
+				name = JAP_MIL_CARRIER
+				bonus = 0.5
+>>>>>>> Stashed changes
+				uses = 1
+				category = cv_tech
+			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -1079,39 +891,24 @@ focus_tree = {
 		id = JAP_MIL_CARRIER
 		icon = GFX_goal_generic_navy_carrier
 		prerequisite = {
-			focus = JAP_MIL_NAVBOM_FOCUS
+			focus = JAP_MIL_naval_start
 		}
 		ai_will_do = {
 			factor = 10
 		}
-		x = 0
+		x = 2
 		y = 1
-		relative_position_id = JAP_MIL_NAVBOM_FOCUS
-		cost = 5
+		relative_position_id = JAP_MIL_naval_start
+		cost = 10
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_MIL_CARRIER"
+			add_ideas = Yamamoto_doctrine
 			add_tech_bonus = {
 				name = JAP_MIL_CARRIER
 				bonus = 1.5
 				uses = 1
 				category = cv_tech
 			}
-			JAP_increase_naval_bias = yes
-			every_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					OR = {
-						state = 528
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-			custom_effect_tooltip = "increases navy bias"
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -1122,11 +919,17 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_MIL_CARRIER
 		}
+		prerequisite = {
+			focus = JAP_MIL_SMALL_SHIPS
+		}
+		prerequisite = {
+			focus = JAP_MIL_BIG_SHIPS
+		}
 		ai_will_do = {
 			factor = 10
 		}
-		x = 0
-		y = 1
+		x = -2
+		y = 3
 		relative_position_id = JAP_MIL_CARRIER
 		cost = 5
 		completion_reward = {
@@ -1137,8 +940,6 @@ focus_tree = {
 				uses = 4
 				category = naval_doctrine
 			}
-			JAP_increase_naval_bias = yes
-			custom_effect_tooltip = "increases navy bias"
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -1214,6 +1015,7 @@ focus_tree = {
 				uses = 3
 				category = tactical_bomber
 				category = cas_bomber
+				category = naval_bomber
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -1256,6 +1058,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_rising_sun"
+			add_ideas = tot_economic_mobilisation
 			add_named_threat = {
 				threat = 7
 				name = japanese_expansionism_threat

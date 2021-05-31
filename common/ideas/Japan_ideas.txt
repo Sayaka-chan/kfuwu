@@ -25,7 +25,9 @@ ideas = {
 			picture = JAP_Shitty_Tracks
 			modifier = {
 				production_speed_infrastructure_factor = 0.15
+				global_building_slots_factor = 0.2
 				research_speed_factor = 0.10
+				consumer_goods_factor = 0.025
 				production_speed_buildings_factor = 0.15
 				industrial_capacity_factory = 0.15
 				industrial_capacity_dockyard = 0.15
@@ -38,6 +40,7 @@ ideas = {
 			modifier = {
 				stability_factor = -0.30
 				war_support_factor = -0.10
+				consumer_goods_factor = 0.025
 			}
 		}
 		JAP_capital = {
@@ -247,6 +250,90 @@ ideas = {
 			picture = warrior_traditions_idea
 			modifier = {
 				stability_factor = 0.1
+			}
+		}
+
+		Yamamoto_doctrine = {
+picture = yamamoto_doctrine
+
+			name = Yamamoto_doctrine
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			equipment_bonus = {
+				screen_ship = {
+					naval_speed = 0.1 naval_range = 0.25 fuel_consumption = -0.4
+				}
+				capital_ship = {
+					armor_value = 0.025 fuel_consumption = 0.1 
+					}
+				carrier = {
+					naval_speed = 0.1  carrier_size = 0.15 fuel_consumption = -0.2
+				}
+				submarine = {
+					naval_speed = 0.2 fuel_consumption = -0.5
+				}
+			}
+
+			picture = idea_generic_navy_carrier_bonus
+			
+			removal_cost = -1	
+
+		}
+
+		Mitsumasa_doctrine = {
+
+			name = Mitsumasa_doctrine
+picture = mitsumasa
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			equipment_bonus = {
+				screen_ship = {
+					naval_speed = 0.05 max_strength = 0.2
+				}
+				capital_ship = {
+					 max_strength = 0.1 anti_air_attack = 0.2 hg_attack = 0.1
+				}
+				carrier = {
+				     max_strength = 0.05
+				}
+				submarine = {
+				     max_strength = 0.15
+				}
+			}
+
+			picture = idea_generic_coastal_defense_ships
+			
+			removal_cost = -1	
+
+		}
+
+		Zaibatsu_Idea = {
+		allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+			production_speed_industrial_complex_factor = 0.4
 			}
 		}
 
