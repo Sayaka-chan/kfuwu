@@ -9803,7 +9803,7 @@
 9802;130;54;94;land;false;hills;2
 9803;130;54;144;land;false;mountain;6
 9804;130;57;4;land;false;forest;2
-9805;130;57;59;land;true;hills;1
+9805;130;57;59;land;true;mountain;1
 9806;130;57;209;land;false;mountain;7
 9807;130;60;24;land;false;hills;6
 9808;130;60;69;land;false;hills;2
@@ -9914,7 +9914,7 @@
 9913;130;189;189;land;false;hills;6
 9914;130;192;4;land;true;plains;1
 9915;130;192;154;land;false;mountain;7
-9916;130;192;209;land;true;hills;1
+9916;130;192;209;land;true;urban;1
 9917;130;195;69;land;false;plains;1
 9918;130;195;174;land;false;forest;6
 9919;130;195;219;land;true;forest;1

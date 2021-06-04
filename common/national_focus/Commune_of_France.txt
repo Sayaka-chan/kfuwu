@@ -2231,6 +2231,585 @@ focus_tree = {
 	}
 
 	focus = {
+		id = FRA_navy_focus
+		icon = GFX_goal_FRA_navy
+		x = 42
+		y = 0
+		cost = 6
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				OR = {
+					has_war_with = ENT
+					has_war_with = NFA
+					has_war_with = USA
+					has_war_with = TEX
+				}
+				NOT = {
+					country_exists = GER
+				}
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_navy_focus"
+			navy_experience = 50
+			random_owned_state = {
+				limit = {
+					is_coastal = yes
+					is_core_of = ROOT
+					free_building_slots = { building = dockyard size > 1 include_locked = yes }
+					is_metropolis_state = no
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_coastal = yes
+					is_core_of = ROOT
+					free_building_slots = { building = dockyard size > 1 include_locked = yes }
+					is_metropolis_state = no
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = {
+					14 = {
+						is_controlled_by = ROOT
+					}
+				}
+				14 = {
+					add_building_construction = {
+						type = naval_base
+						level = 2
+						province = 3552
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					21 = {
+						is_controlled_by = ROOT
+					}
+				}
+				21 = {
+					add_building_construction = {
+						type = naval_base
+						level = 3
+						province = 911
+						instant_build = yes
+					}
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = FRA_old_doctrine
+		icon = GFX_goal_generic_sea_focused_navy2
+		x = -1
+		y = 1
+		relative_position_id = FRA_navy_focus
+		prerequisite = {
+			focus = FRA_navy_focus
+		}
+		prerequisite = {
+			focus = FRA_arsenaux_back_on
+		}
+		mutually_exclusive = {
+			focus = FRA_new_doctrine
+		}
+		cost = 6
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				OR = {
+					has_war_with = ENT
+					has_war_with = NFA
+					has_war_with = USA
+					has_war_with = TEX
+				}
+				NOT = {
+					country_exists = GER
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = trade_interdiction
+					is_researching_technology = trade_interdiction
+				}
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_old_doctrine"
+			add_tech_bonus = {
+				name = FRA_old_doctrine
+				bonus = 1
+				uses = 2
+				category = cat_fleet_in_being
+				category = cat_base_strike
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = FRA_new_doctrine
+		icon = GFX_goal_generic_coastal_navy2
+		x = 1
+		y = 1
+		relative_position_id = FRA_navy_focus
+		prerequisite = {
+			focus = FRA_navy_focus
+		}
+		prerequisite = {
+			focus = FRA_arsenaux_back_on
+		}
+		mutually_exclusive = {
+			focus = FRA_old_doctrine
+		}
+		cost = 6
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				OR = {
+					has_war_with = ENT
+					has_war_with = NFA
+					has_war_with = USA
+					has_war_with = TEX
+				}
+				NOT = {
+					country_exists = GER
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = fleet_in_being
+					is_researching_technology = fleet_in_being
+					has_tech = base_strike
+					is_researching_technology = base_strike
+				}
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_new_doctrine"
+			add_tech_bonus = {
+				name = FRA_new_doctrine
+				bonus = 1
+				uses = 2
+				category = cat_trade_interdiction
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	#old doctrine
+
+	focus = {
+		id = FRA_castex_plan
+		icon = GFX_goal_AST_upgrade_reserves
+		x = 0
+		y = 2
+		relative_position_id = FRA_navy_focus
+		prerequisite = {
+			focus = FRA_old_doctrine
+		}
+		cost = 6
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				OR = {
+					has_war_with = ENT
+					has_war_with = NFA
+					has_war_with = USA
+					has_war_with = TEX
+				}
+				NOT = {
+					country_exists = GER
+				}
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_castex_plan"
+			add_tech_bonus = {
+				name = FRA_castex_plan
+				bonus = 1
+				uses = 1
+				category = bb_tech
+				category = shbb_tech
+			}
+			add_tech_bonus = {
+				name = FRA_castex_plan
+				bonus = 1
+				uses = 1
+				category = ca_tech
+			}
+			add_tech_bonus = {
+				name = FRA_castex_plan
+				bonus = 1
+				uses = 1
+				category = cl_tech
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = FRA_waves_of_syndicalism
+		icon = GFX_goal_generic_navy_carrier
+		x = -4
+		y = 2
+		relative_position_id = FRA_navy_focus
+		prerequisite = {
+			focus = FRA_old_doctrine
+		}
+		mutually_exclusive = {
+			focus = FRA_home_fleet
+		}
+		cost = 6
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				OR = {
+					has_war_with = ENT
+					has_war_with = NFA
+					has_war_with = USA
+					has_war_with = TEX
+				}
+				NOT = {
+					country_exists = GER
+				}
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_waves_of_syndicalism"
+			add_tech_bonus = {
+				name = FRA_waves_of_syndicalism
+				bonus = 1
+				uses = 1
+				category = cv_tech
+			}
+			add_tech_bonus = {
+				name = FRA_waves_of_syndicalism
+				bonus = 1
+				uses = 1
+				category = tp_tech
+			}
+			add_ideas = FRA_waves_of_syndicalism_idea
+		}
+		search_filters = { FOCUS_FILTER_NAVY_BONUS FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = FRA_colonnes_neptune
+		icon = GFX_goal_NFA_Troupes_de_Marine_Focus
+		x = -4
+		y = 3
+		relative_position_id = FRA_navy_focus
+		prerequisite = {
+			focus = FRA_waves_of_syndicalism
+		}
+		cost = 6
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				OR = {
+					has_war_with = ENT
+					has_war_with = NFA
+					has_war_with = USA
+					has_war_with = TEX
+				}
+				NOT = {
+					country_exists = GER
+				}
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_colonnes_neptune"
+			add_tech_bonus = {
+				name = FRA_colonnes_neptune
+				bonus = 1
+				uses = 1
+				category = marine_tech
+			}
+			custom_effect_tooltip = FRA_tech_marine_bonus_effect
+			hidden_effect = {
+				set_technology = { tech_marine_bonus = 1 popup = no }
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = FRA_home_fleet
+		icon = GFX_focus_generic_navy_battleship3alt
+		x = -2
+		y = 2
+		relative_position_id = FRA_navy_focus
+		prerequisite = {
+			focus = FRA_old_doctrine
+		}
+		mutually_exclusive = {
+			focus = FRA_waves_of_syndicalism
+		}
+		cost = 6
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				OR = {
+					has_war_with = ENT
+					has_war_with = NFA
+					has_war_with = USA
+					has_war_with = TEX
+				}
+				NOT = {
+					country_exists = GER
+				}
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_home_fleet"
+			add_tech_bonus = {
+				name = FRA_home_fleet
+				bonus = 1
+				uses = 2
+				category = dd_tech
+			}
+			add_tech_bonus = {
+				name = FRA_home_fleet
+				bonus = 1
+				uses = 1
+				category = cl_tech
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = FRA_strike_nat_france
+		icon = GFX_goal_Dismantle_French_Education
+		x = -2
+		y = 3
+		relative_position_id = FRA_navy_focus
+		prerequisite = {
+			focus = FRA_home_fleet
+		}
+		available = {
+			is_subject = no
+			can_declare_war_on = NFA
+			NOT = { country_exists = GER }
+		}
+		bypass = {
+			NOT = { can_declare_war_on = NFA }
+		}
+		cost = 4
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				OR = {
+					has_war_with = RUS
+					has_war_with = USA
+					has_war_with = TEX
+					has_war_with = ENT
+				}
+			}
+			modifier = {
+				factor = 0
+				date < 1939.1.1
+				has_game_rule = {
+					rule = wk2_begin_options
+					option = RESTRICTED
+				}
+			}
+			modifier = {
+				factor = 0.25
+				date < 1939.1.1
+				has_game_rule = {
+					rule = wk2_begin_options
+					option = RARE
+				}
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_strike_nat_france"
+			create_wargoal = {
+				type = annex_everything
+				target = NFA
+			}
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+	}
+
+	#new doctrine
+
+	focus = {
+		id = FRA_submarines
+		icon = GFX_goal_generic_navy_submarine
+		x = 2
+		y = 2
+		relative_position_id = FRA_navy_focus
+		prerequisite = {
+			focus = FRA_new_doctrine
+		}
+		cost = 6
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				OR = {
+					has_war_with = ENT
+					has_war_with = NFA
+					has_war_with = USA
+					has_war_with = TEX
+				}
+				NOT = {
+					country_exists = GER
+				}
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_submarines"
+			add_tech_bonus = {
+				name = FRA_submarines
+				bonus = 1
+				uses = 2
+				category = ss_tech
+			}
+			add_tech_bonus = {
+				name = FRA_submarines
+				bonus = 1
+				uses = 1
+				category = dd_tech
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = FRA_cut_off_capitalists
+		icon = GFX_goal_FRA_Cut_Off_Capitalists
+		x = 3
+		y = 3
+		relative_position_id = FRA_navy_focus
+		prerequisite = {
+			focus = FRA_submarines
+		}
+		cost = 6
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				OR = {
+					has_war_with = ENT
+					has_war_with = NFA
+					has_war_with = USA
+					has_war_with = TEX
+				}
+				NOT = {
+					country_exists = GER
+				}
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_cut_off_capitalists"
+			add_tech_bonus = {
+				name = FRA_cut_off_capitalists
+				bonus = 1
+				uses = 1
+				category = ss_tech
+			}
+			add_tech_bonus = {
+				name = FRA_cut_off_capitalists
+				bonus = 1
+				uses = 2
+				category = trade_interdiction_tree
+			}
+			add_ideas = FRA_cut_off_capitalists_idea
+		}
+		search_filters = { FOCUS_FILTER_NAVY_BONUS FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = FRA_naval_bombers
+		icon = GFX_goal_generic_air_naval_bomber_new
+		x = 3
+		y = 1
+		relative_position_id = FRA_navy_focus
+		prerequisite = {
+			focus = FRA_navy_focus
+		}
+		cost = 6
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				OR = {
+					has_war_with = ENT
+					has_war_with = NFA
+					has_war_with = USA
+					has_war_with = TEX
+				}
+				NOT = {
+					country_exists = GER
+				}
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FRA_naval_bombers"
+			add_tech_bonus = {
+				name = FRA_naval_bombers
+				bonus = 1.5
+				uses = 1
+				category = naval_bomber
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
 		id = FRA_Phalanstere_internationale
 		icon = GFX_FRA_Phalanstere_internationale
 

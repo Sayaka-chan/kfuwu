@@ -2149,7 +2149,8 @@ focus_tree = {
 		icon = missing
 		cost = 0
 		available = {
-			has_capitulated = yes
+			ENG = { surrender_progress > 0.5
+		 }
 		}
 		x = 19
 		y = 4

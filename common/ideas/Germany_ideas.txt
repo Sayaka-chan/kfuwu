@@ -58,7 +58,6 @@ ideas = {
 			sortie_efficiency = -0.3
 			convoy_escort_efficiency = -0.30
 		    navy_anti_air_attack_factor = -0.50
-			navy_max_range_factor = -0.90
 			naval_speed_factor = -0.30
 			naval_damage_factor = -0.30
 	        }
