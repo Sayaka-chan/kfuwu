@@ -944,7 +944,7 @@ focus_tree = {
 		x = -1
 		y = 4
 		relative_position_id = NFA_industrial_revival
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -975,7 +975,7 @@ focus_tree = {
 		x = -1
 		y = 3
 		relative_position_id = NFA_industrial_revival
-		cost = 10
+		cost = 1
 		ai_will_do = {
 			factor = 1
 		}
@@ -1144,7 +1144,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = NFA_industrial_revival
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1176,7 +1176,7 @@ focus_tree = {
 		x = 3
 		y = 2
 		relative_position_id = NFA_industrial_revival
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1203,7 +1203,7 @@ focus_tree = {
 		x = 2
 		y = 5
 		relative_position_id = NFA_industrial_revival
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
