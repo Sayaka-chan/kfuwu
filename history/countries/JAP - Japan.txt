@@ -179,23 +179,23 @@ give_guarantee = LEC
 set_country_flag = legation_council_vote
 
 set_politics = {
-	ruling_party = social_conservative
+	ruling_party = national_populist
 	last_election = "1932.2.20"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 set_popularities = {
 	totalist = 0
 	radical_socialist = 0
-	syndicalist = 2
-	social_democrat = 3
-	social_liberal = 5
-	authoritarian_democrat = 8
-	market_liberal = 27
-	social_conservative = 51
-	paternal_autocrat = 3
-	national_populist = 1
+	syndicalist = 0
+	social_democrat = 0
+	social_liberal = 0
+	authoritarian_democrat = 0
+	market_liberal = 0
+	social_conservative = 0
+	paternal_autocrat = 0
+	national_populist = 100
 }
 set_autonomy = {
 	target = SIA

@@ -193,7 +193,7 @@ finish_land_reform_desc:0 "We will finish our Land Reform Programme and see what
 ### Focuses - Political - Base ###
 JAP_NSA_focus:0 "The National Security Act"
 JAP_NSA_focus_desc:0 "A debate in the Diet regarding the national security act has been raging for the past few weeks, and it is time for us to decide which course our nation will take. Some conservative members of the Diet fear that if the act isn't passed, radical elements in society will try to seize power. The future of Japan is in our hands."
-JAP_democratic_path:0 "Defend Democracy!"
+JAP_democratic_path:0 "Guide the Zaibatsus"
 JAP_democratic_path_desc:0 "After receiving the offer from the scheming army officers, General Hayashi Senjuro has rejected to back their coup attempt, citing his responsibility to the established regime. While not actively opposing the putschists, it is unlikely they can win without the support of the central command."
 JAP_imperialist_path:0 "The Longest Day"
 JAP_imperialist_path_desc:0 "General Hayashi Senjuro has agreed to support the scheming army officers in their coup attempt. With support from the army minister, it seems like their attempt will be successful..."
@@ -394,7 +394,7 @@ JAP_MIL_NAV_DOC_desc:0 "No fleet, no matter how large or modern, is more efficie
 ### Focuses - Military - Air ###
 JAP_MIL_air_start:0 "Air Force Reform"
 JAP_MIL_air_start_desc:0 "We can't just focus on the ground, the Army and Navy Airforces need reforming as well."
-JAP_MIL_FIGHTER_FOCUS:0 "Fighter Focus"
+JAP_MIL_FIGHTER_FOCUS:0 "Mitsubishi Designs"
 JAP_MIL_FIGHTER_FOCUS_desc:0 "Controlling the air means controlling the world! We must keep our fighters up to date to maintain our air superiority"
 JAP_MIL_BOMBER_FOCUS:0 "Bomber Focus"
 JAP_MIL_BOMBER_FOCUS_desc:0 "Japanese air power should be feared, and few as feared as our bomber pilots. With the most modern planes at our disposal, no nation or army can withstand us."
