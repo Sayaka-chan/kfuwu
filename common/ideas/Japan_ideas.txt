@@ -19,6 +19,25 @@ ideas = {
 				planning_speed = -0.50
 			}
 		}
+		JAP_army_focus = {
+			picture = imperial_glory_idea
+			modifier = {
+			industrial_capacity_factory = 0.1
+			}
+		}
+		JAP_navy_focus = {
+			picture = state_economy
+			modifier = {
+				industrial_capacity_dockyard = 0.15
+			}
+		}
+		JAP_attack_raj = {
+			picture = state_shintoism
+			targeted_modifier = {
+				tag = DEH
+				attack_bonus_against = 0.05
+			}
+		}
 
 		JAP_narrow_rail = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea JAP_narrow_rail"}
@@ -254,7 +273,7 @@ ideas = {
 		}
 
 		Yamamoto_doctrine = {
-picture = yamamoto_doctrine
+			picture = yamamoto_doctrine
 
 			name = Yamamoto_doctrine
 
@@ -290,7 +309,7 @@ picture = yamamoto_doctrine
 		Mitsumasa_doctrine = {
 
 			name = Mitsumasa_doctrine
-picture = mitsumasa
+			picture = mitsumasa
 			allowed = {
 				always = no
 			}
@@ -1021,15 +1040,35 @@ picture = mitsumasa
 			allowed = {
 				tag = JAP
 			}
+			available = {
+				has_completed_focus = JAP_MIL_FIGHTER_FOCUS
+			}
 			traits = {
 				fighter_producer_offense_2
 			}
 			equipment_bonus = {
-				heavy_fighter_equipment = {
-					build_cost_ic = -0.075
-				}
 				fighter_equipment = {
 					build_cost_ic = -0.075
+				}
+			}
+			research_bonus = {
+				air_equipment = 0.1
+			}
+			cost = 100
+		}
+		JAP_heavy_fighter = {
+			allowed = {
+				tag = JAP
+			}
+			available = {
+				has_completed_focus = JAP_MIL_HEAVY_FIGHTER_FOCUS
+			}
+			equipment_bonus = {
+				heavy_fighter_equipment = {
+					build_cost_ic = -0.075
+					air_attack_factor = 0.15
+					air_agility = 0.1
+					air_range = 0.15
 				}
 			}
 			research_bonus = {

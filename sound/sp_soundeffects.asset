@@ -6,3 +6,11 @@ soundeffect = {
 	volume = 1
 	
 }
+soundeffect = {
+	name = "russia"
+	sounds = {
+		sound = russia
+	}
+	volume = 1
+	
+}

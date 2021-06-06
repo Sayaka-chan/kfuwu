@@ -1084,7 +1084,7 @@ focus_tree = {
 				name = DEH_armor1
 				bonus = 1
 				uses = 1
-				category = armor
+				category = cat_medium_armor
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -1113,7 +1113,7 @@ focus_tree = {
 				name = DEH_armor2
 				bonus = 1
 				uses = 1
-				category = armor
+				category = cat_medium_armor
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }

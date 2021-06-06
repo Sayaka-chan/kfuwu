@@ -11,6 +11,7 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea DEH_mp"}
 			allowed = { always = no }
 			removal_cost = -1
+			picture = focus_ENG_brittania
 			modifier = {
 				conscription_factor = -0.60
 			}
@@ -155,19 +156,7 @@ ideas = {
 					build_cost_ic = -0.05
 					instant = yes
 				}
-				cv_fighter_equipment = {
-					build_cost_ic = -0.05
-					instant = yes
-				}
 				CAS_equipment = {
-					build_cost_ic = -0.05
-					instant = yes
-				}
-				cv_CAS_equipment = {
-					build_cost_ic = -0.05
-					instant = yes
-				}
-				cv_nav_bomber_equipment = {
 					build_cost_ic = -0.05
 					instant = yes
 				}
@@ -284,16 +273,6 @@ ideas = {
 			traits = { infantry_equipment_producer_offense_1 }
 			research_bonus = {
 				infantry_weapons = 0.1
-			}
-			cost = 100
-		}
-		
-		royal_canadian_ordnance_corps = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea royal_canadian_ordnance_corps"}
-			allowed = { original_tag = CAN }
-			traits = { artillery_producer_offense_1 }
-			research_bonus = {
-				artillery = 0.1
 			}
 			cost = 100
 		}

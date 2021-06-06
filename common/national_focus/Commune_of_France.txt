@@ -2245,7 +2245,6 @@ focus_tree = {
 					has_war_with = ENT
 					has_war_with = NFA
 					has_war_with = USA
-					has_war_with = TEX
 				}
 				NOT = {
 					country_exists = GER
@@ -2261,7 +2260,6 @@ focus_tree = {
 					is_coastal = yes
 					is_core_of = ROOT
 					free_building_slots = { building = dockyard size > 1 include_locked = yes }
-					is_metropolis_state = no
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -2275,7 +2273,6 @@ focus_tree = {
 					is_coastal = yes
 					is_core_of = ROOT
 					free_building_slots = { building = dockyard size > 1 include_locked = yes }
-					is_metropolis_state = no
 				}
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -2327,9 +2324,6 @@ focus_tree = {
 		prerequisite = {
 			focus = FRA_navy_focus
 		}
-		prerequisite = {
-			focus = FRA_arsenaux_back_on
-		}
 		mutually_exclusive = {
 			focus = FRA_new_doctrine
 		}
@@ -2343,7 +2337,6 @@ focus_tree = {
 					has_war_with = ENT
 					has_war_with = NFA
 					has_war_with = USA
-					has_war_with = TEX
 				}
 				NOT = {
 					country_exists = GER
@@ -2380,9 +2373,6 @@ focus_tree = {
 		prerequisite = {
 			focus = FRA_navy_focus
 		}
-		prerequisite = {
-			focus = FRA_arsenaux_back_on
-		}
 		mutually_exclusive = {
 			focus = FRA_old_doctrine
 		}
@@ -2396,7 +2386,6 @@ focus_tree = {
 					has_war_with = ENT
 					has_war_with = NFA
 					has_war_with = USA
-					has_war_with = TEX
 				}
 				NOT = {
 					country_exists = GER
@@ -2446,7 +2435,6 @@ focus_tree = {
 					has_war_with = ENT
 					has_war_with = NFA
 					has_war_with = USA
-					has_war_with = TEX
 				}
 				NOT = {
 					country_exists = GER
@@ -2501,7 +2489,6 @@ focus_tree = {
 					has_war_with = ENT
 					has_war_with = NFA
 					has_war_with = USA
-					has_war_with = TEX
 				}
 				NOT = {
 					country_exists = GER
@@ -2547,7 +2534,6 @@ focus_tree = {
 					has_war_with = ENT
 					has_war_with = NFA
 					has_war_with = USA
-					has_war_with = TEX
 				}
 				NOT = {
 					country_exists = GER
@@ -2593,7 +2579,6 @@ focus_tree = {
 					has_war_with = ENT
 					has_war_with = NFA
 					has_war_with = USA
-					has_war_with = TEX
 				}
 				NOT = {
 					country_exists = GER
@@ -2645,24 +2630,7 @@ focus_tree = {
 				OR = {
 					has_war_with = RUS
 					has_war_with = USA
-					has_war_with = TEX
 					has_war_with = ENT
-				}
-			}
-			modifier = {
-				factor = 0
-				date < 1939.1.1
-				has_game_rule = {
-					rule = wk2_begin_options
-					option = RESTRICTED
-				}
-			}
-			modifier = {
-				factor = 0.25
-				date < 1939.1.1
-				has_game_rule = {
-					rule = wk2_begin_options
-					option = RARE
 				}
 			}
 		}
@@ -2698,7 +2666,6 @@ focus_tree = {
 					has_war_with = ENT
 					has_war_with = NFA
 					has_war_with = USA
-					has_war_with = TEX
 				}
 				NOT = {
 					country_exists = GER
@@ -2743,7 +2710,6 @@ focus_tree = {
 					has_war_with = ENT
 					has_war_with = NFA
 					has_war_with = USA
-					has_war_with = TEX
 				}
 				NOT = {
 					country_exists = GER
@@ -2789,7 +2755,6 @@ focus_tree = {
 					has_war_with = ENT
 					has_war_with = NFA
 					has_war_with = USA
-					has_war_with = TEX
 				}
 				NOT = {
 					country_exists = GER

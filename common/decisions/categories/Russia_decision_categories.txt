@@ -3,7 +3,7 @@ RUS_Industrial_Expansion_decisions = {
 	priority = 80
 
 	allowed = {
-		OR = {
+		NOT = {
 			tag = RUS
 		}
 	}

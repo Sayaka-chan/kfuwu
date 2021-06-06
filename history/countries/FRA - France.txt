@@ -205,12 +205,10 @@ set_popularities = {
 create_faction = Third_International
 add_to_faction = ENG
 add_to_faction = SRI
-add_to_faction = GRE
 
 add_ideas = {
 	limited_conscription
 	FRA_bad_intel
-	pp_idea
 	partial_economic_mobilisation
 	peace_training
 	FRA_home_of_the_revolution

@@ -384,36 +384,6 @@ ideas = {
 			cost = 100
 		}
 
-		rheinmetall = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea rheinmetall"}
-			allowed = {
-				original_tag = UKR
-			}
-			traits = {
-				artillery_producer_defense_1
-			}
-			research_bonus = {
-				artillery = 0.1
-			}
-			cost = 100
-		}
-
-		krupp4 = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea krupp4"}
-			allowed = {
-				OR = {
-					original_tag = UKR
-				}
-			}
-			traits = {
-				artillery_producer_offense_1
-			}
-			research_bonus = {
-				artillery = 0.1
-			}
-			cost = 100
-		}
-
 		zaporizhia_automobile_plant = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea zaporizhia_automobile_plant"}
 			allowed = { original_tag = UKR }

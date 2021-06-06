@@ -346,12 +346,12 @@ if = { #JAP_samurai_lineage GFX doesn't show up without Waking the Tiger, hence 
 	create_corps_commander = {
 		name = "Itagaki Seishiro"
 		picture = "Portrait_Japan_Seishiro_Itagaki.dds"
-		traits = { JAP_samurai_lineage inflexible_strategist trait_reckless }
-		skill = 3
-		attack_skill = 3
+		traits = { panzer_leader ranger }
+		skill = 5
+		attack_skill = 5
 		defense_skill = 3
-		planning_skill = 2
-		logistics_skill = 2
+		planning_skill = 3
+		logistics_skill = 3
 	}
 
 	create_corps_commander = {

@@ -1,3 +1,9 @@
+USA_dominion_decision = {
+	icon = usa_congress
+	allowed = {
+	original_tag = USA
+	}
+}
 USA_rainbow_war_plans_decisions = {
 	icon = military_operation
 	allowed = {

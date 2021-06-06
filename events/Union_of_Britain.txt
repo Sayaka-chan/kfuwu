@@ -1176,15 +1176,10 @@ country_event = {
 							has_completed_focus = ENG_merge
 						}
 						random_list = {
-							70 = {
+							100 = {
 								country_event = uob.204
 								} # Yay
-							30 = {
-								country_event = uob.205
-								} # Yay...?
-						}
-						else = {
-							country_event = uob.205 # Yay...?
+								  # Yay...?
 						}
 					}
 				}
@@ -1212,15 +1207,10 @@ country_event = {
 							has_completed_focus = ENG_purge_militia_remains
 						}
 						random_list = {
-							70 = {
+							100 = {
 								country_event = uob.207
 								} # Yay
-							30 = {
-								country_event = uob.208
-								} # Yay...?
-						}
-						else = {
-							country_event = uob.208 # Yay...?
+								  # Yay...?
 						}
 					}
 				}
@@ -1245,12 +1235,10 @@ country_event = {
 			}
 			else = {
 				random_list = {
-					50 = {
+					100 = {
 						country_event = uob.211
 						} # Yay...?
-					50 = {
-						country_event = uob.212
-						} # Nay
+						  # Nay
 				}
 			}
 		}
@@ -1315,15 +1303,10 @@ country_event = {
 		name = uob.205.b
 		hidden_effect = {
 			random_list = {
-				50 = {
+				100 = {
 					country_event = uob.204
 					} # Yay
-				50 = {
-					country_event = {
-						id = uob.206
-						days = 7
-					}
-					} # Nay
+					 # Nay
 			}
 		}
 	}
@@ -1403,12 +1386,10 @@ country_event = {
 		name = uob.208.b
 		hidden_effect = {
 			random_list = {
-				50 = {
+				100 = {
 					country_event = uob.207
 					} # Yay
-				50 = {
-					country_event = uob.209
-					} # Nay
+					  # Nay
 			}
 		}
 	}
@@ -1492,13 +1473,7 @@ country_event = {
 						days = 7
 					}
 					} # Yay
-				0 = {
-					country_event = uob.212
-					news_event = {
-						id = uob.223
-						days = 7
-					}
-					} # Nay
+					  # Nay
 			}
 		}
 	}

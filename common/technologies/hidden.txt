@@ -229,8 +229,8 @@ technologies = {
 		#Change the custom tooltip too: RAJ_jungle_training_effect
 		militia = {
 			urban = {
-				attack = 0.05
-				defence = 0.03
+				attack = 0.1
+				defence = 0.05
 				movement = 0.05
 			}
 		}
@@ -239,27 +239,6 @@ technologies = {
 				attack = 0.10
 				defence = 0.05
 				movement = 0.05
-			}
-		}
-		marine = {
-			urban = {
-				attack = 0.15
-				defence = 0.05
-				movement = 0.1
-			}
-		}
-		mountaineers = {
-			urban = {
-				attack = 0.15
-				defence = 0.05
-				movement = 0.1
-			}
-		}
-		paratrooper = {
-			urban = {
-				attack = 0.15
-				defence = 0.05
-				movement = 0.1
 			}
 		}
 	}

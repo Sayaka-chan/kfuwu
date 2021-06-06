@@ -71,7 +71,6 @@ focus_tree = {
 			every_unit_leader = {
 				limit={has_id=455}
 				promote_leader = yes
-				add_skill_level=1
 				add_attack=2
 				add_logistics = 2
 				add_planning = 1
@@ -113,9 +112,8 @@ focus_tree = {
 		completion_reward = {
 			add_ideas=RUS_realism
 			every_unit_leader = {
-				limit={has_id=416}
+				limit={has_id=457}
 				promote_leader = yes
-				add_skill_level=1
 				add_attack=2
 				add_defense=1
 			}
@@ -1650,6 +1648,9 @@ focus_tree = {
 			RUS={declare_war_on = { target = UKR type = annex_everything }}
 			RUS={declare_war_on = { target = OTT type = annex_everything }}
 			RUS={declare_war_on = { target = AUS type = annex_everything }}
+			hidden_effect = {
+				sound_effect = russia
+			}
 		}
 	}
 }

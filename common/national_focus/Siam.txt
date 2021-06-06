@@ -1014,7 +1014,7 @@ focus_tree = {
 				name = SIA_prototypetankdesign
 				bonus = 1.5
 				uses = 2
-				category = armor
+				category = cat_medium_armor
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }

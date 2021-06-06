@@ -165,7 +165,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-		x = 2
+		x = 0
 		y = 1
 		relative_position_id = JAP_tech_team
 		cost = 5
@@ -257,7 +257,7 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_china_aluminium
 		}
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = JAP_china_aluminium
 		cost = 5
@@ -399,6 +399,46 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_MIL_start_1"
 			JAP_increase_army_bias = yes
 			army_experience = 1500
+		}
+	}
+	focus = {
+		id = JAP_army_focus
+		icon = missing
+		cost = 5
+		x = -4
+		y = 1
+		relative_position_id = JAP_MIL_start_1
+		prerequisite = {
+			focus = JAP_MIL_start_1
+		}
+		mutually_exclusive = {
+			focus = JAP_navy_focus
+		}
+		completion_reward = { 
+			add_timed_idea = {
+				idea = JAP_army_focus
+				days = 365
+			}
+		}
+	}
+	focus = {
+		id = JAP_navy_focus
+		icon = missing
+		relative_position_id = JAP_MIL_start_1
+		prerequisite = {
+			focus = JAP_MIL_start_1
+		}
+		mutually_exclusive = {
+			focus = JAP_army_focus
+		}
+		cost = 5
+		x = -2
+		y = 1
+		completion_reward = { 
+			add_timed_idea = {
+				idea = JAP_navy_focus
+				days = 365
+			}
 		}
 	}
 
@@ -559,6 +599,25 @@ focus_tree = {
 			}
 		}
 		search_filters = { FOCUS_FILTER_ARMY_BONUS }
+	}
+	focus = {
+		id = JAP_tanks
+		icon = GFX_focus_generic_tank_destroyer
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = JAP_MIL_DOC_FIR4
+		prerequisite = {
+			focus = JAP_MIL_DOC_FIR4
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = JAP_tanks
+				bonus = 1.5
+				uses = 2
+				category = armor
+			}
+		}
 	}
 
 	focus = {
@@ -783,11 +842,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_MIL_BIG_SHIPS"
 			add_tech_bonus = {
 				name = JAP_MIL_BIG_SHIPS
-<<<<<<< Updated upstream
-				bonus = 1.5
-=======
 				bonus = 0.5
->>>>>>> Stashed changes
 				uses = 2
 				category = bb_tech
 			}
@@ -813,13 +868,8 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_MIL_SMALL_SHIPS"
 			add_tech_bonus = {
 				name = JAP_MIL_SMALL_SHIPS
-<<<<<<< Updated upstream
-				bonus = 1.5
-				uses = 3
-=======
 				bonus = 2
 				uses = 2
->>>>>>> Stashed changes
 				category = dd_tech
 				category = cl_tech
 			}
@@ -843,13 +893,8 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_MIL_NAVBOM_FOCUS"
 			add_tech_bonus = {
-<<<<<<< Updated upstream
-				name = JAP_MIL_SUBMARINES
-				bonus = 1.5
-=======
 				name = JAP_MIL_NAVBOM_FOCUS
 				bonus = 2
->>>>>>> Stashed changes
 				uses = 1
 				category = naval_bomber
 			}
@@ -873,13 +918,8 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_MIL_CARRIER"
 			add_tech_bonus = {
-<<<<<<< Updated upstream
-				name = JAP_MIL_NAVBOM_FOCUS
-				bonus = 1.5
-=======
 				name = JAP_MIL_CARRIER
 				bonus = 0.5
->>>>>>> Stashed changes
 				uses = 1
 				category = cv_tech
 			}
@@ -957,7 +997,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		x = 3
+		x = 5
 		y = 1
 		relative_position_id = JAP_MIL_start_2
 		cost = 5
@@ -977,6 +1017,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+		mutually_exclusive = {
+			focus = JAP_MIL_HEAVY_FIGHTER_FOCUS
+		}
 		x = 0
 		y = 1
 		relative_position_id = JAP_MIL_air_start
@@ -986,12 +1029,49 @@ focus_tree = {
 			add_tech_bonus = {
 				name = JAP_MIL_FIGHTER_FOCUS
 				bonus = 1.5
-				uses = 2
+				uses = 1
 				category = light_fighter
-				category = cat_heavy_fighter
 			}
+			custom_effect_tooltip = "UNLOCKS THE FIGHTER DESIGNER"
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = JAP_MIL_HEAVY_FIGHTER_FOCUS
+		icon = GFX_goal_generic_air_fighter
+		cost = 5
+		prerequisite = {
+			focus = JAP_MIL_air_start
+		}
+		x = -2
+		y = 1
+		relative_position_id = JAP_MIL_air_start
+		mutually_exclusive = {
+			focus = JAP_MIL_FIGHTER_FOCUS
+		}
+		completion_reward = { 
+			add_tech_bonus = {
+				name = JAP_MIL_HEAVY_FIGHTER_FOCUS
+				bonus = 1.5
+				uses = 1
+				category = cat_heavy_fighter
+			}
+			custom_effect_tooltip = "UNLOCKS THE HEAVY FIGHTER DESIGNER"
+		}
+	}
+	focus = {
+		id = JAP_MIL_HEAVY_FIGHTER_2
+		icon = GFX_goal_generic_air_doctrine
+		cost = 5
+		prerequisite = {
+			focus = JAP_MIL_HEAVY_FIGHTER_FOCUS
+		}
+		relative_position_id = JAP_MIL_HEAVY_FIGHTER_FOCUS
+		x = 0
+		y = 1
+		completion_reward = { 
+		add_ideas = JAP_jap_pilot_idea_1
+		}
 	}
 
 	focus = {
@@ -1037,7 +1117,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_MIL_air_zero"
 			add_ideas = JAP_jap_fighter_idea
-			add_ideas = JAP_jap_pilot_idea_1
 
 		}
 	}
@@ -1134,5 +1213,57 @@ focus_tree = {
 	#################################
 	### Foreign - China and such  ###
 	#################################
-
+	focus = {
+		id = JAP_raj
+		icon = missing
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id = JAP_MIL_air_zero
+		mutually_exclusive = {
+			focus = JAP_sumatra
+		}
+		completion_reward = { 
+			add_timed_idea = {
+				idea = JAP_attack_raj
+				days = 30
+			}
+		}
+	}
+	focus = {
+		id = JAP_burma
+		icon = missing
+		relative_position_id = JAP_raj
+		prerequisite = {
+			focus = JAP_raj
+		}
+		cost = 2
+		x = 0
+		y = 1
+		completion_reward = { 
+			every_state = {
+				limit={OR={state = 756 state = 288 state = 72 state = 640 state = 701 state = 790 }}
+				add_dynamic_modifier = { modifier = JAP_attack days = 90 }
+			}
+			custom_effect_tooltip = "Our attention is set on Burma. -5 local entrenchment on the Burma region"
+		}
+	}
+	focus = {
+		id = JAP_sumatra
+		icon = missing
+		cost = 1
+		x = -2
+		y = 1
+		relative_position_id = JAP_MIL_air_zero
+		mutually_exclusive = {
+			focus = JAP_raj
+		}
+		completion_reward = { 
+			every_state = {
+				limit={OR={state = 1021 state = 672 }}
+				add_dynamic_modifier = { modifier = JAP_attack days = 90 }
+			}
+			custom_effect_tooltip = "Our attention is set on the island of Sumatra. -5 local entrenchment on Sumatra"
+		}
+	}
 }

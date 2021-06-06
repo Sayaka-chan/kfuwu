@@ -5,7 +5,7 @@ state = {
 	state_category = one
 	manpower = 29830
 	history = {
-		owner = GEA
+		owner = CAN
 		add_core_of = VEN
 	}
 	provinces = {

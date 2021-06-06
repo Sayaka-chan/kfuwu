@@ -49,6 +49,30 @@ JAP_war_in_the_east_category = {
 			}
 		}
 	}
+	consolidate_sumatra = {
+		icon = generic_agreement
+		allowed = {
+			tag = JAP
+		}
+		available = {
+			JAP = {
+				has_full_control_of_state = 1021
+			}
+			NOT  = {
+				has_idea = jap_asia_6
+			}
+		}
+		fire_only_once = no
+		complete_effect = {
+			add_ideas = jap_asia_6
+			USA = {
+				add_ideas = entente_asia_5
+			}
+			CAN = {
+				add_ideas = entente_asia_5
+			}
+		}
+	}
 	consolidate_east_indies = {
 		icon = generic_agreement
 		allowed = {

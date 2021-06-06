@@ -86,6 +86,21 @@ ideas = {
 				industrial_capacity_factory = 0.025
 			}
 		}
+		jap_asia_6 = {
+			allowed = {
+				always = no
+			}
+			cancel = {
+				JAP = {
+					NOT = {
+						has_full_control_of_state = 1021
+					}
+				}
+			}
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
 		entente_asia_1 = {
 			allowed = {
 				always = no
@@ -148,6 +163,21 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				industrial_capacity_factory = -0.025
+			}
+		}
+		entente_asia_5 = {
+			allowed = {
+				always = no
+			}
+			cancel = {
+				JAP = {
+					NOT = {
+						has_full_control_of_state = 1021
+					}
+				}
+			}
+			modifier = {
+				industrial_capacity_factory = -0.05
 			}
 		}
 		asia_focus = {

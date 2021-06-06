@@ -2756,12 +2756,6 @@ country_event = {
 		NOT = {
 			has_completed_focus = AST_labour_resolved
 		}
-		NOT = {
-			has_country_flag = AST_nzl_crisis_happened
-		}
-		NOT = {
-			has_country_flag = AST_nzl_new_guard_coup
-		}
 	}
 
 	mean_time_to_happen = {
@@ -2779,8 +2773,6 @@ country_event = {
 			factor = 60
 		}
 		set_country_flag = AST_uprising_crushed
-		add_political_power = -500
-		add_stability = -0.10
 
 		hidden_effect = {
 			random_other_country = {
@@ -2789,74 +2781,6 @@ country_event = {
 				}
 				news_event = {
 					id = worldnews.129
-					days = 1
-				}
-			}
-		}
-	}
-	option = {
-		name = austral.85.b #The uprising succeeds - we have utterly failed...
-		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 2
-				OR = {
-					is_subject = yes
-					NOT = {
-						controls_all_owned_states = yes
-					}
-				}
-			}
-			modifier = {
-				factor = 2
-				syndicalist > 0.20
-			}
-			modifier = {
-				factor = 1.5
-				syndicalist > 0.30
-			}
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					rule = AST_path
-					option = AST_path_monarchist
-				}
-			}
-		}
-		set_country_flag = AST_uprising_succeeded
-		set_country_flag = AST_labor_has_split
-		add_political_power = -250
-		add_stability = -0.10
-		set_politics = {
-			ruling_party = syndicalist
-			elections_allowed = no
-		}
-		leave_faction = yes
-		separate_peace_all_wars = yes
-		hidden_effect = {
-			remove_all_ministers = yes
-			create_country_leader = {
-				name = "John Curtin"
-				desc = "POLITICS_JOHN_CURTAIN_DESC"
-				picture = "Portrait_AST_John_Curtin.tga"
-				expire = "1965.1.1"
-				ideology = syndicalist_subtype
-			}
-			AST_become_republic = yes
-			AST_enact_syndicalist_trade = yes
-			add_ideas = {
-				AST_John_J_Curtin_hog_sde
-				AST_Elsie_V_Farrelly_for_syn
-				AST_Patrick_L_Troy_eco_syn
-				AST_Donald_J_Cameron_sec_rso
-			}
-
-			random_other_country = {
-				limit = {
-					is_ai = yes
-				}
-				news_event = {
-					id = worldnews.128
 					days = 1
 				}
 			}
@@ -3002,7 +2926,6 @@ country_event = {
 		hidden_effect = {
 			remove_ideas_with_trait = head_of_government
 			add_ideas = {
-				AST_William_M_Hughes_hog_ade
 			}
 
 			random_other_country = {
@@ -3032,11 +2955,9 @@ country_event = {
 	option = {
 		name = austral.85.a #Crush the uprising - there will be no mercy!
 		ai_chance = {
-			factor = 60
+			factor = 100
 		}
 		set_country_flag = AST_uprising_crushed
-		add_political_power = -500
-		add_stability = -0.10
 
 		hidden_effect = {
 			random_other_country = {
@@ -3045,74 +2966,6 @@ country_event = {
 				}
 				news_event = {
 					id = worldnews.129
-					days = 1
-				}
-			}
-		}
-	}
-	option = {
-		name = austral.85.b #The uprising succeeds - we have utterly failed...
-		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 2
-				OR = {
-					is_subject = yes
-					NOT = {
-						controls_all_owned_states = yes
-					}
-				}
-			}
-			modifier = {
-				factor = 2
-				syndicalist > 0.20
-			}
-			modifier = {
-				factor = 1.5
-				syndicalist > 0.30
-			}
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					rule = AST_path
-					option = AST_path_monarchist
-				}
-			}
-		}
-		set_country_flag = AST_uprising_succeeded
-		set_country_flag = AST_labor_has_split
-		add_political_power = -250
-		add_stability = -0.10
-		set_politics = {
-			ruling_party = syndicalist
-			elections_allowed = no
-		}
-		leave_faction = yes
-		separate_peace_all_wars = yes
-		hidden_effect = {
-			remove_all_ministers = yes
-			create_country_leader = {
-				name = "John Curtin"
-				desc = "POLITICS_JOHN_CURTAIN_DESC"
-				picture = "Portrait_AST_John_Curtin.tga"
-				expire = "1965.1.1"
-				ideology = syndicalist_subtype
-			}
-			AST_become_republic = yes
-			AST_enact_syndicalist_trade = yes
-			add_ideas = {
-				AST_John_J_Curtin_hog_sde
-				AST_Elsie_V_Farrelly_for_syn
-				AST_Patrick_L_Troy_eco_syn
-				AST_Donald_J_Cameron_sec_rso
-			}
-
-			random_other_country = {
-				limit = {
-					is_ai = yes
-				}
-				news_event = {
-					id = worldnews.128
 					days = 1
 				}
 			}

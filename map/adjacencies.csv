@@ -220,7 +220,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 6661;3662;impassable;-1;-1;-1;-1;-1;;Alps
 11587;3662;impassable;-1;-1;-1;-1;-1;;Alps
 11587;3660;impassable;-1;-1;-1;-1;-1;;Alps
-11587;6675;impassable;-1;-1;-1;-1;-1;;Alps
 3660;6678;impassable;-1;-1;-1;-1;-1;;Alps
 3660;6680;impassable;-1;-1;-1;-1;-1;;Alps
 9618;9620;impassable;-1;-1;-1;-1;-1;;Alps

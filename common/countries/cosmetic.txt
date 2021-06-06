@@ -182,6 +182,10 @@ USA_america_51 = {
 	color = rgb { 20 133 237 }
 	color_ui = rgb { 87 160 255 }
 }
+USA_authoritarian_democrat = {
+	color = rgb { 20 133 237 }
+	color_ui = rgb { 87 160 255 }
+}
 
 NEE_america = {
 	color = rgb { 20 133 237 }

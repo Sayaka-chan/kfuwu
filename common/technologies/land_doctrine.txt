@@ -986,7 +986,7 @@ technologies = {
 		xp_research_bonus = 1.00
 		category_support_battalions = {
 			max_organisation = 10
-			soft_attack = 0.25
+			soft_attack = 0.15
 		}
 
 		path = {
@@ -1031,7 +1031,7 @@ technologies = {
 		xp_research_bonus = 1.00
 		category_support_battalions = {
 			max_organisation = 10
-			soft_attack = 0.25
+			soft_attack = 0.15
 		}
 
 		path = {
@@ -1594,7 +1594,7 @@ technologies = {
 
 		xor = { mobile_warfare superior_firepower mass_assault }
 
-		max_dig_in = 7
+		max_dig_in = 10
 		dig_in_speed_factor = 0.25 #25% bonus
 
 		on_research_complete = {
@@ -1735,7 +1735,7 @@ technologies = {
 		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		category_army = {
-			max_organisation = 7
+			max_organisation = 10
 		}
 		max_planning = 0.1
 		enable_tactic = tactic_planned_attack
@@ -1783,8 +1783,8 @@ technologies = {
 		xp_research_type = army
 		xp_research_cost = 75
 		xp_research_bonus = 1.00
-		max_planning = 0.10
-		#terrain_penalty_reduction = 0.1
+		max_planning = 0.15
+		terrain_penalty_reduction = 0.1
 
 		path = {
 			leads_to_tech = grand_mechanized_offensive
@@ -2874,6 +2874,9 @@ technologies = {
 		infantry = {
 			need = {infantry_equipment= -20}
 		}
+		militia = {
+			need = {infantry_equipment= -10}
+		}
 		artillery_brigade={
 			need = {
 				artillery_equipment = -7
@@ -2890,7 +2893,7 @@ technologies = {
 			}
 		}
 		on_research_complete = {
-			custom_effect_tooltip = "Each Infantry/Artillery/Anti-Tank and Anti-Air Batallion requires 20% less Equipment"
+			custom_effect_tooltip = "Each Infantry/Militia/Artillery/Anti-Tank and Anti-Air Batallion requires 20% less Equipment"
 
 		}
 

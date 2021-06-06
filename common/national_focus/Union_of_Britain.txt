@@ -2149,9 +2149,9 @@ focus_tree = {
 		icon = missing
 		cost = 0
 		available = {
-			ENG = { surrender_progress > 0.5
-		 }
+			ENG = { has_capitulated = yes }
 		}
+		available_if_capitulated = yes
 		x = 19
 		y = 4
 		completion_reward = {
@@ -2183,6 +2183,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_exile
 		}
+		available_if_capitulated = yes
 		cost = 2
 		x = 0
 		y = 1
@@ -2197,6 +2198,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_manpower
 		}
+		available_if_capitulated = yes
 		cost = 5
 		x = -2
 		y = 1
@@ -2214,6 +2216,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_manpower
 		}
+		available_if_capitulated = yes
 		cost = 5
 		x = 2
 		y = 1
@@ -2247,6 +2250,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_manpower
 		}
+		available_if_capitulated = yes
 		cost = 5
 		x = 0
 		y = 1
@@ -2268,6 +2272,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_factories
 		}
+		available_if_capitulated = yes
 		cost = 5
 		x = 0
 		y = 1
@@ -2302,6 +2307,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_resources
 		}
+		available_if_capitulated = yes
 		cost = 5
 		x = 0
 		y = 1

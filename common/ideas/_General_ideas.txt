@@ -448,6 +448,9 @@ ideas = {
 
 			allowed_to_remove = {
 				NOT = {
+					tag = JAP
+				}
+				NOT = {
 					tag = RUS
 				}
 			}

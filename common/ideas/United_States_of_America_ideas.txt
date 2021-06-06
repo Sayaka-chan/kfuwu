@@ -97,6 +97,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			picture = rubber
 			cancel = {
 				JAP = {
 					has_completed_focus = JAP_go_south
@@ -1586,6 +1587,10 @@ ideas = {
 					reliability = 0.10
 					ap_attack = 0.1
 					armor_value = -0.10
+				}
+				modern_tank_equipment = {
+					soft_attack = 0.10
+					hard_attack = 0.10
 				}
 			}
 			research_bonus = {

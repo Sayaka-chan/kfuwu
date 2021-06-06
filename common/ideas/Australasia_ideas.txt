@@ -314,7 +314,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_research_bonus
 			modifier = {
-				research_speed_factor = 0.04
+				research_speed_factor = 0.025
 			}
 		}
 		AST_research_council_2 = {
@@ -324,7 +324,7 @@ ideas = {
 			picture = generic_research_bonus
 			modifier = {
 				production_factory_max_efficiency_factor = 0.05
-				research_speed_factor = 0.06
+				research_speed_factor = 0.05
 			}
 		}
 		AST_research_council_3 = {
@@ -333,7 +333,8 @@ ideas = {
 			removal_cost = -1
 			picture = generic_research_bonus
 			modifier = {
-				research_speed_factor = 0.08
+				research_speed_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
 			}
 		}
 		AST_pacific_navy_idea = {

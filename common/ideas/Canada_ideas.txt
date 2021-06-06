@@ -1286,7 +1286,7 @@ ideas = {
 			visible = { NOT = { country_exists = GBR } }
 			traits = { }
 			equipment_bonus = {
-				modern_tank_equipment_1 = {
+				modern_tank_equipment = {
 					soft_attack = 0.1
 					hard_attack = 0.1
 				}

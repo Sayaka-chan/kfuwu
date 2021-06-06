@@ -31,6 +31,8 @@ set_technology = {
 	desertinfantry_at = 1
 	marines = 1
 	tech_mountaineers = 1
+	motorised_infantry = 1
+	interwar_antitank = 1
 }
 add_offsite_building = {
 	type = arms_factory

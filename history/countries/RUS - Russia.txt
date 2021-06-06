@@ -319,7 +319,7 @@ create_corps_commander = {
 		trait_engineer
 		ranger
 	}
-	skill = 5
+	skill = 6
 	attack_skill = 4
 	defense_skill = 3
 	planning_skill = 3
@@ -383,7 +383,7 @@ create_field_marshal = {
 		panzer_leader
 		organizer
 	}
-	skill = 5
+	skill = 6
 	attack_skill = 5
 	defense_skill = 4
 	planning_skill = 5
