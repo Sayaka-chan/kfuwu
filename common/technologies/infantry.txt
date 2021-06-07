@@ -984,7 +984,8 @@ technologies = {
 			jaeger
 		}
 
-		on_research_complete_limit  = {
+		on_research_complete = {
+			if = {
 			limit = {
 				NOT = {
 					has_template_containing_unit = jaeger
@@ -994,6 +995,7 @@ technologies = {
 				load_oob = "unlock_jaegers"
 			}
 			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+			}
 		}
 
 		path = {
@@ -1074,8 +1076,9 @@ technologies = {
 			jungletroop
 		}
 
-		on_research_complete_limit  = {
-			limit = {
+		on_research_complete = {
+			if = {
+				limit = {
 				NOT = {
 					has_template_containing_unit = jungletroop
 				}
@@ -1084,6 +1087,7 @@ technologies = {
 				load_oob = "unlock_jungletroops"
 			}
 			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+			}
 		}
 
 		path = {
@@ -1163,8 +1167,9 @@ technologies = {
 			shocktroop
 		}
 
-		on_research_complete_limit  = {
-			limit = {
+		on_research_complete = {
+			if = {
+				limit = {
 				NOT = {
 					has_template_containing_unit = shocktroop
 				}
@@ -1173,6 +1178,7 @@ technologies = {
 				load_oob = "unlock_shocktroop"
 			}
 			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+			}
 		}
 
 		path = {
@@ -1253,7 +1259,8 @@ technologies = {
 		}
 
 		on_research_complete = {
-			limit = {
+			if = {
+				limit = {
 				NOT = {
 					has_template_containing_unit = desertinfantry
 				}
@@ -1262,6 +1269,7 @@ technologies = {
 				load_oob = "unlock_desertinfantry"
 			}
 			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+			}
 		}
 
 		path = {

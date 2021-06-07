@@ -10,11 +10,6 @@ technologies = {
 		}
 
 		on_research_complete = {
-			on_research_complete_limit = {
-				NOT = {	has_template_containing_unit = light_armor }
-				NOT = {	has_template_containing_unit = heavy_armor }
-				NOT = {	has_template_containing_unit = medium_armor }
-			}
 			hidden_effect = {
 				if = {
 					limit = {
@@ -92,11 +87,6 @@ technologies = {
 		}
 
 		on_research_complete = {
-			on_research_complete_limit = {
-				NOT = {	has_template_containing_unit = light_armor }
-				NOT = {	has_template_containing_unit = heavy_armor }
-				NOT = {	has_template_containing_unit = medium_armor }
-			}
 			hidden_effect = {
 				if = {
 					limit = {
@@ -184,7 +174,6 @@ technologies = {
 				factor = 100
 				OR = {
 					tag = GER
-					tag = SOV
 				}
 				has_war = yes
 				any_enemy_country = {
@@ -339,10 +328,6 @@ technologies = {
 				has_war = yes
 				factor = 10 #you are embarassing yourself
 			}
-			modifier = {
-				tag = SOV
-				factor = 3
-			}
 			
 			modifier = {
 				factor = 1.1
@@ -382,7 +367,6 @@ technologies = {
 				factor = 120
 				OR = {
 					#tag = GER
-					tag = SOV
 				}
 				has_war = yes
 				any_enemy_country = {
@@ -1190,7 +1174,6 @@ technologies = {
 				factor = 160
 				OR = {
 					tag = GER
-					tag = SOV
 				}
 				any_enemy_country = {
 					ROOT = {
@@ -1465,11 +1448,6 @@ technologies = {
 		}
 
 		on_research_complete = {
-			on_research_complete_limit = {
-				NOT = {	has_template_containing_unit = light_armor }
-				NOT = {	has_template_containing_unit = heavy_armor }
-				NOT = {	has_template_containing_unit = medium_armor }
-			}
 			hidden_effect = {
 				if = {
 					limit = {

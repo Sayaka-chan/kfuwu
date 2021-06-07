@@ -14,3 +14,11 @@ soundeffect = {
 	volume = 1
 	
 }
+soundeffect = {
+	name = "entente"
+	sounds = {
+		sound = entente
+	}
+	volume = 1
+	
+}

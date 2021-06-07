@@ -1938,3 +1938,7 @@ CAN_empire_raj2:0 "Send construction engineers to the Dominion of India"
 CAN_empire_raj3:0 "Mobilize the Indian economy"
 
 CAN_UK:0 "Liberation day"
+canada.ww2:0 "Entente attacks the Third Internationale"
+canada.ww2.t:0 "Entente attacks the Third Internationale"
+canada.ww2.d:0 "The date has finally come, the date when the Birthright will be reclaimed and Europe Liberated. By the thousand's Anglo-American troops prepare for the Liberation of Britain. Exiles eager to see their homes once again. The Entente is however far from reclaiming their lost homes...the Atlantic shall cry first. God save the King, God help the Entente."
+canada.ww2.a:0 "Germany's salvation is here."

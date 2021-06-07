@@ -32,10 +32,6 @@ technologies = {
 			air_equipment
 		}
 		
-		sub_technologies = {
-			cv_early_fighter
-		}
-		
 		ai_will_do = {
 			factor = 1
 			
