@@ -7004,4 +7004,32 @@ spriteTypes = {
 		name = "GFX_USA_reform_plan"
 		texturefile = "gfx/interface/goals/USA_triumvirate.dds"
 	}
-}
+	spriteType = {
+	name = "GFX_JAP_zaibatsu_plan"
+	texturefile = "gfx/interface/goals/focus_JAP_zaibatsu.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_bomb_icon"
+		texturefile = "gfx/interface/goals/!DC_r56_goal_JAP_bomber.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_Yen_icon"
+		texturefile = "gfx/interface/goals/!LW_JAP_yen.tga"
+	}
+	spriteType = {
+		name = "GFX_JAP_Army_dom"
+		texturefile = "gfx/interface/goals/!DC_r56_goal_JAP_defence.dds"
+    }
+	spriteType = {
+		name = "GFX_JAP_Navy_tide"
+		texturefile = "gfx/interface/goals/!DC_r56_goal_JAP_tides.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_RAJ"
+		texturefile = "gfx/interface/goals/!DC_r56_goal_JAP_army_expansion.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_sumatra"
+		texturefile = "gfx/interface/goals/!DC_r56_goal_JAP__naval_aviation.dds"
+	}
+	
