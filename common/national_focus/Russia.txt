@@ -533,7 +533,7 @@ focus_tree = {
 
 	focus = {
 		id = RUS_peoples_commissariat
-		icon = GFX_goal_SOV_belarus
+		icon = GFX_RUS_commissar
 		cost = 5
 		prerequisite = {
 			focus = RUS_Research_Slot
@@ -578,8 +578,7 @@ focus_tree = {
 
 	focus = {
 		id = RUS_production_effort
-		text = production_effort
-		icon = GFX_Soviet_War_Economy
+		icon = GFX_RUS_production_effort
 		cost = 5
 		prerequisite = {
 			focus = RUS_Research_Slot
@@ -1036,12 +1035,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus RUS_VVSR"
-			add_tech_bonus = {
-				name = RUS_VVSR
-				bonus = 1
-				uses = 12
-				category = air_doctrine
-			}
+
 			random_owned_controlled_state = {
 				limit = {
 					state_population > 500000

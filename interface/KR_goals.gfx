@@ -7032,4 +7032,11 @@ spriteTypes = {
 		name = "GFX_JAP_sumatra"
 		texturefile = "gfx/interface/goals/!DC_r56_goal_JAP__naval_aviation.dds"
 	}
-	
+	spriteType = {
+		name = "GFX_RUS_commissar"
+		texturefile = "gfx/interface/goals/!RE RUS_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_production_effort"
+		texturefile = "gfx/interface/goals/!RE RUS_Production_effort.dds"
+	}
