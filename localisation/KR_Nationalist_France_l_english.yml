@@ -990,3 +990,6 @@ MRT_trab_al_baydan_paternal_autocrat_DEF:0 "Trab-Al-Baydan"
 MRT_trab_al_baydan_national_populist:0 "Trab-Al-Baydan"
 MRT_trab_al_baydan_national_populist_ADJ:0 "Mauritanian"
 MRT_trab_al_baydan_national_populist_DEF:0 "Trab-Al-Baydan"
+
+NFA_more_military_factories:0 "Tunisian War Industry"
+NFA_tank_research2:0 "Modern Armor"

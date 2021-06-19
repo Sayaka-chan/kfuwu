@@ -48,9 +48,12 @@ focus_tree = {
 		icon = GFX_goal_generic_positive_trade_relations
 		prerequisite = { focus = DEH_Industry1_focus }
 		available = {
+			OR = {
 			custom_trigger_tooltip = {
 				tooltip = DEH_1936_election
 				has_country_flag = DEH_1936_election_held
+				}
+			date > 1936.2.10
 			}
 		}
 		relative_position_id = DEH_Industry1_focus
@@ -68,7 +71,16 @@ focus_tree = {
 				name = DEH_economyreform1
 				bonus = 1
 				uses = 2
-				category = industry
+				technology = advanced_machine_tools
+				technology = flexible_line
+				technology = assembly_line_production
+				technology = streamlined_line
+				technology = concentrated_industry3
+				technology = concentrated_industry4
+				technology = concentrated_industry5
+				technology = dispersed_industry3
+				technology = dispersed_industry4
+				technology = dispersed_industry5
 			}
 			country_event = delhi.11
 		}

@@ -831,13 +831,91 @@ country_event = {
 	option = {
 		name = uob.401.a
 		ai_chance = {
-			factor = 50
+			factor = 100
 		}
 		hidden_effect = {
-			news_event = { id = uob.26 days = 1 }
+			ENG = {
+				news_event = { id = uob.26 days = 1 }
+			}
+			CAN = {
+				news_event = { id = uob.26 days = 1 }
+			}
+			FRA = {
+				news_event = { id = uob.26 days = 1 }
+			}
+			USA = {
+				news_event = { id = uob.26 days = 1 }
+			}
+			GER = {
+				news_event = { id = uob.26 days = 1 }
+			}
+			SRI = {
+				news_event = { id = uob.26 days = 1 }
+			}
+			JAP = {
+				news_event = { id = uob.26 days = 1 }
+			}
+			AUS = {
+				news_event = { id = uob.26 days = 1 }
+			}
+			AST = {
+				news_event = { id = uob.26 days = 1 }
+			}
+			DEH = {
+				news_event = { id = uob.26 days = 1 }
+			}
+			OTT = {
+				news_event = { id = uob.26 days = 1 }
+			}
+			UKR = {
+				news_event = { id = uob.26 days = 1 }
+			}
+			NFA = {
+				news_event = { id = uob.26 days = 1 }
+			}
+			RUS = {
+				news_event = { id = uob.26 days = 1 }
+			}
 		}
 	}
 }
+country_event = {
+	id = uob.402
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event uob.402"
+	}
+	title = uob.402.t
+	desc = uob.402.d
+	is_triggered_only = yes
+	trigger = {
+		ENG = { exists = yes }
+	}
+	option = {
+		name = uob.402.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = uob.403
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event uob.403"
+	}
+	title = uob.403.t
+	desc = uob.403.d
+	is_triggered_only = yes
+	trigger = {
+		ENG = { exists = yes }
+	}
+	option = {
+		name = uob.403.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
 news_event = { # Royal Navy on the Atlantic
 	id = uob.26
 	immediate = { log = "[GetDateText]: [Root.GetName]: event uob.26" }

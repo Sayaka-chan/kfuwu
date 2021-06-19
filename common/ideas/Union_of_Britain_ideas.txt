@@ -1,6 +1,17 @@
 ideas = {
 	country = {
 		# Start
+		ENG_navy = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				naval_speed_factor = 0.1
+				naval_retreat_speed = 0.15
+			}
+			removal_cost = -1
+			picture = generic_navy_bonus
+		}
 		ENG_militia_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ENG_militia_idea"}
 			allowed = {

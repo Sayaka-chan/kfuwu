@@ -1,6 +1,7 @@
 
 CAN_returning_home_decisions = {
 	icon = GFX_decision_cat_homeisles
+	picture = GFX_CAN_returning_home_decisions
 	priority = 40
 	allowed = { tag = CAN }
 }

@@ -572,7 +572,12 @@ focus_tree = {
 				name = OTT_economic_initiative
 				bonus = 1
 				uses = 1
-				category = concentrated_industry_tech
+				technology = concentrated_industry3
+				technology = concentrated_industry4
+				technology = concentrated_industry5
+				technology = dispersed_industry3
+				technology = dispersed_industry4
+				technology = dispersed_industry5
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -661,12 +666,6 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus OTT_industrial_investments"
-			add_tech_bonus = {
-				name = OTT_industrial_investments
-				bonus = 1
-				uses = 1
-				category = industry
-			}
 			random_owned_state = {
 				limit = {
 					state_population > 500000
@@ -692,6 +691,21 @@ focus_tree = {
 				bonus = 1
 				uses = 1
 				category = construction_tech
+			}
+			add_tech_bonus = {
+				name = OTT_industrial_investments
+				bonus = 1
+				uses = 1
+				technology = advanced_machine_tools
+				technology = flexible_line
+				technology = assembly_line_production
+				technology = streamlined_line
+				technology = concentrated_industry3
+				technology = concentrated_industry4
+				technology = concentrated_industry5
+				technology = dispersed_industry3
+				technology = dispersed_industry4
+				technology = dispersed_industry5
 			}
 			random_owned_state = {
 				limit = {

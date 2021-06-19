@@ -345,4 +345,8 @@ spriteTypes = {
 		name = "GFX_decision_ban_iron_front"
 		texturefile = "gfx/interface/decisions/decision_ban_iron_front.tga"
 	}
+	spriteType = {
+		name = "GFX_CAN_returning_home_decisions"
+		texturefile = "gfx/interface/decisions/decision_cat_can_national_defense.dds"
+	}
 }

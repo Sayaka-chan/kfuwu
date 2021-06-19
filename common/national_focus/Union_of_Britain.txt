@@ -248,12 +248,6 @@ focus_tree = {
 		id = ENG_local_talent
 		icon = GFX_ENG_local_talent
 		cost = 5
-		available = {
-			OR = {
-				has_country_flag = ENG_tuc_economy_glais
-				has_country_flag = ENG_tuc_economy_fem
-			}
-		}
 		mutually_exclusive = {
 			focus = ENG_central_industry_research
 		}
@@ -272,7 +266,9 @@ focus_tree = {
 				name = ENG_local_talent
 				bonus = 1
 				uses = 1
-				category = dispersed_industry_tech
+				technology = dispersed_industry3
+				technology = dispersed_industry4
+				technology = dispersed_industry5
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -298,7 +294,13 @@ focus_tree = {
 				name = ENG_local_help
 				bonus = 1
 				uses = 1
-				category = industry
+				technology = flexible_line
+				technology = assembly_line_production
+				technology = streamlined_line
+				technology = concentrated_industry4
+				technology = concentrated_industry5
+				technology = dispersed_industry4
+				technology = dispersed_industry5
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
@@ -331,12 +333,6 @@ focus_tree = {
 		id = ENG_central_industry_research
 		icon = GFX_ENG_central_industry_research
 		cost = 5
-		available = {
-			OR = {
-				has_country_flag = ENG_tuc_economy_fem
-				has_country_flag = ENG_tuc_economy_mosley
-			}
-		}
 		mutually_exclusive = {
 			focus = ENG_local_talent
 		}
@@ -355,7 +351,9 @@ focus_tree = {
 				name = ENG_central_industry_research
 				bonus = 1
 				uses = 1
-				category = concentrated_industry_tech
+				technology = concentrated_industry3
+				technology = concentrated_industry4
+				technology = concentrated_industry5
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -381,7 +379,13 @@ focus_tree = {
 				name = ENG_local_help
 				bonus = 1
 				uses = 1
-				category = industry
+				technology = flexible_line
+				technology = assembly_line_production
+				technology = streamlined_line
+				technology = concentrated_industry4
+				technology = concentrated_industry5
+				technology = dispersed_industry4
+				technology = dispersed_industry5
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -1230,18 +1234,22 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 	focus = {
-		id = ENG_Atlantic_Wall
-		icon = missing
-		cost = 10
+		id = ENG_Atlantic
+		icon = GFX_USA_expand_dockyards
+		cost = 5
 		prerequisite = {
 			focus = ENG_battleships
 			focus = ENG_battlecruisers
 		}
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = ENG_battleships
 		completion_reward = { 
 			log = "[GetDateText]: [Root.GetName]: Focus ENG_Atlantic_Wall"
+			add_timed_idea = {
+				idea = ENG_navy
+				days = 90
+			}
 			}
 		}
 

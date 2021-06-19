@@ -5326,6 +5326,7 @@ news_event = {
 	title = canada.ww2.t
 	desc = canada.ww2.d
 	picture = GFX_report_event_british_inspect_troops
+	is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
 			sound_effect = entente

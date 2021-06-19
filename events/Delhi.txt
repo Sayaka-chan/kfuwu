@@ -130,9 +130,6 @@ country_event = {
 			picture = "chamberofprinces.tga"
 			expire = "1965.1.1"
 			ideology = social_conservative_subtype
-			traits = {
-				chamberofprinces
-			}
 		}
 	}
 }

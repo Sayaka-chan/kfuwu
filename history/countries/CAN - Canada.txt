@@ -148,7 +148,8 @@ set_variable = { CAN_conservative_support = 0 }
 set_variable = { CAN_liberal_support = 0 }
 
 country_event = { id = canada.1 days = 1 } #Intro event
-country_event = { id = uob.401 days = 730 }
+country_event = { id = uob.402 days = 401 }
+country_event = { id = uob.401 days = 731 }
 
 set_war_support = 0.4
 

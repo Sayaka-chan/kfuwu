@@ -461,7 +461,13 @@ focus_tree = {
 				name = FRA_work_design_coop
 				bonus = 1
 				uses = 1
-				category = industry
+				technology = flexible_line
+				technology = assembly_line_production
+				technology = streamlined_line
+				technology = concentrated_industry4
+				technology = concentrated_industry5
+				technology = dispersed_industry4
+				technology = dispersed_industry5
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -1104,7 +1110,16 @@ focus_tree = {
 				name = FRA_military_buildup
 				bonus = 1
 				uses = 2
-				category = industry
+				technology = advanced_machine_tools
+				technology = flexible_line
+				technology = assembly_line_production
+				technology = streamlined_line
+				technology = concentrated_industry3
+				technology = concentrated_industry4
+				technology = concentrated_industry5
+				technology = dispersed_industry3
+				technology = dispersed_industry4
+				technology = dispersed_industry5
 			}
 			random_owned_state = {
 				limit = {
@@ -1794,7 +1809,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_fast_army
-		icon = GFX_EGY_Operation_Abu
+		icon = GFX_goal_FRA_fast_army
 		x = 2
 		y = 1
 		relative_position_id = FRA_principe_concentration

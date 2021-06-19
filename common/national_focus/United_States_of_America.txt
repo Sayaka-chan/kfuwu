@@ -2620,7 +2620,7 @@ focus = {# Naval Bomber
 	}
 	relative_position_id = USA_carriers
 	x = 0
-	y = 2
+	y = 3
 	ai_will_do = {
 		factor = 1
 		modifier = {

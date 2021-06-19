@@ -24,7 +24,10 @@ focus_tree = {
 		y = 0
 
 		available = {
-			has_global_flag = CAN_king_edward_VIII
+			OR = {
+				date > 1936.1.21
+				has_global_flag = CAN_king_edward_VIII
+			}
 		}
 
 		ai_will_do = {
@@ -1494,8 +1497,11 @@ focus_tree = {
 				name = CAN_we_need_industry
 				bonus = 1
 				uses = 2
-				category = efficiency_tech
-				category = concentrated_industry_tech
+				technology = flexible_line
+				technology = assembly_line_production
+				technology = streamlined_line
+				technology = concentrated_industry4
+				technology = concentrated_industry5
 			}
 
 			random_owned_state = {

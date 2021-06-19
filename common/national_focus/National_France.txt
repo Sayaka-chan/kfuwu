@@ -287,7 +287,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = NFA_restore_constitution
-		cost = 8
+		cost = 5
 		ai_will_do = {
 			factor = 4
 		}
@@ -562,7 +562,7 @@ focus_tree = {
 
 	focus = {
 		id = NFA_strenghthened_governement
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_NFA_strenghthened_governement
 		prerequisite = {
 			focus = NFA_monarch_prestige
 			focus = NFA_extended_suffrage
@@ -694,7 +694,16 @@ focus_tree = {
 				name = NFA_industrial_revival
 				bonus = 1
 				uses = 2
-				category = industry
+				technology = advanced_machine_tools
+				technology = flexible_line
+				technology = assembly_line_production
+				technology = streamlined_line
+				technology = concentrated_industry3
+				technology = concentrated_industry4
+				technology = concentrated_industry5
+				technology = dispersed_industry3
+				technology = dispersed_industry4
+				technology = dispersed_industry5
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -702,7 +711,7 @@ focus_tree = {
 
 	focus = {
 		id = NFA_develop_ALG
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_goal_NFA_develop_ALG
 		available = {
 			controls_state = 459
 		}
@@ -712,7 +721,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = NFA_industrial_revival
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1061,7 +1070,7 @@ focus_tree = {
 		x = 3
 		y = 3
 		relative_position_id = NFA_industrial_revival
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1489,7 +1498,7 @@ focus_tree = {
 
 	focus = {
 		id = NFA_military_preparation
-		icon = GFX_goal_generic_join_faction
+		icon = GFX_goal_NFA_military_preparation
 		prerequisite = {
 			focus = NFA_DeGaulle_focus
 		}
@@ -1614,7 +1623,7 @@ focus_tree = {
 
 	focus = {
 		id = NFA_tank_research2
-		icon = GFX_goal_generic_army_tanks
+		icon = GFX_focus_ger_heavy_tanks
 		x = 0
 		y = 1
 		relative_position_id = NFA_tank_research

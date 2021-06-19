@@ -24,7 +24,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_political_1
-		icon = missing
+		icon = GFX_goal_GER_political_1
 		prerequisite = {}
 		x = 4
 		y = 0
@@ -215,7 +215,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_restore_country_rights
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_GER_restore_country_rights
 		prerequisite = {
 			focus = GER_democracy_in_prussia
 		}
@@ -559,7 +559,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_economy
-		icon = missing
+		icon = GFX_goal_GER_economy
 		x = 20
 		y = 0
 		cost = 5
@@ -596,7 +596,16 @@ focus_tree = {
 				name = GER_experimental_research
 				bonus = 1
 				uses = 2
-				category = industry
+				technology = advanced_machine_tools
+				technology = flexible_line
+				technology = assembly_line_production
+				technology = streamlined_line
+				technology = concentrated_industry3
+				technology = concentrated_industry4
+				technology = concentrated_industry5
+				technology = dispersed_industry3
+				technology = dispersed_industry4
+				technology = dispersed_industry5
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -1556,7 +1565,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_doctrine_armor
-		icon = GFX_focus_ger_heavy_tanks
+		icon = GFX_goal_GER_doctrine_armor
 		prerequisite = {
 			focus = GER_doctrine_mobile_2
 		}
@@ -1801,7 +1810,7 @@ focus_tree = {
 
 	focus = {# Controlling the Air
 		id = GER_air1
-		icon = GFX_focus_generic_eagle
+		icon = GFX_goal_GER_air1
 		available = {
 			date > 1938.6.1
 		}
@@ -1982,7 +1991,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_generic_navy1
-		icon = GFX_goal_generic_construct_military
+		icon = GFX_goal_GER_generic_navy1
 		prerequisite = {
 			focus = GER_north_sea1
 		}
@@ -2523,7 +2532,7 @@ focus_tree = {
 	
 	focus = {
 	    id = GER_naval_revival
-		icon = GFX_goal_battleship
+		icon = GFX_goal_GER_naval_revival
 		prerequisite = {
 			focus = GER_tirpitzprogramm
 		}

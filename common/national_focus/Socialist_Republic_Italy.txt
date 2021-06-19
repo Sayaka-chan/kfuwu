@@ -521,7 +521,16 @@ focus_tree = {
 				name = SRI_assess_the_economy
 				bonus = 1
 				uses = 1
-				category = industry
+				technology = advanced_machine_tools
+				technology = flexible_line
+				technology = assembly_line_production
+				technology = streamlined_line
+				technology = concentrated_industry3
+				technology = concentrated_industry4
+				technology = concentrated_industry5
+				technology = dispersed_industry3
+				technology = dispersed_industry4
+				technology = dispersed_industry5
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -573,7 +582,16 @@ focus_tree = {
 				name = SRI_industry_program
 				bonus = 1
 				uses = 1
-				category = industry
+				technology = advanced_machine_tools
+				technology = flexible_line
+				technology = assembly_line_production
+				technology = streamlined_line
+				technology = concentrated_industry3
+				technology = concentrated_industry4
+				technology = concentrated_industry5
+				technology = dispersed_industry3
+				technology = dispersed_industry4
+				technology = dispersed_industry5
 			}
 			unlock_decision_tooltip = SRI_civ_in_piedmont
 			unlock_decision_tooltip = SRI_civ_in_liguria
@@ -740,7 +758,16 @@ focus_tree = {
 				name = SRI_assess_the_economy
 				bonus = 1
 				uses = 1
-				category = industry
+				technology = advanced_machine_tools
+				technology = flexible_line
+				technology = assembly_line_production
+				technology = streamlined_line
+				technology = concentrated_industry3
+				technology = concentrated_industry4
+				technology = concentrated_industry5
+				technology = dispersed_industry3
+				technology = dispersed_industry4
+				technology = dispersed_industry5
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -769,9 +796,16 @@ focus_tree = {
 				name = SRI_focus_on_civilian
 				bonus = 1
 				uses = 1
-				category = efficiency_tech
-				category = concentrated_industry_tech
-				category = dispersed_industry_tech
+				technology = advanced_machine_tools
+				technology = flexible_line
+				technology = assembly_line_production
+				technology = streamlined_line
+				technology = concentrated_industry3
+				technology = concentrated_industry4
+				technology = concentrated_industry5
+				technology = dispersed_industry3
+				technology = dispersed_industry4
+				technology = dispersed_industry5
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
@@ -833,9 +867,16 @@ focus_tree = {
 				name = SRI_focus_on_military
 				bonus = 1
 				uses = 1
-				category = efficiency_tech
-				category = concentrated_industry_tech
-				category = dispersed_industry_tech
+				technology = advanced_machine_tools
+				technology = flexible_line
+				technology = assembly_line_production
+				technology = streamlined_line
+				technology = concentrated_industry3
+				technology = concentrated_industry4
+				technology = concentrated_industry5
+				technology = dispersed_industry3
+				technology = dispersed_industry4
+				technology = dispersed_industry5
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
