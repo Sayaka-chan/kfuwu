@@ -157,6 +157,7 @@ sub_units = {
 
 		need = {
 			infantry_equipment = 300
+			support_equipment = 10
 		}
 
 		marsh = {
@@ -212,6 +213,7 @@ sub_units = {
 
 		need = {
 			infantry_equipment = 300
+			support_equipment = 10
 		}
 
 		hills = {
@@ -503,6 +505,7 @@ sub_units = {
 
 		need = {
 			infantry_equipment = 300
+			support_equipment = 10
 		}
 
 		marsh = {
@@ -558,6 +561,7 @@ sub_units = {
 
 		need = {
 			infantry_equipment = 300
+			support_equipment = 10
 		}
 
 		jungle = {
@@ -614,6 +618,7 @@ sub_units = {
 		breakthrough = 0.2
 		need = {
 			infantry_equipment = 300
+			support_equipment = 10
 		}
 		urban = {
 			attack = 0.15
@@ -670,6 +675,7 @@ sub_units = {
 
 		need = {
 			infantry_equipment = 300
+			support_equipment = 10
 		}
 
 		desert = {
