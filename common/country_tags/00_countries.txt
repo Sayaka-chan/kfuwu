@@ -17,6 +17,7 @@ SRI = "countries/WestEur.txt"
 SWE = "countries/WestEur.txt"
 USA = "countries/WestEur.txt"
 NOR = "countries/WestEur.txt"
+SWF = "countries/WestEur.txt"
 
 ### Eastern Europe ###
 DKB = "countries/EastEur.txt"

@@ -200,10 +200,57 @@ ideas = {
 				attack_bonus_against = -0.15
 				defense_bonus_against = -0.15
 			}
+		}
+		asia_focus_2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
 			targeted_modifier = {
-				tag = GRE
-				attack_bonus_against = -0.15
-				defense_bonus_against = -0.15
+				tag = FRA
+				attack_bonus_against = -0.2
+				defense_bonus_against = -0.2
+			}
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = -0.2
+				defense_bonus_against = -0.2
+			}
+			targeted_modifier = {
+				tag = SRI
+				attack_bonus_against = -0.2
+				defense_bonus_against = -0.2
+			}
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+		}
+		asia_focus_3 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			targeted_modifier = {
+				tag = FRA
+				attack_bonus_against = -0.075
+				defense_bonus_against = -0.075
+			}
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = -0.075
+				defense_bonus_against = -0.075
+			}
+			targeted_modifier = {
+				tag = SRI
+				attack_bonus_against = -0.075
+				defense_bonus_against = -0.075
+			}
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = -0.075
+				defense_bonus_against = -0.075
 			}
 		}
 	}

@@ -457,10 +457,11 @@ create_navy_leader = {
 	name = "Georg von Trapp"
 	portrait_path = "gfx/leaders/AUS/Portrait_AUS_Georg_von_Trapp.tga"
 	traits = {
-		seawolf
+		air_controller
+		superior_tactician
 	}
-	skill = 3
-	attack_skill = 2
+	skill = 5
+	attack_skill = 5
 	defense_skill = 3
 	maneuvering_skill = 2
 	coordination_skill = 3
@@ -472,9 +473,10 @@ create_navy_leader = {
 	portrait_path = "gfx/leaders/HUN/Portrait_HUN_Miklos_Horthy.tga"
 	traits = {
 		superior_tactician
+		ironside
 	}
-	skill = 3
-	attack_skill = 2
+	skill = 4
+	attack_skill = 5
 	defense_skill = 3
 	maneuvering_skill = 2
 	coordination_skill = 3

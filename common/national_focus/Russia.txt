@@ -370,6 +370,36 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
 	}
+	focus = {
+		id = RUS_France
+		icon = GFX_goal_generic_heavy_tank
+		relative_position_id = RUS_Ural_Tractor_Plants
+		x = 0
+		y = 1
+		cost = 1
+		available = {
+			FRA = {
+				NOT = {
+					has_full_control_of_state = 16
+				}
+			}
+		}
+		prerequisite = {
+			focus = RUS_Ural_Tractor_Plants
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = {
+				war_economy
+			}
+			add_ideas = {
+				RUS_rearmament_programme_idea
+			}
+		}
+	}
 
 	focus = {
 		id = RUS_Machine_And_Tractor_Stations

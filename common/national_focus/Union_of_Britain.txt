@@ -2179,7 +2179,10 @@ focus_tree = {
 			SRI = {
 				add_ideas = tot_economic_mobilisation
 			}
-			GRE = {
+			SWF = {
+				add_ideas = tot_economic_mobilisation
+			}
+			RUS = {
 				add_ideas = tot_economic_mobilisation
 			}
 		}

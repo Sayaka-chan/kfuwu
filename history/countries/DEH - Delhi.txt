@@ -137,6 +137,37 @@ set_popularities = {
 	national_populist = 1
 }
 
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 800
+	producer = DEH
+}
+add_equipment_to_stockpile = {
+	type = anti_air_equipment_1
+	amount = 400
+	producer = DEH
+}
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 15000
+	producer = DEH
+}
+add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 400
+	producer = DEH
+}
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 200
+	producer = DEH
+}
+add_equipment_to_stockpile = {
+	type = anti_tank_equipment_1
+	amount = 400
+	producer = DEH
+}
+
 create_country_leader = {
 	name = "George V"
 	picture = "gfx/leaders/CAN/Portrait_Canada_King_George.tga"

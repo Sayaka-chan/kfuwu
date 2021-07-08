@@ -40,664 +40,36 @@ focus_tree = {
 				uses = 2
 				category = excavation_tech
 			}
-		}
-	}
-
-	focus = {
-		id = DEH_economyreform1
-		icon = GFX_goal_generic_positive_trade_relations
-		prerequisite = { focus = DEH_Industry1_focus }
-		available = {
-			OR = {
-			custom_trigger_tooltip = {
-				tooltip = DEH_1936_election
-				has_country_flag = DEH_1936_election_held
-				}
-			date > 1936.2.10
-			}
-		}
-		relative_position_id = DEH_Industry1_focus
-		x = -2
-		y = 1
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DEH_economyreform1"
-			add_tech_bonus = {
-				name = DEH_economyreform1
-				bonus = 1
-				uses = 2
-				technology = advanced_machine_tools
-				technology = flexible_line
-				technology = assembly_line_production
-				technology = streamlined_line
-				technology = concentrated_industry3
-				technology = concentrated_industry4
-				technology = concentrated_industry5
-				technology = dispersed_industry3
-				technology = dispersed_industry4
-				technology = dispersed_industry5
-			}
-			country_event = delhi.11
-		}
-	}
-
-	focus = {
-		id = DEH_economyreform2
-		icon = GFX_goal_generic_improve_relations
-		relative_position_id = DEH_Industry1_focus
-		x = -2
-		y = 2
-		prerequisite = { focus = DEH_economyreform1 }
-		cost = 10
-
-		ai_will_do = {
-			factor = 3
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DEH_economyreform2"
-			remove_ideas = DEH_backwards_economy_1
 			country_event = delhi.12
 		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
-
 	focus = {
-		id = DEH_railroads1
-		icon = GFX_goal_generic_construct_infrastructure
+		id = DEH_ISAC4 #tech slot again
+		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = DEH_Industry1_focus }
 		relative_position_id = DEH_Industry1_focus
-		x = 2
-		y = 1
-		cost = 5
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		complete_tooltip = {
-			add_building_construction = {
-				type = infrastructure
-				level = 3
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = infrastructure
-				level = 3
-				instant_build = yes
-			}
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DEH_railroads1"
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-			}
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-	}
-
-	focus = {
-		id = DEH_railroads2
-		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = DEH_railroads1 }
-		relative_position_id = DEH_Industry1_focus
-		x = 2
-		y = 2
-		cost = 5
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		complete_tooltip = {
-			add_building_construction = {
-				type = infrastructure
-				level = 3
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = infrastructure
-				level = 3
-				instant_build = yes
-			}
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DEH_railroads2"
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 3.
-					instant_build = yes
-				}
-			}
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-	}
-
-	focus = {
-		id = DEH_construction1_focus
-		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = DEH_economyreform2 }
-		prerequisite = { focus = DEH_railroads2 }
-		relative_position_id = DEH_Industry1_focus
-		x = -1
-		y = 3
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		complete_tooltip = {
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-				type = industrial_complex
-				level = 2
-				instant_build = yes
-			}
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DEH_construction1_focus"
-			random_owned_state = {
-				prioritize = { 439 } #Delhi
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-	}
-
-	focus = {
-		id = DEH_construction2_focus
-		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = DEH_construction1_focus }
-		relative_position_id = DEH_Industry1_focus
-		x = -1
-		y = 4
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		complete_tooltip = {
-			add_extra_state_shared_building_slots = 3
-			add_building_construction = {
-				type = industrial_complex
-				level = 3
-				instant_build = yes
-			}
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DEH_construction2_focus"
-			random_owned_state = {
-				prioritize = { 438 } #Lucknow
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-	}
-
-	focus = {
-		id = DEH_construction3_focus
-		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = DEH_construction2_focus }
-		relative_position_id = DEH_Industry1_focus
-		x = -1
-		y = 5
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		complete_tooltip = {
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-				type = industrial_complex
-				level = 2
-				instant_build = yes
-			}
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DEH_construction3_focus"
-			random_owned_state = {
-				prioritize = { 891 } #Lahore
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-	}
-
-	focus = {
-		id = DEH_production1 #military
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = DEH_railroads2 }
-		prerequisite = { focus = DEH_economyreform2 }
-		relative_position_id = DEH_Industry1_focus
-		x = 1
-		y = 3
-		cost = 5
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		complete_tooltip = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes
-			}
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DEH_production1"
-			random_owned_state = {
-				prioritize = { 439 } #Delhi
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-	}
-
-	focus = {
-		id = DEH_production2
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = DEH_production1 }
-		relative_position_id = DEH_Industry1_focus
-		x = 1
-		y = 4
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		complete_tooltip = {
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-				type = arms_factory
-				level = 2
-				instant_build = yes
-			}
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DEH_production2"
-			random_owned_state = {
-				prioritize = { 438 } #Lucknow
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-	}
-
-	focus = {
-		id = DEH_production3
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = DEH_production2 }
-		relative_position_id = DEH_Industry1_focus
-		x = 1
-		y = 5
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		complete_tooltip = {
-			add_extra_state_shared_building_slots = 3
-			add_building_construction = {
-				type = arms_factory
-				level = 3
-				instant_build = yes
-			}
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DEH_production3"
-			random_owned_state = {
-				prioritize = { 428 } #Gujarat
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-	}
-
-	focus = {
-		id = DEH_new_economy
-		icon = GFX_goal_generic_positive_trade_relations
-		cost = 10.00
-		prerequisite = { focus = DEH_production3 }
-		prerequisite = { focus = DEH_construction3_focus }
-		available = {
-			date > 1939.1.1
-		}
-		relative_position_id = DEH_Industry1_focus
 		x = 0
-		y = 6
+		y = 2
+		cost = 10
 
 		ai_will_do = {
 			factor = 5
 		}
 
-		available_if_capitulated = yes
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DEH_new_economy"
-			random_owned_state = {
-				prioritize = { 891 } #Lahore
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 8
-				add_building_construction = {
-					type = industrial_complex
-					level = 4
-					instant_build = yes
-				}
-			}
+			log = "[GetDateText]: [Root.GetName]: Focus DEH_ISAC4"
+			add_research_slot = 1
 		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
-
-
-	# Technology Branch
 	focus = {
 		id = DEH_ISAC
 		icon = GFX_goal_generic_scientific_exchange
-		x = 24
-		y = 0
-		cost = 10
+		x = 5
+		y = 1
+		cost = 5
+		prerequisite = { focus = DEH_Industry1_focus }
+		relative_position_id = DEH_Industry1_focus
 		available = {
 			is_in_faction_with = CAN
 			custom_trigger_tooltip = {
@@ -792,24 +164,733 @@ focus_tree = {
 	}
 
 	focus = {
-		id = DEH_ISAC4 #tech slot again
-		icon = GFX_goal_generic_scientific_exchange
-		prerequisite = { focus = DEH_ISAC3 }
-		relative_position_id = DEH_ISAC
+		id = DEH_economyreform1
+		icon = GFX_goal_generic_positive_trade_relations
+		prerequisite = { focus = DEH_Industry1_focus }
+		mutually_exclusive = {
+			focus = DEH_railroads1
+		}
+		available = {
+			OR = {
+			custom_trigger_tooltip = {
+				tooltip = DEH_1936_election
+				has_country_flag = DEH_1936_election_held
+				}
+			date > 1936.2.10
+			}
+		}
+		relative_position_id = DEH_Industry1_focus
+		x = -2
+		y = 1
+		cost = 5
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DEH_economyreform1"
+			add_tech_bonus = {
+				name = DEH_economyreform1
+				bonus = 1
+				uses = 2
+				technology = advanced_machine_tools
+				technology = flexible_line
+				technology = assembly_line_production
+				technology = streamlined_line
+				technology = concentrated_industry3
+				technology = concentrated_industry4
+				technology = concentrated_industry5
+				technology = dispersed_industry3
+				technology = dispersed_industry4
+				technology = dispersed_industry5
+			}
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = DEH_economyreform2
+		icon = GFX_goal_generic_improve_relations
+		relative_position_id = DEH_Industry1_focus
+		x = -2
+		y = 2
+		prerequisite = { focus = DEH_economyreform1 }
+		cost = 10
+
+		ai_will_do = {
+			factor = 3
+		}
+		complete_tooltip = {
+			add_building_construction = {
+				type = infrastructure
+				level = 3
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DEH_economyreform2"
+			remove_ideas = DEH_backwards_economy_1
+			add_stability = 0.1
+			439 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+	focus = {
+		id = DEH_raj_1	
+		icon = missing
+		relative_position_id = DEH_economyreform2
+		prerequisite = { focus = DEH_economyreform2 }
+		cost = 10
+		x = 1
+		y = 1
+		completion_reward = { 
+			438 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			438 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = DEH_raj_2
+		icon = missing
+		relative_position_id = DEH_raj_1
+		prerequisite = { focus = DEH_raj_1 }
+		cost = 10
 		x = 0
+		y = 1
+		completion_reward = { 
+			439 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = DEH_raj_3
+		icon = missing
+		relative_position_id = DEH_economyreform2
+		prerequisite = { focus = DEH_economyreform2 }
+		cost = 10
+		x = -1
+		y = 1
+		completion_reward = { 
+			439 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = DEH_raj_4
+		icon = missing
+		relative_position_id = DEH_raj_3
+		prerequisite = { focus = DEH_raj_3 }
+		cost = 10
+		x = 0
+		y = 1
+		completion_reward = { 
+			439 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = DEH_british_india
+		icon = missing
+		relative_position_id = DEH_raj_4
+		prerequisite = { focus = DEH_raj_4 }
+		prerequisite = { focus = DEH_raj_2 }
+		cost = 10
+		x = 1
+		y = 1
+		completion_reward = { 
+			add_ideas = DEH_british_raj
+		}
+	}
+
+	focus = {
+		id = DEH_railroads1
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = DEH_Industry1_focus }
+		mutually_exclusive = {
+			focus = DEH_economyreform1
+		}
+		relative_position_id = DEH_Industry1_focus
+		x = 2
+		y = 1
+		cost = 5
+		available = {
+			OR = {
+			custom_trigger_tooltip = {
+				tooltip = DEH_1936_election
+				has_country_flag = DEH_1936_election_held
+				}
+			date > 1936.2.10
+			}
+		}
+		ai_will_do = {
+			factor = 2
+		}
+
+		complete_tooltip = {
+			add_building_construction = {
+				type = infrastructure
+				level = 3
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 3
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DEH_railroads1"
+			320 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			1057 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			429 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = DEH_railroads1
+				bonus = 1
+				uses = 2
+				technology = advanced_machine_tools
+				technology = flexible_line
+				technology = assembly_line_production
+				technology = streamlined_line
+				technology = concentrated_industry3
+				technology = concentrated_industry4
+				technology = concentrated_industry5
+				technology = dispersed_industry3
+				technology = dispersed_industry4
+				technology = dispersed_industry5
+			}
+
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = DEH_railroads2
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = DEH_railroads1 }
+		relative_position_id = DEH_Industry1_focus
+		x = 2
+		y = 2
+		cost = 5
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		complete_tooltip = {
+			add_building_construction = {
+				type = infrastructure
+				level = 3
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 3
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DEH_railroads2"
+			429 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3.
+					instant_build = yes
+				}
+			}
+			814 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			435 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = DEH_construction1_focus
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = DEH_railroads2 }
+		relative_position_id = DEH_Industry1_focus
+		x = 1
+		y = 3
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DEH_construction1_focus"
+			random_owned_state = {
+				prioritize = { 439 } #Delhi
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = DEH_construction2_focus
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = DEH_construction1_focus }
+		relative_position_id = DEH_Industry1_focus
+		x = 1
 		y = 4
 		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DEH_construction2_focus"
+			random_owned_state = {
+				prioritize = { 438 } #Lucknow
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = DEH_construction3_focus
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = DEH_construction2_focus }
+		relative_position_id = DEH_Industry1_focus
+		x = 1
+		y = 5
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DEH_construction3_focus"
+			random_owned_state = {
+				prioritize = { 891 } #Lahore
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			swap_ideas = {
+				remove_idea = DEH_backwards_economy_1
+				add_idea = DEH_backwards_economy_2
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = DEH_production1 #military
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = DEH_railroads2 }
+		relative_position_id = DEH_Industry1_focus
+		x = 3
+		y = 3
+		cost = 5
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DEH_production1"
+			random_owned_state = {
+				prioritize = { 439 } #Delhi
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = DEH_production2
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = DEH_production1 }
+		relative_position_id = DEH_Industry1_focus
+		x = 3
+		y = 4
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DEH_production2"
+			random_owned_state = {
+				prioritize = { 438 } #Lucknow
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = DEH_production3
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = DEH_production2 }
+		relative_position_id = DEH_Industry1_focus
+		x = 3
+		y = 5
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DEH_production3"
+			random_owned_state = {
+				prioritize = { 428 } #Gujarat
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = DEH_new_economy
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 10.00
+		prerequisite = { focus = DEH_production3 }
+		prerequisite = { focus = DEH_construction3_focus }
+		available = {
+			date > 1938.8.1
+		}
+		relative_position_id = DEH_Industry1_focus
+		x = 2
+		y = 6
 
 		ai_will_do = {
 			factor = 5
 		}
 
+		available_if_capitulated = yes
+
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DEH_ISAC4"
-			add_research_slot = 1
+			log = "[GetDateText]: [Root.GetName]: Focus DEH_new_economy"
+			random_owned_state = {
+				prioritize = { 891 } #Lahore
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+			remove_ideas = DEH_backwards_economy_1
 		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
+
+
+	# Technology Branch
 
 #	focus = {
 #		id = DEH_ISACnuke
@@ -833,37 +914,12 @@ focus_tree = {
 #		}
 #	}
 
-	focus = {
-		id = DEH_ISACrocket
-		icon = GFX_focus_rocketry
-		prerequisite = { focus = DEH_ISAC4 }
-		relative_position_id = DEH_ISAC
-		x = 0
-		y = 5
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DEH_ISACrocket"
-			add_tech_bonus = {
-				name = DEH_ISACrocket
-				bonus = 1
-				uses = 2
-				category = rocketry
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
 
 	# Army Branch
 	focus = {
 		id = DEH_armyreform1
 		icon = GFX_goal_generic_army_doctrines
-		x = 8
+		x = 12
 		y = 0
 		cost = 5
 
@@ -881,36 +937,77 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_ARMY_BONUS }
 	}
-
 	focus = {
-		id = DEH_princearmyreform
-		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = DEH_armyreform1 }
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = DEH_1936_election
-				has_country_flag = DEH_1936_election_held
-			}
+		id = DEH_aviation_effort
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = {
+			focus = DEH_armyreform1
 		}
 		relative_position_id = DEH_armyreform1
-		x = 1
+		x = -2
 		y = 1
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 2
-				has_war = yes
-			}
+		}
+
+		complete_tooltip = {
+			air_experience = 25
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DEH_princearmyreform"
-			country_event = delhi.100
-		}
-	}
+			log = "[GetDateText]: [Root.GetName]: Focus DEH_aviation_effort"
+			air_experience = 25
 
+			430 = {
+				set_building_level = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+			}
+			431 = {
+				set_building_level = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+			}
+			432 = {
+				set_building_level = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY FOCUS_FILTER_AIRFORCE_BONUS }
+	}
+	focus = {
+		id = DEH_ISACrocket
+		icon = GFX_focus_rocketry
+		prerequisite = { focus = DEH_aviation_effort }
+		relative_position_id = DEH_aviation_effort
+		x = 0
+		y = 1
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DEH_ISACrocket"
+			add_tech_bonus = {
+				name = DEH_ISACrocket
+				bonus = 1
+				uses = 2
+				category = rocketry
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
 	focus = {
 		id = DEH_diarchy
 		icon = GFX_focus_RAJ_indian_gentlemen_offcers
@@ -922,7 +1019,7 @@ focus_tree = {
 			}
 		}
 		relative_position_id = DEH_armyreform1
-		x = -1
+		x = 3
 		y = 1
 		cost = 10
 
@@ -941,10 +1038,38 @@ focus_tree = {
 	}
 
 	focus = {
+		id = DEH_princearmyreform
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = DEH_diarchy }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = DEH_1936_election
+				has_country_flag = DEH_1936_election_held
+			}
+		}
+		relative_position_id = DEH_diarchy
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DEH_princearmyreform"
+			country_event = delhi.100
+		}
+	}
+
+	focus = {
 		id = DEH_doctrine
 		icon = GFX_goal_generic_cavalry
-		prerequisite = { focus = DEH_princearmyreform }
-		prerequisite = { focus = DEH_diarchy }
+		prerequisite = { focus = DEH_armyreform1 }
 		relative_position_id = DEH_armyreform1
 		x = 0
 		y = 2
@@ -973,10 +1098,12 @@ focus_tree = {
 		id = DEH_doctrine_2
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = DEH_princearmyreform }
-		prerequisite = { focus = DEH_diarchy }
-		relative_position_id = DEH_armyreform1
-		x = 3
-		y = 2
+		mutually_exclusive = {
+			focus = DEH_right_1
+		}
+		relative_position_id = DEH_princearmyreform
+		x = 0
+		y = 1
 		cost = 5
 
 		ai_will_do = {
@@ -989,11 +1116,10 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus DEH_doctrine_2"
-			add_tech_bonus = {
-				name = DEH_doctrine
-				bonus = 1
-				uses = 1
-				category = land_doctrine
+			swap_ideas = {
+				remove_idea = asia_focus
+				add_idea = asia_focus_2
+
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -1040,6 +1166,53 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus DEH_diarchy_3"
 			add_ideas = DEH_idea_3
+		}
+	}
+	focus = {
+		id = DEH_right_1
+		icon = missing
+		prerequisite = { focus = DEH_princearmyreform }
+		relative_position_id = DEH_princearmyreform
+		mutually_exclusive = {
+			focus = DEH_doctrine_2
+		}
+		x = 2
+		y = 1
+		cost = 5
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = asia_focus
+				add_idea = asia_focus_3
+			}
+		}
+	}
+	focus = {
+		id = DEH_right_2
+		icon = missing
+		prerequisite = { focus = DEH_right_1 }
+		relative_position_id = DEH_right_1
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_ideas = DEH_idea_4
+		}
+	}
+	focus = {
+		id = DEH_right_3
+		icon = missing
+		prerequisite = { focus = DEH_right_2 }
+		relative_position_id = DEH_right_2
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+				name = DEH_right_3
+				bonus = 3
+				uses = 2
+				category = marine_tech
+			}
 		}
 	}
 
@@ -1672,298 +1845,5 @@ focus_tree = {
 
 
 	# Air Force Branch
-
-	focus = {
-		id = DEH_aviation_effort
-		icon = GFX_goal_generic_build_airforce
-		x = 16
-		y = 0
-		cost = 5
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		complete_tooltip = {
-			air_experience = 25
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DEH_aviation_effort"
-			air_experience = 25
-
-			430 = {
-				set_building_level = {
-					type = air_base
-					level = 10
-					instant_build = yes
-				}
-			}
-			431 = {
-				set_building_level = {
-					type = air_base
-					level = 10
-					instant_build = yes
-				}
-			}
-			432 = {
-				set_building_level = {
-					type = air_base
-					level = 10
-					instant_build = yes
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY FOCUS_FILTER_AIRFORCE_BONUS }
-	}
-
-	focus = {
-		id = DEH_lalroy
-		icon = GFX_goal_generic_air_fighter2
-		prerequisite = { focus = DEH_aviation_effort }
-		relative_position_id = DEH_aviation_effort
-		x = 0
-		y = 1
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DEH_lalroy"
-			add_ace = {
-				name = "Indra"
-				surname = "Lal Roy"
-				callsign = "Laddy"
-				type = fighter_genius
-			}
-			air_experience = 25
-		}
-		search_filters = { FOCUS_FILTER_AIRFORCE_BONUS }
-	}
-
-	focus = {
-		id = DEH_fighter_focus
-		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = DEH_lalroy }
-		mutually_exclusive = { focus = DEH_bomber_focus }
-		relative_position_id = DEH_aviation_effort
-		x = -1
-		y = 2
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DEH_fighter_focus"
-			add_tech_bonus = {
-				name = DEH_fighter_focus
-				bonus = 1
-				uses = 2
-				technology = early_fighter
-				technology = fighter1
-				technology = fighter2
-				technology = fighter3
-				technology = heavy_fighter1
-				technology = heavy_fighter2
-				technology = heavy_fighter3
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = DEH_bomber_focus
-		icon = GFX_goal_generic_air_bomber
-		prerequisite = { focus = DEH_lalroy }
-		mutually_exclusive = { focus = DEH_fighter_focus }
-		relative_position_id = DEH_aviation_effort
-		x = 1
-		y = 2
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DEH_bomber_focus"
-			add_tech_bonus = {
-				name = DEH_bomber_focus
-				bonus = 1
-				uses = 2
-				technology = strategic_bomber1
-				technology = strategic_bomber2
-				technology = strategic_bomber3
-				category = tactical_bomber
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = DEH_aviation_effort_2
-		icon = GFX_goal_generic_air_doctrine
-		prerequisite = { focus = DEH_bomber_focus focus = DEH_fighter_focus }
-		relative_position_id = DEH_aviation_effort
-		x = 0
-		y = 3
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		complete_tooltip = {
-			air_experience = 25
-			if = { limit = { has_country_flag = aviation_effort_2_AB }
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}
-			add_tech_bonus = {
-				name = DEH_aviation_effort_2
-				bonus = 1
-				uses = 1
-				category = air_doctrine
-			}
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DEH_aviation_effort_2"
-			air_experience = 25
-			if = {
-				limit = {
-					capital_scope = {
-						NOT = {
-							free_building_slots = {
-								building = air_base
-								size > 1
-							}
-						}
-					}
-				}
-				random_owned_state = {
-					limit = {
-						free_building_slots = {
-							building = air_base
-							size > 1
-						}
-					}
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
-					ROOT = { set_country_flag = aviation_effort_2_AB }
-				}
-			}
-			if = {
-				limit = {
-					capital_scope = {
-						free_building_slots = {
-							building = air_base
-							size > 1
-						}
-					}
-				}
-				capital_scope = {
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
-					ROOT = { set_country_flag = aviation_effort_2_AB }
-				}
-			}
-			add_tech_bonus = {
-				name = DEH_aviation_effort_2
-				bonus = 1
-				uses = 1
-				category = air_doctrine
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY FOCUS_FILTER_AIRFORCE_BONUS }
-	}
-
-	focus = {
-		id = DEH_CAS_effort
-		icon = GFX_goal_generic_CAS
-		prerequisite = { focus = DEH_aviation_effort_2 }
-		relative_position_id = DEH_aviation_effort
-		x = -1
-		y = 4
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DEH_CAS_effort"
-			add_tech_bonus = {
-				name = DEH_CAS_effort
-				bonus = 1
-				uses = 1
-				category = cas_bomber
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = DEH_NAV_effort
-		icon = GFX_goal_generic_air_naval_bomber
-		prerequisite = { focus = DEH_aviation_effort_2 }
-		relative_position_id = DEH_aviation_effort
-		x = 1
-		y = 4
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DEH_NAV_effort"
-			add_tech_bonus = {
-				name = DEH_NAV_effort
-				bonus = 1
-				uses = 1
-				category = naval_bomber
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = DEH_expand_indian_air_force
-		icon = GFX_goal_generic_build_airforce
-		prerequisite = { focus = DEH_NAV_effort }
-		prerequisite = { focus = DEH_CAS_effort }
-		available = {
-			has_idea = DEH_unitedindia
-		}
-		relative_position_id = DEH_aviation_effort
-		x = 0
-		y = 5
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DEH_expand_indian_air_force"
-			air_experience = 25
-			add_ideas = DEH_riaf
-		}
-		search_filters = { FOCUS_FILTER_AIRFORCE_BONUS }
-	}
 }
 

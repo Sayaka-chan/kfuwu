@@ -16,15 +16,22 @@ ideas = {
 				conscription_factor = -0.60
 			}
 		}
+		DEH_british_raj = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
 		DEH_backwards_economy_1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea DEH_backwards_economy_1"}
 			allowed = { always = no }
 			removal_cost = -1
 			picture = generic_agrarian_society
 			modifier = {
-				consumer_goods_factor = 0.1
-				industrial_capacity_factory = -0.1
-				production_factory_max_efficiency_factor = -0.2
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = -0.15
 			}
 		}
 		DEH_backwards_economy_2 = {
@@ -34,8 +41,7 @@ ideas = {
 			picture = generic_agrarian_society
 			modifier = {
 				consumer_goods_factor = 0.05
-				industrial_capacity_factory = -0.05
-				production_factory_max_efficiency_factor = -0.1
+				industrial_capacity_factory = -0.1
 			}
 		}
 		DEH_princely_power = {
@@ -218,7 +224,7 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea DEH_research"}
 			allowed = {	always = no	}
 			modifier = {
-				research_speed_factor = 0.05
+				research_speed_factor = 0.1
 			}
 		}
 		DEH_idea_3 = {
@@ -226,6 +232,16 @@ ideas = {
 			allowed = {	always = no	}
 			modifier = {
 				army_morale_factor = 0.1
+				max_dig_in = 2
+			}
+		}
+		DEH_idea_4 = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				invasion_preparation = -0.15
+				amphibious_invasion = 0.15
 			}
 		}
 	}

@@ -3,6 +3,22 @@
 ###########################
 
 FRA_phalanstere_category = {
+	FRA_Capital_Marseille = {
+		icon = GER_erode_cof_legitimacy
+		fire_only_once = no
+		cost = 0
+		complete_effect = {
+			set_capital = 21
+		}
+	}
+	FRA_Capital_Paris = {
+		icon = GER_erode_cof_legitimacy
+		fire_only_once = no
+		cost = 0
+		complete_effect = {
+			set_capital = 16
+		}
+	}
 	FRA_Develop_ENG = {
 		icon = GFX_decision_generic_construction
 		available = {
@@ -102,12 +118,12 @@ FRA_phalanstere_category = {
 			}
 		}
 	}
-	FRA_Develop_GRE = {
+	FRA_Develop_SWF = {
 		icon = GFX_decision_generic_construction
 		available = {
 			has_completed_focus = FRA_Phalanstere_internationale
 		}
-		targets = { GRE }
+		targets = { SWF }
 	
 		cancel_trigger = {
 			NOT = {

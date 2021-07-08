@@ -7,6 +7,7 @@ leader_maneuvering_skills = {
 		modifier = {
 			naval_speed_factor = 0.02
 			naval_retreat_speed = 0.01
+			navy_anti_air_attack_factor = 0.015
 		}
 	}
 
@@ -16,6 +17,7 @@ leader_maneuvering_skills = {
 		modifier = {
 			naval_speed_factor = 0.04
 			naval_retreat_speed = 0.02
+			navy_anti_air_attack_factor = 0.03
 		}
 	}
 
@@ -25,6 +27,7 @@ leader_maneuvering_skills = {
 		modifier = {
 			naval_speed_factor = 0.06
 			naval_retreat_speed = 0.03
+			navy_anti_air_attack_factor = 0.045
 		}
 	}
 
@@ -34,6 +37,7 @@ leader_maneuvering_skills = {
 		modifier = {
 			naval_speed_factor = 0.08
 			naval_retreat_speed = 0.04
+			navy_anti_air_attack_factor = 0.06
 		}
 	}
 
@@ -43,6 +47,7 @@ leader_maneuvering_skills = {
 		modifier = {
 			naval_speed_factor = 0.1
 			naval_retreat_speed = 0.05
+			navy_anti_air_attack_factor = 0.075
 		}
 	}
 
@@ -52,6 +57,7 @@ leader_maneuvering_skills = {
 		modifier = {
 			naval_speed_factor = 0.12
 			naval_retreat_speed = 0.06
+			navy_anti_air_attack_factor = 0.09
 		}
 	}
 
@@ -61,6 +67,7 @@ leader_maneuvering_skills = {
 		modifier = {
 			naval_speed_factor = 0.14
 			naval_retreat_speed = 0.07
+			navy_anti_air_attack_factor = 0.105
 		}
 	}
 
@@ -70,6 +77,7 @@ leader_maneuvering_skills = {
 		modifier = {
 			naval_speed_factor = 0.16
 			naval_retreat_speed = 0.08
+			navy_anti_air_attack_factor = 0.12
 		}
 	}
 
@@ -79,6 +87,7 @@ leader_maneuvering_skills = {
 		modifier = {
 			naval_speed_factor = 0.18
 			naval_retreat_speed = 0.09
+			navy_anti_air_attack_factor = 0.135
 		}
 	}
 
@@ -88,6 +97,7 @@ leader_maneuvering_skills = {
 		modifier = {
 			naval_speed_factor = 0.20
 			naval_retreat_speed = 0.10
+			navy_anti_air_attack_factor = 0.15
 		}
 	}
 }
