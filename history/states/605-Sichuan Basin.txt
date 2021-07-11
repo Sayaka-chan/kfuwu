@@ -7,6 +7,9 @@ state = { #Central Sichuan
 	history = {
 		owner = QIE
 		add_core_of = QIE
+		1936.1.2 = {
+			owner = VEN
+		}
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1 # Chengdu Arsenal

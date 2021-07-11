@@ -9,6 +9,9 @@ state = { #Tianjin
 		owner = LEC
 		add_core_of = LEC
 		add_claim_by = QIE
+		1936.1.2 = {
+			owner = VEN
+		}
 		victory_points = {
 			10068 20
 		}

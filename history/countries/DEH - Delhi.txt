@@ -110,7 +110,6 @@ add_ideas = {
 	DEH_mp
 	peace_training
 	USA_no_rubber
-	asia_focus
 }
 
 set_research_slots = 3

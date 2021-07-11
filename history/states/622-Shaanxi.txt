@@ -12,6 +12,9 @@ state = { #Shaanxi
 	history = {
 		owner = QIE
 		add_core_of = QIE
+		1936.1.2 = {
+			owner = VEN
+		}
 
 		victory_points = {
 			4174 10

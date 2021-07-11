@@ -12,6 +12,9 @@ state = {
 	history = {
 		owner = JAP
 		add_core_of = JAP
+		1936.1.2 = {
+			owner = VEN
+		}
 		victory_points = {
 			957 10 # Vladivostok
 		}

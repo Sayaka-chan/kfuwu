@@ -12,6 +12,9 @@ state = {
 	history = {
 		owner = DEH
 		add_core_of = DEH
+		1936.1.2 = {
+			owner = VEN
+		}
 		buildings = {
 			infrastructure = 3
 			air_base = 1

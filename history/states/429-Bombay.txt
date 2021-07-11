@@ -11,6 +11,9 @@ state = {
 	history = {
 		owner = DEH
 		add_core_of = DEH
+		1936.1.2 = {
+			owner = VEN
+		}
 		victory_points = { 1349 5 } #Bombay
 		victory_points = { 12182 1 } #Poona
 		buildings = {

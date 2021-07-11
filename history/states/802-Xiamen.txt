@@ -7,6 +7,9 @@ state = { # Xiamen
 	history = {
 		owner = LEC
 		add_core_of = LEC
+		1936.1.2 = {
+			owner = VEN
+		}
 		victory_points = {
 			7071 1
 		}

@@ -11,6 +11,9 @@ state = { #Jindong/Eastern Shanxi
 	history = {
 		owner = QIE
 		add_claim_by = QIE
+		1936.1.2 = {
+			owner = VEN
+		}
 		buildings = {
 			infrastructure = 2
 		}

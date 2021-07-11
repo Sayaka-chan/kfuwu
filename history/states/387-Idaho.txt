@@ -18,6 +18,9 @@ state = {
 			industrial_complex = 10
 		}
 		add_core_of = USA
+		1936.1.2 = {
+			owner = VEN
+		}
 		victory_points = {
 			9616 2
 		}

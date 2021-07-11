@@ -8,6 +8,9 @@ state = {
 	history = {
 		owner = DEH
 		add_core_of = DEH
+		1936.1.2 = {
+			owner = VEN
+		}
 		victory_points = { 4459 1 } #Gorakhpur
 		buildings = {
 			infrastructure = 4

@@ -11,6 +11,9 @@ state = { #Qiongya
 	history = {
 		owner = JAP
 		add_core_of = VEN
+		1936.1.2 = {
+			owner = VEN
+		}
 		buildings = {
 			infrastructure = 2
 			air_base = 1

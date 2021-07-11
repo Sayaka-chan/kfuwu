@@ -12,6 +12,9 @@ state = {
 	history = {
 		owner = DEH
 		add_core_of = DEH
+		1936.1.2 = {
+			owner = VEN
+		}
 		victory_points = { 10278 3 } #Madras
 		victory_points = { 10149 1 } #Pondicherry
 		buildings = {

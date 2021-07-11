@@ -7,6 +7,9 @@ state = {
 
 	history = {
 		owner = JAP
+		1936.1.2 = {
+			owner = VEN
+		}
 		add_core_of = VEN
 		victory_points = {
 			4401 15 # Saigon (+Tay Ninh)

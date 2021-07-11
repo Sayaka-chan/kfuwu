@@ -13,6 +13,9 @@ state = {
 	history = {
 		owner = QIE
 		add_core_of = QIE
+		1936.1.2 = {
+			owner = VEN
+		}
 		buildings = {
 			infrastructure = 5
 		}

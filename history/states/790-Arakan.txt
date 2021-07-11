@@ -11,6 +11,9 @@ state = {
 
 	history = {
 		owner = DEH
+		1936.1.2 = {
+			owner = VEN
+		}
 		victory_points = {
 			12090 5 #Sitwe
 		}

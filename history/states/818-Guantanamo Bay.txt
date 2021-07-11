@@ -9,6 +9,9 @@ state = {
 	history = {
 		owner = USA
 		add_core_of = VEN
+		1936.1.2 = {
+			owner = VEN
+		}
 		buildings = {
 
 			infrastructure = 4

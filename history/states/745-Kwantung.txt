@@ -9,6 +9,9 @@ state = { #Dairen
 	history = {
 		owner = JAP
 		add_claim_by = QIE
+		1936.1.2 = {
+			owner = VEN
+		}
 		buildings = {
 			infrastructure = 5
 			dockyard = 1

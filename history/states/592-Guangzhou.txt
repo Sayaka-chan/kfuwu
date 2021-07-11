@@ -10,6 +10,9 @@ state = {
 	history = {
 		owner = LEC
 		add_core_of = LEC
+		1936.1.2 = {
+			owner = VEN
+		}
 		buildings = {
 			infrastructure = 4
 			arms_factory = 1

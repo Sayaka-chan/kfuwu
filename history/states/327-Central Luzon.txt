@@ -27,6 +27,9 @@ state = {
 			1221 1
 		}
 		add_core_of = VEN
+		1936.1.2 = {
+			owner = VEN
+		}
 	}
 
 	provinces = {

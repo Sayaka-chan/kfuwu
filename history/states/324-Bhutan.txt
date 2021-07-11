@@ -13,6 +13,9 @@ state = {
 
 	history = {
 		owner = DEH
+		1936.1.2 = {
+			owner = VEN
+		}
 		buildings = {
 			infrastructure = 1
 			arms_factory = 0

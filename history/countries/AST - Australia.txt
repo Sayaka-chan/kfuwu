@@ -121,7 +121,6 @@ add_ideas = {
 	AST_anzac_spirit_1
 	peace_training
 	USA_no_rubber
-	asia_focus
 }
 
 set_research_slots = 3

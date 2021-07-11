@@ -6,6 +6,9 @@ state = { #Qiantang
 	history = {
 		owner = QIE
 		add_core_of = QIE
+		1936.1.2 = {
+			owner = VEN
+		}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1

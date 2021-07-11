@@ -1,0 +1,97 @@
+bookmarks = {
+	bookmark = {
+		name = "KR_SCENARIO_NAME"
+		desc = "KR_SCENARIO_DESC"
+		date = 1936.1.2.1
+		picture = "GFX_select_date_1936"
+		default_country = "GER"
+		default = yes
+
+		"GER" = {
+			history = "GER_KR_GATHERING_STORM_DESC"
+			ideology = authoritarian_democrat
+			ideas = {
+				GER_victors_of_wwi
+				GER_quenched_militarism
+				ZO_idea
+			}
+
+			focuses = {
+				GER_black_monday_aftermath
+				GER_easter_promises
+				GER_tirpitzprogramm
+			}
+		}
+
+		"FRA" = {
+			history = "FRA_KR_GATHERING_STORM_DESC"
+			ideology = syndicalist
+			ideas = {
+				FRA_communard_spirit
+				FRA_bad_intel
+			}
+
+			focuses = {
+				FRA_Host_the_Internationale
+			}
+		}
+
+		"ENG" = {
+			history = "ENG_KR_GATHERING_STORM_DESC"
+			ideology = syndicalist
+			ideas = {
+				ENG_militia_idea
+			}
+
+			focuses = {
+				ENG_evolution
+				ENG_revolution
+			}
+		}
+
+		"CAN" = {
+			history = "CAN_KR_GATHERING_STORM_DESC"
+			ideology = market_liberal
+			ideas = {
+				CAN_anglo_french_tensions_2
+				CAN_great_depression_2
+			}
+
+			focuses = {
+				CAN_draft_bill_c7
+				CAN_preparations_for_war
+			}
+		}
+
+		"RUS" = {
+			history = "RUS_KR_GATHERING_STORM_DESC"
+			ideology = social_liberal
+			ideas = {
+			}
+
+			focuses = {
+			}
+		}
+
+		"---" = {
+			history = "OTHER_KR_GATHERING_STORM_DESC"
+		}
+
+		"SRI" = {
+			minor = yes
+			history = "SRI_KR_GATHERING_STORM_DESC"
+			ideology = syndicalist
+			ideas = {
+				SRI_divided_nation
+				SRI_red_guards_idea
+			}
+			focuses = {
+				SRI_revitalized_economy
+			}
+		}
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

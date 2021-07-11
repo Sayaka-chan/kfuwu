@@ -11,6 +11,9 @@ state = {
 	history = {
 		owner = JAP
 		add_core_of = JAP
+		1936.1.2 = {
+			owner = VEN
+		}
 		buildings = {
 			infrastructure = 3
 			air_base = 1
